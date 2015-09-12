@@ -1,0 +1,784 @@
+@charset "UTF-8";
+
+/* All CSS codes written by whizkydee(Olaolu Olawuyi)
+
+* Author: whizkydee(Olaolu Olawuyi)
+
+* Theme Name: webtwic.
+
+* Date Created: 29/07/2015
+
+* Last Modified: 14/08/2015
+
+* Twitter: @whizkydee, @webtwic
+
+* Blog: http://whizkydee.tumblr.com
+
+* Github: https://github.com/whizkydee
+
+* Codepen: https://codepen.io/whizkydee
+
+* Developer: whizkydee(Olaolu Olawuyi)
+
+* Credits: Icomoon.io, Elegant Font, Font Awesome.
+
+* Description: Normalize and basic rules.
+
+*/
+
+@-ms-viewport {
+   width: device-width, initial-scale=1;
+}
+@viewport {
+   width: device-width, initial-scale=1;
+}
+html {
+   -webkit-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   font-size: 100%;
+}
+* {
+   font-family: Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
+   box-sizing: content-box;
+   /* No border-box for some reasons */
+}
+*:before,
+*:after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   font-family: webtwicons;
+}
+::-webkit-selection {
+   background: #eee;
+   color: #597488;
+}
+::-moz-selection {
+   background: #eee;
+   color: #597488;
+}
+::-ms-selection {
+   background: #eee;
+   color: #597488;
+}
+::-o-selection {
+   background: #eee;
+   color: #597488;
+}
+::selection {
+   background: #eee;
+   color: #597488;
+}
+
+/* Start Basic Reset Styles */
+
+
+/* Start Iconset */
+
+.webtwicons {
+   display: inline-block;
+   font: normal normal normal 14px/1 webtwicons;
+   font-size: inherit;
+   text-rendering: auto;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+.newspaper-icon:before {
+   content: "\f1ea";
+}
+.user-icon:before {
+   content: "\f007";
+}
+.calendar-icon:before {
+   content: "\f073";
+}
+.comment-icon:before {
+   content: "\f075";
+}
+.facebook-icon:before {
+   content: "\f09a";
+}
+.twitter-icon:before {
+   content: "\f099";
+}
+.google-plus-icon:before {
+   content: "\f0d5";
+}
+.tumblr-icon:before {
+   content: "\f173";
+}
+.github-alt-icon:before {
+   content: "\f113";
+}
+
+/* End Iconset */
+
+
+/** Start Normalize.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+   display: block;
+}
+audio,
+canvas,
+progress,
+video {
+   display: inline-block;
+   vertical-align: baseline;
+}
+audio:not([controls]) {
+   display: none;
+   height: 0;
+}
+[hidden],
+template {
+   display: none;
+}
+a {
+   background-color: transparent;
+}
+a:active,
+a:hover {
+   outline: 0;
+}
+abbr[title] {
+   border-bottom: 1px dotted;
+}
+b,
+strong {
+   font-weight: bold;
+}
+dfn {
+   font-style: italic;
+}
+h1 {
+   font-size: 2em;
+   margin: 0.67em 0;
+}
+mark {
+   background: #ff0;
+   color: #000;
+}
+small {
+   font-size: 80%;
+}
+sub,
+sup {
+   font-size: 75%;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline;
+}
+sup {
+   top: -0.5em;
+}
+sub {
+   bottom: -0.25em;
+}
+img {
+   border: 0;
+}
+svg:not(:root) {
+   overflow: hidden;
+}
+figure {
+   margin: 1em 40px;
+}
+hr {
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+   height: 0;
+}
+pre {
+   overflow: auto;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+   color: inherit;
+   font: inherit;
+   margin: 0;
+}
+button {
+   overflow: visible;
+}
+button,
+select {
+   text-transform: none;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+   -webkit-appearance: button;
+   cursor: pointer;
+}
+button[disabled],
+input[disabled] {
+   cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+   border: 0;
+   padding: 0;
+}
+input {
+   line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+   box-sizing: border-box;
+   padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+   height: auto;
+}
+input[type="search"] {
+   -webkit-appearance: textfield;
+   -moz-box-sizing: content-box;
+   -webkit-box-sizing: content-box;
+   box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+   -webkit-appearance: none;
+}
+fieldset {
+   border: 1px solid #c0c0c0;
+   margin: 0 2px;
+   padding: 0.35em 0.625em 0.75em;
+}
+legend {
+   border: 0;
+   padding: 0;
+}
+textarea {
+   overflow: auto;
+}
+optgroup {
+   font-weight: bold;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+td,
+th {
+   padding: 0;
+}
+
+/** End normalize.css */
+
+keygen,
+input,
+iframe,
+label,
+table,
+textarea,
+select,
+button {
+   font-family: Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
+   clear: both;
+   line-height: 1.5;
+}
+h1 {
+   font-size: 32px;
+}
+h2 {
+   font-size: 26px;
+}
+h3 {
+   font-size: 22px;
+}
+h4 {
+   font-size: 17px;
+}
+h5 {
+   font-size: 14px;
+}
+h6 {
+   font-size: 12px;
+}
+a:visited, a:active, a:focus, a {
+   text-decoration: none;
+   color: #999;
+}
+[alt] {
+   font-family: "Trebuchet MS", Calibri, Helvetica, Arial, georgia;
+}
+nav, ul {
+   padding: 0px;
+   margin: 0px;
+}
+ul {
+   list-style: none;
+}
+[placeholder], ::-moz-placeholder, ::-webkit-input-placeholder, ::-ms-input-placeholder {
+   color: #999;
+}
+input {
+   -moz-appearance: none;
+   -webkit-appearance: none;
+   -ms-appearance: none;
+   -o-apperance: none;
+   font-family: Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
+}
+[type="submit"], [type="reset"], [type="button"], [type="file"] {
+   border-radius: 3px;
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+   -ms-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+   -o-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+   -webkit-appearance: none !important;
+   border-bottom: 4px solid #27c940;
+   font-weight: bold;
+   padding: 15px 20px;
+   color: #fff;
+   text-align: center;
+   background: #58de6c;
+   cursor: pointer;
+   border-top: 0;
+   border-right: 0;
+   border-left: 0;
+}
+[type="search"], [type="text"], [type="email"], [type="number"], [type="password"], [type="tel"], [type="week"], [type="datetime"], [type="date"], [type="time"], [type="datetime-local"], [type="month"], [type="url"], input, textarea {
+   outline: 0 none !important;
+   -webkit-outline: 0 none !important;
+}
+img[border="0"] {
+   border-width: 0px !important;
+   border: 0 none !important;
+   border-style: none !important;
+   outline: 0 none !important;
+}
+img {
+   height: auto;
+   width: auto;
+   border: 0 none;
+}
+.main .capitalize {
+   text-transform: capitalize !important;
+}
+.main .uppercase {
+   text-transform: uppercase !important;
+}
+.main .lowercase {
+   text-transform: lowercase !important;
+}
+.main .shadow {
+   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+   -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+   -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+   -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+   -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+}
+.main .shadow-alt {
+   box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1);
+   -moz-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1);
+   -ms-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1);
+   -o-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1);
+   -webkit-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1);
+}
+.main .radius {
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   -ms-border-radius: 2px;
+   -o-border-radius: 2px;
+   border-radius: 2px;
+}
+.main .radius-alt {
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+   border-radius: 3px;
+}
+.main .radius-alter {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   border-radius: 5px;
+}
+.main .circle, .round {
+   -webkit-border-radius: 100%;
+   -moz-border-radius: 100%;
+   -ms-border-radius: 100%;
+   -o-border-radius: 100%;
+   border-radius: 100%;
+}
+.main .btn, .button {
+   background: #57DD6B !important;
+   border-bottom: 4px solid #27C940 !important;
+   -webkit-appearance: none !important;
+}
+.main .btn:hover, .button:hover {
+   background: #6bd560 !important;
+}
+.main .hidden {
+   display: none !important;
+}
+.main .invisible {
+   visibility: hidden !important;
+}
+.main .fixed {
+   position: fixed;
+}
+.left {
+   float: left;
+}
+.right {
+   float: right;
+}
+.clear {
+   clear: both;
+}
+.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.clearfix:before, .clearfix:after {
+   content: " ";
+   display: table;
+}
+.clearfix:after {
+   clear: both;
+}
+.webtwicons, .webtwicons:before, .webtwicons:after {
+   z-index: 9 !important;
+   cursor: pointer;
+}
+.main .btn-facebook, .btn-fb {
+   background: #3B599A;
+   border-bottom: 2px solid #334E84;
+}
+.main .btn-twitter, .btn-twt {
+   background: #50ABF1;
+   border-bottom: 2px solid #2D9CEE;
+}
+.main .btn-google, .btn-gp {
+   background: #DF4A32;
+   border-bottom: 2px solid #BA341D;
+}
+.main .btn-github, .btn-git {
+   background: #464646;
+   border-bottom: 2px solid #3E3E3E;
+}
+.main .btn-tumblr, .btn-tmb {}
+.main .flat, .flat-button, .flat-btn {
+   border: 0 none !important;
+   border-bottom: 0 none !important;
+   border-top: 0 none !important;
+   border-right: 0 none !important;
+   border-left: 0 none !important;
+   outline: 0 none !important;
+}
+.inline_code {
+   font-family: Consolas, "Source Code Pro", Menlo, Monaco, monospace;
+   padding: 1px 3px 1px 3px;
+   width: auto !important;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+   border-radius: 3px;
+   background: #e8e8e8;
+   font-size: 1rem;
+}
+
+/* End Basic Reset Styles */
+
+
+/*START MAIN PAGE*/
+
+.main .top-stripe {
+   background: url("../img/top2.png");
+   margin-top: 0px;
+   height: 6px;
+   position: fixed !important;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   z-index: 9999 !important;
+}
+.main #header {
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -o-user-select: none;
+   background: #fff;
+   width: auto;
+   margin-top: 6px;
+   height: 100px;
+   border-bottom: 7px solid #e9e9e9;
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   z-index: 9999 !important;
+}
+.main #header .desktop_logo {
+   background: url("../img/webtwic-logo-250x100.png") no-repeat;
+   background-color: #f2f2f2;
+   text-indent: -99999px;
+   text-align: center;
+   margin-right: auto;
+   margin-left: auto;
+   font-size: 40px;
+   display: block;
+   color: #6699CC;
+   height: 100px;
+   width: 250px;
+}
+.main .mobile_header {
+   -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+   -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+   -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+   -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+   z-index: 9999 !important;
+   background: #fff;
+   position: fixed;
+   display: none;
+   height: 60px;
+   width: auto;
+   right: 0px;
+   left: 0px;
+   top: 2px;
+}
+.main .mobile_header .mobile_logo {
+   background: url("../img/mobile_logo.png") no-repeat;
+   width: 150px;
+   height: 40px;
+   display: block;
+   vertical-align: middle;
+   float: left;
+   margin-top: 10px;
+}
+@media screen and (min-width: 860px) {
+   .main .nav-menu {
+      position: fixed;
+      height: 50px;
+      width: auto;
+      line-height: 30px;
+      margin-top: 0px;
+      top: 110px;
+      right: 0px;
+      left: 0px;
+      display: inline-block;
+   }
+   .main .active-menu:after {
+      content: "\f0d7";
+      position: absolute;
+      text-align: center;
+      font-family: webtwicons;
+      font-size: 20px;
+      color: #fff;
+      top: 36px;
+      cursor: pointer;
+      margin-left: -4px;
+   }
+   .main .nav-menu .mobile-search {
+      display: none;
+   }
+   .main .nav-menu li {
+      border-left: 1px solid rgba(0, 0, 0, 0.06);
+      box-sizing: border-box !important;
+      vertical-align: middle;
+      position: relative;
+   }
+   .main .nav-menu li a {
+      font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
+      box-sizing: border-box !important;
+      -webkit-transition: all 0.15s linear 0s;
+      -moz-transition: all 0.15s linear 0s;
+      -ms-transition: all 0.15s linear 0s;
+      -o-transition: all 0.15s linear 0s;
+      transition: all 0.15s linear 0s;
+      text-shadow: none !important;
+      text-transform: lowercase;
+      text-decoration: none;
+      position: relative;
+      font-weight: 400;
+      color: #777;
+   }
+   .main .nav-menu li a:hover {
+      background: #f4f4f4;
+      color: #7AAFC8;
+   }
+   nav > ul li a {
+      width: 103%;
+   }
+   .drop-nav li a, .flyout-nav li a {
+      width: 180px;
+   }
+   /* Start dropdown menu styles*/
+   .dropdown {
+      position: relative;
+   }
+   .dropdown:after {
+      font-family: webtwicons;
+      font-size: 0.94rem;
+      position: absolute;
+      content: "\f0d7";
+      cursor: pointer;
+      display: block;
+      right: 36px;
+      top: 11px;
+      color: #777;
+   }
+   .drop-nav {
+      border-color: rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.06) #50ABF1;
+      -webkit-border-radius: 0px 0px 3px 3px;
+      -moz-border-radius: 0px 0px 3px 3px;
+      -ms-border-radius: 0px 0px 3px 3px;
+      -o-border-radius: 0px 0px 3px 3px;
+      border-radius: 0px 0px 3px 3px;
+      border-width: 1px 1px 3px;
+      border-style: solid;
+      position: absolute;
+      background: #fff;
+      width: 180px;
+   }
+   .drop-nav li, .flyout-nav li {
+      border-left: 0 none !important;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      height: 50px;
+   }
+   .drop-nav li:hover, .flyout-nav li:hover {
+      height: 51px;
+   }
+   .drop-nav li a {
+      text-transform: capitalize !important;
+      padding: 0px !important;
+      width: 180px;
+   }
+   .drop-nav li a:hover {
+      background: #f9f9f9 !important;
+   }
+   .dropdown:hover > ul.dropNavFallback {
+      display: block;
+      height: 204px;
+   }
+   .flyout {
+      border-right: 1px solid rgba(0, 0, 0, 0.06) !important;
+      position: relative;
+   }
+   .flyout:after {
+      font-family: webtwicons;
+      position: absolute;
+      font-size: 1rem;
+      content: "\f0da";
+      cursor: pointer;
+      display: block;
+      left: 140px;
+      color: #777;
+      top: 11px;
+   }
+   .flyout-nav {
+      border-bottom: 3px solid #95DFDC !important;
+      border-right: 1px solid rgba(0, 0, 0, 0.06);
+      border-left: 1px solid rgba(0, 0, 0, 0.06);
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      -webkit-border-radius: 0px 0px 3px 3px;
+      -moz-border-radius: 0px 0px 3px 3px;
+      -ms-border-radius: 0px 0px 3px 3px;
+      -o-border-radius: 0px 0px 3px 3px;
+      border-radius: 0px 0px 3px 3px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: #f9f9f9;
+      position: absolute;
+      left: 100%;
+      top: -1px;
+   }
+   .drop-nav li [href="#"]:hover {
+      border-right: 0 none;
+   }
+   .flyout-nav li a {
+      -webkit-transition: all 0.3s linear 0s;
+      -moz-transition: all 0.3s linear 0s;
+      -ms-transition: all 0.3s linear 0s;
+      -o-transition: all 0.3s linear 0s;
+      transition: all 0.3s linear 0s;
+   }
+   .flyout-nav:first-child {
+      border-top: 0 none !important;
+   }
+   .flyout-nav li a:hover {
+      background: #fff !important;
+   }
+   .flyout:hover > .flyout-nav {
+      display: block;
+      position: absolute;
+   }
+   /* End Flyout menu styles */
+
+   .active-menu a {
+      color: #7AAFC8 !important;
+   }
+   .active-menu a:hover {
+      background: #FFF !important;
+      border-bottom: none !important;
+      border-top: none !important;
+   }
+}
+.toggle-nav {
+   display: none;
+}
+.main .nav-menu {
+   font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial !important;
+   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+   margin: 0 auto 30px auto;
+   z-index: 9999 !important;
+   align-items: center;
+   text-align: center;
+   background: #fff;
+}
+.main .nav-menu li {
+   text-align: center;
+   list-style: none;
+   display: inline-block;
+   height: 50px;
+   margin: 0px auto !important;
+}
+.main .nav-menu li a {
+   font-size: 0.94rem;
+   padding: 0 50px;
+   display: block;
+   line-height: 50px;
+}
+.dropNavFallback {
+   display: none;
+}
+.flyout-nav {
+   display: none;
+}
