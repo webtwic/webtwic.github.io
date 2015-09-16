@@ -16,7 +16,7 @@
 
       <section class="site-description left radius col-one">
 
-         <a href="" class="site-name">webtwic.</a>
+         <a href="" class="footer-logo">webtwic.</a>
 
          <p class="description-text">
 
@@ -44,23 +44,25 @@
 
          <div class="footerSectionContent">
 
-            <a href="/tags/html">html</a>, <a href="/tags/html">css</a>, <a href="/tags/html">javascript</a>,
+            <a href="/tags/html">html</a> <a href="/tags/html">css</a> <a href="/tags/html">javascript</a>
 
-            <a href="/tags/html">php</a>, <a href="/tags/html">mysql</a>, <a href="/tags/html">html5</a>,
+            <a href="/tags/html">php</a> <a href="/tags/html">mysql</a> <a href="/tags/html">html5</a>
 
-            <a href="/tags/html">css3</a>, <a href="/tags/html">js</a>, <a href="/tags/html">code</a>,
+            <a href="/tags/html">css3</a> <a href="/tags/html">js</a> <a href="/tags/html">code</a>
 
-            <a href="/tags/html">jshacks</a>, <a href="/tags/html">csshacks</a>, <a href="/tags/html">firefox</a>,
+            <a href="/tags/html">jshacks</a> <a href="/tags/html">csshacks</a> <a href="/tags/html">firefox</a>
 
-            <a href="/tags/html">chrome</a>, <a href="/tags/html">google</a>, <a href="/tags/html">startups</a>
+            <a href="/tags/html">chrome</a> <a href="/tags/html">google</a> <a href="/tags/html">startups</a>
 
-            <a href="/tags/html">safari</a>, <a href="/tags/html">opera</a>, <a href="/tags/html">internet explorer</a>,
+            <a href="/tags/html">safari</a> <a href="/tags/html">opera</a> <a href="/tags/html">coding</a>
 
-            <a href="/tags/html">facebook</a>, <a href="/tags/html">twitter</a>, <a href="/tags/html">games</a>,
+            <a href="/tags/html">facebook</a> <a href="/tags/html">twitter</a> <a href="/tags/html">games</a>
 
-            <a href="/tags/html">jquery</a>, <a href="/tags/html">programming</a>, <a href="/tags/html">software</a>,
+            <a href="/tags/html">jquery</a> <a href="/tags/html">programming</a> <a href="/tags/html">software</a>
 
-            <a href="/tags/html">tech</a>, <a href="/tags/html">technology</a>, <a href="/tags/html">android</a>, <a href="/tags/html">android</a>
+            <a href="/tags/html">tech</a> <a href="/tags/html">technology</a> <a href="/tags/html">android</a>
+
+            <a href="/tags/html">wordpress</a>
 
          </div>
 

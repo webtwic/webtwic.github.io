@@ -20,8 +20,7 @@
    <meta name="msapplication-TileColor" content="#ffffff">
    <meta name="msapplication-TileImage" content="../assets/img/favicons/ms-icon-144x144.png" />
    <meta name="theme-color" content="#ffffff" />
-   <link rel="stylesheet" href="../assets/css/global_stylesheet.css" type="text/css" media="screen"/>
-   <link rel="stylesheet" href="../assets/css/font.css" type="text/css" />
+   <link rel="stylesheet" href="../assets/css/style.css" type="text/css" media="screen"/>
    <!-- IE Compatibility shims -->
    <!--[if lt IE 9]>
    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js""></script>

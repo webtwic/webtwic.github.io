@@ -1,27 +1,55 @@
 
 
-
-<body id="responsive" class="main app page blog home-blog">
    <noscript>
       <div class="page-no-js">
          <p class="noscript-error-description">
             JavaScript is disabled in your browser. Webtwic doesn't work properly without JavaScript enabled.
-            <a class="reload_page noscript-link" target="_self" href="http://webtwic.com">Reload Page?</a> or get a better <a class="noscript-link" href="https://mozilla.org/firefox" target="_blank">browser.</a>
+            <a class="reload_page noscript-link" target="_self" href="http://webtwic.com">Reload Page?</a> or get a better <a class="noscript-link" href="https://google.com/chrome" target="_blank">browser.</a>
          </p>
          <style>
-         noscript { width: auto; z-index: 9999 !important; position: fixed !important; top: 0; right: 0; left: 0; }
-         .page-no-js { background: #FF5F5F; padding: 10px; width: auto; height: 20px; display: block; margin: 0px auto; z-index: 9999 !important; color: #fff; font-weight: bold; text-align: center; }
-         p.noscript-error-description { display: block; margin: 0px auto; }
-         a.noscript-link { color: #fff; border-bottom: 1px dotted #fff; }
-         .main .top-stripe { margin-top: 40px !important; }
-         .main #header { top: 40px !important; }
-         .main .nav-menu { margin-top: 40px !important; }
-         .main #content { margin-top: 170px !important; }
+            noscript {
+               width: auto;
+               z-index: 9999 !important;
+               position: fixed !important;
+               top: 0;
+               right: 0;
+               left: 0;
+            }
+            .page-no-js {
+               background: #FF5F5F;
+               padding: 10px;
+               width: auto;
+               height: 40px;
+               display: block;
+               margin: 0px auto;
+               z-index: 9999 !important;
+               color: #fff;
+               font-weight: bold;
+               text-align: center;
+            }
+            p.noscript-error-description {
+               display: block;
+               margin: 0px auto;
+            }
+            a.noscript-link {
+               color: #fff;
+               border-bottom: 1px dotted #fff;
+            }
+            .main .top-stripe {
+               margin-top: 40px !important;
+            }
+            .main #header {
+               top: 40px !important;
+            }
+            .main .nav-menu {
+               margin-top: 40px !important;
+            }
+            .main .site-content {
+               padding-top: 311px !important;
+            }
          </style>
       </div>
    </noscript>
-
-   <div id="disabledFeatures"></div>
 
    <div class="top-stripe"></div>
 
@@ -47,6 +75,24 @@
 
          <li><a href="../wordpress">Wordpress</a></li>
 
+         <li class="dropdown">
+
+            <a href="#">Coding</a>
+
+            <ul class="drop-nav dropNavFallback">
+
+               <li><a href="../developer-tools">Tools</a></li>
+
+               <li><a href="../developer-tips">Tips</a></li>
+
+               <li><a href="../developer-freebies">Freebies</a></li>
+
+               <li><a href="../ui-ux">UI / UX</a></li>
+
+            </ul>
+
+         </li>
+
          <li><a href="../technology">Technology</a></li>
 
          <li><a href="../videos">Videos</a></li>
@@ -61,37 +107,19 @@
 
                <li><a href="../how-to">How to</a></li>
 
-               <li class="flyout">
-
-                  <a href="#">Coding</a>
-
-                  <ul class="flyout-nav">
-
-                     <li><a href="../developer-tools">Tools</a></li>
-
-                     <li><a href="../developer-tips">Tips</a></li>
-
-                     <li><a href="../developer-freebies">Freebies</a></li>
-
-                     <li><a href="../ui-ux">UI / UX</a></li>
-
-                  </ul>
-
-               </li>
-
                <li><a href="games">Games</a></li>
+
+               <li><a href="about">About</a></li>
 
             </ul>
 
          </li>
 
-         <li><a href="about">About</a></li>
-
       </ul>
 
       <div class="mobile-header mobile_header">
 
-         <a class="mobile_logo mobile-logo" href="http://webtwic.com"></a>
+         <a class="mobile_logo float: none" href="http://webtwic.com"></a>
 
          <a class="toggle-nav" href="#"></a>
          <!-- &#9776; -->

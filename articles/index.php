@@ -5,7 +5,6 @@
 <head>
 
    <title>Articles &ndash; webtwic</title>
-   <link rel="stylesheet" href="../assets/css/articles.css" type="text/css" media="screen"/>
    <?php include '../assets/includes/header.php';?>
 
 
@@ -20,6 +19,9 @@
    * Last Modified: 14/08/2015
 
    ::-->
+
+   <body id="responsive" class="main category-page">
+
    <?php include '../assets/includes/global.php'; ?>
 
    <div class="site-content" id="content">

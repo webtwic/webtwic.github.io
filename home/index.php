@@ -13,9 +13,8 @@
 
 -->
 
-   <title>webtwic</title>
-   <link rel="stylesheet" href="../assets/css/home.css" type="text/css" />
-   <?php include '../assets/includes/header.php';?>
+<title>webtwic</title>
+<?php include '../assets/includes/header.php';?>
 
 <!---::
 
@@ -28,13 +27,14 @@
 * Last Modified: 01/09/2015
 
 ::-->
-<?php include '../assets/includes/global.php'; ?>
 
-<div class="site-content" id="content">
+<body id="responsive" class="main home">
 
-   <div class="main_wrap" id="home-posts">
+   <?php include '../assets/includes/global.php'; ?>
 
-      <div class="first-col recent-posts left">
+   <div class="site-content" id="content">
+
+      <div class="first-column recent-posts left">
 
          <article class="article radius shadow-alt">
 
@@ -279,51 +279,51 @@
       </div><!---:: First Column div ::-->
 
 
-      <div class="radius shadow left tech-news-wrap second-col" id="tech-news-wrap">
+      <div class="radius shadow left tech-news-wrap" id="tech-news-wrap">
 
          <div class="category-title"><p>TECH NEWS</p></div>
 
-         <div class="tech-news-posts"> <a href="facebook-security">Hykoo for iOS lets you shoot, edit, and add text to your own 12-second short films</a> </div>
-         <div class="tech-news-posts"> <a href="facebook-security">Sony Announces Thinner, Lighter Xperia Z4 in Japan </a> </div>
-         <div class="tech-news-posts"> <a href="facebook-security">Facebook Is Retiring Its Like Box Plugin on June 23 </a> </div>
-         <div class="tech-news-posts"> <a href="facebook-security">Write Ugly: How to Write 20 Posts In 48 Hours</a> </div>
-         <div class="tech-news-posts"> <a href="facebook-security">Facebook Improves Security by x2</a> </div>
-         <div class="tech-news-posts"> <a href="android-4.0">Android releases version 4.1</a> </div>
-         <div class="tech-news-posts"> <a href="yahoo-closes">Yahoo closes China office, sacks over 200</a> </div>
-         <div class="tech-news-posts"> <a href="microsoft-app">Microsoft Developing Software That Converts Android Phones To Windows 10</a> </div>
+         <div class="thePost"> <a href="facebook-security">Hykoo for iOS lets you shoot, edit, and add text to your own 12-second short films</a> </div>
+         <div class="thePost"> <a href="facebook-security">Sony Announces Thinner, Lighter Xperia Z4 in Japan </a> </div>
+         <div class="thePost"> <a href="facebook-security">Facebook Is Retiring Its Like Box Plugin on June 23 </a> </div>
+         <div class="thePost"> <a href="facebook-security">Write Ugly: How to Write 20 Posts In 48 Hours</a> </div>
+         <div class="thePost"> <a href="facebook-security">Facebook Improves Security by x2</a> </div>
+         <div class="thePost"> <a href="android-4.0">Android releases version 4.1</a> </div>
+         <div class="thePost"> <a href="yahoo-closes">Yahoo closes China office, sacks over 200</a> </div>
+         <div class="thePost"> <a href="microsoft-app">Microsoft Developing Software That Converts Android Phones To Windows 10</a> </div>
 
          <!---:: Breakpoint for Mobile  ::-->
 
          <div class="tech_news_break">
 
-            <div class="tech-news-posts"> <a href="browsers-got-hacked">Your Favorite Browser Just Got Hacked, But Don&rsquo;t Panic</a> </div>
-            <div class="tech-news-posts"> <a href="microsoft-windows10">Microsoft releases Windows 10</a> </div>
-            <div class="tech-news-posts"> <a href="fb-messenger">Facebook Messenger to be turned into A Platform</a> </div>
-            <div class="tech-news-posts"> <a href="design-iphone">Design Shots is a Minimalist Dribbble Client for iPhone </a> </div>
-            <div class="tech-news-posts"> <a href="facebook-security">Facebook Improves Security by x2</a> </div>
-            <div class="tech-news-posts"> <a href="design-iphone">Google launches Project Fi </a> </div>
-            <div class="tech-news-posts"> <a href="pass-free-login">Yahoo unveils password-free login</a> </div>
-            <div class="tech-news-posts"> <a href="ebola-proof">Google and tech volunteers develop ebola-proof tablet</a> </div>
-            <div class="tech-news-posts"> <a href="apple-windows-7">Apple Stops Supporting Windows 7 in Boot Camp on New MacBook Pro, MacBook Air Models</a> </div>
-            <div class="tech-news-posts"> <a href="amazon-app">Amazon Is Reportedly Working on a 'Prime for Apps' Service</a> </div>
-            <div class="tech-news-posts"> <a href="google-docs">Google Docs Lets Admins Distribute Add-ons for Full Teams</a> </div>
-            <div class="tech-news-posts"> <a href="apple-cameras">Apple Invites Cameras Into Its Secret Apple Watch Fitness Lab</a> </div>
-            <div class="tech-news-posts"> <a href="apple-tv">Apple is Reportedly Revealing a New Apple TV at WWDC</a> </div>
-            <div class="tech-news-posts"> <a href="whatsapp-fx-op">WhatsApp web client now supports Firefox and Opera</a> </div>
-            <div class="tech-news-posts"> <a href="cryptoshift-end-end">CryptoShift Adds End-to-End Encryption to Push Notifications</a> </div>
-            <div class="tech-news-posts"> <a href="moju-upgrade">Moju Upgrade Features Chat and Face Recognition </a> </div>
-            <div class="tech-news-posts"> <a href="android-5.1">The Five Things Android Finally Got Right With 5.1 </a> </div>
-            <div class="tech-news-posts"> <a href="ios-news">Random for iOS Aims to Shake up the Way You View News </a> </div>
-            <div class="tech-news-posts"> <a href="space-x-photos">SpaceX Is Letting You Use Its Official Photos </a> </div>
-            <div class="tech-news-posts"> <a href="design-iphone">Twitter for Android's 'Highlight' Will Send You Daily Top Tweets</a> </div>
-            <div class="tech-news-posts"> <a href="reuters-china">Reuters' News Sites are Currently Blocked in China </a> </div>
-            <div class="tech-news-posts"> <a href="project-spartan">Microsoft releases Project Spartan browser for Windows 10 </a> </div>
-            <div class="tech-news-posts"> <a href="facebook-photos">Facebook now allows you to put smileys on photos </a> </div>
-            <div class="tech-news-posts"> <a href="design-iphone">Yik Yak enables people post anonymously</a> </div>
-            <div class="tech-news-posts"> <a href="design-iphone">Google Keep on Android Wear Adds Note Dictation  </a> </div>
-            <div class="tech-news-posts"> <a href="design-iphone">Valve Now Lets Modders Sell Their Creations on Steam  </a> </div>
-            <div class="tech-news-posts"> <a href="design-iphone">The Apple Watch Might Be Able to Measure Blood Oxygen  </a> </div>
-            <div class="tech-news-posts"> <a href="design-iphone">ReSnap Expands Its 'Smart', Automated Photo Book Creation Platform  </a> </div>
+            <div class="thePost"> <a href="browsers-got-hacked">Your Favorite Browser Just Got Hacked, But Don&rsquo;t Panic</a> </div>
+            <div class="thePost"> <a href="microsoft-windows10">Microsoft releases Windows 10</a> </div>
+            <div class="thePost"> <a href="fb-messenger">Facebook Messenger to be turned into A Platform</a> </div>
+            <div class="thePost"> <a href="design-iphone">Design Shots is a Minimalist Dribbble Client for iPhone </a> </div>
+            <div class="thePost"> <a href="facebook-security">Facebook Improves Security by x2</a> </div>
+            <div class="thePost"> <a href="design-iphone">Google launches Project Fi </a> </div>
+            <div class="thePost"> <a href="pass-free-login">Yahoo unveils password-free login</a> </div>
+            <div class="thePost"> <a href="ebola-proof">Google and tech volunteers develop ebola-proof tablet</a> </div>
+            <div class="thePost"> <a href="apple-windows-7">Apple Stops Supporting Windows 7 in Boot Camp on New MacBook Pro, MacBook Air Models</a> </div>
+            <div class="thePost"> <a href="amazon-app">Amazon Is Reportedly Working on a 'Prime for Apps' Service</a> </div>
+            <div class="thePost"> <a href="google-docs">Google Docs Lets Admins Distribute Add-ons for Full Teams</a> </div>
+            <div class="thePost"> <a href="apple-cameras">Apple Invites Cameras Into Its Secret Apple Watch Fitness Lab</a> </div>
+            <div class="thePost"> <a href="apple-tv">Apple is Reportedly Revealing a New Apple TV at WWDC</a> </div>
+            <div class="thePost"> <a href="whatsapp-fx-op">WhatsApp web client now supports Firefox and Opera</a> </div>
+            <div class="thePost"> <a href="cryptoshift-end-end">CryptoShift Adds End-to-End Encryption to Push Notifications</a> </div>
+            <div class="thePost"> <a href="moju-upgrade">Moju Upgrade Features Chat and Face Recognition </a> </div>
+            <div class="thePost"> <a href="android-5.1">The Five Things Android Finally Got Right With 5.1 </a> </div>
+            <div class="thePost"> <a href="ios-news">Random for iOS Aims to Shake up the Way You View News </a> </div>
+            <div class="thePost"> <a href="space-x-photos">SpaceX Is Letting You Use Its Official Photos </a> </div>
+            <div class="thePost"> <a href="design-iphone">Twitter for Android's 'Highlight' Will Send You Daily Top Tweets</a> </div>
+            <div class="thePost"> <a href="reuters-china">Reuters' News Sites are Currently Blocked in China </a> </div>
+            <div class="thePost"> <a href="project-spartan">Microsoft releases Project Spartan browser for Windows 10 </a> </div>
+            <div class="thePost"> <a href="facebook-photos">Facebook now allows you to put smileys on photos </a> </div>
+            <div class="thePost"> <a href="design-iphone">Yik Yak enables people post anonymously</a> </div>
+            <div class="thePost"> <a href="design-iphone">Google Keep on Android Wear Adds Note Dictation  </a> </div>
+            <div class="thePost"> <a href="design-iphone">Valve Now Lets Modders Sell Their Creations on Steam  </a> </div>
+            <div class="thePost"> <a href="design-iphone">The Apple Watch Might Be Able to Measure Blood Oxygen  </a> </div>
+            <div class="thePost"> <a href="design-iphone">ReSnap Expands Its 'Smart', Automated Photo Book Creation Platform  </a> </div>
 
          </div><!---:: End Mobile Tech news ::-->
 
@@ -331,7 +331,7 @@
 
       </div>
 
-      <div class="third-col right">
+      <div class="third-column left">
 
          <div class="tweets-wrap radius shadow sidebar">
 
@@ -443,66 +443,33 @@
 
       <a href="#" class="to-top">Top</a>
 
-   </div><!---:: Home-posts div  ::-->
+   </div><!---:: # Content div  ::-->
 
-</div><!---:: # Content div  ::-->
+   <div class="pagination">
+      <a class="radius" href="">1</a>
 
-<?php include '../assets/includes/footer.php'; ?>
+      <a class="radius" href="">2</a>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+      <a class="radius" href="">3</a>
 
-<script src="../assets/js/vendor/modernizr.min.js" charset="utf-8" type="text/javascript"></script>
+      <a class="radius" href="">4</a>
 
-<script id="forceLibraries">
-    if (typeof jQuery === "undefined") {
-      var newjQuery = document.createElement("script");
-      newjQuery.setAttribute("id", "newjQuery");
-      newjQuery.setAttribute("src", "../assets/js/vendor/jquery-1.11.3.min.js");
-      newjQuery.setAttribute("charset", "utf-8");
-      newjQuery.setAttribute("type", "text/javascript");
-   }
-   var appendJquery = document.body.appendChild(newjQuery);
+      <a class="radius" href="">5</a>
 
-   if (typeof jQuery === "undefined") {
-      function showDisabledFeatures() {
-         var disabledFeatures = document.getElementById("disabledFeatures");
-         disabledFeatures.style.display = "block";
-      }
-      showDisabledFeatures();
-   }
-   else {
-      newjQuery.remove();
-   }
+      <a class="radius" href="">Next &nbsp;&raquo;</a>
+   </div>
 
-   if (typeof Modernizr === "undefined") {
-      var newModernizr = document.createElement("script");
-      newModernizr.setAttribute("id", "newModernizr");
-      newModernizr.setAttribute("src", "../assets/js/vendor/modernizr.min.js");
-      newModernizr.setAttribute("charset", "utf-8");
-      newModernizr.setAttribute("type", "text/javascript");
-   }
-   var appendModernizr = document.body.appendChild(newModernizr);
+   <span class="line"></span>
 
-   if (typeof Modernizr === "undefined") {
-      function showDisabledFeatures() {
-         var disabledFeatures = document.getElementById("disabledFeatures");
-         disabledFeatures.style.display = "block";
-      }
-      showDisabledFeatures();
-   }
-   else {
-      newModernizr.remove();
-   }
+   <a class="bug-holder"><span class="bug"></span></a>
 
-   // Clear Forced libraries
+   <?php include '../assets/includes/footer.php'; ?>
 
-   if (typeof jQuery === "function" && typeof Modernizr === "object") {
-      $("script#forceLibraries").remove();
-   }
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 
-</script>
-
-<script src="../assets/js/app.js" charset="utf-8" type="text/javascript"></script>
+   <script src="../assets/js/vendor/jquery-1.11.3.min.js" charset="utf-8" type="text/javascript"></script>
+   <script src="../assets/js/vendor/modernizr.min.js" charset="utf-8" type="text/javascript"></script>
+   <script src="../assets/js/app.js" charset="utf-8" type="text/javascript"></script>
 
 </body>
 

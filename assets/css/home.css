@@ -588,6 +588,7 @@ iframe a.twitter-timeline {
     -moz-border-radius: 2px 0px 0px 2px;
     -ms-border-radius: 2px 0px 0px 2px;
     -o-border-radius: 2px 0px 0px 2px;
+    border-radius: 2px 0px 0px 2px;
     border-bottom: 3px solid #27c940;
     display: inline-block;
     white-space: nowrap;
@@ -602,8 +603,8 @@ iframe a.twitter-timeline {
     opacity: 0;
 }
 
-.to-top.top-is-visible,
-.to-top.top-fade-out,
+.to-top.visible,
+.to-top.topFadeOut,
 .no-touch .to-top:hover {
    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
    -moz-transition: opacity .3s 0s, visibility 0s 0s;
@@ -611,11 +612,7 @@ iframe a.twitter-timeline {
    -o-transition: opacity .3s 0s, visibility 0s 0s;
    transition: opacity .3s 0s, visibility 0s 0s;
 }
-.to-top.top-is-visible  {
-   visibility: visible;
-   opacity: 1;
-}
-.to-top.top-fade-out  {
+.to-top.topFadeOut  {
    opacity: .7;
 }
 .no-touch .to-top:hover  {
@@ -722,11 +719,11 @@ iframe a.twitter-timeline {
 }
 .search form #submit {
    background: #558ff0 url("../img/svg/footersearch.svg") center no-repeat;
-   -webkit-transition: background 0.5s linear !important;
-   -moz-transition: background 0.5s linear !important;
-   -ms-transition: background 0.5s linear !important;
-   -o-transition: background 0.5s linear !important;
-   transition: background 0.5s linear !important;
+   -webkit-transition: opacity 0.2s linear;
+   -moz-transition: opacity 0.2s linear;
+   -ms-transition: opacity 0.2s linear;
+   -o-transition: opacity 0.2s linear;
+   transition: opacity 0.2s linear;
    -webkit-border-radius: 0px 5px 5px 0px;
    -moz-border-radius: 0px 5px 5px 0px;
    -ms-border-radius: 0px 5px 5px 0px;
@@ -742,7 +739,8 @@ iframe a.twitter-timeline {
    cursor: pointer;
 }
 .search form #submit:hover {
-   background-color: #75a7f9;
+   /*background-color: #75a7f9;*/
+   opacity: 0.9;
    cursor: pointer;
 }
 .site-description {
