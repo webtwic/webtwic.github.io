@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
    // Define Variables
    var dfvisible = $("div").hasClass("dfvisible"),
@@ -14,7 +14,7 @@ $(document).ready(function () {
 
    // Performance Fixes
    if(noAlt) {
-      function addAlt () {
+      function addAlt() {
          $(img, this).attr("alt", "...");
       }
       addAlt();
@@ -23,7 +23,7 @@ $(document).ready(function () {
    }
 
    if(noCharset) {
-      function addCharset () {
+      function addCharset() {
          $(scripts, this).attr("charset", "utf-8");
       }
       addCharset();
@@ -32,7 +32,7 @@ $(document).ready(function () {
    }
 
    if(noType) {
-      function addType () {
+      function addType() {
          $(scripts, this).attr("type", "text/javascript");
       }
       addType();
@@ -41,28 +41,28 @@ $(document).ready(function () {
    }
 
    // Notification for disabled features
-   function showDisabledFeatures () {
+   function showDisabledFeatures() {
       $(".top-stripe").before(
-         "<div id='disabledFeatures' class='dfvisible'>Certain features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color:#fff; border-bottom:1px dotted #fff;' href='https://mozilla.org/firefox'>browser.</a> <span class='close-button'></span></div>"
+         "<div id='disabledFeatures' class='dfvisible'>Certain features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color:#fff; border-bottom:1px dotted #fff;' href='https://google.com/chrome'>browser.</a> <span class='close-button'></span></div>"
       );
       $(".close-button").on("click",
-         function () {
+         function() {
             hideDisabledFeatures();
             undoSiteAdjust();
          }
       );
    }
 
-   function hideDisabledFeatures () {
+   function hideDisabledFeatures() {
       $("#disabledFeatures").removeClass("dfvisible");
    }
-   function adjustSiteContent () {
+   function adjustSiteContent() {
       $(".top-stripe").addClass("adjustedMargin");
       $("#header").addClass("adjustedTop");
       $(".nav-menu").addClass("adjustedMargin");
       $(".site-content").addClass("adjustSiteContent");
    }
-   function undoSiteAdjust () {
+   function undoSiteAdjust() {
       $(".top-stripe").removeClass("adjustedMargin");
       $("#header").removeClass("adjustedTop");
       $(".nav-menu").removeClass("adjustedMargin");
@@ -95,7 +95,7 @@ $(document).ready(function () {
       // Call reset logo transform
       resetLogoTransform();
    } else {
-      $(".mobile_logo").removeClass("float: none");
+
    }
 
    // Start Main Page
@@ -122,7 +122,7 @@ $(document).ready(function () {
 
    $("nav li ul.drop-nav").hide().removeClass("dropNavFallback");
    $("nav li.dropdown").hover(
-      function () {
+      function() {
          $("ul.drop-nav", this).stop().slideToggle(200);
       }
    );
