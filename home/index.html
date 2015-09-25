@@ -36,7 +36,7 @@
    <meta name="msapplication-TileImage" content="../assets/img/favicons/ms-icon-144x144.png" />
    <meta name="theme-color" content="#ffffff" />
 
-   <link rel="stylesheet" href="../assets/css/style.css" type="text/css" media="screen"/>
+   <link rel="stylesheet" href="../assets/css/style.css" id="main-stylesheet" type="text/css" media="screen"/>
 
    <!--[if lt IE 9]>
    <script src="../assets/fallbacks/html5shiv.min.js" type="text/javascript" charset="utf-8"></script>
@@ -65,10 +65,10 @@
    <link rel="canonical" href="http://webtwic.com" />
    <link rel="next" href="http://webtwic.com/page/2/" />
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-   <script src="../assets/js/vendor/jquery-1.11.3.min.js" charset="utf-8" type="text/javascript"></script>
-   <script src="../assets/js/vendor/modernizr.min.js" charset="utf-8" type="text/javascript"></script>
-   <script src="../assets/js/app.js" charset="utf-8" type="text/javascript"></script>
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
+   <script src="../assets/js/vendor/jquery-1.11.3.min.js" charset="utf-8" type="text/javascript" id="jquery-script"></script>
+   <script src="../assets/js/vendor/modernizr.min.js" charset="utf-8" type="text/javascript" id="modernizr-script"></script>
+   <script src="../assets/js/app.js" charset="utf-8" type="text/javascript" id="app-script"></script>
 
 </head>
 
@@ -96,14 +96,14 @@
          </p>
 
          <style>
-            noscript {width: auto; z-index: 9999 !important; position: fixed !important; top: 0; right: 0; left: 0;}
-            .page-no-js {background: #FF5F5F; padding: 10px; width: auto; height: 40px; display: block; margin: 0px auto; z-index: 9999 !important; color: #fff; font-weight: bold; text-align: center;}
-            p.noscript-error-description {display: block; margin: 0px auto;}
-            a.noscript-link {color: #fff; border-bottom: 1px dotted #fff;}
-            .main .top-stripe {margin-top: 40px !important;}
-            .main #header {top: 40px !important;}
-            .main .nav-menu {margin-top: 40px !important;}
-            .main .site-content {padding-top: 311px !important;}
+         noscript {width: auto; z-index: 9999 !important; position: fixed !important; top: 0; right: 0; left: 0;}
+         .page-no-js {background: #FF5F5F; padding: 10px; width: auto; height: 40px; display: block; margin: 0px auto; z-index: 9999 !important; color: #fff; font-weight: bold; text-align: center;}
+         p.noscript-error-description {display: block; margin: 0px auto;}
+         a.noscript-link {color: #fff; border-bottom: 1px dotted #fff;}
+         .main .top-stripe {margin-top: 40px !important;}
+         .main #header {top: 40px !important;}
+         .main .nav-menu {margin-top: 40px !important;}
+         .main .site-content {margin-top: 311px !important;}
          </style>
 
       </div>
@@ -135,7 +135,12 @@
 
          <li class="dropdown">
 
-            <a href="#">Coding</a>
+            <a href="#">Coding
+               <svg class="dropdown-arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g>
+                  <path d="M 16.682,19.674c 0.010-0.012, 0.014-0.028, 0.024-0.040l 6.982-7.714c 0.39-0.434, 0.39-1.138,0-1.572 c-0.004-0.004-0.008-0.006-0.012-0.008C 23.496,10.13, 23.244,10, 22.964,10L 8.998,10 c-0.286,0-0.54,0.138-0.722,0.352L 8.272,10.348 c-0.39,0.434-0.39,1.138,0,1.572l 6.998,7.754C 15.66,20.108, 16.292,20.108, 16.682,19.674z">
+                  </path></g>
+               </svg>
+            </a>
 
             <ul class="drop-nav dropNavFallback">
 
@@ -157,7 +162,12 @@
 
          <li class="dropdown">
 
-            <a href="#">More</a>
+            <a href="#">More
+               <svg class="dropdown-arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g>
+                  <path d="M 16.682,19.674c 0.010-0.012, 0.014-0.028, 0.024-0.040l 6.982-7.714c 0.39-0.434, 0.39-1.138,0-1.572 c-0.004-0.004-0.008-0.006-0.012-0.008C 23.496,10.13, 23.244,10, 22.964,10L 8.998,10 c-0.286,0-0.54,0.138-0.722,0.352L 8.272,10.348 c-0.39,0.434-0.39,1.138,0,1.572l 6.998,7.754C 15.66,20.108, 16.292,20.108, 16.682,19.674z">
+                  </path></g>
+               </svg>
+            </a>
 
             <ul class="drop-nav dropNavFallback">
 
@@ -175,12 +185,18 @@
 
       </ul>
 
-      <div class="mobile-header mobile_header">
+
+      <div class="mobile-header">
 
          <a class="mobile_logo" href="http://webtwic.com"></a>
 
-         <a class="toggle-nav" href="#"></a>
-         <!-- &#9776; -->
+         <a class="toggle-nav">
+            <span class="bar"></span>
+
+            <span class="bar"></span>
+
+            <span class="bar"></span>
+         </a>
 
       </div>
 
@@ -192,7 +208,11 @@
 
          <article class="article radius shadow-alt">
 
-            <time>March 18, 2015</time>
+            <time>
+               <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64"><path d="M41.172 46.828l-13.172-13.172v-17.657h8v14.343l10.828 10.828zM32 0c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32zM32 56c-13.255 0-24-10.745-24-24s10.745-24 24-24c13.255 0 24 10.745 24 24s-10.745 24-24 24z"></path></svg>
+               March 18, 2015
+            </time>
+
 
             <h3 class="article-title">
                <a href="web-dev">The truth about web development</a>
@@ -209,7 +229,7 @@
 
             <div class="read-article"> <a href="web-dev" class="read-article-text">Read article</a> </div>
 
-            <div class="article-social">
+            <div class="social-icons">
 
                <p class="arrow">Share</p>
                <a target="_blank" href="https://www.facebook.com/sharer.php"><span class="webtwicons facebook-icon"></span></a>
@@ -224,7 +244,12 @@
 
          <article class="article radius shadow-alt">
 
-            <time>March 18, 2015</time>
+            <time>
+               <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64"><path d="M41.172 46.828l-13.172-13.172v-17.657h8v14.343l10.828 10.828zM32 0c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32zM32 56c-13.255 0-24-10.745-24-24s10.745-24 24-24c13.255 0 24 10.745 24 24s-10.745 24-24 24z">
+               </path></svg>
+               March 18, 2015
+            </time>
+
             <h3 class="article-title"> <a href="fb-invitation"> How to invite numerous friends on Facebook to like a page at once</a> </h3>
 
             <div class="article-excerpt">
@@ -238,7 +263,7 @@
 
             <div class="read-article"> <a href="web-dev" class="read-article-text">Read article</a> </div>
 
-            <div class="article-social">
+            <div class="social-icons">
 
                <p class="arrow">Share</p>
                <a target="_blank" href="https://www.facebook.com/sharer.php"><span class="webtwicons facebook-icon"></span></a>
@@ -253,7 +278,12 @@
 
          <article class="article radius shadow-alt">
 
-            <time>March 18, 2015</time>
+            <time>
+               <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64"><path d="M41.172 46.828l-13.172-13.172v-17.657h8v14.343l10.828 10.828zM32 0c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32zM32 56c-13.255 0-24-10.745-24-24s10.745-24 24-24c13.255 0 24 10.745 24 24s-10.745 24-24 24z">
+               </path></svg>
+               March 18, 2015
+            </time>
+
 
             <h3 class="article-title">
                <a href="hibernate-on-win8">How to add Hibernate to Power Options in Windows 8</a>
@@ -268,7 +298,7 @@
 
             <div class="read-article"> <a href="web-dev" class="read-article-text">Read article</a> </div>
 
-            <div class="article-social">
+            <div class="social-icons">
 
                <p class="arrow">Share</p>
                <a target="_blank" href="https://www.facebook.com/sharer.php"><span class="webtwicons facebook-icon"></span></a>
@@ -283,7 +313,12 @@
 
          <article class="article radius shadow-alt">
 
-            <time>March 18, 2015</time>
+            <time>
+               <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64"><path d="M41.172 46.828l-13.172-13.172v-17.657h8v14.343l10.828 10.828zM32 0c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32zM32 56c-13.255 0-24-10.745-24-24s10.745-24 24-24c13.255 0 24 10.745 24 24s-10.745 24-24 24z">
+               </path></svg>
+               March 18, 2015
+            </time>
+
 
             <h3 class="article-title">
                <a href="revel-passwords-in-dots">Amazing! How to view passwords hidden in dots</a>
@@ -300,7 +335,7 @@
 
             <div class="read-article"> <a href="web-dev" class="read-article-text">Read article</a> </div>
 
-            <div class="article-social">
+            <div class="social-icons">
 
                <p class="arrow">Share</p>
                <a target="_blank" href="https://www.facebook.com/sharer.php"><span class="webtwicons facebook-icon"></span></a>
@@ -315,7 +350,11 @@
 
          <article class="article radius shadow-alt">
 
-            <time>March 18, 2015</time>
+            <time>
+               <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64"><path d="M41.172 46.828l-13.172-13.172v-17.657h8v14.343l10.828 10.828zM32 0c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32zM32 56c-13.255 0-24-10.745-24-24s10.745-24 24-24c13.255 0 24 10.745 24 24s-10.745 24-24 24z">
+               </path></svg>
+               March 18, 2015
+            </time>
 
             <h3 class="article-title">
                <a href="text-editors">Top 3 free text editors you should try</a>
@@ -329,7 +368,7 @@
 
             <div class="read-article"> <a href="web-dev" class="read-article-text">Read article</a> </div>
 
-            <div class="article-social">
+            <div class="social-icons">
 
                <p class="arrow">Share</p>
                <a target="_blank" href="https://www.facebook.com/sharer.php"><span class="webtwicons facebook-icon"></span></a>
@@ -344,7 +383,12 @@
 
          <article class="article radius shadow-alt">
 
-            <time>March 18, 2015</time>
+            <time>
+               <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64"><path d="M41.172 46.828l-13.172-13.172v-17.657h8v14.343l10.828 10.828zM32 0c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32zM32 56c-13.255 0-24-10.745-24-24s10.745-24 24-24c13.255 0 24 10.745 24 24s-10.745 24-24 24z">
+               </path></svg>
+               March 18, 2015
+            </time>
+
             <h3 class="article-title"> <a href="introducing-fa">Introducing... FontAwesome</a> </h3>
 
             <div class="article-excerpt">
@@ -358,7 +402,7 @@
 
             <div class="read-article"> <a href="web-dev" class="read-article-text">Read article</a> </div>
 
-            <div class="article-social">
+            <div class="social-icons">
 
                <p class="arrow">Share</p>
                <a target="_blank" href="https://www.facebook.com/sharer.php"><span class="webtwicons facebook-icon"></span></a>
@@ -373,7 +417,11 @@
 
          <article class="article radius shadow-alt">
 
-            <time>March 18, 2015</time>
+            <time>
+               <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64"><path d="M41.172 46.828l-13.172-13.172v-17.657h8v14.343l10.828 10.828zM32 0c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32zM32 56c-13.255 0-24-10.745-24-24s10.745-24 24-24c13.255 0 24 10.745 24 24s-10.745 24-24 24z">
+               </path></svg>
+               March 18, 2015
+            </time>
 
             <h3 class="article-title">
                <a href="asphalt-8">Asphalt 8: Airborne</a>
@@ -389,7 +437,7 @@
 
             <div class="read-article"><a href="web-dev" class="read-article-text">Read article</a></div>
 
-            <div class="article-social">
+            <div class="social-icons">
 
                <p class="arrow">Share</p>
                <a target="_blank" href="https://www.facebook.com/sharer.php"><span class="webtwicons facebook-icon"></span></a>
@@ -404,7 +452,12 @@
 
          <article class="article radius shadow-alt">
 
-            <time>March 18, 2015</time>
+            <time>
+               <svg class="clock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64"><path d="M41.172 46.828l-13.172-13.172v-17.657h8v14.343l10.828 10.828zM32 0c-17.673 0-32 14.327-32 32s14.327 32 32 32 32-14.327 32-32-14.327-32-32-32zM32 56c-13.255 0-24-10.745-24-24s10.745-24 24-24c13.255 0 24 10.745 24 24s-10.745 24-24 24z">
+               </path></svg>
+               March 18, 2015
+            </time>
+
 
             <h3 class="article-title">
                <a href="how-to-speed-up-firefox">How to speed up Mozilla Firefox</a>
@@ -418,7 +471,7 @@
 
             <div class="read-article"> <a href="web-dev" class="read-article-text">Read article</a> </div>
 
-            <div class="article-social">
+            <div class="social-icons">
 
                <p class="arrow">Share</p>
                <a target="_blank" href="https://www.facebook.com/sharer.php"><span class="webtwicons facebook-icon"></span></a>
@@ -433,7 +486,7 @@
       </div><!---:: First Column div ::-->
 
 
-      <div class="radius shadow left tech-news-wrap" id="tech-news-wrap">
+      <div class="radius shadow left second-column tech-news-wrap">
 
          <div class="category-title"><p>TECH NEWS</p></div>
 
@@ -493,22 +546,29 @@
             <a class="twitter-timeline" href="https://twitter.com/webtwic" data-widget-id="627849892539596800">Tweets by @webtwic</a>
 
             <script>
-               ! function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0],
-                  p = /^http:/.test(d.location) ? 'http' : 'https';
-                  if (!d.getElementById(id)) {
-                     js = d.createElement(s);
-                     js.id = id;
-                     js.src = p + "://platform.twitter.com/widgets.js";
-                     fjs.parentNode.insertBefore(js, fjs);
-                  }
-               }(document, "script", "twitter-wjs");
+            ! function(d, s, id) {
+               var js, fjs = d.getElementsByTagName(s)[0],
+               p = /^http:/.test(d.location) ? 'http' : 'https';
+               if (!d.getElementById(id)) {
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = p + "://platform.twitter.com/widgets.js";
+                  fjs.parentNode.insertBefore(js, fjs);
+               }
+            }(document, "script", "twitter-wjs");
             </script>
          </div>
 
          <div class="trends-wrap radius shadow sidebar">
 
-            <div class="category-title second-category-title"><p>Trending</p></div>
+            <div class="category-title second-category-title">
+               <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                  <polygon points="192,128 130.2,189.8 223.7,288 330.7,181.3 480,384 330.7,256 223.7,368 92.8,227.2 32,288 32,128 "></polygon>
+                  </svg>
+                  Trending
+               </p>
+            </div>
             <div class="category">
 
                <div class="category-feed"> <a href="apple-windows-7">Apple Stops Supporting Windows 7 in Boot Camp on New MacBook Pro, MacBook Air Models</a> </div>
@@ -527,8 +587,8 @@
             <form method="GET">
                <input class="sidebar-input left" type="search" name="s" placeholder="Search. e.g coding, html...">
                <button class="btn sidebar-button left">
-                  <svg class="search-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 64 64">
-                     <path d="M62.016 54.462l-15.16-12.893c-1.567-1.41-3.243-2.058-4.597-1.995 3.578-4.192 5.74-9.63 5.74-15.573 0-13.255-10.745-24-24-24s-24 10.745-24 24 10.745 24 24 24c5.944 0 11.382-2.162 15.574-5.74-0.063 1.354 0.585 3.030 1.995 4.597l12.893 15.16c2.208 2.453 5.814 2.66 8.014 0.46s1.993-5.806-0.46-8.014zM24 40c-8.836 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.163 16-16 16z" fill="#fff"></path>
+                  <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                     <path d="M62.016 54.462l-15.16-12.893c-1.567-1.41-3.243-2.058-4.597-1.995 3.578-4.192 5.74-9.63 5.74-15.573 0-13.255-10.745-24-24-24s-24 10.745-24 24 10.745 24 24 24c5.944 0 11.382-2.162 15.574-5.74-0.063 1.354 0.585 3.030 1.995 4.597l12.893 15.16c2.208 2.453 5.814 2.66 8.014 0.46s1.993-5.806-0.46-8.014zM24 40c-8.836 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.163 16-16 16z"></path>
                   </svg>
                </button>
             </form>
@@ -596,6 +656,14 @@
 
          </div>
 
+         <div class="empty-col sidebar radius shadow">
+
+         </div>
+
+         <div class="empty-col sidebar radius shadow">
+
+         </div>
+
       </div><!---:: Third Column div -->
 
       <a href="#" class="to-top">Top</a>
@@ -604,15 +672,10 @@
 
    <div class="pagination">
       <a class="radius" href="">1</a>
-
       <a class="radius" href="">2</a>
-
       <a class="radius" href="">3</a>
-
       <a class="radius" href="">4</a>
-
       <a class="radius" href="">5</a>
-
       <a class="radius" href="">Next &nbsp;&raquo;</a>
    </div>
 
@@ -623,114 +686,72 @@
    <footer class="site-footer clear" id="colophon">
 
       <div class="footer-inner">
-
          <div class="footer-search">
-
             <form method="GET">
-
                <input type="search" placeholder="Search. e.g coding, html..." name="s">
-
                <button class="submit">
-                  <svg class="search-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 64 64">
-                     <path d="M62.016 54.462l-15.16-12.893c-1.567-1.41-3.243-2.058-4.597-1.995 3.578-4.192 5.74-9.63 5.74-15.573 0-13.255-10.745-24-24-24s-24 10.745-24 24 10.745 24 24 24c5.944 0 11.382-2.162 15.574-5.74-0.063 1.354 0.585 3.030 1.995 4.597l12.893 15.16c2.208 2.453 5.814 2.66 8.014 0.46s1.993-5.806-0.46-8.014zM24 40c-8.836 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.163 16-16 16z" fill="#fff"></path>
+                  <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                     <path d="M62.016 54.462l-15.16-12.893c-1.567-1.41-3.243-2.058-4.597-1.995 3.578-4.192 5.74-9.63 5.74-15.573 0-13.255-10.745-24-24-24s-24 10.745-24 24 10.745 24 24 24c5.944 0 11.382-2.162 15.574-5.74-0.063 1.354 0.585 3.030 1.995 4.597l12.893 15.16c2.208 2.453 5.814 2.66 8.014 0.46s1.993-5.806-0.46-8.014zM24 40c-8.836 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.163 16-16 16z"></path>
                   </svg>
                </button>
-
             </form>
-
          </div>
 
          <section class="site-description left radius col-one">
-
             <a href="" class="footer-logo">webtwic.</a>
-
             <p class="description-text">
-
                A community for computer and internet tricks where beginners and professionals can learn. Including HTML5, CSS3, Javascript, jQuery, PHP, Python, UX, UI computer tricks and latest technology news ...
-
             </p>
 
             <div class="social-buttons">
 
                <a target="_blank" class="btn-footer" href="https://www.facebook.com/webtwic"> <span class="webtwicons facebook-icon"></span> </a>
-
                <a target="_blank" class="btn-footer" href="https://www.twitter.com/webtwic"> <span class="webtwicons twitter-icon"></span> </a>
-
                <a target="_blank" class="btn-footer" href="https://www.plus.google.com/webtwic"> <span class="webtwicons google-plus-icon"></span> </a>
-
                <a target="_blank" class="btn-footer" href="https://www.github.com/whizkydee"> <span class="webtwicons github-alt-icon"></span> </a>
-
             </div>
 
          </section>
 
          <section class="tagCloudWrap left footer_section">
-
             <span class="sectionTitle">TAG CLOUD</span>
-
             <div class="footerSectionContent">
 
                <a href="/tags/html">html</a> <a href="/tags/html">css</a> <a href="/tags/html">javascript</a>
-
                <a href="/tags/html">php</a> <a href="/tags/html">mysql</a> <a href="/tags/html">html5</a>
-
                <a href="/tags/html">css3</a> <a href="/tags/html">js</a> <a href="/tags/html">code</a>
-
                <a href="/tags/html">jshacks</a> <a href="/tags/html">csshacks</a> <a href="/tags/html">firefox</a>
-
                <a href="/tags/html">chrome</a> <a href="/tags/html">google</a> <a href="/tags/html">startups</a>
-
                <a href="/tags/html">safari</a> <a href="/tags/html">opera</a> <a href="/tags/html">coding</a>
-
                <a href="/tags/html">facebook</a> <a href="/tags/html">twitter</a> <a href="/tags/html">games</a>
-
                <a href="/tags/html">jquery</a> <a href="/tags/html">programming</a> <a href="/tags/html">software</a>
-
                <a href="/tags/html">tech</a> <a href="/tags/html">technology</a> <a href="/tags/html">android</a>
-
                <a href="/tags/html">wordpress</a>
-
             </div>
 
          </section>
 
          <section class="support_wrap left footer_section">
-
             <span class="sectionTitle">HELP AND SUPPORT</span>
-
             <div class="footerSectionContent">
 
                <a href="about-webtwic">About webtwic</a>
-
                <a href="contact">Contact</a>
-
                <a href="terms-of-use">Terms of Use</a>
-
                <a href="faq">FAQ</a>
-
                <a href="submit-a-post">Submit a post</a>
-
                <a href="ask-a-question"> Ask a question</a>
-
                <a href="register">Register</a>
-
                <a href="whizkydee">About whizkydee</a>
-
             </div>
-
          </section>
-
       </div>
-
    </footer>
 
    <div id="site-info">
-
       <span>&copy; 2015 Whizkydee Inc. Trademarks and brands are the property of their respective owners.</span>
-      Made with <span class="heart">❤</span> by <a class="colophon-link" href="http://whizkydee.branded.me" target="_blank">Whizkydee</a>
-
+      <span class="code"> with </span><span class="heart">❤</span> by <a class="colophon-link" href="http://whizkydee.branded.me" target="_blank">Whizkydee</a>
    </div>
-
    <div id="ft-logo"></div>
 
 </body>
