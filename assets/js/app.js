@@ -23,6 +23,7 @@ jQuery(document).ready(function() {
         noType = scripts.attr("type", null),
         noCharset = scripts.attr("charset", null),
         $to_top = $("a.to-top"),
+        is_toggle_active = $(".toggle-nav").hasClass("active"),
         height = 200;
 
    // Performance Fixes
@@ -121,15 +122,24 @@ jQuery(document).ready(function() {
    );
 
    $(".active-menu").append(
-      "<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink''><g><path d='M 16.682,19.674c 0.010-0.012, 0.014-0.028, 0.024-0.040l 6.982-7.714c 0.39-0.434, 0.39-1.138,0-1.572 c-0.004-0.004-0.008-0.006-0.012-0.008C 23.496,10.13, 23.244,10, 22.964,10L 8.998,10 c-0.286,0-0.54,0.138-0.722,0.352L 8.272,10.348 c-0.39,0.434-0.39,1.138,0,1.572l 6.998,7.754C 15.66,20.108, 16.292,20.108, 16.682,19.674z'></path></g></svg>"
+      "<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><path d='M 16.682,19.674c 0.010-0.012, 0.014-0.028, 0.024-0.040l 6.982-7.714c 0.39-0.434, 0.39-1.138,0-1.572 c-0.004-0.004-0.008-0.006-0.012-0.008C 23.496,10.13, 23.244,10, 22.964,10L 8.998,10 c-0.286,0-0.54,0.138-0.722,0.352L 8.272,10.348 c-0.39,0.434-0.39,1.138,0,1.572l 6.998,7.754C 15.66,20.108, 16.292,20.108, 16.682,19.674z'></path></g></svg>"
    );
+
+
+   if (window.outerWidth <= 860) {
+      $("ul.active").removeClass("display");
+   }
 
    $("a.toggle-nav").click(function(e) {
       $(this).toggleClass("active");
-      $("nav.nav-menu ul").toggleClass("active").slideToggle(200);
+      $("nav.nav-menu ul").slideToggle(200);
 
       e.preventDefault();
    });
+
+   if (window.outerWidth > 860) {
+      $("ul.active").addClass("display");
+   }
 
    $(window).scroll(function() {
       ($(this).scrollTop() > height) ? $to_top.addClass("topVisible"): $to_top.removeClass("topVisible topFadeOut");
