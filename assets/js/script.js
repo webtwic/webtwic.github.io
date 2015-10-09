@@ -27,28 +27,31 @@ jQuery(document).ready(function() {
         height = 200;
 
    // Performance Fixes
+   
+   // Start Performance Functions
+   function addAlt() {
+      $(img, this).attr("alt", "...");
+   }
+   function addCharset() {
+      $(scripts, this).attr("charset", "utf-8");
+   }
+   function addType() {
+      $(scripts, this).attr("type", "text/javascript");
+   }
+      
    if(noAlt) {
-      function addAlt() {
-         $(img, this).attr("alt", "...");
-      }
       addAlt();
    } else {
       return img.attr("alt");
    }
 
    if(noCharset) {
-      function addCharset() {
-         $(scripts, this).attr("charset", "utf-8");
-      }
       addCharset();
    } else {
       return scripts.attr("charset");
    }
 
    if(noType) {
-      function addType() {
-         $(scripts, this).attr("type", "text/javascript");
-      }
       addType();
    } else {
       return scripts.attr("type");
