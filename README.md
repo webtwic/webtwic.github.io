@@ -10,3 +10,5 @@ Webtwic is a community for computer and internet tweaks.
 + [Codepen] (https://codepen.io/whizkydee)
 
 + [Twitter] (https://twitter.com/whizkydee)
+
++ [Tumblr] (https://whizkydee.tumblr.com) 
