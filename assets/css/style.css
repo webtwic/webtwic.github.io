@@ -1222,19 +1222,19 @@ body.home {
    /*display: block;*/
 }
 .article .article-social a:nth-of-type(1) .tooltip {
-   left: 17.5%;
+   left: 18.5%;
 }
 .article .article-social a:nth-of-type(2) .tooltip {
-   left: 31.7%;
+   left: 32.2%;
 }
 .article .article-social a:nth-of-type(3) .tooltip {
-   left: 44.2%;
+   left: 44.3%;
 }
 .article .article-social a:nth-of-type(4) .tooltip {
-   left: 58.2%;
+   left: 57.5%;
 }
 .article .article-social a:nth-of-type(5) .tooltip {
-   left: 70.2%;
+   left: 69%;
 }
 .tech-news-wrap {
 	padding: 10px 10px 0 10px;
