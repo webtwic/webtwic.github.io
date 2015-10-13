@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 04/10/2015
+ * Last Modified: 13/10/2015
 
  * Twitter: @whizkydee, @webtwic
 
@@ -18,16 +18,16 @@ jQuery(document).ready(function() {
    // Define Variables
    var is_DisabledFeatures = $("div").hasClass("dfvisible"),
         img = $("img"),
-        noAlt = img.attr("alt", null),
+        iS_noAlt = img.attr("alt", null),
         scripts = $("script"),
-        noType = scripts.attr("type", null),
-        noCharset = scripts.attr("charset", null),
+        is_noType = scripts.attr("type", null),
+        is_noCharset = scripts.attr("charset", null),
         $to_top = $("a.to-top"),
         is_toggle_active = $(".toggle-nav").hasClass("active"),
         height = 200;
 
    // Performance Fixes
-   
+
    // Start Performance Functions
    function addAlt() {
       $(img, this).attr("alt", "...");
@@ -38,20 +38,20 @@ jQuery(document).ready(function() {
    function addType() {
       $(scripts, this).attr("type", "text/javascript");
    }
-      
-   if(noAlt) {
+
+   if(is_noAlt) {
       addAlt();
    } else {
       return img.attr("alt");
    }
 
-   if(noCharset) {
+   if(is_noCharset) {
       addCharset();
    } else {
       return scripts.attr("charset");
    }
 
-   if(noType) {
+   if(is_noType) {
       addType();
    } else {
       return scripts.attr("type");
