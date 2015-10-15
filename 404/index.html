@@ -9,7 +9,7 @@
    <style type="text/css">
       @media only screen and (max-width: 940px) {
          body.not_found {
-            width: 97%;
+            width: 100%;
          }
          div.error_wrap {
             -webkit-transform: scale(1.1);
@@ -37,14 +37,11 @@
       html {
          overflow: hidden;
       }
-      body {
-         width: 100%;
-      }
-      *:not(input) {
+      * {
          font-family: Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
          text-align: center;
       }
-      h1, h2, span{
+      h1, h2, span {
          text-align: center;
       }
       a {
@@ -63,13 +60,17 @@
          margin-top: 0.5em;
       }
       h1 span {
+         -webkit-text-shadow: -2px 3px #FFF, 0px 5px #8BE68B;
+         -moz-text-shadow: -2px 3px #FFF, 0px 5px #8BE68B;
+         -ms-text-shadow: -2px 3px #FFF, 0px 5px #8BE68B;
+         -o-text-shadow: -2px 3px #FFF, 0px 5px #8BE68B;
          text-shadow: -2px 3px #FFF, 0px 5px #8BE68B;
          font-size: 5.55rem;
       }
-      h1 *:not(:nth-child(2)) {
+      h1 .green {
          color: #8BE68B;
       }
-      h1 :nth-child(2) {
+      h1 .red {
          color: #FA8484;
          text-shadow: -2px 3px #FFF, 0px 5px #FA8484;
       }
@@ -170,6 +171,10 @@
       }
       input[type="submit"]:focus {
          border-color: #51A7E8;
+         -webkit-box-shadow: 0px 0px 5px rgba(81, 167, 232, 0.5);
+         -moz-box-shadow: 0px 0px 5px rgba(81, 167, 232, 0.5);
+         -ms-box-shadow: 0px 0px 5px rgba(81, 167, 232, 0.5);
+         -o-box-shadow: 0px 0px 5px rgba(81, 167, 232, 0.5);
          box-shadow: 0px 0px 5px rgba(81, 167, 232, 0.5);
       }
       span a {
@@ -208,7 +213,7 @@
 
 <body class="not_found">
    <div class="error_wrap"> <div class="warning_icon"></div>
-   <h1><span>4</span> <span>0</span> <span>4</span></h1>
+   <h1><span class="green">4</span> <span class="red">0</span> <span class="green">4</span></h1>
    <h2 class="error_text">Oops.</h2>
    <p class="error_description"> Sorry, the page you requested for was not found, it may have been removed or dosen't exist at all. <span>You can search for something else, or go back to our <a href="../home" title="Go back to webtwic.">homepage.</a></span> </p>
    <form method="GET">
