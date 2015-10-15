@@ -18,7 +18,7 @@ jQuery(document).ready(function() {
 	// Define Variables
 	var is_DisabledFeatures = $("div").hasClass("dfvisible"),
 		  img = $("img"),
-		  iS_noAlt = img.attr("alt", null),
+		  is_noAlt = img.attr("alt", null),
 		  scripts = $("script"),
 		  is_noType = scripts.attr("type", null),
 		  is_noCharset = scripts.attr("charset", null),
@@ -29,12 +29,15 @@ jQuery(document).ready(function() {
 	// Performance Fixes
 
 	// Start Performance Functions
+
 	function addAlt() {
 		$(img, this).attr("alt", "...");
 	}
+
 	function addCharset() {
 		$(scripts, this).attr("charset", "utf-8");
 	}
+	
 	function addType() {
 		$(scripts, this).attr("type", "text/javascript");
 	}
