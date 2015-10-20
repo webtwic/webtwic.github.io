@@ -1340,9 +1340,12 @@ body.home {
 	background: #95DFDC;
 	border-color: #00d2d2;
 }
-.tech-news-wrap .category-title p:before {
-	content: "\f0ac";
-	font-size: 0.875em;
+.tech-news-wrap .category-title p svg {
+   vertical-align: middle;
+   margin-top: -2px;
+   fill: #FFF;
+   width: 20px;
+   height: 18px;
 }
 .tweets-wrap {
 	height: 460px;
@@ -1595,7 +1598,7 @@ iframe a.twitter-timeline {
 	clear: both;
 }
 .to-top {
-	 background: #58de6c url(../img/svg/to-top-arrow.svg) no-repeat center 50%;
+	 background: #58de6c;
 	 -webkit-transition: opacity .3s 0s, visibility 0s .3s;
 	 -moz-transition: opacity .3s 0s, visibility 0s .3s;
 	 -ms-transition: opacity .3s 0s, visibility 0s .3s;
@@ -1608,7 +1611,6 @@ iframe a.twitter-timeline {
 	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 	 display: inline-block;
 	 visibility: hidden;
-	 text-indent: 100%;
 	 position: fixed;
 	 z-index: 999;
 	 bottom: 48px;
@@ -1616,6 +1618,15 @@ iframe a.twitter-timeline {
 	 width: 55px;
 	 right: 5px;
 	 opacity: 0;
+}
+.to-top svg {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 12px;
+   fill: #fff;
+   width: 29px;
+   height: 31px;
 }
 .topVisible {
 	visibility: visible;
@@ -1768,7 +1779,7 @@ body.category-page {
 	max-width: 1279px;
 	width: 94%;
 }
-.category-page .entry-header {
+.category-page .entryHeader {
 	margin-top: -20px;
 	color: #555;
 	width: 21%;
@@ -1777,7 +1788,7 @@ body.category-page {
 	margin-left: auto;
 	margin-right: auto;
 }
-.category-page .entry-header span {
+.category-page .entryHeader span {
 	color: #BEBEBE;
 }
 .category-page .posts-column {
@@ -2049,6 +2060,19 @@ body.single-post {
    background: #fff;
    height: 900px;
    width: 70%;
+}
+.single-post .mainPostContent article {
+   height: 100%;
+   padding: 20px 25px;
+}
+.mainPostContent .postMeta {
+
+}
+.mainPostContent .postMeta .postAuthor {
+
+}
+.mainPostContent .postMeta .postDate {
+
 }
 
 

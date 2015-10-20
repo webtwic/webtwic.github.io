@@ -65,13 +65,15 @@
          -ms-text-shadow: -2px 3px #FFF, 0px 5px #8BE68B;
          -o-text-shadow: -2px 3px #FFF, 0px 5px #8BE68B;
          text-shadow: -2px 3px #FFF, 0px 5px #8BE68B;
-         font-size: 5.55rem;
-      }
-      h1 .green {
          color: #8BE68B;
+         font-size: 5.55rem;
       }
       h1 .red {
          color: #FA8484;
+         -webkit-text-shadow: -2px 3px #FFF, 0px 5px #FA8484;
+         -moz-text-shadow: -2px 3px #FFF, 0px 5px #FA8484;
+         -ms-text-shadow: -2px 3px #FFF, 0px 5px #FA8484;
+         -o-text-shadow: -2px 3px #FFF, 0px 5px #FA8484;
          text-shadow: -2px 3px #FFF, 0px 5px #FA8484;
       }
       h2.error_text {
@@ -124,6 +126,7 @@
          width: 50%;
          height: 36px;
          color: #999;
+         text-align: left;
       }
       input[type="search"]:hover {
          border: 2px solid #CCC;
@@ -213,7 +216,7 @@
 
 <body class="not_found">
    <div class="error_wrap"> <div class="warning_icon"></div>
-   <h1><span class="green">4</span> <span class="red">0</span> <span class="green">4</span></h1>
+   <h1><span>4</span> <span class="red">0</span> <span>4</span></h1>
    <h2 class="error_text">Oops.</h2>
    <p class="error_description"> Sorry, the page you requested for was not found, it may have been removed or dosen't exist at all. <span>You can search for something else, or go back to our <a href="../home" title="Go back to webtwic.">homepage.</a></span> </p>
    <form method="GET">
