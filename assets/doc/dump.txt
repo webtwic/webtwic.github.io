@@ -1,0 +1,73 @@
+.mainPostContent .entry-meta {
+   height: 50px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 390px;
+}
+.mainPostContent .entry-meta:before,
+.mainPostContent .entry-meta:after {
+   content: "";
+   height: 3px;
+   background: pink;
+   width: 225px;
+   position: absolute;
+   bottom: 344px;
+}
+.mainPostContent .entry-meta:before {
+   float: left;
+   left: 54px;
+}
+.mainPostContent .entry-meta:after {
+   float: right;
+   left: 706px;
+}
+.mainPostContent .entry-meta a {
+   float: left;
+}
+.entry-meta p,
+.entry-meta time {
+   font-size: 1.2em;
+}
+.mainPostContent .entry-author p {
+   margin-top: 11px;
+}
+.mainPostContent .entry-meta .entry-date {
+   margin-top: -5px;
+   float: right;
+   color: #999;
+}
+.entry-date:before {
+   content: "\f073";
+   font-size: 2em;
+   padding-right: 5px;
+   vertical-align: middle;
+}
+.mainPostContent .entry-meta .entry-author img {
+   border-radius: 100%;
+   -webkit-border-radius: 100%;
+   -moz-border-radius: 100%;
+   -ms-border-radius: 100%;
+   -o-border-radius: 100%;
+   margin-right: 10px;
+}
+
+
+----------------------------------------------------------------------------------------
+________________________________________________________________________________________
+----------------------------------------------------------------------------------------
+________________________________________________________________________________________
+----------------------------------------------------------------------------------------
+________________________________________________________________________________________
+----------------------------------------------------------------------------------------
+________________________________________________________________________________________
+
+
+<div class="entry-meta">
+
+   <a href="" class="entry-author">
+      <img src="../assets/img/author.png" width="50" height="50">
+      <p class="right">Olaolu Olawuyi</p>
+   </a>
+   <time class="entry-date">March 18, 2015</time>
+</div>

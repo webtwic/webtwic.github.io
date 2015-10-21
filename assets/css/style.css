@@ -516,7 +516,9 @@ img {
 }
 .btn, .button {
 	background: #57DD6B;
-	border-bottom: 4px solid #27C940;
+   border-width: 0px 0px 4px 0px;
+   border-style: solid;
+   border-color: #27C940;
 	-webkit-appearance: none;
 }
 .btn:hover, .button:hover {
@@ -568,23 +570,33 @@ img {
 }
 .btn-facebook, .btn-fb {
 	background: #3B599A;
-	border-bottom: 2px solid #334E84;
+   border-width: 0px 0px 2px 0px;
+   border-color: #334E84;
+   border-style: solid;
 }
 .btn-twitter, .btn-twt {
 	background: #50ABF1;
-	border-bottom: 2px solid #2D9CEE;
+   border-width: 0px 0px 2px 0px;
+   border-color: #2D9CEE;
+   border-style: solid;
 }
 .btn-google, .btn-gp {
 	background: #DF4A32;
-	border-bottom: 2px solid #BA341D;
+   border-width: 0px 0px 2px 0px;
+   border-color: #BA341D;
+   border-style: solid;
 }
 .btn-github, .btn-git {
 	background: #464646;
-	border-bottom: 2px solid #3E3E3E;
+   border-width: 0px 0px 2px 0px;
+   border-color: #3E3E3E;
+   border-style: solid;
 }
 .btn-tumblr, .btn-tmb {
 	background: #36465d;
-	border-bottom: 2px solid #2D3E54;
+   border-width: 0px 0px 2px 0px;
+   border-color: #2D3E54;
+   border-style: solid;
 }
 .btn-linkedin {
 
@@ -2034,7 +2046,7 @@ article.post-wrap:first-child {
 ***																							  ***
 ***																							  ***
 ***										End												  ***
-***									Category-page.css												***
+***								Category-page.css									     ***
 ***																							  ***
 ***																							  ***
 ***																							  ***
@@ -2054,27 +2066,25 @@ body.single-post {
 	margin: 193px auto 0 auto;
 	height: 4200px;
 	max-width: 1279px;
-	width: 92%;
+	width: 96%;
+}
+.single-post .site-content header {
+   text-align: center;
+   color: #7FB2E5;
+   font-weight: 600;
+}
+.single-post .site-content header h1 {
+   font-size: 2.05em;
 }
 .single-post .mainPostContent {
    background: #fff;
    height: 900px;
-   width: 70%;
+   width: 72%;
 }
 .single-post .mainPostContent article {
    height: 100%;
    padding: 20px 25px;
 }
-.mainPostContent .postMeta {
-
-}
-.mainPostContent .postMeta .postAuthor {
-
-}
-.mainPostContent .postMeta .postDate {
-
-}
-
 
 /* Start Site footer */
 .main .site-footer {
