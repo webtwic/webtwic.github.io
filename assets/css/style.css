@@ -2072,10 +2072,10 @@ body.single-post {
    background: #fff;
    height: 900px;
    width: 72%;
+   padding: 20px 25px;
 }
 .single-post .mainPostContent article {
    height: 100%;
-   padding: 20px 25px;
 }
 .mainPostContent article header {
    color: #555;
