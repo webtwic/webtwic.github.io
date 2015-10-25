@@ -3,7 +3,7 @@
 <html lang="en" class="no-js">
 
 <!--
-_	_		_ _		 _
+ _	  _		_ _		 _
 | | | | ___| | | ___ | |
 | |_| |/ _ \ | |/ _ \| |
 |  _  |  __/ | | (_) |_|
@@ -101,9 +101,9 @@ _	_		_ _		 _
 			p.noscript-error-description {display: block; margin: 0px auto;}
 			a.noscript-link {color: #fff; border-bottom: 1px dotted #fff;}
 			.main .top-stripe {margin-top: 40px !important;}
-			.main #header {top: 40px !important;}
-			.main .nav-menu {margin-top: 40px !important;}
-			.main .site-content {margin-top: 311px !important;}
+			.main #header {padding-bottom: 311px !important;}
+			.main #header .logo {top: 40px !important;}
+			.main .main-menu {margin-top: 40px !important;}
 			</style>
 
 		</div>
@@ -111,98 +111,100 @@ _	_		_ _		 _
 
 	<div class="top-stripe"></div>
 
-	<header class="clear" id="header">
+	<header class="clear site-header" id="header">
 
-		<a class="desktop_logo" href="http://webtwic.com">webtwic.</a>
+		<div class="logo">
+			<a class="desktop_logo" href="http://webtwic.com">webtwic.</a>
+		</div>
+
+		<nav class="main-menu">
+
+			<ul class="active">
+
+				<form class="mobile-search" method="GET" action="s">
+
+					<input type="search" placeholder="Search...">
+
+				</form>
+
+				<li class="active-menu first-item"><a href="">Home</a></li>
+
+				<li><a href="../articles">Articles</a></li>
+
+				<li><a href="../wordpress">Wordpress</a></li>
+
+				<li class="dropdown">
+
+					<a href="#">Coding
+						<svg class="dropdown-arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<path d="M 16.682,19.674c 0.010-0.012, 0.014-0.028, 0.024-0.040l 6.982-7.714c 0.39-0.434, 0.39-1.138,0-1.572 c-0.004-0.004-0.008-0.006-0.012-0.008C 23.496,10.13, 23.244,10, 22.964,10L 8.998,10 c-0.286,0-0.54,0.138-0.722,0.352L 8.272,10.348 c-0.39,0.434-0.39,1.138,0,1.572l 6.998,7.754C 15.66,20.108, 16.292,20.108, 16.682,19.674z">
+							</path>
+						</svg>
+					</a>
+
+					<ul class="drop-nav dropNavFallback">
+
+						<li><a href="../developer-tools">Tools</a></li>
+
+						<li><a href="../developer-tips">Tips</a></li>
+
+						<li><a href="../developer-freebies">Freebies</a></li>
+
+						<li><a href="../ui-ux">UI / UX</a></li>
+
+					</ul>
+
+				</li>
+
+				<li><a href="../technology">Technology</a></li>
+
+				<li><a href="../videos">Videos</a></li>
+
+				<li class="dropdown">
+
+					<a href="#">More
+						<svg class="dropdown-arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<path d="M 16.682,19.674c 0.010-0.012, 0.014-0.028, 0.024-0.040l 6.982-7.714c 0.39-0.434, 0.39-1.138,0-1.572 c-0.004-0.004-0.008-0.006-0.012-0.008C 23.496,10.13, 23.244,10, 22.964,10L 8.998,10 c-0.286,0-0.54,0.138-0.722,0.352L 8.272,10.348 c-0.39,0.434-0.39,1.138,0,1.572l 6.998,7.754C 15.66,20.108, 16.292,20.108, 16.682,19.674z">
+							</path>
+						</svg>
+					</a>
+
+					<ul class="drop-nav dropNavFallback">
+
+						<li><a href="../android">Android</a></li>
+
+						<li><a href="../how-to">How to</a></li>
+
+						<li><a href="games">Games</a></li>
+
+						<li><a href="about">About</a></li>
+
+					</ul>
+
+				</li>
+
+			</ul>
+
+
+			<div class="mobile-header">
+
+				<a class="mobile_logo" href="http://webtwic.com"></a>
+
+				<a class="toggle-nav">
+					<span class="bar"></span>
+
+					<span class="bar"></span>
+
+					<span class="bar"></span>
+				</a>
+
+			</div>
+
+		</nav>
 
 	</header>
 
-	<nav class="nav-menu clear">
-
-		<ul class="active">
-
-			<form class="mobile-search" method="GET" action="s">
-
-				<input type="search" placeholder="Search...">
-
-			</form>
-
-			<li class="active-menu first-item"><a href="">Home</a></li>
-
-			<li><a href="../articles">Articles</a></li>
-
-			<li><a href="../wordpress">Wordpress</a></li>
-
-			<li class="dropdown">
-
-				<a href="#">Coding
-					<svg class="dropdown-arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<path d="M 16.682,19.674c 0.010-0.012, 0.014-0.028, 0.024-0.040l 6.982-7.714c 0.39-0.434, 0.39-1.138,0-1.572 c-0.004-0.004-0.008-0.006-0.012-0.008C 23.496,10.13, 23.244,10, 22.964,10L 8.998,10 c-0.286,0-0.54,0.138-0.722,0.352L 8.272,10.348 c-0.39,0.434-0.39,1.138,0,1.572l 6.998,7.754C 15.66,20.108, 16.292,20.108, 16.682,19.674z">
-						</path>
-					</svg>
-				</a>
-
-				<ul class="drop-nav dropNavFallback">
-
-					<li><a href="../developer-tools">Tools</a></li>
-
-					<li><a href="../developer-tips">Tips</a></li>
-
-					<li><a href="../developer-freebies">Freebies</a></li>
-
-					<li><a href="../ui-ux">UI / UX</a></li>
-
-				</ul>
-
-			</li>
-
-			<li><a href="../technology">Technology</a></li>
-
-			<li><a href="../videos">Videos</a></li>
-
-			<li class="dropdown">
-
-				<a href="#">More
-					<svg class="dropdown-arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<path d="M 16.682,19.674c 0.010-0.012, 0.014-0.028, 0.024-0.040l 6.982-7.714c 0.39-0.434, 0.39-1.138,0-1.572 c-0.004-0.004-0.008-0.006-0.012-0.008C 23.496,10.13, 23.244,10, 22.964,10L 8.998,10 c-0.286,0-0.54,0.138-0.722,0.352L 8.272,10.348 c-0.39,0.434-0.39,1.138,0,1.572l 6.998,7.754C 15.66,20.108, 16.292,20.108, 16.682,19.674z">
-						</path>
-					</svg>
-				</a>
-
-				<ul class="drop-nav dropNavFallback">
-
-					<li><a href="../android">Android</a></li>
-
-					<li><a href="../how-to">How to</a></li>
-
-					<li><a href="games">Games</a></li>
-
-					<li><a href="about">About</a></li>
-
-				</ul>
-
-			</li>
-
-		</ul>
-
-
-		<div class="mobile-header">
-
-			<a class="mobile_logo" href="http://webtwic.com"></a>
-
-			<a class="toggle-nav">
-				<span class="bar"></span>
-
-				<span class="bar"></span>
-
-				<span class="bar"></span>
-			</a>
-
-		</div>
-
-	</nav>
-
-	<div class="site-content" id="content">
+	<main class="site-content" id="content">
 
 		<div class="first-column recent-posts left">
 
@@ -682,7 +684,7 @@ _	_		_ _		 _
 
 		</div>
 
-		<div class="third-column left">
+		<aside class="sidebar-column left">
 
 			<div class="tweets-wrap radius shadow sidebar">
 
@@ -808,7 +810,7 @@ _	_		_ _		 _
 
 			</div>
 
-		</div><!---:: Third Column div -->
+		</aside><!---:: Third Column -->
 
 		<a href="#" class="to-top circle">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
@@ -817,7 +819,7 @@ _	_		_ _		 _
 				c-12.5,11.9-32.7,11.9-45.2,0C115.9,220.6,115.9,201.3,128.4,189.3z"/>
 			</svg></a>
 
-	</div><!---:: # Content div  ::-->
+	</main><!---:: # Content ::-->
 
 	<div class="pagination">
 		<a class="radius" href="">1</a>

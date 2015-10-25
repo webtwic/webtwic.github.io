@@ -654,7 +654,10 @@ img {
 	font-weight: normal;
 }
 .adjustSiteContent {
-	margin-top: 311px !important;
+	padding-bottom: 311px !important;
+}
+.category-page .adjustSiteContent {
+   padding-bottom: 233px !important;
 }
 .adjustedMargin {
 	margin-top: 40px !important;
@@ -673,7 +676,7 @@ img {
 	right: 0px;
 	z-index: 9999;
 }
-.main #header {
+.main #header div.logo {
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
@@ -690,7 +693,7 @@ img {
 	right: 0px;
 	z-index: 9999;
 }
-.main #header .desktop_logo {
+.main #header div.logo .desktop_logo {
 	background: url("../img/webtwic-logo-250x100.png") no-repeat;
 	text-indent: -99999px;
 	text-align: center;
@@ -728,7 +731,7 @@ img {
 	margin-top: 10px;
 }
 @media screen and (min-width: 860px) {
-	.main .nav-menu {
+	.main .main-menu {
 		position: fixed;
 		height: 50px;
 		width: auto;
@@ -739,15 +742,17 @@ img {
 		left: 0px;
 		display: inline-block;
 	}
-	.main .nav-menu .mobile-search {
+	.main .main-menu .mobile-search,
+   .main .secondary-menu .mobile-search {
 		display: none;
 	}
-	.main .nav-menu > ul.active li {
+	.main .main-menu > ul.active li {
 		border-left: 1px solid rgba(0, 0, 0, 0.06);
 		vertical-align: middle;
 		position: relative;
 	}
-	.main .nav-menu li a {
+	.main .main-menu li a,
+   .main .secondary-menu li a {
 		font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
 		/*transition: all 0.65s ease 0.02s;*/
 		-webkit-transition: all 0.3s linear;
@@ -762,7 +767,8 @@ img {
 		font-weight: 400;
 		color: #777;
 	}
-	.main .nav-menu li a:hover {
+	.main .main-menu li a:hover,
+   .main .secondary-menu li a:hover {
 		background: #f4f4f4;
 		color: #7AAFC8;
 	}
@@ -880,7 +886,7 @@ img {
 	}
 }
 
-.main .nav-menu {
+.main .main-menu {
 	font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 	margin: 0 auto 30px auto;
@@ -889,14 +895,14 @@ img {
 	text-align: center;
 	background: #fff;
 }
-.main .nav-menu li {
+.main .main-menu li {
 	text-align: center;
 	list-style: none;
 	display: inline-block;
 	height: 50px;
 	margin: 0px auto;
 }
-.main .nav-menu li a {
+.main .main-menu li a {
 	font-size: 0.94rem;
 	padding: 0 53px;
 	display: block;
@@ -920,10 +926,10 @@ img {
 
 /* Start Global responsive css */
 @media screen and (max-width:860px) {
-	#header {
+	#header div.logo {
 		display: none;
 	}
-	#responsive .nav-menu {
+	#responsive .main-menu {
 		margin-top: 62px;
 		background: #2E3A47;
 	}
@@ -962,7 +968,8 @@ img {
 		margin: 4px 0px;
 		position: relative;
 	}
-	#responsive .nav-menu .mobile-search input {
+	#responsive .main-menu .mobile-search input,
+   #responsive .secondary-menu .mobile-search input  {
 		-webkit-transition: all 0.5s ease;
 		-moz-transition: all 0.5s ease;
 		-ms-transition: all 0.5s ease;
@@ -976,10 +983,12 @@ img {
 		width: 100%;
 		color: #fff;
 	}
-	#responsive .nav-menu .mobile-search input:focus {
+	#responsive .main-menu .mobile-search input:focus,
+   #responsive .secondary-menu .mobile-search input:focus {
 		background: #293542;
 	}
-	#responsive .nav-menu li {
+	#responsive .main-menu li,
+   #responsive .secondary-menu li {
 		border-bottom: 1px solid #3B4A5A;
 		-webkit-transition:all 0.15s linear 0s;
 		-moz-transition:all 0.15s linear 0s;
@@ -988,14 +997,17 @@ img {
 		transition:all 0.15s linear 0s;
 		display: block;
 	}
-	#responsive .nav-menu li:hover,
-	#responsive .nav-menu li:active {
+	#responsive .main-menu li:hover,
+	#responsive .main-menu li:active,
+   #responsive .secondary-menu li:hover,
+	#responsive .secondary-menu li:active {
 		background: #273340;
 	}
 	#responsive .active-menu a:hover {
 		background: #273340 !important;
 	}
-	#responsive .nav-menu li a {
+	#responsive .main-menu li a,
+   #responsive .secondary-menu li a {
 		font-family: "Source Sans Pro", Calibri,"Trebuchet MS",Helvetica,Arial;
 		-webkit-transition:all 0.15s linear 0s;
 		-moz-transition:all 0.15s linear 0s;
@@ -1041,8 +1053,11 @@ body.home {
 	background: #EDEEF0;
 }
 /*START MAIN POSTS*/
+.home>header.site-header {
+   padding-bottom: 275px;
+}
 .home .site-content {
-	margin: 275px auto 50px;
+	margin: auto auto 50px;
 	height: 3700px;
 	width: 94%;
 	max-width: 1418px;
@@ -1243,7 +1258,7 @@ body.home {
    left: 44.3%;
 }
 .article .article-social a:nth-of-type(4) .tooltip {
-   left: 57.5%;
+   left: 57.45%;
 }
 .article .article-social a:nth-of-type(5) .tooltip {
    left: 69%;
@@ -1303,7 +1318,7 @@ body.home {
 	font-size: 0.75em;
 	margin-left: 4px;
 }
-.third-column {
+.sidebar-column {
 	width: 25.295%;
 	position: relative;
 	margin-left: 74.8%;
@@ -1733,7 +1748,7 @@ iframe a.twitter-timeline {
 /* Start responsive css for home */
 @media screen and (max-width:860px) {
 	.home .site-content {
-		margin: 185px auto 0px;
+		margin: auto auto 0px;
 	}
 	.first-column {
 		margin-bottom: 20px;
@@ -1744,7 +1759,7 @@ iframe a.twitter-timeline {
 	.tech_news_break {
 		display: none;
 	}
-	.third-column,
+	.sidebar-column,
 	.pagination,
 	#site-info,
 	#colophon,
@@ -1780,13 +1795,16 @@ Start Category-page.css
 body.category-page {
 	background: #F3F4F6;
 }
+.category-page>header.site-header {
+   padding-bottom: 193px;
+}
 /*STYLES FOR DROPDOWN MENU */
 
 .category-page .drop-nav:not(.flyout-nav) {
 	border-color: rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.08) #50ABF1;
 }
 .category-page .site-content {
-	margin: 193px auto 0 auto;
+	margin: auto auto 0 auto;
 	height: 4200px;
 	max-width: 1279px;
 	width: 94%;
@@ -2028,7 +2046,7 @@ article.post-wrap:first-child {
 .post-wrap .post-share a :nth-child(2) {
 	margin: 0.03em 0em 0.3em 0em;
 }
-.category-page .third-column {
+.category-page .sidebar-column {
 	margin-top: 473px;
 	margin-left: 73.8%;
 	width: 26.295%;
@@ -2060,26 +2078,83 @@ Start post-sample.css
 
 */
 body.single-post {
-   background: #F3F4F6;
+   background: #fff;
+}
+.single-post header.secondary-header {
+   margin-bottom: 240px;
+   background: #fff;
+   position: fixed;
+   z-index: 9999;
+   height: 63px;
+   width: auto;
+   right: 0;
+   left: 0;
+   top: 0;
+}
+header.secondary-header .logo {
+   height: 100%;
+   width: 170px;
+   margin-top: 0px;
+   padding-left: 6px;
+   float: left;
+   position: relative;
+   background: #F4F4F4;
+}
+header.secondary-header .logo .desktop_logo {
+   background: url("../img/secondary-logo.png") no-repeat;
+   text-indent: -99999px;
+   font-size: 40px;
+   display: block;
+   color: #6699CC;
+   height: 100%;
+   width: 100%;
+   position: relative;
+   margin-top: 7px;
+}
+@media screen and (min-width: 860px) {
+   header.secondary-header nav.secondary-menu {
+      float: left;
+      height: 100%;
+      width: auto;
+      line-height: 30px;
+   }
+   .single-post .secondary-menu > ul.active li {
+      position: relative;
+   }
+}
+.single-post nav.secondary-menu li a {
+   text-transform: uppercase;
+   letter-spacing: 0.02em;
+   font-size: 0.94rem;
+   padding: 6.5px 23px;
+   display: block;
+   line-height: 52px;
+}
+.single-post .secondary-menu li {
+	text-align: center;
+	list-style: none;
+	display: inline-block;
+	height: 100%;
+	margin: 0px auto;
 }
 .single-post .site-content {
-	margin: 193px auto 0 auto;
+	margin: auto auto 0 auto;
 	height: 4200px;
 	max-width: 1279px;
 	width: 96%;
+}
+.single-post .entry-header {
+   width: 100%;
+   background: #eee;
+   height: 180px;
+   margin-top: 87px;
+   text-align: center;
 }
 .single-post .mainPostContent {
    background: #fff;
    height: 900px;
    width: 72%;
-   padding: 5px 25px 20px 25px;
-}
-.single-post .mainPostContent article {
-   height: 100%;
-}
-.mainPostContent article header {
-   color: #555;
-   font-weight: 600;
+   padding: 0px 25px 20px 25px;
 }
 .mainPostContent article header h1 {
    font-size: 2.05em;
