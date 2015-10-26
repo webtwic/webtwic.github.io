@@ -2104,7 +2104,7 @@ header.secondary-header .logo {
    padding-left: 6px;
    float: left;
    position: relative;
-   background: #F4F4F4;
+   border-right: 2px solid rgba(0, 0, 0, 0.06);
 }
 header.secondary-header .logo .desktop_logo {
    background: url("../img/secondary-logo.png") no-repeat;
@@ -2146,11 +2146,11 @@ header.secondary-header .logo .desktop_logo {
 .single-post .entry-wrap {
    height: 900px;
    width: 100%;
+   margin-top: 80px;
 }
 .single-post .entry-wrap .entry-header {
    width: 100%;
    height: 180px;
-   margin-top: 87px;
    text-align: center;
 }
 .entry-wrap article header h1 {
