@@ -2083,7 +2083,7 @@ body.single-post {
 .single-post .site-content {
 	margin: auto auto 0 auto;
 	height: 4200px;
-	max-width: 1279px;
+	max-width: 1379px;
 	width: 100%;
 }
 .single-post header.secondary-header {
@@ -2104,7 +2104,7 @@ header.secondary-header .logo {
    padding-left: 6px;
    float: left;
    position: relative;
-   border-right: 2px solid rgba(0, 0, 0, 0.06);
+   border-right: 1px solid rgba(0, 0, 0, 0.06);
 }
 header.secondary-header .logo .desktop_logo {
    background: url("../img/secondary-logo.png") no-repeat;
@@ -2155,6 +2155,17 @@ header.secondary-header .logo .desktop_logo {
 }
 .entry-wrap article header h1 {
    font-size: 2.05em;
+}
+.single-post .entry-wrap .main-page {
+   width: 100%;
+   /*background: #fff;*/
+   height: 100%;
+}
+.entry-wrap .main-page article.single-article {
+   float: left;
+   background: #fff;
+   height: 100%;
+   width: 72%;
 }
 
 /* Start Site footer */
