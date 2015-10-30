@@ -6,3 +6,9 @@ code {
    margin: 0px;
    padding: 0.2em;
 }
+
+Responsive image height for entry-featured-image is 325px
+
+Responsive image height for entry-image-small is 347px
+
+The padding for the responsive title might be 10px

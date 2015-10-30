@@ -7,7 +7,7 @@
 
  * Date Created: 29/07/2015
 
- * Last Modified: 08/10/2015
+ * Last Modified: 29/10/2015
 
  * Twitter: @whizkydee, @webtwic
 
@@ -23,7 +23,7 @@
 
 /* Include fonts and icons */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700|Lobster);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Source+Sans+Pro:400,600,700|Source+Code+Pro:400,700|Lobster);
 
 @font-face {
   font-family: 'webtwicons';
@@ -926,6 +926,9 @@ img {
 	width: 18px;
 	height:18px;
 }
+.dropdown a:hover>svg {
+   fill: #7AAFC8;
+}
 .dropNavFallback {
 	display: none;
 }
@@ -1053,7 +1056,7 @@ Start Home.css
 
 * Date Created: 01/03/2015
 
-* Last Modified: 08/10/2015
+* Last Modified: 29/10/2015
 
 */
 
@@ -1796,7 +1799,7 @@ Start Category-page.css
 
 * Date Created: 15/07/2015
 
-* Last Modified: 08/10/2015
+* Last Modified: 29/10/2015
 
 
 */
@@ -2083,7 +2086,7 @@ Start post-sample.css
 
 * Date Created: 13/10/2015
 
-* Last Modified: 14/10/2015
+* Last Modified: 29/10/2015
 
 */
 body.single-post {
@@ -2137,7 +2140,14 @@ header.secondary-header .logo .desktop_logo {
       position: relative;
    }
 }
-.single-post nav.secondary-menu li a {
+.single-post .secondary-menu li {
+	text-align: center;
+	list-style: none;
+	display: inline-block;
+	height: 99%;
+	margin: 0px auto;
+}
+.single-post nav.secondary-menu li>a {
    text-transform: uppercase;
    letter-spacing: 0.02em;
    font-size: 0.94rem;
@@ -2145,12 +2155,12 @@ header.secondary-header .logo .desktop_logo {
    display: block;
    line-height: 52px;
 }
-.single-post .secondary-menu li {
-	text-align: center;
-	list-style: none;
-	display: inline-block;
-	height: 99%;
-	margin: 0px auto;
+.single-post nav.secondary-menu .drop-nav li a {
+   padding: 0px 55px;
+}
+.single-post nav.secondary-menu a svg.dropdown-arrow {
+   top: 1.4em;
+   right: 8px;
 }
 .single-post .entry-wrap {
    height: 900px;
@@ -2164,16 +2174,23 @@ header.secondary-header .logo .desktop_logo {
 }
 .entry-wrap header h1 {
    font-size: 2.75em;
-   padding: 0 150px;
+   padding: 0 180px;
+   /*padding: 0 150px;*/
    color: #3F5261;
-   font-weight: 600;
+   font-weight: 500;
 }
 .entry-wrap header .entry-meta * {
    position: relative;
    color: #999;
+   cursor: pointer;
+   transition: color 0.3s ease-in-out;
+}
+.entry-wrap header .entry-meta *:hover {
+   color: #555;
+   /*color: 575757;*/
 }
 .entry-wrap header span {
-   margin-right: 10px;
+   margin-right: 15px;
 }
 .entry-wrap header .entry-meta .entry-author {
 
@@ -2190,11 +2207,29 @@ header .entry-meta .entry-author a {
    vertical-align: middle;
    width: 50px;
    height: 50px;
+   margin-right: 5px;
+}
+.entry-meta svg {
+   fill: #999;
+   vertical-align: middle;
+}
+.entry-meta .entry-date {
+}
+.entry-meta .entry-date>svg {
+   width: 17px;
+   height: 16px;
+   margin: -4px 3px 0 0;
+}
+.entry-meta .entry-comments a>svg {
+   width: 16px;
+   height: 16px;
+   margin-right: 3px;
+   fill: #333;
 }
 .single-post .entry-wrap .main-page {
    width: 100%;
-   /*background: #fff;*/
-   height: 100%;
+   background: #eee;
+   padding-bottom: 100%;
 }
 .entry-wrap .main-page .post-content-column {
    float: left;
@@ -2203,7 +2238,104 @@ header .entry-meta .entry-author a {
    width: 70%;
 }
 .entry-wrap .main-page .post-content-column>article {
-
+   width: 100%;
+   position: relative;
+}
+.main-page .post-content-column>article .entry-featured-image {
+   overflow: hidden;
+   width: 100%;
+   margin-bottom: 25px;
+}
+.post-content-column>article .entry-featured-image>img {
+   height: 473px;
+   width: 100%;
+}
+.post-content-column>article .entry-featured-image .image-meta {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+   border-top: 1px solid rgba(0, 0, 0, 0.06);
+   width: 100%;
+   height: 53px;
+   background: #fff;
+   margin-top: -6px;
+}
+.image-meta .image-meta-inner {
+   height: 100%;
+   width: 88%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+}
+.post-content-column>article .entry-content {
+   padding: 0px 50px;
+}
+.post-content-column>article .entry-content p {
+   color: #4E697D;
+   line-height: 1.7;
+   margin-bottom: 1.5em;
+}
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+   color: #3F5261;
+}
+.entry-content a {
+   color: #6699CC;
+   border-bottom: 2px solid #6699CC;
+   transition: all 0.5s ease;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -ms-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   border-radius: 1px;
+   -webkit-border-radius: 1px;
+   -moz-border-radius: 1px;
+   -ms-border-radius: 1px;
+   -o-border-radius: 1px;
+}
+.entry-content a:hover {
+   color: inherit;
+   border-bottom: 2px solid #4E697D;
+}
+.entry-content h1>a,
+.entry-content h2>a,
+.entry-content h3>a,
+.entry-content h4>a,
+.entry-content h5>a,
+.entry-content h6>a {
+   border-bottom: none;
+}
+.entry-content code {
+   background: #E8F5F2;
+   padding: 1px 3.6px;
+   color: #6699CC;
+   /*color: #1BC1A1;*/
+   border-radius: 3px;
+}
+.entry-content code pre {
+   background: pink;
+   margin-left: -50px;
+   width: 111.75%;
+}
+.entry-content .entry-image-small {
+   width: 100%;
+}
+.entry-content .entry-image-small img {
+   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+   -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+   -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+   -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+   -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+   border-radius: 2px;
+   -o-border-radius: 2px;
+   -ms-border-radius: 2px;
+   -moz-border-radius: 2px;
+   -webkit-border-radius: 2px;
+   height: 520px;
+   width: 100%;
 }
 
 /* Start Site footer */
