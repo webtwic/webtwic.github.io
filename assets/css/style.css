@@ -2161,43 +2161,43 @@ header.secondary-header .logo .desktop_logo {
 	right: 8px;
 }
 header.secondary-header .header-follow-search {
-   height: 100%;
-   display: block;
-   position: relative;
-   float: left;
-   width: 31.2%;
-   border-left: 1px solid rgba(0, 0, 0, 0.06);
+	height: 100%;
+	display: block;
+	position: relative;
+	float: left;
+	width: 31.2%;
+	border-left: 1px solid rgba(0, 0, 0, 0.06);
 }
 .header-follow-search .search-wrap {
-   border-left: 1px solid rgba(0, 0, 0, 0.06);
-   transition: background 0.3s ease;
-   -o-transition: background 0.3s ease;
-   -ms-transition: background 0.3s ease;
-   -moz-transition: background 0.3s ease;
-   -webkit-transition: background 0.3s ease;
-   position: relative;
-   background: #fff;
-   float: right;
-   height: 100%;
-   display: block;
-   padding: 0 8px;
-   cursor: pointer;
+	border-left: 1px solid rgba(0, 0, 0, 0.06);
+	transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	-ms-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	position: relative;
+	background: #fff;
+	float: right;
+	height: 100%;
+	display: block;
+	padding: 0 8px;
+	cursor: pointer;
 }
 .header-follow-search .search-wrap:hover {
-   background: #F4F4F4;
-   border-left: 0 none;
+	background: #F4F4F4;
+	border-left: 0 none;
 }
 .header-follow-search .search-wrap:hover>svg {
-   fill: #666;
+	fill: #666;
 }
 .header-follow-search svg {
-   position: relative;
+	position: relative;
 }
 .header-follow-search .search-wrap>svg {
-   width: 18px;
-   height: 16px;
-   margin: 24px 10px;
-   fill: #777;
+	width: 18px;
+	height: 16px;
+	margin: 24px 10px;
+	fill: #777;
 }
 
 .single-post .entry-wrap {
@@ -2329,7 +2329,7 @@ header .entry-meta .entry-author a {
 }
 .image-meta .image-meta-inner a:nth-child(1)>svg {
 	width: 45%;
-   height: 86%;
+	height: 86%;
 }
 .image-meta .image-meta-inner a:nth-child(2)>svg {
 	width: 38%;
@@ -2421,7 +2421,7 @@ header .entry-meta .entry-author a {
 	padding: 50px;
 }
 .entry-content blockquote {
-   font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica,Arial,georgia;;
+	font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica,Arial,georgia;;
 	border-left: 3px solid #D7E4E1;
 	position: relative;
 	font-style: italic;
