@@ -2199,6 +2199,11 @@ header.secondary-header .header-follow-search {
 	margin: 24px 10px;
 	fill: #777;
 }
+.header-follow-search>.follow-icons {
+   position: relative;
+   height: 100%;
+   display: block;
+}
 
 .single-post .entry-wrap {
 	height: 900px;
