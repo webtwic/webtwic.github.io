@@ -2160,6 +2160,13 @@ header.secondary-header .logo .desktop_logo {
 	top: 1.4em;
 	right: 8px;
 }
+header.secondary-header .header-follow-search {
+   height: 100%;
+   display: block;
+   position: relative;
+   float: left;
+   width: 31.2%;
+}
 
 .single-post .entry-wrap {
 	height: 900px;
