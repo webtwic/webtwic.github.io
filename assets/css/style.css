@@ -2184,7 +2184,7 @@ header.secondary-header .header-follow-search {
    cursor: pointer;
 }
 .header-follow-search .search-wrap:hover {
-   background: #eee;
+   background: #F4F4F4;
    border-left: 0 none;
 }
 .header-follow-search .search-wrap:hover>svg {
