@@ -2401,6 +2401,9 @@ header .entry-meta .entry-author a {
    width: 100%;
    background: pink;
 }
+.post-content-column .entry-author-info .author-info-inner {
+   position: relative;
+}
 
 /* Start Site footer */
 .main .site-footer {
