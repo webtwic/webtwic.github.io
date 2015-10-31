@@ -2396,6 +2396,11 @@ header .entry-meta .entry-author a {
    height: 520px;
    width: 100%;
 }
+.main-page .post-content-column .entry-author-info {
+   height: 100px;
+   width: 100%;
+   background: #eee;
+}
 
 /* Start Site footer */
 .main .site-footer {
