@@ -2204,6 +2204,10 @@ header.secondary-header .header-follow-search {
    height: 100%;
    display: block;
 }
+.header-follow-search>.follow-icons svg {
+   display: inline-block;
+   padding: 10px;
+}
 
 .single-post .entry-wrap {
 	height: 900px;
