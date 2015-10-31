@@ -2266,12 +2266,14 @@ header .entry-meta .entry-author a {
    margin-left: auto;
    margin-right: auto;
    position: relative;
-   padding-top: 2px;
+   padding-top: 3px;
+   border-left: 1px solid rgba(0, 0, 0, 0.06);
+   padding-left: 14px;
 }
 .image-meta .image-meta-inner a {
    position: relative;
    display: inline-block;
-   width: 5%;
+   width: 11%;
    height: 90%;
    border-radius: 2px;
    margin-right: 5px;
@@ -2286,22 +2288,29 @@ header .entry-meta .entry-author a {
    left: 2px;
 }
 .image-meta .image-meta-inner a:nth-child(1)>svg {
-   width: unset;
+   width: 45%;
 }
 .image-meta .image-meta-inner a:nth-child(2)>svg {
-   width: unset;
+   width: 38%;
 }
 .image-meta .image-meta-inner a:nth-child(3)>svg {
-   width: unset;
+   width: 45%;
+   padding: 4px;
 }
 .image-meta .image-meta-inner a:nth-child(4)>svg {
-   width: unset;
+   width: 38%;
 }
 .image-meta .image-meta-inner a:nth-child(5)>svg {
-   width: unset;
+   width: 42%;
 }
 .image-meta .image-meta-inner a:nth-child(6)>svg {
-   width: unset;
+   width: 41%;
+}
+.image-meta .image-meta-inner a span.share-counter {
+   display: block;
+   color: #fff;
+   text-align: right;
+   margin: 8px 13px;
 }
 .post-content-column>article .entry-content {
    padding: 0px 50px;
