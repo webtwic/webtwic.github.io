@@ -2372,6 +2372,7 @@ header .entry-meta .entry-author a {
 	padding: 50px;
 }
 .entry-content blockquote {
+   font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica,Arial,georgia;;
 	border-left: 3px solid #E8F5F2;
 	position: relative;
 	font-style: italic;
@@ -2379,7 +2380,6 @@ header .entry-meta .entry-author a {
 	padding-left: 1em;
 	color: #6699CC;
 	font-weight: 400;
-   font-family: Calibri, "Source Sans Pro";
 }
 .entry-content .entry-image-small {
 	width: 100%;
