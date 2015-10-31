@@ -2211,20 +2211,22 @@ header .entry-meta .entry-author a {
 }
 .entry-meta svg {
    fill: #999;
+   height: 16px;
    vertical-align: middle;
+   margin-right: 3px;
 }
 .entry-meta .entry-date {
 }
 .entry-meta .entry-date>svg {
    width: 17px;
-   height: 16px;
-   margin: -4px 3px 0 0;
+   margin-top: -4px;
 }
 .entry-meta .entry-comments a>svg {
    width: 16px;
-   height: 16px;
-   margin-right: 3px;
    fill: #333;
+}
+.entry-meta .entry-category a>svg {
+   margin-top: -4px;
 }
 .single-post .entry-wrap .main-page {
    width: 100%;
