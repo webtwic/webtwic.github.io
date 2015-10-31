@@ -2266,15 +2266,15 @@ header .entry-meta .entry-author a {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	padding-top: 3px;
+	padding-top: 4px;
 	border-left: 1px solid rgba(0, 0, 0, 0.06);
 	padding-left: 14px;
 }
 .image-meta .image-meta-inner a {
 	position: relative;
 	display: inline-block;
-	width: 11%;
-	height: 90%;
+	width: 10.9%;
+	height: 82%;
 	border-radius: 2px;
 	margin-right: 5px;
 	border: none;
@@ -2298,7 +2298,7 @@ header .entry-meta .entry-author a {
 	padding: 4px;
 }
 .image-meta .image-meta-inner a:nth-child(4)>svg {
-	width: 38%;
+	width: 32%;
 }
 .image-meta .image-meta-inner a:nth-child(5)>svg {
 	width: 42%;
