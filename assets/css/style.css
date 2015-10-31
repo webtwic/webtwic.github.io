@@ -2169,12 +2169,23 @@ header.secondary-header .header-follow-search {
    border-left: 1px solid rgba(0, 0, 0, 0.06);
 }
 header.secondary-header .header-follow-search .search-wrap {
+   border-left: 1px solid rgba(0, 0, 0, 0.06);
+   transition: background 0.3s ease;
+   -o-transition: background 0.3s ease;
+   -ms-transition: background 0.3s ease;
+   -moz-transition: background 0.3s ease;
+   -webkit-transition: background 0.3s ease;
    position: relative;
+   background: #fff;
    float: right;
    height: 100%;
    display: block;
-   border-left: 1px solid rgba(0, 0, 0, 0.06);
    padding: 0 8px;
+   cursor: pointer;
+}
+header.secondary-header .header-follow-search .search-wrap:hover {
+   background: #eee;
+   border-left: 0 none;
 }
 header.secondary-header .header-follow-search svg {
    position: relative;
