@@ -2168,7 +2168,7 @@ header.secondary-header .header-follow-search {
    width: 31.2%;
    border-left: 1px solid rgba(0, 0, 0, 0.06);
 }
-header.secondary-header .header-follow-search .search-wrap {
+.header-follow-search .search-wrap {
    border-left: 1px solid rgba(0, 0, 0, 0.06);
    transition: background 0.3s ease;
    -o-transition: background 0.3s ease;
@@ -2183,14 +2183,17 @@ header.secondary-header .header-follow-search .search-wrap {
    padding: 0 8px;
    cursor: pointer;
 }
-header.secondary-header .header-follow-search .search-wrap:hover {
+.header-follow-search .search-wrap:hover {
    background: #eee;
    border-left: 0 none;
 }
-header.secondary-header .header-follow-search svg {
+.header-follow-search .search-wrap:hover>svg {
+   fill: #666;
+}
+.header-follow-search svg {
    position: relative;
 }
-header.secondary-header .header-follow-search .search-wrap>svg {
+.header-follow-search .search-wrap>svg {
    width: 18px;
    height: 16px;
    margin: 24px 10px;
