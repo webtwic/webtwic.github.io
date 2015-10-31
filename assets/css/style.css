@@ -2403,6 +2403,7 @@ header .entry-meta .entry-author a {
 }
 .post-content-column .entry-author-info .author-info-inner {
    position: relative;
+   height: 100%;
 }
 
 /* Start Site footer */
