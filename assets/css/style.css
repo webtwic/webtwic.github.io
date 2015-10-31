@@ -2166,6 +2166,7 @@ header.secondary-header .header-follow-search {
    position: relative;
    float: left;
    width: 31.2%;
+   border-left: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .single-post .entry-wrap {
