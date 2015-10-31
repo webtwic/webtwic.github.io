@@ -2204,10 +2204,28 @@ header.secondary-header .header-follow-search {
    height: 100%;
    display: block;
 }
-.header-follow-search>.follow-icons svg {
+.header-follow-search .follow-icons a svg {
    width: 11%;
-   display: inline-block;
+   display: inline-flex;
    height: 27px;
+}
+.header-follow-search .follow-icons a:nth-child(1) svg {
+
+}
+.header-follow-search .follow-icons a:nth-child(2) svg {
+
+}
+.header-follow-search .follow-icons a:nth-child(3) svg {
+
+}
+.header-follow-search .follow-icons a:nth-child(4) svg {
+
+}
+.header-follow-search .follow-icons a:nth-child(5) svg {
+
+}
+.header-follow-search .follow-icons a:nth-child(6) svg {
+
 }
 
 .single-post .entry-wrap {
