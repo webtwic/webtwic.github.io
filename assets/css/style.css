@@ -2356,6 +2356,14 @@ header .entry-meta .entry-author a {
 .entry-content h6>a {
 	border-bottom: none;
 }
+.entry-content h1>a:hover,
+.entry-content h2>a:hover,
+.entry-content h3>a:hover,
+.entry-content h4>a:hover,
+.entry-content h5>a:hover,
+.entry-content h6>a:hover {
+	border-bottom: none;
+}
 .entry-content code {
 	background: #E8F5F2;
 	padding: 1px 3.6px;
