@@ -2145,7 +2145,7 @@ header.secondary-header .logo .desktop_logo {
 	height: 99%;
 	margin: 0px auto;
 }
-.single-post nav.secondary-menu li>a {
+.main nav.secondary-menu li>a {
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
 	font-size: 0.94rem;
@@ -2153,13 +2153,14 @@ header.secondary-header .logo .desktop_logo {
 	display: block;
 	line-height: 52px;
 }
-.single-post nav.secondary-menu .drop-nav li a {
+.main nav.secondary-menu .drop-nav li a {
 	padding: 0px 55px;
 }
-.single-post nav.secondary-menu a svg.dropdown-arrow {
+.main nav.secondary-menu a svg.dropdown-arrow {
 	top: 1.4em;
 	right: 8px;
 }
+
 .single-post .entry-wrap {
 	height: 900px;
 	width: 100%;
