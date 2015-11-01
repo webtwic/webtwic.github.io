@@ -591,7 +591,7 @@ img {
 	border-color: #2D9CEE;
 }
 .btn-google, .btn-gp {
-	background: #DF4A32;
+	background: #DC4E41;
 	border-color: #BA341D;
 }
 .btn-github, .btn-git {
@@ -1220,7 +1220,7 @@ body.home {
 	color: #50ABF1;
 }
 .article .article-social a:nth-of-type(3):hover :first-child {
-	color: #DF4A32;
+	color: #DC4E41;
 }
 .article .article-social a:nth-of-type(4):hover :first-child {
 	color: #35465c;
@@ -2216,7 +2216,7 @@ header.secondary-header .header-follow-search {
    fill: #50ABF1;
 }
 .header-follow-search .follow-icons a:nth-child(3) svg {
-   fill: #DF4A32;
+   fill: #DC4E41;
 }
 .header-follow-search .follow-icons a:nth-child(4) svg {
    fill: #36465D;
@@ -2655,7 +2655,7 @@ header .entry-meta .entry-author a {
 	border-color: #50ABF1;
 }
 .social-buttons a.btn-footer:nth-child(3) {
-	border-color: #DF4A32;
+	border-color: #DC4E41;
 }
 .social-buttons a.btn-footer:nth-child(4) {
 	border-color: #464646;
@@ -2669,7 +2669,7 @@ header .entry-meta .entry-author a {
 	background: #50ABF1;
 }
 .social-buttons a.btn-footer:nth-child(3):hover {
-	background: #DF4A32;
+	background: #DC4E41;
 }
 .social-buttons a.btn-footer:nth-child(4):hover {
 	background: #464646;
