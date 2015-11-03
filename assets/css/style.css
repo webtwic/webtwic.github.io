@@ -2193,7 +2193,6 @@ header.secondary-header .header-follow-search {
 	position: relative;
 	float: left;
 	width: 31.2%;
-	border-left: 1px solid rgba(0, 0, 0, 0.06);
 }
 .header-follow-search .search-wrap {
 	border-left: 1px solid rgba(0, 0, 0, 0.06);
@@ -2230,6 +2229,7 @@ header.secondary-header .header-follow-search {
    position: absolute;
    height: 100%;
    display: block;
+   border-left: 1px solid rgba(0, 0, 0, 0.06);
 }
 .header-follow-search .follow-icons a svg {
    width: 11%;
