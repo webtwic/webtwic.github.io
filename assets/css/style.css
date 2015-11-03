@@ -2235,7 +2235,7 @@ header.secondary-header .header-follow-search {
    width: 11%;
    display: inline-flex;
    height: 18px;
-   margin: 20px 3px;
+   margin: 21px 3px;
 }
 .header-follow-search .follow-icons a:nth-child(1) svg {
    fill: #3B599A;
