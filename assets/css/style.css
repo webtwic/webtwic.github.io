@@ -2247,12 +2247,9 @@ header.secondary-header .header-follow-search {
    fill: #DC4E41;
 }
 .header-follow-search .follow-icons a:nth-child(4) svg {
-   fill: #36465D;
-}
-.header-follow-search .follow-icons a:nth-child(5) svg {
    fill: #BD081C;
 }
-.header-follow-search .follow-icons a:nth-child(6) svg {
+.header-follow-search .follow-icons a:nth-child(5) svg {
    fill: #0077B5;
 }
 
