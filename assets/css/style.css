@@ -611,32 +611,32 @@ img {
 	background: #0077B5;
 	border-color: #0764A2;
 }
-.btn-facebook.hover,
-.btn-fb.hover {
+.btn-facebook.hover:hover,
+.btn-fb.hover:hover {
 
 }
-.btn-twitter.hover,
-.btn-twt.hover {
+.btn-twitter.hover:hover,
+.btn-twt.hover:hover:hover {
 
 }
-.btn-google.hover,
-.btn-gp.hover {
+.btn-google.hover:hover,
+.btn-gp.hover:hover {
 
 }
-.btn-github.hover,
-.btn-git.hover {
+.btn-github.hover:hover,
+.btn-git.hover:hover {
 
 }
-.btn-tumblr.hover,
-.btn-tmb.hover {
+.btn-tumblr.hover:hover,
+.btn-tmb.hover:hover {
 
 }
-.btn-pinterest.hover,
-.btn-pin.hover {
+.btn-pinterest.hover:hover,
+.btn-pin.hover:hover {
 
 }
-.btn-linkedin.hover,
-.btn-in.hover {
+.btn-linkedin.hover:hover,
+.btn-in.hover:hover {
 
 }
 .flat, .flat-button, .flat-btn {
