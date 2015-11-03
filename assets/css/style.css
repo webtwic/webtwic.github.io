@@ -1358,17 +1358,18 @@ body.home {
 .sidebar-column {
 	width: 25.295%;
 	position: relative;
-	margin-left: 74.8%;
-	display: inline;
+	/*margin-left: 74.8%;*/
 }
 .sidebar {
 	background: #fff;
 	padding: 10px;
 	margin-bottom: 25px;
 	width: 100%;
+   position: relative;
 }
 .empty-col.sidebar {
 	height: 311px;
+   position: relative;
 }
 .category-title {
 	-webkit-border-radius: 2px 2px 0px 0px;
