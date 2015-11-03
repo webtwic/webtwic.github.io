@@ -611,7 +611,34 @@ img {
 	background: #0077B5;
 	border-color: #0764A2;
 }
+.btn-facebook.hover,
+.btn-fb.hover {
 
+}
+.btn-twitter.hover,
+.btn-twt.hover {
+
+}
+.btn-google.hover,
+.btn-gp.hover {
+
+}
+.btn-github.hover,
+.btn-git.hover {
+
+}
+.btn-tumblr.hover,
+.btn-tmb.hover {
+
+}
+.btn-pinterest.hover,
+.btn-pin.hover {
+
+}
+.btn-linkedin.hover,
+.btn-in.hover {
+
+}
 .flat, .flat-button, .flat-btn {
 	border: 0 none !important;
 	outline: 0 none !important;
