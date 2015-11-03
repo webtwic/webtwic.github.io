@@ -643,17 +643,8 @@ img {
 	border: 0 none !important;
 	outline: 0 none !important;
 }
-.inline_code {
-	font-family: Consolas, "Source Code Pro", Menlo, Monaco, monospace;
-	padding: 1px 3px 1px 3px;
-	width: auto;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-ms-border-radius: 3px;
-	-o-border-radius: 3px;
-	border-radius: 3px;
-	background: #e8e8e8;
-	font-size: 1rem;
+[class*="-column"] {
+   position: relative;
 }
 
 
@@ -1357,8 +1348,6 @@ body.home {
 }
 .sidebar-column {
 	width: 25.295%;
-	position: relative;
-	/*margin-left: 74.8%;*/
 }
 .sidebar {
 	background: #fff;
@@ -1387,6 +1376,7 @@ body.home {
 	font-size: 1rem;
 	color: #F9F9F9;
 	height: 36px;
+   position: relative;
 }
 .category-title p {
 	font-family:  Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
