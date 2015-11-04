@@ -2220,8 +2220,10 @@ header.secondary-header .header-follow-search {
    display: inline-block;
    border-left: 1px solid rgba(0, 0, 0, 0.06);
 }
+.header-follow-search .follow-icons a {
+   display: inline-block;
+}
 .header-follow-search .follow-icons a svg {
-   width: 11%;
    display: inline-flex;
    height: 18px;
    margin: 21px 3px;
@@ -2346,7 +2348,7 @@ header .entry-meta .entry-author a {
 }
 .image-meta .image-meta-inner {
 	height: 100%;
-	width: 88%;
+	width: 96%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -2358,7 +2360,7 @@ header .entry-meta .entry-author a {
 .image-meta .image-meta-inner a {
 	position: relative;
 	display: inline-block;
-	width: 10.9%;
+	width: 10%;
 	height: 82%;
 	border-radius: 2px;
 	margin-right: 5px;
