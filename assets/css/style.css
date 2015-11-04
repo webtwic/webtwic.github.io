@@ -2126,7 +2126,7 @@ body.single-post {
 }
 header.secondary-header .logo {
 	height: 100%;
-	width: 170px;
+	width: 163px;
 	margin-top: 0px;
 	padding-left: 6px;
 	float: left;
@@ -2142,7 +2142,7 @@ header.secondary-header .logo .desktop_logo {
 	height: 100%;
 	width: 100%;
 	position: relative;
-	margin-top: 7px;
+	margin-top: 6px;
 }
 @media screen and (min-width: 860px) {
 	header.secondary-header nav.secondary-menu {
