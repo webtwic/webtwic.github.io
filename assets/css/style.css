@@ -2150,6 +2150,8 @@ header.secondary-header .logo .desktop_logo {
 		height: 100%;
 		width: auto;
 		line-height: 30px;
+      border-right: 1px solid rgba(0, 0, 0, 0.06);
+      padding-right: 15px;
 	}
 	.single-post .secondary-menu>ul.active li {
 		position: relative;
@@ -2217,7 +2219,6 @@ header.secondary-header .header-follow-search {
 .header-follow-search>.follow-icons {
    height: 100%;
    display: inline-block;
-   border-left: 1px solid rgba(0, 0, 0, 0.06);
 }
 .header-follow-search .follow-icons a {
    display: inline-block;
