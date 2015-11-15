@@ -2179,7 +2179,7 @@ header.secondary-header .logo .desktop_logo {
 }
 header.secondary-header .header-follow-search {
 	height: 100%;
-	display: block;
+	display: inline-block;
 	position: relative;
 }
 .header-follow-search .search-wrap {
