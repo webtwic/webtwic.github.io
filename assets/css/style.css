@@ -2181,6 +2181,7 @@ header.secondary-header .header-follow-search {
 	height: 100%;
 	display: inline-block;
 	position: relative;
+   float: right;
 }
 .header-follow-search .search-wrap {
 	border-left: 1px solid rgba(0, 0, 0, 0.06);
