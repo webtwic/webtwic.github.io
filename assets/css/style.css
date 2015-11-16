@@ -2154,7 +2154,7 @@ header.secondary-header .logo {
 	border-right: 1.9px solid rgba(0, 0, 0, 0.06);
 }
 header.secondary-header .logo .desktop_logo {
-	background: url("../img/secondary-logo.png") no-repeat;
+	background: url("../img/webtwic-logos.png") no-repeat -1px -100px;
 	text-indent: -99999px;
 	font-size: 40px;
 	display: block;
