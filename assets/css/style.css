@@ -2225,6 +2225,10 @@ header.secondary-header .header-follow-search {
 }
 .header-follow-search .follow-icons a:hover svg {
    transform: scale(1.2);
+   -webkit-transform: scale(1.2);
+   -moz-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   -o-transform: scale(1.2);
 }
 .header-follow-search .follow-icons a svg {
    display: inline-flex;
