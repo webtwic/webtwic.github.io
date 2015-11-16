@@ -156,11 +156,11 @@ jQuery(document).ready(function() {
 
 	// Functions for search-icon and ui-overlay-search
 	$(".header-follow-search .search-wrap").on("click", function() {
-		$(".ui-overlay-search").fadeIn("fast");
+		$(".ui-overlay-search").fadeIn("fast").addClass("is_open");
 	});
 
 	$(".header-follow-search .close-icon").on("click", function() {
-		$(".ui-overlay-search").fadeOut("fast");
+		$(".ui-overlay-search").fadeOut("fast").removeClass("is_open");
 	});
 
 	$(".header-follow-search .search-input").on("click", function() {

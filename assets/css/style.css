@@ -2230,6 +2230,11 @@ header.secondary-header .logo .desktop_logo {
       height: 40px;
       margin: 8px 10px;
    }
+   .header-follow-search .ui-overlay-search svg.close-icon:before {
+      color: #fff;
+      content: "CLOSE";
+      display: block;
+   }
    .header-follow-search .ui-overlay-search .search-input {
       position: relative;
       width: 100%;
@@ -2243,6 +2248,8 @@ header.secondary-header .logo .desktop_logo {
       margin: 20% auto 20% auto;
       display: block;
       width: 50%;
+      padding: 5px 2px;
+      color: #fff;
    }
    .header-follow-search>.follow-icons {
       height: 100%;
