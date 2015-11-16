@@ -581,6 +581,7 @@ img {
 .display {
 	display: block !important;
 	visibility: visible;
+   opacity: 1;
 }
 .webtwicons, .webtwicons:before, .webtwicons:after {
 	z-index: 20;
@@ -590,63 +591,73 @@ img {
 	position: relative;
 	border-width: 0px 0px 2px 0px;
 	border-style: solid;
+   transition-property: all;
+   transition-duration: 0.3s;
+   transition-timing-function: ease;
+   transition-delay: 0s;
 }
 .btn-facebook, .btn-fb {
 	background: #3B599A;
 	border-color: #334E84;
 }
+.btn-facebook.hover:hover,
+.btn-fb.hover:hover {
+   background: #325091;
+   border-color: #2A457B;
+}
 .btn-twitter, .btn-twt {
 	background: #50ABF1;
 	border-color: #2D9CEE;
+}
+.btn-twitter.hover:hover,
+.btn-twt.hover:hover:hover {
+   background: #46A1E7;
+   border-color: #2392E4;
 }
 .btn-google, .btn-gp {
 	background: #DC4E41;
 	border-color: #BA341D;
 }
+.btn-google.hover:hover,
+.btn-gp.hover:hover {
+   background: #D24437;
+   border-color: #B02A13;
+}
 .btn-github, .btn-git {
 	background: #464646;
 	border-color: #3E3E3E;
-	border-style: solid;
+}
+.btn-github.hover:hover,
+.btn-git.hover:hover {
+   background: #464646;
+   border-color: #3E3E3E;
 }
 .btn-tumblr, .btn-tmb {
 	background: #36465d;
 	border-color: #2D3E54;
 }
+.btn-tumblr.hover:hover,
+.btn-tmb.hover:hover {
+   background: #2C3C53;
+   border-color: #23344A;
+}
 .btn-pinterest, .btn-pin {
 	background: #BD081C;
 	border-color: #9B0001;
+}
+.btn-pinterest.hover:hover,
+.btn-pin.hover:hover {
+   background: #B30012;
+   border-color: #910000;
 }
 .btn-linkedin, .btn-in {
 	background: #0077B5;
 	border-color: #0764A2;
 }
-.btn-facebook.hover:hover,
-.btn-fb.hover:hover {
-
-}
-.btn-twitter.hover:hover,
-.btn-twt.hover:hover:hover {
-
-}
-.btn-google.hover:hover,
-.btn-gp.hover:hover {
-
-}
-.btn-github.hover:hover,
-.btn-git.hover:hover {
-
-}
-.btn-tumblr.hover:hover,
-.btn-tmb.hover:hover {
-
-}
-.btn-pinterest.hover:hover,
-.btn-pin.hover:hover {
-
-}
 .btn-linkedin.hover:hover,
 .btn-in.hover:hover {
-
+   background: #006DAB;
+   border-color: #005A98
 }
 .flat, .flat-button, .flat-btn {
 	border: 0 none !important;
