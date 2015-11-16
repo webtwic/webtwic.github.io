@@ -100,7 +100,7 @@ jQuery(document).ready(function() {
 		hideDisabledFeatures();
 		undoSiteAdjust();
 	}
-	
+
 	if (!Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms) {
 		resetSite();
 	} else {
