@@ -2223,6 +2223,11 @@ header.secondary-header .header-follow-search {
    background: #273340;
    display: none;
 }
+.header-follow-search .ui-overlay-search svg.close-icon {
+   float: right;
+   position: relative;
+   cursor: pointer;
+}
 .header-follow-search>.follow-icons {
    height: 100%;
    display: inline-block;
