@@ -2214,6 +2214,15 @@ header.secondary-header .header-follow-search {
 	margin: 24px 10px;
 	fill: #777;
 }
+.header-follow-search .ui-overlay-search {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   background: #273340;
+   display: none;
+}
 .header-follow-search>.follow-icons {
    height: 100%;
    display: inline-block;
