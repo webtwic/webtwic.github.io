@@ -2231,10 +2231,14 @@ header.secondary-header .header-follow-search {
    -o-transform: scale(1.2);
 }
 .header-follow-search .follow-icons a svg {
+   transition: transform ease 0.2s;
+   -webkit-transition: transform ease 0.2s;
+   -moz-transition: transform ease 0.2s;
+   -ms-transition: transform ease 0.2s;
+   -o-transition: transform ease 0.2s;
    display: inline-flex;
    height: 18px;
    margin: 21px 3px;
-   transition: transform ease 0.2s;
 }
 .header-follow-search .follow-icons a:nth-child(1) svg {
    fill: #3B599A;
