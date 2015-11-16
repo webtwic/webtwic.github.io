@@ -2251,6 +2251,7 @@ header.secondary-header .logo .desktop_logo {
       height: 100%;
       display: inline-block;
       border-right: 1px solid rgba(0, 0, 0, 0.06);
+      border-left: 1px solid rgba(0, 0, 0, 0.06);
       padding: 0 30px;
    }
    .header-follow-search .follow-icons a {
@@ -2283,12 +2284,15 @@ header.secondary-header .logo .desktop_logo {
       fill: #DC4E41;
    }
    .header-follow-search .follow-icons a:nth-child(4) svg {
-      fill: #125688;
+      fill: #CD201F;
    }
    .header-follow-search .follow-icons a:nth-child(5) svg {
-      fill: #BD081C;
+      fill: #125688;
    }
    .header-follow-search .follow-icons a:nth-child(6) svg {
+      fill: #BD081C;
+   }
+   .header-follow-search .follow-icons a:nth-child(7) svg {
       fill: #0077B5;
    }
 }
