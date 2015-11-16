@@ -2186,7 +2186,6 @@ header.secondary-header .header-follow-search {
    float: right;
 }
 .header-follow-search .search-wrap {
-	border-left: 1px solid rgba(0, 0, 0, 0.06);
 	transition: background 0.3s ease;
 	-o-transition: background 0.3s ease;
 	-ms-transition: background 0.3s ease;
@@ -2202,7 +2201,6 @@ header.secondary-header .header-follow-search {
 }
 .header-follow-search .search-wrap:hover {
 	background: #F4F4F4;
-	border-left: 0 none;
 }
 .header-follow-search .search-wrap:hover>svg {
 	fill: #666;
@@ -2219,14 +2217,20 @@ header.secondary-header .header-follow-search {
 .header-follow-search>.follow-icons {
    height: 100%;
    display: inline-block;
+   border-right: 1px solid rgba(0, 0, 0, 0.06);
+   padding: 0 30px;
 }
 .header-follow-search .follow-icons a {
    display: inline-block;
+}
+.header-follow-search .follow-icons a:hover svg {
+   transform: scale(1.2);
 }
 .header-follow-search .follow-icons a svg {
    display: inline-flex;
    height: 18px;
    margin: 21px 3px;
+   transition: transform ease 0.2s;
 }
 .header-follow-search .follow-icons a:nth-child(1) svg {
    fill: #3B599A;
