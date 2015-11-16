@@ -154,6 +154,21 @@ jQuery(document).ready(function() {
 		$("span", this).eq(1).fadeOut(250);
 	});
 
+	// Functions for search-icon and ui-overlay-search
+	$(".header-follow-search .search-wrap").on("click", function() {
+		$(".ui-overlay-search").fadeIn("fast");
+	});
+
+	$(".close-icon").hover(function() {
+		$(this).addClass("spin");
+	}, function() {
+		$(this).removeClass("spin");
+	});
+
+	$(".header-follow-search .close-icon").on("click", function() {
+		$(".ui-overlay-search").fadeOut("fast");
+	});
+
 	$to_top.on("click", function(e) {
 		$("body,html").animate({
 			scrollTop: 0
