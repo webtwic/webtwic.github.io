@@ -977,7 +977,8 @@ img {
 	#header div.logo {
 		display: none;
 	}
-	#responsive .main-menu {
+	#responsive .main-menu,
+   #responsive .secondary-menu {
 		margin-top: 62px;
 		background: #2E3A47;
 	}
