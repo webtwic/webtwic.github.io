@@ -2236,6 +2236,9 @@ header.secondary-header .header-follow-search {
    float: right;
    position: relative;
    cursor: pointer;
+   fill: #fff;
+   width: 32px;
+   height: 32px;
 }
 .header-follow-search>.follow-icons {
    height: 100%;
