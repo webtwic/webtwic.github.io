@@ -159,14 +159,16 @@ jQuery(document).ready(function() {
 		$(".ui-overlay-search").fadeIn("fast");
 	});
 
-	$(".close-icon").hover(function() {
-		$(this).addClass("spin");
-	}, function() {
-		$(this).removeClass("spin");
-	});
-
 	$(".header-follow-search .close-icon").on("click", function() {
 		$(".ui-overlay-search").fadeOut("fast");
+	});
+
+	$(".header-follow-search .search-input").on("click", function() {
+		$(".search-input").attr("data-clicked", true);
+	});
+
+	$(".image-meta .image-meta-inner .cta-btns a.is_inactive").on("click", function(e) {
+		e.preventDefault();
 	});
 
 	$to_top.on("click", function(e) {
