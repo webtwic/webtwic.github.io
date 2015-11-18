@@ -2251,7 +2251,7 @@ header.secondary-header .logo .desktop_logo {
 		display: inline-block;
 		border-right: 1px solid rgba(0, 0, 0, 0.06);
 		border-left: 1px solid rgba(0, 0, 0, 0.06);
-		padding: 0 10px;
+		padding: 0 11px;
 	}
 	.header-follow-search .follow-icons a {
 		display: inline-block;
