@@ -2246,6 +2246,12 @@ header.secondary-header .logo .desktop_logo {
 		padding: 5px 2px;
 		color: #fff;
 	}
+   .header-follow-search .ui-overlay-search .search-input p {
+      text-align: center;
+      margin-top: -239px;
+      font-size: 1.05em;
+      color: #fff;
+   }
 	.header-follow-search>.follow-icons {
 		height: 100%;
 		display: inline-block;
