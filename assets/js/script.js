@@ -171,6 +171,14 @@ jQuery(document).ready(function() {
 		e.preventDefault();
 	});
 
+	//
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 100) {
+			// alert("true");
+		}
+	});
+
 	$to_top.on("click", function(e) {
 		$("body,html").animate({
 			scrollTop: 0
