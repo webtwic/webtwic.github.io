@@ -2246,6 +2246,21 @@ header.secondary-header .logo .desktop_logo {
 		padding: 5px 2px;
 		color: #fff;
 	}
+   .header-follow-search .ui-overlay-search .search-input #__expand {
+      background: #fff;
+      height: 2px;
+      width: 10%;
+      display: none;
+      /*position: absolute;*/
+      top: 30px;
+      right: 50%;
+      left: 46%;
+      transition: width ease 2s;
+   }
+   .header-follow-search .ui-overlay-search .search-input #__expand.visible {
+      display: block;
+      width: 100%;
+   }
    .header-follow-search .ui-overlay-search .search-input p {
       text-align: center;
       margin-top: -239px;
