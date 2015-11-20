@@ -996,7 +996,7 @@ img {
 		-ms-transition: all 0.15s ease;
 		-o-transition: all 0.15s ease;
 		float: right;
-		margin-top: 18px;
+		margin-top: 14px;
 		margin-right: 13px;
 		width: 26px;
 		height: 20px;
@@ -1014,7 +1014,7 @@ img {
 		width: 100%;
 		cursor: pointer;
 		height: 2px;
-		margin: 4px 0px;
+		margin: 5.5px 0px;
 		position: relative;
 	}
 	#responsive .main-menu .mobile-search input,
