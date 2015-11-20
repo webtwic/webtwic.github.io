@@ -163,10 +163,17 @@ jQuery(document).ready(function() {
 		$(".ui-overlay-search").fadeOut("fast").removeClass("is_open");
 	});
 
-	$(".header-follow-search .search-input").on("click", function() {
+	$(".header-follow-search .search-input input").focus(function() {
 		$(".search-input").attr("data-clicked", true);
+		$(".search-input input").addClass("_is-focused");
+		$("#__expand").addClass("visible");
 	});
 
+	$(".header-follow-search .search-input input").blur(function() {
+		$(".search-input").attr("data-clicked", false);
+		$(".search-input input").removeClass("_is-focused");
+		$("#__expand").removeClass("visible");
+	});
 	$(".image-meta .image-meta-inner .cta-btns a.is_inactive").on("click", function(e) {
 		e.preventDefault();
 	});
