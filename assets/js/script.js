@@ -177,6 +177,10 @@ jQuery(document).ready(function() {
 	$(".image-meta .image-meta-inner .cta-btns a.is_inactive").on("click", function(e) {
 		e.preventDefault();
 	});
+	$(document).keydown(function(e) {
+    if (e.keyCode == 27) {
+        $(".ui-overlay-search").fadeOut("fast").removeClass("is_open");
+    }});
 
 	//
 
