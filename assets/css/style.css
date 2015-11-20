@@ -1069,6 +1069,9 @@ img {
 	#responsive .mobile-header {
 		display: block;
 	}
+   #responsive .header-follow-search {
+      display: none;
+   }
 	.site-content [class*="-column"] {
 		float: none;
 		width: 100% !important;
@@ -2514,6 +2517,13 @@ header .entry-meta .entry-author a {
 	margin: 8.5px 13px;
 	font-size: 0.9em;
 }
+.post-meta .post-meta-inner .separator {
+   height: 100%;
+   border-left: 1px solid rgba(0, 0, 0, 0.06);
+   position: absolute;
+   bottom: 1px;
+   right: 226px;
+}
 .post-meta .post-meta-inner .cta-btns {
 	position: relative;
    margin: 7px 0;
@@ -2539,11 +2549,17 @@ header .entry-meta .entry-author a {
 	opacity: 0.85;
 	cursor: default;
 }
-.cta-btns a:nth-child(1) {
+.cta-btns .btn-demo {
    background: #0A9581;
 }
-.cta-btns a:nth-child(2) {
+.cta-btns .btn-demo:hover {
+   background: #008B77;
+}
+.cta-btns .btn-download {
    background: #6699cc;
+}
+.cta-btns .btn-download:hover {
+   background: #5c8fc2;
 }
 .cta-btns a:before {
    margin-right: 4px;
