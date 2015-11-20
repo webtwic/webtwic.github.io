@@ -2545,13 +2545,14 @@ header .entry-meta .entry-author a {
 .cta-btns a:nth-child(2) {
    background: #6699cc;
 }
+.cta-btns a:before {
+   margin-right: 4px;
+}
 .cta-btns a:nth-child(1):before {
    content: "\f06e";
-   margin-right: 3px;
 }
 .cta-btns a:nth-child(2):before {
    content: "\f019";
-   margin-right: 4px;
 }
 
 .post-content-column>article .entry-content {
