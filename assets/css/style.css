@@ -2232,7 +2232,9 @@ header.secondary-header .logo .desktop_logo {
 	}
 	.header-follow-search .ui-overlay-search .search-input {
 		position: relative;
-		width: 100%;
+		width: 60%;
+      display: block;
+      margin: 20% auto 20% auto;
 	}
 	.header-follow-search .ui-overlay-search .search-input input {
 		position: relative;
@@ -2240,22 +2242,19 @@ header.secondary-header .logo .desktop_logo {
 		border-color: #3B4A5A;
 		border-width: 0 0 1px 0;
 		background: transparent;
-		margin: 20% auto 20% auto;
 		display: block;
-		width: 60%;
+		width: 100%;
 		padding: 5px 2px;
 		color: #fff;
 	}
    .header-follow-search .ui-overlay-search .search-input #__expand {
       background: #fff;
       height: 2px;
+      position: relative;
+      display: block;
+      z-index: 50;
       width: 10%;
-      display: none;
-      /*position: absolute;*/
-      top: 30px;
-      right: 50%;
-      left: 46%;
-      transition: width ease 2s;
+      transition: all ease 1s;
    }
    .header-follow-search .ui-overlay-search .search-input #__expand.visible {
       display: block;
@@ -2263,7 +2262,6 @@ header.secondary-header .logo .desktop_logo {
    }
    .header-follow-search .ui-overlay-search .search-input p {
       text-align: center;
-      margin-top: -239px;
       font-size: 1.05em;
       color: #fff;
    }
