@@ -144,6 +144,7 @@ body {
 	line-height: 1.5;
 	margin: 0 auto;
 	padding: 0em;
+    background: #F3F4F6;
 }
 
 
@@ -962,7 +963,7 @@ img {
 	width: 18px;
 	height:18px;
 }
-.dropdown a:hover>svg {
+.dropdown a:hover > svg {
 	fill: #7AAFC8;
 }
 .dropNavFallback {
@@ -1105,7 +1106,7 @@ body.home {
 	background: #EDEEF0;
 }
 /*START MAIN POSTS*/
-.home>header.site-header {
+.home > header.site-header {
 	padding-bottom: 275px;
 }
 .home .site-content {
@@ -1547,7 +1548,7 @@ iframe a.twitter-timeline {
 .freebie-item:hover {
 	background: #f5f5f5;
 }
-.freebie-item:hover>span {
+.freebie-item:hover > span {
 	color: #89BED7;
 }
 .freebie-item span {
@@ -1843,10 +1844,7 @@ Start Category-page.css
 
 */
 
-body.category-page {
-	background: #F3F4F6;
-}
-.category-page>header.site-header {
+.category-page > header.site-header {
 	padding-bottom: 193px;
 }
 /*STYLES FOR DROPDOWN MENU */
@@ -2128,9 +2126,6 @@ Start post-sample.css
 * Last Modified: 16/11/2015
 
 */
-body.single-post {
-	background: #F3F4F6;
-}
 .single-post .site-content {
 	margin: auto auto 0 auto;
 	height: 5800px;
@@ -2176,7 +2171,7 @@ header.secondary-header .logo .desktop_logo {
 		line-height: 30px;
 		padding-right: 15px;
 	}
-	.secondary-menu>ul.active li {
+	.secondary-menu > ul.active li {
 		position: relative;
 	}
 
@@ -2203,13 +2198,13 @@ header.secondary-header .logo .desktop_logo {
 	.header-follow-search .search-wrap:hover {
 		background: #F4F4F4;
 	}
-	.header-follow-search .search-wrap:hover>svg {
+	.header-follow-search .search-wrap:hover > svg {
 		fill: #666;
 	}
 	.header-follow-search svg {
 		position: relative;
 	}
-	.header-follow-search .search-wrap>svg {
+	.header-follow-search .search-wrap > svg {
 		width: 18px;
 		height: 16px;
 		margin: 24px 10px;
@@ -2283,7 +2278,7 @@ header.secondary-header .logo .desktop_logo {
       font-size: 1.05em;
       color: #6D8299;
    }
-	.header-follow-search>.follow-icons {
+	.header-follow-search > .follow-icons {
 		height: 100%;
 		display: inline-block;
 		border-right: 1px solid rgba(0, 0, 0, 0.06);
@@ -2340,7 +2335,11 @@ header.secondary-header .logo .desktop_logo {
 	height: 99%;
 	margin: 0px auto;
 }
-.main nav.secondary-menu li>a {
+.secondary-menu .active-menu svg {
+   left: 2.5em;
+   top: 3.5em;
+}
+.main nav.secondary-menu li > a {
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
 	font-size: 0.94rem;
@@ -2410,15 +2409,15 @@ header .entry-meta .entry-author a {
 }
 .entry-meta .entry-date {
 }
-.entry-meta .entry-date>svg {
+.entry-meta .entry-date > svg {
 	width: 17px;
 	margin-top: -4px;
 }
-.entry-meta .entry-comments a>svg {
+.entry-meta .entry-comments a > svg {
 	width: 16px;
 	fill: #333;
 }
-.entry-meta .entry-category a>svg {
+.entry-meta .entry-category a > svg {
 	margin-top: -4px;
 }
 .single-post .entry-wrap .main-page {
@@ -2432,20 +2431,20 @@ header .entry-meta .entry-author a {
 	height: 100%;
 	width: 70%;
 }
-.entry-wrap .main-page .post-content-column>article {
+.entry-wrap .main-page .post-content-column > article {
 	width: 100%;
 	position: relative;
 }
-.main-page .post-content-column>article .entry-featured-image {
+.main-page .post-content-column > article .entry-featured-image {
 	overflow: hidden;
 	width: 100%;
 	margin-bottom: 25px;
 }
-.post-content-column>article .entry-featured-image>img {
+.post-content-column > article .entry-featured-image > img {
 	height: 473px;
 	width: 100%;
 }
-.post-content-column>article .post-meta {
+.post-content-column > article .post-meta {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 	border-top: 1px solid rgba(0, 0, 0, 0.06);
 	width: 100%;
@@ -2490,24 +2489,24 @@ header .entry-meta .entry-author a {
 	top: 3px;
 	left: 2px;
 }
-.post-meta .post-meta-inner .__share-icons a:nth-child(1)>svg {
+.post-meta .post-meta-inner .__share-icons a:nth-child(1) > svg {
 	width: 45%;
 	height: 86%;
 }
-.post-meta .post-meta-inner .__share-icons a:nth-child(2)>svg {
+.post-meta .post-meta-inner .__share-icons a:nth-child(2) > svg {
 	width: 38%;
 }
-.post-meta .post-meta-inner .__share-icons a:nth-child(3)>svg {
+.post-meta .post-meta-inner .__share-icons a:nth-child(3) > svg {
 	width: 45%;
 	padding: 4px;
 }
-.post-meta .post-meta-inner .__share-icons a:nth-child(4)>svg {
+.post-meta .post-meta-inner .__share-icons a:nth-child(4) > svg {
 	width: 32%;
 }
-.post-meta .post-meta-inner .__share-icons a:nth-child(5)>svg {
+.post-meta .post-meta-inner .__share-icons a:nth-child(5) > svg {
 	width: 42%;
 }
-.post-meta .post-meta-inner .__share-icons a:nth-child(6)>svg {
+.post-meta .post-meta-inner .__share-icons a:nth-child(6) > svg {
 	width: 41%;
 }
 .post-meta .post-meta-inner .__share-icons a span.share-counter {
@@ -2571,10 +2570,10 @@ header .entry-meta .entry-author a {
    content: "\f019";
 }
 
-.post-content-column>article .entry-content {
+.post-content-column > article .entry-content {
 	padding: 0px 50px;
 }
-.post-content-column>article .entry-content p {
+.post-content-column > article .entry-content p {
 	color: #4E697D;
 	line-height: 1.7;
 	margin-bottom: 1.5em;
@@ -2606,20 +2605,20 @@ header .entry-meta .entry-author a {
 	color: inherit;
 	border-bottom: 2px solid #4E697D;
 }
-.entry-content h1>a,
-.entry-content h2>a,
-.entry-content h3>a,
-.entry-content h4>a,
-.entry-content h5>a,
-.entry-content h6>a {
+.entry-content h1 > a,
+.entry-content h2 > a,
+.entry-content h3 > a,
+.entry-content h4 > a,
+.entry-content h5 > a,
+.entry-content h6 > a {
 	border-bottom: none;
 }
-.entry-content h1>a:hover,
-.entry-content h2>a:hover,
-.entry-content h3>a:hover,
-.entry-content h4>a:hover,
-.entry-content h5>a:hover,
-.entry-content h6>a:hover {
+.entry-content h1 > a:hover,
+.entry-content h2 > a:hover,
+.entry-content h3 > a:hover,
+.entry-content h4 > a:hover,
+.entry-content h5 > a:hover,
+.entry-content h6 > a:hover {
 	border-bottom: none;
 }
 .entry-content code {
@@ -2679,6 +2678,29 @@ header .entry-meta .entry-author a {
 
 }
 
+
+
+/* **************************************************************************** */
+
+/******************************************************************************
+*****************************************************************************
+***																							  ***
+***																							  ***
+***																							  ***
+***										End												  ***
+***								single-post.css										  ***
+***																							  ***
+***																							  ***
+***																							  ***
+*****************************************************************************
+*****************************************************************************
+Start videos.css
+
+* Date Created: 21/11/2015
+
+* Last Modified: 21/11/2015
+
+*/
 
 
 
