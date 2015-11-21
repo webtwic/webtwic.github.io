@@ -2701,12 +2701,40 @@ Start videos.css
 
 */
 .videos .site-content {
-	margin: 55px auto 0 auto;
+	margin: 100px auto 0 auto;
 	height: 5800px;
 	max-width: 1379px;
-	width: 100%;
+	width: 96%;
 }
-
+.videos .filter-videos {
+   margin: 0 auto 30px auto;
+   height: 50px;
+   background: #aaa;
+   width: 60%;
+}
+.videos .videos-column {
+   height: 100%;
+   /*background: #fff;*/
+   float: left;
+   width: 100%;
+}
+.videos .videos-column .single-video {
+   border-radius: 2px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   -ms-border-radius: 2px;
+   -o-border-radius: 2px;
+   margin: 0 25px 30px 9px;
+   position: relative;
+   background: #aaa;
+   float: left;
+   height: 8%;
+   display: block;
+   width: 48%;
+}
+.videos .videos-column .single-video:nth-of-type(2n) {
+   margin-right: 0;
+}
 
 
 
