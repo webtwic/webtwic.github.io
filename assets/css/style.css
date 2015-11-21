@@ -2714,7 +2714,6 @@ Start videos.css
 }
 .videos .videos-column {
    height: 100%;
-   /*background: #fff;*/
    float: left;
    width: 100%;
 }
@@ -2726,7 +2725,7 @@ Start videos.css
    -o-border-radius: 2px;
    margin: 0 25px 30px 9px;
    position: relative;
-   background: #aaa;
+   background: #fff;
    float: left;
    height: 8%;
    display: block;
