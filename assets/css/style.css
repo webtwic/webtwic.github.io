@@ -2137,7 +2137,7 @@ body.single-post {
 	max-width: 1379px;
 	width: 100%;
 }
-.single-post header.secondary-header {
+.main header.secondary-header {
 	margin-bottom: 240px;
 	background: #fff;
 	position: fixed;
@@ -2176,7 +2176,7 @@ header.secondary-header .logo .desktop_logo {
 		line-height: 30px;
 		padding-right: 15px;
 	}
-	.single-post .secondary-menu>ul.active li {
+	.secondary-menu>ul.active li {
 		position: relative;
 	}
 
@@ -2333,7 +2333,7 @@ header.secondary-header .logo .desktop_logo {
 		fill: #0077B5;
 	}
 }
-.single-post .secondary-menu li {
+.secondary-menu li {
 	text-align: center;
 	list-style: none;
 	display: inline-block;
