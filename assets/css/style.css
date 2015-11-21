@@ -2127,7 +2127,7 @@ Start post-sample.css
 
 */
 .single-post .site-content {
-	margin: auto auto 0 auto;
+	margin: 55px auto 0 auto;
 	height: 5800px;
 	max-width: 1379px;
 	width: 100%;
@@ -2357,7 +2357,6 @@ header.secondary-header .logo .desktop_logo {
 .single-post .entry-wrap {
 	height: 900px;
 	width: 100%;
-	margin-top: 55px;
 }
 .single-post .entry-wrap .entry-header {
 	width: 100%;
@@ -2701,7 +2700,12 @@ Start videos.css
 * Last Modified: 21/11/2015
 
 */
-
+.videos .site-content {
+	margin: 55px auto 0 auto;
+	height: 5800px;
+	max-width: 1379px;
+	width: 100%;
+}
 
 
 
