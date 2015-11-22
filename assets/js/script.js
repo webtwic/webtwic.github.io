@@ -131,7 +131,9 @@ jQuery(document).ready(function() {
 
 	if ( $(window).width() > 860 ) {
 		$("nav li.dropdown").hover(function() {
-			$("ul.drop-nav", this).slideToggle("fast");
+			$("ul.drop-nav", this).stop().slideDown("fast");
+		}, function() {
+			$("ul.drop-nav", this).stop().slideUp("fast");
 		});
 	}
 
