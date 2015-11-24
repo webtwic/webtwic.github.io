@@ -803,7 +803,6 @@ img {
 	.main .main-menu li a,
 	.main .secondary-menu li a {
 		font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
-		/*transition: all 0.65s ease 0.02s;*/
 		-webkit-transition: all 0.3s linear;
 		-moz-transition: all 0.3s linear;
 		-ms-transition: all 0.3s linear;
@@ -2217,7 +2216,9 @@ header.secondary-header .logo .desktop_logo {
 	.secondary-menu > ul.active li {
 		position: relative;
 	}
-
+   .secondary-menu .drop-nav {
+      margin-top: 2px;
+   }
 	header.secondary-header .header-follow-search {
 		height: 100%;
 		display: inline-block;
