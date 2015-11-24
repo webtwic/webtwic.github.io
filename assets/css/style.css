@@ -2641,11 +2641,6 @@ header .entry-meta .entry-author a {
 	-moz-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
-	border-radius: 1px;
-	-webkit-border-radius: 1px;
-	-moz-border-radius: 1px;
-	-ms-border-radius: 1px;
-	-o-border-radius: 1px;
 }
 .entry-content a:hover {
 	color: inherit;
@@ -2710,8 +2705,9 @@ header .entry-meta .entry-author a {
 	width: 100%;
 }
 .post-content-column article .entry-tags {
-   margin: 0px 50px;
    border-top: 1px solid rgba(0, 0, 0, 0.06);
+   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+   margin: 20px 50px;
    padding: 15px 2px;
    color: #666;
 }
