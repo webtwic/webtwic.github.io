@@ -1036,6 +1036,7 @@ img {
    }
    .toggle-nav.active .bar {
       margin-top: -5px;
+      height: 3px;
    }
    .toggle-nav.active .bar:nth-child(1) {
       transform: rotate(135deg);
@@ -2365,6 +2366,9 @@ header.secondary-header .logo .desktop_logo {
 	display: inline-block;
 	height: 99%;
 	margin: 0px auto;
+}
+.secondary-menu .drop-nav li {
+   height: 50px !important;
 }
 .secondary-menu .active-menu svg {
    left: 2.5em;
