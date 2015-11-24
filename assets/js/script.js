@@ -143,7 +143,7 @@ jQuery(document).ready(function() {
 
 	$("a.toggle-nav").click(function(e) {
 		$(this).toggleClass("active");
-		$("nav ul").slideToggle(200);
+		$("nav ul").stop().slideToggle(200);
 
 		e.preventDefault();
 	});
