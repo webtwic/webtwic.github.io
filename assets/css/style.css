@@ -2715,11 +2715,24 @@ header .entry-meta .entry-author a {
    padding: 15px 2px;
    color: #666;
 }
+.entry-tags .webtwicons {
+   font-family: "Source Sans Pro", Calibri,"Trebuchet MS",Helvetica,Arial,georgia;
+   margin-right: 0px;
+}
 .entry-tags .webtwicons:before {
-   margin-right: 2px;
+   margin-right: 3px;
 }
 .post-content-column article .entry-tags a {
+   -webkit-transition: color ease-in-out 0.5s;
+   -moz-transition: color ease-in-out 0.5s;
+   -ms-transition: color ease-in-out 0.5s;
+   -o-transition: color ease-in-out 0.5s;
+   transition: color ease-in-out 0.5s;
    color: #6699cc;
+}
+.post-content-column article .entry-tags a:hover {
+   border-bottom: 1px solid #6699cc;
+   color: #3F5261;
 }
 .main-page .post-content-column .entry-author-info {
 	height: 300px;
