@@ -194,6 +194,9 @@ body {
 .close-button:before {
 	content: "\f00d";
 }
+.tags-icon:before {
+   content: "\f02c";
+}
 /* End Iconset */
 
 
@@ -1039,6 +1042,10 @@ img {
       height: 3px;
    }
    .toggle-nav.active .bar:nth-child(1) {
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
       transform: rotate(135deg);
       opacity: 1;
       top: 14px;
@@ -1047,6 +1054,10 @@ img {
       opacity: 0;
    }
    .toggle-nav.active .bar:nth-child(3) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
       transform: rotate(45deg);
       opacity: 1;
    }
@@ -2606,6 +2617,7 @@ header .entry-meta .entry-author a {
 
 .post-content-column > article .entry-content {
 	padding: 0px 50px;
+   margin-bottom: 20px;
 }
 .post-content-column > article .entry-content p {
 	color: #4E697D;
@@ -2696,6 +2708,18 @@ header .entry-meta .entry-author a {
 	-webkit-border-radius: 2px;
 	height: 520px;
 	width: 100%;
+}
+.post-content-column article .entry-tags {
+   margin: 0px 50px;
+   border-top: 1px solid rgba(0, 0, 0, 0.06);
+   padding: 15px 2px;
+   color: #666;
+}
+.entry-tags .webtwicons:before {
+   margin-right: 2px;
+}
+.post-content-column article .entry-tags a {
+   color: #6699cc;
 }
 .main-page .post-content-column .entry-author-info {
 	height: 300px;
