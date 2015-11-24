@@ -1004,11 +1004,11 @@ img {
 		cursor: pointer;
 	}
 	.toggle-nav .bar {
-		transition: all 0.7s ease 0s;
-		-webkit-transition: all 0.7s ease 0s;
-		-moz-transition: all 0.7s ease 0s;
-		-ms-transition: all 0.7s ease 0s;
-		-o-transition: all 0.7s ease 0s;
+		transition: background, opacity, transform 0.7s ease 0s;
+		-webkit-transition: background, opacity, transform 0.7s ease 0s;
+		-moz-transition: background, opacity, transform 0.7s ease 0s;
+		-ms-transition: background, opacity, transform 0.7s ease 0s;
+		-o-transition: background, opacity, transform 0.7s ease 0s;
 		background: #7B8B8E;
 		border-radius: 3px;
 		display: block;
