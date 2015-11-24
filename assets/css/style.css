@@ -996,28 +996,59 @@ img {
 		-moz-transition: all 0.15s ease;
 		-ms-transition: all 0.15s ease;
 		-o-transition: all 0.15s ease;
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+      transform: rotate(0);
 		float: right;
-		margin-top: 14px;
+		margin-top: 20px;
 		margin-right: 13px;
 		width: 26px;
 		height: 20px;
 		cursor: pointer;
+      position: relative;
 	}
 	.toggle-nav .bar {
-		transition: background, opacity, transform 0.7s ease 0s;
-		-webkit-transition: background, opacity, transform 0.7s ease 0s;
-		-moz-transition: background, opacity, transform 0.7s ease 0s;
-		-ms-transition: background, opacity, transform 0.7s ease 0s;
-		-o-transition: background, opacity, transform 0.7s ease 0s;
+		transition: background, opacity, transform 175ms linear 0s;
+		-webkit-transition: background, opacity, transform 175ms linear 0s;
+		-moz-transition: background, opacity, transform 175ms linear 0s;
+		-ms-transition: background, opacity, transform 175ms linear 0s;
+		-o-transition: background, opacity, transform 175ms linear 0s;
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+      transform: rotate(0);
 		background: #7B8B8E;
 		border-radius: 3px;
 		display: block;
 		width: 100%;
 		cursor: pointer;
 		height: 2px;
-		margin: 5.5px 0px;
-		position: relative;
+		position: absolute;
 	}
+   .toggle-nav .bar:nth-child(2) {
+      top: 7px;
+   }
+   .toggle-nav .bar:nth-child(3) {
+      top: 14px;
+   }
+   .toggle-nav.active .bar {
+      margin-top: -5px;
+   }
+   .toggle-nav.active .bar:nth-child(1) {
+      transform: rotate(135deg);
+      opacity: 1;
+      top: 14px;
+   }
+   .toggle-nav.active .bar:nth-child(2) {
+      opacity: 0;
+   }
+   .toggle-nav.active .bar:nth-child(3) {
+      transform: rotate(45deg);
+      opacity: 1;
+   }
 	#responsive .main-menu .mobile-search input,
 	#responsive .secondary-menu .mobile-search input  {
 		-webkit-transition: all 0.5s ease;
