@@ -2729,8 +2729,11 @@ header .entry-meta .entry-author a {
 .main-page .post-content-column .entry-author-info {
 	height: 300px;
 	width: 100%;
-	background: #eee;
+	background: #444444;
+   /*background: #727272;*/
+   /*background: #eee;*/
    padding: 10px 20px;
+   color: #eee;
 }
 .post-content-column .entry-author-info .author-info-inner {
 	position: relative;
@@ -2759,7 +2762,31 @@ header .entry-meta .entry-author a {
    width: 76%;
    float: right;
 }
-.entry-author-info .author-content h3 {
+.entry-author-info .author-content .author-name {
+   color: #fff;
+   float: left;
+   position: relative;
+}
+.entry-author-info .author-content span.author-title {
+   display: inline-block;
+   position: relative;
+   margin-left: -146px;
+   margin-bottom: 20px;
+   margin-top: 54px;
+   font-size: 0.9em;
+   color: #6699cc;
+}
+.entry-author-info .author-content p {
+   float: left;
+   margin-top: -10px;
+   width: 96%;
+}
+.entry-author-info .author-content .author-social {
+   margin-top: 17px;
+}
+.author-content .author-social .webtwicons {
+   margin-right: 2px;
+   color: #6699cc;
 }
 
 /* Start responsive for single-post */
