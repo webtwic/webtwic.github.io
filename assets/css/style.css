@@ -993,11 +993,6 @@ img {
 	}
 	.toggle-nav {
 		display: block !important;
-		transition: all 0.15s ease;
-		-webkit-transition: all 0.15s ease;
-		-moz-transition: all 0.15s ease;
-		-ms-transition: all 0.15s ease;
-		-o-transition: all 0.15s ease;
       -webkit-transform: rotate(0);
       -moz-transform: rotate(0);
       -ms-transform: rotate(0);
@@ -2735,14 +2730,20 @@ header .entry-meta .entry-author a {
 	height: 300px;
 	width: 100%;
 	background: #eee;
+   padding: 10px 20px;
 }
 .post-content-column .entry-author-info .author-info-inner {
 	position: relative;
 	height: 100%;
 }
-.entry-author-info .author-info-inner .author-avatar {
+.entry-author-info .author-info-inner a {
+   position: relative;
+}
+.entry-author-info .author-avatar {
    float: left;
    width: 20%;
+   height: 180px;
+   margin-right: 10px;
 }
 .author-avatar img {
    -webkit-border-radius: 100%;
@@ -2750,7 +2751,17 @@ header .entry-meta .entry-author a {
    -ms-border-radius: 100%;
    -o-border-radius: 100%;
    border-radius: 100%;
+   width: 100%;
+   height: 100%;
 }
+.entry-author-info .author-content {
+   position: relative;
+   width: 76%;
+   float: right;
+}
+.entry-author-info .author-content h3 {
+}
+
 /* Start responsive for single-post */
 
 @media screen and (max-width:860px) {
