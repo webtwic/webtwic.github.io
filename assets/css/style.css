@@ -2740,6 +2740,11 @@ header .entry-meta .entry-author a {
 	position: relative;
 	height: 100%;
 }
+.entry-author-info .author-info-inner .author-avatar {
+   float: left;
+   border-radius: 100%;
+   width: 10%;
+}
 /* Start responsive for single-post */
 
 @media screen and (max-width:860px) {
