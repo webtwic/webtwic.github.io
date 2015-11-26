@@ -2796,6 +2796,20 @@ header .entry-meta .entry-author a {
 .author-content .author-social .webtwicons:hover {
    color: #fff;
 }
+.post-content-column .related-articles {
+   height: 300px;
+   background: #eee;
+   padding: 20px;
+}
+.post-content-column .related-articles h2 {
+   margin: 0;
+}
+.related-articles .related-posts {
+
+}
+.related-articles .related-posts .post-card {
+
+}
 
 /* Start responsive for single-post */
 
