@@ -2733,7 +2733,7 @@ header .entry-meta .entry-author a {
    /*background: #727272;*/
    /*background: #eee;*/
    padding: 10px 20px;
-   color: #eee;
+   color: #f9f9f9;
 }
 .post-content-column .entry-author-info .author-info-inner {
 	position: relative;
@@ -2785,8 +2785,16 @@ header .entry-meta .entry-author a {
    margin-top: 17px;
 }
 .author-content .author-social .webtwicons {
-   margin-right: 2px;
+   -webkit-transition: color ease-in-out 0.3s;
+   -moz-transition: color ease-in-out 0.3s;
+   -ms-transition: color ease-in-out 0.3s;
+   -o-transition: color ease-in-out 0.3s;
+   transition: color ease-in-out 0.3s;
+   letter-spacing: 5px;
    color: #6699cc;
+}
+.author-content .author-social .webtwicons:hover {
+   color: #fff;
 }
 
 /* Start responsive for single-post */
