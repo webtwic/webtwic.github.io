@@ -110,21 +110,6 @@ jQuery(document).ready(function() {
 		undoReset();
 	}
 
-	if (Modernizr.csstransforms === false) {
-		function resetLogoTransform() {
-			$(".mobile_logo").css(
-				{
-					"transform": "none !important",
-					"margin-left": "-9px"
-				}
-			);
-		}
-		// Call reset logo transform
-		resetLogoTransform();
-	} else {
-
-	}
-
 	// Start Main Page
 
 	$("nav li ul.drop-nav").hide().removeClass("dropNavFallback");
