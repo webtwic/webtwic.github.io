@@ -2467,8 +2467,11 @@ header .entry-meta .entry-author a {
 	padding-bottom: 100%;
 }
 .entry-wrap .main-page .post-content-column {
+   background: #fff;
+}
+.entry-wrap .main-page .post-content-column,
+.entry-wrap .main-page .post-secondary-column {
 	float: left;
-	background: #fff;
 	height: 100%;
 	width: 70%;
 }
@@ -2726,7 +2729,7 @@ header .entry-meta .entry-author a {
    border-bottom: 1px solid #6699cc;
    color: #3F5261;
 }
-.main-page .post-content-column .entry-author-info {
+.main-page .post-secondary-column .entry-author-info {
 	height: 300px;
 	width: 100%;
 	background: #444444;
@@ -2735,7 +2738,7 @@ header .entry-meta .entry-author a {
    padding: 10px 20px;
    color: #f9f9f9;
 }
-.post-content-column .entry-author-info .author-info-inner {
+.post-secondary-column .entry-author-info .author-info-inner {
 	position: relative;
 	height: 100%;
 }
