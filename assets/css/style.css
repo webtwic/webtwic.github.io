@@ -2308,7 +2308,7 @@ header.secondary-header .logo .desktop_logo {
       z-index: 50;
       width: 10%;
    }
-   .ui-overlay-search .search-input form #__expand.visible {
+   .ui-overlay-search .search-input form [data-focused="true"] #__expand {
       display: block;
       width: 100.3%;
    }
@@ -3025,7 +3025,7 @@ Start videos.css
 }
 .social-buttons .btn-footer {
 	padding: 12px 6.2%;
-	margin-left: 5px;
+	margin-right: 5px;
 }
 .social-buttons .btn-footer .webtwicons {
 	color: #fff;
