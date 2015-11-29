@@ -2308,7 +2308,7 @@ header.secondary-header .logo .desktop_logo {
       z-index: 50;
       width: 10%;
    }
-   .ui-overlay-search .search-input form [data-focused="true"] #__expand {
+   .ui-overlay-search .search-input form #__expand.visible {
       display: block;
       width: 100.3%;
    }
