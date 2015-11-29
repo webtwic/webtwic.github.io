@@ -2468,6 +2468,7 @@ header .entry-meta .entry-author a {
 }
 .entry-wrap .main-page .post-content-column {
    background: #fff;
+   margin-bottom: 30px;
 }
 .entry-wrap .main-page .post-content-column,
 .entry-wrap .main-page .post-secondary-column {
@@ -2732,11 +2733,9 @@ header .entry-meta .entry-author a {
 .main-page .post-secondary-column .entry-author-info {
 	height: 300px;
 	width: 100%;
-	background: #444444;
-   /*background: #727272;*/
-   /*background: #eee;*/
+	background: #fff;
    padding: 10px 20px;
-   color: #f9f9f9;
+   color: #4E697D;
 }
 .post-secondary-column .entry-author-info .author-info-inner {
 	position: relative;
@@ -2766,7 +2765,7 @@ header .entry-meta .entry-author a {
    float: right;
 }
 .entry-author-info .author-content .author-name {
-   color: #fff;
+   color: #4E697D;
    float: left;
    position: relative;
 }
@@ -2797,14 +2796,14 @@ header .entry-meta .entry-author a {
    color: #6699cc;
 }
 .author-content .author-social .webtwicons:hover {
-   color: #fff;
+   color: #4E697D;
 }
-.post-content-column .related-articles {
+.post-secondary-column .related-articles {
    height: 300px;
    background: #eee;
    padding: 20px;
 }
-.post-content-column .related-articles h2 {
+.post-secondary-column .related-articles h2 {
    margin: 0;
 }
 .related-articles .related-posts {
