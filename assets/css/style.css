@@ -991,7 +991,7 @@ img {
 	.active-menu svg {
 		display: none;
 	}
-	.toggle-nav {
+	.hamburger {
 		display: block !important;
       -webkit-transform: rotate(0);
       -moz-transform: rotate(0);
@@ -1006,7 +1006,7 @@ img {
 		cursor: pointer;
       position: relative;
 	}
-	.toggle-nav .bar {
+	.hamburger .bar {
 		transition: background, opacity, transform 175ms linear 0s;
 		-webkit-transition: background, opacity, transform 175ms linear 0s;
 		-moz-transition: background, opacity, transform 175ms linear 0s;
@@ -1025,17 +1025,17 @@ img {
 		height: 2px;
 		position: absolute;
 	}
-   .toggle-nav .bar:nth-child(2) {
+   .hamburger .bar:nth-child(2) {
       top: 7px;
    }
-   .toggle-nav .bar:nth-child(3) {
+   .hamburger .bar:nth-child(3) {
       top: 14px;
    }
-   .toggle-nav.active .bar {
+   .hamburger.active .bar {
       margin-top: -5px;
       height: 3px;
    }
-   .toggle-nav.active .bar:nth-child(1) {
+   .hamburger.active .bar:nth-child(1) {
       -webkit-transform: rotate(135deg);
       -moz-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
@@ -1044,10 +1044,10 @@ img {
       opacity: 1;
       top: 14px;
    }
-   .toggle-nav.active .bar:nth-child(2) {
+   .hamburger.active .bar:nth-child(2) {
       opacity: 0;
    }
-   .toggle-nav.active .bar:nth-child(3) {
+   .hamburger.active .bar:nth-child(3) {
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -2212,7 +2212,7 @@ header.secondary-header .logo .desktop_logo {
 		position: relative;
 	}
    .secondary-menu .drop-nav {
-      margin-top: 2px;
+      margin-top: 1px;
    }
 	header.secondary-header .header-follow-search {
 		height: 100%;
