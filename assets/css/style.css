@@ -2799,18 +2799,33 @@ header .entry-meta .entry-author a {
    color: #4E697D;
 }
 .post-secondary-column .related-articles {
-   height: 300px;
    background: #eee;
    padding: 20px;
+   position: relative;
 }
-.post-secondary-column .related-articles h2 {
+.related-articles .post_list {
+   position: relative;
+   margin: 0 auto;
+   text-align: center;
+}
+.post-secondary-column .related-articles .post-title {
    margin: 0;
+   text-align: center;
 }
-.related-articles .related-posts {
-
+.related-articles .post_list .post-card {
+   width: 30%;
+   display: inline-block;
+   margin-right: 15px;
+   margin-bottom: 25px;
 }
-.related-articles .related-posts .post-card {
-
+.post_list .post-card .post-card-image {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+   border-radius: 2px;
+}
+.related-articles .post_list .post-card:nth-child(3n) {
+   margin-right: 0;
 }
 
 /* Start responsive for single-post */
