@@ -2809,14 +2809,16 @@ header .entry-meta .entry-author a {
    text-align: center;
 }
 .post-secondary-column .related-articles .post-title {
-   margin: 0;
    text-align: center;
+   display: block;
+   padding: 0 10px;
+   position: relative;
 }
 .related-articles .post_list .post-card {
    width: 30%;
    display: inline-block;
-   margin-right: 15px;
-   margin-bottom: 25px;
+   margin: 0 15px 25px 15px;
+   float: left;
 }
 .post_list .post-card .post-card-image {
    position: relative;
