@@ -155,11 +155,11 @@ jQuery(document).ready(function() {
 	});
 
 	function openUiOverlay() {
-		$(".ui-overlay-search").fadeIn("fast").addClass("is_open");
+		$(".ui-overlay-search").fadeIn(300).addClass("is_open");
 	}
 
 	function closeUiOverlay() {
-		$(".ui-overlay-search").fadeOut("fast").removeClass("is_open");
+		$(".ui-overlay-search").fadeOut(200).removeClass("is_open");
 	}
 
 	$(".ui-overlay-search .search-input input").focus(function() {
