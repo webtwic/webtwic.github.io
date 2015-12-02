@@ -2820,10 +2820,14 @@ header .entry-meta .entry-author a {
    float: left;
 }
 .post_list .post-card .post-card-image {
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   -ms-border-radius: 2px;
+   -o-border-radius: 2px;
+   border-radius: 2px;
    position: relative;
    width: 100%;
    overflow: hidden;
-   border-radius: 2px;
 }
 .related-articles .post_list .post-card:nth-child(3n) {
    margin-right: 0;
