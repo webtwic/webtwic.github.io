@@ -26,7 +26,7 @@ jQuery(document).ready(function() {
 		  is_noType = scripts.attr("type", null),
 		  is_noCharset = scripts.attr("charset", null),
 		  $to_top = $("a.to-top"),
-		  is_toggle_active = $(".hamburger").hasClass("active"),
+		  is_toggle_active = $(".hamburger").hasClass("is_active"),
 		  height = 200;
 
 	// Performance Fixes
@@ -127,7 +127,7 @@ jQuery(document).ready(function() {
 	);
 
 	$("a.hamburger").click(function(e) {
-		$(this).toggleClass("active");
+		$(this).toggleClass("is_active");
 		$("nav ul").stop().slideToggle(200);
 
 		e.preventDefault();
