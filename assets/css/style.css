@@ -2991,11 +2991,6 @@ Start videos.css
 }
 .site-description .footer-logo {
 	background: url(../img/webtwic-logos.png) -159px -101px no-repeat;
-	-webkit-transition: opacity 0.2s linear 0s;
-	-moz-transition: opacity 0.2s linear 0s;
-	-ms-transition: opacity 0.2s linear 0s;
-	-o-transition: opacity 0.2s linear 0s;
-	transition: opacity 0.2s linear 0s;
 	margin-left: auto;
 	margin-right: auto;
 	width: 150px;
@@ -3004,9 +2999,6 @@ Start videos.css
 	color: #2f5c88;
 	letter-spacing: 0.1px;
 	text-indent: -9999px;
-}
-.site-description .footer-logo:hover {
-	opacity: 0.75;
 }
 .site-description .description-text {
 	font-family: "Source Sans Pro", Calibri, "Trebuchet MS",Helvetica,Arial,georgia;
