@@ -2950,11 +2950,11 @@ Start videos.css
 	border-right-style: none;
 }
 .footer-search form .submit {
-	-webkit-transition: opacity 0.2s linear;
-	-moz-transition: opacity 0.2s linear;
-	-ms-transition: opacity 0.2s linear;
-	-o-transition: opacity 0.2s linear;
-	transition: opacity 0.2s linear;
+	-webkit-transition: opacity 0.2s linear, background 0.3s ease-out;
+	-moz-transition: opacity 0.2s linear, background 0.3s ease-out;
+	-ms-transition: opacity 0.2s linear, background 0.3s ease-out;
+	-o-transition: opacity 0.2s linear, background 0.3s ease-out;
+	transition: opacity 0.2s linear, background 0.3s ease-out;
 	-webkit-border-radius: 0px 5px 5px 0px;
 	-moz-border-radius: 0px 5px 5px 0px;
 	-ms-border-radius: 0px 5px 5px 0px;
@@ -2971,8 +2971,7 @@ Start videos.css
 	cursor: pointer;
 }
 .footer-search form .submit:hover {
-	opacity: 0.9;
-	cursor: pointer;
+   background: #4b85e6;
 }
 .footer-search .submit .search-icon {
 	margin: 0.5em 0 0.5em 0.02em;
