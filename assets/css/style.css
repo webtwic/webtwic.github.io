@@ -1716,10 +1716,10 @@ iframe a.twitter-timeline {
 .to-top {
 	 background: #58de6c;
 	 -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-	 -moz-transition: opacity .3s 0s, visibility 0s .3s;
+	 -moz-transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
 	 -ms-transition: opacity .3s 0s, visibility 0s .3s;
 	 -o-transition: opacity .3s 0s, visibility 0s .3s;
-	 transition: opacity .3s 0s, visibility 0s .3s;
+	 transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
 	 -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 	 -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 	 -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -1748,17 +1748,16 @@ iframe a.twitter-timeline {
 	visibility: visible;
 	opacity: 1;
 }
-.to-top.visible,
-.to-top:hover {
+.to-top.visible {
 	-webkit-transition: opacity .3s 0s, visibility 0s 0s;
-	-moz-transition: opacity .3s 0s, visibility 0s 0s;
+	-moz-transition: opacity .3s 0s, visibility 0s 0s, background .4s ease-in-out;
 	-ms-transition: opacity .3s 0s, visibility 0s 0s;
 	-o-transition: opacity .3s 0s, visibility 0s 0s;
-	transition: opacity .3s 0s, visibility 0s 0s;
+	transition: opacity .3s 0s, visibility 0s 0s, background .4s ease-in-out;
 }
+
 .no-touch .to-top:hover {
-	background-color: #58de6c;
-	opacity: 1;
+	background-color: #62e876;
 }
 .pagination {
 	width: 392px;
