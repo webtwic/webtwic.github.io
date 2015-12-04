@@ -2465,15 +2465,17 @@ header .entry-meta .entry-author a {
 	background: #eee;
 	padding-bottom: 100%;
 }
-.entry-wrap .main-page .post-content-column {
+.main-page .page-focus-column {
+    position: relative;
+    width: 70%;
+}
+.main-page .page-focus-column .post-content-column {
    background: #fff;
    margin-bottom: 30px;
 }
 .entry-wrap .main-page .post-content-column,
 .entry-wrap .main-page .post-secondary-column {
-	float: left;
 	height: 100%;
-	width: 70%;
 }
 .entry-wrap .main-page .post-content-column > article {
 	width: 100%;
@@ -2729,7 +2731,7 @@ header .entry-meta .entry-author a {
    border-bottom: 1px solid #6699cc;
    color: #3F5261;
 }
-.main-page .post-secondary-column .entry-author-info {
+.page-focus-column .post-secondary-column .entry-author-info {
 	height: 300px;
 	width: 100%;
 	background: #fff;
