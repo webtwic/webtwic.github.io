@@ -1152,11 +1152,11 @@ body.home {
 	width: 94%;
 	max-width: 1418px;
 }
-.home .first-column {
+.home .featured-posts-column {
 	width: 44.93%;
 	margin-right: 30px;
 }
-.first-column .article {
+.featured-posts-column .article {
 	padding: 40px 30px 0;
 	margin-bottom: 25px;
 	position: relative;
@@ -1165,7 +1165,7 @@ body.home {
 	background: #fff;
 	width: 100%;
 }
-.first-column .article:first-child {
+.featured-posts-column .article:first-child {
 	margin-top: 25px;
 }
 .article time {
@@ -1838,7 +1838,7 @@ iframe a.twitter-timeline {
 	.home .site-content {
 		margin: auto auto 0px;
 	}
-	.first-column {
+	.featured-posts-column {
 		margin-bottom: 20px;
 	}
 	.tech-news-wrap {
