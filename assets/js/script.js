@@ -155,7 +155,7 @@ jQuery(document).ready(function() {
 	});
 
 	function openUiOverlay() {
-		$(".ui-overlay-search").fadeIn(300).addClass("is_open");
+		$(".ui-overlay-search").fadeIn(400).addClass("is_open");
 	}
 
 	function closeUiOverlay() {
