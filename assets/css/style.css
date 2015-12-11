@@ -434,7 +434,11 @@ ul,
 li {
 	list-style: none;
 }
-[placeholder], ::-moz-placeholder, ::-webkit-input-placeholder, :-ms-input-placeholder {
+[placeholder],
+::-moz-placeholder,
+::-webkit-input-placeholder,
+:-ms-input-placeholder,
+::placeholder {
 	color: #999;
 }
 input {
@@ -2276,20 +2280,21 @@ header.secondary-header .logo .desktop_logo {
       margin: 20% auto 20% auto;
 	}
 	.ui-overlay-search .search-input form input {
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px;
+      border-radius: 2px;
 		position: relative;
 		border-style: solid;
 		border-color: #3B4A5A;
 		border-width: 0 0 1px 0;
 		background: transparent;
+      font-size: 1.23em;
+		padding: 5px 2px;
 		display: block;
 		width: 100%;
-		padding: 5px 2px;
 		color: #fff;
-      border-radius: 2px;
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      -o-border-radius: 2px;
 	}
    .ui-overlay-search .search-input form #__expand {
       transition: width ease 1s;
