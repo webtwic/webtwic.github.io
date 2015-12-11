@@ -425,11 +425,13 @@ a {
 	text-decoration: none;
 	color: #999;
 }
-nav, ul {
+nav,
+ul {
 	padding: 0px;
 	margin: 0px;
 }
-ul {
+ul,
+li {
 	list-style: none;
 }
 [placeholder], ::-moz-placeholder, ::-webkit-input-placeholder, :-ms-input-placeholder {
@@ -2840,9 +2842,27 @@ header .entry-meta .entry-author a {
    background: #fff;
    height: 500px;
    padding: 1px 10px;
+   margin-bottom: 20px;
 }
 .post-secondary-column .entry-comments h3 {
 
+}
+.post-secondary-column .prev-next-articles {
+   position: relative;
+   margin-bottom: 500px;
+}
+.prev-next-articles div {
+   position: relative;
+   width: 30%;
+   height: 120px;
+   display: block;
+}
+.prev-next-articles div a {
+   padding: 10px;
+   background: #fff;
+   display: block;
+   width: 100%;
+   height: 100%;
 }
 
 /* Start responsive for single-post */
