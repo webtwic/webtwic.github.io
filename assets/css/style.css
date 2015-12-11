@@ -3092,7 +3092,8 @@ Start videos.css
 }
 .social-buttons .btn-footer .google-plus-icon {
 	font-size: 100%;
-	margin-right: -4px;
+   margin-right: -7px;
+   margin-left: 0px;
 }
 .social-buttons .btn-footer .facebook-icon {
 	margin-right: -1px;
