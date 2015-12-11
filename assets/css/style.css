@@ -3089,19 +3089,14 @@ Start videos.css
 .social-buttons .btn-footer .twitter-icon {
 	font-size: 100%;
 	margin-right: -3px;
-   padding-right: 2px;
 }
-.social-buttons .btn-footer svg {
-   width: 20px;
-   height: 20px;
-   fill: #fff;
-   margin: 1px -3px 0 0;
-   vertical-align: top;
+.social-buttons .btn-footer .google-plus-icon {
+	font-size: 100%;
+	margin-right: -4px;
 }
 .social-buttons .btn-footer .facebook-icon {
-   margin-right: 0px;
-   margin-left: 3px;
-   padding-right: 2px;
+	margin-right: -1px;
+	margin-left: 3px;
 }
 .social-buttons a.btn-footer:nth-child(1) {
 	border-color: #3B599A;
