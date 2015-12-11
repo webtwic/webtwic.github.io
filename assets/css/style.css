@@ -2638,7 +2638,7 @@ header .entry-meta .entry-author a {
 }
 .entry-content a {
 	color: #6699CC;
-	border-bottom: 2px solid #6699CC;
+	border-bottom: 1px solid #6699CC;
 	transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -2647,7 +2647,7 @@ header .entry-meta .entry-author a {
 }
 .entry-content a:hover {
 	color: inherit;
-	border-bottom: 2px solid #4E697D;
+	border-bottom: 1px solid #4E697D;
 }
 .entry-content h1 > a,
 .entry-content h2 > a,
