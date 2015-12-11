@@ -2772,22 +2772,25 @@ header .entry-meta .entry-author a {
    float: left;
    position: relative;
 }
-.entry-author-info .author-content span.author-title {
+.entry-author-info .author-content .author-name h3 {
+   margin-bottom: 10px;
+}
+.entry-author-info .author-content .author-title {
    display: inline-block;
    position: relative;
-   margin-left: -146px;
    margin-bottom: 20px;
-   margin-top: 54px;
    font-size: 0.9em;
    color: #6699cc;
+   float: left;
+   width: 100%;
 }
-.entry-author-info .author-content p {
+.entry-author-info .author-content p:not(.author-title) {
    float: left;
    margin-top: -10px;
    width: 96%;
 }
 .entry-author-info .author-content .author-social {
-   margin-top: 17px;
+   margin-top: 27px;
 }
 .author-content .author-social .webtwicons {
    -webkit-transition: color ease-in-out 0.3s;
