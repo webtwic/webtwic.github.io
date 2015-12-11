@@ -159,7 +159,7 @@ jQuery(document).ready(function() {
 	}
 
 	function closeUiOverlay() {
-		$(".ui-overlay-search").fadeOut(200).removeClass("is_open");
+		$(".ui-overlay-search").fadeOut(400).removeClass("is_open");
 	}
 
 	$(".ui-overlay-search .search-input input").focus(function() {
