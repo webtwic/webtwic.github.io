@@ -2900,17 +2900,23 @@ header.secondary-header .logo .desktop_logo {
    position: relative;
    padding: 1px 20px 35em 20px;
 }
-.related-articles li .post-title {
-   text-align: center;
-   display: block;
-   padding: 0 10px;
-   position: relative;
-}
 .related-articles ul li {
+   -webkit-transition: opacity .5s ease-out;
+   -moz-transition: opacity .5s ease-out;
+   -ms-transition: opacity .5s ease-out;
+   -o-transition: opacity .5s ease-out;
+   transition: opacity .5s ease-out;
    width: 30%;
    display: inline-block;
    margin: 0 15px 25px 15px;
    float: left;
+   opacity: 0.7;
+}
+.related-articles ul li:hover {
+   opacity: 1;
+}
+.related-articles li:hover .post-title {
+   color: #243746;
 }
 .post_list li .post-card-image {
    -webkit-border-radius: 2px;
@@ -2924,6 +2930,18 @@ header.secondary-header .logo .desktop_logo {
 }
 .related-articles ul li:nth-child(3n) {
    margin-right: 0;
+}
+.related-articles li .post-title {
+   -webkit-transition: all .5s ease-out;
+   -moz-transition: all .5s ease-out;
+   -ms-transition: all .5s ease-out;
+   -o-transition: all .5s ease-out;
+   transition: all .5s ease-out;
+   text-align: center;
+   display: block;
+   padding: 0 10px;
+   position: relative;
+   color: #939393;
 }
 .post-secondary-column .entry-comments {
    background: #fff;
