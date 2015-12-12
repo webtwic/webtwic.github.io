@@ -2824,6 +2824,10 @@ header.secondary-header .logo .desktop_logo {
    height: 100%;
 }
 .prev-next-articles .item a {
+   -webkit-transition: all 0.3s ease-in;
+   -moz-transition: all 0.3s ease-in;
+   -ms-transition: all 0.3s ease-in;
+   -o-transition: all 0.3s ease-in;
    transition: all 0.3s ease-in;
    padding: 10px;
    display: block;
