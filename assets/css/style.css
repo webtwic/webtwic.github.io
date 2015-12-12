@@ -2829,6 +2829,7 @@ header.secondary-header .logo .desktop_logo {
    -ms-transition: all 0.3s ease-in;
    -o-transition: all 0.3s ease-in;
    transition: all 0.3s ease-in;
+   border-color: rgba(0, 0, 0, 0.06);
    padding: 10px;
    display: block;
    width: 100%;
@@ -2836,14 +2837,17 @@ header.secondary-header .logo .desktop_logo {
    background: #fff;
 }
 .prev-next-articles .item.right a {
-   border-left: 1px solid rgba(0, 0, 0, 0.06);
+   border-left-width: 1px;
+   border-left-style: solid;
 }
 .prev-next-articles .item.left a {
-   border-right: 1px solid rgba(0, 0, 0, 0.06);
+   border-right-width: 1px;
+   border-right-style: solid;
 }
 .prev-next-articles .item a:hover {
    background: #6699cc;
    color: #fff;
+   border-color: #6699cc;
 }
 .prev-next-articles .item a .uppercase {
    font-size: 0.83em;
@@ -2851,7 +2855,6 @@ header.secondary-header .logo .desktop_logo {
 }
 .prev-next-articles .item a:hover p {
    color: #fff;
-   /*text-decoration: underline;*/
 }
 .prev-next-articles .item a p {
    font-weight: 700;
