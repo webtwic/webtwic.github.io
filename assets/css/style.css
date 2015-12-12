@@ -2845,9 +2845,15 @@ header.secondary-header .logo .desktop_logo {
    border-right-style: solid;
 }
 .prev-next-articles .item a:hover {
-   background: #6699cc;
    color: #fff;
+}
+.prev-next-articles .item.left a:hover {
+   background: #6699cc;
    border-color: #6699cc;
+}
+.prev-next-articles .item.right a:hover {
+   background: #3CBC8D;
+   border-color: #3CBC8D;
 }
 .prev-next-articles .item a .uppercase {
    font-size: 0.83em;
