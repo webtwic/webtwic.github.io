@@ -2893,23 +2893,23 @@ header.secondary-header .logo .desktop_logo {
    position: relative;
    padding: 1px 0 0 0;
 }
-.related-articles .post_list {
+.related-articles ul {
    position: relative;
    padding: 1px 20px 35em 20px;
 }
-.post-secondary-column .related-articles .post-title {
+.related-articles li .post-title {
    text-align: center;
    display: block;
    padding: 0 10px;
    position: relative;
 }
-.related-articles .post_list .post-card {
+.related-articles ul li {
    width: 30%;
    display: inline-block;
    margin: 0 15px 25px 15px;
    float: left;
 }
-.post_list .post-card .post-card-image {
+.post_list li .post-card-image {
    -webkit-border-radius: 2px;
    -moz-border-radius: 2px;
    -ms-border-radius: 2px;
@@ -2919,7 +2919,7 @@ header.secondary-header .logo .desktop_logo {
    width: 100%;
    overflow: hidden;
 }
-.related-articles .post_list .post-card:nth-child(3n) {
+.related-articles ul li:nth-child(3n) {
    margin-right: 0;
 }
 .post-secondary-column .entry-comments {
