@@ -2889,7 +2889,7 @@ header.secondary-header .logo .desktop_logo {
    background: #eee;
    position: relative;
 }
-.post-secondary-column .related-articles #inner {
+.post-secondary-column .related-articles .inner {
    position: relative;
    padding: 1px 0 0 0;
 }
