@@ -1037,11 +1037,11 @@ img {
    .hamburger .bar:nth-child(3) {
       top: 14px;
    }
-   .hamburger.is_open .bar {
+   .hamburger.is_active .bar {
       margin-top: -5px;
       height: 3px;
    }
-   .hamburger.is_open .bar:nth-child(1) {
+   .hamburger.is_active .bar:nth-child(1) {
       -webkit-transform: rotate(135deg);
       -moz-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
@@ -1050,10 +1050,10 @@ img {
       opacity: 1;
       top: 14px;
    }
-   .hamburger.is_open .bar:nth-child(2) {
+   .hamburger.is_active .bar:nth-child(2) {
       opacity: 0;
    }
-   .hamburger.is_open .bar:nth-child(3) {
+   .hamburger.is_active .bar:nth-child(3) {
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
