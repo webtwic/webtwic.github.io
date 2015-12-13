@@ -57,6 +57,112 @@
 
 /* END: Fonts and icons */
 
+@keyframes heart {
+   0% {
+        color: #C0392B;
+    }
+   15% {
+      color: #B62F21;
+    }
+   25% {
+      color: #3CBC8D;
+   }
+   35% {
+      color: #82BC23;
+    }
+   45% {
+      color: #CA4335;
+    }
+   55% {
+      color: #6699cc;
+   }
+   65% {
+      color: #40A4C4;
+   }
+   75% {
+      color: #FF3366;
+   }
+   85% {
+      color: #F80046;
+   }
+   95% {
+      color: #AD29B6;
+   }
+   100% {
+      color: #50ABF1;
+    }
+}
+@-webkit-keyframes heart {
+   0% {
+        color: #C0392B;
+    }
+   15% {
+      color: #B62F21;
+    }
+   25% {
+      color: #3CBC8D;
+   }
+   35% {
+      color: #82BC23;
+    }
+   45% {
+      color: #CA4335;
+    }
+   55% {
+      color: #6699cc;
+   }
+   65% {
+      color: #40A4C4;
+   }
+   75% {
+      color: #FF3366;
+   }
+   85% {
+      color: #F80046;
+   }
+   95% {
+      color: #AD29B6;
+   }
+   100% {
+      color: #50ABF1;
+    }
+}
+@-moz-keyframes heart {
+   0% {
+        color: #C0392B;
+    }
+   15% {
+      color: #B62F21;
+    }
+   25% {
+      color: #3CBC8D;
+   }
+   35% {
+      color: #82BC23;
+    }
+   45% {
+      color: #CA4335;
+    }
+   55% {
+      color: #6699cc;
+   }
+   65% {
+      color: #40A4C4;
+   }
+   75% {
+      color: #FF3366;
+   }
+   85% {
+      color: #F80046;
+   }
+   95% {
+      color: #AD29B6;
+   }
+   100% {
+      color: #50ABF1;
+    }
+}
+
 @-ms-viewport {
 	width: device-width;
 }
@@ -3184,6 +3290,7 @@ Start videos.css
 	width: auto;
 	display: block;
 	color: #6D8299;
+   position: relative;
 }
 #site-info span {
 	font-family: "Source Sans Pro", Calibri,"Trebuchet MS",Helvetica,Arial,georgia;
@@ -3204,16 +3311,18 @@ Start videos.css
 	border-bottom: 2px solid #fff;
 }
 #site-info .heart {
-	transition: font-size 0.15s linear;
-	-webkit-transition: font-size 0.15s linear;
-	-moz-transition: font-size 0.15s linear;
-	-ms-transition: font-size 0.15s linear;
-	-o-transition: font-size 0.15s linear;
+   -webkit-animation-timing-function: ease-in-out;
+   -moz-animation-timing-function: ease-in-out;
+   -ms-animation-timing-function: ease-in-out;
+   -o-animation-timing-function: ease-in-out;
+   animation-timing-function: ease-in-out;
+   -webkit-animation: heart 3.5s infinite;
+   -moz-animation: heart 3.5s infinite;
+   -ms-animation: heart 3.5s infinite;
+   -o-animation: heart 3.5s infinite;
+   animation: heart 3.5s infinite;
 	color: #C0392B;
-	display: inline;
-	font-size: 16px;
-	cursor: pointer;
 }
 #site-info .heart:hover {
-	font-size: 18px;
+
 }
