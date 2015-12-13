@@ -2356,43 +2356,43 @@ header.secondary-header .logo .desktop_logo {
 		display: inline-block;
       margin-right: 20px;
 	}
-	.header-follow-search .follow-icons a:hover svg {
+	.header-follow-search .follow-icons a:hover .webtwicons {
 		transform: scale(1.2);
 		-webkit-transform: scale(1.2);
 		-moz-transform: scale(1.2);
 		-ms-transform: scale(1.2);
 		-o-transform: scale(1.2);
 	}
-	.header-follow-search .follow-icons a svg {
+	.header-follow-search .follow-icons a .webtwicons {
 		transition: transform ease 0.2s;
 		-webkit-transition: transform ease 0.2s;
 		-moz-transition: transform ease 0.2s;
 		-ms-transition: transform ease 0.2s;
 		-o-transition: transform ease 0.2s;
-		display: inline-flex;
-		height: 18px;
+		display: inline-block;
 		margin: 21px 3px;
+      font-size: 1.09em;
 	}
-	.header-follow-search .follow-icons a:nth-child(1) svg {
-		fill: #3B599A;
+	.header-follow-search .follow-icons a:nth-child(1) .facebook-official {
+		color: #3B599A;
 	}
-	.header-follow-search .follow-icons a:nth-child(2) svg {
-		fill: #50ABF1;
+	.header-follow-search .follow-icons a:nth-child(2) .twitter-icon {
+		color: #50ABF1;
 	}
-	.header-follow-search .follow-icons a:nth-child(3) svg {
-		fill: #DC4E41;
+	.header-follow-search .follow-icons a:nth-child(3) .google-plus-icon {
+		color: #DC4E41;
 	}
-	.header-follow-search .follow-icons a:nth-child(4) svg {
-		fill: #CD201F;
+	.header-follow-search .follow-icons a:nth-child(4) .youtube-icon {
+		color: #CD201F;
 	}
-	.header-follow-search .follow-icons a:nth-child(5) svg {
-		fill: #125688;
+	.header-follow-search .follow-icons a:nth-child(5) .instagram-icon {
+		color: #125688;
 	}
-	.header-follow-search .follow-icons a:nth-child(6) svg {
-		fill: #BD081C;
+	.header-follow-search .follow-icons a:nth-child(6) .pinterest-icon {
+		color: #BD081C;
 	}
-	.header-follow-search .follow-icons a:nth-child(7) svg {
-		fill: #0077B5;
+	.header-follow-search .follow-icons a:nth-child(7) .linkedin-square {
+		color: #0077B5;
 	}
 }
 .secondary-menu li {
