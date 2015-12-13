@@ -2881,7 +2881,7 @@ header.secondary-header .logo .desktop_logo {
 
 }
 .post-secondary-column .related-articles {
-   background: #eee;
+   background: #444;
    position: relative;
 }
 .post-secondary-column .related-articles .inner {
@@ -2889,7 +2889,7 @@ header.secondary-header .logo .desktop_logo {
    padding: 1px 0 0 0;
 }
 .related-articles .inner h2 {
-   color: #243746;
+   color: #f1f1f1;
 }
 .related-articles ul {
    position: relative;
@@ -2905,13 +2905,25 @@ header.secondary-header .logo .desktop_logo {
    display: inline-block;
    margin: 0 15px 25px 15px;
    float: left;
-   opacity: 0.7;
+   opacity: 0.9;
 }
 .related-articles ul li:hover {
    opacity: 1;
 }
+.related-articles li .post-title {
+   -webkit-transition: all .5s ease-out;
+   -moz-transition: all .5s ease-out;
+   -ms-transition: all .5s ease-out;
+   -o-transition: all .5s ease-out;
+   transition: all .5s ease-out;
+   text-align: center;
+   display: block;
+   padding: 0 10px;
+   position: relative;
+   color: #eee;
+}
 .related-articles li:hover .post-title {
-   color: #243746;
+   color: #f1f1f1;
 }
 .post_list li .post-card-image {
    -webkit-border-radius: 2px;
@@ -2925,18 +2937,6 @@ header.secondary-header .logo .desktop_logo {
 }
 .related-articles ul li:nth-child(3n) {
    margin-right: 0;
-}
-.related-articles li .post-title {
-   -webkit-transition: all .5s ease-out;
-   -moz-transition: all .5s ease-out;
-   -ms-transition: all .5s ease-out;
-   -o-transition: all .5s ease-out;
-   transition: all .5s ease-out;
-   text-align: center;
-   display: block;
-   padding: 0 10px;
-   position: relative;
-   color: #939393;
 }
 .post-secondary-column .entry-comments {
    background: #fff;
