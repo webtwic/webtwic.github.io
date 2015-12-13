@@ -2656,6 +2656,7 @@ header.secondary-header .logo .desktop_logo {
 .entry-content h5,
 .entry-content h6 {
 	color: #3F5261;
+   font-weight: 600;
 }
 .entry-content a {
 	color: #6699CC;
