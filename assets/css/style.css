@@ -2847,13 +2847,9 @@ header.secondary-header .logo .desktop_logo {
 .prev-next-articles .item a:hover {
    color: #fff;
 }
-.prev-next-articles .item.left a:hover {
+.prev-next-articles .item a:hover {
    background: #6699cc;
    border-color: #6699cc;
-}
-.prev-next-articles .item.right a:hover {
-   background: #3CBC8D;
-   border-color: #3CBC8D;
 }
 .prev-next-articles .item a .uppercase {
    font-size: 0.83em;
@@ -3027,7 +3023,6 @@ Start videos.css
 
 /* Start Site footer */
 .main .site-footer {
-	padding: 1.22em 1.22em 0px;
 	background: #273340;
 	height: 430px;
 	margin-top: 60px;
@@ -3036,9 +3031,12 @@ Start videos.css
 	width: auto;
 }
 .site-footer .footer-inner {
-	margin: 0px auto;
 	max-width: 1309px;
 	height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   /*padding: 0 500px;*/
+   width: 22%;
 }
 .site-description {
 	width: 250px;
@@ -3068,7 +3066,7 @@ Start videos.css
 }
 /* Start Footer Social Media Styles */
 .social-buttons {
-	margin-left:9px;
+	margin-left: 9px;
 	height: 53px;
 }
 .social-buttons a {
