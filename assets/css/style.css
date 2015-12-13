@@ -2089,11 +2089,11 @@ article.post-wrap:first-child {
 	opacity: 0.8;
 }
 .post-thumbnail img[alt] {
+   font-family: Calibri, "Source Sans Pro","Trebuchet MS",Helvetica,Arial,georgia;
 	text-transform: capitalize;
 	text-align: center;
 	display: block;
 	font-size: 40px;
-	font-family: Calibri;
 	letter-spacing: 1px;
 	line-height: 140px;
 	color: #BABABA;
@@ -2952,7 +2952,7 @@ header.secondary-header .logo .desktop_logo {
 }
 .prev-next-articles .item a .uppercase {
    font-size: 0.83em;
-   font-family: Calibri;
+   font-family: Calibri, "Source Sans Pro","Trebuchet MS",Helvetica,Arial,georgia;
 }
 .prev-next-articles .item a:hover p {
    color: #fff;
@@ -3303,7 +3303,6 @@ Start videos.css
 	text-transform: lowercase;
 	letter-spacing: 0.01em;
 	padding-bottom: 2px;
-	font-weight: bold;
 	font-size: 1em;
 	color: #fff;
 }
