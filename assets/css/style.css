@@ -3017,52 +3017,44 @@ Start videos.css
 /* Start Site footer */
 .main .site-footer {
 	background: #273340;
-	height: 430px;
 	margin-top: 60px;
 	display: block;
 	color: #fff;
 	width: auto;
+   padding: 32px 0 20px 0;
+   height: 430px;
 }
 .site-footer .footer-inner {
 	max-width: 1309px;
 	height: 100%;
    margin-left: auto;
    margin-right: auto;
-   /*padding: 0 500px;*/
-   width: 22%;
+   width: 100%;
 }
-.site-description {
-	width: 250px;
-	height: 295px;
-	margin-left: 16px;
-	margin-top: 22px;
+#colophon .footer-logo {
+   background: url(../img/webtwic-logos.png) -32px -158px no-repeat;
+   margin-left: auto;
+   margin-right: auto;
+   width: 227px;
+   height: 64px;
+   display: block;
+   color: #2f5c88;
+   letter-spacing: 0.1px;
+   text-indent: -9999px;
 }
-.site-description .footer-logo {
-	background: url(../img/webtwic-logos.png) -159px -101px no-repeat;
-	margin-left: auto;
-	margin-right: auto;
-	width: 150px;
-	height: 49px;
-	display: block;
-	color: #2f5c88;
-	letter-spacing: 0.1px;
-	text-indent: -9999px;
-}
-.site-description .description-text {
+#colophon .description-text {
 	font-family: "Source Sans Pro", Calibri, "Trebuchet MS",Helvetica,Arial,georgia;
 	margin-bottom: 30px;
 	text-align: center;
-	margin-left: 31px;
-	margin-top: 3px;
-	font-size: 0.88rem;
-	width: 72%;
+	font-size: 1.02em;
+	width: 100%;
 }
 /* Start Footer Social Media Styles */
-.social-buttons {
+#colophon .social-buttons {
 	margin-left: 9px;
 	height: 53px;
 }
-.social-buttons a {
+#colophon .social-buttons a {
    -webkit-transition: all ease 0.3s;
    -moz-transition: all ease 0.3s;
    -ms-transition: all ease 0.3s;
@@ -3082,56 +3074,109 @@ Start videos.css
 	border-width: 2px;
 	border-style: solid;
 }
-.social-buttons .btn-footer {
-	padding: 12px 6.2%;
+#colophon .social-buttons .btn-footer {
+	padding: 12px 1.2%;
 	margin-right: 5px;
 }
-.social-buttons .btn-footer .webtwicons {
+#colophon .social-buttons .btn-footer .webtwicons {
 	color: #fff;
 	margin-left: 2px;
 }
-.social-buttons .btn-footer .github-icon {
+#colophon .social-buttons .btn-footer .github-icon {
 	margin-right: 1px;
 }
-.social-buttons .btn-footer .twitter-icon {
+#colophon .social-buttons .btn-footer .twitter-icon {
 	font-size: 100%;
 	margin-right: -3px;
 }
-.social-buttons .btn-footer .google-plus-icon {
+#colophon .social-buttons .btn-footer .google-plus-icon {
 	font-size: 100%;
    margin-right: -7px;
    margin-left: 0px;
 }
-.social-buttons .btn-footer .facebook-icon {
+#colophon .social-buttons .btn-footer .facebook-icon {
 	margin-right: -1px;
 	margin-left: 3px;
 }
-.social-buttons a.btn-footer:nth-child(1) {
+#colophon .social-buttons .btn-footer:nth-child(1) {
 	border-color: #3B599A;
 }
-.social-buttons a.btn-footer:nth-child(2) {
+#colophon .social-buttons .btn-footer:nth-child(2) {
 	border-color: #50ABF1;
 }
-.social-buttons a.btn-footer:nth-child(3) {
+#colophon .social-buttons .btn-footer:nth-child(3) {
 	border-color: #DC4E41;
 }
-.social-buttons a.btn-footer:nth-child(4) {
+#colophon .social-buttons .btn-footer:nth-child(4) {
 	border-color: #464646;
 }
 /* Start Hovers */
 
-.social-buttons a.btn-footer:nth-child(1):hover {
+#colophon .social-buttons .btn-footer:nth-child(1):hover {
 	background: #3B599A;
 }
-.social-buttons a.btn-footer:nth-child(2):hover {
+#colophon .social-buttons .btn-footer:nth-child(2):hover {
 	background: #50ABF1;
 }
-.social-buttons a.btn-footer:nth-child(3):hover {
+#colophon .social-buttons .btn-footer:nth-child(3):hover {
 	background: #DC4E41;
 }
-.social-buttons a.btn-footer:nth-child(4):hover {
+#colophon .social-buttons .btn-footer:nth-child(4):hover {
 	background: #464646;
-}/* End Hovers */
+}
+#colophon .help {
+   position: relative;
+   width: 100%;
+   margin-bottom: 30px;
+}
+#colophon .help a {
+   position: relative;
+   margin-right: 12px;
+   color: #f9f9f9;
+   text-transform: uppercase;
+   font-size: 0.8em;
+   font-weight: 400;
+   letter-spacing: 0.05rem;
+   padding-bottom: 2px;
+}
+#colophon .help a:hover {
+   border-bottom: 1px solid #f9f9f9;
+}
+
+#colophon .donate-section {
+   position: relative;
+   margin-bottom: 30px;
+}
+#colophon .donate-section a {
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   -webkit-border-radius: 1.5rem;
+   -moz-border-radius: 1.5rem;
+   -ms-border-radius: 1.5rem;
+   -o-border-radius: 1.5rem;
+   border-radius: 1.5rem;
+   -webkit-appearance: none;
+   position: relative;
+   background: transparent;
+   border: 1.5px solid #3B4A5A;
+   color: #fff;
+   font-size: 0.75em;
+   font-weight: 400;
+   letter-spacing: 0.05rem;
+   padding: 0.8em 1.7em;
+   text-transform: uppercase;
+}
+#colophon .donate-section a:hover {
+   background: #fff;
+   color: #3B4A5A;
+   border: 1.5px solid #fff;
+}
+#colophon a[href*="mailto"] {
+   color: #627181;
+}
 
 #site-info {
 	padding-left: 20px;
@@ -3164,13 +3209,6 @@ Start videos.css
 }
 #site-info .colophon-link:hover {
 	border-bottom: 2px solid #fff;
-}
-#site-info .code {
-	vertical-align: baseline;
-}
-#site-info .code:before {
-	content: "\f121";
-	font-weight: 600;
 }
 #site-info .heart {
 	transition: font-size 0.15s linear;
