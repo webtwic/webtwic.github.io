@@ -2533,11 +2533,11 @@ header.secondary-header .logo .desktop_logo {
    border-right: 1px solid rgba(0, 0, 0, 0.06);
 	padding-left: 14px;
 }
-.post-meta .post-meta-inner .__share-icons {
+.post-meta .post-meta-inner .share-icons {
    position: relative;
    display: inline;
 }
-.post-meta .post-meta-inner .__share-icons a {
+.post-meta .post-meta-inner .share-icons a {
 	position: relative;
 	display: inline-block;
 	width: 10%;
@@ -2550,7 +2550,7 @@ header.secondary-header .logo .desktop_logo {
 	margin-right: 5px;
 	border: none;
 }
-.post-meta .post-meta-inner .__share-icons a > svg {
+.post-meta .post-meta-inner .share-icons a > svg {
 	position: absolute;
 	fill: #fff;
 	height: 84%;
@@ -2558,27 +2558,27 @@ header.secondary-header .logo .desktop_logo {
 	top: 3px;
 	left: 2px;
 }
-.post-meta .post-meta-inner .__share-icons a:nth-child(1) > svg {
+.post-meta .post-meta-inner .share-icons a:nth-child(1) > svg {
 	width: 45%;
 	height: 86%;
 }
-.post-meta .post-meta-inner .__share-icons a:nth-child(2) > svg {
+.post-meta .post-meta-inner .share-icons a:nth-child(2) > svg {
 	width: 38%;
 }
-.post-meta .post-meta-inner .__share-icons a:nth-child(3) > svg {
+.post-meta .post-meta-inner .share-icons a:nth-child(3) > svg {
 	width: 45%;
 	padding: 4px;
 }
-.post-meta .post-meta-inner .__share-icons a:nth-child(4) > svg {
+.post-meta .post-meta-inner .share-icons a:nth-child(4) > svg {
 	width: 32%;
 }
-.post-meta .post-meta-inner .__share-icons a:nth-child(5) > svg {
+.post-meta .post-meta-inner .share-icons a:nth-child(5) > svg {
 	width: 42%;
 }
-.post-meta .post-meta-inner .__share-icons a:nth-child(6) > svg {
+.post-meta .post-meta-inner .share-icons a:nth-child(6) > svg {
 	width: 41%;
 }
-.post-meta .post-meta-inner .__share-icons a span.share-counter {
+.post-meta .post-meta-inner .share-icons a span.share-counter {
 	display: block;
 	color: #e6e6e6;
 	text-align: right;
