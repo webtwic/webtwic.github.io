@@ -1002,7 +1002,7 @@ img {
 	.flyout:after {
 		font-family: webtwicons;
 		position: absolute;
-		font-size: 1rem;
+		font-size: 1em;
 		content: "\f0da";
 		cursor: pointer;
 		display: block;
@@ -1081,7 +1081,7 @@ img {
 	margin: 0px auto;
 }
 .main .main-menu li a {
-	font-size: 0.94rem;
+	font-size: 0.94em;
 	padding: 0 56px;
 	display: block;
 	line-height: 50px;
@@ -1380,7 +1380,7 @@ body.home {
 .article .read-article .read-article-text:after {
 	content: "\f061";
 	font-family: webtwicons;
-	font-size: 0.75rem;
+	font-size: 0.8em;
 	margin-left: 3px;
 }
 .article .article-social {
@@ -1569,7 +1569,7 @@ body.home {
 	text-align: center;
 	border-width: 2px;
 	font-weight: 600;
-	font-size: 1rem;
+	font-size: 1em;
 	color: #F9F9F9;
 	height: 36px;
 	position: relative;
@@ -1651,7 +1651,7 @@ iframe a.twitter-timeline {
 	-ms-border-radius: 2px;
 	-o-border-radius: 2px;
 	border-radius: 2px;
-	font-size: 0.83rem;
+	font-size: 0.83em;
 	font-weight: 400;
 	padding: 1.5px;
 	color: #999;
@@ -1729,7 +1729,7 @@ iframe a.twitter-timeline {
 	-ms-transition: all 0.4s linear;
 	-o-transition: all 0.4s linear;
 	transition: all 0.4s linear;
-	font-size: 1.067rem;
+	font-size: 1.067em;
 	color: #B5B5B5;
 	font-weight: 500;
 	display: block;
@@ -1917,7 +1917,7 @@ iframe a.twitter-timeline {
 	background: #f9f9f9;
 	margin-left: 9px;
 	font-weight: 700;
-	font-size: 1rem;
+	font-size: 1em;
 }
 .pagination *:hover {
 	opacity: 0.8;
@@ -1961,7 +1961,7 @@ iframe a.twitter-timeline {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 1.85rem;
+	font-size: 1.85em;
 	cursor: pointer;
 	width: 30px;
 	height: 45px;
@@ -2120,7 +2120,7 @@ article.post-wrap:first-child {
 	-ms-text-shadow: none;
 	-o-text-shadow: none;
 	text-shadow: none;
-	font-size: 1.73rem;
+	font-size: 1em;
 	font-weight: 500;
 	color: #3F5261;
 }
@@ -2132,7 +2132,7 @@ article.post-wrap:first-child {
 	text-shadow: 0px 1px 1px rgb(238, 238, 238);
 	color: #7AAFC8;
 }
-.post-content .post-meta {
+.category-page .post-content .post-meta {
 	background: #f5f5f5;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
@@ -2141,29 +2141,29 @@ article.post-wrap:first-child {
 	border-radius: 2px;
 	padding: 5px;
 }
-.post-content .post-meta a {
+.category-page .post-content .post-meta a {
 	-webkit-transition: color 0.3s ease;
 	-moz-transition: color 0.3s ease;
 	-ms-transition: color 0.3s ease;
 	-o-transition: color 0.3s ease;
 	transition: color 0.3s ease;
 	padding-right: 12px;
-	font-size: 0.98rem;
+	font-size: 0.98em;
 	font-weight: 400;
 	color: #AFAFAF;
 }
-.post-meta .webtwicons {
+.category-page .post-meta .webtwicons {
 	color: #AFAFAF;
-	font-size: 0.95rem;
+	font-size: 0.95em;
 	padding-right: 4px;
 }
-.post-meta .newspaper-icon {
+.category-page .post-meta .newspaper-icon {
 	margin-left: 4px;
 }
-.post-content .post-meta a:hover {
+.category-page .post-content .post-meta a:hover {
 	color: #7AAFC8;
 }
-.description-holder .post-excerpt {
+.category-page .description-holder .post-excerpt {
 	font-family: "Source Sans Pro",Calibri,"Trebuchet MS",Helvetica,Arial,georgia;
 	color: #597488;
 	font-size: 1rem;
@@ -2171,7 +2171,7 @@ article.post-wrap:first-child {
 	height: 96px;
 	max-height: 96px;
 }
-.post-content .read-post {
+.category-page .post-content .read-post {
 	-webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
 	-moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
 	-ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
@@ -2193,7 +2193,7 @@ article.post-wrap:first-child {
 	float: right;
 	color: #fff;
 }
-.post-content .read-post svg {
+.category-page .post-content .read-post svg {
 	-webkit-transition: margin-left 0.05s ease;
 	-moz-transition: margin-left 0.05s ease;
 	-ms-transition: margin-left 0.05s ease;
@@ -2202,19 +2202,19 @@ article.post-wrap:first-child {
 	vertical-align: middle;
 	margin: -4px 0 0 -5px;
 }
-.post-content .read-post:hover {
+.category-page .post-content .read-post:hover {
 	background: #4B4F50;
 }
-.post-content .read-post:hover svg {
+.category-page .post-content .read-post:hover svg {
 	margin-left: 3px;
 }
-.post-wrap .post-share {
+.category-page .post-wrap .post-share {
 	height: 50px;
 	width: 524px;
 	display: block;
 	margin-left: 20%;
 }
-.post-wrap .post-share a {
+.category-page .post-wrap .post-share a {
 	transition: opacity 0.3s linear;
 	-webkit-transition: opacity 0.3s linear;
 	-moz-transition: opacity 0.3s linear;
@@ -2230,10 +2230,10 @@ article.post-wrap:first-child {
 	height:80%;
 	opacity: 1;
 }
-.post-wrap .post-share a:hover {
+.category-page .post-wrap .post-share a:hover {
 	opacity: 0.85;
 }
-.post-wrap .post-share a .webtwicons {
+.category-page .post-wrap .post-share a .webtwicons {
 	margin: -0.4em 0.3em 0em -0.47em;
 	border-radius: 2px 0px 0px 2px;
 	-webkit-border-radius: 2px 0px 0px 2px;
@@ -2244,26 +2244,26 @@ article.post-wrap:first-child {
 	float: left;
 	height: 100%;
 }
-.post-share a:first-child {
+.category-page.post-share a:first-child {
 	width: 22%;
 }
-.post-share a:nth-child(1) :nth-child(1),
-.post-share a:nth-child(4) :nth-child(1) {
+.category-page .post-share a:nth-child(1) :nth-child(1),
+.category-page .post-share a:nth-child(4) :nth-child(1) {
 	padding: 12px 13px 28px;
 }
-.post-wrap .post-share a:nth-child(1) .webtwicons {
+.category-page .post-wrap .post-share a:nth-child(1) .webtwicons {
 	background: #334E84;
 }
-.post-wrap .post-share a:nth-child(2) .webtwicons {
+.category-page .post-wrap .post-share a:nth-child(2) .webtwicons {
 	background: #2D9CEE;
 }
-.post-wrap .post-share a:nth-child(3) .webtwicons {
+.category-page .post-wrap .post-share a:nth-child(3) .webtwicons {
 	background: #CC462F;
 }
-.post-wrap .post-share a:nth-child(4) .webtwicons {
+.category-page .post-wrap .post-share a:nth-child(4) .webtwicons {
 	background: #2D3E54;
 }
-.post-wrap .post-share a :nth-child(2) {
+.category-page .post-wrap .post-share a :nth-child(2) {
 	margin: 0.03em 0em 0.3em 0em;
 }
 .category-page .sidebar-column {
@@ -2518,7 +2518,7 @@ header.secondary-header .logo .desktop_logo {
 .main nav.secondary-menu li > a {
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
-	font-size: 0.94rem;
+	font-size: 0.94em;
 	padding: 5.4px 23px;
 	display: block;
 	line-height: 52px;
@@ -3242,7 +3242,7 @@ Start videos.css
    text-transform: uppercase;
    font-size: 0.8em;
    font-weight: 400;
-   letter-spacing: 0.05rem;
+   letter-spacing: 0.062em;
    padding-bottom: 2px;
 }
 #colophon .help a:hover {
