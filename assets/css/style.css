@@ -3311,10 +3311,10 @@ Start videos.css
    -ms-animation-timing-function: ease-in-out;
    -o-animation-timing-function: ease-in-out;
    animation-timing-function: ease-in-out;
-   -webkit-animation: heart 3.5s infinite;
-   -moz-animation: heart 3.5s infinite;
-   -ms-animation: heart 3.5s infinite;
-   -o-animation: heart 3.5s infinite;
-   animation: heart 3.5s infinite;
+   -webkit-animation: heart 4.5s infinite;
+   -moz-animation: heart 4.5s infinite;
+   -ms-animation: heart 4.5s infinite;
+   -o-animation: heart 4.5s infinite;
+   animation: heart 4.5s infinite;
 	color: #C0392B;
 }
