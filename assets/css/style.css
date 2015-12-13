@@ -3296,7 +3296,6 @@ Start videos.css
 #site-info .colophon-link {
 	font-family: Calibri, "Source Sans Pro","Trebuchet MS",Helvetica,Arial,georgia;
 	border-bottom: 2px dashed #fff;
-	text-transform: lowercase;
 	letter-spacing: .01em;
 	padding-bottom: 2px;
 	font-size: 1.1em;
