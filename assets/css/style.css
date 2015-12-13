@@ -1320,11 +1320,15 @@ body.home {
 	color: #BD1E23;
 }
 .article .article-social a .tooltip {
+   -webkit-border-radius: 1px;
+   -moz-border-radius: 1px;
+   -ms-border-radius: 1px;
+   -o-border-radius: 1px;
+   border-radius: 1px;
 	display: inline;
 	padding: 0.1px 6px;
 	position: absolute;
 	text-align: center;
-	border-radius: 2px;
 	background: #6699CC;
 	font-size: 0.5em;
 	bottom: 112px;
