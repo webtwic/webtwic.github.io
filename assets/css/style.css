@@ -2668,13 +2668,6 @@ header.secondary-header .logo .desktop_logo {
 	margin: 8.5px 13px;
 	font-size: 0.9em;
 }
-/*.article-meta .article-meta-inner .separator {
-   height: 100%;
-   border-left: 1px solid rgba(0, 0, 0, 0.06);
-   position: absolute;
-   bottom: 1px;
-   right: 226px;
-}*/
 .article-meta .article-meta-inner .cta-btns {
 	position: relative;
    margin: 7px 0;
