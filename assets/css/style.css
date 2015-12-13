@@ -3179,23 +3179,16 @@ Start videos.css
 }
 
 #site-info {
-	padding-left: 20px;
+	padding: 18px 20px;
 	background: #222E3B;
-	padding-right: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	height: 77px;
 	width: auto;
 	display: block;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	padding-top: 27px;
 	color: #6D8299;
 }
 #site-info span {
 	font-family: "Source Sans Pro", Calibri,"Trebuchet MS",Helvetica,Arial,georgia;
 	color: #fff;
+   font-size: 1em;
 }
 #site-info .colophon-link {
 	font-family: Calibri, "Source Sans Pro","Trebuchet MS",Helvetica,Arial,georgia;
@@ -3204,7 +3197,7 @@ Start videos.css
 	letter-spacing: 0.01em;
 	padding-bottom: 2px;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 1em;
 	color: #fff;
 }
 #site-info .colophon-link:hover {
