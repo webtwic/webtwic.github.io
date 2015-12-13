@@ -2595,6 +2595,7 @@ header.secondary-header .logo .desktop_logo {
 .main-page .page-focus-column {
     position: relative;
     width: 70%;
+    margin-right: 35px;
 }
 .main-page .page-focus-column .post-content-column {
    background: #fff;
@@ -3043,6 +3044,10 @@ header.secondary-header .logo .desktop_logo {
 }
 .post-secondary-column .entry-comments h3 {
 
+}
+.single-post .main-page .sidebar-column {
+   margin-top: 0;
+   width: 24.295%;
 }
 
 /* Start responsive for single-post */
