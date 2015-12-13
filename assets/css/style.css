@@ -2460,7 +2460,7 @@ header.secondary-header .logo .desktop_logo {
 	}
 	.header-follow-search .follow-icons a {
 		display: inline-block;
-      margin-right: 20px;
+      margin-right: 16px;
 	}
 	.header-follow-search .follow-icons a:hover .webtwicons {
 		transform: scale(1.2);
