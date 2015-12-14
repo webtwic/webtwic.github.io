@@ -2591,6 +2591,7 @@ header.secondary-header .logo .desktop_logo {
 }
 .single-post .entry-wrap .main-page {
 	width: 100%;
+   height: 100%;
 }
 .main-page .page-focus-column {
     position: relative;
@@ -3040,7 +3041,6 @@ header.secondary-header .logo .desktop_logo {
    background: #fff;
    height: 500px;
    padding: 1px 10px;
-   margin-bottom: 20px;
 }
 .post-secondary-column .entry-comments h3 {
 
