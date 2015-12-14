@@ -2052,14 +2052,14 @@ article.post-wrap {
 	-o-box-shadow: 0px 0px 7px rgba(0, 0, 0, .08);
 	box-shadow: 0px 0px 7px rgba(0, 0, 0, .08);
 	border-bottom: 1px solid #E5E5E5;
-	padding: 30px 30px 400px;
+	padding: 30px 30px 350px;
 	margin-bottom: 30px;
 	position: relative;
 	background: #fff;
 	width: 100%;
 }
 article.post-wrap:first-child {
-	padding-bottom: 360px;
+	padding-bottom: 310px;
 }
 .post-thumbnail {
 	-webkit-border-radius: 1px;
@@ -2207,64 +2207,6 @@ article.post-wrap:first-child {
 }
 .category-page .post-content .read-post:hover svg {
 	margin-left: 3px;
-}
-.category-page .post-wrap .post-share {
-	height: 50px;
-	width: 524px;
-	display: block;
-	margin-left: 20%;
-}
-.category-page .post-wrap .post-share a {
-	transition: opacity .3s linear;
-	-webkit-transition: opacity .3s linear;
-	-moz-transition: opacity .3s linear;
-	-ms-transition: opacity .3s linear;
-	-o-transition: opacity .3s linear;
-	display: inline-block;
-	position: relative;
-	margin: 0 1em 0 0;
-	font-weight: 500;
-	padding: .4em;
-	width: 21%;
-	color: #fff;
-	height: 80%;
-	opacity: 1;
-}
-.category-page .post-wrap .post-share a:hover {
-	opacity: .85;
-}
-.category-page .post-wrap .post-share a .webtwicons {
-	margin: -.4em .3em 0em -.47em;
-	border-radius: 2px 0px 0px 2px;
-	-webkit-border-radius: 2px 0px 0px 2px;
-	-moz-border-radius: 2px 0px 0px 2px;
-	-ms-border-radius: 2px 0px 0px 2px;
-	-o-border-radius: 2px 0px 0px 2px;
-	padding: 12px 10px 28px;
-	float: left;
-	height: 100%;
-}
-.category-page.post-share a:first-child {
-	width: 22%;
-}
-.category-page .post-share a:nth-child(1) :nth-child(1),
-.category-page .post-share a:nth-child(4) :nth-child(1) {
-	padding: 12px 13px 28px;
-}
-.category-page .post-wrap .post-share a:nth-child(1) .webtwicons {
-	background: #334E84;
-}
-.category-page .post-wrap .post-share a:nth-child(2) .webtwicons {
-	background: #2D9CEE;
-}
-.category-page .post-wrap .post-share a:nth-child(3) .webtwicons {
-	background: #CC462F;
-}
-.category-page .post-wrap .post-share a:nth-child(4) .webtwicons {
-	background: #2D3E54;
-}
-.category-page .post-wrap .post-share a :nth-child(2) {
-	margin: .03em 0em .3em 0em;
 }
 .category-page .sidebar-column {
 	width: 26.295%;
