@@ -2637,7 +2637,8 @@ header.secondary-header .logo .desktop_logo {
    display: inline-block;
    width: 75%;
    height: 100%;
-   /*border-left: 1px solid rgba(0, 0, 0, .06);*/
+   border-left: 1px solid rgba(0, 0, 0, .06);
+   padding-left: 10px;
 }
 .article-meta .article-meta-inner .share-icons a {
 	position: relative;
