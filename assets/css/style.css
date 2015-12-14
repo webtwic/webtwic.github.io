@@ -3118,12 +3118,7 @@ Start videos.css
 
 /* Start Site footer */
 .main .site-footer {
-   background: #273340;
-   background: -webkit-linear-gradient(#273340, #313D4A);
-   background: -moz-linear-gradient(#273340, #313D4A);
-   background: -ms-linear-gradient(#273340, #313D4A);
-   background: -o-linear-gradient(#273340, #313D4A);
-   background: linear-gradient(#273340, #313D4A);
+	background: #273340;
 	margin-top: 60px;
 	display: block;
 	color: #fff;
