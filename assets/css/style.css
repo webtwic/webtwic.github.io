@@ -2873,7 +2873,7 @@ header.secondary-header .logo .desktop_logo {
    width: 96%;
 }
 .author-profile .author-content .author-social {
-   margin-top: 25px;
+   margin-top: 23px;
 }
 .author-content .author-social .webtwicons {
    -webkit-transition: color ease-in-out .3s;
@@ -2883,7 +2883,7 @@ header.secondary-header .logo .desktop_logo {
    transition: color ease-in-out .3s;
    letter-spacing: 5px;
    color: #6699cc;
-   font-size: 1.2em;
+   font-size: 1.08em;
 }
 .author-content .author-social .webtwicons:hover {
    color: #4E697D;
