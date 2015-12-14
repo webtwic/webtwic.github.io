@@ -3049,6 +3049,9 @@ header.secondary-header .logo .desktop_logo {
    margin-top: 0;
    width: 24.295%;
 }
+.single-post .main-page .sidebar-column .freebie-item {
+   margin-left: 0;
+}
 
 /* Start responsive for single-post */
 
@@ -3174,10 +3177,8 @@ Start videos.css
 	background: transparent;
 	border-width: 2px;
 	border-style: solid;
-}
-#colophon .social-buttons .btn-footer {
-	padding: 12px 1.2%;
-	margin-right: 5px;
+   padding: 12px 1.17%;
+   margin-right: 5px;
 }
 #colophon .social-buttons .btn-footer .webtwicons {
 	color: #fff;
