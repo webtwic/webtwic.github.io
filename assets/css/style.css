@@ -2749,6 +2749,28 @@ header.secondary-header .logo .desktop_logo {
 	height: 520px;
 	width: 100%;
 }
+.post-content-column article .secondary-share {
+   width: 100%;
+   position: relative;
+   padding: 30px 40px;
+   border-top: 1px solid rgba(0, 0, 0, .06);
+}
+.post-content-column article .secondary-share a {
+   -webkit-transition-duration: 0.5s;
+   -moz-transition-duration: 0.5s;
+   -ms-transition-duration: 0.5s;
+   -o-transition-duration: 0.5s;
+   transition-duration: 0.5s;
+   padding: 16px 18px;
+   position: relative;
+   color: #fff;
+   font-size: 1.05em;
+   margin-right: 5px;
+}
+.post-content-column article .secondary-share a .webtwicons {
+   position: relative;
+   margin-right: 10px;
+}
 .post-content-column article .entry-tags {
    border-top: 1px solid rgba(0, 0, 0, .06);
    border-bottom: 1px solid rgba(0, 0, 0, .06);
