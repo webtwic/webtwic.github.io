@@ -722,13 +722,29 @@ img {
 	cursor: pointer;
 }
 [class*="btn-"] {
+   -webkit-transition-timing-function: ease;
+   -moz-transition-timing-function: ease;
+   -ms-transition-timing-function: ease;
+   -o-transition-timing-function: ease;
+   transition-timing-function: ease;
+   -webkit-transition-duration: .3s;
+   -moz-transition-duration: .3s;
+   -ms-transition-duration: .3s;
+   -o-transition-duration: .3s;
+   transition-duration: .3s;
+   -webkit-transition-delay: 0s;
+   -moz-transition-delay: 0s;
+   -ms-transition-delay: 0s;
+   -o-transition-delay: 0s;
+   transition-delay: 0s;
+   -webkit-transition-property: all;
+   -moz-transition-property: all;
+   -ms-transition-property: all;
+   -o-transition-property: all;
+   transition-property: all;
 	position: relative;
 	border-width: 0px 0px 2px 0px;
 	border-style: solid;
-	transition-property: all;
-	transition-duration: .3s;
-	transition-timing-function: ease;
-	transition-delay: 0s;
 }
 .btn-facebook, .btn-fb {
 	background: #3B599A;
@@ -2756,11 +2772,11 @@ header.secondary-header .logo .desktop_logo {
    border-top: 1px solid rgba(0, 0, 0, .06);
 }
 .post-content-column article .secondary-share a {
-   -webkit-transition-duration: 0.5s;
-   -moz-transition-duration: 0.5s;
-   -ms-transition-duration: 0.5s;
-   -o-transition-duration: 0.5s;
-   transition-duration: 0.5s;
+   -webkit-transition-duration: .5s;
+   -moz-transition-duration: .5s;
+   -ms-transition-duration: .5s;
+   -o-transition-duration: .5s;
+   transition-duration: .5s;
    padding: 16px 18px;
    position: relative;
    color: #fff;
