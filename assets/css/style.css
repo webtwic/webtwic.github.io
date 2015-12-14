@@ -2052,7 +2052,7 @@ article.post-wrap {
 	-o-box-shadow: 0px 0px 7px rgba(0, 0, 0, .08);
 	box-shadow: 0px 0px 7px rgba(0, 0, 0, .08);
 	border-bottom: 1px solid #E5E5E5;
-	padding: 30px 30px 350px;
+	padding: 30px 30px 340px;
 	margin-bottom: 30px;
 	position: relative;
 	background: #fff;
@@ -2213,7 +2213,7 @@ article.post-wrap:first-child {
 	margin-top: 0;
 }
 .category-page .sidebar.empty-col {
-	height: 250px;
+	height: 210px;
 }
 
 
