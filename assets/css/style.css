@@ -59,7 +59,7 @@
 
 @keyframes heart {
    0% {
-        color: #C0392B;
+      color: #C0392B;
     }
    15% {
       color: #B62F21;
@@ -1472,19 +1472,19 @@ body.home {
 	/*display: block;*/
 }
 .article .article-social a:nth-of-type(1) .tooltip {
-	left: 18.5%;
+	left: 17.8%;
 }
 .article .article-social a:nth-of-type(2) .tooltip {
-	left: 32.2%;
+	left: 31.2%;
 }
 .article .article-social a:nth-of-type(3) .tooltip {
 	left: 43.6%;
 }
 .article .article-social a:nth-of-type(4) .tooltip {
-	left: 57.45%;
+	left: 58.45%;
 }
 .article .article-social a:nth-of-type(5) .tooltip {
-	left: 69%;
+	left: 70%;
 }
 .tech-news-wrap {
 	padding: 10px 10px 0 10px;
