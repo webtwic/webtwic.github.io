@@ -2033,13 +2033,11 @@ Start Category-page.css
 	width: 94%;
 }
 .category-page .entryHeader {
-	margin-top: -20px;
+	margin: -10px auto 20px auto;
 	color: #555;
-	width: 21%;
 	display: block;
-	font-size: 1.52em;
-	margin-left: auto;
-	margin-right: auto;
+	font-size: 1.8em;
+   text-align: center;
 }
 .category-page .entryHeader span {
 	color: #BEBEBE;
