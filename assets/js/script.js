@@ -72,8 +72,7 @@ jQuery(document).ready(function() {
 			function() {
 				hideDisabledFeatures();
 				undoSiteAdjust();
-			}
-		);
+			});
 	}
 
 	function hideDisabledFeatures() {
