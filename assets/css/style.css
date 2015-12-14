@@ -3153,8 +3153,7 @@ Start videos.css
 }
 /* Start Footer Social Media Styles */
 #colophon .social-buttons {
-	margin-left: 9px;
-	height: 53px;
+	margin-bottom: 30px;
 }
 #colophon .social-buttons a {
    -webkit-transition: all ease .3s;
