@@ -2881,7 +2881,7 @@ header.secondary-header .logo .desktop_logo {
    -ms-transition: color ease-in-out .3s;
    -o-transition: color ease-in-out .3s;
    transition: color ease-in-out .3s;
-   letter-spacing: 7px;
+   letter-spacing: 5px;
    color: #6699cc;
    font-size: 1.2em;
 }
