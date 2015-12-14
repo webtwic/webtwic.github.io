@@ -1,7 +1,7 @@
 ## [webtwic] (http://webtwic.com)
 Perfect webtwic build
 
-Webtwic is a community for computer and internet tweaks.
+Webtwic is a community for coding and tech tweaks where beginners and experts can learn.
 
 > We love tech and coding :)
 
