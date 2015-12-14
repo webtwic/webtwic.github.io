@@ -1722,6 +1722,10 @@ iframe a.twitter-timeline {
 .freebie-item:hover > span {
 	color: #89BED7;
 }
+.single-post .sidebar-column .freebie-item,
+.category-page .sidebar-column .freebie-item, {
+   margin-left: 0;
+}
 .freebie-item span {
 	font-family: "Source Sans Pro", Calibri, "Trebuchet MS",Helvetica,Arial,georgia;
 	-webkit-transition: all .4s linear;
@@ -2992,9 +2996,7 @@ header.secondary-header .logo .desktop_logo {
    margin-top: 0;
    width: 24.295%;
 }
-.single-post .main-page .sidebar-column .freebie-item {
-   margin-left: 0;
-}
+
 
 /* Start responsive for single-post */
 
