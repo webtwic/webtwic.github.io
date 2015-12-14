@@ -2770,6 +2770,8 @@ header.secondary-header .logo .desktop_logo {
    position: relative;
    padding: 30px 40px;
    border-top: 1px solid rgba(0, 0, 0, .06);
+   border-bottom: 1px solid rgba(0, 0, 0, .06);
+   margin-bottom: 20px;
 }
 .post-content-column article .secondary-share a {
    -webkit-transition-duration: .5s;
