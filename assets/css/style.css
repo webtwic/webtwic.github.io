@@ -2398,7 +2398,7 @@ header.secondary-header .logo .desktop_logo {
 		fill: #fff;
       padding: 10px;
 	}
-   .close-icon svg {
+   .ui-overlay-search .close-icon svg {
       width: 50px;
       height: 50px;
    }
