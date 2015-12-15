@@ -2794,19 +2794,7 @@ header.secondary-header .logo .desktop_logo {
    font-size: 1.05em;
    margin-right: 5px;
 }
-.post-content-column article .secondary-share a:hover .webtwicons {
-   -webkit-transform: scale(1.15);
-   -moz-transform: scale(1.15);
-   -ms-transform: scale(1.15);
-   -o-transform: scale(1.15);
-   transform: scale(1.15);
-}
 .post-content-column article .secondary-share a .webtwicons {
-   -webkit-transition: transform .3s linear;
-   -moz-transition: transform .3s linear;
-   -ms-transition: transform .3s linear;
-   -o-transition: transform .3s linear;
-   transition: transform .3s linear;
    position: relative;
    margin-right: 10px;
 }
