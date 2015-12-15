@@ -813,10 +813,12 @@ img {
 }
 .btn-linkedin.hover:hover,
 .btn-in.hover:hover {
-   background: #0A81BF;
-   border-color: #116EAC;
+   background: #148BC9;
+   border-color: #1B78B6;
 }
-.flat, .flat-button, .flat-btn {
+.flat,
+.flat-button,
+.flat-btn {
 	border: 0 none !important;
 	outline: 0 none !important;
 }
