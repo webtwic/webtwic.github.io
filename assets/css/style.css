@@ -162,110 +162,35 @@
       color: #50ABF1;
    }
 }
-@keyframes spin {
-   0% {
-      transform: rotate(10deg);
-   }
-   10% {
-      transform: rotate(20deg);
-   }
-   20% {
-      transform: rotate(30deg);
-   }
-   30% {
-      transform: rotate(40deg);
-   }
-   40% {
-      transform: rotate(50deg);
-   }
-   50% {
-      transform: rotate(60deg);
-   }
-   60% {
-      transform: rotate(70deg);
-   }
-   70% {
-      transform: rotate(80deg);
-   }
-   80% {
-      transform: rotate(90deg);
-   }
-   90% {
-      transform: rotate(95deg);
-   }
-   100% {
-      transform: rotate(100deg);
-   }
-}
 @-webkit-keyframes spin {
-   0% {
-      -webkit-transform: rotate(10deg);
-   }
-   10% {
-      -webkit-transform: rotate(20deg);
-   }
-   20% {
-      -webkit-transform: rotate(30deg);
-   }
-   30% {
-      -webkit-transform: rotate(40deg);
-   }
-   40% {
-      -webkit-transform: rotate(50deg);
-   }
-   50% {
-      -webkit-transform: rotate(60deg);
-   }
-   60% {
-      -webkit-transform: rotate(70deg);
-   }
-   70% {
-      -webkit-transform: rotate(80deg);
-   }
-   80% {
-      -webkit-transform: rotate(90deg);
-   }
-   90% {
-      -webkit-transform: rotate(95deg);
-   }
-   100% {
-      -webkit-transform: rotate(100deg);
-   }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
 }
 @-moz-keyframes spin {
-   0% {
-      -moz-transform: rotate(10deg);
-   }
-   10% {
-      -moz-transform: rotate(20deg);
-   }
-   20% {
-      -moz-transform: rotate(30deg);
-   }
-   30% {
-      -moz-transform: rotate(40deg);
-   }
-   40% {
-      -moz-transform: rotate(50deg);
-   }
-   50% {
-      -moz-transform: rotate(60deg);
-   }
-   60% {
-      -moz-transform: rotate(70deg);
-   }
-   70% {
-      -moz-transform: rotate(80deg);
-   }
-   80% {
-      -moz-transform: rotate(90deg);
-   }
-   90% {
-      -moz-transform: rotate(95deg);
-   }
-   100% {
-      -moz-transform: rotate(100deg);
-   }
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
 }
 
 @-ms-viewport {
@@ -2473,14 +2398,11 @@ header.secondary-header .logo .desktop_logo {
 		fill: #fff;
       width: 50px;
       height: 50px;
-      margin: 6px 9px;
+      margin: 18px 30px;
 	}
    .ui-overlay-search .spin {
-      -webkit-animation: spin .1s ease-out 3;
-      -moz-animation: spin .1s ease-out 3;
-      -ms-animation: spin .1s ease-out 3;
-      -o-animation: spin .1s ease-out 3;
-      animation: spin .1s ease-out 3;
+      -webkit-animation: spin .3s 1 linear;
+      animation: spin .3s 1 linear;
    }
 	.ui-overlay-search .search-input {
 		position: relative;
