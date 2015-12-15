@@ -19,15 +19,9 @@ s = $(window).scrollTop();
 jQuery(document).ready(function() {
 
 	// Define Variables
-	var is_DisabledFeatures = $("div").hasClass("dfvisible"),
-		  img = $("img"),
-		  is_noAlt = img.attr("alt", null),
-		  scripts = $("script"),
-		  is_noType = scripts.attr("type", null),
-		  is_noCharset = scripts.attr("charset", null),
-		  $to_top = $("a.to-top"),
-		  is_toggle_active = $(".hamburger").hasClass("is_active"),
-		  height = 200;
+	var is_DisabledFeatures = $("div").hasClass("dfvisible"), img = $("img"), is_noAlt = img.attr("alt", null), scripts = $("script"), is_noType = scripts.attr("type", null), is_noCharset = scripts.attr("charset", null);
+
+	var $to_top = $("a.to-top"), is_toggle_active = $(".hamburger").hasClass("is_active"), height = 200;
 
 	// Performance Fixes
 
