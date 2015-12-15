@@ -2402,6 +2402,7 @@ header.secondary-header .logo .desktop_logo {
 	}
    .ui-overlay-search .spin {
       -webkit-animation: spin .3s 1 linear;
+      -moz-animation: spin .3s 1 linear;
       animation: spin .3s 1 linear;
    }
 	.ui-overlay-search .search-input {
