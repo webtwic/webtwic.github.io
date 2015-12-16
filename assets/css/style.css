@@ -2387,7 +2387,7 @@ header.secondary-header .logo .desktop_logo {
 		bottom: 0;
 		right: 0;
 		left: 0;
-		background: #273340;
+		background: rgba(39,51,64, .99);
 		display: none;
       z-index: 99999;
 	}
