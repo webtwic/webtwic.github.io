@@ -2453,7 +2453,7 @@ header.secondary-header .logo .desktop_logo {
       width: 100.3%;
    }
    .ui-overlay-search .search-input p {
-      text-align: left;
+      text-align: center;
       font-size: 1.05em;
       color: #6D8299;
    }
