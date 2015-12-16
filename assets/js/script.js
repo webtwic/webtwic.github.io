@@ -153,15 +153,14 @@ jQuery(document).ready(function() {
 	$(".header-follow-search .close-icon").on("click", function() {
 		closeUiOverlay();
 	});
-	
+
 	$(".header-follow-search .close-icon").hover(
 		function() {
 			$(this).addClass("spin");
 		},
 		function() {
 			$(this).removeClass("spin");
-		}
-	);
+		});
 
 	function openUiOverlay() {
 		$(".ui-overlay-search").fadeIn(400).addClass("is_open");
