@@ -1016,7 +1016,7 @@ img {
         width: 103%;
     }
     /* Start dropdown menu styles*/
-    
+
     .dropdown {
         position: relative;
     }
@@ -1109,7 +1109,7 @@ img {
         position: absolute;
     }
     /* End Flyout menu styles */
-    
+
     .active-menu a {
         color: #7AAFC8 !important;
     }
@@ -1346,7 +1346,7 @@ body.home {
 }
 .home .featured-posts-column {
     width: 44.93%;
-    margin-right: 30px;
+    margin-right: 2.1%;
 }
 .featured-posts-column .article {
     padding: 40px 30px 0;
@@ -1552,7 +1552,7 @@ body.home {
     padding: 10px 10px 0 10px;
     color: #597488;
     background: #F0F5F8;
-    margin: 25px 28px 0 0;
+    margin: 25px 2.1% 0 0;
     width: 25.142%;
     height: 3751px;
 }
@@ -2552,7 +2552,7 @@ header.secondary-header .logo .desktop_logo {
     font-size: 2.75em;
     padding: 0 180px;
     /*padding: 0 150px;*/
-    
+
     color: #3F5261;
     font-weight: 500;
 }
@@ -2775,7 +2775,7 @@ header.secondary-header .logo .desktop_logo {
     padding: 1px 3.6px;
     color: #6699CC;
     /*color: #1BC1A1;*/
-    
+
     border-radius: 3px;
 }
 .entry-content div.snippet pre {
