@@ -3207,12 +3207,25 @@ body.about-page .site-content {
    text-align: center;
 }
 .founders-section .the-founders [data-expanded="false"] {
-   background: #fff;
+	-webkit-transition: box-shadow .28s ease;
+	-moz-transition: box-shadow .28s ease;
+	-ms-transition: box-shadow .28s ease;
+	-o-transition: box-shadow .28s ease;
+	transition: box-shadow .28s ease;
+	background: #fff;
    width: 25%;
    position: relative;
    margin-right: 3%;
    height: 400px;
    display: inline-block;
+	cursor: default;
+}
+.founders-section .the-founders [data-expanded="false"]:hover {
+	-webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
+	-ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
+	-o-box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
 }
 .founders-section .the-founders [data-expanded="false"]:nth-child(2n) {
    margin-right: 0;
