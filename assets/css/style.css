@@ -3170,18 +3170,18 @@ body.about-page .site-content {
    margin-right: 3px;
    vertical-align: baseline;
 }
-.about-page .founders {
+.about-page .founders-section {
    width: 100%;
    background: #fff;
    height: 400px;
 }
-.about-page .founders .inner {
+.about-page .founders-section .inner {
    width: 80%;
    height: 100%;
    position: relative;
    margin: 0 auto;
 }
-.about-page .founders h2 {
+.about-page .founders-section h2 {
    padding-top: 20px;
    font-weight: 400;
    color: #2D404F;
