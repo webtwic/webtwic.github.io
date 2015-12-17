@@ -3235,10 +3235,26 @@ body.about-page .site-content {
 	font-weight: 600;
 	color: #6699cc;
 }
-.founder-info p {
+.the-founders [data-expanded="false"] .founder-info p {
 	color: #597488;
 	margin-top: 4px;
 	font-size: 0.91em;
+}
+.the-founders [data-expanded="false"] .founder-info .founder-social {
+	position: relative;
+	margin-top: 2px;
+}
+[data-expanded="false"] .founder-info .founder-social a {
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	margin-right: 5px;
+	color: #666;
+}
+[data-expanded="false"] .founder-info .founder-social a:hover {
+	color: #6699cc;
 }
 /* Start Site footer */
 
