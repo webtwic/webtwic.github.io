@@ -3176,6 +3176,9 @@ body.about-page .site-content {
    margin-right: 7px;
    color: #6699cc;
 }
+.about-page .about-section .social a:nth-child(2) .webtwicons {
+	font-size: 0.9em;
+}
 .about-page .about-section .social a .webtwicons {
    margin-right: 3px;
    vertical-align: baseline;
