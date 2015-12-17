@@ -3125,11 +3125,11 @@ body.about-page .site-content {
    width: 100%;
 }
 .about-page .about-section a {
-   -webkit-transition: color 0.3s ease;
-   -moz-transition: color 0.3s ease;
-   -ms-transition: color 0.3s ease;
-   -o-transition: color 0.3s ease;
-   transition: color 0.3s ease;
+   -webkit-transition: color .3s ease;
+   -moz-transition: color .3s ease;
+   -ms-transition: color .3s ease;
+   -o-transition: color .3s ease;
+   transition: color .3s ease;
 }
 .about-page .about-section a:hover {
    color: #487bae !important;
