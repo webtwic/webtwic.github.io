@@ -3112,7 +3112,7 @@ Start about-page.css
 
 */
 body.about-page {
-   background: #fff;
+   /*background: #fff;*/
 }
 body.about-page .site-content {
 	 margin: 100px auto 0 auto;
@@ -3128,26 +3128,17 @@ body.about-page .site-content {
 .site-content .about-section .header-title {
    position: relative;
    margin-top: -5px;
+   cursor: default;
 }
 .site-content .about-section .header-title span {
-   /*-webkit-animation-timing-function: ease-in-out;
-   -moz-animation-timing-function: ease-in-out;
-   -ms-animation-timing-function: ease-in-out;
-   -o-animation-timing-function: ease-in-out;
-   animation-timing-function: ease-in-out;
-   -webkit-animation: heart 4.5s infinite;
-   -moz-animation: heart 4.5s infinite;
-   -ms-animation: heart 4.5s infinite;
-   -o-animation: heart 4.5s infinite;
-   animation: heart 4.5s infinite;*/
    color: #C0392B;
-   cursor: pointer;
-   vertical-align: middle;
+   vertical-align: baseline;
    margin-left: 5px;
 }
 .site-content .about-section .about-text {
    width: 60%;
    margin: 0 auto;
+   color: #597488;
 }
 .site-content .about-section .links {
    position: relative;
