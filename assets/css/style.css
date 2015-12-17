@@ -3124,6 +3124,16 @@ body.about-page .site-content {
    height: 320px;
    width: 100%;
 }
+.about-page .about-section a {
+   -webkit-transition: color 0.3s ease;
+   -moz-transition: color 0.3s ease;
+   -ms-transition: color 0.3s ease;
+   -o-transition: color 0.3s ease;
+   transition: color 0.3s ease;
+}
+.about-page .about-section a:hover {
+   color: #487bae !important;
+}
 .about-page .about-section .header-title {
    position: relative;
    margin-top: -5px;
@@ -3173,7 +3183,7 @@ body.about-page .site-content {
 .about-page .founders-section {
    width: 100%;
    background: #fff;
-   height: 400px;
+   height: 530px;
 }
 .about-page .founders-section .inner {
    width: 80%;
@@ -3186,6 +3196,31 @@ body.about-page .site-content {
    font-weight: 400;
    color: #2D404F;
    border-bottom: 1px solid rgba(0, 0, 0, .06);
+}
+.about-page .founders-section .the-founders {
+   width: 100%;
+   height: 200px;
+   position: relative;
+   margin: 0 auto;
+   text-align: center;
+}
+.founders-section .the-founders [data-expanded="false"] {
+   background: #fff;
+   width: 25%;
+   position: relative;
+   margin-right: 3%;
+   height: 400px;
+   display: inline-block;
+}
+.founders-section .the-founders [data-expanded="false"]:nth-child(2n) {
+   margin-right: 0;
+}
+.founders-section .the-founders [data-expanded="false"] .founder-image {
+   width: 100%;
+   height: 224px;
+}
+.founders-section .the-founders [data-expanded="false"] .name {
+   float: left;
 }
 /* Start Site footer */
 
