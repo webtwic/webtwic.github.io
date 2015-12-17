@@ -3149,9 +3149,9 @@ body.about-page .site-content {
    color: #6699cc;
    display: inline-block;
    position: relative;
-   /*text-transform: uppercase;
-   font-size: .85em;
-   letter-spacing: .05em;*/
+   text-transform: uppercase;
+   font-size: .87em;
+   letter-spacing: .05em;
 }
 .site-content .about-section .links a span {
    margin-right: 4px;
