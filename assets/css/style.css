@@ -344,6 +344,9 @@ body {
 .chevron-right:before {
 	 content: "\f054";
 }
+.envelope-icon:before {
+  content: "\f0e0";
+}
 /* End Iconset */
 /** Start Normalize.css */
 
@@ -3108,14 +3111,74 @@ Start about-page.css
 * Last Modified: 17/12/2015
 
 */
+body.about-page {
+   background: #fff;
+}
 body.about-page .site-content {
 	 margin: 100px auto 0 auto;
-	 height: 5800px;
 	 max-width: 1379px;
-	 width: 96%;
+	 width: 100%;
 }
-
-
+.site-content .about-section {
+   /*background: #fff;*/
+   text-align: center;
+   height: 500px;
+   width: 100%;
+}
+.site-content .about-section .header-title {
+   position: relative;
+   margin-top: -5px;
+}
+.site-content .about-section .header-title span {
+   /*-webkit-animation-timing-function: ease-in-out;
+   -moz-animation-timing-function: ease-in-out;
+   -ms-animation-timing-function: ease-in-out;
+   -o-animation-timing-function: ease-in-out;
+   animation-timing-function: ease-in-out;
+   -webkit-animation: heart 4.5s infinite;
+   -moz-animation: heart 4.5s infinite;
+   -ms-animation: heart 4.5s infinite;
+   -o-animation: heart 4.5s infinite;
+   animation: heart 4.5s infinite;*/
+   color: #C0392B;
+   cursor: pointer;
+   vertical-align: middle;
+   margin-left: 5px;
+}
+.site-content .about-section .about-text {
+   width: 60%;
+   margin: 0 auto;
+}
+.site-content .about-section .links {
+   position: relative;
+   margin-bottom: 10px;
+}
+.site-content .about-section .links a {
+   margin-right: 5px;
+   color: #6699cc;
+   display: inline-block;
+   position: relative;
+   /*text-transform: uppercase;
+   font-size: .85em;
+   letter-spacing: .05em;*/
+}
+.site-content .about-section .links a span {
+   margin-right: 4px;
+   font-size: 1.2em;
+}
+.site-content .about-section .social {
+   position: relative;
+}
+.site-content .about-section .social a {
+   display: inline-block;
+   position: relative;
+   margin-right: 7px;
+   color: #6699cc;
+}
+.site-content .about-section .social a .webtwicons {
+   margin-right: 4px;
+   vertical-align: baseline;
+}
 /* Start Site footer */
 
 .main .site-footer {
