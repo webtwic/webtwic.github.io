@@ -3119,32 +3119,31 @@ body.about-page .site-content {
 	 max-width: 1379px;
 	 width: 100%;
 }
-.site-content .about-section {
-   /*background: #fff;*/
+.about-page .about-section {
    text-align: center;
    height: 500px;
    width: 100%;
 }
-.site-content .about-section .header-title {
+.about-page .about-section .header-title {
    position: relative;
    margin-top: -5px;
    cursor: default;
 }
-.site-content .about-section .header-title span {
+.about-page .about-section .header-title span {
    color: #C0392B;
    vertical-align: baseline;
    margin-left: 5px;
 }
-.site-content .about-section .about-text {
+.about-page .about-section .about-text {
    width: 60%;
    margin: 0 auto;
    color: #597488;
 }
-.site-content .about-section .links {
+.about-page .about-section .links {
    position: relative;
    margin-bottom: 10px;
 }
-.site-content .about-section .links a {
+.about-page .about-section .links a {
    margin-right: 5px;
    color: #6699cc;
    display: inline-block;
@@ -3153,21 +3152,21 @@ body.about-page .site-content {
    font-size: .87em;
    letter-spacing: .04em;
 }
-.site-content .about-section .links a span {
+.about-page .about-section .links a span {
    margin-right: 4px;
    font-size: 1.2em;
 }
-.site-content .about-section .social {
+.about-page .about-section .social {
    position: relative;
 }
-.site-content .about-section .social a {
+.about-page .about-section .social a {
    display: inline-block;
    position: relative;
    margin-right: 7px;
    color: #6699cc;
 }
-.site-content .about-section .social a .webtwicons {
-   margin-right: 4px;
+.about-page .about-section .social a .webtwicons {
+   margin-right: 3px;
    vertical-align: baseline;
 }
 /* Start Site footer */
