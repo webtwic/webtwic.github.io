@@ -3186,7 +3186,7 @@ body.about-page .site-content {
 .about-page .founders-section {
    width: 100%;
    background: #fff;
-   height: 530px;
+   padding-bottom: 40px;
 }
 .about-page .founders-section .inner {
    width: 80%;
@@ -3202,7 +3202,6 @@ body.about-page .site-content {
 }
 .about-page .founders-section .the-founders {
    width: 100%;
-   height: 200px;
    position: relative;
    margin: 0 auto;
    text-align: center;
