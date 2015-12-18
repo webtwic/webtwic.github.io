@@ -986,10 +986,6 @@ body.category-page .adjustSiteContent {
 		  left: 0px;
 		  display: inline-block;
 	 }
-	 .main .main-menu .mobile-search,
-	 .main .secondary-menu .mobile-search {
-		  display: none;
-	 }
 	 .main .main-menu > ul.active li {
 		  border-left: 1px solid rgba(0, 0, 0, .06);
 		  vertical-align: middle;
@@ -1249,55 +1245,6 @@ body.category-page .adjustSiteContent {
 		  -o-transform: rotate(45deg);
 		  transform: rotate(45deg);
 		  opacity: 1;
-	 }
-	 #responsive .main-menu .mobile-search input,
-	 #responsive .secondary-menu .mobile-search input {
-		  -webkit-transition: all .5s ease;
-		  -moz-transition: all .5s ease;
-		  -ms-transition: all .5s ease;
-		  -o-transition: all .5s ease;
-		  transition: all .5s ease;
-		  background: #3A4653;
-		  padding: 0px 15px;
-		  font-size: 15px;
-		  border: 0 none;
-		  height: 50px;
-		  width: 100%;
-		  color: #fff;
-	 }
-	 #responsive .main-menu .mobile-search input:focus,
-	 #responsive .secondary-menu .mobile-search input:focus {
-		  background: #293542;
-	 }
-	 #responsive .main-menu li,
-	 #responsive .secondary-menu li {
-		  border-bottom: 1px solid #3B4A5A;
-		  -webkit-transition: all .15s linear 0s;
-		  -moz-transition: all .15s linear 0s;
-		  -ms-transition: all .15s linear 0s;
-		  -o-transition: all .15s linear 0s;
-		  transition: all .15s linear 0s;
-		  display: block;
-	 }
-	 #responsive .main-menu li:hover,
-	 #responsive .main-menu li:active,
-	 #responsive .secondary-menu li:hover,
-	 #responsive .secondary-menu li:active {
-		  background: #273340;
-	 }
-	 #responsive .active-menu a:hover {
-		  background: #273340 !important;
-	 }
-	 #responsive .main-menu li a,
-	 #responsive .secondary-menu li a {
-		  font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
-		  -webkit-transition: all .15s linear 0s;
-		  -moz-transition: all .15s linear 0s;
-		  -ms-transition: all .15s linear 0s;
-		  -o-transition: all .15s linear 0s;
-		  transition: all .15s linear 0s;
-		  font-weight: 500;
-		  color: #F2F2F2;
 	 }
 	 #responsive .mobile-header {
 		  display: block;
