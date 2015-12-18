@@ -1,0 +1,21 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+port: 4000
+title: webtwic
+email: info@webtwic.com
+description: A community for coding and tech tweaks where beginners and experts can learn.
+# baseurl: "http://webtwic.com"
+# url: "http://webtwic.com" # the base hostname & protocol for your site
+twitter_username: webtwic
+github_username:  webtwic
+facebook_name: webtwic
+google_name: webtwic
+
+# Build settings
+markdown: kramdown

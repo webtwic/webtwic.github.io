@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="main {% if page.body-class %}{{ page.body-class }}{% endif %}">
+
+    {% include secondary-header.html %}
+
+    <main class="site-content" id="content">
+
+      {{ content }}
+
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
