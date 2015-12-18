@@ -3046,7 +3046,9 @@ body.single-post .entry-wrap .main-page {
 	 height: 500px;
 	 padding: 1px 10px;
 }
-.post-secondary-column .entry-comments h3 {} body.single-post .main-page .sidebar-column {
+.post-secondary-column .entry-comments h3 {}
+
+body.single-post .main-page .sidebar-column {
 	 margin-top: 0;
 	 width: 24.295%;
 }
