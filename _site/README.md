@@ -1,9 +1,12 @@
 ## [webtwic] (http://webtwic.com)
-Perfect webtwic build
+
+The Jekyll build for webtwic
 
 Webtwic is a community for coding and tech tweaks where beginners and experts can learn.
 
-> We love tech and coding :)
++ You may need to install [Jekyll] (http://jekyllrb.com) to preview this site on your local machine.
+
+We love tech and coding :smile:
 
 + Author: Olaolu Olawuyi (whizkydee)
 
