@@ -2462,7 +2462,10 @@ header.secondary-header .logo .desktop_logo {
 	 margin: 0px auto;
 }
 .secondary-menu .drop-nav li {
-	 height: 50px !important;
+	 height: 55px !important;
+}
+.secondary-menu .drop-nav li a{
+	height: 100%;
 }
 .secondary-menu .active-menu svg {
 	 left: 2.5em;
