@@ -4,7 +4,7 @@ The Jekyll build for webtwic
 
 Webtwic is a community for coding and tech tweaks where beginners and experts can learn.
 
-+ You may need to install [Jekyll] (http://jekyllrb.com) to preview this site on your local machine.
++ You might need to install [Jekyll] (http://jekyllrb.com) to preview this site on your local machine :neutral_face:.
 
 We love code, the web, tech and creative design. :heart: :smile:
 
