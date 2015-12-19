@@ -38,13 +38,13 @@ jQuery(document).ready(function() {
 	browser.ie = browser.msie;
 
 	if(browser.chrome && browser.webkit) {
-		$("body").addClass("chrome");
+		$("body").addClass("chrome" + "" + parseInt(browser.version));
 	}
 	if(browser.msedge) {
-		$("body").addClass("msedge");
+		$("body").addClass("msedge" + "" + parseInt(browser.version));
 	}
 	if(browser.firefox) {
-		$("body").addClass("firefox");
+		$("body").addClass("firefox" + "" + parseInt(browser.version));
 	}
 	if(browser.msie) {
 		$("body").addClass("ie" + "" + parseInt(browser.version));
