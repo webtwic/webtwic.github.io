@@ -1372,7 +1372,11 @@ body.home .featured-posts-column {
 	font-weight: 300;
 	max-height: 125px;
 }
-.read-article {
+.article .read-article,
+.article .read-article:hover,
+.article .read-article:active,
+.article .read-article:visited,
+.article .read-article:focus {
 	margin-left: 18px;
 	font-size: .94em;
 	position: relative;
@@ -1405,7 +1409,7 @@ body.home .featured-posts-column {
 	vertical-align: text-top;
 }
 .article .read-article:hover:after {
-	margin-left: 7px;
+	margin-left: 4px;
 }
 .article .article-social {
 	border-top: 2px dashed #EEE;
