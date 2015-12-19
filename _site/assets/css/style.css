@@ -1461,19 +1461,19 @@ body.home .featured-posts-column {
 .article .article-social a:nth-of-type(4) {
 	 margin-right: 42px;
 }
-.article .article-social a:nth-of-type(1):hover:first-child {
+.article .article-social a:nth-of-type(1):hover :first-child {
 	 color: #3B599A;
 }
-.article .article-social a:nth-of-type(2):hover:first-child {
+.article .article-social a:nth-of-type(2):hover :first-child {
 	 color: #50ABF1;
 }
-.article .article-social a:nth-of-type(3):hover:first-child {
+.article .article-social a:nth-of-type(3):hover :first-child {
 	 color: #DC4E41;
 }
-.article .article-social a:nth-of-type(4):hover:first-child {
+.article .article-social a:nth-of-type(4):hover :first-child {
 	 color: #35465c;
 }
-.article .article-social a:nth-of-type(5):hover:first-child {
+.article .article-social a:nth-of-type(5):hover :first-child {
 	 color: #BD1E23;
 }
 .article .article-social a .tooltip {
@@ -2748,7 +2748,6 @@ body.single-post .entry-wrap .main-page {
 }
 .entry-content blockquote {
 	 font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
-	 ;
 	 border-left: 3px solid #D7E4E1;
 	 position: relative;
 	 font-style: italic;
