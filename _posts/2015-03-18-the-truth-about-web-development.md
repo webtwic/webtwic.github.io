@@ -10,23 +10,3 @@ author-thumbnail: /img/author.png
 date: 2015-03-18
 categories: wordpress
 ---
-{% highlight css %}
-/* IE9  - Also picked up by most modern browsers */
-::selection {
-  background:#AC2937;
-  color:#FFF;
-  text-shadow:none;
-}
-/* Safari & Chrome - Webkit Rendering */
-::-webkit-selection {
-  background:#AC2937;
-  color:#FFF;
-  text-shadow:none;
-}
-/* Mozilla based - Gecko Rendering */
-::-moz-selection {
-  background:#AC2937;
-  color:#FFF;
-  text-shadow:none;
-}
-{% endhighlight %}
