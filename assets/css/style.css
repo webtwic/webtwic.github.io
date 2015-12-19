@@ -1367,20 +1367,37 @@ body.home .featured-posts-column {
 	 font-weight: 300;
 	 max-height: 125px;
 }
-.article .read-article {
-	 margin-left: 18px;
-	 font-size: .94em;
+
+.read-article {
+	margin-left: 18px;
+	font-size: .94em;
+	position: relative;
+	color: #15E1E1;
+	position: relative;
 }
-.read-article .read-article-text {
-	 -ms-transition: border-bottom .2s ease;
-	 -moz-transition: border-bottom .2s ease;
-	 -webkit-transition: border-bottom .2s ease;
-	 -o-transition: border-bottom .2s ease;
-	 transition: border-bottom .2s ease;
-	 color: #15E1E1;
+.article .read-article:before {
+	-webkit-transition: transform .2s ease;
+	-moz-transition: transform .2s ease;
+	-ms-transition: transform .2s ease;
+	-o-transition: transform .2s ease;
+	transition: transform .2s ease;
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	content: '';
+	background: #15E1E1;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	height: 1px;
 }
-.read-article-text:hover {
-	 border-bottom: 1.8px dotted #15E1E1;
+.article .read-article:hover:before {
+	-webkit-transform: scaleX(1);
+	-moz-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
 }
 .article .read-article .read-article-text:after {
 	 content: "\f061";
