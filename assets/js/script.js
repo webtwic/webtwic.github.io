@@ -38,16 +38,16 @@ jQuery(document).ready(function() {
 	browser.ie = browser.msie;
 
 	if(browser.chrome && browser.webkit) {
-		$("body").addClass("chrome" + "" + parseInt(browser.version));
+		$("body").addClass("chrome" + " " + "chrome" + parseInt(browser.version));
 	}
 	if(browser.msedge) {
-		$("body").addClass("msedge" + "" + parseInt(browser.version));
+		$("body").addClass("msedge" + " " + "msedge" + parseInt(browser.version));
 	}
 	if(browser.firefox) {
-		$("body").addClass("firefox" + "" + parseInt(browser.version));
+		$("body").addClass("firefox" + " " + "firefox" + parseInt(browser.version));
 	}
 	if(browser.msie) {
-		$("body").addClass("ie" + "" + parseInt(browser.version));
+		$("body").addClass("ie" + " " + "ie" + parseInt(browser.version));
 	}
 	// Start Performance Functions
 
