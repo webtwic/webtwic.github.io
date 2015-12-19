@@ -3172,6 +3172,12 @@ body.about-page .site-content {
    display: inline-block;
 	cursor: default;
 }
+.msedge .founders-section .the-founders .founder {
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
+}
+.msedge .founders-section .the-founders .founder:hover {
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, .6);
+}
 .founders-section .the-founders .founder:hover {
 	-webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
 	-moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
