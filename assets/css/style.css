@@ -1404,6 +1404,9 @@ body.home .featured-posts-column {
 	margin-left: 3px;
 	vertical-align: text-top;
 }
+.article .read-article:hover:after {
+	margin-left: 7px;
+}
 .article .article-social {
 	border-top: 2px dashed #EEE;
 	margin-top: 20px;
