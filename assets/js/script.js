@@ -32,6 +32,22 @@ jQuery(document).ready(function() {
 
 	// Performance Fixes
 
+	// Start broser detection
+
+	browser = bowser;
+
+	if(browser.chrome && browser.webkit) {
+		$("body").addClass("chrome");
+	}
+	if(browser.msedge) {
+		$("body").addClass("msedge");
+	}
+	if(browser.firefox) {
+		$("body").addClass("firefox");
+	}
+	if(browser.ie) {
+		$("body").addClass("ie");
+	}
 	// Start Performance Functions
 
 	function addAlt() {
