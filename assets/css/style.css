@@ -1380,28 +1380,22 @@ body.home .featured-posts-column {
 	position: relative;
 }
 .article .read-article:before {
-	-webkit-transition: transform .2s ease;
-	-moz-transition: transform .2s ease;
-	-ms-transition: transform .2s ease;
-	-o-transition: transform .2s ease;
-	transition: transform .2s ease;
-	-webkit-transform: scaleX(0);
-	-moz-transform: scaleX(0);
-	-ms-transform: scaleX(0);
-	transform: scaleX(0);
+	-webkit-transition: width .5s ease;
+	-moz-transition: width .5s ease;
+	-ms-transition: width .5s ease;
+	-o-transition: width .5s ease;
+	transition: width .5s ease;
 	content: "";
 	background: #15E1E1;
 	position: absolute;
 	top: 100%;
 	left: 0;
 	right: 0;
-	height: 1px;
+	height: .077em;
+	width: 0;
 }
 .article .read-article:hover:before {
-	-webkit-transform: scaleX(1);
-	-moz-transform: scaleX(1);
-	-ms-transform: scaleX(1);
-	transform: scaleX(1);
+	width: 100%;
 }
 .article .read-article:after {
 	content: "\f061";
