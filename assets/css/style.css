@@ -1389,18 +1389,18 @@ body.home .featured-posts-column {
 	top: 100%;
 	left: 0;
 	right: 0;
-	height: .079em;
+	height: .075em;
 	width: 0;
 }
 .article .read-article:hover:before {
 	width: 100%;
 }
 .article .read-article:after {
-	-webkit-transition: margin-left .2s;
-	-moz-transition: margin-left .2s;
-	-ms-transition: margin-left .2s;
-	-o-transition: margin-left .2s;
-	transition: margin-left .2s;
+	-webkit-transition: margin-left .02s;
+	-moz-transition: margin-left .02s;
+	-ms-transition: margin-left .02s;
+	-o-transition: margin-left .02s;
+	transition: margin-left .02s;
 	content: "\f061";
 	font-family: webtwicons;
 	font-size: .8em;
@@ -1408,7 +1408,7 @@ body.home .featured-posts-column {
 	vertical-align: text-top;
 }
 .article .read-article:hover:after {
-	margin-left: 5px;
+	margin-left: 4.4px;
 }
 .article .article-social {
 	border-top: 2px dashed #EEE;
