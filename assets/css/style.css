@@ -3382,11 +3382,11 @@ body.contact-page .site-content {
 	 padding-bottom: 2px;
 }
 #colophon .help a:before {
-	-webkit-transition: transform .15s ease;
-	-moz-transition: transform .15s ease;
-	-ms-transition: transform .15s ease;
-	-o-transition: transform .15s ease;
-	transition: transform .15s ease;
+	-webkit-transition: transform .2s ease;
+	-moz-transition: transform .2s ease;
+	-ms-transition: transform .2s ease;
+	-o-transition: transform .2s ease;
+	transition: transform .2s ease;
 	-webkit-transform: scaleX(0);
 	-moz-transform: scaleX(0);
 	-ms-transform: scaleX(0);
