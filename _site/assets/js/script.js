@@ -47,7 +47,7 @@ jQuery(document).ready(function() {
 		$("body").addClass("firefox");
 	}
 	if(browser.msie) {
-		$("body").addClass("msie");
+		$("body").addClass("ie" + "" + parseInt(browser.version));
 	}
 	// Start Performance Functions
 
