@@ -35,6 +35,7 @@ jQuery(document).ready(function() {
 	// Start broser detection
 
 	browser = bowser;
+	browser.ie = browser.msie;
 
 	if(browser.chrome && browser.webkit) {
 		$("body").addClass("chrome");
