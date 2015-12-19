@@ -1371,11 +1371,8 @@ body.home .featured-posts-column {
 	 max-height: 125px;
 }
 <<<<<<< HEAD
-<<<<<<< HEAD
 .article .read-article {
 =======
-=======
->>>>>>> parent of 792d653... Beautify CSS :neckbeard:
 
 .read-article {
 >>>>>>> parent of 792d653... Beautify CSS :neckbeard:
@@ -1405,7 +1402,6 @@ body.home .featured-posts-column {
 }
 .article .read-article:after {
 <<<<<<< HEAD
-<<<<<<< HEAD
 	-webkit-transition: margin-left .02s;
 	-moz-transition: margin-left .02s;
 	-ms-transition: margin-left .02s;
@@ -1417,20 +1413,15 @@ body.home .featured-posts-column {
 	margin-left: 3px;
 	vertical-align: text-top;
 =======
-=======
->>>>>>> parent of 792d653... Beautify CSS :neckbeard:
 	 content: "\f061";
 	 font-family: webtwicons;
 	 font-size: .8em;
 	 margin-left: 3px;
 	 vertical-align: text-top;
-<<<<<<< HEAD
 >>>>>>> parent of 792d653... Beautify CSS :neckbeard:
 }
 .article .read-article:hover:after {
 	margin-left: 4.4px;
-=======
->>>>>>> parent of 792d653... Beautify CSS :neckbeard:
 }
 .article .article-social {
 	 border-top: 2px dashed #EEE;
@@ -3114,10 +3105,6 @@ Start about-page.css
 */
 body.about-page {
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-   /*background: #fff;*/
->>>>>>> parent of 792d653... Beautify CSS :neckbeard:
 =======
    /*background: #fff;*/
 >>>>>>> parent of 792d653... Beautify CSS :neckbeard:
