@@ -32,7 +32,7 @@ jQuery(document).ready(function() {
 
 	// Performance Fixes
 
-	// Start broser detection
+	// Start browser detection
 
 	browser = bowser;
 	browser.ie = browser.msie;
