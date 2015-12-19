@@ -37,7 +37,10 @@ jQuery(document).ready(function() {
 	browser = bowser;
 	browser.ie = browser.msie;
 
-	if(browser.chrome && browser.webkit) {
+	if (browser.webkit) {
+		$("body").addClass("webkit");
+	}
+	if(browser.chrome) {
 		$("body").addClass("chrome" + " " + "chrome" + parseInt(browser.version));
 	}
 	if(browser.msedge) {
@@ -49,6 +52,10 @@ jQuery(document).ready(function() {
 	if(browser.msie) {
 		$("body").addClass("ie" + " " + "ie" + parseInt(browser.version));
 	}
+	if(browser.safari) {
+		$("body").addClass("safari" + " " + "safari" + parseInt(browser.version));
+	}
+
 	// Start Performance Functions
 
 	function addAlt() {

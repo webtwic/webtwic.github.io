@@ -3172,6 +3172,8 @@ body.about-page .site-content {
    display: inline-block;
 	cursor: default;
 }
+.msedge .founder {
+}
 .founders-section .the-founders [data-expanded="false"]:hover {
 	-webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
 	-moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
