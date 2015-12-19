@@ -1404,11 +1404,12 @@ body.home .featured-posts-column {
 	-ms-transform: scaleX(1);
 	transform: scaleX(1);
 }
-.article .read-article .read-article-text:after {
+.article .read-article:after {
 	 content: "\f061";
 	 font-family: webtwicons;
 	 font-size: .8em;
 	 margin-left: 3px;
+	 vertical-align: text-top;
 }
 .article .article-social {
 	 border-top: 2px dashed #EEE;
