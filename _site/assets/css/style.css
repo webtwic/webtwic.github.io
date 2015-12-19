@@ -2473,30 +2473,31 @@ body.single-post .entry-wrap .entry-header {
 .entry-wrap header h1 {
 	 font-size: 2.75em;
 	 padding: 0 180px;
-	 /*padding: 0 150px;*/
-
 	 color: #3F5261;
 	 font-weight: 500;
 }
 .entry-wrap header .entry-meta * {
+	-webkit-transition: color .3s ease-in-out;
+	-moz-transition: color .3s ease-in-out;
+	-ms-transition: color .3s ease-in-out;
+	-o-transition: color .3s ease-in-out;
+	transition: color .3s ease-in-out;
 	 position: relative;
 	 color: #999;
 	 cursor: pointer;
-	 transition: color .3s ease-in-out;
 }
 .entry-wrap header .entry-meta *:hover {
 	 color: #555;
-	 /*color: 575757;*/
 }
 .entry-wrap header span {
 	 margin-right: 15px;
 }
 .entry-wrap header .entry-meta .entry-author a img {
-	 border-radius: 100%;
 	 -webkit-border-radius: 100%;
 	 -moz-border-radius: 100%;
 	 -ms-border-radius: 100%;
 	 -o-border-radius: 100%;
+	 border-radius: 100%;
 	 vertical-align: middle;
 	 width: 50px;
 	 height: 50px;
@@ -2508,7 +2509,7 @@ body.single-post .entry-wrap .entry-header {
 	 vertical-align: middle;
 	 margin-right: 3px;
 }
-.entry-meta .entry-date {} .entry-meta .entry-date > svg {
+.entry-meta .entry-date > svg {
 	 width: 17px;
 	 margin-top: -4px;
 }
@@ -2781,10 +2782,11 @@ body.single-post .entry-wrap .main-page {
 	 -o-transition: color ease-in-out .5s;
 	 transition: color ease-in-out .5s;
 	 color: #6699cc;
+	 position: relative;
 }
 .post-content-column article .entry-tags a:hover {
-	 border-bottom: 1px solid #6699cc;
 	 color: #3F5261;
+	 border-bottom: 1px solid #3F5261;
 }
 .page-focus-column .post-secondary-column .author-profile {
 	 width: 100%;
@@ -3226,6 +3228,35 @@ body.about-page .site-content {
 .founder .founder-info .founder-social a:hover {
 	color: #6699cc;
 }
+
+/* End about-page.css
+
+Start contact-page.css
+
+* Date Created: 19/12/2015
+
+* Last Modified: 19/12/2015
+
+*/
+body.contact-page {
+
+}
+body.contact-page .site-content {
+	 margin: 100px auto 0 auto;
+	 max-width: 1379px;
+	 width: 100%;
+}
+.contact-page .contact-section {
+   text-align: center;
+   height: 320px;
+   width: 100%;
+}
+
+
+
+
+
+
 /* Start Site footer */
 
 .main .site-footer {
@@ -3350,8 +3381,30 @@ body.about-page .site-content {
 	 letter-spacing: .062em;
 	 padding-bottom: 2px;
 }
-#colophon .help a:hover {
-	 border-bottom: 1px solid #f9f9f9;
+#colophon .help a:before {
+	-webkit-transition: transform .15s ease;
+	-moz-transition: transform .15s ease;
+	-ms-transition: transform .15s ease;
+	-o-transition: transform .15s ease;
+	transition: transform .15s ease;
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	 content: '';
+	 background: #f9f9f9;
+	 position: absolute;
+	 top: 100%;
+	 left: 0;
+	 right: 0;
+	 height: 1px;
+}
+#colophon .help a:hover:before {
+	-webkit-transform: scaleX(1);
+	-moz-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	-o-transform: scaleX(1);
+	transform: scaleX(1);
 }
 #colophon .donate-section {
 	 position: relative;
