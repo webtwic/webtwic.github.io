@@ -1021,6 +1021,11 @@ body.category-page .adjustSiteContent {
 	 }
 	 .drop-nav {
 		  border-color: rgba(0, 0, 0, .06) rgba(0, 0, 0, .06) #50ABF1;
+		  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, .15);
+		  -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, .15);
+		  -ms-box-shadow: 0px 0px 3px rgba(0, 0, 0, .15);
+		  -o-box-shadow: 0px 0px 3px rgba(0, 0, 0, .15);
+		  box-shadow: 0px 0px 3px rgba(0, 0, 0, .15);
 		  -webkit-border-radius: 0px 0px 3px 3px;
 		  -moz-border-radius: 0px 0px 3px 3px;
 		  -ms-border-radius: 0px 0px 3px 3px;
