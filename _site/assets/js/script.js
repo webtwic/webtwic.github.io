@@ -55,7 +55,9 @@ jQuery(document).ready(function() {
 	if(browser.safari) {
 		$("body").addClass("safari" + " " + "safari" + parseInt(browser.version));
 	}
-
+	if(browser.opera) {
+		$("body").addClass("opera" + " " + "opera" + parseInt(browser.version));
+	}
 	// Start Performance Functions
 
 	function addAlt() {
