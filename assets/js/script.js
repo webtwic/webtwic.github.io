@@ -45,8 +45,8 @@ jQuery(document).ready(function() {
 	if(browser.firefox) {
 		$("body").addClass("firefox");
 	}
-	if(browser.ie) {
-		$("body").addClass("ie");
+	if(browser.msie) {
+		$("body").addClass("msie");
 	}
 	// Start Performance Functions
 
