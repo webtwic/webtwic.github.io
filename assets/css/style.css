@@ -1380,18 +1380,18 @@ body.home .featured-posts-column {
 	position: relative;
 }
 .article .read-article:before {
-	-webkit-transition: width .5s ease;
-	-moz-transition: width .5s ease;
-	-ms-transition: width .5s ease;
-	-o-transition: width .5s ease;
-	transition: width .5s ease;
+	-webkit-transition: width .4s ease;
+	-moz-transition: width .4s ease;
+	-ms-transition: width .4s ease;
+	-o-transition: width .4s ease;
+	transition: width .4s ease;
 	content: "";
 	background: #15E1E1;
 	position: absolute;
 	top: 100%;
 	left: 0;
 	right: 0;
-	height: .077em;
+	height: .079em;
 	width: 0;
 }
 .article .read-article:hover:before {
