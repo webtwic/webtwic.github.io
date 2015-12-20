@@ -1448,7 +1448,7 @@ body.home .featured-posts-column {
 }
 /* Share Icons */
 
-.article .article-social a:first-child {
+.article .article-social a :first-child {
 	 -webkit-transition: .5s ease-in-out;
 	 -moz-transition: .5s ease-in-out;
 	 -ms-transition: .5s ease-in-out;
