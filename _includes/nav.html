@@ -50,7 +50,13 @@
 				<a href="/tech/tech.html">Tech</a></li>
 
 
-				<li><a href="videos">Videos</a></li>
+				{% if page.url == '/videos/videos.html' %}
+				<li class="active-item">
+				{% else %}
+				<li>
+				{% endif %}
+				<a href="/videos/videos.html">Videos</a></li>
+
 
 				<li class="dropdown">
 
