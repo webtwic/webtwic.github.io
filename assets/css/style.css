@@ -1114,13 +1114,13 @@ body.category-page .adjustSiteContent {
 	 }
 	 /* End Flyout menu styles */
 
-	 .active-menu a {
+	 .active-item a {
 		  color: #7AAFC8 !important;
 	 }
-	 .active-menu a:hover {
+	 .active-item a:hover {
 		  background: #FFF !important;
 	 }
-	 .active-menu svg {
+	 .active-item svg {
 		  fill: #fff;
 		  position: absolute;
 		  top: 2.7em;
@@ -1187,7 +1187,7 @@ body.category-page .adjustSiteContent {
 	 #responsive #header {
 		 display: none !important;
 	 }
-	 .active-menu svg {
+	 .active-item svg {
 		  display: none;
 	 }
 	 .hamburger {
@@ -2494,7 +2494,7 @@ header.secondary-header .logo .desktop_logo {
 .secondary-menu .drop-nav li a{
 	height: 100%;
 }
-.secondary-menu .active-menu svg {
+.secondary-menu .active-item svg {
 	 left: 2.5em;
 	 top: 3.5em;
 }
