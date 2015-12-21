@@ -42,7 +42,13 @@
 
 				</li>
 
-				<li><a href="tech">Tech</a></li>
+				{% if page.url == '/tech/tech.html' %}
+				<li class="active-item">
+				{% else %}
+				<li>
+				{% endif %}
+				<a href="/tech/tech.html">Tech</a></li>
+
 
 				<li><a href="videos">Videos</a></li>
 
