@@ -986,7 +986,7 @@ body.category-page .adjustSiteContent {
 		  left: 0px;
 		  display: inline-block;
 	 }
-	 .main .main-menu > ul.active li {
+	 .main .main-menu > ul.nav-ul li {
 		  border-left: 1px solid rgba(0, 0, 0, .06);
 		  vertical-align: middle;
 		  position: relative;
@@ -1181,7 +1181,7 @@ body.category-page .adjustSiteContent {
 		  margin-top: 62px;
 		  background: #2E3A47;
 	 }
-	 ul.active {
+	 ul.nav-ul {
 		  display: none;
 	 }
 	 #responsive #header {
@@ -2299,7 +2299,7 @@ header.secondary-header .logo .desktop_logo {
 		  line-height: 30px;
 		  padding-right: 15px;
 	 }
-	 .secondary-menu > ul.active li {
+	 .secondary-menu > ul.nav-ul li {
 		  position: relative;
 	 }
 	 .secondary-menu .drop-nav {
