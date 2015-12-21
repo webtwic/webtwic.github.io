@@ -11,7 +11,13 @@
 				{% endif %}
 				<a href="/articles/articles.html">Articles</a></li>
 
-				<li><a href="wordpress">Wordpress</a></li>
+				{% if page.url == '/wordpress/wordpress.html' %}
+				<li class="active-item">
+				{% else %}
+				<li>
+				{% endif %}
+				<a href="/wordpress/wordpress.html">Wordpress</a></li>
+
 
 				<li class="dropdown">
 
