@@ -2,9 +2,14 @@
 
 			<ul class="active">
 
-				<li class="active-menu first-item"><a href="">Home</a></li>
+				<li><a href="">Home</a></li>
 
-				<li><a href="articles">Articles</a></li>
+				{% if page.url == '/articles.html' %}
+				<li class="active-menu">
+				{% else %}
+				<li>
+				{% endif %}
+				<a href="/articles.html">Articles</a></li>
 
 				<li><a href="wordpress">Wordpress</a></li>
 
