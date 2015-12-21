@@ -2389,6 +2389,21 @@ header.secondary-header .logo .desktop_logo {
 		  width: 100%;
 		  color: #fff;
 	 }
+	 .ui-overlay-search .search-input form input::placeholder {
+		 color: #6D8299;
+	 }
+	 .ui-overlay-search .search-input form input::-webkit-input-placeholder {
+		 color: #6D8299;
+	 }
+	 .ui-overlay-search .search-input form input::-ms-input-placeholder {
+		 color: #6D8299;
+	 }
+	 .ui-overlay-search .search-input form input:-ms-input-placeholder {
+		 color: #6D8299;
+	 }
+	 .ui-overlay-search .search-input form input::-moz-placeholder {
+		 color: #6D8299;
+	 }
 	 .ui-overlay-search .search-input form #__expand {
 		  transition: width ease 1s;
 		  -webkit-transition: width ease 1s;
