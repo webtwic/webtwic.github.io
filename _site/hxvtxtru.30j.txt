@@ -1,0 +1,16 @@
+﻿Revert "Update nav"
+
+This reverts commit bfe3ab9c304d1e73af2461a5cbf011b150b55729.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   _includes/nav.html
+#	modified:   _site/articles/articles.html
+#	modified:   _site/index.html
+#	modified:   _site/wordpress/2015/03/18/the-truth-about-web-development.html
+#
+
