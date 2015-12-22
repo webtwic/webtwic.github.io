@@ -154,8 +154,7 @@ jQuery(document).ready(function() {
 
 	$("a.hamburger").click(function(e) {
 		$(this).toggleClass("is_active");
-		$("nav ul").stop().slideToggle(200);
-
+		
 		e.preventDefault();
 	});
 
