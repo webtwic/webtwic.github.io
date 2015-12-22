@@ -1200,11 +1200,11 @@ body.category-page .adjustSiteContent {
 		  margin: 20px 10px;
 	 }
 	 .hamburger .bar {
-		  transition: background, opacity, transform 175ms linear 0s;
-		  -webkit-transition: background, opacity, transform 175ms linear 0s;
-		  -moz-transition: background, opacity, transform 175ms linear 0s;
-		  -ms-transition: background, opacity, transform 175ms linear 0s;
-		  -o-transition: background, opacity, transform 175ms linear 0s;
+		  transition: background, opacity, transform .2s ease-in-out 0s;
+		  -webkit-transition: background, opacity, transform .2s ease-in-out 0s;
+		  -moz-transition: background, opacity, transform .2s ease-in-out 0s;
+		  -ms-transition: background, opacity, transform .2s ease-in-out 0s;
+		  -o-transition: background, opacity, transform .2s ease-in-out 0s;
 		  -webkit-transform: rotate(0);
 		  -moz-transform: rotate(0);
 		  -ms-transform: rotate(0);
@@ -1226,7 +1226,6 @@ body.category-page .adjustSiteContent {
 	 }
 	 .hamburger.is_active .bar {
 		  margin-top: -5px;
-		  height: 3px;
 	 }
 	 .hamburger.is_active .bar:nth-child(1) {
 		  -webkit-transform: rotate(135deg);
