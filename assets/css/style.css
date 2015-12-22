@@ -1148,7 +1148,10 @@ body.category-page .adjustSiteContent {
 /* Start Global responsive css */
 
 @media screen and (max-width: 860px) {
-	svg.dropdown-arrow {
+	svg.dropdown-arrow,
+	.header-follow-search,
+	.secondary-header,
+	#header {
 		display: none;
 	}
 	.main .mobile-header {
@@ -1160,7 +1163,7 @@ body.category-page .adjustSiteContent {
 		 z-index: 9999;
 		 background: #fff;
 		 position: fixed;
-		 display: none;
+		 display: block;
 		 height: 60px;
 		 width: auto;
 		 right: 0px;
@@ -1171,7 +1174,7 @@ body.category-page .adjustSiteContent {
 		 background: url("/img/webtwic-logos.png") 1px -96px no-repeat;
 		 width: 160px;
 		 height: 100%;
-		 display: block;
+		 display: block !important;
 		 vertical-align: middle;
 		 float: left;
 		 border-right: 1px solid rgba(0, 0, 0, .06);
