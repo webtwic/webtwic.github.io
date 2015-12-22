@@ -1200,18 +1200,22 @@ body.category-page .adjustSiteContent {
 		  margin: 20px 10px;
 	 }
 	 .hamburger .bar {
-		  transition: background, opacity, transform .2s ease-in-out 0s;
 		  -webkit-transition: background, opacity, transform .2s ease-in-out 0s;
 		  -moz-transition: background, opacity, transform .2s ease-in-out 0s;
 		  -ms-transition: background, opacity, transform .2s ease-in-out 0s;
 		  -o-transition: background, opacity, transform .2s ease-in-out 0s;
+		  transition: background, opacity, transform .2s ease-in-out 0s;
 		  -webkit-transform: rotate(0);
 		  -moz-transform: rotate(0);
 		  -ms-transform: rotate(0);
 		  -o-transform: rotate(0);
 		  transform: rotate(0);
+		  -webkit-border-radius: 2px;
+		  -moz-border-radius: 2px;
+		  -ms-border-radius: 2px;
+		  -o-border-radius: 2px;
+		  border-radius: 2px;
 		  background: #7B8B8E;
-		  border-radius: 3px;
 		  display: block;
 		  width: 100%;
 		  cursor: pointer;
