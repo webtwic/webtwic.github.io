@@ -1191,19 +1191,13 @@ body.category-page .adjustSiteContent {
 		  display: none;
 	 }
 	 .hamburger {
-		  display: block !important;
-		  -webkit-transform: rotate(0);
-		  -moz-transform: rotate(0);
-		  -ms-transform: rotate(0);
-		  -o-transform: rotate(0);
-		  transform: rotate(0);
+		  display: block;
 		  float: right;
-		  margin-top: 20px;
-		  margin-right: 13px;
 		  width: 26px;
 		  height: 20px;
 		  cursor: pointer;
 		  position: relative;
+		  margin: 20px 10px;
 	 }
 	 .hamburger .bar {
 		  transition: background, opacity, transform 175ms linear 0s;
@@ -1221,7 +1215,7 @@ body.category-page .adjustSiteContent {
 		  display: block;
 		  width: 100%;
 		  cursor: pointer;
-		  height: 2px;
+		  height: 2.5px;
 		  position: absolute;
 	 }
 	 .hamburger .bar:nth-child(2) {
