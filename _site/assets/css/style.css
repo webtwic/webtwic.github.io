@@ -1148,6 +1148,9 @@ body.category-page .adjustSiteContent {
 /* Start Global responsive css */
 
 @media screen and (max-width: 860px) {
+	svg.dropdown-arrow {
+		display: none;
+	}
 	.main .mobile-header {
 		 -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
 		 -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
