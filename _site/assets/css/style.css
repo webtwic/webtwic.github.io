@@ -966,13 +966,13 @@ body.category-page .adjustSiteContent {
 	 top: 2px;
 }
 .main .mobile-header .mobile_logo {
-	 background: url("/img/mobile_logo.png") no-repeat;
-	 width: 150px;
-	 height: 40px;
+	 background: url("/img/webtwic-logos.png") 5px -95px no-repeat;
+	 width: 160px;
+	 height: 100%;
 	 display: block;
 	 vertical-align: middle;
 	 float: left;
-	 margin-top: 10px;
+	 border-right: 1px solid rgba(0, 0, 0, .06);
 }
 @media screen and (min-width: 860px) {
 	 .main .main-menu {
