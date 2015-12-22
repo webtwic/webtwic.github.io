@@ -1129,57 +1129,52 @@ body.category-page .adjustSiteContent {
 		  width: 20px;
 		  height: 20px;
 	 }
-}
-.main .main-menu {
-	 font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
-	 box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .2);
-	 margin: 0 auto 30px auto;
-	 z-index: 9999;
-	 align-items: center;
-	 text-align: center;
-	 background: #fff;
-}
-.main .main-menu li {
-	 text-align: center;
-	 list-style: none;
-	 display: inline-block;
-	 height: 50px;
-	 margin: 0px auto;
-}
-.main .main-menu li a {
-	 font-size: .94em;
-	 padding: 0 56px;
-	 display: block;
-	 line-height: 50px;
-}
-.dropdown a svg.dropdown-arrow {
-	 position: absolute;
-	 top: 1.17em;
-	 right: 40px;
-	 display: block;
-	 fill: #777;
-	 width: 18px;
-	 height: 18px;
-}
-.dropdown a:hover > svg {
-	 fill: #7AAFC8;
-}
-.dropNavFallback {
-	 display: none;
-}
-.flyout-nav {
-	 display: none;
+	 .main .main-menu {
+		 font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
+		 box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .2);
+		 margin: 0 auto 30px auto;
+		 z-index: 9999;
+		 align-items: center;
+		 text-align: center;
+		 background: #fff;
+	 }
+	 .main .main-menu li {
+		 text-align: center;
+		 list-style: none;
+		 display: inline-block;
+		 height: 50px;
+		 margin: 0px auto;
+	 }
+	 .main .main-menu li a {
+		 font-size: .94em;
+		 padding: 0 56px;
+		 display: block;
+		 line-height: 50px;
+	 }
+	 .dropdown a svg.dropdown-arrow {
+		 position: absolute;
+		 top: 1.17em;
+		 right: 40px;
+		 display: block;
+		 fill: #777;
+		 width: 18px;
+		 height: 18px;
+	 }
+	 .dropdown a:hover > svg {
+		 fill: #7AAFC8;
+	 }
+	 .dropNavFallback {
+		 display: none;
+	 }
+	 .flyout-nav {
+		 display: none;
+	 }
 }
 /* Start Global responsive css */
 
 @media screen and (max-width: 860px) {
 	 #header div.logo {
 		  display: none;
-	 }
-	 #responsive .main-menu,
-	 #responsive .secondary-menu {
-		  margin-top: 62px;
-		  background: #2E3A47;
 	 }
 	 ul.nav-ul {
 		  display: none;
@@ -1263,7 +1258,6 @@ body.category-page .adjustSiteContent {
 	 }
 }
 /* End Global responsive css */
-
 
 /* End global-stylesheet.css
 
