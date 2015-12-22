@@ -2245,38 +2245,38 @@ body.single-post .site-content {
 	 max-width: 1379px;
 	 width: 100%;
 }
-.main header.secondary-header {
-	 margin-bottom: 240px;
-	 background: #fff;
-	 position: fixed;
-	 z-index: 9999;
-	 height: 63px;
-	 width: auto;
-	 right: 0;
-	 left: 0;
-	 top: 0;
-}
-header.secondary-header .logo {
-	 height: 100%;
-	 width: 163px;
-	 margin-top: 0px;
-	 padding-left: 6px;
-	 float: left;
-	 position: relative;
-	 border-right: 1.9px solid rgba(0, 0, 0, .06);
-}
-header.secondary-header .logo .desktop_logo {
-	 background: url("/img/webtwic-logos.png") no-repeat -1px -99px;
-	 text-indent: -99999px;
-	 font-size: 40px;
-	 display: block;
-	 color: #6699CC;
-	 height: 100%;
-	 width: 100%;
-	 position: relative;
-	 margin-top: 6px;
-}
 @media screen and (min-width: 860px) {
+	.main header.secondary-header {
+		margin-bottom: 240px;
+		background: #fff;
+		position: fixed;
+		z-index: 9999;
+		height: 63px;
+		width: auto;
+		right: 0;
+		left: 0;
+		top: 0;
+	}
+	header.secondary-header .logo {
+		height: 100%;
+		width: 163px;
+		margin-top: 0px;
+		padding-left: 6px;
+		float: left;
+		position: relative;
+		border-right: 1.9px solid rgba(0, 0, 0, .06);
+	}
+	header.secondary-header .logo .desktop_logo {
+		background: url("/img/webtwic-logos.png") no-repeat -1px -99px;
+		text-indent: -99999px;
+		font-size: 40px;
+		display: block;
+		color: #6699CC;
+		height: 100%;
+		width: 100%;
+		position: relative;
+		margin-top: 6px;
+	}
 	 header.secondary-header nav.secondary-menu {
 		  float: left;
 		  height: 100%;
@@ -2289,6 +2289,38 @@ header.secondary-header .logo .desktop_logo {
 	 }
 	 .secondary-menu .drop-nav {
 		  margin-top: 2px;
+	 }
+	 .secondary-menu li {
+	 	 text-align: center;
+	 	 list-style: none;
+	 	 display: inline-block;
+	 	 height: 99%;
+	 	 margin: 0px auto;
+	 }
+	 .secondary-menu .drop-nav li {
+	 	 height: 55px !important;
+	 }
+	 .secondary-menu .drop-nav li a {
+	 	height: 100%;
+	 }
+	 .secondary-menu .active-item svg {
+	 	 left: 2.5em;
+	 	 top: 3.5em;
+	 }
+	 .main nav.secondary-menu li > a {
+	 	 text-transform: uppercase;
+	 	 letter-spacing: .02em;
+	 	 font-size: .94em;
+	 	 padding: 5.4px 23px;
+	 	 display: block;
+	 	 line-height: 52px;
+	 }
+	 .main nav.secondary-menu .drop-nav li a {
+	 	 padding: 0px 55px;
+	 }
+	 .main nav.secondary-menu a svg.dropdown-arrow {
+	 	 top: 1.4em;
+	 	 right: 8px;
 	 }
 	 header.secondary-header .header-follow-search {
 		  height: 100%;
@@ -2465,38 +2497,6 @@ header.secondary-header .logo .desktop_logo {
 	 .header-follow-search .follow-icons a:nth-child(7) .linkedin-square {
 		  color: #0077B5;
 	 }
-}
-.secondary-menu li {
-	 text-align: center;
-	 list-style: none;
-	 display: inline-block;
-	 height: 99%;
-	 margin: 0px auto;
-}
-.secondary-menu .drop-nav li {
-	 height: 55px !important;
-}
-.secondary-menu .drop-nav li a{
-	height: 100%;
-}
-.secondary-menu .active-item svg {
-	 left: 2.5em;
-	 top: 3.5em;
-}
-.main nav.secondary-menu li > a {
-	 text-transform: uppercase;
-	 letter-spacing: .02em;
-	 font-size: .94em;
-	 padding: 5.4px 23px;
-	 display: block;
-	 line-height: 52px;
-}
-.main nav.secondary-menu .drop-nav li a {
-	 padding: 0px 55px;
-}
-.main nav.secondary-menu a svg.dropdown-arrow {
-	 top: 1.4em;
-	 right: 8px;
 }
 body.single-post .entry-wrap {
 	 height: 900px;
