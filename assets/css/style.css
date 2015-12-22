@@ -1174,7 +1174,7 @@ body.category-page .adjustSiteContent {
 		 background: url("/img/webtwic-logos.png") 1px -96px no-repeat;
 		 width: 160px;
 		 height: 100%;
-		 display: block !important;
+		 display: block;
 		 vertical-align: middle;
 		 float: left;
 		 border-right: 1px solid rgba(0, 0, 0, .06);
