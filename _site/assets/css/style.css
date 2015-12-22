@@ -1179,6 +1179,29 @@ body.category-page .adjustSiteContent {
 		 float: left;
 		 border-right: 1px solid rgba(0, 0, 0, .06);
 	}
+	.main .mobile-header .mobile-nav {
+		float: right;
+		display: block !important;
+		background: #273340;
+		position: fixed;
+		top: 60px;
+		right: 0;
+		padding: 10px 15px;
+		width: 30%;
+	}
+	.main .mobile-header .mobile-nav li {
+		position: relative;
+		text-align: right;
+		text-transform: uppercase;
+		font-size: .9em;
+		font-weight: 400;
+		letter-spacing: .062em;
+		margin-bottom: 20px;
+	}
+	.main .mobile-header .mobile-nav li a {
+		position: relative;
+		color: #f9f9f9;
+	}
 	 .active-item svg {
 		  display: none;
 	 }
