@@ -154,9 +154,10 @@ jQuery(document).ready(function() {
 
 	$("a.hamburger").click(function(e) {
 		$(this).toggleClass("is_active");
-		
+
 		e.preventDefault();
 	});
+	$(".mobile-header .mobile-nav").hide();
 
 	$(window).scroll(function() {
 		($(this).scrollTop() > height) ? $to_top.addClass("topVisible"): $to_top.removeClass("topVisible");
