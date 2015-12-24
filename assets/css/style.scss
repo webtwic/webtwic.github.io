@@ -29,6 +29,8 @@ $basefont: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia
 $font-alt: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
 $icons: webtwicons;
 $icon: $icons;
+$white: #fff;
+$black: #000;
 $basecolor: #6699cc;
 $base-color: $basecolor;
 $base_color: $basecolor;
@@ -474,7 +476,7 @@ h1 {
 
 mark {
   background: #ff0;
-  color: #000;
+  color: $black;
 }
 
 small {
@@ -546,7 +548,7 @@ button[disabled], input[disabled] {
   @extend .radius-alt;
   font-weight: bold;
   padding: 15px 20px;
-  color: #fff;
+  color: $white;
   text-align: center;
   background: #58de6c;
   cursor: pointer;
@@ -941,7 +943,7 @@ img {
   display: none;
   margin: 0px auto;
   z-index: 9999;
-  color: #fff;
+  color: $white;
   font-weight: bold;
   text-align: center;
   position: fixed;
@@ -1000,7 +1002,7 @@ body.category-page .adjustSiteContent {
       -moz-user-select: none;
       -ms-user-select: none;
       -o-user-select: none;
-      background: #fff;
+      background: $white;
       width: auto;
       margin-top: 6px;
       height: 107px;
@@ -1086,7 +1088,7 @@ body.category-page .adjustSiteContent {
     border-width: $one $one 2px;
     border-style: solid;
     position: absolute;
-    background: #fff;
+    background: $white;
     width: 180px;
     li {
       border-left: 0 none !important;
@@ -1167,7 +1169,7 @@ body.category-page .adjustSiteContent {
       border-top: 0 none;
     }
     li a:hover {
-      background: #fff;
+      background: $white;
     }
   }
   .flyout:hover > .flyout-nav {
@@ -1179,11 +1181,11 @@ body.category-page .adjustSiteContent {
     a {
       color: #7AAFC8 !important;
       &:hover {
-        background: #FFF !important;
+        background: $white !important;
       }
     }
     svg {
-      fill: #fff;
+      fill: $white;
       position: absolute;
       top: 2.7em;
       cursor: pointer;
@@ -1199,7 +1201,7 @@ body.category-page .adjustSiteContent {
     z-index: 9999;
     align-items: center;
     text-align: center;
-    background: #fff;
+    background: $white;
     li {
       text-align: center;
       list-style: none;
@@ -1246,7 +1248,7 @@ body.category-page .adjustSiteContent {
     -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
     z-index: 9999;
-    background: #fff;
+    background: $white;
     position: fixed;
     display: block;
     height: 60px;
@@ -1402,7 +1404,7 @@ body.home {
   position: relative;
   height: 447px;
   z-index: 50;
-  background: #fff;
+  background: $white;
   width: $full;
   &:first-child {
     margin-top: 25px;
@@ -1584,7 +1586,7 @@ body.home {
         background: $basecolor;
         font-size: .5em;
         bottom: 112px;
-        color: #fff;
+        color: $white;
         &:before {
           content: "\f0d7";
           position: absolute;
@@ -1686,7 +1688,7 @@ body.home {
 }
 
 .sidebar {
-  background: #fff;
+  background: $white;
   padding: 10px;
   margin-bottom: 25px;
   width: $full;
@@ -1721,7 +1723,7 @@ body.home {
     margin-top: 3px;
     cursor: default;
     &:before {
-      color: #FFF;
+      color: $white;
       padding-right: 4px;
       font-size: 13.5px;
       cursor: default;
@@ -1736,7 +1738,7 @@ body.home {
   p svg {
     vertical-align: middle;
     margin-top: -2px;
-    fill: #FFF;
+    fill: $white;
     width: 20px;
     height: 18px;
   }
@@ -1778,7 +1780,7 @@ iframe a.twitter-timeline {
     border-color: #AF6A9B;
     svg {
       vertical-align: middle;
-      fill: #fff;
+      fill: $white;
       width: 22px;
       height: 20px;
     }
@@ -1819,7 +1821,7 @@ iframe a.twitter-timeline {
     padding-bottom: 7px;
     padding-top: 7px;
     padding-left: 5px;
-    background: #fff;
+    background: $white;
   }
 }
 
@@ -1864,7 +1866,7 @@ iframe a.twitter-timeline {
   border-radius: 3px;
   margin-left: -5px;
   margin-top: 10px;
-  background: #fff;
+  background: $white;
   display: block;
   width: 310px;
   float: left;
@@ -1968,7 +1970,7 @@ body {
         -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
         -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
         box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
-        background: #fff;
+        background: $white;
       }
     }
     .sidebar-button {
@@ -1997,7 +1999,7 @@ body {
   margin: .12em -.3em .12em -.3em;
   width: 18px;
   height: 18px;
-  fill: #fff;
+  fill: $white;
 }
 
 /* End Sidebar Search */
@@ -2043,7 +2045,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 12px;
-    fill: #fff;
+    fill: $white;
     width: 29px;
     height: 3$one;
   }
@@ -2096,7 +2098,7 @@ body {
     &:nth-child(1) {
       background: #57DD6B;
       border-bottom: 2px solid #50D664;
-      color: #fff;
+      color: $white;
     }
     &:last-child {
       padding: 12px 21.5px;
@@ -2216,7 +2218,7 @@ article.post-wrap {
   padding: 30px 30px 340px;
   margin-bottom: 30px;
   position: relative;
-  background: #fff;
+  background: $white;
   width: $full;
   &:first-child {
     padding-bottom: 310px;
@@ -2360,7 +2362,7 @@ body {
       background: #5AA6DB;
       padding: .4em;
       float: right;
-      color: #fff;
+      color: $white;
       svg {
         -webkit-transition: margin-left .05s ease;
         -moz-transition: margin-left .05s ease;
@@ -2417,7 +2419,7 @@ Start single-post.css
 @media screen and (min-width: 860px) {
   .main header.secondary-header {
     margin-bottom: 240px;
-    background: #fff;
+    background: $white;
     position: fixed;
     z-index: 9999;
     height: 63px;
@@ -2511,7 +2513,7 @@ Start single-post.css
       -moz-transition: background .3s ease;
       -webkit-transition: background .3s ease;
       position: relative;
-      background: #fff;
+      background: $white;
       float: right;
       height: $full;
       display: block;
@@ -2549,7 +2551,7 @@ Start single-post.css
       float: right;
       position: relative;
       cursor: pointer;
-      fill: #fff;
+      fill: $white;
       padding: 10px;
       svg {
         width: 50px;
@@ -2582,7 +2584,7 @@ Start single-post.css
           padding: 5px 2px;
           display: block;
           width: $full;
-          color: #fff;
+          color: $white;
           &::placeholder, &::-webkit-input-placeholder, &::-ms-input-placeholder, &:-ms-input-placeholder, &::-moz-placeholder {
             color: #6D8299;
           }
@@ -2598,7 +2600,7 @@ Start single-post.css
           -moz-border-radius: 2px;
           -ms-border-radius: 2px;
           -o-border-radius: 2px;
-          background: #fff;
+          background: $white;
           height: 2px;
           position: relative;
           display: block;
@@ -2736,7 +2738,7 @@ body.single-post .entry-wrap .main-page {
   width: 70%;
   margin-right: 2.5%;
   .post-content-column {
-    background: #fff;
+    background: $white;
     margin-bottom: 30px;
   }
 }
@@ -2767,7 +2769,7 @@ body.single-post .entry-wrap .main-page {
     border-top: $ui_border;
     width: $full;
     height: 53px;
-    background: #fff;
+    background: $white;
     margin-top: -3$one;
   }
 }
@@ -2797,7 +2799,7 @@ body.single-post .entry-wrap .main-page {
       border: none;
       .webtwicons {
         position: absolute;
-        color: #fff;
+        color: $white;
         padding: 5px;
         top: 5px;
         left: 4px;
@@ -2824,7 +2826,7 @@ body.single-post .entry-wrap .main-page {
       -o-border-radius: 2px;
       border-radius: 2px;
       margin-right: 5px;
-      color: #fff;
+      color: $white;
       height: 82%;
       width: 55%;
       padding: 10px;
@@ -2957,7 +2959,7 @@ body.single-post .entry-wrap .main-page {
       transition-duration: .5s;
       padding: 16px 18px;
       position: relative;
-      color: #fff;
+      color: $white;
       font-size: 1.05em;
       margin-right: 5px;
       .webtwicons {
@@ -2999,7 +3001,7 @@ body.single-post .entry-wrap .main-page {
 
 .page-focus-column .post-secondary-column .author-profile {
   width: $full;
-  background: #fff;
+  background: $white;
   padding: 10px 20px 240px 0;
   color: #4E697D;
   margin-top: 180px;
@@ -3081,7 +3083,7 @@ body.single-post .entry-wrap .main-page {
 .post-secondary-column .prev-next-articles {
   position: relative;
   width: $full;
-  background: #fff;
+  background: $white;
   overflow: hidden;
   height: 145px;
 }
@@ -3102,7 +3104,7 @@ body.single-post .entry-wrap .main-page {
     display: block;
     width: $full;
     height: $full;
-    background: #fff;
+    background: $white;
   }
   &.right a {
     border-left-width: $one;
@@ -3114,7 +3116,7 @@ body.single-post .entry-wrap .main-page {
   }
   a {
     &:hover {
-      color: #fff;
+      color: $white;
       background: $basecolor;
       border-color: $basecolor;
     }
@@ -3123,7 +3125,7 @@ body.single-post .entry-wrap .main-page {
       font-family: $font-alt;
     }
     &:hover p {
-      color: #fff;
+      color: $white;
     }
     p {
       font-weight: 700;
@@ -3226,7 +3228,7 @@ body.single-post .entry-wrap .main-page {
 }
 
 .post-secondary-column .entry-comments {
-  background: #fff;
+  background: $white;
   height: 500px;
   padding: $one 10px;
   h3 {}
@@ -3262,7 +3264,7 @@ body {
         -o-border-radius: 2px;
         margin: 0 25px 30px 9px;
         position: relative;
-        background: #fff;
+        background: $white;
         float: left;
         height: 8%;
         display: block;
@@ -3274,7 +3276,7 @@ body {
     }
   }
   &.about-page {
-    /*background: #fff;*/
+    /*background: $white;*/
     .site-content {
       margin: 100px auto 0 auto;
       max-width: 1379px;
@@ -3374,7 +3376,7 @@ Start about-page.css
   }
   .founders-section {
     width: $full;
-    background: #fff;
+    background: $white;
     padding-bottom: 40px;
     .inner {
       width: 80%;
@@ -3403,7 +3405,7 @@ Start about-page.css
   -ms-transition: box-shadow .28s ease;
   -o-transition: box-shadow .28s ease;
   transition: box-shadow .28s ease;
-  background: #fff;
+  background: $white;
   width: 25%;
   position: relative;
   margin-right: 3%;
@@ -3500,7 +3502,7 @@ body.contact-page .site-content {
   background: #273340;
   margin-top: 60px;
   display: block;
-  color: #fff;
+  color: $white;
   width: auto;
   padding: 32px 0 20px 0;
   height: 430px;
@@ -3559,7 +3561,7 @@ body.contact-page .site-content {
     }
     .btn-footer {
       .webtwicons {
-        color: #fff;
+        color: $white;
         margin-left: 2px;
       }
       .github-icon {
@@ -3662,16 +3664,16 @@ body.contact-page .site-content {
       position: relative;
       background: transparent;
       border: 1.5px solid #3B4A5A;
-      color: #fff;
+      color: $white;
       font-size: .75em;
       font-weight: 400;
       letter-spacing: .05rem;
       padding: .8em 1.7em;
       text-transform: uppercase;
       &:hover {
-        background: #fff;
+        background: $white;
         color: #3B4A5A;
-        border: 1.5px solid #fff;
+        border: 1.5px solid $white;
       }
     }
   }
@@ -3693,14 +3695,14 @@ body.contact-page .site-content {
   position: relative;
   span {
     font-family: $basefont;
-    color: #fff;
+    color: $white;
     font-size: 1em;
   }
   .colophon-link {
     font-family: $font-alt;
     letter-spacing: .01em;
     padding-bottom: 2px;
-    color: #fff;
+    color: $white;
     position: relative;
     &:before {
       -webkit-transition: transform .2s;
@@ -3720,7 +3722,7 @@ body.contact-page .site-content {
       bottom: 0;
       content: "";
       height: 2px;
-      background: #fff;
+      background: $white;
     }
     &:hover:before {
       -webkit-transform: scaleX(1);

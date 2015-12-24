@@ -899,7 +899,7 @@ body.category-page .adjustSiteContent {
   .active-item a {
     color: #7AAFC8 !important; }
     .active-item a:hover {
-      background: #FFF !important; }
+      background: #fff !important; }
   .active-item svg {
     fill: #fff;
     position: absolute;
@@ -1359,7 +1359,7 @@ body.home {
     margin-top: 3px;
     cursor: default; }
     .category-title p:before {
-      color: #FFF;
+      color: #fff;
       padding-right: 4px;
       font-size: 13.5px;
       cursor: default; }
@@ -1371,7 +1371,7 @@ body.home {
   .tech-news-wrap .category-title p svg {
     vertical-align: middle;
     margin-top: -2px;
-    fill: #FFF;
+    fill: #fff;
     width: 20px;
     height: 18px; }
 
@@ -2620,7 +2620,7 @@ body.videos .videos-column {
     body.videos .videos-column .single-video:nth-of-type(2n) {
       margin-right: 0; }
 body.about-page {
-  /*background: #fff;*/ }
+  /*background: $white;*/ }
   body.about-page .site-content {
     margin: 100px auto 0 auto;
     max-width: 1379px;
