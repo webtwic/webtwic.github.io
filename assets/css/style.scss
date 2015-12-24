@@ -1044,11 +1044,7 @@ body.category-page .adjustSiteContent {
       }
       li a {
         font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
-        -webkit-transition: all .3s linear;
-        -moz-transition: all .3s linear;
-        -ms-transition: all .3s linear;
-        -o-transition: all .3s linear;
-        transition: all .3s linear;
+        @include transition(all .3s linear);
         text-transform: lowercase;
         text-decoration: none;
         text-shadow: none;
@@ -1059,11 +1055,7 @@ body.category-page .adjustSiteContent {
     }
     .secondary-menu li a {
       font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
-      -webkit-transition: all .3s linear;
-      -moz-transition: all .3s linear;
-      -ms-transition: all .3s linear;
-      -o-transition: all .3s linear;
-      transition: all .3s linear;
+      @include transition(all .3s linear);
       text-transform: lowercase;
       text-decoration: none;
       text-shadow: none;
@@ -1157,11 +1149,7 @@ body.category-page .adjustSiteContent {
   }
   .flyout-nav {
     li a {
-      -webkit-transition: all .3s linear 0s;
-      -moz-transition: all .3s linear 0s;
-      -ms-transition: all .3s linear 0s;
-      -o-transition: all .3s linear 0s;
-      transition: all .3s linear 0s;
+      @include transition(all .3s linear 0s);
     }
     &:first-child {
       border-top: 0 none;
@@ -1295,11 +1283,7 @@ body.category-page .adjustSiteContent {
     position: relative;
     margin: 20px 10px;
     .bar {
-      -webkit-transition: background, opacity, transform .2s ease-in-out 0s;
-      -moz-transition: background, opacity, transform .2s ease-in-out 0s;
-      -ms-transition: background, opacity, transform .2s ease-in-out 0s;
-      -o-transition: background, opacity, transform .2s ease-in-out 0s;
-      transition: background, opacity, transform .2s ease-in-out 0s;
+      // @include transition(background, opacity, transform .2s ease-in-out 0s);
       @include transform(rotate(0));
       @include border-radius(2px);
       background: #7B8B8E;
@@ -1371,6 +1355,7 @@ body.home {
   .featured-posts-column {
     width: 44.93%;
     margin-right: 2.1%;
+    @extend .left;
   }
 }
 
@@ -1384,6 +1369,8 @@ body.home {
   z-index: 50;
   background: $white;
   width: $full;
+  @extend .shadow-alt;
+  @extend .radius;
   &:first-child {
     margin-top: 25px;
   }
@@ -1417,11 +1404,7 @@ body.home {
     margin: 10px;
     a {
       font-family: "Roboto Slab", "Trebuchet MS", Helvetica, Calibri;
-      -webkit-transition: color .4s ease, text-shadow .2s ease;
-      -moz-transition: color .4s ease, text-shadow .2s ease;
-      -ms-transition: color .4s ease, text-shadow .2s ease;
-      -o-transition: color .4s ease, text-shadow .2s ease;
-      transition: color .4s ease, text-shadow .2s ease;
+      // @include transition(color .4s ease, text-shadow .2s ease);
       -webkit-text-shadow: none;
       -moz-text-shadow: none;
       -ms-text-shadow: none;
@@ -1457,11 +1440,7 @@ body.home {
     color: #15E1E1;
     position: relative;
     &:before {
-      -webkit-transition: width .4s ease;
-      -moz-transition: width .4s ease;
-      -ms-transition: width .4s ease;
-      -o-transition: width .4s ease;
-      transition: width .4s ease;
+      @include transition(width .4s ease);
       content: "";
       background: #15E1E1;
       position: absolute;
@@ -1475,11 +1454,7 @@ body.home {
       width: $full;
     }
     &:after {
-      -webkit-transition: margin-left .02s;
-      -moz-transition: margin-left .02s;
-      -ms-transition: margin-left .02s;
-      -o-transition: margin-left .02s;
-      transition: margin-left .02s;
+      @include transition(margin-left .02s);
       content: "\f061";
       font-family: $icon;
       font-size: .8em;
@@ -1603,6 +1578,9 @@ body.home {
   margin: 25px 2.1% 0 0;
   width: 25.142%;
   height: 3751px;
+  @extend .shadow;
+  @extend .radius;
+  @extend .left;
   .thePost {
     margin: 22px 22.5px 14px;
     padding: 20px 0px 7px;
@@ -1967,6 +1945,7 @@ body {
   -o-transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
   transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
   @include box-shadow(0 0 10px rgba(0, 0, 0, .05));
+  @extend .round;
   display: inline-block;
   visibility: hidden;
   position: fixed;
@@ -2135,6 +2114,8 @@ body.category-page {
     width: 70.8%;
     height: 3303px;
     margin-right: 2.5%;
+    @extend .radius;
+    @extend .left;
   }
 }
 
@@ -2147,6 +2128,7 @@ article.post-wrap {
   margin-bottom: 30px;
   position: relative;
   background: $white;
+  @extend .radius;
   width: $full;
   &:first-child {
     padding-bottom: 310px;
@@ -2260,11 +2242,7 @@ body {
     }
     .post-content .read-post {
       @include box-shadow(0px 0px 7px rgba(0, 0, 0, .05));
-      transition: background .5s ease-in-out;
-      -webkit-transition: background .5s ease-in-out;
-      -moz-transition: background .5s ease-in-out;
-      -ms-transition: background .5s ease-in-out;
-      -o-transition: background .5s ease-in-out;
+      @include transition(background .5s ease-in-out);
       margin: .44em 0 18px 0;
       @extend .radius;
       background: #5AA6DB;

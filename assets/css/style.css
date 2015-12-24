@@ -474,21 +474,21 @@ img {
 .lowercase {
   text-transform: lowercase; }
 
-.shadow, .entry-content .entry-image-small img {
+.shadow, .tech-news-wrap, .entry-content .entry-image-small img {
   -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1); }
 
-.shadow-alt {
+.shadow-alt, .featured-posts-column .article {
   -webkit-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1);
   -o-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1); }
 
-.radius, .category .category-feed a, .category .category-feed, body.category-page .post-content .post-meta, body.category-page .post-content .read-post, .article-meta .article-meta-inner .share-icons a, .article-meta .article-meta-inner .cta-btns a, .entry-content .entry-image-small img, .post_list li .post-card-image, body.videos .videos-column .single-video {
+.radius, .featured-posts-column .article, .tech-news-wrap, .category .category-feed a, .category .category-feed, body.category-page .posts-column, article.post-wrap, body.category-page .post-content .post-meta, body.category-page .post-content .read-post, .article-meta .article-meta-inner .share-icons a, .article-meta .article-meta-inner .cta-btns a, .entry-content .entry-image-small img, .post_list li .post-card-image, body.videos .videos-column .single-video {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -509,7 +509,7 @@ img {
   -o-border-radius: 5px;
   border-radius: 5px; }
 
-.circle, .round, .entry-wrap header .entry-meta .entry-author a img, .author-avatar img, #colophon .social-buttons a {
+.circle, .round, .to-top, .entry-wrap header .entry-meta .entry-author a img, .author-avatar img, #colophon .social-buttons a {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
@@ -535,7 +535,7 @@ img {
 .fixed {
   position: fixed; }
 
-.left {
+.left, body.home .featured-posts-column, .tech-news-wrap, body.category-page .posts-column {
   float: left; }
 
 .right {
@@ -767,11 +767,11 @@ body.category-page .adjustSiteContent {
       position: relative; }
     .main .main-menu li a {
       font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
-      -webkit-transition: all .3s linear;
-      -moz-transition: all .3s linear;
-      -ms-transition: all .3s linear;
-      -o-transition: all .3s linear;
-      transition: all .3s linear;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear;
       text-transform: lowercase;
       text-decoration: none;
       text-shadow: none;
@@ -780,11 +780,11 @@ body.category-page .adjustSiteContent {
       color: #777; }
   .main .secondary-menu li a {
     font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
     text-transform: lowercase;
     text-decoration: none;
     text-shadow: none;
@@ -881,11 +881,11 @@ body.category-page .adjustSiteContent {
     border-right: 0 none; }
 
   .flyout-nav li a {
-    -webkit-transition: all .3s linear 0s;
-    -moz-transition: all .3s linear 0s;
-    -ms-transition: all .3s linear 0s;
-    -o-transition: all .3s linear 0s;
-    transition: all .3s linear 0s; }
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s; }
   .flyout-nav:first-child {
     border-top: 0 none; }
   .flyout-nav li a:hover {
@@ -1007,11 +1007,6 @@ body.category-page .adjustSiteContent {
     position: relative;
     margin: 20px 10px; }
     .hamburger .bar {
-      -webkit-transition: background, opacity, transform .2s ease-in-out 0s;
-      -moz-transition: background, opacity, transform .2s ease-in-out 0s;
-      -ms-transition: background, opacity, transform .2s ease-in-out 0s;
-      -o-transition: background, opacity, transform .2s ease-in-out 0s;
-      transition: background, opacity, transform .2s ease-in-out 0s;
       -webkit-transform: rotate(0);
       -moz-transform: rotate(0);
       -ms-transform: rotate(0);
@@ -1124,11 +1119,6 @@ body.home {
   margin: 10px; }
   .article .article-title a {
     font-family: "Roboto Slab", "Trebuchet MS", Helvetica, Calibri;
-    -webkit-transition: color .4s ease, text-shadow .2s ease;
-    -moz-transition: color .4s ease, text-shadow .2s ease;
-    -ms-transition: color .4s ease, text-shadow .2s ease;
-    -o-transition: color .4s ease, text-shadow .2s ease;
-    transition: color .4s ease, text-shadow .2s ease;
     -webkit-text-shadow: none;
     -moz-text-shadow: none;
     -ms-text-shadow: none;
@@ -1160,11 +1150,11 @@ body.home {
   color: #15E1E1;
   position: relative; }
   .article .read-article:before {
-    -webkit-transition: width .4s ease;
-    -moz-transition: width .4s ease;
-    -ms-transition: width .4s ease;
-    -o-transition: width .4s ease;
-    transition: width .4s ease;
+    -webkit-transition: width 0.4s ease;
+    -moz-transition: width 0.4s ease;
+    -ms-transition: width 0.4s ease;
+    -o-transition: width 0.4s ease;
+    transition: width 0.4s ease;
     content: "";
     background: #15E1E1;
     position: absolute;
@@ -1176,11 +1166,11 @@ body.home {
   .article .read-article:hover:before {
     width: 100%; }
   .article .read-article:after {
-    -webkit-transition: margin-left .02s;
-    -moz-transition: margin-left .02s;
-    -ms-transition: margin-left .02s;
-    -o-transition: margin-left .02s;
-    transition: margin-left .02s;
+    -webkit-transition: margin-left 0.02s;
+    -moz-transition: margin-left 0.02s;
+    -ms-transition: margin-left 0.02s;
+    -o-transition: margin-left 0.02s;
+    transition: margin-left 0.02s;
     content: "\f061";
     font-family: webtwicons;
     font-size: .8em;
@@ -1853,11 +1843,11 @@ body.category-page .post-content .read-post {
   -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
   -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
-  transition: background .5s ease-in-out;
-  -webkit-transition: background .5s ease-in-out;
-  -moz-transition: background .5s ease-in-out;
-  -ms-transition: background .5s ease-in-out;
-  -o-transition: background .5s ease-in-out;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -ms-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
   margin: .44em 0 18px 0;
   background: #5AA6DB;
   padding: .4em;
@@ -2437,7 +2427,7 @@ body.single-post .entry-wrap .main-page {
   .prev-next-articles .item.right a {
     border-left-width: 1px;
     border-left-style: solid; }
-  .prev-next-articles .item.left a {
+  .prev-next-articles .item.left a, .prev-next-articles body.home .item.featured-posts-column a, body.home .prev-next-articles .item.featured-posts-column a, .prev-next-articles .item.tech-news-wrap a, .prev-next-articles body.category-page .item.posts-column a, body.category-page .prev-next-articles .item.posts-column a {
     border-right-width: 1px;
     border-right-style: solid; }
   .prev-next-articles .item a:hover {
@@ -2458,7 +2448,7 @@ body.single-post .entry-wrap .main-page {
     display: inline-block;
     width: 80%; }
 
-.left .item-meta {
+.left .item-meta, body.home .featured-posts-column .item-meta, .tech-news-wrap .item-meta, body.category-page .posts-column .item-meta {
   padding-left: 20px; }
 
 .right .item-meta {
