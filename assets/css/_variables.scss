@@ -15,6 +15,7 @@ $one: 1px;
 $two: 2px;
 $three: $one + $two;
 $five: $three + $two;
+$seven: $five + $two;
 $full: 100%;
 $border: rgba(0, 0, 0, .06);
 $solid: solid;
