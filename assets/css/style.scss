@@ -35,7 +35,8 @@ $base_color: $basecolor;
 $full: 100%;
 $border: rgba(0, 0, 0, .06);
 $solid: solid;
-$solid_one: 1px $solid;
+$one: 1px;
+$solid_one: $one $solid;
 $ui_border: $solid_one $border;
 
 /* ==========================================================================
@@ -455,7 +456,7 @@ a {
 }
 
 abbr[title] {
-  border-bottom: 1px dotted;
+  border-bottom: $one dotted;
 }
 
 b, strong {
@@ -964,7 +965,7 @@ img {
 }
 
 .adjustSiteContent {
-  padding-bottom: 311px !important;
+  padding-bottom: 31$one !important;
 }
 
 body.category-page .adjustSiteContent {
@@ -1010,7 +1011,7 @@ body.category-page .adjustSiteContent {
       right: 0px;
       z-index: 9999;
       .desktop_logo {
-        background: url("/img/webtwic-logos.png") -18px 1px no-repeat;
+        background: url("/img/webtwic-logos.png") -18px $one no-repeat;
         text-indent: -99999px;
         text-align: center;
         margin-right: auto;
@@ -1082,7 +1083,7 @@ body.category-page .adjustSiteContent {
     border-color: $border $border;
     @include box-shadow(0px 0px 2px rgba(0, 0, 0, 0.1));
     @include border-radius(0px 0px 3px 3px);
-    border-width: 1px 1px 2px;
+    border-width: $one $one 2px;
     border-style: solid;
     position: absolute;
     background: #fff;
@@ -1103,11 +1104,11 @@ body.category-page .adjustSiteContent {
       border: 0 none;
     }
     &:hover {
-      height: 51px;
+      height: 5$one;
     }
   }
   .flyout-nav li:hover {
-    height: 51px;
+    height: 5$one;
   }
   .drop-nav li a {
     text-transform: capitalize !important;
@@ -1133,7 +1134,7 @@ body.category-page .adjustSiteContent {
       display: block;
       left: 140px;
       color: #777;
-      top: 11px;
+      top: 1$one;
     }
   }
   .flyout-nav {
@@ -1149,7 +1150,7 @@ body.category-page .adjustSiteContent {
     background: #f9f9f9;
     position: absolute;
     left: $full;
-    top: -1px;
+    top: -$one;
   }
   .drop-nav li [href="#"]:hover {
     border-right: 0 none;
@@ -1254,7 +1255,7 @@ body.category-page .adjustSiteContent {
     left: 0px;
     top: 0px;
     .mobile_logo {
-      background: url("/img/webtwic-logos.png") 1px -96px no-repeat;
+      background: url("/img/webtwic-logos.png") $one -96px no-repeat;
       width: 160px;
       height: $full;
       display: block;
@@ -1454,11 +1455,11 @@ body.home {
       font-weight: 600;
       color: #3f5261;
       &:hover {
-        -webkit-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-        -moz-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-        -ms-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-        -o-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-        text-shadow: 0px 1px 1px rgb(238, 238, 238);
+        -webkit-text-shadow: 0px $one $one rgb(238, 238, 238);
+        -moz-text-shadow: 0px $one $one rgb(238, 238, 238);
+        -ms-text-shadow: 0px $one $one rgb(238, 238, 238);
+        -o-text-shadow: 0px $one $one rgb(238, 238, 238);
+        text-shadow: 0px $one $one rgb(238, 238, 238);
         color: #81aec5;
       }
     }
@@ -1571,11 +1572,11 @@ body.home {
         color: #BD1E23;
       }
       .tooltip {
-        -webkit-border-radius: 1px;
-        -moz-border-radius: 1px;
-        -ms-border-radius: 1px;
-        -o-border-radius: 1px;
-        border-radius: 1px;
+        -webkit-border-radius: $one;
+        -moz-border-radius: $one;
+        -ms-border-radius: $one;
+        -o-border-radius: $one;
+        border-radius: $one;
         display: inline;
         padding: .1px 6px;
         position: absolute;
@@ -1629,7 +1630,7 @@ body.home {
   background: #F0F5F8;
   margin: 25px 2.1% 0 0;
   width: 25.142%;
-  height: 3751px;
+  height: 375$one;
   .thePost {
     margin: 22px 22.5px 14px;
     padding: 20px 0px 7px;
@@ -1693,7 +1694,7 @@ body.home {
 }
 
 .empty-col.sidebar {
-  height: 311px;
+  height: 31$one;
   position: relative;
 }
 
@@ -1857,7 +1858,7 @@ iframe a.twitter-timeline {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
-  border-width: 1px 2px;
+  border-width: $one 2px;
   border-color: #f0f0f0;
   border-style: solid;
   border-radius: 3px;
@@ -1984,7 +1985,7 @@ body {
       border-width: 0 0 4px 0;
       padding: 15px 22px;
       margin-left: 242px;
-      margin-top: -71px;
+      margin-top: -7$one;
       display: block;
       height: 54px;
       width: 50px;
@@ -2002,7 +2003,7 @@ body {
 /* End Sidebar Search */
 
 .featured-posts {
-  height: 371px;
+  height: 37$one;
 }
 
 .top-container {
@@ -2044,7 +2045,7 @@ body {
     margin-top: 12px;
     fill: #fff;
     width: 29px;
-    height: 31px;
+    height: 3$one;
   }
 }
 
@@ -2106,7 +2107,7 @@ body {
 .line {
   margin: 46px auto 50px auto;
   background: #D3D5D8;
-  height: 1px;
+  height: $one;
   width: 46%;
   display: block;
 }
@@ -2223,11 +2224,11 @@ article.post-wrap {
 }
 
 .post-thumbnail {
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  -ms-border-radius: 1px;
-  -o-border-radius: 1px;
-  border-radius: 1px;
+  -webkit-border-radius: $one;
+  -moz-border-radius: $one;
+  -ms-border-radius: $one;
+  -o-border-radius: $one;
+  border-radius: $one;
   background: #f2f2f2;
   width: 33.015%;
   height: 169px;
@@ -2253,10 +2254,10 @@ article.post-wrap {
       text-align: center;
       display: block;
       font-size: 40px;
-      letter-spacing: 1px;
+      letter-spacing: $one;
       line-height: 140px;
       color: #BABABA;
-      text-shadow: -1px 1px #E2E2E2;
+      text-shadow: -$one $one #E2E2E2;
       height: 169px;
     }
   }
@@ -2265,7 +2266,7 @@ article.post-wrap {
 .post-wrap .post-content {
   width: 65%;
   float: right;
-  padding-left: 11px;
+  padding-left: 1$one;
   .post-title {
     margin: 0px 0px 10px 0px;
     a {
@@ -2288,11 +2289,11 @@ article.post-wrap {
 }
 
 .post-content .post-title a:hover {
-  -webkit-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-  -moz-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-  -ms-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-  -o-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-  text-shadow: 0px 1px 1px rgb(238, 238, 238);
+  -webkit-text-shadow: 0px $one $one rgb(238, 238, 238);
+  -moz-text-shadow: 0px $one $one rgb(238, 238, 238);
+  -ms-text-shadow: 0px $one $one rgb(238, 238, 238);
+  -o-text-shadow: 0px $one $one rgb(238, 238, 238);
+  text-shadow: 0px $one $one rgb(238, 238, 238);
   color: #7AAFC8;
 }
 
@@ -2435,7 +2436,7 @@ Start single-post.css
       position: relative;
       border-right: 1.9px solid $border;
       .desktop_logo {
-        background: url("/img/webtwic-logos.png") no-repeat -1px -99px;
+        background: url("/img/webtwic-logos.png") no-repeat -$one -99px;
         text-indent: -99999px;
         font-size: 40px;
         display: block;
@@ -2575,7 +2576,7 @@ Start single-post.css
           position: relative;
           border-style: solid;
           border-color: #3B4A5A;
-          border-width: 0 0 1px 0;
+          border-width: 0 0 $one 0;
           background: transparent;
           font-size: 1.1em;
           padding: 5px 2px;
@@ -2641,7 +2642,7 @@ Start single-post.css
         -ms-transition: transform ease .2s;
         -o-transition: transform ease .2s;
         display: inline-block;
-        margin: 21px 3px;
+        margin: 2$one 3px;
         font-size: 1.09em;
       }
       &:nth-child(1) .facebook-official {
@@ -2767,7 +2768,7 @@ body.single-post .entry-wrap .main-page {
     width: $full;
     height: 53px;
     background: #fff;
-    margin-top: -31px;
+    margin-top: -3$one;
   }
 }
 
@@ -2898,7 +2899,7 @@ body.single-post .entry-wrap .main-page {
   }
   code {
     background: #E8F5F2;
-    padding: 1px 3.6px;
+    padding: $one 3.6px;
     color: $basecolor;
     /*color: #1BC1A1;*/
     border-radius: 3px;
@@ -3104,11 +3105,11 @@ body.single-post .entry-wrap .main-page {
     background: #fff;
   }
   &.right a {
-    border-left-width: 1px;
+    border-left-width: $one;
     border-left-style: solid;
   }
   &.left a {
-    border-right-width: 1px;
+    border-right-width: $one;
     border-right-style: solid;
   }
   a {
@@ -3163,7 +3164,7 @@ body.single-post .entry-wrap .main-page {
   position: relative;
   .inner {
     position: relative;
-    padding: 1px 0 0 0;
+    padding: $one 0 0 0;
   }
 }
 
@@ -3173,7 +3174,7 @@ body.single-post .entry-wrap .main-page {
   }
   ul {
     position: relative;
-    padding: 1px 20px 35em 20px;
+    padding: $one 20px 35em 20px;
     li {
       -webkit-transition: opacity .5s ease-out;
       -moz-transition: opacity .5s ease-out;
@@ -3227,7 +3228,7 @@ body.single-post .entry-wrap .main-page {
 .post-secondary-column .entry-comments {
   background: #fff;
   height: 500px;
-  padding: 1px 10px;
+  padding: $one 10px;
   h3 {}
 }
 
@@ -3522,7 +3523,7 @@ body.contact-page .site-content {
     height: 64px;
     display: block;
     color: #2f5c88;
-    letter-spacing: .1px;
+    letter-spacing: 0.1px;
     text-indent: -9999px;
   }
   .description-text {
@@ -3562,7 +3563,7 @@ body.contact-page .site-content {
         margin-left: 2px;
       }
       .github-icon {
-        margin-right: 1px;
+        margin-right: $one;
       }
       .twitter-icon {
         font-size: $full;
@@ -3574,7 +3575,7 @@ body.contact-page .site-content {
         margin-left: 0px;
       }
       .facebook-icon {
-        margin-right: -1px;
+        margin-right: -$one;
         margin-left: 3px;
       }
       &:nth-child(1) {
@@ -3632,7 +3633,7 @@ body.contact-page .site-content {
         top: $full;
         left: 0;
         right: 0;
-        height: 1px;
+        height: $one;
       }
       &:hover:before {
         -webkit-transform: scaleX(1);

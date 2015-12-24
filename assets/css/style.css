@@ -702,7 +702,7 @@ img {
     font-weight: normal; }
 
 .adjustSiteContent {
-  padding-bottom: 311px !important; }
+  padding-bottom: 31 1px !important; }
 
 body.category-page .adjustSiteContent {
   padding-bottom: 233px !important; }
@@ -832,10 +832,10 @@ body.category-page .adjustSiteContent {
   .drop-nav li:nth-child(1) {
     border: 0 none; }
   .drop-nav li:hover {
-    height: 51px; }
+    height: 5 1px; }
 
   .flyout-nav li:hover {
-    height: 51px; }
+    height: 5 1px; }
 
   .drop-nav li a {
     text-transform: capitalize !important;
@@ -860,7 +860,7 @@ body.category-page .adjustSiteContent {
       display: block;
       left: 140px;
       color: #777;
-      top: 11px; }
+      top: 1 1px; }
 
   .flyout-nav {
     border-bottom: 3px solid #95DFDC;
@@ -1278,7 +1278,7 @@ body.home {
   background: #F0F5F8;
   margin: 25px 2.1% 0 0;
   width: 25.142%;
-  height: 3751px; }
+  height: 375 1px; }
   .tech-news-wrap .thePost {
     margin: 22px 22.5px 14px;
     padding: 20px 0px 7px;
@@ -1333,7 +1333,7 @@ body.home {
   position: relative; }
 
 .empty-col.sidebar {
-  height: 311px;
+  height: 31 1px;
   position: relative; }
 
 .category-title {
@@ -1578,7 +1578,7 @@ body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-colu
       border-width: 0 0 4px 0;
       padding: 15px 22px;
       margin-left: 242px;
-      margin-top: -71px;
+      margin-top: -7 1px;
       display: block;
       height: 54px;
       width: 50px; }
@@ -1591,7 +1591,7 @@ body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-colu
 
 /* End Sidebar Search */
 .featured-posts {
-  height: 371px; }
+  height: 37 1px; }
 
 .top-container {
   width: 90%;
@@ -1630,7 +1630,7 @@ body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-colu
     margin-top: 12px;
     fill: #fff;
     width: 29px;
-    height: 31px; }
+    height: 3 1px; }
 
 .topVisible {
   visibility: visible;
@@ -1816,7 +1816,7 @@ article.post-wrap {
 .post-wrap .post-content {
   width: 65%;
   float: right;
-  padding-left: 11px; }
+  padding-left: 1 1px; }
   .post-wrap .post-content .post-title {
     margin: 0px 0px 10px 0px; }
     .post-wrap .post-content .post-title a {
@@ -1957,7 +1957,7 @@ Start single-post.css
     position: relative;
     border-right: 1.9px solid rgba(0, 0, 0, 0.06); }
     header.secondary-header .logo .desktop_logo {
-      background: url("/img/webtwic-logos.png") no-repeat -1px -99px;
+      background: url("/img/webtwic-logos.png") no-repeat-1px -99px;
       text-indent: -99999px;
       font-size: 40px;
       display: block;
@@ -2127,7 +2127,7 @@ Start single-post.css
       -ms-transition: transform ease .2s;
       -o-transition: transform ease .2s;
       display: inline-block;
-      margin: 21px 3px;
+      margin: 2 1px 3px;
       font-size: 1.09em; }
     .header-follow-search .follow-icons a:nth-child(1) .facebook-official {
       color: #3B599A; }
@@ -2218,7 +2218,7 @@ body.single-post .entry-wrap .main-page {
   width: 100%;
   height: 53px;
   background: #fff;
-  margin-top: -31px; }
+  margin-top: -3 1px; }
 
 .article-meta .article-meta-inner {
   height: 100%;
@@ -2821,7 +2821,7 @@ body.contact-page .site-content {
   height: 64px;
   display: block;
   color: #2f5c88;
-  letter-spacing: .1px;
+  letter-spacing: 0.1px;
   text-indent: -9999px; }
 #colophon .description-text {
   font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
