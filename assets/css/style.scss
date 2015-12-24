@@ -34,7 +34,9 @@ $base-color: $basecolor;
 $base_color: $basecolor;
 $full: 100%;
 $border: rgba(0, 0, 0, .06);
-$solid: 1px solid;
+$solid: solid;
+$solid_one: 1px $solid;
+$border_alt: $solid_one $border;
 
 /* ==========================================================================
    Mixins
@@ -583,7 +585,7 @@ input {
 }
 
 fieldset {
-  border: $solid #c0c0c0;
+  border: $solid_one #c0c0c0;
   margin: 0 2px;
   padding: .35em .625em .75em;
 }
@@ -1031,7 +1033,7 @@ body.category-page .adjustSiteContent {
       left: 0px;
       display: inline-block;
       > ul.nav-ul li {
-        border-left: $solid $border;
+        border-left: $border_alt;
         vertical-align: middle;
         position: relative;
       }
@@ -1087,13 +1089,13 @@ body.category-page .adjustSiteContent {
     width: 180px;
     li {
       border-left: 0 none !important;
-      border-top: $solid $border;
+      border-top: $border_alt;
       height: 50px;
     }
   }
   .flyout-nav li {
     border-left: 0 none !important;
-    border-top: $solid $border;
+    border-top: $border_alt;
     height: 50px;
   }
   .drop-nav li {
@@ -1120,7 +1122,7 @@ body.category-page .adjustSiteContent {
     height: 204px;
   }
   .flyout {
-    border-right: $solid $border;
+    border-right: $border_alt;
     position: relative;
     &:after {
       font-family: $icon;
@@ -1136,9 +1138,9 @@ body.category-page .adjustSiteContent {
   }
   .flyout-nav {
     border-bottom: 3px solid #95DFDC;
-    border-right: $solid $border;
-    border-left: $solid $border;
-    border-top: $solid $border;
+    border-right: $border_alt;
+    border-left: $border_alt;
+    border-top: $border_alt;
     -webkit-border-radius: 0px 0px 3px 3px;
     -moz-border-radius: 0px 0px 3px 3px;
     -ms-border-radius: 0px 0px 3px 3px;
@@ -1258,7 +1260,7 @@ body.category-page .adjustSiteContent {
       display: block;
       vertical-align: middle;
       float: left;
-      border-right: $solid $border;
+      border-right: $border_alt;
     }
     .mobile-nav {
       float: right;
@@ -1432,7 +1434,7 @@ body.home {
     height: 15px;
   }
   .article-title {
-    border-bottom: $solid #EEE;
+    border-bottom: $solid_one #EEE;
     margin-left: 5px;
     padding-bottom: 10px;
     margin: 10px;
@@ -1631,7 +1633,7 @@ body.home {
   .thePost {
     margin: 22px 22.5px 14px;
     padding: 20px 0px 7px;
-    border-top: $solid #C3D4E1;
+    border-top: $solid_one #C3D4E1;
     text-align: center;
     font-size: .92em;
     color: #597488;
@@ -1807,7 +1809,7 @@ iframe a.twitter-timeline {
         background: #E9F1F5;
       }
     }
-    border-bottom: $solid #E9E9E9;
+    border-bottom: $solid_one #E9E9E9;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
@@ -2209,7 +2211,7 @@ article.post-wrap {
   -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
   -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
-  border-bottom: $solid #E5E5E5;
+  border-bottom: $solid_one #E5E5E5;
   padding: 30px 30px 340px;
   margin-bottom: 30px;
   position: relative;
@@ -2618,8 +2620,8 @@ Start single-post.css
     > .follow-icons {
       height: $full;
       display: inline-block;
-      border-right: $solid $border;
-      border-left: $solid $border;
+      border-right: $border_alt;
+      border-left: $border_alt;
       padding: 0 14px;
     }
     .follow-icons a {
@@ -2760,8 +2762,8 @@ body.single-post .entry-wrap .main-page {
     width: $full;
   }
   .article-meta {
-    border-bottom: $solid $border;
-    border-top: $solid $border;
+    border-bottom: $border_alt;
+    border-top: $border_alt;
     width: $full;
     height: 53px;
     background: #fff;
@@ -2778,7 +2780,7 @@ body.single-post .entry-wrap .main-page {
     display: inline-block;
     width: 75%;
     height: $full;
-    border-left: $solid $border;
+    border-left: $border_alt;
     padding-left: 10px;
     a {
       position: relative;
@@ -2880,7 +2882,7 @@ body.single-post .entry-wrap .main-page {
   }
   a {
     color: $basecolor;
-    border-bottom: $solid $basecolor;
+    border-bottom: $solid_one $basecolor;
     transition: all .5s ease;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
@@ -2888,7 +2890,7 @@ body.single-post .entry-wrap .main-page {
     -o-transition: all .5s ease;
     &:hover {
       color: inherit;
-      border-bottom: $solid #4E697D;
+      border-bottom: $solid_one #4E697D;
     }
   }
   h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a, h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
@@ -2943,8 +2945,8 @@ body.single-post .entry-wrap .main-page {
     width: $full;
     position: relative;
     padding: 30px 2.2%;
-    border-top: $solid $border;
-    border-bottom: $solid $border;
+    border-top: $border_alt;
+    border-bottom: $border_alt;
     margin-bottom: 20px;
     a {
       -webkit-transition-duration: .5s;
@@ -2964,8 +2966,8 @@ body.single-post .entry-wrap .main-page {
     }
   }
   .entry-tags {
-    border-top: $solid $border;
-    border-bottom: $solid $border;
+    border-top: $border_alt;
+    border-bottom: $border_alt;
     margin: 20px 50px;
     padding: 15px 2px;
     color: #666;
@@ -2990,7 +2992,7 @@ body.single-post .entry-wrap .main-page {
   position: relative;
   &:hover {
     color: #3F5261;
-    border-bottom: $solid #3F5261;
+    border-bottom: $solid_one #3F5261;
   }
 }
 
@@ -3383,7 +3385,7 @@ Start about-page.css
       padding-top: 20px;
       font-weight: 400;
       color: #2D404F;
-      border-bottom: $solid $border;
+      border-bottom: $border_alt;
     }
     .the-founders {
       width: $full;
