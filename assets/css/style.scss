@@ -37,6 +37,34 @@ $base_color: $basecolor;
    Mixins
    ========================================================================== */
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin transform($transform) {
+  -webkit-transition: $transform;
+  -moz-transition: $transform;
+  -ms-transition: $transform;
+  -o-transition: $transform;
+  transition: $transform;
+}
+@mixin transition($transition) {
+   -webkit-transition: $transition;
+   -moz-transition: $transition;
+   -ms-transition: $transition;
+   -o-transition: $transition;
+   transition: $transition;
+}
+@mixin box-shadow($box-shadow) {
+   -webkit-box-shadow: $box-shadow;
+   -moz-box-shadow: $box-shadow;
+   -ms-box-shadow: $box-shadow;
+   -o-box-shadow: $box-shadow;
+   box-shadow: $box-shadow;
+}
 
 /* Include fonts and icons */
 
