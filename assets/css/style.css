@@ -474,7 +474,7 @@ img {
 .lowercase {
   text-transform: lowercase; }
 
-.shadow {
+.shadow, .entry-content .entry-image-small img {
   -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
@@ -911,6 +911,10 @@ body.category-page .adjustSiteContent {
 
   .main .main-menu {
     font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
     margin: 0 auto 30px auto;
     z-index: 9999;
@@ -2296,11 +2300,6 @@ body.single-post .entry-wrap .main-page {
 .entry-content .entry-image-small {
   width: 100%; }
   .entry-content .entry-image-small img {
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
-    -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
     height: 520px;
     width: 100%; }
 

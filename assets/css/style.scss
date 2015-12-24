@@ -1194,7 +1194,7 @@ body.category-page .adjustSiteContent {
   }
   .main .main-menu {
     font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .2);
+    @include box-shadow(0px 2px 2px 0px rgba(0, 0, 0, .2));
     margin: 0 auto 30px auto;
     z-index: 9999;
     align-items: center;
@@ -1240,11 +1240,7 @@ body.category-page .adjustSiteContent {
     display: none;
   }
   .main .mobile-header {
-    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
-    -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
-    -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
-    -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
+   @include box-shadow(0px 0px 7px rgba(0, 0, 0, .1));
     z-index: 9999;
     background: $white;
     position: fixed;
@@ -1933,11 +1929,7 @@ body {
         background: rgb(252, 252, 252);
       }
       &:focus {
-        -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
-        -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
-        -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
-        -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
-        box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
+        @include box-shadow(0px 0px 7px rgba(0, 0, 0, .1));
         background: $white;
       }
     }
@@ -1990,11 +1982,7 @@ body {
   -ms-transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
   -o-transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
   transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .05);
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .05);
-  -ms-box-shadow: 0 0 10px rgba(0, 0, 0, .05);
-  -o-box-shadow: 0 0 10px rgba(0, 0, 0, .05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+  @include box-shadow(0 0 10px rgba(0, 0, 0, .05));
   display: inline-block;
   visibility: hidden;
   position: fixed;
@@ -2040,11 +2028,7 @@ body {
   margin-right: auto;
   * {
     font-family: $font-alt;
-    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, .04);
-    -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, .04);
-    -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, .04);
-    -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, .04);
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, .04);
+    @include box-shadow(0px 0px 7px rgba(0, 0, 0, .04));
     -webkit-transition: opacity .2s ease;
     -moz-transition: opacity .2s ease;
     -ms-transition: opacity .2s ease;
@@ -2173,11 +2157,7 @@ body.category-page {
 /*STYLES FOR DROPDOWN MENU */
 
 article.post-wrap {
-  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, .08);
-  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, .08);
-  -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, .08);
-  -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, .08);
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, .08);
+  @include box-shadow(0px 0px 7px rgba(0, 0, 0, .08));
   border-bottom: $solid_one #E5E5E5;
   padding: 30px 30px 340px;
   margin-bottom: 30px;
@@ -2295,11 +2275,7 @@ body {
       max-height: 96px;
     }
     .post-content .read-post {
-      -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, .05);
-      -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, .05);
-      -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, .05);
-      -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, .05);
-      box-shadow: 0px 0px 7px rgba(0, 0, 0, .05);
+      @include box-shadow(0px 0px 7px rgba(0, 0, 0, .05));
       transition: background .5s ease-in-out;
       -webkit-transition: background .5s ease-in-out;
       -moz-transition: background .5s ease-in-out;
@@ -2865,11 +2841,7 @@ body.single-post .entry-wrap .main-page {
   .entry-image-small {
     width: $full;
     img {
-      box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
-      -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
-      -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
-      -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
-      -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, .1);
+      @extend .shadow;
       @extend .radius;
       height: 520px;
       width: $full;
@@ -3345,11 +3317,7 @@ Start about-page.css
 
 .founders-section .the-founders .founder {
   &:hover {
-    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
-    -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
-    -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
-    -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
+    @include box-shadow(0px 0px 7px rgba(0, 0, 0, .3));
   }
   &:nth-child(2n) {
     margin-right: 0;
