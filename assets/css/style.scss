@@ -1160,11 +1160,7 @@ body.home {
     }
     a {
       :first-child {
-        -webkit-transition: .5s ease-in-out;
-        -moz-transition: .5s ease-in-out;
-        -ms-transition: .5s ease-in-out;
-        -o-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
+        @include transition(.5s ease-in-out);
       }
       &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
         margin-right: 42px;
@@ -1205,12 +1201,8 @@ body.home {
           font-size: 1.125em;
         }
         display: none;
-       /*opacity: .4;
-      transition: opacity .99s ease;*/
       }
       &:hover .tooltip {
-        /*opacity: 1;*/
-        /*display: block;*/
       }
       &:nth-of-type(1) .tooltip {
         left: 17.8%;
@@ -1252,22 +1244,14 @@ body.home {
     color: #597488;
     a {
       font-family: $basefont;
-      -webkit-transition: all .6s ease-in-out 0s;
-      -moz-transition: all .6s ease-in-out 0s;
-      -ms-transition: all .6s ease-in-out 0s;
-      -o-transition: all .6s ease-in-out 0s;
-      transition: all .6s ease-in-out 0s;
+      @include transition(all .6s ease-in-out 0s);
       &:hover {
         color: #75b1d6;
       }
     }
   }
   .more_tech_news {
-    -webkit-transition: all .3s ease-in;
-    -moz-transition: all .3s ease-in;
-    -ms-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-    transition: all .3s ease-in;
+    @include transition(all .3s ease-in);
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -1446,11 +1430,7 @@ iframe a.twitter-timeline {
 }
 
 .freebie-item {
-  -webkit-transition: all .4s linear;
-  -moz-transition: all .4s linear;
-  -ms-transition: all .4s linear;
-  -o-transition: all .4s linear;
-  transition: all .4s linear;
+  @include transition(all .4s linear);
   padding: 10px 0px 10px 12px;
   @extend .radius-alt;
   border-width: 1px 2px;
@@ -1479,11 +1459,7 @@ body {
 .freebie-item {
   span {
     font-family: $basefont;
-    -webkit-transition: all .4s linear;
-    -moz-transition: all .4s linear;
-    -ms-transition: all .4s linear;
-    -o-transition: all .4s linear;
-    transition: all .4s linear;
+    @include transition(all .4s linear);
     font-size: 1.067em;
     color: #B5B5B5;
     font-weight: 500;
@@ -1533,11 +1509,7 @@ body {
     margin-right: auto;
     height: 54px;
     .sidebar-input {
-      -webkit-transition: all .5s ease;
-      -moz-transition: all .5s ease;
-      -ms-transition: all .5s ease;
-      -o-transition: all .5s ease;
-      transition: all .5s ease;
+      @include transition(all .5s ease);
       border-right: none !important;
       border: 3px solid #e3e3e3;
       @extend .radius-alt;
@@ -1558,11 +1530,7 @@ body {
       }
     }
     .sidebar-button {
-      -webkit-transition: background .2s ease;
-      -moz-transition: background .2s ease;
-      -ms-transition: background .2s ease;
-      -o-transition: background .2s ease;
-      transition: background .2s ease;
+      @include transition(background .2s ease);
       @include border-radius(0px 3px 3px 0px);
       border-width: 0 0 4px 0;
       padding: 15px 22px;
@@ -1654,11 +1622,7 @@ body {
   * {
     font-family: $font-alt;
     @include box-shadow(0px 0px 7px rgba(0, 0, 0, .04));
-    -webkit-transition: opacity .2s ease;
-    -moz-transition: opacity .2s ease;
-    -ms-transition: opacity .2s ease;
-    -o-transition: opacity .2s ease;
-    transition: opacity .2s ease;
+    @include transition(opacity .2s ease);
     border-bottom: 2px solid #f2f2f2;
     padding: 12px 18.5px;
     background: #f9f9f9;
@@ -1689,11 +1653,7 @@ body {
 
 .bug {
   text-align: center;
-  -webkit-transition: all .4s ease;
-  -moz-transition: all .4s ease;
-  -ms-transition: all .4s ease;
-  -o-transition: all .4s ease;
-  transition: all .4s ease;
+  @include transition(all .4s ease);
 }
 
 .bug-holder {
@@ -1804,11 +1764,7 @@ article.post-wrap {
   height: 169px;
   float: left;
   img {
-    -webkit-transition: opacity .5s ease-out .01s;
-    -moz-transition: opacity .5s ease-out .01s;
-    -ms-transition: opacity .5s ease-out .01s;
-    -o-transition: opacity .5s ease-out .01s;
-    transition: opacity .5s ease-out .01s;
+    @include transition(opacity .5s ease-out .01s);
     @extend .radius-alt;
     height: auto;
     &:hover {
@@ -1870,11 +1826,7 @@ body {
       @extend .radius;
       padding: 5px;
       a {
-        -webkit-transition: color .3s ease;
-        -moz-transition: color .3s ease;
-        -ms-transition: color .3s ease;
-        -o-transition: color .3s ease;
-        transition: color .3s ease;
+        @include transition(color .3s ease);
         padding-right: 12px;
         font-size: .98em;
         font-weight: 400;
@@ -1912,11 +1864,7 @@ body {
       float: right;
       color: $white;
       svg {
-        -webkit-transition: margin-left .05s ease;
-        -moz-transition: margin-left .05s ease;
-        -ms-transition: margin-left .05s ease;
-        -o-transition: margin-left .05s ease;
-        transition: margin-left .05s ease;
+        @include transition(margin-left .05s ease);
         vertical-align: middle;
         margin: -4px 0 0 -5px;
       }
@@ -2054,11 +2002,7 @@ Start single-post.css
   }
   .header-follow-search {
     .search-wrap {
-      transition: background .3s ease;
-      -o-transition: background .3s ease;
-      -ms-transition: background .3s ease;
-      -moz-transition: background .3s ease;
-      -webkit-transition: background .3s ease;
+      @include transition(background .3s ease);
       position: relative;
       background: $white;
       float: right;
@@ -2145,11 +2089,7 @@ Start single-post.css
           }
         }
         #__expand {
-          transition: width ease 1s;
-          -webkit-transition: width ease 1s;
-          -moz-transition: width ease 1s;
-          -ms-transition: width ease 1s;
-          -o-transition: width ease 1s;
+          @include transition(width ease 1s);
           @include border-radius(2px);
           background: $white;
           height: 2px;
@@ -2185,11 +2125,7 @@ Start single-post.css
         @include transform(scale(1.2));
       }
       .webtwicons {
-        transition: transform ease .2s;
-        -webkit-transition: transform ease .2s;
-        -moz-transition: transform ease .2s;
-        -ms-transition: transform ease .2s;
-        -o-transition: transform ease .2s;
+        @include transition(transform ease .2s);
         display: inline-block;
         margin: 21px 3px;
         font-size: 1.09em;
@@ -2227,11 +2163,7 @@ Start single-post.css
     font-weight: 500;
   }
   .entry-meta * {
-    -webkit-transition: color .3s ease-in-out;
-    -moz-transition: color .3s ease-in-out;
-    -ms-transition: color .3s ease-in-out;
-    -o-transition: color .3s ease-in-out;
-    transition: color .3s ease-in-out;
+    @include transition(color .3s ease-in-out);
     position: relative;
     color: #999;
     cursor: pointer;
@@ -2421,11 +2353,7 @@ body.single-post .entry-wrap .main-page {
   a {
     color: $basecolor;
     border-bottom: $solid_one $basecolor;
-    transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
+    @include transition(all .5s ease);
     &:hover {
       color: inherit;
       border-bottom: $solid_one #4E697D;
@@ -2512,11 +2440,7 @@ body.single-post .entry-wrap .main-page {
 }
 
 .post-content-column article .entry-tags a {
-  -webkit-transition: color ease-in-out .5s;
-  -moz-transition: color ease-in-out .5s;
-  -ms-transition: color ease-in-out .5s;
-  -o-transition: color ease-in-out .5s;
-  transition: color ease-in-out .5s;
+  @include transition(color ease-in-out .5s);
   color: $basecolor;
   position: relative;
   &:hover {
@@ -2589,11 +2513,7 @@ body.single-post .entry-wrap .main-page {
 }
 
 .author-content .author-social .webtwicons {
-  -webkit-transition: color ease-in-out .3s;
-  -moz-transition: color ease-in-out .3s;
-  -ms-transition: color ease-in-out .3s;
-  -o-transition: color ease-in-out .3s;
-  transition: color ease-in-out .3s;
+  @include transition(color ease-in-out .3s);
   letter-spacing: 5px;
   color: $basecolor;
   font-size: 1.08em;
@@ -2616,11 +2536,7 @@ body.single-post .entry-wrap .main-page {
   display: block;
   height: $full;
   a {
-    -webkit-transition: all .3s ease-in;
-    -moz-transition: all .3s ease-in;
-    -ms-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-    transition: all .3s ease-in;
+    @include transition(all .3s ease-in);
     border-color: $border;
     padding: 10px;
     display: block;
@@ -2700,11 +2616,7 @@ body.single-post .entry-wrap .main-page {
     position: relative;
     padding: 1px 20px 35em 20px;
     li {
-      -webkit-transition: opacity .5s ease-out;
-      -moz-transition: opacity .5s ease-out;
-      -ms-transition: opacity .5s ease-out;
-      -o-transition: opacity .5s ease-out;
-      transition: opacity .5s ease-out;
+      @include transition(opacity .5s ease-out);
       width: 30%;
       display: inline-block;
       margin: 0 15px 25px 15px;
@@ -2717,11 +2629,7 @@ body.single-post .entry-wrap .main-page {
   }
   li {
     .post-title {
-      -webkit-transition: all .5s ease-out;
-      -moz-transition: all .5s ease-out;
-      -ms-transition: all .5s ease-out;
-      -o-transition: all .5s ease-out;
-      transition: all .5s ease-out;
+      @include transition(all .5s ease-out);
       text-align: center;
       display: block;
       padding: 0 10px;
@@ -2829,11 +2737,7 @@ Start about-page.css
     height: 320px;
     width: $full;
     a {
-      -webkit-transition: color .3s ease;
-      -moz-transition: color .3s ease;
-      -ms-transition: color .3s ease;
-      -o-transition: color .3s ease;
-      transition: color .3s ease;
+      @include transition(color .3s ease);
       &:hover {
         color: #487bae !important;
       }
@@ -2914,11 +2818,7 @@ Start about-page.css
 }
 
 .founders-section .the-founders .founder {
-  -webkit-transition: box-shadow .28s ease;
-  -moz-transition: box-shadow .28s ease;
-  -ms-transition: box-shadow .28s ease;
-  -o-transition: box-shadow .28s ease;
-  transition: box-shadow .28s ease;
+  @include transition(box-shadow .28s ease);
   background: $white;
   width: 25%;
   position: relative;
@@ -2972,11 +2872,7 @@ Start about-page.css
 }
 
 .founder .founder-info .founder-social a {
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
+  @include transition(all .3s ease);
   margin-right: 5px;
   color: #666;
   &:hover {
@@ -3048,16 +2944,8 @@ body.contact-page .site-content {
   .social-buttons {
     margin-bottom: 30px;
     a {
-      -webkit-transition: all ease .3s;
-      -moz-transition: all ease .3s;
-      -ms-transition: all ease .3s;
-      -o-transition: all ease .3s;
-      transition: all ease .3s;
-      -webkit-transition: all 0.3s cubic-bezier(0.55, .51, .24, -0.09) 0s;
-      -moz-transition: all 0.3s cubic-bezier(0.55, .51, .24, -0.09) 0s;
-      -ms-transition: all 0.3s cubic-bezier(0.55, .51, .24, -0.09) 0s;
-      -o-transition: all 0.3s cubic-bezier(0.55, .51, .24, -0.09) 0s;
-      transition: all 0.3s cubic-bezier(0.55, .51, .24, -0.09) 0s;
+      @include transition(all ease .3s);
+      @include transition(all 0.3s cubic-bezier(0.55, .51, .24, -0.09) 0s);
       @extend .round;
       background: transparent;
       border-width: 2px;
@@ -3126,11 +3014,7 @@ body.contact-page .site-content {
       letter-spacing: .062em;
       padding-bottom: 2px;
       &:before {
-        -webkit-transition: transform .2s ease;
-        -moz-transition: transform .2s ease;
-        -ms-transition: transform .2s ease;
-        -o-transition: transform .2s ease;
-        transition: transform .2s ease;
+        @include transition(transform .2s ease);
         @include transform(scaleX(0));
         content: "";
         background: #f9f9f9;
@@ -3149,11 +3033,7 @@ body.contact-page .site-content {
     position: relative;
     margin-bottom: 30px;
     a {
-      -webkit-transition: all .3s ease-in-out;
-      -moz-transition: all .3s ease-in-out;
-      -ms-transition: all .3s ease-in-out;
-      -o-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out;
+      @include transition(all .3s ease-in-out);
       @include border-radius(1.5rem);
       -webkit-appearance: none;
       position: relative;
@@ -3200,11 +3080,7 @@ body.contact-page .site-content {
     color: $white;
     position: relative;
     &:before {
-      -webkit-transition: transform .2s;
-      -moz-transition: transform .2s;
-      -ms-transition: transform .2s;
-      -o-transition: transform .2s;
-      transition: transform .2s;
+      @include transition(transform .2s);
       @include transform(scaleX(0));
       position: absolute;
       top: $full;
