@@ -36,7 +36,7 @@ $full: 100%;
 $border: rgba(0, 0, 0, .06);
 $solid: solid;
 $solid_one: 1px $solid;
-$border_alt: $solid_one $border;
+$ui_border: $solid_one $border;
 
 /* ==========================================================================
    Mixins
@@ -1033,7 +1033,7 @@ body.category-page .adjustSiteContent {
       left: 0px;
       display: inline-block;
       > ul.nav-ul li {
-        border-left: $border_alt;
+        border-left: $ui_border;
         vertical-align: middle;
         position: relative;
       }
@@ -1089,13 +1089,13 @@ body.category-page .adjustSiteContent {
     width: 180px;
     li {
       border-left: 0 none !important;
-      border-top: $border_alt;
+      border-top: $ui_border;
       height: 50px;
     }
   }
   .flyout-nav li {
     border-left: 0 none !important;
-    border-top: $border_alt;
+    border-top: $ui_border;
     height: 50px;
   }
   .drop-nav li {
@@ -1122,7 +1122,7 @@ body.category-page .adjustSiteContent {
     height: 204px;
   }
   .flyout {
-    border-right: $border_alt;
+    border-right: $ui_border;
     position: relative;
     &:after {
       font-family: $icon;
@@ -1138,9 +1138,9 @@ body.category-page .adjustSiteContent {
   }
   .flyout-nav {
     border-bottom: 3px solid #95DFDC;
-    border-right: $border_alt;
-    border-left: $border_alt;
-    border-top: $border_alt;
+    border-right: $ui_border;
+    border-left: $ui_border;
+    border-top: $ui_border;
     -webkit-border-radius: 0px 0px 3px 3px;
     -moz-border-radius: 0px 0px 3px 3px;
     -ms-border-radius: 0px 0px 3px 3px;
@@ -1260,7 +1260,7 @@ body.category-page .adjustSiteContent {
       display: block;
       vertical-align: middle;
       float: left;
-      border-right: $border_alt;
+      border-right: $ui_border;
     }
     .mobile-nav {
       float: right;
@@ -2620,8 +2620,8 @@ Start single-post.css
     > .follow-icons {
       height: $full;
       display: inline-block;
-      border-right: $border_alt;
-      border-left: $border_alt;
+      border-right: $ui_border;
+      border-left: $ui_border;
       padding: 0 14px;
     }
     .follow-icons a {
@@ -2762,8 +2762,8 @@ body.single-post .entry-wrap .main-page {
     width: $full;
   }
   .article-meta {
-    border-bottom: $border_alt;
-    border-top: $border_alt;
+    border-bottom: $ui_border;
+    border-top: $ui_border;
     width: $full;
     height: 53px;
     background: #fff;
@@ -2780,7 +2780,7 @@ body.single-post .entry-wrap .main-page {
     display: inline-block;
     width: 75%;
     height: $full;
-    border-left: $border_alt;
+    border-left: $ui_border;
     padding-left: 10px;
     a {
       position: relative;
@@ -2945,8 +2945,8 @@ body.single-post .entry-wrap .main-page {
     width: $full;
     position: relative;
     padding: 30px 2.2%;
-    border-top: $border_alt;
-    border-bottom: $border_alt;
+    border-top: $ui_border;
+    border-bottom: $ui_border;
     margin-bottom: 20px;
     a {
       -webkit-transition-duration: .5s;
@@ -2966,8 +2966,8 @@ body.single-post .entry-wrap .main-page {
     }
   }
   .entry-tags {
-    border-top: $border_alt;
-    border-bottom: $border_alt;
+    border-top: $ui_border;
+    border-bottom: $ui_border;
     margin: 20px 50px;
     padding: 15px 2px;
     color: #666;
@@ -3385,7 +3385,7 @@ Start about-page.css
       padding-top: 20px;
       font-weight: 400;
       color: #2D404F;
-      border-bottom: $border_alt;
+      border-bottom: $ui_border;
     }
     .the-founders {
       width: $full;
