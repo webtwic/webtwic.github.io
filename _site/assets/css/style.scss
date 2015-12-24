@@ -677,7 +677,7 @@ body.category-page .adjustSiteContent {
       right: 0px;
       z-index: 9999;
       .desktop_logo {
-        background: url(#{$logo}) -18px 1px no-repeat;
+        @include logo(-18px 1px);
         text-indent: -99999px;
         text-align: center;
         margin-right: auto;
@@ -901,7 +901,7 @@ body.category-page .adjustSiteContent {
     left: 0px;
     top: 0px;
     .mobile_logo {
-      background: url(#{$logo}) 1px -96px no-repeat;
+      @include logo(1px -96px);
       width: 160px;
       height: $full;
       display: block;
@@ -1917,7 +1917,7 @@ Start single-post.css
       position: relative;
       border-right: 1.9px solid $border;
       .desktop_logo {
-        background: url(#{$logo}) no-repeat -1px -99px;
+        @include logo(-1px -99px);
         text-indent: -99999px;
         font-size: 40px;
         display: block;

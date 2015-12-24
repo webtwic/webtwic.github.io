@@ -63,3 +63,7 @@
    -o-box-shadow: $box-shadow;
    box-shadow: $box-shadow;
 }
+
+@mixin logo($background-position) {
+   background: url(#{$logo}) $background-position no-repeat;
+}

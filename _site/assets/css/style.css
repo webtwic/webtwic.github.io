@@ -1908,7 +1908,7 @@ Start single-post.css
     position: relative;
     border-right: 1.9px solid rgba(0, 0, 0, 0.06); }
     header.secondary-header .logo .desktop_logo {
-      background: url(/img/webtwic-logos.png) no-repeat -1px -99px;
+      background: url(/img/webtwic-logos.png) -1px -99px no-repeat;
       text-indent: -99999px;
       font-size: 40px;
       display: block;
