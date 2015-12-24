@@ -1300,11 +1300,7 @@ body.category-page .adjustSiteContent {
       -ms-transition: background, opacity, transform .2s ease-in-out 0s;
       -o-transition: background, opacity, transform .2s ease-in-out 0s;
       transition: background, opacity, transform .2s ease-in-out 0s;
-      -webkit-transform: rotate(0);
-      -moz-transform: rotate(0);
-      -ms-transform: rotate(0);
-      -o-transform: rotate(0);
-      transform: rotate(0);
+      @include transform(rotate(0));
       @include border-radius(2px);
       background: #7B8B8E;
       display: block;
@@ -1322,11 +1318,7 @@ body.category-page .adjustSiteContent {
     &.is_active .bar {
       margin-top: -5px;
       &:nth-child(1) {
-        -webkit-transform: rotate(135deg);
-        -moz-transform: rotate(135deg);
-        -ms-transform: rotate(135deg);
-        -o-transform: rotate(135deg);
-        transform: rotate(135deg);
+        @include transform(rotate(135deg));
         opacity: 1;
         top: 14px;
       }
@@ -1334,11 +1326,7 @@ body.category-page .adjustSiteContent {
         opacity: 0;
       }
       &:nth-child(3) {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
+        @include transform(rotate(45deg));
         opacity: 1;
       }
     }
@@ -1415,11 +1403,7 @@ body.home {
     padding-left: 1.9em;
   }
   svg.clock {
-    transform: rotate(-136deg);
-    -webkit-transform: rotate(-136deg);
-    -moz-transform: rotate(-136deg);
-    -ms-transform: rotate(-136deg);
-    -o-transform: rotate(-136deg);
+    @include transform(rotate(-136deg));
     vertical-align: middle;
     margin: -4px 0 0 0;
     fill: #777;
@@ -2558,11 +2542,7 @@ Start single-post.css
       display: inline-block;
       margin-right: 16px;
       &:hover .webtwicons {
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        -o-transform: scale(1.2);
+        @include transform(scale(1.2));
       }
       .webtwicons {
         transition: transform ease .2s;
@@ -3511,10 +3491,7 @@ body.contact-page .site-content {
         -ms-transition: transform .2s ease;
         -o-transition: transform .2s ease;
         transition: transform .2s ease;
-        -webkit-transform: scaleX(0);
-        -moz-transform: scaleX(0);
-        -ms-transform: scaleX(0);
-        transform: scaleX(0);
+        @include transform(scaleX(0));
         content: "";
         background: #f9f9f9;
         position: absolute;
@@ -3524,11 +3501,7 @@ body.contact-page .site-content {
         height: 1px;
       }
       &:hover:before {
-        -webkit-transform: scaleX(1);
-        -moz-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-        -o-transform: scaleX(1);
-        transform: scaleX(1);
+        @include transform(scaleX(1));
       }
     }
   }
@@ -3592,11 +3565,7 @@ body.contact-page .site-content {
       -ms-transition: transform .2s;
       -o-transition: transform .2s;
       transition: transform .2s;
-      -webkit-transform: scaleX(0);
-      -moz-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-      -o-transform: scaleX(0);
-      transform: scaleX(0);
+      @include transform(scaleX(0));
       position: absolute;
       top: $full;
       left: 0;
@@ -3607,11 +3576,7 @@ body.contact-page .site-content {
       background: $white;
     }
     &:hover:before {
-      -webkit-transform: scaleX(1);
-      -moz-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      -o-transform: scaleX(1);
-      transform: scaleX(1);
+      @include transform(scaleX(1));
     }
   }
   .heart {

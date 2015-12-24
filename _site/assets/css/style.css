@@ -1107,11 +1107,11 @@ body.home {
   margin: -1.2em 0em 1em -.9em;
   padding-left: 1.9em; }
 .article svg.clock {
-  transform: rotate(-136deg);
   -webkit-transform: rotate(-136deg);
   -moz-transform: rotate(-136deg);
   -ms-transform: rotate(-136deg);
   -o-transform: rotate(-136deg);
+  transform: rotate(-136deg);
   vertical-align: middle;
   margin: -4px 0 0 0;
   fill: #777;
@@ -2089,11 +2089,11 @@ Start single-post.css
     display: inline-block;
     margin-right: 16px; }
     .header-follow-search .follow-icons a:hover .webtwicons {
-      transform: scale(1.2);
       -webkit-transform: scale(1.2);
       -moz-transform: scale(1.2);
       -ms-transform: scale(1.2);
-      -o-transform: scale(1.2); }
+      -o-transform: scale(1.2);
+      transform: scale(1.2); }
     .header-follow-search .follow-icons a .webtwicons {
       transition: transform ease .2s;
       -webkit-transition: transform ease .2s;
@@ -2832,6 +2832,7 @@ body.contact-page .site-content {
       -webkit-transform: scaleX(0);
       -moz-transform: scaleX(0);
       -ms-transform: scaleX(0);
+      -o-transform: scaleX(0);
       transform: scaleX(0);
       content: "";
       background: #f9f9f9;
