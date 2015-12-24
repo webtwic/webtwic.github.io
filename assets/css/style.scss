@@ -57,7 +57,7 @@ $ui_border: $solid_one $border;
   -moz-transform: $transform;
   -ms-transform: $transform;
   -o-transform: $transform;
-  transition: $transform;
+  transform: $transform;
 }
 
 @mixin transition($transition) {
