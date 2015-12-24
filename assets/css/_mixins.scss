@@ -3,7 +3,7 @@
    Mixins
    ========================================================================== */
 
-@mixin border-radius($radius) {
+@mixin border-radius($radius: 2px) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   -ms-border-radius: $radius;
@@ -19,7 +19,7 @@
   transform: $transform;
 }
 
-@mixin transition($transition) {
+@mixin transition($transition: all ease .2s) {
    -webkit-transition: $transition;
    -moz-transition: $transition;
    -ms-transition: $transition;
