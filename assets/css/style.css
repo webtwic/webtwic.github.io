@@ -18,10 +18,16 @@
  * Description: Normalize and basic styles for all pages on webtwic.
 
 */
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
 /* Include fonts and icons */
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Source+Sans+Pro:400,600,700|Source+Code+Pro:400,700|Lobster);
 @font-face {
-  font-family: 'webtwicons';
+  font-family: webtwicons;
   src: url("../fonts/webtwicons.eot");
   src: url("../fonts/webtwicons.woff2") format("woff2"), url("../fonts/webtwicons.woff") format("woff"), url("../fonts/webtwicons.ttf") format("truetype"), url("../fonts/webtwicons.svg") format("svg");
   font-weight: normal;
@@ -747,7 +753,7 @@ body.category-page .adjustSiteContent {
       margin-left: auto;
       font-size: 40px;
       display: block;
-      color: #6699CC;
+      color: #6699cc;
       height: 100px;
       width: 250px; }
   .main .main-menu {
@@ -1240,7 +1246,7 @@ body.home {
     padding: .1px 6px;
     position: absolute;
     text-align: center;
-    background: #6699CC;
+    background: #6699cc;
     font-size: .5em;
     bottom: 112px;
     color: #fff;
@@ -1252,7 +1258,7 @@ body.home {
       position: absolute;
       position: absolute;
       margin-top: 12px;
-      color: #6699CC;
+      color: #6699cc;
       text-align: center;
       margin-left: 36%;
       font-size: 1.125em; }
@@ -1960,7 +1966,7 @@ Start single-post.css
       text-indent: -99999px;
       font-size: 40px;
       display: block;
-      color: #6699CC;
+      color: #6699cc;
       height: 100%;
       width: 100%;
       position: relative;
@@ -2305,8 +2311,8 @@ body.single-post .entry-wrap .main-page {
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
   color: #3F5261; }
 .entry-content a {
-  color: #6699CC;
-  border-bottom: 1px solid #6699CC;
+  color: #6699cc;
+  border-bottom: 1px solid #6699cc;
   transition: all .5s ease;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
@@ -2320,7 +2326,7 @@ body.single-post .entry-wrap .main-page {
 .entry-content code {
   background: #E8F5F2;
   padding: 1px 3.6px;
-  color: #6699CC;
+  color: #6699cc;
   /*color: #1BC1A1;*/
   border-radius: 3px; }
 .entry-content div.snippet pre {
@@ -2337,7 +2343,7 @@ body.single-post .entry-wrap .main-page {
   font-style: italic;
   font-size: 2em;
   padding-left: 1em;
-  color: #6699CC;
+  color: #6699cc;
   font-weight: 400; }
 .entry-content .entry-image-small {
   width: 100%; }
