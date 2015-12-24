@@ -741,7 +741,7 @@ body.category-page .adjustSiteContent {
     right: 0px;
     z-index: 9999; }
     .main #header div.logo .desktop_logo {
-      background: url("/img/webtwic-logos.png") -18px 1px no-repeat;
+      background: url(/img/webtwic-logos.png) -18px 1px no-repeat;
       text-indent: -99999px;
       text-align: center;
       margin-right: auto;
@@ -967,7 +967,7 @@ body.category-page .adjustSiteContent {
     left: 0px;
     top: 0px; }
     .main .mobile-header .mobile_logo {
-      background: url("/img/webtwic-logos.png") 1px -96px no-repeat;
+      background: url(/img/webtwic-logos.png) 1px -96px no-repeat;
       width: 160px;
       height: 100%;
       display: block;
@@ -1908,7 +1908,7 @@ Start single-post.css
     position: relative;
     border-right: 1.9px solid rgba(0, 0, 0, 0.06); }
     header.secondary-header .logo .desktop_logo {
-      background: url("/img/webtwic-logos.png") no-repeat -1px -99px;
+      background: url(/img/webtwic-logos.png) no-repeat -1px -99px;
       text-indent: -99999px;
       font-size: 40px;
       display: block;
