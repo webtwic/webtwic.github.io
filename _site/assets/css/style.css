@@ -342,11 +342,6 @@ button[disabled], input[disabled] {
   -o-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   border-bottom: 4px solid #27c940;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
   font-weight: bold;
   padding: 15px 20px;
   color: #fff;
@@ -500,7 +495,7 @@ img {
   -o-border-radius: 2px;
   border-radius: 2px; }
 
-.radius-alt {
+.radius-alt, [type="submit"], [type="reset"], [type="button"], [type="file"] {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
