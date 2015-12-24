@@ -53,11 +53,11 @@ $ui_border: $solid_one $border;
 }
 
 @mixin transform($transform) {
-  -webkit-transition: $transform;
-  -moz-transition: $transform;
-  -ms-transition: $transform;
-  -o-transition: $transform;
-  transition: $transform;
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
 }
 
 @mixin transition($transition) {
