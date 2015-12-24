@@ -1383,11 +1383,7 @@ iframe a.twitter-timeline {
   .category-feed {
     a {
       font-family: $basefont;
-      -webkit-transition: .5s background, .4s color ease-in-out;
-      -moz-transition: .5s background, .4s color ease-in-out;
-      -ms-transition: .5s background, .4s color ease-in-out;
-      -o-transition: .5s background, .4s color ease-in-out;
-      transition: .5s background, .4s color ease-in-out;
+      @include transition(.5s background, .4s color ease-in-out);
       @extend .radius;
       font-size: .83em;
       font-weight: 400;
@@ -1569,11 +1565,7 @@ body {
 
 .to-top {
   background: #58de6c;
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
-  -moz-transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
-  -ms-transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
-  -o-transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
-  transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
+  @include transition(opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out);
   @include box-shadow(0 0 10px rgba(0, 0, 0, .05));
   @extend .round;
   display: inline-block;
@@ -1602,11 +1594,7 @@ body {
 }
 
 .to-top.visible {
-  -webkit-transition: opacity .3s 0s, visibility 0s 0s, background .4s ease-in-out;
-  -moz-transition: opacity .3s 0s, visibility 0s 0s, background .4s ease-in-out;
-  -ms-transition: opacity .3s 0s, visibility 0s 0s, background .4s ease-in-out;
-  -o-transition: opacity .3s 0s, visibility 0s 0s, background .4s ease-in-out;
-  transition: opacity .3s 0s, visibility 0s 0s, background .4s ease-in-out;
+  @include transition(opacity .3s 0s, visibility 0s 0s, background .4s ease-in-out);
 }
 
 .no-touch .to-top:hover {
@@ -1793,11 +1781,7 @@ article.post-wrap {
     margin: 0px 0px 10px 0px;
     a {
       font-family: $basefont;
-      -webkit-transition: color .4s ease, text-shadow .2s ease;
-      -moz-transition: color .4s ease, text-shadow .2s ease;
-      -ms-transition: color .4s ease, text-shadow .2s ease;
-      -o-transition: color .4s ease, text-shadow .2s ease;
-      transition: color .4s ease, text-shadow .2s ease;
+      @include transition(color .4s ease, text-shadow .2s ease);
       -webkit-text-shadow: none;
       -moz-text-shadow: none;
       -ms-text-shadow: none;

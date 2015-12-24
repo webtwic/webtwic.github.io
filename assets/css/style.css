@@ -1405,11 +1405,11 @@ iframe a.twitter-timeline {
     background: #fff; }
     .category .category-feed a {
       font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
-      -webkit-transition: .5s background, .4s color ease-in-out;
-      -moz-transition: .5s background, .4s color ease-in-out;
-      -ms-transition: .5s background, .4s color ease-in-out;
-      -o-transition: .5s background, .4s color ease-in-out;
-      transition: .5s background, .4s color ease-in-out;
+      -webkit-transition: 0.5s background, 0.4s color ease-in-out;
+      -moz-transition: 0.5s background, 0.4s color ease-in-out;
+      -ms-transition: 0.5s background, 0.4s color ease-in-out;
+      -o-transition: 0.5s background, 0.4s color ease-in-out;
+      transition: 0.5s background, 0.4s color ease-in-out;
       font-size: .83em;
       font-weight: 400;
       padding: 1.5px;
@@ -1570,11 +1570,11 @@ body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-colu
 
 .to-top {
   background: #58de6c;
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
-  -moz-transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
-  -ms-transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
-  -o-transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
-  transition: opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s, background 0.4s ease-in-out;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, background 0.4s ease-in-out;
+  -ms-transition: opacity 0.3s 0s, visibility 0s 0.3s, background 0.4s ease-in-out;
+  -o-transition: opacity 0.3s 0s, visibility 0s 0.3s, background 0.4s ease-in-out;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s, background 0.4s ease-in-out;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -1603,11 +1603,11 @@ body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-colu
   opacity: 1; }
 
 .to-top.visible {
-  -webkit-transition: opacity .3s 0s, visibility 0s 0s, background .4s ease-in-out;
-  -moz-transition: opacity .3s 0s, visibility 0s 0s, background .4s ease-in-out;
-  -ms-transition: opacity .3s 0s, visibility 0s 0s, background .4s ease-in-out;
-  -o-transition: opacity .3s 0s, visibility 0s 0s, background .4s ease-in-out;
-  transition: opacity .3s 0s, visibility 0s 0s, background .4s ease-in-out; }
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s, background 0.4s ease-in-out;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s, background 0.4s ease-in-out;
+  -ms-transition: opacity 0.3s 0s, visibility 0s 0s, background 0.4s ease-in-out;
+  -o-transition: opacity 0.3s 0s, visibility 0s 0s, background 0.4s ease-in-out;
+  transition: opacity 0.3s 0s, visibility 0s 0s, background 0.4s ease-in-out; }
 
 .no-touch .to-top:hover {
   background-color: #6cf280; }
@@ -1782,11 +1782,11 @@ article.post-wrap {
     margin: 0px 0px 10px 0px; }
     .post-wrap .post-content .post-title a {
       font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
-      -webkit-transition: color .4s ease, text-shadow .2s ease;
-      -moz-transition: color .4s ease, text-shadow .2s ease;
-      -ms-transition: color .4s ease, text-shadow .2s ease;
-      -o-transition: color .4s ease, text-shadow .2s ease;
-      transition: color .4s ease, text-shadow .2s ease;
+      -webkit-transition: color 0.4s ease, text-shadow 0.2s ease;
+      -moz-transition: color 0.4s ease, text-shadow 0.2s ease;
+      -ms-transition: color 0.4s ease, text-shadow 0.2s ease;
+      -o-transition: color 0.4s ease, text-shadow 0.2s ease;
+      transition: color 0.4s ease, text-shadow 0.2s ease;
       -webkit-text-shadow: none;
       -moz-text-shadow: none;
       -ms-text-shadow: none;
