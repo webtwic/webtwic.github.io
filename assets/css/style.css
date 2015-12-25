@@ -495,7 +495,8 @@ img {
   -o-border-radius: 2px;
   border-radius: 2px; }
 
-.radius-alt, [type="submit"], [type="reset"], [type="button"], [type="file"], .tech-news-wrap .more_tech_news, .freebie-item, .sidebar-column .search-wrap form .sidebar-input, .post-thumbnail img, .entry-content code {
+.radius-alt, [type="submit"], [type="reset"], [type="button"], [type="file"], .tech-news-wrap .more_tech_news, .freebie-item, .sidebar-column .search-wrap form .sidebar-input, .post-thumbnail img, .entry-content h1
+code {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -2249,6 +2250,21 @@ body.single-post .entry-wrap .main-page {
 
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
   color: #3F5261; }
+  .entry-content h1 a, .entry-content h2 a, .entry-content h3 a, .entry-content h4 a, .entry-content h5 a, .entry-content h6 a {
+    border-bottom: none; }
+    .entry-content h1 a:hover, .entry-content h2 a:hover, .entry-content h3 a:hover, .entry-content h4 a:hover, .entry-content h5 a:hover, .entry-content h6 a:hover {
+      border-bottom: none; }
+    .entry-content h1 a:after, .entry-content h2 a:after, .entry-content h3 a:after, .entry-content h4 a:after, .entry-content h5 a:after, .entry-content h6 a:after {
+      content: "\f0c1";
+      font-size: 0.5em;
+      margin-left: 4px;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+      position: absolute;
+      margin: 9px 5px; }
 .entry-content a {
   color: #6699cc;
   border-bottom: 1px solid #6699cc;
@@ -2260,9 +2276,8 @@ body.single-post .entry-wrap .main-page {
   .entry-content a:hover {
     color: inherit;
     border-bottom: 1px solid #4E697D; }
-.entry-content h1 > a, .entry-content h2 > a, .entry-content h3 > a, .entry-content h4 > a, .entry-content h5 > a, .entry-content h6 > a, .entry-content h1 > a:hover, .entry-content h2 > a:hover, .entry-content h3 > a:hover, .entry-content h4 > a:hover, .entry-content h5 > a:hover, .entry-content h6 > a:hover {
-  border-bottom: none; }
-.entry-content code {
+.entry-content h1
+code {
   background: #E8F5F2;
   padding: 1px 3.6px;
   color: #6699cc; }

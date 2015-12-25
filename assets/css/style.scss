@@ -2333,6 +2333,20 @@ body.single-post .entry-wrap .main-page {
 .entry-content {
   h1, h2, h3, h4, h5, h6 {
 	 color: #3F5261;
+      & a {
+    	 border-bottom: none;
+         &:hover {
+            border-bottom: none;
+         }
+         &:after {
+           content: "\f0c1";
+           font-size: 0.5em;
+           margin-left: 4px;
+           @include transform(rotate(90deg));
+           position: absolute;
+           margin: 9px 5px;
+        }
+      }
   }
   a {
 	 color: $basecolor;
@@ -2343,9 +2357,7 @@ body.single-post .entry-wrap .main-page {
 		border-bottom: $solid_one #4E697D;
 	 }
   }
-  h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a, h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
-	 border-bottom: none;
-  }
+  h1
   code {
 	 background: #E8F5F2;
 	 padding: 1px 3.6px;
