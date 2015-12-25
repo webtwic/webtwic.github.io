@@ -2315,24 +2315,22 @@ code {
   margin: 20px 50px;
   padding: 15px 2px;
   color: #666; }
-
-.entry-tags .webtwicons {
-  font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
-  margin-right: 0px; }
-  .entry-tags .webtwicons:before {
-    margin-right: 3px; }
-
-.post-content-column article .entry-tags a {
-  -webkit-transition: color ease-in-out 0.5s;
-  -moz-transition: color ease-in-out 0.5s;
-  -ms-transition: color ease-in-out 0.5s;
-  -o-transition: color ease-in-out 0.5s;
-  transition: color ease-in-out 0.5s;
-  color: #6699cc;
-  position: relative; }
-  .post-content-column article .entry-tags a:hover {
-    color: #3F5261;
-    border-bottom: 1px solid #3F5261; }
+  .post-content-column article .entry-tags a {
+    -webkit-transition: color ease-in-out 0.5s;
+    -moz-transition: color ease-in-out 0.5s;
+    -ms-transition: color ease-in-out 0.5s;
+    -o-transition: color ease-in-out 0.5s;
+    transition: color ease-in-out 0.5s;
+    color: #6699cc;
+    position: relative; }
+    .post-content-column article .entry-tags a:hover {
+      color: #3F5261;
+      border-bottom: 1px solid #3F5261; }
+  .post-content-column article .entry-tags .webtwicons {
+    font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
+    margin-right: 0px; }
+    .post-content-column article .entry-tags .webtwicons:before {
+      margin-right: 3px; }
 
 .page-focus-column .post-secondary-column .author-profile {
   width: 100%;
@@ -2340,18 +2338,16 @@ code {
   padding: 10px 20px 240px 0;
   color: #4E697D;
   margin-top: 180px; }
-
-.post-secondary-column .author-profile .author-info-inner {
-  position: relative;
-  height: 100%; }
-
-.author-profile .author-info-inner a {
-  position: relative; }
-.author-profile .author-avatar {
-  float: left;
-  width: 20%;
-  height: 180px;
-  margin-right: 10px; }
+  .page-focus-column .post-secondary-column .author-profile .author-info-inner {
+    position: relative;
+    height: 100%; }
+    .page-focus-column .post-secondary-column .author-profile .author-info-inner a {
+      position: relative; }
+    .page-focus-column .post-secondary-column .author-profile .author-info-inner .author-avatar {
+      float: left;
+      width: 20%;
+      height: 180px;
+      margin-right: 10px; }
 
 .author-avatar img {
   width: 100%;

@@ -2401,51 +2401,50 @@ body.single-post .entry-wrap .main-page {
 	 margin: 20px 50px;
 	 padding: 15px 2px;
 	 color: #666;
+    a {
+      @include transition(color ease-in-out .5s);
+      color: $basecolor;
+      position: relative;
+      &:hover {
+    	 color: #3F5261;
+    	 border-bottom: $solid_one #3F5261;
+      }
+    }
+    .webtwicons {
+      font-family: $basefont;
+      margin-right: 0px;
+      &:before {
+         margin-right: 3px;
+      }
+   }
   }
 }
 
-.entry-tags .webtwicons {
-  font-family: $basefont;
-  margin-right: 0px;
-  &:before {
-	 margin-right: 3px;
-  }
+.page-focus-column .post-secondary-column {
+   .author-profile {
+      width: $full;
+      background: $white;
+      padding: 10px 20px 240px 0;
+      color: #4E697D;
+      margin-top: 180px;
+      .author-info-inner {
+         position: relative;
+         height: $full;
+          a {
+            position: relative;
+         }
+         .author-avatar {
+            float: left;
+            width: 20%;
+            height: 180px;
+            margin-right: 10px;
+         }
+      }
+   }
 }
 
-.post-content-column article .entry-tags a {
-  @include transition(color ease-in-out .5s);
-  color: $basecolor;
-  position: relative;
-  &:hover {
-	 color: #3F5261;
-	 border-bottom: $solid_one #3F5261;
-  }
-}
 
-.page-focus-column .post-secondary-column .author-profile {
-  width: $full;
-  background: $white;
-  padding: 10px 20px 240px 0;
-  color: #4E697D;
-  margin-top: 180px;
-}
 
-.post-secondary-column .author-profile .author-info-inner {
-  position: relative;
-  height: $full;
-}
-
-.author-profile {
-  .author-info-inner a {
-	 position: relative;
-  }
-  .author-avatar {
-	 float: left;
-	 width: 20%;
-	 height: 180px;
-	 margin-right: 10px;
-  }
-}
 
 .author-avatar img {
   @extend .round;
