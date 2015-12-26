@@ -1,0 +1,57 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+
+@viewport {
+  width: device-width;
+}
+
+
+::-webkit-selection, ::-moz-selection, ::-ms-selection, :-ms-selection, ::-o-selection, ::selection {
+  background: #eee;
+  color: #597488;
+}
+
+::placeholder, ::-moz-placeholder, ::-webkit-input-placeholder, ::-ms-input-placeholder, :-ms-input-placeholder {
+  font-family: $font-alt;
+  font-weight: 300;
+  color: #999;
+}
+
+* {
+  font-family: $basefont;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &:before, &:after {
+	 -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	 box-sizing: border-box;
+	 font-family: $icon;
+  }
+}
+
+html {
+  -webkit-text-size-adjust: $full;
+  -ms-text-size-adjust: $full;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-size: $full;
+  font-family: $basefont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  clear: both;
+}
+
+body {
+  font-family: $basefont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  clear: both;
+  width: $full;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 0em;
+  background: #F3F4F6;
+}

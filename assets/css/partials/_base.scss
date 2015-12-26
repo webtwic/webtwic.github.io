@@ -1,0 +1,209 @@
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.shadow {
+	@include box-shadow(0px 0px 7px rgba(0, 0, 0, .1));
+}
+
+.shadow-alt {
+  @include box-shadow(0px 8px 6px -6px rgba(0, 0, 0, .1));
+}
+
+.radius {
+  @include border-radius(2px);
+}
+
+.radius-alt {
+	@include border-radius(3px);
+}
+
+.radius-alter {
+	@include border-radius(5px);
+}
+
+.circle, .round {
+  @include border-radius($full);
+}
+
+.btn, .button {
+  background: #57DD6B;
+  border-width: 0px 0px 4px 0px;
+  border-style: solid;
+  border-color: #27C940;
+  -webkit-appearance: none;
+  &:hover {
+     background: #6bd560;
+ }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+  &:before, &:after {
+	 clear: both;
+	 content: "";
+	 display: block;
+	 font-size: 0px;
+	 height: 0px;
+	 line-height: 0;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-bolder {
+  font-weight: bolder;
+}
+
+.text-normal {
+  font-weight: normal;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.display {
+  display: block !important;
+  visibility: visible;
+  opacity: 1;
+}
+
+.webtwicons {
+  z-index: 20;
+  cursor: pointer;
+  &:before, &:after {
+	 z-index: 20;
+	 cursor: pointer;
+  }
+}
+
+[class*="btn-"] {
+  @include transition(all .3s ease);
+  position: relative;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+}
+
+.btn-facebook, .btn-fb {
+  background: #3B599A;
+  border-color: #334E84;
+}
+
+.btn-facebook.hover:hover, .btn-fb.hover:hover {
+  background: #4F6DAE;
+  border-color: #476298;
+}
+
+.btn-twitter, .btn-twt {
+  background: #50ABF1;
+  border-color: #2D9CEE;
+}
+
+.btn-twitter.hover:hover, .btn-twt.hover:hover:hover {
+  background: #64BFFF;
+  border-color: #41B0FF;
+}
+
+.btn-google, .btn-gp {
+  background: #DC4E41;
+  border-color: #BA341D;
+}
+
+.btn-google.hover:hover, .btn-gp.hover:hover {
+  background: #F06255;
+  border-color: #CE4831;
+}
+
+.btn-github {
+  background: #464646;
+  border-color: #3E3E3E;
+}
+
+.btn-tumblr, .btn-tmb {
+  background: #36465d;
+  border-color: #2D3E54;
+}
+
+.btn-tumblr.hover:hover, .btn-tmb.hover:hover {
+  background: #4A5A71;
+  border-color: #415268;
+}
+
+.btn-pinterest, .btn-pin {
+  background: #BD081C;
+  border-color: #9B0001;
+}
+
+.btn-pinterest.hover:hover, .btn-pin.hover:hover {
+  background: #D11C30;
+  border-color: #AF1415;
+}
+
+.btn-linkedin, .btn-in {
+  background: #0077B5;
+  border-color: #0764A2;
+}
+
+.btn-linkedin.hover:hover, .btn-in.hover:hover {
+  background: #148BC9;
+  border-color: #1B78B6;
+}
+
+.flat, .flat-button, .flat-btn {
+  border: 0 none !important;
+  outline: 0 none !important;
+}
+
+[class*="-column"] {
+  position: relative;
+}

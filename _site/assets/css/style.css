@@ -523,9 +523,8 @@ code {
   border-style: solid;
   border-color: #27C940;
   -webkit-appearance: none; }
-
-.btn:hover, .button:hover {
-  background: #6bd560; }
+  .btn:hover, .button:hover {
+    background: #6bd560; }
 
 .hidden {
   display: none !important; }
@@ -625,7 +624,7 @@ code {
   background: #F06255;
   border-color: #CE4831; }
 
-.btn-github, .btn-git, .btn-github.hover:hover, .btn-git.hover:hover {
+.btn-github {
   background: #464646;
   border-color: #3E3E3E; }
 
