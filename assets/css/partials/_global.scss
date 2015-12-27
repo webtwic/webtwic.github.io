@@ -8,15 +8,55 @@
 }
 
 
-::-webkit-selection, ::-moz-selection, ::-ms-selection, :-ms-selection, ::-o-selection, ::selection {
+::-webkit-selection {
   background: #eee;
   color: #597488;
 }
+::-moz-selection {
+   background: #eee;
+   color: #597488;
+}
+::-ms-selection {
+   background: #eee;
+   color: #597488;
+}
+:-ms-selection {
+   background: #eee;
+   color: #597488;
+}
+::-o-selection {
+   background: #eee;
+   color: #597488;
+}
+::selection {
+   background: #eee;
+   color: #597488;
+}
 
-::placeholder, ::-moz-placeholder, ::-webkit-input-placeholder, ::-ms-input-placeholder, :-ms-input-placeholder {
+::placeholder {
   font-family: $font-alt;
   font-weight: 300;
   color: #999;
+}
+::-moz-placeholder {
+   font-family: $font-alt;
+   font-weight: 300;
+   color: #999;
+}
+::-webkit-input-placeholder {
+   font-family: $font-alt;
+   font-weight: 300;
+   color: #999;
+}
+::-ms-input-placeholder {
+   font-family: $font-alt;
+   font-weight: 300;
+   color: #999;
+}
+:-ms-input-placeholder {
+   font-family: $font-alt;
+   font-weight: 300;
+   color: #999;
 }
 
 * {

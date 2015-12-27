@@ -127,11 +127,51 @@
   width: device-width; }
 @viewport {
   width: device-width; }
-::-webkit-selection, ::-moz-selection, ::-ms-selection, :-ms-selection, ::-o-selection, ::selection {
+::-webkit-selection {
   background: #eee;
   color: #597488; }
 
-::placeholder, ::-moz-placeholder, ::-webkit-input-placeholder, ::-ms-input-placeholder, :-ms-input-placeholder {
+::-moz-selection {
+  background: #eee;
+  color: #597488; }
+
+::-ms-selection {
+  background: #eee;
+  color: #597488; }
+
+:-ms-selection {
+  background: #eee;
+  color: #597488; }
+
+::-o-selection {
+  background: #eee;
+  color: #597488; }
+
+::selection {
+  background: #eee;
+  color: #597488; }
+
+::placeholder {
+  font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
+  font-weight: 300;
+  color: #999; }
+
+::-moz-placeholder {
+  font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
+  font-weight: 300;
+  color: #999; }
+
+::-webkit-input-placeholder {
+  font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
+  font-weight: 300;
+  color: #999; }
+
+::-ms-input-placeholder {
+  font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
+  font-weight: 300;
+  color: #999; }
+
+:-ms-input-placeholder {
   font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
   font-weight: 300;
   color: #999; }
@@ -495,8 +535,7 @@ img {
   -o-border-radius: 2px;
   border-radius: 2px; }
 
-.radius-alt, [type="submit"], [type="reset"], [type="button"], [type="file"], .tech-news-wrap .more_tech_news, .freebie-item, .sidebar-column .search-wrap form .sidebar-input, .post-thumbnail img, .entry-content h1
-code {
+.radius-alt, [type="submit"], [type="reset"], [type="button"], [type="file"], .tech-news-wrap .more_tech_news, .freebie-item, .sidebar-column .search-wrap form .sidebar-input, .post-thumbnail img, .entry-content h2 code {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -2274,8 +2313,7 @@ body.single-post .entry-wrap .main-page {
   .entry-content a:hover {
     color: inherit;
     border-bottom: 1px solid #4E697D; }
-.entry-content h1
-code {
+.entry-content h2 code {
   background: #E8F5F2;
   padding: 1px 3.6px;
   color: #6699cc; }
