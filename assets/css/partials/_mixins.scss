@@ -67,3 +67,7 @@
 @mixin logo($background-position) {
    background: url(#{$logo}) $background-position no-repeat;
 }
+
+@mixin social_hover($background) {
+   background: lighten($background, 7.5%);
+}

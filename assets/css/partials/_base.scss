@@ -140,7 +140,7 @@
 }
 
 .btn-facebook.hover:hover, .btn-fb.hover:hover {
-  background: #4F6DAE;
+  @include social_hover($facebook);
   border-color: #476298;
 }
 
@@ -150,7 +150,7 @@
 }
 
 .btn-twitter.hover:hover, .btn-twt.hover:hover:hover {
-  background: #64BFFF;
+  @include social_hover($twitter);
   border-color: #41B0FF;
 }
 
@@ -160,7 +160,7 @@
 }
 
 .btn-google.hover:hover, .btn-gp.hover:hover {
-  background: #F06255;
+  @include social_hover($google);
   border-color: #CE4831;
 }
 
@@ -175,7 +175,7 @@
 }
 
 .btn-tumblr.hover:hover, .btn-tmb.hover:hover {
-  background: #4A5A71;
+  @include social_hover($tumblr);
   border-color: #415268;
 }
 
@@ -185,7 +185,7 @@
 }
 
 .btn-pinterest.hover:hover, .btn-pin.hover:hover {
-  background: #D11C30;
+  @include social_hover($pinterest);
   border-color: #AF1415;
 }
 
@@ -195,7 +195,7 @@
 }
 
 .btn-linkedin.hover:hover, .btn-in.hover:hover {
-  background: #148BC9;
+  @include social_hover($linkedin);
   border-color: #1B78B6;
 }
 

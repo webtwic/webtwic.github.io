@@ -1874,6 +1874,7 @@ body.single-post .entry-wrap .main-page {
 		width: 13%;
 		height: $full;
 		@extend .radius;
+      @include transition(.5s ease);
 		margin-right: 5px;
 		border: none;
 		.webtwicons {

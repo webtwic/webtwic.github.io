@@ -605,7 +605,7 @@ code {
   border-color: #334E84; }
 
 .btn-facebook.hover:hover, .btn-fb.hover:hover {
-  background: #4F6DAE;
+  background: #4669b6;
   border-color: #476298; }
 
 .btn-twitter, .btn-twt {
@@ -613,7 +613,7 @@ code {
   border-color: #2D9CEE; }
 
 .btn-twitter.hover:hover, .btn-twt.hover:hover:hover {
-  background: #64BFFF;
+  background: #73bcf4;
   border-color: #41B0FF; }
 
 .btn-google, .btn-gp {
@@ -621,7 +621,7 @@ code {
   border-color: #BA341D; }
 
 .btn-google.hover:hover, .btn-gp.hover:hover {
-  background: #F06255;
+  background: #e26c61;
   border-color: #CE4831; }
 
 .btn-github {
@@ -633,7 +633,7 @@ code {
   border-color: #2D3E54; }
 
 .btn-tumblr.hover:hover, .btn-tmb.hover:hover {
-  background: #4A5A71;
+  background: #445875;
   border-color: #415268; }
 
 .btn-pinterest, .btn-pin {
@@ -641,7 +641,7 @@ code {
   border-color: #9B0001; }
 
 .btn-pinterest.hover:hover, .btn-pin.hover:hover {
-  background: #D11C30;
+  background: #e20a21;
   border-color: #AF1415; }
 
 .btn-linkedin, .btn-in {
@@ -649,7 +649,7 @@ code {
   border-color: #0764A2; }
 
 .btn-linkedin.hover:hover, .btn-in.hover:hover {
-  background: #148BC9;
+  background: #0090db;
   border-color: #1B78B6; }
 
 .flat, .flat-button, .flat-btn {
@@ -2184,6 +2184,11 @@ body.single-post .entry-wrap .main-page {
       display: inline-block;
       width: 13%;
       height: 100%;
+      -webkit-transition: 0.5s ease;
+      -moz-transition: 0.5s ease;
+      -ms-transition: 0.5s ease;
+      -o-transition: 0.5s ease;
+      transition: 0.5s ease;
       margin-right: 5px;
       border: none; }
       .article-meta .article-meta-inner .share-icons a .webtwicons {
