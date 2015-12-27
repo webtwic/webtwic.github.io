@@ -1005,6 +1005,10 @@ iframe a.twitter-timeline {
   margin-top: 10px;
   font-weight: 200;
   .category-feed {
+     border-bottom: $solid_one #E9E9E9;
+     @extend .radius;
+     padding: 10px 5px 0;
+     background: $white;
 	 a {
 		font-family: $basefont;
 		@include transition(.5s background, .4s color ease-in-out);
@@ -1018,10 +1022,6 @@ iframe a.twitter-timeline {
 		  background: #E9F1F5;
 		}
 	 }
-	 border-bottom: $solid_one #E9E9E9;
-	 @extend .radius;
-	 padding: 7px 5px 0;
-	 background: $white;
   }
 }
 
