@@ -135,7 +135,7 @@
 }
 
 .btn-facebook, .btn-fb {
-  background: #3B599A;
+  background: $facebook;
   border-color: #334E84;
 }
 
@@ -145,7 +145,7 @@
 }
 
 .btn-twitter, .btn-twt {
-  background: #50ABF1;
+  background: $twitter;
   border-color: #2D9CEE;
 }
 
@@ -155,7 +155,7 @@
 }
 
 .btn-google, .btn-gp {
-  background: #DC4E41;
+  background: $google;
   border-color: #BA341D;
 }
 
@@ -165,12 +165,12 @@
 }
 
 .btn-github {
-  background: #464646;
+  background: $github;
   border-color: #3E3E3E;
 }
 
 .btn-tumblr, .btn-tmb {
-  background: #36465d;
+  background: $tumblr;
   border-color: #2D3E54;
 }
 
@@ -180,7 +180,7 @@
 }
 
 .btn-pinterest, .btn-pin {
-  background: #BD081C;
+  background: $pinterest;
   border-color: #9B0001;
 }
 
@@ -190,7 +190,7 @@
 }
 
 .btn-linkedin, .btn-in {
-  background: #0077B5;
+  background: $linkedin;
   border-color: #0764A2;
 }
 
