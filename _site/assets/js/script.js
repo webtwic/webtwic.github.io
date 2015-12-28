@@ -1,13 +1,11 @@
 /**
- * Author: whizkydee(Olaolu Olawuyi)
+ * Author: Olaolu Olawuyi
 
  * Date Created: 20/08/2015
 
  * Last Modified: 23/12/2015
 
  * Twitter: @whizkydee, @webtwic
-
- * Blog: http://whizkydee.tumblr.com
 
  * Github: https://github.com/whizkydee/webtwic
 
@@ -58,6 +56,7 @@ jQuery(document).ready(function() {
 	if(browser.opera) {
 		$("body").addClass("opera" + " " + "opera" + parseInt(browser.version));
 	}
+
 	// Start Performance Functions
 
 	function addAlt() {
