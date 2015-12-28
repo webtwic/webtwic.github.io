@@ -1,0 +1,44 @@
+/*
+
+Start videos.scss
+
+* Date Created: 21/11/2015
+
+* Last Modified: 24/12/2015
+
+*/
+
+body {
+  &.videos {
+	 .site-content {
+		margin: 100px auto 0 auto;
+		height: 5800px;
+		max-width: 1379px;
+		width: 96%;
+	 }
+	 .filter-videos {
+		margin: 0 auto 30px auto;
+		height: 50px;
+		background: #aaa;
+		width: 60%;
+	 }
+	 .videos-column {
+		height: $full;
+		float: left;
+		width: $full;
+		.single-video {
+		  @extend .radius;
+		  margin: 0 25px 30px 9px;
+		  position: relative;
+		  background: $white;
+		  float: left;
+		  height: 8%;
+		  display: block;
+		  width: 48%;
+		  &:nth-of-type(2n) {
+			 margin-right: 0;
+		  }
+		}
+	 }
+  }
+}

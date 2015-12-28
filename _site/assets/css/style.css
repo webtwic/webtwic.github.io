@@ -1,5 +1,5 @@
 /**
- * Author: whizkydee(Olaolu Olawuyi)
+ * Author: Olaolu Olawuyi
 
  * Theme Name: webtwic.
 
@@ -9,13 +9,7 @@
 
  * Twitter: @whizkydee, @webtwic
 
- * Blog: http://whizkydee.tumblr.com
-
  * Github: https://github.com/whizkydee/webtwic
-
- * Credits: Icomoon.io, Elegant Font, Font Awesome.
-
- * Description: Normalize and basic styles for all pages on webtwic.
 
 */
 /* ==========================================================================
@@ -32,7 +26,6 @@
   src: url("../fonts/webtwicons.woff2") format("woff2"), url("../fonts/webtwicons.woff") format("woff"), url("../fonts/webtwicons.ttf") format("truetype"), url("../fonts/webtwicons.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-/* END: Fonts and icons */
 @keyframes heart {
   0% {
     color: #C0392B; }
@@ -535,7 +528,7 @@ img {
   -o-border-radius: 2px;
   border-radius: 2px; }
 
-.radius-alt, [type="submit"], [type="reset"], [type="button"], [type="file"], .tech-news-wrap .more_tech_news, .freebie-item, .sidebar-column .search-wrap form .sidebar-input, .post-thumbnail img, .entry-content h2 code {
+.radius-alt, [type="submit"], [type="reset"], [type="button"], [type="file"], .tech-news-wrap .more_tech_news, .freebie-item, .sidebar-column .search-wrap form .sidebar-input, .post-thumbnail img, .entry-content h1 code, .entry-content h2 code, .entry-content h3 code, .entry-content h4 code, .entry-content h5 code, .entry-content h6 code {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -737,7 +730,135 @@ body.category-page .adjustSiteContent {
 .adjustedTop {
   top: 40px !important; }
 
-/*START MAIN PAGE*/
+/* START MAIN PAGE */
+@media screen and (max-width: 860px) {
+  svg.dropdown-arrow, .header-follow-search, .secondary-header, #header {
+    display: none; }
+
+  .main .mobile-header {
+    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    background: #fff;
+    position: fixed;
+    display: block;
+    height: 60px;
+    width: auto;
+    right: 0px;
+    left: 0px;
+    top: 0px; }
+    .main .mobile-header .mobile_logo {
+      background: url("/img/webtwic-logos.png") 1px -96px no-repeat;
+      width: 160px;
+      height: 100%;
+      display: block;
+      vertical-align: middle;
+      float: left;
+      border-right: 1px solid rgba(0, 0, 0, 0.06); }
+    .main .mobile-header .mobile-nav {
+      float: right;
+      display: block !important;
+      background: #273340;
+      position: fixed;
+      top: 60px;
+      right: 0;
+      padding: 10px 15px;
+      width: 30%; }
+      .main .mobile-header .mobile-nav li {
+        position: relative;
+        text-align: right;
+        text-transform: uppercase;
+        font-size: .9em;
+        font-weight: 400;
+        letter-spacing: .062em;
+        margin-bottom: 20px; }
+        .main .mobile-header .mobile-nav li a {
+          position: relative;
+          color: #f9f9f9; }
+
+  .active-item svg {
+    display: none; }
+
+  .hamburger {
+    display: block;
+    float: right;
+    width: 26px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    margin: 20px 10px; }
+    .hamburger .bar {
+      -webkit-transition: background 0.2s, opacity 0.2s, transform 0.2s ease-in-out 0s;
+      -moz-transition: background 0.2s, opacity 0.2s, transform 0.2s ease-in-out 0s;
+      -ms-transition: background 0.2s, opacity 0.2s, transform 0.2s ease-in-out 0s;
+      -o-transition: background 0.2s, opacity 0.2s, transform 0.2s ease-in-out 0s;
+      transition: background 0.2s, opacity 0.2s, transform 0.2s ease-in-out 0s;
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+      transform: rotate(0);
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px;
+      border-radius: 2px;
+      background: #7B8B8E;
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      height: 2.5px;
+      position: absolute; }
+      .hamburger .bar:nth-child(2) {
+        top: 7px; }
+      .hamburger .bar:nth-child(3) {
+        top: 14px; }
+    .hamburger.is_active .bar {
+      margin-top: -5px; }
+      .hamburger.is_active .bar:nth-child(1) {
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+        opacity: 1;
+        top: 14px; }
+      .hamburger.is_active .bar:nth-child(2) {
+        opacity: 0; }
+      .hamburger.is_active .bar:nth-child(3) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        opacity: 1; }
+
+  #responsive .mobile-header {
+    display: block; }
+  #responsive .header-follow-search {
+    display: none; }
+
+  .site-content [class*="-column"] {
+    float: none;
+    width: 100% !important; } }
+@media screen and (max-width: 860px) {
+  body.home .site-content {
+    margin: auto auto 0px; }
+
+  .featured-posts-column {
+    margin-bottom: 20px; }
+
+  .tech-news-wrap {
+    margin-top: 0; }
+
+  .tech_news_break {
+    display: none; }
+
+  .sidebar-column, .pagination, #site-info, #colophon, .line, .bug {
+    display: none !important; } }
 @media screen and (min-width: 860px) {
   .main .top-stripe {
     background: url("/img/top-stripe.png");
@@ -765,7 +886,7 @@ body.category-page .adjustSiteContent {
     right: 0px;
     z-index: 9999; }
     .main #header div.logo .desktop_logo {
-      background: url(/img/webtwic-logos.png) -18px 1px no-repeat;
+      background: url("/img/webtwic-logos.png") -18px 1px no-repeat;
       text-indent: -99999px;
       text-align: center;
       margin-right: auto;
@@ -969,124 +1090,9 @@ body.category-page .adjustSiteContent {
 
   .dropNavFallback, .flyout-nav {
     display: none; } }
-/* Start Global responsive css */
-@media screen and (max-width: 860px) {
-  svg.dropdown-arrow, .header-follow-search, .secondary-header, #header {
-    display: none; }
+/*
 
-  .main .mobile-header {
-    -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
-    -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-    background: #fff;
-    position: fixed;
-    display: block;
-    height: 60px;
-    width: auto;
-    right: 0px;
-    left: 0px;
-    top: 0px; }
-    .main .mobile-header .mobile_logo {
-      background: url(/img/webtwic-logos.png) 1px -96px no-repeat;
-      width: 160px;
-      height: 100%;
-      display: block;
-      vertical-align: middle;
-      float: left;
-      border-right: 1px solid rgba(0, 0, 0, 0.06); }
-    .main .mobile-header .mobile-nav {
-      float: right;
-      display: block !important;
-      background: #273340;
-      position: fixed;
-      top: 60px;
-      right: 0;
-      padding: 10px 15px;
-      width: 30%; }
-      .main .mobile-header .mobile-nav li {
-        position: relative;
-        text-align: right;
-        text-transform: uppercase;
-        font-size: .9em;
-        font-weight: 400;
-        letter-spacing: .062em;
-        margin-bottom: 20px; }
-        .main .mobile-header .mobile-nav li a {
-          position: relative;
-          color: #f9f9f9; }
-
-  .active-item svg {
-    display: none; }
-
-  .hamburger {
-    display: block;
-    float: right;
-    width: 26px;
-    height: 20px;
-    cursor: pointer;
-    position: relative;
-    margin: 20px 10px; }
-    .hamburger .bar {
-      -webkit-transition: background 0.2s, opacity 0.2s, transform 0.2s ease-in-out 0s;
-      -moz-transition: background 0.2s, opacity 0.2s, transform 0.2s ease-in-out 0s;
-      -ms-transition: background 0.2s, opacity 0.2s, transform 0.2s ease-in-out 0s;
-      -o-transition: background 0.2s, opacity 0.2s, transform 0.2s ease-in-out 0s;
-      transition: background 0.2s, opacity 0.2s, transform 0.2s ease-in-out 0s;
-      -webkit-transform: rotate(0);
-      -moz-transform: rotate(0);
-      -ms-transform: rotate(0);
-      -o-transform: rotate(0);
-      transform: rotate(0);
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      -o-border-radius: 2px;
-      border-radius: 2px;
-      background: #7B8B8E;
-      display: block;
-      width: 100%;
-      cursor: pointer;
-      height: 2.5px;
-      position: absolute; }
-      .hamburger .bar:nth-child(2) {
-        top: 7px; }
-      .hamburger .bar:nth-child(3) {
-        top: 14px; }
-    .hamburger.is_active .bar {
-      margin-top: -5px; }
-      .hamburger.is_active .bar:nth-child(1) {
-        -webkit-transform: rotate(135deg);
-        -moz-transform: rotate(135deg);
-        -ms-transform: rotate(135deg);
-        -o-transform: rotate(135deg);
-        transform: rotate(135deg);
-        opacity: 1;
-        top: 14px; }
-      .hamburger.is_active .bar:nth-child(2) {
-        opacity: 0; }
-      .hamburger.is_active .bar:nth-child(3) {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-        opacity: 1; }
-
-  #responsive .mobile-header {
-    display: block; }
-  #responsive .header-follow-search {
-    display: none; }
-
-  .site-content [class*="-column"] {
-    float: none;
-    width: 100% !important; } }
-/* End Global responsive css */
-/* End global-stylesheet.css
-
-Start Home.css
+Start Home.scss
 
 * Date Created: 01/03/2015
 
@@ -1434,7 +1440,7 @@ iframe a.twitter-timeline {
   font-weight: 200; }
   .category .category-feed {
     border-bottom: 1px solid #E9E9E9;
-    padding: 10px 5px 0;
+    padding: 8px 5px;
     background: #fff; }
     .category .category-feed a {
       font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
@@ -1651,32 +1657,37 @@ body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-colu
   display: block;
   margin-left: auto;
   margin-right: auto; }
-  .pagination * {
+  .pagination a {
     font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
     -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.04);
     -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.04);
     -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.04);
     -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.04);
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.04);
-    -webkit-transition: opacity 0.2s ease;
-    -moz-transition: opacity 0.2s ease;
-    -ms-transition: opacity 0.2s ease;
-    -o-transition: opacity 0.2s ease;
-    transition: opacity 0.2s ease;
+    -webkit-transition: opacity 0.2s, padding 0.3s ease;
+    -moz-transition: opacity 0.2s, padding 0.3s ease;
+    -ms-transition: opacity 0.2s, padding 0.3s ease;
+    -o-transition: opacity 0.2s, padding 0.3s ease;
+    transition: opacity 0.2s, padding 0.3s ease;
     border-bottom: 2px solid #f2f2f2;
     padding: 12px 18.5px;
     background: #f9f9f9;
-    margin-left: 9px;
+    margin-right: 9px;
+    position: relative;
     font-weight: 700;
     font-size: 1em; }
-    .pagination *:hover {
-      opacity: .8; }
-    .pagination *:nth-child(1) {
+    .pagination a:hover {
+      opacity: .9;
+      padding: 14px 20.5px; }
+    .pagination a:nth-child(1) {
       background: #57DD6B;
       border-bottom: 2px solid #50D664;
       color: #fff; }
-    .pagination *:last-child {
-      padding: 12px 21.5px; }
+    .pagination a:last-child {
+      padding: 12px 21.5px;
+      margin-right: 0; }
+      .pagination a:last-child:hover {
+        padding: 14px 23.5px; }
 
 .line {
   margin: 46px auto 50px auto;
@@ -1684,14 +1695,6 @@ body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-colu
   height: 1px;
   width: 46%;
   display: block; }
-
-.bug {
-  text-align: center;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
 
 .bug-holder {
   color: #ccc;
@@ -1703,35 +1706,25 @@ body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-colu
   height: 45px; }
   .bug-holder:hover {
     color: #bbb; }
+  .bug-holder .bug {
+    text-align: center;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    .bug-holder .bug:before {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.85em;
+      cursor: pointer;
+      width: 30px;
+      height: 45px; }
 
-.bug:before {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.85em;
-  cursor: pointer;
-  width: 30px;
-  height: 45px; }
+/*
 
-/* Start responsive css for home */
-@media screen and (max-width: 860px) {
-  body.home .site-content {
-    margin: auto auto 0px; }
-
-  .featured-posts-column {
-    margin-bottom: 20px; }
-
-  .tech-news-wrap {
-    margin-top: 0; }
-
-  .tech_news_break {
-    display: none; }
-
-  .sidebar-column, .pagination, #site-info, #colophon, .line, .bug {
-    display: none !important; } }
-/* End home.css
-
-Start category-page.css
+Start category-page.scss
 
 * Date Created: 15/07/2015
 
@@ -1911,15 +1904,6 @@ body.single-post .entry-wrap {
     padding: 7px 0 60px 0;
     text-align: center; }
 
-/* End category-page.css
-
-Start single-post.css
-
-* Date Created: 13/10/2015
-
-* Last Modified: 24/12/2015
-
-*/
 @media screen and (min-width: 860px) {
   .main header.secondary-header {
     margin-bottom: 240px;
@@ -1941,7 +1925,7 @@ Start single-post.css
     position: relative;
     border-right: 1.9px solid rgba(0, 0, 0, 0.06); }
     header.secondary-header .logo .desktop_logo {
-      background: url(/img/webtwic-logos.png) -1px -99px no-repeat;
+      background: url("/img/webtwic-logos.png") -1px -99px no-repeat;
       text-indent: -99999px;
       font-size: 40px;
       display: block;
@@ -2135,6 +2119,19 @@ Start single-post.css
       color: #BD081C; }
     .header-follow-search .follow-icons a:nth-child(7) .linkedin-square {
       color: #0077B5; } }
+/*
+
+Start single-post.scss
+
+* Date Created: 13/10/2015
+
+* Last Modified: 24/12/2015
+
+*/
+body.single-post .main-page .sidebar-column {
+  margin-top: 0;
+  width: 24.295%; }
+
 .entry-wrap header h1 {
   font-size: 2.75em;
   padding: 0 180px;
@@ -2287,10 +2284,16 @@ body.single-post .entry-wrap .main-page {
 
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
   color: #3F5261; }
+  .entry-content h1 code, .entry-content h2 code, .entry-content h3 code, .entry-content h4 code, .entry-content h5 code, .entry-content h6 code {
+    background: #E8F5F2;
+    padding: 1px 3.6px;
+    color: #6699cc; }
   .entry-content h1 a, .entry-content h2 a, .entry-content h3 a, .entry-content h4 a, .entry-content h5 a, .entry-content h6 a {
-    border-bottom: none; }
+    border-bottom: none;
+    color: inherit; }
     .entry-content h1 a:hover, .entry-content h2 a:hover, .entry-content h3 a:hover, .entry-content h4 a:hover, .entry-content h5 a:hover, .entry-content h6 a:hover {
-      border-bottom: none; }
+      border-bottom: none;
+      color: #6699cc; }
     .entry-content h1 a:after, .entry-content h2 a:after, .entry-content h3 a:after, .entry-content h4 a:after, .entry-content h5 a:after, .entry-content h6 a:after {
       content: "\f0c1";
       font-size: 0.5em;
@@ -2313,10 +2316,6 @@ body.single-post .entry-wrap .main-page {
   .entry-content a:hover {
     color: inherit;
     border-bottom: 1px solid #4E697D; }
-.entry-content h2 code {
-  background: #E8F5F2;
-  padding: 1px 3.6px;
-  color: #6699cc; }
 .entry-content div.snippet pre {
   font-family: Consolas, "Source Code Pro", Menlo, Monaco, monospace;
   background: #E8F5F2;
@@ -2556,9 +2555,15 @@ body.single-post .entry-wrap .main-page {
   height: 500px;
   padding: 1px 10px; }
 
-body.single-post .main-page .sidebar-column {
-  margin-top: 0;
-  width: 24.295%; }
+/*
+
+Start videos.scss
+
+* Date Created: 21/11/2015
+
+* Last Modified: 24/12/2015
+
+*/
 body.videos .site-content {
   margin: 100px auto 0 auto;
   height: 5800px;
@@ -2583,32 +2588,21 @@ body.videos .videos-column {
     width: 48%; }
     body.videos .videos-column .single-video:nth-of-type(2n) {
       margin-right: 0; }
-body.about-page {
-  /*background: $white;*/ }
-  body.about-page .site-content {
-    margin: 100px auto 0 auto;
-    max-width: 1379px;
-    width: 100%; }
 
-/* Start responsive for single-post */
-/* End single-post.css
+/*
 
-Start videos.css
-
-* Date Created: 21/11/2015
-
-* Last Modified: 24/12/2015
-
-*/
-/* End video.css
-
-Start about-page.css
+Start about-page.scss
 
 * Date Created: 16/12/2015
 
 * Last Modified: 24/12/2015
 
 */
+body.about-page .site-content {
+  margin: 100px auto 0 auto;
+  max-width: 1379px;
+  width: 100%; }
+
 .about-page .about-section {
   text-align: center;
   height: 320px;
@@ -2653,13 +2647,15 @@ Start about-page.css
     .about-page .about-section .social a {
       display: inline-block;
       position: relative;
-      margin-right: 7px;
+      margin-right: 10px;
       color: #6699cc; }
-      .about-page .about-section .social a:nth-child(2) .webtwicons {
-        font-size: 0.9em; }
+      .about-page .about-section .social a:nth-child(2) {
+        margin-right: 0; }
       .about-page .about-section .social a .webtwicons {
-        margin-right: 3px;
-        vertical-align: baseline; }
+        margin: 0 3px 2px 0;
+        vertical-align: middle; }
+      .about-page .about-section .social a:nth-child(2) .webtwicons {
+        font-size: 0.8em; }
 .about-page .founders-section {
   width: 100%;
   background: #fff;
@@ -2741,9 +2737,9 @@ Start about-page.css
   .founder .founder-info .founder-social a:hover {
     color: #6699cc; }
 
-/* End about-page.css
+/*
 
-Start contact-page.css
+Start contact-page.scss
 
 * Date Created: 19/12/2015
 

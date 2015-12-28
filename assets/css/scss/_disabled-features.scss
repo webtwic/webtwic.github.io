@@ -1,0 +1,47 @@
+/* Fallback for certain css features -- See script.js */
+
+#disabledFeatures {
+  background: #FF5F5F;
+  padding: 10px;
+  height: 40px;
+  display: none;
+  margin: 0px auto;
+  z-index: 9999;
+  color: $white;
+  font-weight: bold;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  &:hover {
+	 /*transform: scale(1);*/
+  }
+}
+
+.dfvisible {
+  display: block !important;
+  .close-button {
+	 float: right;
+	 margin-right: 69px;
+	 margin-top: 0px;
+	 cursor: pointer;
+	 font-weight: normal;
+  }
+}
+
+.adjustSiteContent {
+  padding-bottom: 311px !important;
+}
+
+body.category-page .adjustSiteContent {
+  padding-bottom: 233px !important;
+}
+
+.adjustedMargin {
+  margin-top: 40px !important;
+}
+
+.adjustedTop {
+  top: 40px !important;
+}

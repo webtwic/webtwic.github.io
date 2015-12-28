@@ -1,0 +1,233 @@
+@media screen and (min-width: 860px) {
+  .main {
+	 .top-stripe {
+		background: url("/img/top-stripe.png");
+		margin-top: 0px;
+		height: 6px;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: 9999;
+	 }
+	 #header div.logo {
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		background: $white;
+		width: auto;
+		margin-top: 6px;
+		height: 107px;
+		border-bottom: 7px solid #e9e9e9;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: 9999;
+		.desktop_logo {
+		  @include logo(-18px 1px);
+		  text-indent: -99999px;
+		  text-align: center;
+		  margin-right: auto;
+		  margin-left: auto;
+		  font-size: 40px;
+		  display: block;
+		  color: $basecolor;
+		  height: 100px;
+		  width: 250px;
+		}
+	 }
+	 .main-menu {
+		position: fixed;
+		height: 50px;
+		width: auto;
+		line-height: 30px;
+		margin-top: 0px;
+		top: 110px;
+		right: 0px;
+		left: 0px;
+		display: inline-block;
+		> ul.nav-ul li {
+		  border-left: $ui_border;
+		  vertical-align: middle;
+		  position: relative;
+		}
+		li a {
+		  font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
+		  @include transition(all .3s linear);
+		  text-transform: lowercase;
+		  text-decoration: none;
+		  text-shadow: none;
+		  position: relative;
+		  font-weight: 400;
+		  color: #777;
+		}
+	 }
+	 .secondary-menu li a {
+		font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
+		@include transition(all .3s linear);
+		text-transform: lowercase;
+		text-decoration: none;
+		text-shadow: none;
+		position: relative;
+		font-weight: 400;
+		color: #777;
+	 }
+	 .main-menu li a:hover, .secondary-menu li a:hover {
+		background: #f4f4f4;
+		color: #7AAFC8;
+	 }
+  }
+  nav > ul li a {
+	 width: 103%;
+  }
+  /* Start dropdown menu styles*/
+  .dropdown {
+	 position: relative;
+  }
+  .drop-nav {
+	 border-color: $border $border;
+	 @include box-shadow(0px 0px 2px rgba(0, 0, 0, .1));
+	 @include border-radius(0px 0px 3px 3px);
+	 border-width: 1px 1px 2px;
+	 border-style: solid;
+	 position: absolute;
+	 background: $white;
+	 width: 180px;
+	 li {
+		border-left: 0 none !important;
+		border-top: $ui_border;
+		height: 50px;
+	 }
+  }
+  .flyout-nav li {
+	 border-left: 0 none !important;
+	 border-top: $ui_border;
+	 height: 50px;
+  }
+  .drop-nav li {
+	 &:nth-child(1) {
+		border: 0 none;
+	 }
+	 &:hover {
+		height: 51px;
+	 }
+  }
+  .flyout-nav li:hover {
+	 height: 51px;
+  }
+  .drop-nav li a {
+	 text-transform: capitalize !important;
+	 padding: 0px;
+	 width: 178px;
+	 &:hover {
+		background: #f9f9f9;
+	 }
+  }
+  .dropdown:hover > ul.dropNavFallback {
+	 display: block;
+	 height: 204px;
+  }
+  .flyout {
+	 border-right: $ui_border;
+	 position: relative;
+	 &:after {
+		font-family: $icon;
+		position: absolute;
+		font-size: 1em;
+		content: "\f0da";
+		cursor: pointer;
+		display: block;
+		left: 140px;
+		color: #777;
+		top: 11px;
+	 }
+  }
+  .flyout-nav {
+	 border-right: $ui_border;
+	 border-left: $ui_border;
+	 border-top: $ui_border;
+	 @include border-radius(0px 0px 3px 3px);
+	 background: #fff;
+	 position: absolute;
+	 left: $full;
+	 top: -1px;
+  }
+  .drop-nav li [href="#"]:hover {
+	 border-right: 0 none;
+  }
+  .flyout-nav {
+	 li a {
+		@include transition(all .3s linear 0s);
+	 }
+	 &:first-child {
+		border-top: 0 none;
+	 }
+	 li a:hover {
+		background: $white;
+	 }
+  }
+  .flyout:hover > .flyout-nav {
+	 display: block;
+	 position: absolute;
+  }
+  /* End Flyout menu styles */
+  .active-item {
+	 a {
+		color: #7AAFC8 !important;
+		&:hover {
+		  background: $white !important;
+		}
+	 }
+	 svg {
+		fill: $white;
+		position: absolute;
+		top: 2.7em;
+		cursor: pointer;
+		left: 4.155em;
+		width: 20px;
+		height: 20px;
+	 }
+  }
+  .main .main-menu {
+	 font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
+	 @include box-shadow(0px 2px 2px 0px rgba(0, 0, 0, .2));
+	 margin: 0 auto 30px auto;
+	 z-index: 9999;
+	 align-items: center;
+	 text-align: center;
+	 background: $white;
+	 li {
+		text-align: center;
+		list-style: none;
+		display: inline-block;
+		height: 50px;
+		margin: 0px auto;
+		a {
+		  font-size: .94em;
+		  padding: 0 56px;
+		  display: block;
+		  line-height: 50px;
+		}
+	 }
+  }
+  .dropdown a {
+	 svg.dropdown-arrow {
+		position: absolute;
+		top: 1.17em;
+		right: 40px;
+		display: block;
+		fill: #777;
+		width: 18px;
+		height: 18px;
+	 }
+	 &:hover > svg {
+		fill: #7AAFC8;
+	 }
+  }
+  .dropNavFallback, .flyout-nav {
+	 display: none;
+  }
+}

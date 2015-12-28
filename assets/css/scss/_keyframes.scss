@@ -1,0 +1,178 @@
+@keyframes heart {
+  0% {
+	 color: #C0392B;
+  }
+
+  15% {
+	 color: #B62F21;
+  }
+
+  25% {
+	 color: #3CBC8D;
+  }
+
+  35% {
+	 color: #82BC23;
+  }
+
+  45% {
+	 color: #CA4335;
+  }
+
+  55% {
+	 color: $basecolor;
+  }
+
+  65% {
+	 color: #40A4C4;
+  }
+
+  75% {
+	 color: #FF3366;
+  }
+
+  85% {
+	 color: #F80046;
+  }
+
+  95% {
+	 color: #AD29B6;
+  }
+
+  100% {
+	 color: #50ABF1;
+  }
+}
+
+
+@-webkit-keyframes heart {
+  0% {
+	 color: #C0392B;
+  }
+
+  15% {
+	 color: #B62F21;
+  }
+
+  25% {
+	 color: #3CBC8D;
+  }
+
+  35% {
+	 color: #82BC23;
+  }
+
+  45% {
+	 color: #CA4335;
+  }
+
+  55% {
+	 color: $basecolor;
+  }
+
+  65% {
+	 color: #40A4C4;
+  }
+
+  75% {
+	 color: #FF3366;
+  }
+
+  85% {
+	 color: #F80046;
+  }
+
+  95% {
+	 color: #AD29B6;
+  }
+
+  100% {
+	 color: #50ABF1;
+  }
+}
+
+
+@-moz-keyframes heart {
+  0% {
+	 color: #C0392B;
+  }
+
+  15% {
+	 color: #B62F21;
+  }
+
+  25% {
+	 color: #3CBC8D;
+  }
+
+  35% {
+	 color: #82BC23;
+  }
+
+  45% {
+	 color: #CA4335;
+  }
+
+  55% {
+	 color: $basecolor;
+  }
+
+  65% {
+	 color: #40A4C4;
+  }
+
+  75% {
+	 color: #FF3366;
+  }
+
+  85% {
+	 color: #F80046;
+  }
+
+  95% {
+	 color: #AD29B6;
+  }
+
+  100% {
+	 color: #50ABF1;
+  }
+}
+
+
+@-webkit-keyframes spin {
+  0% {
+	 -webkit-transform: rotate(0deg);
+	 transform: rotate(0deg);
+  }
+
+  100% {
+	 -webkit-transform: rotate(359deg);
+	 transform: rotate(359deg);
+  }
+}
+
+
+@keyframes spin {
+  0% {
+	 -webkit-transform: rotate(0deg);
+	 transform: rotate(0deg);
+  }
+
+  100% {
+	 -webkit-transform: rotate(359deg);
+	 transform: rotate(359deg);
+  }
+}
+
+
+@-moz-keyframes spin {
+  0% {
+	 -moz-transform: rotate(0deg);
+	 transform: rotate(0deg);
+  }
+
+  100% {
+	 -moz-transform: rotate(359deg);
+	 transform: rotate(359deg);
+  }
+}

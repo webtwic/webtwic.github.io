@@ -1,0 +1,170 @@
+/*
+
+Start about-page.scss
+
+* Date Created: 16/12/2015
+
+* Last Modified: 24/12/2015
+
+*/
+
+body {
+   &.about-page {
+      .site-content {
+         margin: 100px auto 0 auto;
+         max-width: 1379px;
+         width: $full;
+      }
+   }
+}
+.about-page {
+  .about-section {
+	 text-align: center;
+	 height: 320px;
+	 width: $full;
+	 a {
+		@include transition(color .3s ease);
+		&:hover {
+		  color: #487bae !important;
+		}
+	 }
+	 .header-title {
+		position: relative;
+		margin-top: -5px;
+		cursor: default;
+		color: #2D404F;
+		span {
+		  color: #C0392B;
+		  vertical-align: baseline;
+		  margin-left: 5px;
+		}
+	 }
+	 .about-text {
+		width: 60%;
+		margin: 0 auto;
+		color: #597488;
+	 }
+	 .links {
+		position: relative;
+		margin-bottom: 10px;
+		a {
+		  margin-right: 5px;
+		  color: $basecolor;
+		  display: inline-block;
+		  position: relative;
+		  text-transform: uppercase;
+		  font-size: .87em;
+		  letter-spacing: .04em;
+		  span {
+			 margin-right: 4px;
+			 font-size: 1.2em;
+		  }
+		}
+	 }
+	 .social {
+		position: relative;
+		a {
+		  display: inline-block;
+		  position: relative;
+		  margin-right: 10px;
+		  color: $basecolor;
+        &:nth-child(2) {
+           margin-right: 0;
+        }
+        .webtwicons {
+           margin: 0 3px 2px 0;
+           vertical-align: middle;
+        }
+		  &:nth-child(2) .webtwicons {
+			 font-size: 0.8em;
+		  }
+		}
+	 }
+  }
+  .founders-section {
+	 width: $full;
+	 background: $white;
+	 padding-bottom: 40px;
+	 .inner {
+		width: 80%;
+		height: $full;
+		position: relative;
+		margin: 0 auto;
+	 }
+	 h2 {
+		padding-top: 20px;
+		font-weight: 400;
+		color: #2D404F;
+		border-bottom: $ui_border;
+	 }
+	 .the-founders {
+		width: $full;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+	 }
+  }
+}
+
+.founders-section .the-founders .founder {
+  @include transition(box-shadow .28s ease);
+  background: $white;
+  width: 25%;
+  position: relative;
+  margin-right: 3%;
+  height: 400px;
+  display: inline-block;
+  cursor: default;
+}
+
+.msedge .founders-section .the-founders .founder {
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, .3);
+  &:hover {
+	 box-shadow: 0px 0px 7px rgba(0, 0, 0, .6);
+  }
+}
+
+.founders-section .the-founders .founder {
+  &:hover {
+	 @include box-shadow(0px 0px 7px rgba(0, 0, 0, .3));
+  }
+  &:nth-child(2n) {
+	 margin-right: 0;
+  }
+  .founder-image {
+	 background-size: cover !important;
+	 width: $full;
+	 height: 224px;
+	 position: relative;
+	 overflow: hidden;
+  }
+}
+
+.the-founders .founder .founder-info {
+  padding: 10px;
+  .name {
+	 float: left;
+	 font-size: 1.2em;
+	 position: relative;
+	 font-weight: 600;
+	 color: $basecolor;
+  }
+  p {
+	 color: #597488;
+	 margin-top: 4px;
+	 font-size: .915em;
+  }
+  .founder-social {
+	 position: relative;
+	 margin-top: 2px;
+  }
+}
+
+.founder .founder-info .founder-social a {
+  @include transition(all .3s ease);
+  margin-right: 5px;
+  color: #666;
+  &:hover {
+	 color: $basecolor;
+  }
+}

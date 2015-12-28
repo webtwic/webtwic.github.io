@@ -55,7 +55,6 @@
   @return $unfoldedTransition;
 }
 
-
 @mixin box-shadow($box-shadow) {
    -webkit-box-shadow: $box-shadow;
    -moz-box-shadow: $box-shadow;
@@ -64,8 +63,16 @@
    box-shadow: $box-shadow;
 }
 
+@mixin text-shadow($text-shadow) {
+   -webkit-text-shadow: $text-shadow;
+   -moz-text-shadow: $text-shadow;
+   -ms-text-shadow: $text-shadow;
+   -o-text-shadow: $text-shadow;
+   text-shadow: $text-shadow;
+}
+
 @mixin logo($background-position) {
-   background: url(#{$logo}) $background-position no-repeat;
+   background: url("#{$logo}") $background-position no-repeat;
 }
 
 @mixin social_hover($background) {

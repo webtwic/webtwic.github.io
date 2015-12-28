@@ -1,0 +1,282 @@
+/*
+
+Start Home.scss
+
+* Date Created: 01/03/2015
+
+* Last Modified: 24/12/2015
+
+*/
+
+body.home {
+  background: #EDEEF0;
+  > header.site-header {
+	 padding-bottom: 275px;
+  }
+  .site-content {
+	 margin: -100px auto 150px;
+	 height: 3700px;
+	 width: 94%;
+	 max-width: 1418px;
+  }
+  .featured-posts-column {
+	 width: 44.93%;
+	 margin-right: 2.1%;
+	 @extend .left;
+  }
+}
+
+/*START MAIN POSTS*/
+
+.featured-posts-column .article {
+  padding: 40px 30px 0;
+  margin-bottom: 25px;
+  position: relative;
+  height: 447px;
+  z-index: 50;
+  background: $white;
+  width: $full;
+  @extend .shadow-alt;
+  @extend .radius;
+  &:first-child {
+	 margin-top: 25px;
+  }
+}
+
+.article {
+  time {
+	 font-family: "Source Code Pro", Consolas, Menlo, monospace, Arial, georgia;
+	 text-transform: uppercase;
+	 cursor: default;
+	 letter-spacing: 10px;
+	 color: #777;
+	 font-size: .84375em;
+	 font-weight: 400;
+	 display: block;
+	 margin: -1.2em 0em 1em -.9em;
+	 padding-left: 1.9em;
+  }
+  svg.clock {
+	 @include transform(rotate(-136deg));
+	 vertical-align: middle;
+	 margin: -4px 0 0 0;
+	 fill: #777;
+	 width: 13px;
+	 height: 15px;
+  }
+  .article-title {
+	 border-bottom: $solid_one #EEE;
+	 margin-left: 5px;
+	 padding-bottom: 10px;
+	 margin: 10px;
+	 a {
+		font-family: "Roboto Slab", "Trebuchet MS", Helvetica, Calibri;
+		@include transition(color .4s ease, text-shadow .2s ease);
+		-webkit-text-shadow: none;
+		-moz-text-shadow: none;
+		-ms-text-shadow: none;
+		-o-text-shadow: none;
+		text-shadow: none;
+		font-size: 1.02em;
+		font-weight: 600;
+		color: #3f5261;
+		&:hover {
+		  -webkit-text-shadow: 0px 1px 1px rgb(238, 238, 238);
+		  -moz-text-shadow: 0px 1px 1px rgb(238, 238, 238);
+		  -ms-text-shadow: 0px 1px 1px rgb(238, 238, 238);
+		  -o-text-shadow: 0px 1px 1px rgb(238, 238, 238);
+		  text-shadow: 0px 1px 1px rgb(238, 238, 238);
+		  color: #81aec5;
+		}
+	 }
+  }
+  .article-excerpt p {
+	 font-family: $font-alt;
+	 margin-left: 15px;
+	 color: #597488;
+	 line-height: 25px;
+	 margin-top: 10px;
+	 font-size: 1.06em;
+	 font-weight: 300;
+	 max-height: 125px;
+  }
+  .read-article {
+	 margin-left: 18px;
+	 font-size: .94em;
+	 position: relative;
+	 color: #15E1E1;
+	 position: relative;
+	 &:before {
+		@include transition(width .4s ease);
+		content: "";
+		background: #15E1E1;
+		position: absolute;
+		top: $full;
+		left: 0;
+		right: 0;
+		height: .075em;
+		width: 0;
+	 }
+	 &:hover:before {
+		width: $full;
+	 }
+	 &:after {
+		@include transition(margin-left .02s);
+		content: "\f061";
+		font-family: $icon;
+		font-size: .8em;
+		margin-left: 3px;
+		vertical-align: text-top;
+	 }
+	 &:hover:after {
+		margin-left: 4.4px;
+	 }
+  }
+  .article-social {
+	 border-top: 2px dashed #EEE;
+	 margin-top: 20px;
+	 font-size: 30px;
+	 text-align: center;
+	 padding-top: 20px;
+	 margin-left: auto;
+	 margin-right: auto;
+	 display: block;
+	 border-top: 2px dashed #EEE;
+	 margin-top: 20px;
+	 font-size: 30px;
+	 text-align: center;
+	 padding-top: 20px;
+	 margin-left: auto;
+	 margin-right: auto;
+	 display: block;
+	 p {
+		font-family: "Lobster", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
+		font-size: .66em;
+		letter-spacing: normal;
+		text-align: left;
+		margin-top: -14px;
+		color: #ff9dae;
+		margin-bottom: 6px;
+		margin-left: 18px;
+	 }
+	 .arrow:after {
+		content: url("/img/sharearrow.png");
+		margin-left: 4px;
+	 }
+	 a {
+		:first-child {
+		  @include transition(.5s ease-in-out);
+		}
+		&:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
+		  margin-right: 42px;
+		}
+		&:nth-of-type(1):hover :first-child {
+		  color: #3B599A;
+		}
+		&:nth-of-type(2):hover :first-child {
+		  color: #50ABF1;
+		}
+		&:nth-of-type(3):hover :first-child {
+		  color: #DC4E41;
+		}
+		&:nth-of-type(4):hover :first-child {
+		  color: #35465c;
+		}
+		&:nth-of-type(5):hover :first-child {
+		  color: #BD1E23;
+		}
+		.tooltip {
+		  @include border-radius(1px);
+		  display: inline;
+		  padding: .1px 6px;
+		  position: absolute;
+		  text-align: center;
+		  background: $basecolor;
+		  font-size: .5em;
+		  bottom: 112px;
+		  color: $white;
+		  &:before {
+			 content: "\f0d7";
+			 position: absolute;
+			 position: absolute;
+			 margin-top: 12px;
+			 color: $basecolor;
+			 text-align: center;
+			 margin-left: 36%;
+			 font-size: 1.125em;
+		  }
+		  display: none;
+		}
+		&:hover .tooltip {
+		}
+		&:nth-of-type(1) .tooltip {
+		  left: 17.8%;
+		}
+		&:nth-of-type(2) .tooltip {
+		  left: 31.2%;
+		}
+		&:nth-of-type(3) .tooltip {
+		  left: 43.6%;
+		}
+		&:nth-of-type(4) .tooltip {
+		  left: 58.45%;
+		}
+		&:nth-of-type(5) .tooltip {
+		  left: 70%;
+		}
+	 }
+  }
+}
+
+/* Share Icons */
+
+.tech-news-wrap {
+  padding: 10px 10px 0 10px;
+  color: #597488;
+  background: #F0F5F8;
+  margin: 25px 2.1% 0 0;
+  width: 25.142%;
+  height: 3751px;
+  @extend .shadow;
+  @extend .radius;
+  @extend .left;
+  .thePost {
+	 margin: 22px 22.5px 14px;
+	 padding: 20px 0px 7px;
+	 border-top: $solid_one #C3D4E1;
+	 text-align: center;
+	 font-size: .92em;
+	 color: #597488;
+	 a {
+		font-family: $basefont;
+		@include transition(all .6s ease-in-out 0s);
+		&:hover {
+		  color: #75b1d6;
+		}
+	 }
+  }
+  .more_tech_news {
+	 @include transition(all .3s ease-in);
+	 text-align: center;
+	 margin-right: auto;
+	 margin-left: auto;
+	 margin-top: 30px;
+	 display: block;
+	 color: #49B8CC;
+	 padding: 10px 6px;
+	 width: 116px;
+	 @extend .radius-alt;
+	 border: 2px solid #31EDC5;
+	 &:hover {
+		background: #E9F1F5;
+		border: 2px solid #49B8CC;
+	 }
+	 &:after {
+		content: "\f021";
+		font-family: $icon;
+		display: inline;
+		font-size: .75em;
+		margin-left: 4px;
+	 }
+  }
+}
