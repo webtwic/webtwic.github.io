@@ -2704,7 +2704,19 @@ body.single-post .entry-wrap .main-page {
     padding: 1px 0 0 0; }
 
 .related-articles .inner h2 {
-  color: #3f5261; }
+  color: #4E6170; }
+  .related-articles .inner h2:before {
+    content: "";
+    border-style: dashed;
+    border-color: #4E6170;
+    border-width: 1px 0;
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    padding: 15px 0 20px 0;
+    width: 10%; }
 .related-articles ul {
   position: relative;
   padding: 1px 20px 35em 20px; }

@@ -478,7 +478,20 @@ body.single-post .entry-wrap .main-page {
 
 .related-articles {
   .inner h2 {
-	 color: #3f5261;
+	 color: #4E6170;
+    &:before {
+      content: "";
+      border-style: dashed;
+      border-color: #4E6170;
+      border-width: $one 0;
+      position: absolute;
+      margin-right: auto;
+      margin-left: auto;
+      left: 0;
+      right: 0;
+      padding: 15px 0 20px 0;
+      width: 10%;
+   }
   }
   ul {
 	 position: relative;
