@@ -116,6 +116,27 @@
   100% {
     -moz-transform: rotate(359deg);
     transform: rotate(359deg); } }
+@-webkit-keyframes rotate-scale {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1); }
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.6); }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1); } }
+@-moz-keyframes rotate-scale {
+  0% {
+    -moz-transform: rotate(0deg) scale(1); }
+  50% {
+    -moz-transform: rotate(180deg) scale(0.6); }
+  100% {
+    -moz-transform: rotate(360deg) scale(1); } }
+@keyframes rotate-scale {
+  0% {
+    transform: rotate(0deg) scale(1); }
+  50% {
+    transform: rotate(180deg) scale(0.6); }
+  100% {
+    transform: rotate(360deg) scale(1); } }
 @-ms-viewport {
   width: device-width; }
 @viewport {
@@ -501,7 +522,7 @@ img {
 .capitalize {
   text-transform: capitalize; }
 
-.uppercase, .freebies-column .more-freebies a {
+.uppercase, .freebies-column .more-freebies {
   text-transform: uppercase; }
 
 .lowercase {
@@ -542,7 +563,7 @@ img {
   -o-border-radius: 5px;
   border-radius: 5px; }
 
-.circle, .round, .to-top, .entry-wrap header .entry-meta .entry-author a img, .author-avatar img, #colophon .social-buttons a {
+.circle, .round, .to-top, .entry-wrap header .entry-meta .entry-author a img, .author-avatar img, .freebies-column .loader, #colophon .social-buttons a {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
@@ -2475,7 +2496,7 @@ body.single-post .entry-wrap .main-page {
     color: #fff;
     background: #6699cc;
     border-color: #6699cc; }
-  .prev-next-articles .item a .uppercase, .prev-next-articles .item a .freebies-column .more-freebies a, .freebies-column .more-freebies .prev-next-articles .item a a {
+  .prev-next-articles .item a .uppercase, .prev-next-articles .item a .freebies-column .more-freebies, .freebies-column .prev-next-articles .item a .more-freebies {
     font-size: .83em;
     font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia; }
   .prev-next-articles .item a:hover p {
@@ -2591,27 +2612,41 @@ body.freebies-page .site-content {
     .freebies-column ul.freebie-list li:nth-child(4n) {
       margin-right: 0; }
 .freebies-column .more-freebies {
-  position: relative; }
-  .freebies-column .more-freebies a {
-    position: relative;
-    letter-spacing: .05rem;
-    font-size: .85em;
-    padding: 11px 13px;
-    -webkit-border-radius: 1.5rem;
-    -moz-border-radius: 1.5rem;
-    -ms-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
-    border-radius: 1.5rem;
-    border: 2px solid #50ABF1;
-    -webkit-transition: all linear 0.5s;
-    -moz-transition: all linear 0.5s;
-    -ms-transition: all linear 0.5s;
-    -o-transition: all linear 0.5s;
-    transition: all linear 0.5s;
-    color: #50ABF1; }
-    .freebies-column .more-freebies a:hover {
-      background: #50ABF1;
-      color: #fff; }
+  position: relative;
+  letter-spacing: .05rem;
+  font-size: .85em;
+  padding: 11px 13px;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  border-radius: 1.5rem;
+  border: 2px solid #50ABF1;
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  color: #50ABF1; }
+  .freebies-column .more-freebies:hover, .freebies-column .more-freebies:focus {
+    background: #50ABF1;
+    color: #fff; }
+.freebies-column .loader {
+  background-color: #50ABF1;
+  width: 25px;
+  height: 25px;
+  margin: 0px 9px;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+  border: 2px solid #50ABF1;
+  border-bottom-color: transparent;
+  background: transparent !important;
+  display: inline-block;
+  -webkit-animation: rotate-scale .5s 0s linear infinite;
+  -moz-animation: rotate-scale .5s 0s linear infinite;
+  animation: rotate-scale .5s 0s linear infinite;
+  vertical-align: bottom; }
 
 /*
 

@@ -52,20 +52,36 @@ body {
    }
    .more-freebies {
       position: relative;
-      a {
-         position: relative;
-         @extend .uppercase;
-         letter-spacing: .05rem;
-         font-size: .85em;
-         padding: 11px 13px;
-         @include border-radius(1.5rem);
-         border: $two solid $twitter;
-         @include transition(all linear .5s);
-         color: $twitter;
-         &:hover {
-            background: $twitter;
-            color: $white;
-         }
+      @extend .uppercase;
+      letter-spacing: .05rem;
+      font-size: .85em;
+      padding: 11px 13px;
+      @include border-radius(1.5rem);
+      border: $two solid $twitter;
+      @include transition(all linear .5s);
+      color: $twitter;
+      &:hover,
+      &:focus {
+         background: $twitter;
+         color: $white;
       }
+   }
+   .loader {
+      background-color: $twitter;
+      width: 25px;
+      height: 25px;
+      @extend .round;
+      margin: 0px 9px;
+      -webkit-animation-fill-mode: both;
+      -moz-animation-fill-mode: both;
+      animation-fill-mode: both;
+      border: $two solid $twitter;
+      border-bottom-color: transparent;
+      background: transparent !important;
+      display: inline-block;
+      -webkit-animation: rotate-scale .5s 0s linear infinite;
+      -moz-animation: rotate-scale .5s 0s linear infinite;
+      animation: rotate-scale .5s 0s linear infinite;
+      vertical-align: bottom;
    }
 }
