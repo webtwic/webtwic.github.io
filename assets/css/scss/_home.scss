@@ -65,7 +65,7 @@ body.home {
 	 height: 15px;
   }
   .article-title {
-	 border-bottom: $solid_one #EEE;
+	 border-bottom: $solid_one $grey;
 	 margin-left: 5px;
 	 padding-bottom: 10px;
 	 margin: 10px;
@@ -79,7 +79,7 @@ body.home {
 		text-shadow: none;
 		font-size: 1.02em;
 		font-weight: 600;
-		color: #3f5261;
+		color: $title-color;
 		&:hover {
 		  -webkit-text-shadow: 0px 1px 1px rgb(238, 238, 238);
 		  -moz-text-shadow: 0px 1px 1px rgb(238, 238, 238);
@@ -93,7 +93,7 @@ body.home {
   .article-excerpt p {
 	 font-family: $font-alt;
 	 margin-left: 15px;
-	 color: #597488;
+	 color: $text-color;
 	 line-height: 25px;
 	 margin-top: 10px;
 	 font-size: 1.06em;
@@ -133,7 +133,7 @@ body.home {
 	 }
   }
   .article-social {
-	 border-top: 2px dashed #EEE;
+	 border-top: 2px dashed $grey;
 	 margin-top: 20px;
 	 font-size: 30px;
 	 text-align: center;
@@ -141,7 +141,7 @@ body.home {
 	 margin-left: auto;
 	 margin-right: auto;
 	 display: block;
-	 border-top: 2px dashed #EEE;
+	 border-top: 2px dashed $grey;
 	 margin-top: 20px;
 	 font-size: 30px;
 	 text-align: center;
@@ -232,7 +232,7 @@ body.home {
 
 .tech-news-wrap {
   padding: 10px 10px 0 10px;
-  color: #597488;
+  color: $text-color;
   background: #F0F5F8;
   margin: 25px 2.1% 0 0;
   width: 25.142%;
@@ -246,7 +246,7 @@ body.home {
 	 border-top: $solid_one #C3D4E1;
 	 text-align: center;
 	 font-size: .92em;
-	 color: #597488;
+	 color: $text-color;
 	 a {
 		font-family: $basefont;
 		@include transition(all .6s ease-in-out 0s);

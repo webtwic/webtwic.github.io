@@ -306,27 +306,27 @@
 @viewport {
   width: device-width; }
 ::-webkit-selection {
-  background: #eee;
+  background: #EEEEEE;
   color: #597488; }
 
 ::-moz-selection {
-  background: #eee;
+  background: #EEEEEE;
   color: #597488; }
 
 ::-ms-selection {
-  background: #eee;
+  background: #EEEEEE;
   color: #597488; }
 
 :-ms-selection {
-  background: #eee;
+  background: #EEEEEE;
   color: #597488; }
 
 ::-o-selection {
-  background: #eee;
+  background: #EEEEEE;
   color: #597488; }
 
 ::selection {
-  background: #eee;
+  background: #EEEEEE;
   color: #597488; }
 
 ::placeholder {
@@ -1332,7 +1332,7 @@ body.home {
   width: 13px;
   height: 15px; }
 .article .article-title {
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #EEEEEE;
   margin-left: 5px;
   padding-bottom: 10px;
   margin: 10px; }
@@ -1403,7 +1403,7 @@ body.home {
   .article .read-article:hover:after {
     margin-left: 4.4px; }
 .article .article-social {
-  border-top: 2px dashed #EEE;
+  border-top: 2px dashed #EEEEEE;
   margin-top: 20px;
   font-size: 30px;
   text-align: center;
@@ -1411,7 +1411,7 @@ body.home {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  border-top: 2px dashed #EEE;
+  border-top: 2px dashed #EEEEEE;
   margin-top: 20px;
   font-size: 30px;
   text-align: center;
@@ -2320,7 +2320,7 @@ body.single-post .main-page .sidebar-column {
 .entry-wrap header h1 {
   font-size: 2.75em;
   padding: 0 180px;
-  color: #3F5261;
+  color: #3f5261;
   font-weight: 500; }
 .entry-wrap header .entry-meta * {
   -webkit-transition: color 0.3s ease-in-out;
@@ -2468,7 +2468,7 @@ body.single-post .entry-wrap .main-page {
     font-size: 1.015em; }
 
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
-  color: #3F5261; }
+  color: #3f5261; }
   .entry-content h1 code, .entry-content h2 code, .entry-content h3 code, .entry-content h4 code, .entry-content h5 code, .entry-content h6 code {
     background: #E8F5F2;
     padding: 1px 3.6px;
@@ -2559,8 +2559,8 @@ body.single-post .entry-wrap .main-page {
     color: #6699cc;
     position: relative; }
     .post-content-column article .entry-tags a:hover {
-      color: #3F5261;
-      border-bottom: 1px solid #3F5261; }
+      color: #3f5261;
+      border-bottom: 1px solid #3f5261; }
   .post-content-column article .entry-tags .webtwicons {
     font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
     margin-right: 0px; }

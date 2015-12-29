@@ -9,28 +9,28 @@
 
 
 ::-webkit-selection {
-  background: #eee;
-  color: #597488;
+  background: $grey;
+  color: $text-color;
 }
 ::-moz-selection {
-   background: #eee;
-   color: #597488;
+   background: $grey;
+   color: $text-color;
 }
 ::-ms-selection {
-   background: #eee;
-   color: #597488;
+   background: $grey;
+   color: $text-color;
 }
 :-ms-selection {
-   background: #eee;
-   color: #597488;
+   background: $grey;
+   color: $text-color;
 }
 ::-o-selection {
-   background: #eee;
-   color: #597488;
+   background: $grey;
+   color: $text-color;
 }
 ::selection {
-   background: #eee;
-   color: #597488;
+   background: $grey;
+   color: $text-color;
 }
 
 ::placeholder {

@@ -42,7 +42,7 @@ body {
 	 .about-text {
 		width: 60%;
 		margin: 0 auto;
-		color: #597488;
+		color: $text-color;
 	 }
 	 .links {
 		position: relative;
@@ -150,7 +150,7 @@ body {
 	 color: $basecolor;
   }
   p {
-	 color: #597488;
+	 color: $text-color;
 	 margin-top: 4px;
 	 font-size: .915em;
   }

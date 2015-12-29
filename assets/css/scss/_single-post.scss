@@ -17,7 +17,7 @@ body {
   h1 {
 	 font-size: 2.75em;
 	 padding: 0 180px;
-	 color: #3F5261;
+	 color: $title-color;
 	 font-weight: 500;
   }
   .entry-meta * {
@@ -207,7 +207,7 @@ body.single-post .entry-wrap .main-page {
 
 .entry-content {
   h1, h2, h3, h4, h5, h6 {
-	 color: #3F5261;
+	 color: $title-color;
     & code {
       background: #E8F5F2;
       padding: 1px 3.6px;
@@ -301,8 +301,8 @@ body.single-post .entry-wrap .main-page {
       color: $basecolor;
       position: relative;
       &:hover {
-    	 color: #3F5261;
-    	 border-bottom: $solid_one #3F5261;
+    	 color: $title-color;
+    	 border-bottom: $solid_one $title-color;
       }
     }
     .webtwicons {
@@ -466,7 +466,7 @@ body.single-post .entry-wrap .main-page {
 }
 
 .post-secondary-column .related-articles {
-  background: #EEEEEE;
+  background: $grey;
   position: relative;
   margin-bottom: 15px;
   @include box-shadow( 0px 0px 4px rgba(0, 0, 0, 0.09) );
@@ -515,10 +515,10 @@ body.single-post .entry-wrap .main-page {
 		display: block;
 		padding: 0 10px;
 		position: relative;
-		color: #597488;
+		color: $text-color;
 	 }
 	 &:hover .post-title {
-		color: darken(#597488, 8%);
+		color: darken($text-color, 8%);
 	 }
   }
 }
