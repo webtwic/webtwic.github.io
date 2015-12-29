@@ -10,6 +10,17 @@ Start freebies.scss
 
 body {
    &.freebies-page {
-
+      .site-content {
+         margin: 100px auto 0 auto;
+         max-width: 1379px;
+         width: $full;
+      }
+   }
+}
+.freebies-page {
+   .freebies-section {
+      width: $full;
+      @extend .text-center;
+      height: 500px;
    }
 }
