@@ -2365,7 +2365,7 @@ body.single-post .entry-wrap .main-page {
   margin-right: 2.5%; }
   .main-page .page-focus-column .post-content-column {
     background: #fff;
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
 
 .entry-wrap .main-page .post-content-column, .entry-wrap .main-page .post-secondary-column {
   height: 100%; }
@@ -2572,7 +2572,8 @@ body.single-post .entry-wrap .main-page {
   background: #fff;
   padding: 10px 20px 0px 0;
   height: 250px;
-  color: #4E697D; }
+  color: #4E697D;
+  margin-bottom: 10px; }
   .page-focus-column .post-secondary-column .author-profile .author-info-inner {
     position: relative;
     height: 100%; }
@@ -2632,7 +2633,7 @@ body.single-post .entry-wrap .main-page {
   background: #fff;
   overflow: hidden;
   height: 145px;
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
 
 .prev-next-articles .item {
   position: relative;
