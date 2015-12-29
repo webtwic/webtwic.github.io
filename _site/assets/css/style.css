@@ -2573,7 +2573,7 @@ body.single-post .entry-wrap .main-page {
   padding: 10px 20px 0px 0;
   height: 250px;
   color: #4E697D;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
   .page-focus-column .post-secondary-column .author-profile .author-info-inner {
     position: relative;
     height: 100%; }
@@ -2691,7 +2691,7 @@ body.single-post .entry-wrap .main-page {
   float: right; }
 
 .post-secondary-column .related-articles {
-  background: #444;
+  background: #EEEEEE;
   position: relative;
   margin-bottom: 15px; }
   .post-secondary-column .related-articles .inner {
@@ -2699,7 +2699,7 @@ body.single-post .entry-wrap .main-page {
     padding: 1px 0 0 0; }
 
 .related-articles .inner h2 {
-  color: #f1f1f1; }
+  color: #3f5261; }
 .related-articles ul {
   position: relative;
   padding: 1px 20px 35em 20px; }
@@ -2726,9 +2726,9 @@ body.single-post .entry-wrap .main-page {
   display: block;
   padding: 0 10px;
   position: relative;
-  color: #eee; }
+  color: #597488; }
 .related-articles li:hover .post-title {
-  color: #f1f1f1; }
+  color: #495f6f; }
 
 .post_list li .post-card-image {
   position: relative;
