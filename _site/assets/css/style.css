@@ -2692,7 +2692,8 @@ body.single-post .entry-wrap .main-page {
 
 .post-secondary-column .related-articles {
   background: #444;
-  position: relative; }
+  position: relative;
+  margin-bottom: 15px; }
   .post-secondary-column .related-articles .inner {
     position: relative;
     padding: 1px 0 0 0; }
