@@ -21,6 +21,51 @@ body {
    .freebies-section {
       width: $full;
       @extend .text-center;
-      height: 500px;
+      height: 870px;
+      position: relative;
+      .freebies-column {
+         position: relative;
+         width: $full;
+         padding: 0;
+      }
+   }
+}
+
+.freebies-column {
+   ul.freebie-list {
+      list-style-type: none;
+      margin-bottom: 30px;
+      li {
+         @extend [class*="-column"];
+         @extend .radius;
+         // @extend .shadow;
+         position: relative;
+         width: 21.5%;
+         height: 200px;
+         background: $white;
+         margin: 0 20px 20px 0;
+         display: inline-block;
+         &:nth-child(4n) {
+            margin-right: 0;
+         }
+      }
+   }
+   .more-freebies {
+      position: relative;
+      a {
+         position: relative;
+         @extend .uppercase;
+         letter-spacing: .05rem;
+         font-size: .85em;
+         padding: 11px 13px;
+         @include border-radius(1.5rem);
+         border: $two solid $twitter;
+         @include transition(all linear .5s);
+         color: $twitter;
+         &:hover {
+            background: $twitter;
+            color: $white;
+         }
+      }
    }
 }
