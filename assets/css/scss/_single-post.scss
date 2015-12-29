@@ -72,7 +72,7 @@ body.single-post .entry-wrap .main-page {
   margin-right: 2.5%;
   .post-content-column {
 	 background: $white;
-	 margin-bottom: 0px;
+	 margin-bottom: 20px;
   }
 }
 
@@ -319,9 +319,9 @@ body.single-post .entry-wrap .main-page {
    .author-profile {
       width: $full;
       background: $white;
-      padding: 10px 20px 240px 0;
+      padding: 10px 20px 0px 0;
+      height: 250px;
       color: #4E697D;
-      margin-top: 180px;
       .author-info-inner {
          position: relative;
          height: $full;
@@ -392,6 +392,7 @@ body.single-post .entry-wrap .main-page {
   background: $white;
   overflow: hidden;
   height: 145px;
+  margin-bottom: 20px;
 }
 
 .prev-next-articles .item {
