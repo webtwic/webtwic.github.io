@@ -72,7 +72,7 @@ body.single-post .entry-wrap .main-page {
   margin-right: 2.5%;
   .post-content-column {
 	 background: $white;
-	 margin-bottom: 30px;
+	 margin-bottom: 1px;
   }
 }
 
@@ -276,7 +276,7 @@ body.single-post .entry-wrap .main-page {
 	 padding: 30px 2.2%;
 	 border-top: $ui_border;
 	 border-bottom: $ui_border;
-	 margin-bottom: 20px;
+	 margin-bottom: 0px;
 	 a {
 		@include transition(all .5s);
 		padding: 16px 18px;
