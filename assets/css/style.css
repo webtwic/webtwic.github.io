@@ -589,7 +589,7 @@ img {
 .text-right {
   text-align: right; }
 
-.text-center {
+.text-center, .freebies-page .freebies-section {
   text-align: center; }
 
 .text-bold {
@@ -1740,20 +1740,20 @@ body.category-page .site-content {
   height: 3700px;
   max-width: 1279px;
   width: 94%; }
-body.category-page .entryHeader {
-  margin: -10px auto 20px auto;
-  color: #555;
-  display: block;
-  font-size: 1.8em;
-  text-align: center; }
-  body.category-page .entryHeader span {
-    color: #BEBEBE; }
 body.category-page .posts-column {
   width: 70.8%;
   height: 3303px;
   margin-right: 2.5%; }
 
-/*STYLES FOR DROPDOWN MENU */
+.entryHeader {
+  margin: -10px auto 20px auto;
+  color: #555;
+  display: block;
+  font-size: 1.8em;
+  text-align: center; }
+  .entryHeader span {
+    color: #BEBEBE; }
+
 article.post-wrap {
   -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
   -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
@@ -2554,6 +2554,24 @@ body.single-post .entry-wrap .main-page {
   background: #fff;
   height: 500px;
   padding: 1px 10px; }
+
+/*
+
+Start freebies.scss
+
+* Date Created: 29/12/2015
+
+* Last Modified: 29/12/2015
+
+*/
+body.freebies-page .site-content {
+  margin: 100px auto 0 auto;
+  max-width: 1379px;
+  width: 100%; }
+
+.freebies-page .freebies-section {
+  width: 100%;
+  height: 500px; }
 
 /*
 
