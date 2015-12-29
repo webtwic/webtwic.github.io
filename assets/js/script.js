@@ -171,6 +171,7 @@ jQuery(document).ready(function() {
 	});
 
 	// Functions for search-icon and ui-overlay-search
+
 	$(".header-follow-search .search-wrap").on("click", function() {
 		openUiOverlay();
 	});
@@ -217,6 +218,16 @@ jQuery(document).ready(function() {
     } else {
 		 return;
 	 }});
+
+	// Functions for more-freebies button click
+
+	function addLoader() {
+		$(".freebies-section .freebies-column [data-clicked='false']").attr("data-clicked", "true").after("<span class='loader'></span>");
+	}
+	$(".freebies-section .freebies-column [data-clicked='false']").on("click", function(e) {
+		addLoader();
+		e.preventDefault();
+	});
 
 	$to_top.on("click", function(e) {
 		$("body,html").animate({
