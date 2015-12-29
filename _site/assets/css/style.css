@@ -2693,7 +2693,12 @@ body.single-post .entry-wrap .main-page {
 .post-secondary-column .related-articles {
   background: #EEEEEE;
   position: relative;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.09);
+  -ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.09);
+  -o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.09); }
   .post-secondary-column .related-articles .inner {
     position: relative;
     padding: 1px 0 0 0; }

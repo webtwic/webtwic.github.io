@@ -469,6 +469,7 @@ body.single-post .entry-wrap .main-page {
   background: #EEEEEE;
   position: relative;
   margin-bottom: 15px;
+  @include box-shadow( 0px 0px 4px rgba(0, 0, 0, 0.09) );
   .inner {
 	 position: relative;
 	 padding: 1px 0 0 0;
