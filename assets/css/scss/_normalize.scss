@@ -16,11 +16,6 @@ video {
   height: auto;
 }
 
-img {
-  max-width: $full;
-  height: auto;
-}
-
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -282,4 +277,5 @@ img {
   height: auto;
   width: auto;
   border: 0 none;
+  max-width: $full;
 }

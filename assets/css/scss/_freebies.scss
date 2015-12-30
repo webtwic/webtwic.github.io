@@ -84,3 +84,24 @@ body {
       vertical-align: bottom;
    }
 }
+
+ul.freebie-list {
+   li {
+      a {
+         position: relative;
+      }
+   }
+}
+
+.freebie-wrap {
+   a {
+      .freebie-thumbnail {
+         position: relative;
+         img {
+            position: relative;
+            @include border-radius(3px 3px 0 0);
+            display: block;
+         }
+      }
+   }
+}

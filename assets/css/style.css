@@ -471,10 +471,6 @@ video {
   max-width: 100%;
   height: auto; }
 
-img {
-  max-width: 100%;
-  height: auto; }
-
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -676,7 +672,8 @@ input {
 img {
   height: auto;
   width: auto;
-  border: 0 none; }
+  border: 0 none;
+  max-width: 100%; }
   img[border="0"] {
     border-style: none;
     border-width: 0px;
@@ -2840,6 +2837,20 @@ body.freebies-page .site-content {
   -moz-animation: rotate-scale .5s 0s linear infinite;
   animation: rotate-scale .5s 0s linear infinite;
   vertical-align: bottom; }
+
+ul.freebie-list li a {
+  position: relative; }
+
+.freebie-wrap a .freebie-thumbnail {
+  position: relative; }
+  .freebie-wrap a .freebie-thumbnail img {
+    position: relative;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    display: block; }
 
 /*
 
