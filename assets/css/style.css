@@ -706,7 +706,7 @@ img {
   -o-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1); }
 
-.radius, .featured-posts-column .article, .tech-news-wrap, .category .category-feed, .category .category-feed a, body.category-page .posts-column, article.post-wrap, body.category-page .post-content .post-meta, body.category-page .post-content .read-post, .article-meta .article-meta-inner .share-icons a, .article-meta .article-meta-inner .cta-btns a, .entry-content .entry-image-small img, .post_list li .post-card-image, .freebies-column ul.freebie-list li, body.videos .videos-column .single-video {
+.radius, .featured-posts-column .article, .tech-news-wrap, .category .category-feed, .category .category-feed a, body.category-page .posts-column, article.post-wrap, body.category-page .post-content .post-meta, body.category-page .post-content .read-post, .article-meta .article-meta-inner .share-icons a, .article-meta .article-meta-inner .cta-btns a, .entry-content .entry-image-small img, .post_list li .post-card-image, body.videos .videos-column .single-video {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -2776,7 +2776,6 @@ body.freebies-page .site-content {
 
 .freebies-page .freebies-section {
   width: 100%;
-  height: 870px;
   position: relative; }
   .freebies-page .freebies-section .freebies-column {
     position: relative;
@@ -2787,9 +2786,19 @@ body.freebies-page .site-content {
   list-style-type: none;
   margin-bottom: 30px; }
   .freebies-column ul.freebie-list li {
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
     position: relative;
     width: 22%;
-    height: 220px;
+    height: 320px;
     background: #fff;
     margin: 0 20px 20px 0;
     display: inline-block; }

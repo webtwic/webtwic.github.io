@@ -21,7 +21,6 @@ body {
    .freebies-section {
       width: $full;
       @extend .text-center;
-      height: 870px;
       position: relative;
       .freebies-column {
          position: relative;
@@ -37,11 +36,11 @@ body {
       margin-bottom: 30px;
       li {
          @extend [class*="-column"];
-         @extend .radius;
-         // @extend .shadow;
+         @include border-radius(3px 3px 0 0);
+         @include box-shadow( 0px 0px 5px rgba(0, 0, 0, .05) );
          position: relative;
          width: 22%;
-         height: 220px;
+         height: 320px;
          background: $white;
          margin: 0 20px 20px 0;
          display: inline-block;
