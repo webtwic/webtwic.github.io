@@ -10,7 +10,7 @@ Launch the ruby terminal and fire `gem install jekyll`
 
 We love code, the web, tech and creative design. :heart: :smile:
 
-+ Author: Olaolu Olawuyi (whizkydee)
++ Author: Olaolu Olawuyi
 
 + [Codepen] (https://codepen.io/whizkydee)
 
