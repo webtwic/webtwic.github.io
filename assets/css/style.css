@@ -942,7 +942,6 @@ body.category-page .adjustSiteContent {
       border-right: 1px solid rgba(0, 0, 0, 0.06); }
     .main .mobile-header .mobile-nav {
       float: right;
-      display: block !important;
       background: #273340;
       position: fixed;
       top: 60px;

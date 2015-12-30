@@ -219,6 +219,7 @@ jQuery(document).ready(function() {
 		 return;
 	 }});
 
+	 $(".mobile-nav").hide();
 	// Functions for more-freebies button click
 
 	function addLoader() {
