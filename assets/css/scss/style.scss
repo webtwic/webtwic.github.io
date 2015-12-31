@@ -16,33 +16,33 @@
 */
 
 @import
-   "variables",
-   "mixins",
-   "typography",
-   "keyframes";
+   "globals/variables",
+   "globals/mixins",
+   "globals/typography",
+   "globals/keyframes";
 
 @import
-   "global",
-   "webtwicons",
-   "normalize",
-   "base",
+   "globals/global",
+   "globals/webtwicons",
+   "globals/normalize",
+   "globals/base",
    "disabled-features";
 
 /* START MAIN PAGE */
 
-@import "responsive";
+@import "globals/responsive";
 
-@import "header";
+@import "globals/header";
 
 @import "home";
 
-@import "sidebar";
+@import "globals/sidebar";
 
-@import "pagination";
+@import "globals/pagination";
 
 @import "category-page";
 
-@import "secondary-header";
+@import "globals/secondary-header";
 
 @import "single-post";
 
@@ -54,4 +54,4 @@
 
 @import "contact-page";
 
-@import "footer";
+@import "globals/footer";
