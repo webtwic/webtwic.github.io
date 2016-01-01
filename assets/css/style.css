@@ -491,47 +491,8 @@ a {
   a:active, a:hover {
     outline: 0; }
 
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-b, strong {
-  font-weight: bold; }
-
-dfn {
-  font-style: italic; }
-
-h1 {
-  font-size: 2em;
-  margin: .67em 0; }
-
-mark {
-  background: #ff0;
-  color: #000; }
-
-small {
-  font-size: 80%; }
-
-sub {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-  top: -.5em; }
-
-sub {
-  bottom: -.25em; }
-
 svg:not(:root) {
   overflow: hidden; }
-
-figure {
-  margin: 1em 40px; }
 
 hr {
   -moz-box-sizing: content-box;
@@ -620,29 +581,6 @@ td, th {
 /** End normalize.css */
 keygen, input, iframe, label, table, textarea, select, button {
   font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
-  clear: both;
-  line-height: 1.5; }
-
-h1 {
-  font-size: 2em; }
-
-h2 {
-  font-size: 1.625em; }
-
-h3 {
-  font-size: 1.375em; }
-
-h4 {
-  font-size: 1.0625em; }
-
-h5 {
-  font-size: .875em; }
-
-h6 {
-  font-size: .75em; }
 
 a {
   text-decoration: none;
