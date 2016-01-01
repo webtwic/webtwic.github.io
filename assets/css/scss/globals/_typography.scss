@@ -1,11 +1,70 @@
-/* Include fonts and icons */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $basefont;
+  clear: both;
+  line-height: 1.5;
+}
 
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Source+Sans+Pro:400,600,700|Source+Code+Pro:400,700|Lobster);
+h1 {
+  font-size: 2em;
+}
 
-@font-face {
-  font-family: $icon;
-  src: url('../fonts/webtwicons.eot');
-  src: url('../fonts/webtwicons.woff2') format("woff2"), url('../fonts/webtwicons.woff') format("woff"), url('../fonts/webtwicons.ttf') format("truetype"), url('../fonts/webtwicons.svg') format("svg");
-  font-weight: normal;
-  font-style: normal;
+h2 {
+  font-size: 1.625em;
+}
+
+h3 {
+  font-size: 1.375em;
+}
+
+h4 {
+  font-size: 1.0625em;
+}
+
+h5 {
+  font-size: .875em;
+}
+
+h6 {
+  font-size: .75em;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+mark {
+  background: #ff0;
+  color: $black;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  bottom: -.25em;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -.5em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
 }
