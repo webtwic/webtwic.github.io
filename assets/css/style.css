@@ -2768,7 +2768,7 @@ Start freebies.scss
 body.freebies-page .site-content {
   margin: 100px auto 0 auto;
   max-width: 1379px;
-  width: 100%; }
+  width: 94%; }
 
 .freebies-page .freebies-section {
   width: 100%;
@@ -2793,10 +2793,10 @@ body.freebies-page .site-content {
     -o-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
     position: relative;
-    width: 22%;
-    height: 320px;
+    width: 21.5%;
+    height: 330px;
     background: #fff;
-    margin: 0 20px 20px 0;
+    margin: 0 30px 20px 0;
     display: inline-block; }
     .freebies-column ul.freebie-list li:nth-child(4n) {
       margin-right: 0; }
