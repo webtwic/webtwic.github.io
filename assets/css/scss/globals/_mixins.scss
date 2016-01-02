@@ -101,6 +101,10 @@
    background: lighten($background, 7.5%);
 }
 
+@mixin social_border($background) {
+   border-color: darken($background, 6.5%);
+}
+
 @mixin opacity($opacity) {
    opacity: $opacity;
    $opacity-ie: $opacity * 100;
