@@ -22,7 +22,7 @@ body {
       width: $full;
       @extend .text-center;
       position: relative;
-      .category-posts {
+      .category-posts-column {
          position: relative;
          width: $full;
          padding: 0;
@@ -30,7 +30,7 @@ body {
    }
 }
 
-.category-posts {
+.category-posts-column {
    ul.category-posts-list {
       list-style-type: none;
       margin-bottom: 30px;
