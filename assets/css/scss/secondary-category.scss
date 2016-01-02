@@ -22,6 +22,10 @@ body {
       width: $full;
       @extend .text-center;
       position: relative;
+      .entryHeader {
+         font-size: 2.1em;
+         letter-spacing: .025em;
+      }
       .category-posts-column {
          position: relative;
          width: $full;
