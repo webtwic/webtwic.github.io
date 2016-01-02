@@ -224,9 +224,13 @@ jQuery(document).ready(function() {
 	// Functions for more-posts button click
 
 	function addLoader() {
-		$(".secondary-category-section .category-posts-column [data-clicked='false']").attr("data-clicked", "true").after("<span class='loader'></span>");
+		$(".secondary-category-section .category-posts-column [data-clicked='false']").attr("data-clicked", "true").append("<span class='loader'></span>");
 	}
 	$(".secondary-category-section .category-posts-column [data-clicked='false']").on("click", function(e) {
+		$(this).css({
+			"background": "#50ABF1",
+			"color": "#fff"
+		});
 		addLoader();
 		e.preventDefault();
 	});
