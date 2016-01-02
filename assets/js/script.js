@@ -220,12 +220,13 @@ jQuery(document).ready(function() {
 	 }});
 
 	 $(".mobile-nav").hide();
-	// Functions for more-freebies button click
+
+	// Functions for more-posts button click
 
 	function addLoader() {
-		$(".freebies-section .freebies-column [data-clicked='false']").attr("data-clicked", "true").after("<span class='loader'></span>");
+		$(".secondary-category-section .category-posts-column [data-clicked='false']").attr("data-clicked", "true").after("<span class='loader'></span>");
 	}
-	$(".freebies-section .freebies-column [data-clicked='false']").on("click", function(e) {
+	$(".secondary-category-section .category-posts-column [data-clicked='false']").on("click", function(e) {
 		addLoader();
 		e.preventDefault();
 	});
