@@ -1,6 +1,6 @@
 /*
 
-Start freebies.scss
+Start secondary-category.scss
 
 * Date Created: 29/12/2015
 
@@ -9,7 +9,7 @@ Start freebies.scss
 */
 
 body {
-   &.freebies-page {
+   &.secondary-category {
       .site-content {
          margin: 100px auto 0 auto;
          max-width: 1379px;
@@ -17,12 +17,12 @@ body {
       }
    }
 }
-.freebies-page {
-   .freebies-section {
+.secondary-category {
+   .secondary-category-section {
       width: $full;
       @extend .text-center;
       position: relative;
-      .freebies-column {
+      .category-posts {
          position: relative;
          width: $full;
          padding: 0;
@@ -30,8 +30,8 @@ body {
    }
 }
 
-.freebies-column {
-   ul.freebie-list {
+.category-posts {
+   ul.category-posts-list {
       list-style-type: none;
       margin-bottom: 30px;
       li {
@@ -49,7 +49,7 @@ body {
          }
       }
    }
-   .more-freebies {
+   .more-posts {
       position: relative;
       @extend .uppercase;
       letter-spacing: .05rem;
@@ -85,7 +85,7 @@ body {
    }
 }
 
-ul.freebie-list {
+ul.category-posts-list {
    li {
       a {
          position: relative;
@@ -93,9 +93,9 @@ ul.freebie-list {
    }
 }
 
-.freebie-wrap {
+.main-post-wrap {
    a {
-      .freebie-thumbnail {
+      .postThumbnail {
          position: relative;
          img {
             position: relative;
