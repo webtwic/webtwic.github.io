@@ -136,7 +136,7 @@
 
 .btn-facebook, .btn-fb {
   background: $facebook;
-  border-color: #334E84;
+  @include social_border($facebook);
 }
 
 .btn-facebook.hover:hover, .btn-fb.hover:hover {
@@ -146,7 +146,7 @@
 
 .btn-twitter, .btn-twt {
   background: $twitter;
-  border-color: #2D9CEE;
+  @include social_border($twitter);
 }
 
 .btn-twitter.hover:hover, .btn-twt.hover:hover:hover {
@@ -156,7 +156,7 @@
 
 .btn-google, .btn-gp {
   background: $google;
-  border-color: #BA341D;
+  @include social_border($google);
 }
 
 .btn-google.hover:hover, .btn-gp.hover:hover {
@@ -166,12 +166,12 @@
 
 .btn-github {
   background: $github;
-  border-color: #3E3E3E;
+  @include social_border($github);
 }
 
 .btn-tumblr, .btn-tmb {
   background: $tumblr;
-  border-color: #2D3E54;
+  @include social_border($tumblr);
 }
 
 .btn-tumblr.hover:hover, .btn-tmb.hover:hover {
@@ -181,7 +181,7 @@
 
 .btn-pinterest, .btn-pin {
   background: $pinterest;
-  border-color: #9B0001;
+  @include social_border($pinterest);
 }
 
 .btn-pinterest.hover:hover, .btn-pin.hover:hover {
@@ -191,7 +191,7 @@
 
 .btn-linkedin, .btn-in {
   background: $linkedin;
-  border-color: #0764A2;
+  @include social_border($linkedin);
 }
 
 .btn-linkedin.hover:hover, .btn-in.hover:hover {
