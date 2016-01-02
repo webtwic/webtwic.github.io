@@ -98,7 +98,7 @@
 }
 
 @mixin social_hover($background) {
-   background: lighten($background, 7.5%);
+   background: lighten($background, 4.5%);
 }
 
 @mixin social_border($background) {
@@ -106,7 +106,7 @@
 }
 
 @mixin social_border_hover($background) {
-   border-color: lighten($background, 7.5%);
+   border-color: lighten($background, 4.5%);
 }
 
 @mixin opacity($opacity) {
