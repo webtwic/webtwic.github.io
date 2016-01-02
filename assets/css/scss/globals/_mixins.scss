@@ -105,6 +105,10 @@
    border-color: darken($background, 6.5%);
 }
 
+@mixin social_border_hover($background) {
+   border-color: lighten($background, 7.5%);
+}
+
 @mixin opacity($opacity) {
    opacity: $opacity;
    $opacity-ie: $opacity * 100;
