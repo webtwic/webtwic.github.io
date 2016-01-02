@@ -36,7 +36,7 @@ body {
       margin-bottom: 30px;
       li {
          @extend [class*="-column"];
-         @include border-radius(3px 3px 0 0);
+         @include border-radius(2px 2px 0 0);
          @include box-shadow( 0px 0px 5px rgba(0, 0, 0, .1) );
          position: relative;
          width: 18.5%;
@@ -99,7 +99,7 @@ ul.freebie-list {
          position: relative;
          img {
             position: relative;
-            @include border-radius(3px 3px 0 0);
+            @include border-radius(2px 2px 0 0);
             display: block;
          }
       }
