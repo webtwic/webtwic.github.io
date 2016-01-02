@@ -1,6 +1,6 @@
 /* Start Site footer */
 
-.main .site-footer {
+.site-footer {
   background: #273340;
   margin-top: 60px;
   display: block;
@@ -8,15 +8,15 @@
   width: auto;
   padding: 32px 0 20px 0;
   height: 430px;
+  .footer-inner {
+     max-width: 1309px;
+     height: $full;
+     margin-left: auto;
+     margin-right: auto;
+     width: $full;
+  }
 }
 
-.site-footer .footer-inner {
-  max-width: 1309px;
-  height: $full;
-  margin-left: auto;
-  margin-right: auto;
-  width: $full;
-}
 
 #colophon {
   .footer-logo {
@@ -168,6 +168,9 @@
 	 font-family: $basefont;
 	 color: $white;
 	 font-size: 1em;
+    &:nth-child(2) {
+      color: #6D8299;
+   }
   }
   .colophon-link {
 	 font-family: $font-alt;

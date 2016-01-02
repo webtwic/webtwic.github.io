@@ -3047,7 +3047,7 @@ body.contact-page .site-content {
   width: 100%; }
 
 /* Start Site footer */
-.main .site-footer {
+.site-footer {
   background: #273340;
   margin-top: 60px;
   display: block;
@@ -3055,13 +3055,12 @@ body.contact-page .site-content {
   width: auto;
   padding: 32px 0 20px 0;
   height: 430px; }
-
-.site-footer .footer-inner {
-  max-width: 1309px;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%; }
+  .site-footer .footer-inner {
+    max-width: 1309px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
 
 #colophon .footer-logo {
   background: url(/img/webtwic-logos.png) -32px -159px no-repeat;
@@ -3209,6 +3208,8 @@ body.contact-page .site-content {
     font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
     color: #fff;
     font-size: 1em; }
+    #site-info span:nth-child(2) {
+      color: #6D8299; }
   #site-info .colophon-link {
     font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
     letter-spacing: .01em;
