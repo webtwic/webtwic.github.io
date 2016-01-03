@@ -11,9 +11,6 @@
 
 */
 
-var s;
-s = $(window).scrollTop();
-
 jQuery(document).ready(function() {
 
 	// Define Variables
