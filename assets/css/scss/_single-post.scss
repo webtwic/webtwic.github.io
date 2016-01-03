@@ -250,13 +250,22 @@ body.single-post .entry-wrap .main-page {
   }
   blockquote {
 	 font-family: $font-alt;
-	 border-left: 3px solid #D7E4E1;
 	 position: relative;
 	 font-style: italic;
 	 font-size: 2em;
-	 padding-left: 1em;
-	 color: $basecolor;
+	 padding: 10px 1em;
+	 background-color: rgba(102, 153, 204, .9);
+    color: $white;
+    @extend .radius-alter;
 	 font-weight: 400;
+    &:before {
+      content:"\f10d";
+      margin-right: 10px;
+   }
+   &:after {
+      content:"\f10e";
+      margin-left: 10px;
+   }
   }
   .entry-image-small {
 	 width: $full;
