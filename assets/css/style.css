@@ -2517,9 +2517,8 @@ body.single-post .entry-wrap .main-page {
   position: relative;
   font-style: italic;
   font-size: 2em;
-  padding: 10px 1em;
-  background-color: rgba(102, 153, 204, 0.9);
-  color: #fff;
+  padding-left: 1em;
+  color: #6699cc;
   font-weight: 400; }
 .entry-content blockquote:before {
   content: "\f10d";

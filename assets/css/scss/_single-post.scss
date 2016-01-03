@@ -253,9 +253,9 @@ body.single-post .entry-wrap .main-page {
 	 position: relative;
 	 font-style: italic;
 	 font-size: 2em;
-	 padding: 10px 1em;
-	 background-color: rgba(102, 153, 204, .9);
-    color: $white;
+	 padding-left: 1em;
+	//  background-color: rgba(102, 153, 204, .9);
+    color: $basecolor;
     @extend .radius-alter;
 	 font-weight: 400;
     &:before {
