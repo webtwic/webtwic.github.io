@@ -105,10 +105,13 @@
    border-color: darken($background, 6.5%);
 }
 
+<<<<<<< HEAD
 @mixin social_border_hover($background) {
    border-color: lighten($background, 4.5%);
 }
 
+=======
+>>>>>>> parent of 19f354b... Create social_border_hover mixin
 @mixin opacity($opacity) {
    opacity: $opacity;
    $opacity-ie: $opacity * 100;
