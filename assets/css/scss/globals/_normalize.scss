@@ -26,10 +26,15 @@ audio:not([controls]) {
 }
 
 a {
-  background-color: transparent;
-  &:active, &:hover {
+  &:visited, &:active, &:focus {
+    background-color: transparent;
+    @include transition(all .3s ease);
+    text-decoration: none;
+    color: #999;
     outline: 0;
   }
+  text-decoration: none;
+  color: #999;
 }
 
 svg:not(:root) {
@@ -145,15 +150,6 @@ td, th {
 
 keygen, input, iframe, label, table, textarea, select, button {
   font-family: $basefont;
-}
-
-a {
-  &:visited, &:active, &:focus {
-    text-decoration: none;
-    color: #999;
-  }
-  text-decoration: none;
-  color: #999;
 }
 
 nav {
