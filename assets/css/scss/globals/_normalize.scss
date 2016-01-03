@@ -26,15 +26,15 @@ audio:not([controls]) {
 }
 
 a {
-  &:visited, &:active, &:focus {
-    background-color: transparent;
-    @include transition(all .3s ease);
-    text-decoration: none;
-    color: #999;
-    outline: 0;
-  }
-  text-decoration: none;
-  color: #999;
+   @include transition(all .3s ease);
+   text-decoration: none;
+   color: #999;
+   &:visited, &:active, &:focus {
+      background-color: transparent;
+      text-decoration: none;
+      color: #999;
+      outline: 0;
+    }
 }
 
 svg:not(:root) {
