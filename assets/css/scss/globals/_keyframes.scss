@@ -64,7 +64,7 @@
 }
 
 
-@include keyframes (rotate-scale) {
+@include keyframes (rotate) {
   0% {
      -webkit-transform: rotate(0deg);
      -moz-transform: rotate(0deg);

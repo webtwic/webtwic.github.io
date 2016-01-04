@@ -262,7 +262,7 @@ dfn {
     -ms-transform: rotate(359deg);
     -o-transform: rotate(359deg);
     transform: rotate(359deg); } }
-@-webkit-keyframes rotate-scale {
+@-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -281,7 +281,7 @@ dfn {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-@-moz-keyframes rotate-scale {
+@-moz-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -300,7 +300,7 @@ dfn {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-@-ms-keyframes rotate-scale {
+@-ms-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -319,7 +319,7 @@ dfn {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-@-o-keyframes rotate-scale {
+@-o-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -338,7 +338,7 @@ dfn {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-@keyframes rotate-scale {
+@keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
