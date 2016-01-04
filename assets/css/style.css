@@ -2517,7 +2517,7 @@ body.single-post .entry-wrap .main-page {
   position: relative;
   font-style: italic;
   font-size: 2em;
-  padding-left: 1em;
+  padding-left: .8em;
   color: #6699cc;
   font-weight: 400; }
   .entry-content blockquote:before {
