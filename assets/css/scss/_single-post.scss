@@ -287,8 +287,8 @@ body.single-post .entry-wrap .main-page {
 	 border-bottom: $ui_border;
 	 margin-bottom: 0px;
 	 a {
-		@include transition(all .5s);
-		padding: 16px 18px;
+		@include transition(all .5s ease);
+		padding: 13px 15px;
 		position: relative;
 		color: $white;
 		font-size: 1.05em;
