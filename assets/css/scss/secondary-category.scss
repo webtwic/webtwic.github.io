@@ -83,9 +83,9 @@ body {
       border-bottom-color: transparent;
       background: transparent !important;
       display: inline-block;
-      -webkit-animation: rotate-scale .5s 0s linear infinite;
-      -moz-animation: rotate-scale .5s 0s linear infinite;
-      animation: rotate-scale .5s 0s linear infinite;
+      -webkit-animation: rotate .5s 0s linear infinite;
+      -moz-animation: rotate .5s 0s linear infinite;
+      animation: rotate .5s 0s linear infinite;
       vertical-align: text-bottom;
    }
 }
