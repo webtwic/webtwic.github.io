@@ -2548,8 +2548,9 @@ body.single-post .entry-wrap .main-page {
     padding: 13px 15px;
     position: relative;
     color: #fff;
-    font-size: 1.05em;
-    margin-right: 5px; }
+    font-size: .9em;
+    margin-right: 5px;
+    font-weight: 600; }
     .post-content-column article .secondary-share a .webtwicons {
       position: relative;
       margin-right: 10px; }
