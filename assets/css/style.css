@@ -2407,7 +2407,7 @@ body.single-post .entry-wrap .main-page {
     .article-meta .article-meta-inner .share-icons a {
       position: relative;
       display: inline-block;
-      width: 13%;
+      padding: 0 14px;
       height: 100%;
       -webkit-transition: 0.5s ease;
       -moz-transition: 0.5s ease;
@@ -2417,6 +2417,7 @@ body.single-post .entry-wrap .main-page {
       margin-right: 5px;
       border: none; }
       .article-meta .article-meta-inner .share-icons a .webtwicons {
+        display: inline-block;
         position: absolute;
         color: #fff;
         padding: 5px;
@@ -2425,10 +2426,10 @@ body.single-post .entry-wrap .main-page {
         vertical-align: middle;
         font-size: 1.2em; }
       .article-meta .article-meta-inner .share-icons a span.share-counter {
-        display: block;
+        margin: 8.5px 0 8.5px 29px;
+        display: inline-block;
         color: #e6e6e6;
         text-align: right;
-        margin: 8.5px 13px;
         font-size: .9em; }
   .article-meta .article-meta-inner .cta-btns {
     position: relative;
