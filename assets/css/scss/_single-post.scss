@@ -210,6 +210,9 @@ body.single-post .entry-wrap .main-page {
    h1, h2, h3, h4, h5, h6 {
       color: $title-color;
       & code {
+         font-size-adjust: .5;
+         font-size: .8em;
+         font-family: $code_font;
          background: #E8F5F2;
          padding: 1px 3.6px;
          color: $basecolor;
@@ -246,7 +249,7 @@ body.single-post .entry-wrap .main-page {
       margin-left: -50px;
       width: 112%;
       pre {
-         font-family: Consolas, "Source Code Pro", Menlo, Monaco, monospace;
+         font-family: $code_font_alt;
          background: #282c34;
          // background: #E8F5F2;
          white-space: pre-line;
