@@ -3088,7 +3088,7 @@ body.contact-page .site-content {
     width: 100%; }
 
 #colophon .footer-logo {
-  background: url(/img/webtwic-logos.png) -32px -159px no-repeat;
+  background: url("/img/webtwic-logos.png") -32px -159px no-repeat;
   margin-left: auto;
   margin-right: auto;
   width: 227px;

@@ -20,7 +20,7 @@
 
 #colophon {
    .footer-logo {
-      background: url(/img/webtwic-logos.png) -32px -159px no-repeat;
+      @include logo(-32px -159px);
       margin-left: auto;
       margin-right: auto;
       width: 227px;
