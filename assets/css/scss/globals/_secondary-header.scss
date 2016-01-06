@@ -1,243 +1,243 @@
 @media screen and (min-width: 860px) {
-  .main header.secondary-header {
-	 margin-bottom: 240px;
-	 background: $white;
-	 position: fixed;
-	 z-index: 9999;
-	 height: 63px;
-	 width: auto;
-	 right: 0;
-	 left: 0;
-	 top: 0;
-  }
-  header.secondary-header {
-	 .logo {
-		height: $full;
-		width: 163px;
-		margin-top: 0px;
-		padding-left: 6px;
-		float: left;
-		position: relative;
-		border-right: 1.9px solid $border;
-		.desktop_logo {
-		  @include logo(-1px -99px);
-		  text-indent: -99999px;
-		  font-size: 40px;
-		  display: block;
-		  color: $basecolor;
-		  height: $full;
-		  width: $full;
-		  position: relative;
-		  margin-top: 6px;
-		}
-	 }
-	 nav.secondary-menu {
-		float: left;
-		height: $full;
-		width: auto;
-		line-height: 30px;
-		padding-right: 15px;
-	 }
-  }
-  .secondary-menu {
-	 > ul.nav-ul li {
-		position: relative;
-	 }
-	 .drop-nav {
-		margin-top: 2px;
-	 }
-	 li {
-		text-align: center;
-		list-style: none;
-		display: inline-block;
-		height: 99%;
-		margin: 0px auto;
-	 }
-	 .drop-nav li {
-		height: 55px !important;
-		a {
-		  height: $full;
-		}
-	 }
-	 .active-item svg {
-		left: 2.5em;
-		top: 3.5em;
-	 }
-  }
-  .main nav.secondary-menu {
-	 li > a {
-		text-transform: uppercase;
-		letter-spacing: .02em;
-		font-size: .94em;
-		padding: 5.4px 23px;
-		display: block;
-		line-height: 52px;
-	 }
-	 .drop-nav li a {
-		padding: 0px 55px;
-	 }
-	 a svg.dropdown-arrow {
-		top: 1.4em;
-		right: 8px;
-	 }
-  }
-  header.secondary-header .header-follow-search {
-	 height: $full;
-	 display: inline-block;
-	 position: relative;
-	 float: right;
-  }
-  .header-follow-search {
-	 .search-wrap {
-		@include transition(background .3s ease);
-		position: relative;
-		background: $white;
-		float: right;
-		height: $full;
-		display: block;
-		padding: 0 8px;
-		cursor: pointer;
-		&:hover {
-		  background: #F4F4F4;
-		  > svg {
-			 fill: #666;
-		  }
-		}
-	 }
-	 svg {
-		position: relative;
-	 }
-	 .search-wrap > svg {
-		width: 18px;
-		height: 16px;
-		margin: 24px 10px;
-		fill: #777;
-	 }
-	 .ui-overlay-search {
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		background: rgba(39, 51, 64, .99);
-		display: none;
-		z-index: 99999;
-	 }
-  }
-  .ui-overlay-search {
-	 .close-icon {
-		float: right;
-		position: relative;
-		cursor: pointer;
-		fill: $white;
-		padding: 10px;
-		svg {
-		  width: 50px;
-		  height: 50px;
-		}
-	 }
-	 .spin {
-		-webkit-animation: spin .3s 1 linear;
-		-moz-animation: spin .3s 1 linear;
-		animation: spin .3s 1 linear;
-	 }
-	 .search-input {
-		position: relative;
-		width: 60%;
-		display: block;
-		margin: 20% auto 20% auto;
-		form {
-		  input {
-			 @include border-radius(2px);
-			 position: relative;
-			 border-style: solid;
-			 border-color: #3B4A5A;
-			 border-width: 0 0 1px 0;
-			 background: transparent;
-			 font-size: 1.1em;
-			 padding: 5px 2px;
-			 display: block;
-			 width: $full;
-			 color: $white;
-			 &::placeholder {
-				color: #6D8299;
-			 }
-			 &::-webkit-input-placeholder {
-				color: #6D8299;
-			 }
-			 &::-ms-input-placeholder {
-				color: #6D8299;
-			 }
-			 &:-ms-input-placeholder{
-				color: #6D8299;
-			 }
-			 &::-moz-placeholder {
-				color: #6D8299;
-			 }
-		  }
-		  #__expand {
-			 @include transition(width ease 1s);
-			 @include border-radius(2px);
-			 background: $white;
-			 height: 2px;
-			 position: relative;
-			 display: block;
-			 z-index: 50;
-			 width: 10%;
-			 &.visible {
-				display: block;
-				width: 100.3%;
-			 }
-		  }
-		}
-		p {
-		  text-align: center;
-		  font-size: 1.05em;
-		  color: #6D8299;
-		}
-	 }
-  }
-  .header-follow-search {
-	 > .follow-icons {
-		height: $full;
-		display: inline-block;
-		border-right: $ui_border;
-		border-left: $ui_border;
-		padding: 0 14px;
-	 }
-	 .follow-icons a {
-		display: inline-block;
-		margin-right: 16px;
-		&:hover .webtwicons {
-		  @include transform(scale(1.2));
-		}
-		.webtwicons {
-		  @include transition(transform ease .2s);
-		  display: inline-block;
-		  margin: 21px 3px;
-		  font-size: 1.09em;
-		}
-		&:nth-child(1) .facebook-official {
-		  color: #3B599A;
-		}
-		&:nth-child(2) .twitter-icon {
-		  color: #50ABF1;
-		}
-		&:nth-child(3) .google-plus-icon {
-		  color: #DC4E41;
-		}
-		&:nth-child(4) .youtube-icon {
-		  color: #CD201F;
-		}
-		&:nth-child(5) .instagram-icon {
-		  color: #125688;
-		}
-		&:nth-child(6) .pinterest-icon {
-		  color: #BD081C;
-		}
-		&:nth-child(7) .linkedin-square {
-		  color: #0077B5;
-		}
-	 }
-  }
+   .main header.secondary-header {
+      margin-bottom: 240px;
+      background: $white;
+      position: fixed;
+      z-index: 9999;
+      height: 63px;
+      width: auto;
+      right: 0;
+      left: 0;
+      top: 0;
+   }
+   header.secondary-header {
+      .logo {
+         height: $full;
+         width: 163px;
+         margin-top: 0px;
+         padding-left: 6px;
+         float: left;
+         position: relative;
+         border-right: 1.9px solid $border;
+         .desktop_logo {
+            @include logo(-1px -99px);
+            text-indent: -99999px;
+            font-size: 40px;
+            display: block;
+            color: $basecolor;
+            height: $full;
+            width: $full;
+            position: relative;
+            margin-top: 6px;
+         }
+      }
+      nav.secondary-menu {
+         float: left;
+         height: $full;
+         width: auto;
+         line-height: 30px;
+         padding-right: 15px;
+      }
+   }
+   .secondary-menu {
+      > ul.nav-ul li {
+         position: relative;
+      }
+      .drop-nav {
+         margin-top: 2px;
+      }
+      li {
+         text-align: center;
+         list-style: none;
+         display: inline-block;
+         height: 99%;
+         margin: 0px auto;
+      }
+      .drop-nav li {
+         height: 55px !important;
+         a {
+            height: $full;
+         }
+      }
+      .active-item svg {
+         left: 2.5em;
+         top: 3.5em;
+      }
+   }
+   .main nav.secondary-menu {
+      li > a {
+         text-transform: uppercase;
+         letter-spacing: .02em;
+         font-size: .94em;
+         padding: 5.4px 23px;
+         display: block;
+         line-height: 52px;
+      }
+      .drop-nav li a {
+         padding: 0px 55px;
+      }
+      a svg.dropdown-arrow {
+         top: 1.4em;
+         right: 8px;
+      }
+   }
+   header.secondary-header .header-follow-search {
+      height: $full;
+      display: inline-block;
+      position: relative;
+      float: right;
+   }
+   .header-follow-search {
+      .search-wrap {
+         @include transition(background .3s ease);
+         position: relative;
+         background: $white;
+         float: right;
+         height: $full;
+         display: block;
+         padding: 0 8px;
+         cursor: pointer;
+         &:hover {
+            background: #F4F4F4;
+            > svg {
+               fill: #666;
+            }
+         }
+      }
+      svg {
+         position: relative;
+      }
+      .search-wrap > svg {
+         width: 18px;
+         height: 16px;
+         margin: 24px 10px;
+         fill: #777;
+      }
+      .ui-overlay-search {
+         position: fixed;
+         top: 0;
+         bottom: 0;
+         right: 0;
+         left: 0;
+         background: rgba(39, 51, 64, .99);
+         display: none;
+         z-index: 99999;
+      }
+   }
+   .ui-overlay-search {
+      .close-icon {
+         float: right;
+         position: relative;
+         cursor: pointer;
+         fill: $white;
+         padding: 10px;
+         svg {
+            width: 50px;
+            height: 50px;
+         }
+      }
+      .spin {
+         -webkit-animation: spin .3s 1 linear;
+         -moz-animation: spin .3s 1 linear;
+         animation: spin .3s 1 linear;
+      }
+      .search-input {
+         position: relative;
+         width: 60%;
+         display: block;
+         margin: 20% auto 20% auto;
+         form {
+            input {
+               @include border-radius(2px);
+               position: relative;
+               border-style: solid;
+               border-color: #3B4A5A;
+               border-width: 0 0 1px 0;
+               background: transparent;
+               font-size: 1.1em;
+               padding: 5px 2px;
+               display: block;
+               width: $full;
+               color: $white;
+               &::placeholder {
+                  color: #6D8299;
+               }
+               &::-webkit-input-placeholder {
+                  color: #6D8299;
+               }
+               &::-ms-input-placeholder {
+                  color: #6D8299;
+               }
+               &:-ms-input-placeholder{
+                  color: #6D8299;
+               }
+               &::-moz-placeholder {
+                  color: #6D8299;
+               }
+            }
+            #__expand {
+               @include transition(width ease 1s);
+               @include border-radius(2px);
+               background: $white;
+               height: 2px;
+               position: relative;
+               display: block;
+               z-index: 50;
+               width: 10%;
+               &.visible {
+                  display: block;
+                  width: 100.3%;
+               }
+            }
+         }
+         p {
+            text-align: center;
+            font-size: 1.05em;
+            color: #6D8299;
+         }
+      }
+   }
+   .header-follow-search {
+      > .follow-icons {
+         height: $full;
+         display: inline-block;
+         border-right: $ui_border;
+         border-left: $ui_border;
+         padding: 0 14px;
+      }
+      .follow-icons a {
+         display: inline-block;
+         margin-right: 16px;
+         &:hover .webtwicons {
+            @include transform(scale(1.2));
+         }
+         .webtwicons {
+            @include transition(transform ease .2s);
+            display: inline-block;
+            margin: 21px 3px;
+            font-size: 1.09em;
+         }
+         &:nth-child(1) .facebook-official {
+            color: #3B599A;
+         }
+         &:nth-child(2) .twitter-icon {
+            color: #50ABF1;
+         }
+         &:nth-child(3) .google-plus-icon {
+            color: #DC4E41;
+         }
+         &:nth-child(4) .youtube-icon {
+            color: #CD201F;
+         }
+         &:nth-child(5) .instagram-icon {
+            color: #125688;
+         }
+         &:nth-child(6) .pinterest-icon {
+            color: #BD081C;
+         }
+         &:nth-child(7) .linkedin-square {
+            color: #0077B5;
+         }
+      }
+   }
 }

@@ -1,124 +1,124 @@
 
 @media screen and (max-width: 860px) {
-  svg.dropdown-arrow, .header-follow-search, .secondary-header, #header {
-	 display: none;
-  }
-  .main .mobile-header {
-	@include box-shadow(0px 0px 7px rgba(0, 0, 0, .1));
-	 z-index: 9999;
-	 background: $white;
-	 position: fixed;
-	 display: block;
-	 height: 60px;
-	 width: auto;
-	 right: 0px;
-	 left: 0px;
-	 top: 0px;
-	 .mobile_logo {
-		@include logo(1px -96px);
-		width: 160px;
-		height: $full;
-		display: block;
-		vertical-align: middle;
-		float: left;
-		border-right: $ui_border;
-	 }
-	 .mobile-nav {
-		float: right;
-		// display: block !important;
-		background: #273340;
-		position: fixed;
-		top: 60px;
-		right: 0;
-		padding: 10px 15px;
-		width: 30%;
-		li {
-		  position: relative;
-		  text-align: right;
-		  text-transform: uppercase;
-		  font-size: .9em;
-		  font-weight: 400;
-		  letter-spacing: .062em;
-		  margin-bottom: 20px;
-		  a {
-			 position: relative;
-			 color: #f9f9f9;
-		  }
-		}
-	 }
-  }
-  .active-item svg {
-	 display: none;
-  }
-  .hamburger {
-	 display: block;
-	 float: right;
-	 width: 26px;
-	 height: 20px;
-	 cursor: pointer;
-	 position: relative;
-	 margin: 20px 10px;
-	 .bar {
-		@include transition(background, opacity, transform .2s ease-in-out 0s);
-		@include transform(rotate(0));
-		@include border-radius(2px);
-		background: #7B8B8E;
-		display: block;
-		width: $full;
-		cursor: pointer;
-		height: 2.5px;
-		position: absolute;
-		&:nth-child(2) {
-		  top: 7px;
-		}
-		&:nth-child(3) {
-		  top: 14px;
-		}
-	 }
-	 &.is_active .bar {
-		margin-top: -5px;
-		&:nth-child(1) {
-		  @include transform(rotate(135deg));
-		  opacity: 1;
-		  top: 14px;
-		}
-		&:nth-child(2) {
-		  opacity: 0;
-		}
-		&:nth-child(3) {
-		  @include transform(rotate(45deg));
-		  opacity: 1;
-		}
-	 }
-  }
-  #responsive {
-	 .mobile-header {
-		display: block;
-	 }
-	 .header-follow-search {
-		display: none;
-	 }
-  }
-  .site-content [class*="-column"] {
-	 float: none;
-	 width: $full !important;
-  }
+   svg.dropdown-arrow, .header-follow-search, .secondary-header, #header {
+      display: none;
+   }
+   .main .mobile-header {
+      @include box-shadow(0px 0px 7px rgba(0, 0, 0, .1));
+      z-index: 9999;
+      background: $white;
+      position: fixed;
+      display: block;
+      height: 60px;
+      width: auto;
+      right: 0px;
+      left: 0px;
+      top: 0px;
+      .mobile_logo {
+         @include logo(1px -96px);
+         width: 160px;
+         height: $full;
+         display: block;
+         vertical-align: middle;
+         float: left;
+         border-right: $ui_border;
+      }
+      .mobile-nav {
+         float: right;
+         // display: block !important;
+         background: #273340;
+         position: fixed;
+         top: 60px;
+         right: 0;
+         padding: 10px 15px;
+         width: 30%;
+         li {
+            position: relative;
+            text-align: right;
+            text-transform: uppercase;
+            font-size: .9em;
+            font-weight: 400;
+            letter-spacing: .062em;
+            margin-bottom: 20px;
+            a {
+               position: relative;
+               color: #f9f9f9;
+            }
+         }
+      }
+   }
+   .active-item svg {
+      display: none;
+   }
+   .hamburger {
+      display: block;
+      float: right;
+      width: 26px;
+      height: 20px;
+      cursor: pointer;
+      position: relative;
+      margin: 20px 10px;
+      .bar {
+         @include transition(background, opacity, transform .2s ease-in-out 0s);
+         @include transform(rotate(0));
+         @include border-radius(2px);
+         background: #7B8B8E;
+         display: block;
+         width: $full;
+         cursor: pointer;
+         height: 2.5px;
+         position: absolute;
+         &:nth-child(2) {
+            top: 7px;
+         }
+         &:nth-child(3) {
+            top: 14px;
+         }
+      }
+      &.is_active .bar {
+         margin-top: -5px;
+         &:nth-child(1) {
+            @include transform(rotate(135deg));
+            opacity: 1;
+            top: 14px;
+         }
+         &:nth-child(2) {
+            opacity: 0;
+         }
+         &:nth-child(3) {
+            @include transform(rotate(45deg));
+            opacity: 1;
+         }
+      }
+   }
+   #responsive {
+      .mobile-header {
+         display: block;
+      }
+      .header-follow-search {
+         display: none;
+      }
+   }
+   .site-content [class*="-column"] {
+      float: none;
+      width: $full !important;
+   }
 }
 
 @media screen and (max-width: 860px) {
-  body.home .site-content {
-	 margin: auto auto 0px;
-  }
-  .featured-posts-column {
-	 margin-bottom: 20px;
-  }
-  .tech-news-wrap {
-	 margin-top: 0;
-  }
-  .tech_news_break {
-	 display: none;
-  }
-  .sidebar-column, .pagination, #site-info, #colophon, .line, .bug {
-	 display: none !important;
-  }
+   body.home .site-content {
+      margin: auto auto 0px;
+   }
+   .featured-posts-column {
+      margin-bottom: 20px;
+   }
+   .tech-news-wrap {
+      margin-top: 0;
+   }
+   .tech_news_break {
+      display: none;
+   }
+   .sidebar-column, .pagination, #site-info, #colophon, .line, .bug {
+      display: none !important;
+   }
 }

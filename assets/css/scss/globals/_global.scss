@@ -1,16 +1,16 @@
 @-ms-viewport {
-  width: device-width;
+   width: device-width;
 }
 
 
 @viewport {
-  width: device-width;
+   width: device-width;
 }
 
 
 ::-webkit-selection {
-  background: $grey;
-  color: $text-color;
+   background: $grey;
+   color: $text-color;
 }
 ::-moz-selection {
    background: $grey;
@@ -34,9 +34,9 @@
 }
 
 ::placeholder {
-  font-family: $font-alt;
-  font-weight: 300;
-  color: #999;
+   font-family: $font-alt;
+   font-weight: 300;
+   color: #999;
 }
 ::-moz-placeholder {
    font-family: $font-alt;
@@ -60,38 +60,38 @@
 }
 
 * {
-  font-family: $basefont;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  &:before, &:after {
-	 -webkit-box-sizing: border-box;
-	 -moz-box-sizing: border-box;
-	 box-sizing: border-box;
-	 font-family: $icon;
-  }
+   font-family: $basefont;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   &:before, &:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: $icon;
+   }
 }
 
 html {
-  -webkit-text-size-adjust: $full;
-  -ms-text-size-adjust: $full;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-size: $full;
-  font-family: $basefont;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  clear: both;
+   -webkit-text-size-adjust: $full;
+   -ms-text-size-adjust: $full;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   font-size: $full;
+   font-family: $basefont;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   clear: both;
 }
 
 body {
-  font-family: $basefont;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  clear: both;
-  width: $full;
-  line-height: 1.5;
-  margin: 0 auto;
-  padding: 0em;
-  background: #F3F4F6;
+   font-family: $basefont;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   clear: both;
+   width: $full;
+   line-height: 1.5;
+   margin: 0 auto;
+   padding: 0em;
+   background: #F3F4F6;
 }

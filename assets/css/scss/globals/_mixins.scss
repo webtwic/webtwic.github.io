@@ -1,80 +1,80 @@
 
 /* ==========================================================================
    Mixins
-   ========================================================================== */
+========================================================================== */
 
 @mixin border-radius($radius: 2px) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  -o-border-radius: $radius;
-  border-radius: $radius;
+   -webkit-border-radius: $radius;
+   -moz-border-radius: $radius;
+   -ms-border-radius: $radius;
+   -o-border-radius: $radius;
+   border-radius: $radius;
 }
 
 @mixin transform($transform) {
-  -webkit-transform: $transform;
-  -moz-transform: $transform;
-  -ms-transform: $transform;
-  -o-transform: $transform;
-  transform: $transform;
+   -webkit-transform: $transform;
+   -moz-transform: $transform;
+   -ms-transform: $transform;
+   -o-transform: $transform;
+   transform: $transform;
 }
 
 @mixin transition($transitions...) {
-  $unfoldedTransitions: ();
-  @each $transition in $transitions {
-    $unfoldedTransitions: append($unfoldedTransitions, unfoldTransition($transition), comma);
-  }
+   $unfoldedTransitions: ();
+   @each $transition in $transitions {
+      $unfoldedTransitions: append($unfoldedTransitions, unfoldTransition($transition), comma);
+   }
 
-  -webkit-transition: $unfoldedTransitions;
-  -moz-transition: $unfoldedTransitions;
-  -ms-transition: $unfoldedTransitions;
-  -o-transition: $unfoldedTransitions;
-  transition: $unfoldedTransitions;
+   -webkit-transition: $unfoldedTransitions;
+   -moz-transition: $unfoldedTransitions;
+   -ms-transition: $unfoldedTransitions;
+   -o-transition: $unfoldedTransitions;
+   transition: $unfoldedTransitions;
 }
 
 @function unfoldTransition ($transition) {
-  // Default values
-  $property: all;
-  $duration: .2s;
-  $easing: null; // Browser default is ease, which is what we want
-  $delay: null; // Browser default is 0, which is what we want
-  $defaultProperties: ($property, $duration, $easing, $delay);
+   // Default values
+   $property: all;
+   $duration: .2s;
+   $easing: null; // Browser default is ease, which is what we want
+   $delay: null; // Browser default is 0, which is what we want
+   $defaultProperties: ($property, $duration, $easing, $delay);
 
-  // Grab transition properties if they exist
-  $unfoldedTransition: ();
-  @for $i from 1 through length($defaultProperties) {
-    $p: null;
-    @if $i <= length($transition) {
-      $p: nth($transition, $i)
-    } @else {
-      $p: nth($defaultProperties, $i)
-    }
-    $unfoldedTransition: append($unfoldedTransition, $p);
-  }
+   // Grab transition properties if they exist
+   $unfoldedTransition: ();
+   @for $i from 1 through length($defaultProperties) {
+      $p: null;
+      @if $i <= length($transition) {
+         $p: nth($transition, $i)
+      } @else {
+         $p: nth($defaultProperties, $i)
+      }
+      $unfoldedTransition: append($unfoldedTransition, $p);
+   }
 
-  @return $unfoldedTransition;
+   @return $unfoldedTransition;
 }
 
 @mixin keyframes($animation-name) {
-    @-webkit-keyframes #{$animation-name} {
-        @content;
-    }
+   @-webkit-keyframes #{$animation-name} {
+      @content;
+   }
 
-    @-moz-keyframes #{$animation-name} {
-        @content;
-    }
+   @-moz-keyframes #{$animation-name} {
+      @content;
+   }
 
-    @-ms-keyframes #{$animation-name} {
-        @content;
-    }
+   @-ms-keyframes #{$animation-name} {
+      @content;
+   }
 
-    @-o-keyframes #{$animation-name} {
-        @content;
-    }
+   @-o-keyframes #{$animation-name} {
+      @content;
+   }
 
-    @keyframes #{$animation-name} {
-        @content;
-    }
+   @keyframes #{$animation-name} {
+      @content;
+   }
 }
 
 @mixin box-shadow($box-shadow) {
