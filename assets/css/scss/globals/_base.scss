@@ -199,6 +199,11 @@
    border-color: #1B78B6;
 }
 
+.btn-email, .btn-mail {
+   background: $email;
+   border-color: #4D4D4D;
+}
+
 .flat, .flat-button, .flat-btn {
    border: 0 none !important;
    outline: 0 none !important;
