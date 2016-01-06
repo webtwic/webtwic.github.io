@@ -82,6 +82,9 @@
          &:nth-child(4) {
             border-color: #464646;
          }
+         &:last-child {
+            margin-right: 0;
+         }
          &:nth-child(1):hover {
             background: #3B599A;
          }

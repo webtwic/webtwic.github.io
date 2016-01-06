@@ -3144,6 +3144,8 @@ body.contact-page .site-content {
     border-color: #DC4E41; }
   #colophon .social-buttons .btn-footer:nth-child(4) {
     border-color: #464646; }
+  #colophon .social-buttons .btn-footer:last-child {
+    margin-right: 0; }
   #colophon .social-buttons .btn-footer:nth-child(1):hover {
     background: #3B599A; }
   #colophon .social-buttons .btn-footer:nth-child(2):hover {
