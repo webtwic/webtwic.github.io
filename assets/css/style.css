@@ -2520,13 +2520,16 @@ body.single-post .entry-wrap .main-page {
   .entry-content a:hover {
     color: inherit;
     border-bottom: 1px solid #4E697D; }
-.entry-content div.snippet pre {
-  font-family: Consolas, "Source Code Pro", Menlo, Monaco, monospace;
-  background: #E8F5F2;
+.entry-content div.snippet {
+  position: relative;
   margin-left: -50px;
-  width: 111.75%;
-  white-space: pre-line;
-  padding: 50px; }
+  width: 112%; }
+  .entry-content div.snippet pre {
+    font-family: Consolas, "Source Code Pro", Menlo, Monaco, monospace;
+    background: #282c34;
+    white-space: pre-line;
+    padding: 50px 40px;
+    color: #fff; }
 .entry-content blockquote {
   font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
   position: relative;
