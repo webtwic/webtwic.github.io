@@ -65,7 +65,7 @@ article.post-wrap {
       @extend .radius-alt;
       height: auto;
       &:hover {
-         opacity: .8;
+         @include opacity(.8);
       }
       &[alt] {
          font-family: $font-alt;

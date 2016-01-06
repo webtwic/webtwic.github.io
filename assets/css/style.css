@@ -1976,7 +1976,8 @@ article.post-wrap {
     transition: opacity 0.5s ease-out 0.01s;
     height: auto; }
     .post-thumbnail img:hover {
-      opacity: .8; }
+      opacity: 0.8;
+      filter: alpha(opacity=80); }
     .post-thumbnail img[alt] {
       font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
       text-transform: capitalize;
