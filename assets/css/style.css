@@ -362,27 +362,27 @@ dfn {
 @viewport {
   width: device-width; }
 ::-webkit-selection {
-  background: #EEEEEE;
+  background: rgba(238, 238, 238, 0.9);
   color: #597488; }
 
 ::-moz-selection {
-  background: #EEEEEE;
+  background: rgba(238, 238, 238, 0.9);
   color: #597488; }
 
 ::-ms-selection {
-  background: #EEEEEE;
+  background: rgba(238, 238, 238, 0.9);
   color: #597488; }
 
 :-ms-selection {
-  background: #EEEEEE;
+  background: rgba(238, 238, 238, 0.9);
   color: #597488; }
 
 ::-o-selection {
-  background: #EEEEEE;
+  background: rgba(238, 238, 238, 0.9);
   color: #597488; }
 
 ::selection {
-  background: #EEEEEE;
+  background: rgba(238, 238, 238, 0.9);
   color: #597488; }
 
 ::placeholder {

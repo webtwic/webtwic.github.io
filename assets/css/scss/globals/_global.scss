@@ -9,27 +9,27 @@
 
 
 ::-webkit-selection {
-   background: $grey;
+   background: rgba($grey, .9);
    color: $text-color;
 }
 ::-moz-selection {
-   background: $grey;
+   background: rgba($grey, .9);
    color: $text-color;
 }
 ::-ms-selection {
-   background: $grey;
+   background: rgba($grey, .9);
    color: $text-color;
 }
 :-ms-selection {
-   background: $grey;
+   background: rgba($grey, .9);
    color: $text-color;
 }
 ::-o-selection {
-   background: $grey;
+   background: rgba($grey, .9);
    color: $text-color;
 }
 ::selection {
-   background: $grey;
+   background: rgba($grey, .9);
    color: $text-color;
 }
 
