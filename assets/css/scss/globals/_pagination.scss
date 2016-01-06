@@ -16,7 +16,7 @@
       font-weight: 700;
       font-size: 1em;
       &:hover {
-         opacity: .9;
+         @include opacity(.9);
          padding: 14px 20.5px;
       }
       &:nth-child(1) {
