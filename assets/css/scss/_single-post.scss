@@ -159,10 +159,10 @@ body.single-post .entry-wrap .main-page {
          padding: 10px;
          border-style: none;
          &.is_active {
-            opacity: 1;
+            @include opacity(1);
          }
          &.is_inactive {
-            opacity: .85;
+            @include opacity(.85);
             cursor: default;
          }
       }
@@ -513,9 +513,9 @@ body.single-post .entry-wrap .main-page {
          display: inline-block;
          margin: 0 15px 25px 15px;
          float: left;
-         opacity: .9;
+         @include opacity(.9);
          &:hover {
-            opacity: 1;
+            @include opacity(1);
          }
       }
    }
