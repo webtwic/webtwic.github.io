@@ -1679,11 +1679,10 @@ iframe a.twitter-timeline {
   border-width: 1px 2px;
   border-color: #f0f0f0;
   border-style: solid;
-  margin-left: -5px;
   margin-top: 10px;
   background: #fff;
   display: block;
-  width: 310px;
+  width: 100%;
   float: left; }
   .freebie-item:hover {
     background: #f5f5f5; }
