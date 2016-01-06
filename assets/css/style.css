@@ -2592,13 +2592,14 @@ body.single-post .entry-wrap .main-page {
 .page-focus-column .post-secondary-column .author-profile {
   width: 100%;
   background: #fff;
-  padding: 10px 20px 0px 0;
+  padding: 10px 20px 15em 0;
   height: 250px;
   color: #4E697D;
   margin-bottom: 20px; }
   .page-focus-column .post-secondary-column .author-profile .author-info-inner {
     position: relative;
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
     .page-focus-column .post-secondary-column .author-profile .author-info-inner a {
       position: relative; }
     .page-focus-column .post-secondary-column .author-profile .author-info-inner .author-avatar {

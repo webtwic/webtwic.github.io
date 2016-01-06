@@ -330,13 +330,14 @@ body.single-post .entry-wrap .main-page {
    .author-profile {
       width: $full;
       background: $white;
-      padding: 10px 20px 0px 0;
+      padding: 10px 20px 15em 0;
       height: 250px;
       color: #4E697D;
       margin-bottom: 10 * $two;
       .author-info-inner {
          position: relative;
          height: $full;
+         width: $full;
          a {
             position: relative;
          }
