@@ -25,3 +25,204 @@
 ..........................
 
 About page heart color: #EF685A
+
+
+
+// pre.snippet {
+//    padding: 25px 50px 50px 50px;
+//    font-family: $code_font;
+//    position: relative;
+//    margin-left: -50px;
+//    width: 111.8%;
+//    display: block;
+//    background: #2c3643;
+//    font-size: .9em;
+//    color: #c7cedb;
+//    white-space: normal;
+//    word-wrap: normal;
+//    * {
+//       font-family: $code_font;
+//    }
+//    code {
+//       text-align: left;
+//       white-space: pre-line;
+//       word-spacing: normal;
+//       word-break: normal;
+//    }
+// }
+// .leading-whitespace {
+//    padding-left: 10px;
+// }
+// .comment {
+//   color: #99a9b3;
+// }
+// .entity.name.type {
+//   color: #ffc83f;
+// }
+// .entity.other.inherited-class {
+//   color: #16c98d;
+// }
+// .keyword {
+//   color: #8abee5;
+// }
+// .keyword.control {
+//   color: #8abee5;
+// }
+// .keyword.operator {
+//   color: #dbe6ec;
+// }
+// .keyword.other.special-method {
+//   color: #288ad6;
+// }
+// .keyword.other.unit {
+//   color: #ffc83f;
+// }
+// .storage {
+//   color: #ff708e;
+// }
+// .constant {
+//   color: #ffc83f;
+// }
+// .constant.character.escape {
+//   color: #0fdebd;
+// }
+// .constant.numeric {
+//   color: #ffc83f;
+// }
+// .constant.other.color {
+//   color: #0fdebd;
+// }
+// .constant.other.symbol {
+//   color: #16c98d;
+// }
+// .variable {
+//   color: #fa5e5b;
+// }
+// .variable.interpolation {
+//   color: #fa5e5b;
+// }
+// .variable.parameter.function {
+//   color: #dbe6ec;
+// }
+// .invalid.illegal {
+//   background-color: #fa5e5b;
+//   color: #2c3643;
+// }
+// .string {
+//   color: #16c98d;
+// }
+// .string.regexp {
+//   color: #0fdebd;
+// }
+// .string.regexp .source.ruby.embedded {
+//   color: #ffc83f;
+// }
+// .string.other.link {
+//   color: #fa5e5b;
+// }
+// .punctuation.definition.comment {
+//   color: #99a9b3;
+// }
+// .punctuation.definition.string,
+// .punctuation.definition.variable,
+// .punctuation.definition.parameters,
+// .punctuation.definition.array {
+//   color: #dbe6ec;
+// }
+// .punctuation.definition.heading,
+// .punctuation.definition.identity {
+//   color: #288ad6;
+// }
+// .punctuation.definition.bold {
+//   color: #feef6d;
+//   font-weight: bold;
+// }
+// .punctuation.definition.italic {
+//   color: #ff708e;
+//   font-style: italic;
+// }
+// .punctuation.section.embedded {
+//   color: #f82d2a;
+// }
+// .support.class {
+//   color: #ffc83f;
+// }
+// .support.function {
+//   color: #0fdebd;
+// }
+// .support.function.any-method {
+//   color: #288ad6;
+// }
+// .entity.name.function {
+//   color: #288ad6;
+// }
+// .entity.name.class,
+// .entity.name.type.class {
+//   color: #ffc83f;
+// }
+// .entity.name.section {
+//   color: #288ad6;
+// }
+// .entity.name.tag {
+//   color: #fa5e5b;
+// }
+// .entity.other.attribute-name {
+//   color: #ffc83f;
+// }
+// .entity.other.attribute-name.id {
+//   color: #288ad6;
+// }
+// .meta.class {
+//   color: #ffc83f;
+// }
+// .meta.link {
+//   color: #ffc83f;
+// }
+// .meta.require {
+//   color: #288ad6;
+// }
+// .meta.selector {
+//   color: #ff708e;
+// }
+// .meta.separator {
+//   background-color: #67747c;
+//   color: #dbe6ec;
+// }
+// .none {
+//   color: #dbe6ec;
+// }
+// .markup.bold {
+//   color: #ffc83f;
+//   font-weight: bold;
+// }
+// .markup.changed {
+//   color: #ff708e;
+// }
+// .markup.deleted {
+//   color: #fa5e5b;
+// }
+// .markup.italic {
+//   color: #ff708e;
+//   font-style: italic;
+// }
+// .markup.heading .punctuation.definition.heading {
+//   color: #288ad6;
+// }
+// .markup.inserted {
+//   color: #16c98d;
+// }
+// .markup.list {
+//   color: #fa5e5b;
+// }
+// .markup.quote {
+//   color: #ffc83f;
+// }
+// .markup.raw.inline {
+//   color: #16c98d;
+// }
+// .source.gfm .markup {
+//   -webkit-font-smoothing: auto;
+// }
+// .source.gfm .markup.heading {
+//   color: #16c98d;
+// }
