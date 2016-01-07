@@ -215,7 +215,7 @@ jQuery(document).ready(function() {
     } else {
 		 return;
 	 }});
-
+	 	 
 	 $(".mobile-nav").hide();
 
 	// Functions for more-posts button click
