@@ -116,15 +116,16 @@ keywords: whizkydee, Olaolu Olawuyi, webtwic, programming, software, code, tech,
 											<p>Quod ipsam similique vel deserunt velit quidem quae eum delectus, reprehenderit nisi tempora fugit illum, obcaecati iure accusantium nihil ex at quam. Tempore neque qui laborum ullam vel eius eaque consequuntur eligendi ut repellendus distinctio, magni dolor, ipsa enim obcaecati molestias placeat quis quisquam illum ab. Molestias laudantium magni, ea nobis mollitia exercitationem culpa unde nulla temporibus quas libero repellat dicta quidem alias fugiat cupiditate assumenda provident aspernatur debitis voluptate vero quam ullam, eligendi sed dolorum?</p>
 
 
-											<!-- TODO: Style code snippet and uncomment this
-											<div class="snippet"><pre>
-											.hotdog p.mustard {
-											background: yellow;
-										}
-										.hotdog p {
-										background: brown;
-									}
-								</pre></div> -->
+							<!-- TODO: Style code snippet and uncomment this -->
+							<div class="snippet">
+								<pre>
+									NorrisBot.prototype._onStart = function () {
+									    &nbsp;&nbsp;&nbsp;this._loadBotUser();
+									    &nbsp;&nbsp;&nbsp;this._connectDb();
+									    &nbsp;&nbsp;&nbsp;this._firstRunCheck();
+								};
+								</pre>
+							</div>
 
 								<p>Quam ipsum repellat, temporibus nesciunt unde, modi accusamus, quis aut possimus, minus totam molestiae eligendi! Dicta consectetur ex labore natus, accusantium vero laboriosam molestias perspiciatis autem quibusdam veritatis laborum non officiis, architecto nesciunt nisi, vel quaerat debitis <code>harum</code> provident quos? Minus optio nam veritatis perspiciatis excepturi numquam debitis blanditiis voluptatem beatae, voluptatibus ipsum incidunt, deserunt aliquam ratione voluptate, odit saepe harum.</p>
 
@@ -153,6 +154,30 @@ keywords: whizkydee, Olaolu Olawuyi, webtwic, programming, software, code, tech,
 								<h2><a href="testpage.html" title="Test Page">Implementing the bot</a></h2>
 
 								<p>Tenetur repellendus alias voluptatum tempora numquam dolorum vel dolores beatae, facere. Accusamus repellat sit itaque nemo beatae modi explicabo sequi iure eaque alias consectetur voluptate corporis, tenetur praesentium, dolorem quis iusto! Corporis modi obcaecati voluptatum quo corrupti excepturi, quod nostrum, quisquam ut, veniam aliquam harum cupiditate.</p>
+
+								<div class="snippet">
+									<pre>
+										NorrisBot.prototype._firstRunCheck = function () {
+										    &nbsp;&nbsp;var self = this;
+										    &nbsp;&nbsp;self.db.get('SELECT val FROM info WHERE name = "lastrun" LIMIT 1', function (err, record) {
+										   &nbsp;&nbsp;&nbsp;&nbsp;  if (err) {
+										            &nbsp;&nbsp;&nbsp;&nbsp;return console.error('DATABASE ERROR:', err);
+										        }
+
+										        &nbsp;&nbsp;&nbsp;&nbsp;var currentTime = (new Date()).toJSON();
+
+										        // this is a first run
+										        if (!record) {
+										            self._welcomeMessage();
+										            return self.db.run('INSERT INTO info(name, val) VALUES("lastrun", ?)', currentTime);
+										        }
+
+										        // updates with new last running time
+										        self.db.run('UPDATE info SET val = ? WHERE name = "lastrun"', currentTime);
+										    });
+										};
+									</pre>
+								</div>
 
 								<p>Iure necessitatibus <code>facilis</code>, consequatur modi distinctio quae fuga pariatur earum, dolores provident architecto nam fugiat, placeat facere quisquam sit quo cupiditate quas unde excepturi animi iusto sunt. Ducimus ea magnam cumque, maxime assumenda tenetur alias minima, perspiciatis vitae nulla inventore veniam nobis, veritatis id quibusdam nemo molestias.</p>
 
