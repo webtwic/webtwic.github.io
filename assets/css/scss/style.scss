@@ -1,45 +1,46 @@
 @charset "UTF-8";
 
 /**
- * Author: Olaolu Olawuyi
+* Author: Olaolu Olawuyi
 
- * Theme Name: webtwic.
+* Theme Name: webtwic.
 
- * Date Created: 29/07/2015
+* Date Created: 29/07/2015
 
- * Last Modified: 30/12/2015
+* Last Modified: 30/12/2015
 
- * Twitter: @whizkydee, @webtwic
+* Twitter: @whizkydee, @webtwic
 
- * Github: https://github.com/whizkydee/webtwic
+* Github: https://github.com/whizkydee/webtwic
 
 */
 
 @import
-   "globals/variables",
-   "globals/mixins",
-   "globals/typography";
+"globals/variables",
+"globals/mixins",
+"globals/typography";
 
 /* Include fonts and icons */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Source+Sans+Pro:400,600,700|Source+Code+Pro:400,700|Lobster);
 
 @font-face {
-  font-family: $icon;
-  src: url('../fonts/webtwicons.eot');
-  src: url('../fonts/webtwicons.woff2') format("woff2"), url('../fonts/webtwicons.woff') format("woff"), url('../fonts/webtwicons.ttf') format("truetype"), url('../fonts/webtwicons.svg') format("svg");
-  font-weight: normal;
-  font-style: normal;
+   font-family: $icon;
+   src: url('../fonts/webtwicons.eot');
+   src: url('../fonts/webtwicons.woff2') format("woff2"), url('../fonts/webtwicons.woff') format("woff"), url('../fonts/webtwicons.ttf') format("truetype"), url('../fonts/webtwicons.svg') format("svg");
+   font-weight: normal;
+   font-style: normal;
 }
 
 
 @import
-   "globals/keyframes",
-   "globals/global",
-   "globals/webtwicons",
-   "globals/normalize",
-   "globals/base",
-   "disabled-features";
+"globals/keyframes",
+"globals/global",
+"globals/webtwicons",
+"globals/normalize",
+"globals/base",
+"globals/syntax-highlighter",
+"disabled-features";
 
 /* START MAIN PAGE */
 

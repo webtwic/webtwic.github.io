@@ -244,20 +244,6 @@ body.single-post .entry-wrap .main-page {
          border-bottom: $solid_one #4E697D;
       }
    }
-   div.snippet {
-      position: relative;
-      margin-left: -50px;
-      width: 111.8%;
-      pre {
-         font-family: $code_font;
-         font-size: .9em;
-         background: #282c34;
-         // background: #E8F5F2;
-         white-space: pre-line;
-         padding: 50px;
-         color: #fff;
-      }
-   }
 
    blockquote {
       font-family: $font-alt;

@@ -1,80 +1,20 @@
-/*:host {
-  background-color: #282c34;
-  color: #abb2bf;
+.snippet {
+   position: relative;
+   margin-left: -50px;
+   width: 111.8%;
+   display: block;
+   pre {
+      white-space: pre-line;
+      padding: 50px;
+      background: #282c34;
+      font-size: .9em;
+      color: #abb2bf;
+      * {
+         font-family: $code_font;
+      }
+   }
 }
-atom-text-editor .line.cursor-line,
-:host .line.cursor-line {
-  background-color: rgba(153, 187, 255, 0.04);
-}
-atom-text-editor .invisible,
-:host .invisible {
-  color: #abb2bf;
-}
-atom-text-editor .cursor,
-:host .cursor {
-  border-left: 2px solid #528bff;
-}
-atom-text-editor .selection .region,
-:host .selection .region {
-  background-color: #3e4451;
-}
-atom-text-editor .bracket-matcher .region,
-:host .bracket-matcher .region {
-  border-bottom: 1px solid #528bff;
-  box-sizing: border-box;
-}
-atom-text-editor .invisible-character,
-:host .invisible-character {
-  color: rgba(171, 178, 191, 0.15);
-}
-atom-text-editor .indent-guide,
-:host .indent-guide {
-  color: rgba(171, 178, 191, 0.15);
-}
-atom-text-editor .wrap-guide,
-:host .wrap-guide {
-  background-color: rgba(171, 178, 191, 0.15);
-}
-atom-text-editor .gutter .line-number,
-:host .gutter .line-number {
-  color: #636d83;
-  -webkit-font-smoothing: antialiased;
-}
-atom-text-editor .gutter .line-number.cursor-line,
-:host .gutter .line-number.cursor-line {
-  color: #abb2bf;
-  background-color: #2c313a;
-}
-atom-text-editor .gutter .line-number.cursor-line-no-selection,
-:host .gutter .line-number.cursor-line-no-selection {
-  background-color: transparent;
-}
-atom-text-editor .gutter .line-number .icon-right,
-:host .gutter .line-number .icon-right {
-  color: #abb2bf;
-}
-atom-text-editor .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before,
-:host .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before {
-  bottom: -3px;
-}
-atom-text-editor .gutter:not(.git-diff-icon) .line-number.git-line-removed::after,
-:host .gutter:not(.git-diff-icon) .line-number.git-line-removed::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  width: 25px;
-  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
-  pointer-events: none;
-}
-atom-text-editor .gutter .line-number.folded,
-:host .gutter .line-number.folded,
-atom-text-editor .gutter .line-number:after,
-:host .gutter .line-number:after,
-atom-text-editor .fold-marker:after,
-:host .fold-marker:after {
-  color: #abb2bf;
-}*/
+
 .comment {
   color: #5c6370;
   font-style: italic;

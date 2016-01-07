@@ -1,15 +1,15 @@
 /**
- * Author: Olaolu Olawuyi
+* Author: Olaolu Olawuyi
 
- * Theme Name: webtwic.
+* Theme Name: webtwic.
 
- * Date Created: 29/07/2015
+* Date Created: 29/07/2015
 
- * Last Modified: 30/12/2015
+* Last Modified: 30/12/2015
 
- * Twitter: @whizkydee, @webtwic
+* Twitter: @whizkydee, @webtwic
 
- * Github: https://github.com/whizkydee/webtwic
+* Github: https://github.com/whizkydee/webtwic
 
 */
 /* ==========================================================================
@@ -886,6 +886,289 @@ img {
 
 [class*="-column"], .category-posts-column ul.category-posts-list li {
   position: relative; }
+
+.snippet {
+  position: relative;
+  margin-left: -50px;
+  width: 111.8%;
+  display: block; }
+  .snippet pre {
+    white-space: pre-line;
+    padding: 50px;
+    background: #282c34;
+    font-size: .9em;
+    color: #abb2bf; }
+    .snippet pre * {
+      font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace; }
+
+.comment {
+  color: #5c6370;
+  font-style: italic; }
+
+.entity.name.type {
+  color: #e5c07b; }
+
+.entity.other.inherited-class {
+  color: #98c379; }
+
+.keyword {
+  color: #c678dd; }
+
+.keyword.control {
+  color: #c678dd; }
+
+.keyword.operator {
+  color: #abb2bf; }
+
+.keyword.other.special-method {
+  color: #61afef; }
+
+.keyword.other.unit {
+  color: #d19a66; }
+
+.storage {
+  color: #c678dd; }
+
+.storage.type.annotation,
+.storage.type.primitive {
+  color: #c678dd; }
+
+.storage.modifier.package,
+.storage.modifier.import {
+  color: #abb2bf; }
+
+.constant {
+  color: #d19a66; }
+
+.constant.variable {
+  color: #d19a66; }
+
+.constant.character.escape {
+  color: #56b6c2; }
+
+.constant.numeric {
+  color: #d19a66; }
+
+.constant.other.color {
+  color: #56b6c2; }
+
+.constant.other.symbol {
+  color: #56b6c2; }
+
+.variable {
+  color: #e06c75; }
+
+.variable.interpolation {
+  color: #be5046; }
+
+.variable.parameter {
+  color: #abb2bf; }
+
+.string {
+  color: #98c379; }
+
+.string.regexp {
+  color: #56b6c2; }
+
+.string.regexp .source.ruby.embedded {
+  color: #e5c07b; }
+
+.string.other.link {
+  color: #e06c75; }
+
+.punctuation.definition.comment {
+  color: #5c6370; }
+
+.punctuation.definition.method-parameters,
+.punctuation.definition.function-parameters,
+.punctuation.definition.parameters,
+.punctuation.definition.separator,
+.punctuation.definition.seperator,
+.punctuation.definition.array {
+  color: #abb2bf; }
+
+.punctuation.definition.heading,
+.punctuation.definition.identity {
+  color: #61afef; }
+
+.punctuation.definition.bold {
+  color: #e5c07b;
+  font-weight: bold; }
+
+.punctuation.definition.italic {
+  color: #c678dd;
+  font-style: italic; }
+
+.punctuation.section.embedded {
+  color: #be5046; }
+
+.punctuation.section.method,
+.punctuation.section.class,
+.punctuation.section.inner-class {
+  color: #abb2bf; }
+
+.support.class {
+  color: #e5c07b; }
+
+.support.type {
+  color: #56b6c2; }
+
+.support.function {
+  color: #56b6c2; }
+
+.support.function.any-method {
+  color: #61afef; }
+
+.entity.name.function {
+  color: #61afef; }
+
+.entity.name.class,
+.entity.name.type.class {
+  color: #e5c07b; }
+
+.entity.name.section {
+  color: #61afef; }
+
+.entity.name.tag {
+  color: #e06c75; }
+
+.entity.other.attribute-name {
+  color: #d19a66; }
+
+.entity.other.attribute-name.id {
+  color: #61afef; }
+
+.meta.class {
+  color: #e5c07b; }
+
+.meta.class.body {
+  color: #abb2bf; }
+
+.meta.method-call,
+.meta.method {
+  color: #abb2bf; }
+
+.meta.definition.variable {
+  color: #e06c75; }
+
+.meta.link {
+  color: #d19a66; }
+
+.meta.require {
+  color: #61afef; }
+
+.meta.selector {
+  color: #c678dd; }
+
+.meta.separator {
+  background-color: #373b41;
+  color: #abb2bf; }
+
+.meta.tag {
+  color: #abb2bf; }
+
+.none {
+  color: #abb2bf; }
+
+.invalid.deprecated {
+  color: #523d14 !important;
+  background-color: #e0c285 !important; }
+
+.invalid.illegal {
+  color: #ffffff !important;
+  background-color: #e05252 !important; }
+
+.markup.bold {
+  color: #d19a66;
+  font-weight: bold; }
+
+.markup.changed {
+  color: #c678dd; }
+
+.markup.deleted {
+  color: #e06c75; }
+
+.markup.italic {
+  color: #c678dd;
+  font-style: italic; }
+
+.markup.heading .punctuation.definition.heading {
+  color: #61afef; }
+
+.markup.inserted {
+  color: #98c379; }
+
+.markup.list {
+  color: #e06c75; }
+
+.markup.quote {
+  color: #d19a66; }
+
+.markup.raw {
+  color: #98c379; }
+
+.source.cs .keyword.operator {
+  color: #c678dd; }
+
+.source.css .property-name,
+.source.css .property-value {
+  color: #828997; }
+
+.source.css .property-name.support,
+.source.css .property-value.support {
+  color: #abb2bf; }
+
+.source.gfm .markup {
+  -webkit-font-smoothing: auto; }
+
+.source.gfm .markup.heading {
+  color: #e06c75; }
+
+.source.gfm .markup.link {
+  color: #c678dd; }
+
+.source.gfm .link .entity {
+  color: #61afef; }
+
+.source.ini .keyword.other.definition.ini {
+  color: #e06c75; }
+
+.source.java .storage.modifier.import {
+  color: #e5c07b; }
+
+.source.java .storage.type {
+  color: #e5c07b; }
+
+.source.java-properties .meta.key-pair {
+  color: #e06c75; }
+
+.source.java-properties .meta.key-pair > .punctuation {
+  color: #abb2bf; }
+
+.source.json .meta.structure.dictionary.json > .string.quoted.json {
+  color: #e06c75; }
+
+.source.json .meta.structure.dictionary.json > .string.quoted.json > .punctuation.string {
+  color: #e06c75; }
+
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json,
+.source.json .meta.structure.dictionary.json > .value.json > .string.quoted.json > .punctuation,
+.source.json .meta.structure.array.json > .value.json > .string.quoted.json > .punctuation {
+  color: #98c379; }
+
+.source.json .meta.structure.dictionary.json > .constant.language.json,
+.source.json .meta.structure.array.json > .constant.language.json {
+  color: #56b6c2; }
+
+.source.ruby .constant.other.symbol > .punctuation {
+  color: inherit; }
+
+.source.python .keyword.operator.logical.python {
+  color: #c678dd; }
+
+.source.python .variable.parameter {
+  color: #d19a66; }
 
 /* Fallback for certain css features -- See script.js */
 #disabledFeatures {
@@ -2505,17 +2788,6 @@ body.single-post .entry-wrap .main-page {
   .entry-content a:hover {
     color: inherit;
     border-bottom: 1px solid #4E697D; }
-.entry-content div.snippet {
-  position: relative;
-  margin-left: -50px;
-  width: 111.8%; }
-  .entry-content div.snippet pre {
-    font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
-    font-size: .9em;
-    background: #282c34;
-    white-space: pre-line;
-    padding: 50px;
-    color: #fff; }
 .entry-content blockquote {
   font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
   position: relative;
