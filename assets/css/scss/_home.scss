@@ -164,6 +164,7 @@ body.home {
          margin-left: 4px;
       }
       a {
+         position: relative;
          :first-child {
             @include transition(.5s ease-in-out);
          }
@@ -190,10 +191,12 @@ body.home {
             display: inline;
             padding: .1px 6px;
             position: absolute;
+            @include transform(translate(-50%, -50%));
             text-align: center;
             background: $basecolor;
             font-size: .5em;
-            bottom: 112px;
+            left: 32%;
+            top: -60%;
             color: $white;
             &:before {
                content: "\f0d7";
@@ -206,23 +209,6 @@ body.home {
                font-size: 1.125em;
             }
             display: none;
-         }
-         &:hover .tooltip {
-         }
-         &:nth-of-type(1) .tooltip {
-            left: 17.8%;
-         }
-         &:nth-of-type(2) .tooltip {
-            left: 31.2%;
-         }
-         &:nth-of-type(3) .tooltip {
-            left: 43.6%;
-         }
-         &:nth-of-type(4) .tooltip {
-            left: 58.45%;
-         }
-         &:nth-of-type(5) .tooltip {
-            left: 70%;
          }
       }
    }
