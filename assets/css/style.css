@@ -888,7 +888,7 @@ img {
   position: relative; }
 
 pre.snippet {
-  padding: 20px 50px 50px 50px;
+  padding: 25px 50px 50px 50px;
   font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
   position: relative;
   margin-left: -50px;
