@@ -2258,15 +2258,7 @@ article.post-wrap {
     height: 169px;
     float: left; }
     article.post-wrap .post-thumbnail img {
-      -webkit-transition: opacity 0.5s ease-out 0.01s;
-      -moz-transition: opacity 0.5s ease-out 0.01s;
-      -ms-transition: opacity 0.5s ease-out 0.01s;
-      -o-transition: opacity 0.5s ease-out 0.01s;
-      transition: opacity 0.5s ease-out 0.01s;
       height: auto; }
-      article.post-wrap .post-thumbnail img:hover {
-        opacity: 0.8;
-        filter: alpha(opacity=80); }
       article.post-wrap .post-thumbnail img[alt] {
         font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
         text-transform: capitalize;

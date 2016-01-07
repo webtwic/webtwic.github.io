@@ -60,12 +60,8 @@ article.post-wrap {
       height: 169px;
       float: left;
       img {
-         @include transition(opacity .5s ease-out .01s);
          @extend .radius-alt;
          height: auto;
-         &:hover {
-            @include opacity(.8);
-         }
          &[alt] {
             font-family: $font-alt;
             text-transform: capitalize;
