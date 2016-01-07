@@ -1695,7 +1695,7 @@ body.home {
     top: 100%;
     left: 0;
     right: 0;
-    height: .075em;
+    height: 1px;
     width: 0; }
   .article .read-article:hover:before {
     width: 100%; }
