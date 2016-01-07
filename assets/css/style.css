@@ -2508,12 +2508,13 @@ body.single-post .entry-wrap .main-page {
 .entry-content div.snippet {
   position: relative;
   margin-left: -50px;
-  width: 112%; }
+  width: 111.8%; }
   .entry-content div.snippet pre {
-    font-family: Consolas, "Source Code Pro", Menlo, Monaco, monospace;
+    font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
+    font-size: .9em;
     background: #282c34;
     white-space: pre-line;
-    padding: 50px 40px;
+    padding: 50px;
     color: #fff; }
 .entry-content blockquote {
   font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;

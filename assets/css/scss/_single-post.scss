@@ -247,13 +247,14 @@ body.single-post .entry-wrap .main-page {
    div.snippet {
       position: relative;
       margin-left: -50px;
-      width: 112%;
+      width: 111.8%;
       pre {
-         font-family: $code_font_alt;
+         font-family: $code_font;
+         font-size: .9em;
          background: #282c34;
          // background: #E8F5F2;
          white-space: pre-line;
-         padding: 50px 40px;
+         padding: 50px;
          color: #fff;
       }
    }
