@@ -1,5 +1,6 @@
 pre.snippet {
    padding: 20px 50px 50px 50px;
+   font-family: $code_font;
    position: relative;
    margin-left: -50px;
    width: 111.8%;
@@ -20,7 +21,7 @@ pre.snippet {
    }
 }
 .leading-whitespace {
-   white-space: pre;
+   margin-left: 7px;
 }
 .comment {
    color: #5c6370;

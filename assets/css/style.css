@@ -889,6 +889,7 @@ img {
 
 pre.snippet {
   padding: 20px 50px 50px 50px;
+  font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
   position: relative;
   margin-left: -50px;
   width: 111.8%;
@@ -907,7 +908,7 @@ pre.snippet {
     word-break: normal; }
 
 .leading-whitespace {
-  white-space: pre; }
+  margin-left: 7px; }
 
 .comment {
   color: #5c6370;
@@ -2161,13 +2162,12 @@ body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-colu
       margin-right: 0; }
       .pagination a:last-child:hover {
         padding: 14px 23.5px; }
-
-.line {
-  margin: 46px auto 50px auto;
-  background: #D3D5D8;
-  height: 1px;
-  width: 46%;
-  display: block; }
+  .pagination .line {
+    margin: 46px auto 50px auto;
+    background: #D3D5D8;
+    height: 1px;
+    width: 46%;
+    display: block; }
 
 .bug-holder {
   color: #ccc;
