@@ -21,7 +21,7 @@ body.home {
    }
    .featured-posts-column {
       width: 44.93%;
-      margin-right: 2.1%;
+      margin: 0 2.1% 0 0;
       @extend .left;
    }
 }
@@ -30,7 +30,7 @@ body.home {
 
 .featured-posts-column .article {
    padding: 40px 30px 0;
-   margin-bottom: 25px;
+   margin: 0 0 25px 0;
    position: relative;
    height: 447px;
    z-index: 50;
@@ -66,7 +66,6 @@ body.home {
    }
    .article-title {
       border-bottom: $solid_one $grey;
-      margin-left: 5px;
       padding-bottom: 10px;
       margin: 10px;
       a {
@@ -92,16 +91,15 @@ body.home {
    }
    .article-excerpt p {
       font-family: $font-alt;
-      margin-left: 15px;
+      margin: 10px 0 0 15px;
       color: $text-color;
       line-height: 25px;
-      margin-top: 10px;
       font-size: 1.06em;
       font-weight: 300;
       max-height: 125px;
    }
    .read-article {
-      margin-left: 18px;
+      margin: 0 0 0 18px;
       font-size: .94em;
       position: relative;
       color: #15E1E1;
@@ -134,30 +132,18 @@ body.home {
    }
    .article-social {
       border-top: 2px dashed $grey;
-      margin-top: 20px;
-      font-size: 30px;
+      margin: 20px auto 0 auto;
       text-align: center;
       padding-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      border-top: 2px dashed $grey;
-      margin-top: 20px;
-      font-size: 30px;
-      text-align: center;
-      padding-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
+      font-size: 1.87em;
       display: block;
       p {
          font-family: "Lobster", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
          font-size: .66em;
          letter-spacing: normal;
+         margin: -14px 0 6px 18px;
          text-align: left;
-         margin-top: -14px;
          color: #ff9dae;
-         margin-bottom: 6px;
-         margin-left: 18px;
       }
       .arrow:after {
          content: url("/img/sharearrow.png");
@@ -165,11 +151,12 @@ body.home {
       }
       a {
          position: relative;
+         margin-right: 42px;
          :first-child {
             @include transition(.5s ease-in-out);
          }
-         &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
-            margin-right: 42px;
+         &:last-child {
+            margin-right: 0;
          }
          &:nth-of-type(1):hover :first-child {
             color: #3B599A;
@@ -202,10 +189,9 @@ body.home {
                content: "\f0d7";
                position: absolute;
                position: absolute;
-               margin-top: 12px;
+               margin: 12px 0 0 36%;
                color: $basecolor;
                text-align: center;
-               margin-left: 36%;
                font-size: 1.125em;
             }
             display: none;
@@ -243,10 +229,8 @@ body.home {
    }
    .more_tech_news {
       @include transition(all .3s ease-in);
+      margin: 30px auto 0 auto;
       text-align: center;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 30px;
       display: block;
       color: #49B8CC;
       padding: 10px 6px;
@@ -262,7 +246,7 @@ body.home {
          font-family: $icon;
          display: inline;
          font-size: .75em;
-         margin-left: 4px;
+         margin: 0 0 0 4px;
       }
    }
 }

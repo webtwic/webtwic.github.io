@@ -1308,12 +1308,12 @@ body.home {
     max-width: 1418px; }
   body.home .featured-posts-column {
     width: 44.93%;
-    margin-right: 2.1%; }
+    margin: 0 2.1% 0 0; }
 
 /*START MAIN POSTS*/
 .featured-posts-column .article {
   padding: 40px 30px 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
   position: relative;
   height: 447px;
   z-index: 50;
@@ -1346,7 +1346,6 @@ body.home {
   height: 15px; }
 .article .article-title {
   border-bottom: 1px solid #EEEEEE;
-  margin-left: 5px;
   padding-bottom: 10px;
   margin: 10px; }
   .article .article-title a {
@@ -1373,15 +1372,14 @@ body.home {
       color: #81aec5; }
 .article .article-excerpt p {
   font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
-  margin-left: 15px;
+  margin: 10px 0 0 15px;
   color: #597488;
   line-height: 25px;
-  margin-top: 10px;
   font-size: 1.06em;
   font-weight: 300;
   max-height: 125px; }
 .article .read-article {
-  margin-left: 18px;
+  margin: 0 0 0 18px;
   font-size: .94em;
   position: relative;
   color: #15E1E1;
@@ -1417,43 +1415,32 @@ body.home {
     margin-left: 4.4px; }
 .article .article-social {
   border-top: 2px dashed #EEEEEE;
-  margin-top: 20px;
-  font-size: 30px;
+  margin: 20px auto 0 auto;
   text-align: center;
   padding-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  border-top: 2px dashed #EEEEEE;
-  margin-top: 20px;
-  font-size: 30px;
-  text-align: center;
-  padding-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.87em;
   display: block; }
   .article .article-social p {
     font-family: "Lobster", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
     font-size: .66em;
     letter-spacing: normal;
+    margin: -14px 0 6px 18px;
     text-align: left;
-    margin-top: -14px;
-    color: #ff9dae;
-    margin-bottom: 6px;
-    margin-left: 18px; }
+    color: #ff9dae; }
   .article .article-social .arrow:after {
     content: url("/img/sharearrow.png");
     margin-left: 4px; }
   .article .article-social a {
-    position: relative; }
+    position: relative;
+    margin-right: 42px; }
     .article .article-social a :first-child {
       -webkit-transition: 0.5s ease-in-out;
       -moz-transition: 0.5s ease-in-out;
       -ms-transition: 0.5s ease-in-out;
       -o-transition: 0.5s ease-in-out;
       transition: 0.5s ease-in-out; }
-    .article .article-social a:nth-of-type(1), .article .article-social a:nth-of-type(2), .article .article-social a:nth-of-type(3), .article .article-social a:nth-of-type(4) {
-      margin-right: 42px; }
+    .article .article-social a:last-child {
+      margin-right: 0; }
     .article .article-social a:nth-of-type(1):hover :first-child {
       color: #3B599A; }
     .article .article-social a:nth-of-type(2):hover :first-child {
@@ -1489,10 +1476,9 @@ body.home {
         content: "\f0d7";
         position: absolute;
         position: absolute;
-        margin-top: 12px;
+        margin: 12px 0 0 36%;
         color: #6699cc;
         text-align: center;
-        margin-left: 36%;
         font-size: 1.125em; }
 
 /* Share Icons */
@@ -1525,10 +1511,8 @@ body.home {
     -ms-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
+    margin: 30px auto 0 auto;
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px;
     display: block;
     color: #49B8CC;
     padding: 10px 6px;
@@ -1542,7 +1526,7 @@ body.home {
       font-family: webtwicons;
       display: inline;
       font-size: .75em;
-      margin-left: 4px; }
+      margin: 0 0 0 4px; }
 
 .sidebar-column {
   width: 25.295%;
