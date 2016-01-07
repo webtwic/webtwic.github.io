@@ -908,7 +908,7 @@ pre.snippet {
     word-break: normal; }
 
 .leading-whitespace {
-  margin-left: 10px; }
+  padding-left: 10px; }
 
 .comment {
   color: #5c6370;
