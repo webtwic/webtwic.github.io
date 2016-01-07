@@ -108,8 +108,7 @@ body.single-post .entry-wrap .main-page {
 }
 
 .article-meta .article-meta-inner {
-   height: $full;
-   width: $full;
+   @extend .inner;
    padding: 5px 20px;
    .share-icons {
       position: relative;
@@ -331,10 +330,7 @@ body.single-post .entry-wrap .main-page {
       color: #4E697D;
       margin-bottom: 10 * $two;
       .author-info-inner {
-         position: relative;
-         height: $full;
-         width: $full;
-         display: inline-block;
+         @extend .inner;
          a {
             position: relative;
          }
@@ -480,7 +476,7 @@ body.single-post .entry-wrap .main-page {
    margin-bottom: 15px;
    @include box-shadow( 0px 0px 4px rgba(0, 0, 0, 0.09) );
    .inner {
-      position: relative;
+      @extend .inner;
       padding: 1px 0 0 0;
    }
 }

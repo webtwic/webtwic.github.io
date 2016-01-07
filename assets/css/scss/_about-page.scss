@@ -86,10 +86,10 @@ body {
       background: $white;
       padding-bottom: 40px;
       .inner {
+         @extend .inner;
          width: 80%;
-         height: $full;
-         position: relative;
          margin: 0 auto;
+         display: block;
       }
       h2 {
          padding-top: 20px;

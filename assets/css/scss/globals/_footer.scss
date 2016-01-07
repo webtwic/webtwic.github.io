@@ -9,11 +9,10 @@
    padding: 32px 0 20px 0;
    height: 430px;
    .footer-inner {
+      @extend .inner;
       max-width: 1309px;
-      height: $full;
       margin-left: auto;
       margin-right: auto;
-      width: $full;
    }
 }
 

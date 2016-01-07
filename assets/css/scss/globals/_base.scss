@@ -215,3 +215,10 @@
 [class*="-column"] {
    position: relative;
 }
+
+.inner {
+   position: relative;
+   display: inline-block;
+   height: $full;
+   width: $full;
+}

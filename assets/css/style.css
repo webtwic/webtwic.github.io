@@ -887,6 +887,12 @@ img {
 [class*="-column"], .category-posts-column ul.category-posts-list li {
   position: relative; }
 
+.inner, article.post-wrap .post-wrap-inner, .article-meta .article-meta-inner, .page-focus-column .post-secondary-column .author-profile .author-info-inner, .post-secondary-column .related-articles .inner, .about-page .founders-section .inner, .site-footer .footer-inner {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%; }
+
 pre.snippet {
   padding: 25px 50px 50px 50px;
   font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
@@ -1604,13 +1610,13 @@ body.home {
 
 /*START MAIN POSTS*/
 .featured-posts-column .article {
-  padding: 40px 30px 0;
   margin: 0 0 25px 0;
   position: relative;
-  height: 447px;
   z-index: 50;
   background: #fff;
   width: 100%; }
+  .featured-posts-column .article .inner, .featured-posts-column .article article.post-wrap .post-wrap-inner, article.post-wrap .featured-posts-column .article .post-wrap-inner, .featured-posts-column .article .article-meta .article-meta-inner, .article-meta .featured-posts-column .article .article-meta-inner, .featured-posts-column .article .page-focus-column .post-secondary-column .author-profile .author-info-inner, .page-focus-column .post-secondary-column .author-profile .featured-posts-column .article .author-info-inner, .featured-posts-column .article .site-footer .footer-inner, .site-footer .featured-posts-column .article .footer-inner {
+    padding: 40px 30px 73px 30px; }
   .featured-posts-column .article:first-child {
     margin-top: 25px; }
 
@@ -2240,10 +2246,6 @@ article.post-wrap {
   position: relative;
   background: #fff;
   width: 100%; }
-  article.post-wrap .post-wrap-inner {
-    position: relative;
-    height: 100%;
-    display: inline-block; }
   article.post-wrap .post-thumbnail {
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
@@ -2681,8 +2683,6 @@ body.single-post .entry-wrap .main-page {
   margin-top: -31px; }
 
 .article-meta .article-meta-inner {
-  height: 100%;
-  width: 100%;
   padding: 5px 20px; }
   .article-meta .article-meta-inner .share-icons {
     position: relative;
@@ -2870,18 +2870,13 @@ body.single-post .entry-wrap .main-page {
   height: 250px;
   color: #4E697D;
   margin-bottom: 20px; }
-  .page-focus-column .post-secondary-column .author-profile .author-info-inner {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: inline-block; }
-    .page-focus-column .post-secondary-column .author-profile .author-info-inner a {
-      position: relative; }
-    .page-focus-column .post-secondary-column .author-profile .author-info-inner .author-avatar {
-      float: left;
-      width: 20%;
-      height: 180px;
-      margin-right: 10px; }
+  .page-focus-column .post-secondary-column .author-profile .author-info-inner a {
+    position: relative; }
+  .page-focus-column .post-secondary-column .author-profile .author-info-inner .author-avatar {
+    float: left;
+    width: 20%;
+    height: 180px;
+    margin-right: 10px; }
 
 .author-avatar img {
   width: 100%;
@@ -2997,13 +2992,12 @@ body.single-post .entry-wrap .main-page {
   -ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.09);
   -o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.09);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.09); }
-  .post-secondary-column .related-articles .inner {
-    position: relative;
+  .post-secondary-column .related-articles article.post-wrap .post-wrap-inner, article.post-wrap .post-secondary-column .related-articles .post-wrap-inner, .post-secondary-column .related-articles .article-meta .article-meta-inner, .article-meta .post-secondary-column .related-articles .article-meta-inner, .page-focus-column .post-secondary-column .related-articles .author-profile .author-info-inner, .page-focus-column .post-secondary-column .author-profile .related-articles .author-info-inner, .post-secondary-column .related-articles .inner, .post-secondary-column .related-articles .site-footer .footer-inner, .site-footer .post-secondary-column .related-articles .footer-inner {
     padding: 1px 0 0 0; }
 
-.related-articles .inner h2 {
+.related-articles .inner h2, .related-articles article.post-wrap .post-wrap-inner h2, article.post-wrap .related-articles .post-wrap-inner h2, .related-articles .article-meta .article-meta-inner h2, .article-meta .related-articles .article-meta-inner h2, .related-articles .page-focus-column .post-secondary-column .author-profile .author-info-inner h2, .page-focus-column .post-secondary-column .author-profile .related-articles .author-info-inner h2, .post-secondary-column .related-articles .inner h2, .related-articles .about-page .founders-section .inner h2, .about-page .founders-section .related-articles .inner h2, .related-articles .site-footer .footer-inner h2, .site-footer .related-articles .footer-inner h2 {
   color: #4E6170; }
-  .related-articles .inner h2:before {
+  .related-articles .inner h2:before, .related-articles article.post-wrap .post-wrap-inner h2:before, article.post-wrap .related-articles .post-wrap-inner h2:before, .related-articles .article-meta .article-meta-inner h2:before, .article-meta .related-articles .article-meta-inner h2:before, .related-articles .page-focus-column .post-secondary-column .author-profile .author-info-inner h2:before, .page-focus-column .post-secondary-column .author-profile .related-articles .author-info-inner h2:before, .post-secondary-column .related-articles .inner h2:before, .related-articles .about-page .founders-section .inner h2:before, .about-page .founders-section .related-articles .inner h2:before, .related-articles .site-footer .footer-inner h2:before, .site-footer .related-articles .footer-inner h2:before {
     content: "";
     border-style: dashed;
     border-color: #4E6170;
@@ -3264,11 +3258,10 @@ body.about-page .site-content {
   width: 100%;
   background: #fff;
   padding-bottom: 40px; }
-  .about-page .founders-section .inner {
+  .about-page .founders-section article.post-wrap .post-wrap-inner, article.post-wrap .about-page .founders-section .post-wrap-inner, .about-page .founders-section .article-meta .article-meta-inner, .article-meta .about-page .founders-section .article-meta-inner, .about-page .founders-section .page-focus-column .post-secondary-column .author-profile .author-info-inner, .page-focus-column .post-secondary-column .author-profile .about-page .founders-section .author-info-inner, .about-page .founders-section .inner, .about-page .founders-section .site-footer .footer-inner, .site-footer .about-page .founders-section .footer-inner {
     width: 80%;
-    height: 100%;
-    position: relative;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: block; }
   .about-page .founders-section h2 {
     padding-top: 20px;
     font-weight: 400;
@@ -3371,10 +3364,8 @@ body.contact-page .site-content {
   height: 430px; }
   .site-footer .footer-inner {
     max-width: 1309px;
-    height: 100%;
     margin-left: auto;
-    margin-right: auto;
-    width: 100%; }
+    margin-right: auto; }
 
 #colophon .footer-logo {
   background: url("/img/webtwic-logos.png") -32px -159px no-repeat;

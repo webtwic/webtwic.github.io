@@ -51,9 +51,7 @@ article.post-wrap {
    @extend .radius;
    width: $full;
    .post-wrap-inner {
-      position: relative;
-      height: 100%;
-      display: inline-block;
+      @extend .inner;
    }
    .post-thumbnail {
       @include border-radius(1px);
