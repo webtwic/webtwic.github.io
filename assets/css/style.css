@@ -2759,8 +2759,8 @@ body.single-post .entry-wrap .main-page {
   color: #3f5261; }
   .entry-content h1 code, .entry-content h2 code, .entry-content h3 code, .entry-content h4 code, .entry-content h5 code, .entry-content h6 code {
     font-size-adjust: .5;
-    font-size: .8em;
-    font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
+    font-size: .85em;
+    font-family: Consolas, "Source Code Pro", Menlo, Monaco, monospace;
     background: #E8F5F2;
     padding: 1px 3.6px;
     color: #6699cc; }
