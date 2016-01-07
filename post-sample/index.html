@@ -115,201 +115,205 @@ keywords: whizkydee, Olaolu Olawuyi, webtwic, programming, software, code, tech,
 
 									<p>Quod ipsam similique vel deserunt velit quidem quae eum delectus, reprehenderit nisi tempora fugit illum, obcaecati iure accusantium nihil ex at quam. Tempore neque qui laborum ullam vel eius eaque consequuntur eligendi ut repellendus distinctio, magni dolor, ipsa enim obcaecati molestias placeat quis quisquam illum ab. Molestias laudantium magni, ea nobis mollitia exercitationem culpa unde nulla temporibus quas libero repellat dicta quidem alias fugiat cupiditate assumenda provident aspernatur debitis voluptate vero quam ullam, eligendi sed dolorum?</p>
 
-
-
-									<code class="snippet">
-										<pre>
-											<span class="source js"><span class="meta function prototype js"><span class="support class js">NorrisBot</span>.<span class="support constant js">prototype</span>.<span class="entity name function js">_connectDb</span> <span class="keyword operator assignment js">=</span> <span class="storage type function js">function</span> <span class="punctuation definition parameters begin js">(</span><span class="punctuation definition parameters end js">)</span></span> <span class="meta brace curly js">{</span></span>
-										</pre>
-									</code>
-
-									<p>Quam ipsum repellat, temporibus nesciunt unde, modi accusamus, quis aut possimus, minus totam molestiae eligendi! Dicta consectetur ex labore natus, accusantium vero laboriosam molestias perspiciatis autem quibusdam veritatis laborum non officiis, architecto nesciunt nisi, vel quaerat debitis <code>harum</code> provident quos? Minus optio nam veritatis perspiciatis excepturi numquam debitis blanditiis voluptatem beatae, voluptatibus ipsum incidunt, deserunt aliquam ratione voluptate, odit saepe harum.</p>
-
-									<h3>Setting up the project</h3>
-
-									<p>Provident minima officia ratione blanditiis voluptate numquam possimus, dolorem asperiores earum atque dolorum animi quibusdam architecto ullam, non nemo porro omnis, eaque. Consequuntur sit neque, deleniti quos praesentium tempora laborum modi obcaecati architecto ratione odio sapiente dolore vitae maiores totam esse, <strong>aliquid</strong> quidem ex omnis iusto ad voluptatibus necessitatibus similique doloribus eligendi.</p>
-
-									<div class="entry-image-small">
-										<img src="../img/intro.jpg" width="844" height="843" alt="">
-									</div>
-
-									<p>Voluptate animi est, quod explicabo officia provident, fugiat, ipsa dicta corrupti, dolor culpa delectus. Quod earum, tempora ipsam rem, blanditiis voluptates, sapiente magnam possimus nemo explicabo illum. Excepturi totam, corporis soluta officiis maxime aperiam explicabo in necessitatibus voluptatum, nemo tenetur recusandae optio tempora facere ullam fugiat?</p>
-
-									<p>Repellendus ipsum perspiciatis esse. Dignissimos, consequatur delectus iusto, impedit dolor sit dolorem a aspernatur minus adipisci laborum suscipit dolorum asperiores tenetur quam voluptatibus animi pariatur veritatis, molestiae ut sunt labore tempora! Eos incidunt magni voluptatibus earum explicabo ex accusamus laudantium iusto saepe, sit, possimus, in architecto provident eveniet numquam, a tempora commodi nemo quaerat aliquid error deleniti corrupti?</p>
-
-									<h2>The Slackbots package</h2>
-
-									<p>Animi vel, tempore, dignissimos architecto libero eveniet possimus maiores accusamus dicta cumque vitae quam omnis dolore debitis ex voluptatum alias. Molestiae sint voluptatum dignissimos voluptas labore saepe minima, eum iusto aliquid enim excepturi sapiente maiores quam.</p>
-
-									<blockquote>What differentiates a great designer from a good designer is how well you're able to communicate with clients - Christian Vasile</blockquote>
-
-									<p>Animi id necessitatibus in fuga nihil facilis, dolore repudiandae beatae itaque vel consectetur minus ducimus dolorem dicta aliquam possimus quibusdam atque, ex modi voluptatibus voluptatem quaerat. Fugit pariatur, inventore porro fuga. Fugit iste, rem facere consequatur harum eaque nostrum est incidunt quas? Doloribus temporibus obcaecati reprehenderit voluptates voluptatum enim libero culpa distinctio quam accusantium ducimus, illo ex aliquam facere debitis aliquid placeat beatae natus, corporis hic quos alias ea rerum adipisci minima?</p>
-
-									<p>Fugit repellat corporis consequuntur reprehenderit, laudantium quo odio et voluptate dolore, placeat voluptatibus, tenetur velit voluptates inventore sequi cum facilis vel itaque illo modi vitae libero impedit? Voluptatem quisquam, dicta eligendi accusantium explicabo non esse nostrum asperiores praesentium earum. Ratione cum illo suscipit a aliquid.</p>
-
-									<h2><a href="testpage.html" title="Test Page">Implementing the bot</a></h2>
-
-									<p>Tenetur repellendus alias voluptatum tempora numquam dolorum vel dolores beatae, facere. Accusamus repellat sit itaque nemo beatae modi explicabo sequi iure eaque alias consectetur voluptate corporis, tenetur praesentium, dolorem quis iusto! Corporis modi obcaecati voluptatum quo corrupti excepturi, quod nostrum, quisquam ut, veniam aliquam harum cupiditate.</p>
-
-									<code class="snippet">
-										<pre>
-											<span class="source js"><span class="meta function prototype js"><span class="support class js">NorrisBot</span>.<span class="support constant js">prototype</span>.<span class="entity name function js">_firstRunCheck</span> <span class="keyword operator assignment js">=</span> <span class="storage type function js">function</span> <span class="punctuation definition parameters begin js">(</span><span class="punctuation definition parameters end js">)</span></span> <span class="meta brace curly js">{</span></span>
+									<pre class="snippet">
+										<code>
+											<span class="source js"><span class="meta function prototype js"><span class="support class js">NorrisBot</span>.<span class="support constant js">prototype</span>.<span class="entity name function js">_connectDb</span><span class="keyword operator assignment js"> = </span><span class="storage type function js">function</span><span class="punctuation definition parameters begin js">(</span><span class="punctuation definition parameters end js">)</span></span> <span class="meta brace curly js">{</span></span>
+												<span class="source js"><span class="leading-whitespace"></span><span class="leading-whitespace"> </span><span class="keyword control js">if</span> <span class="meta brace round js">(</span><span class="keyword operator logical js">!</span>fs<span class="meta delimiter method period js">.</span>existsSync<span class="meta brace round js">(</span><span class="variable language js">this</span><span class="meta delimiter method period js">.</span>dbPath<span class="meta brace round js">)</span><span class="meta brace round js">)</span> <span class="meta brace curly js">{</span></span>
+													<span class="source js"><span class="leading-whitespace"></span><span class="leading-whitespace">   </span><span class="leading-whitespace"></span><span class="entity name type object js console">console</span><span class="meta delimiter method period js">.</span><span class="support function js console">error</span><span class="meta brace round js">(</span><span class="string quoted single js"><span class="punctuation definition string begin js">'</span>Database path <span class="punctuation definition string end js">'</span></span> <span class="keyword operator js">+</span> <span class="string quoted single js"><span class="punctuation definition string begin js">'</span>"<span class="punctuation definition string end js">'</span></span> <span class="keyword operator js">+</span> <span class="variable language js">this</span><span class="meta delimiter method period js">.</span>dbPath <span class="keyword operator js">+</span> <span class="string quoted single js"><span class="punctuation definition string begin js">'</span>" does not exists or it<span class="constant character escape js">\'</span>s not readable.<span class="punctuation definition string end js">'</span></span><span class="meta brace round js">)</span><span class="punctuation terminator statement js">;</span></span>
+													<span class="source js"></span><span class="leading-whitespace"> </span><span class="leading-whitespace">  </span><span class="support variable js">process</span><span class="meta delimiter method period js">.</span>exit<span class="meta brace round js">(</span><span class="constant numeric js">1</span><span class="meta brace round js">)</span><span class="punctuation terminator statement js">;</span></span>
+													<span class="source js"><span class="leading-whitespace"></span><span class="leading-whitespace"> </span><span class="meta brace curly js">}</span></span>
+													<span class="source js"><span class="leading-whitespace"></span><span class="leading-whitespace"> </span><span class="variable language js">this</span><span class="meta delimiter method period js">.</span>db <span class="keyword operator assignment js">=</span> <span class="meta class instance constructor"><span class="keyword operator new js">new</span> <span class="entity name type instance js">SQLite.Database</span></span><span class="meta brace round js">(</span><span class="variable language js">this</span><span class="meta delimiter method period js">.</span>dbPath<span class="meta brace round js">)</span><span class="punctuation terminator statement js">;</span></span>
+													<span class="source js"><span class="meta brace curly js">}</span><span class="punctuation terminator statement js">;</span></span>
+												</code>
 											</pre>
-										</code>
 
-										<p>Iure necessitatibus <code>facilis</code>, consequatur modi distinctio quae fuga pariatur earum, dolores provident architecto nam fugiat, placeat facere quisquam sit quo cupiditate quas unde excepturi animi iusto sunt. Ducimus ea magnam cumque, maxime assumenda tenetur alias minima, perspiciatis vitae nulla inventore veniam nobis, veritatis id quibusdam nemo molestias.</p>
+											<p>Quam ipsum repellat, temporibus nesciunt unde, modi accusamus, quis aut possimus, minus totam molestiae eligendi! Dicta consectetur ex labore natus, accusantium vero laboriosam molestias perspiciatis autem quibusdam veritatis laborum non officiis, architecto nesciunt nisi, vel quaerat debitis <code>harum</code> provident quos? Minus optio nam veritatis perspiciatis excepturi numquam debitis blanditiis voluptatem beatae, voluptatibus ipsum incidunt, deserunt aliquam ratione voluptate, odit saepe harum.</p>
 
-										<h2>The <code>_onStart</code> function</h2>
-										<p>Explicabo porro id ut aperiam optio eius minus enim, maxime quibusdam, molestias commodi. Totam, reprehenderit fugiat magnam quidem aspernatur dolorem odio ratione aut nihil optio id, aperiam accusamus illo beatae fugit numquam error harum expedita dolore ipsa tenetur nesciunt tempora atque voluptate. Nostrum quod natus enim similique eaque autem quia, deleniti repudiandae, reiciendis quos explicabo a facere alias. Sequi aliquam distinctio, aliquid molestias corporis, sit accusamus perspiciatis natus modi necessitatibus ullam.</p>
+											<h3>Setting up the project</h3>
 
-										<p>Nostrum adipisci, nulla, veniam in nisi quam ipsum cupiditate itaque enim, obcaecati debitis. Officiis laudantium ipsa minus ducimus tempora numquam iure, cumque voluptas sint aliquam, quod, voluptate aspernatur. Ut dolor itaque, facere necessitatibus, unde possimus illo tempore aut, maxime maiores delectus nobis quia excepturi sapiente nesciunt rerum quasi nihil minima, facilis.</p>
+											<p>Provident minima officia ratione blanditiis voluptate numquam possimus, dolorem asperiores earum atque dolorum animi quibusdam architecto ullam, non nemo porro omnis, eaque. Consequuntur sit neque, deleniti quos praesentium tempora laborum modi obcaecati architecto ratione odio sapiente dolore vitae maiores totam esse, <strong>aliquid</strong> quidem ex omnis iusto ad voluptatibus necessitatibus similique doloribus eligendi.</p>
 
-										<p>Animi quam blanditiis magnam deleniti repellat, fuga dolore dolor, saepe enim deserunt neque est dolores, nulla impedit, beatae. Nam illo aliquid, adipisci odit, minus fugiat est ducimus in natus maiores dicta, distinctio atque rerum vitae, doloremque aspernatur at! Excepturi obcaecati alias a, et consectetur nesciunt iure illum fuga provident eligendi amet, quae aspernatur ullam laborum sit voluptatibus dolores, accusamus recusandae perferendis ex! Dolore placeat consequuntur, nihil quia quisquam excepturi velit illo distinctio, id neque fugit voluptatem doloribus totam maxime minima ea reprehenderit dolorum sequi sunt quasi dolores. Maxime aliquam at quas beatae vel recusandae aspernatur autem similique vero, vitae tempore, sequi porro!</p>
-									</div>
-
-
-									<section class="entry-tags">
-										<span class="webtwicons tags-icon">Tags:</span>
-										<a href="../tag/code">code</a>,
-										<a href="../tag/slack">slack</a>,
-										<a href="../tag/nodejs">node.js</a>,
-										<a href="../tag/tutorials">tutorials</a>
-									</section>
-
-									<section class="secondary-share">
-										<a href="https://facebook.com/sharer.php" target="_blank" class="btn-facebook radius hover"><span class="webtwicons facebook-official"></span>Share</a>
-										<a href="https://twitter.com/intent?tweet" target="_blank" class="btn-twitter radius hover"><span class="webtwicons twitter-icon"></span>Tweet</a>
-										<a href="https://plus.google.com/sharer" target="_blank" class="btn-google radius hover"><span class="webtwicons google-plus-icon"></span>Share</a>
-										<a href="https://tumblr.com/share" target="_blank" class="btn-tumblr radius hover"><span class="webtwicons tumblr-icon"></span>Tumblr</a>
-										<a href="mailto:?subject=webtwic" target="_blank" class="btn-mail radius hover"><span class="webtwicons envelope-icon"></span>Email</a>
-										<a href="https://pinterest.com/share" target="_blank" class="btn-pinterest radius hover"><span class="webtwicons pinterest-icon"></span>Pin It</a>
-										<a href="https://linkedin.com/share" target="_blank" class="btn-linkedin radius hover"><span class="webtwicons linkedin-square"></span>Linkedin</a>
-									</section>
-
-								</article>
-
-							</div>
-
-							<section class="post-secondary-column left">
-								<section class="prev-next-articles">
-									<div class="left item">
-										<a href="url">
-											<span class="webtwicons chevron-left"></span>
-
-											<div class="item-meta">
-												<span class="uppercase">Read Previous</span>
-												<p>How to invite numerous friends on Facebook to like a page at once</p>
+											<div class="entry-image-small">
+												<img src="../img/intro.jpg" width="844" height="843" alt="">
 											</div>
-										</a>
-									</div>
 
-									<div class="right item">
-										<a class="text-right" href="url">
-											<span class="webtwicons chevron-right"></span>
+											<p>Voluptate animi est, quod explicabo officia provident, fugiat, ipsa dicta corrupti, dolor culpa delectus. Quod earum, tempora ipsam rem, blanditiis voluptates, sapiente magnam possimus nemo explicabo illum. Excepturi totam, corporis soluta officiis maxime aperiam explicabo in necessitatibus voluptatum, nemo tenetur recusandae optio tempora facere ullam fugiat?</p>
 
-											<div class="item-meta">
-												<span class="uppercase">Read Next</span>
-												<p>How to add Hibernate to Power Options on Windows 8</p>
+											<p>Repellendus ipsum perspiciatis esse. Dignissimos, consequatur delectus iusto, impedit dolor sit dolorem a aspernatur minus adipisci laborum suscipit dolorum asperiores tenetur quam voluptatibus animi pariatur veritatis, molestiae ut sunt labore tempora! Eos incidunt magni voluptatibus earum explicabo ex accusamus laudantium iusto saepe, sit, possimus, in architecto provident eveniet numquam, a tempora commodi nemo quaerat aliquid error deleniti corrupti?</p>
+
+											<h2>The Slackbots package</h2>
+
+											<p>Animi vel, tempore, dignissimos architecto libero eveniet possimus maiores accusamus dicta cumque vitae quam omnis dolore debitis ex voluptatum alias. Molestiae sint voluptatum dignissimos voluptas labore saepe minima, eum iusto aliquid enim excepturi sapiente maiores quam.</p>
+
+											<blockquote>What differentiates a great designer from a good designer is how well you're able to communicate with clients - Christian Vasile</blockquote>
+
+											<p>Animi id necessitatibus in fuga nihil facilis, dolore repudiandae beatae itaque vel consectetur minus ducimus dolorem dicta aliquam possimus quibusdam atque, ex modi voluptatibus voluptatem quaerat. Fugit pariatur, inventore porro fuga. Fugit iste, rem facere consequatur harum eaque nostrum est incidunt quas? Doloribus temporibus obcaecati reprehenderit voluptates voluptatum enim libero culpa distinctio quam accusantium ducimus, illo ex aliquam facere debitis aliquid placeat beatae natus, corporis hic quos alias ea rerum adipisci minima?</p>
+
+											<p>Fugit repellat corporis consequuntur reprehenderit, laudantium quo odio et voluptate dolore, placeat voluptatibus, tenetur velit voluptates inventore sequi cum facilis vel itaque illo modi vitae libero impedit? Voluptatem quisquam, dicta eligendi accusantium explicabo non esse nostrum asperiores praesentium earum. Ratione cum illo suscipit a aliquid.</p>
+
+											<h2><a href="testpage.html" title="Test Page">Implementing the bot</a></h2>
+
+											<p>Tenetur repellendus alias voluptatum tempora numquam dolorum vel dolores beatae, facere. Accusamus repellat sit itaque nemo beatae modi explicabo sequi iure eaque alias consectetur voluptate corporis, tenetur praesentium, dolorem quis iusto! Corporis modi obcaecati voluptatum quo corrupti excepturi, quod nostrum, quisquam ut, veniam aliquam harum cupiditate.</p>
+
+											<pre class="snippet">
+												<code>
+													<span class="source js"><span class="meta function prototype js"><span class="support class js">NorrisBot</span>.<span class="support constant js">prototype</span>.<span class="entity name function js">_firstRunCheck</span> <span class="keyword operator assignment js">=</span> <span class="storage type function js">function</span> <span class="punctuation definition parameters begin js">(</span><span class="punctuation definition parameters end js">)</span></span> <span class="meta brace curly js">{</span></span>
+													</code>
+												</pre>
+
+												<p>Iure necessitatibus <code>facilis</code>, consequatur modi distinctio quae fuga pariatur earum, dolores provident architecto nam fugiat, placeat facere quisquam sit quo cupiditate quas unde excepturi animi iusto sunt. Ducimus ea magnam cumque, maxime assumenda tenetur alias minima, perspiciatis vitae nulla inventore veniam nobis, veritatis id quibusdam nemo molestias.</p>
+
+												<h2>The <code>_onStart</code> function</h2>
+												<p>Explicabo porro id ut aperiam optio eius minus enim, maxime quibusdam, molestias commodi. Totam, reprehenderit fugiat magnam quidem aspernatur dolorem odio ratione aut nihil optio id, aperiam accusamus illo beatae fugit numquam error harum expedita dolore ipsa tenetur nesciunt tempora atque voluptate. Nostrum quod natus enim similique eaque autem quia, deleniti repudiandae, reiciendis quos explicabo a facere alias. Sequi aliquam distinctio, aliquid molestias corporis, sit accusamus perspiciatis natus modi necessitatibus ullam.</p>
+
+												<p>Nostrum adipisci, nulla, veniam in nisi quam ipsum cupiditate itaque enim, obcaecati debitis. Officiis laudantium ipsa minus ducimus tempora numquam iure, cumque voluptas sint aliquam, quod, voluptate aspernatur. Ut dolor itaque, facere necessitatibus, unde possimus illo tempore aut, maxime maiores delectus nobis quia excepturi sapiente nesciunt rerum quasi nihil minima, facilis.</p>
+
+												<p>Animi quam blanditiis magnam deleniti repellat, fuga dolore dolor, saepe enim deserunt neque est dolores, nulla impedit, beatae. Nam illo aliquid, adipisci odit, minus fugiat est ducimus in natus maiores dicta, distinctio atque rerum vitae, doloremque aspernatur at! Excepturi obcaecati alias a, et consectetur nesciunt iure illum fuga provident eligendi amet, quae aspernatur ullam laborum sit voluptatibus dolores, accusamus recusandae perferendis ex! Dolore placeat consequuntur, nihil quia quisquam excepturi velit illo distinctio, id neque fugit voluptatem doloribus totam maxime minima ea reprehenderit dolorum sequi sunt quasi dolores. Maxime aliquam at quas beatae vel recusandae aspernatur autem similique vero, vitae tempore, sequi porro!</p>
 											</div>
-										</a>
-									</div>
-								</section>
 
-								<section class="author-profile">
-									<div class="author-info-inner">
-										<a href="/author/whizkydee">
-											<section class="author-avatar">
-												<img src="../img/author-large.jpg" height="180" width="180">
+
+											<section class="entry-tags">
+												<span class="webtwicons tags-icon">Tags:</span>
+												<a href="../tag/code">code</a>,
+												<a href="../tag/slack">slack</a>,
+												<a href="../tag/nodejs">node.js</a>,
+												<a href="../tag/tutorials">tutorials</a>
 											</section>
-										</a>
-										<section class="author-content">
-											<a class="author-name" href="/author/whizkydee"><h3>Olaolu Olawuyi</h3></a>
-											<div class="author-title"><span>Web/Mobile Developer</span></div>
 
-											<div class="author-social text-right">
-												<a href="https://github.com/whizkydee" target="_blank"><span class="webtwicons github-alt-icon"></span></a>
-												<a href="https://twitter.com/whizkydee" target="_blank"><span class="webtwicons twitter-icon"></span></a>
+											<section class="secondary-share">
+												<a href="https://facebook.com/sharer.php" target="_blank" class="btn-facebook radius hover"><span class="webtwicons facebook-official"></span>Share</a>
+												<a href="https://twitter.com/intent?tweet" target="_blank" class="btn-twitter radius hover"><span class="webtwicons twitter-icon"></span>Tweet</a>
+												<a href="https://plus.google.com/sharer" target="_blank" class="btn-google radius hover"><span class="webtwicons google-plus-icon"></span>Share</a>
+												<a href="https://tumblr.com/share" target="_blank" class="btn-tumblr radius hover"><span class="webtwicons tumblr-icon"></span>Tumblr</a>
+												<a href="mailto:?subject=webtwic" target="_blank" class="btn-mail radius hover"><span class="webtwicons envelope-icon"></span>Email</a>
+												<a href="https://pinterest.com/share" target="_blank" class="btn-pinterest radius hover"><span class="webtwicons pinterest-icon"></span>Pin It</a>
+												<a href="https://linkedin.com/share" target="_blank" class="btn-linkedin radius hover"><span class="webtwicons linkedin-square"></span>Linkedin</a>
+											</section>
+
+										</article>
+
+									</div>
+
+									<section class="post-secondary-column left">
+										<section class="prev-next-articles">
+											<div class="left item">
+												<a href="url">
+													<span class="webtwicons chevron-left"></span>
+
+													<div class="item-meta">
+														<span class="uppercase">Read Previous</span>
+														<p>How to invite numerous friends on Facebook to like a page at once</p>
+													</div>
+												</a>
 											</div>
-											<p>Olaolu Olawuyi is a young techie and also a co-founder of webtwic. He his passionate about code, the web, tech, creative design and music. He started real-time coding at the age of 11, he is currently 14 years. He likes writing articles on code, creative design and tech that help people get stuffs fixed and inspire them. In his freetime, he gets on his piano.</p>
+
+											<div class="right item">
+												<a class="text-right" href="url">
+													<span class="webtwicons chevron-right"></span>
+
+													<div class="item-meta">
+														<span class="uppercase">Read Next</span>
+														<p>How to add Hibernate to Power Options on Windows 8</p>
+													</div>
+												</a>
+											</div>
 										</section>
-									</div>
-								</section>
 
-								<!-- Start More posts -->
-
-								<section class="related-articles">
-									<div class="inner">
-										<h2 class="text-center">Related Articles</h2>
-
-										<ul class="post_list">
-											<li class="post-card">
-												<a href="post">
-													<div class="post-card-image"><img src="../img/related-post.jpg"></div>
+										<section class="author-profile">
+											<div class="author-info-inner">
+												<a href="/author/whizkydee">
+													<section class="author-avatar">
+														<img src="../img/author-large.jpg" height="180" width="180">
+													</section>
 												</a>
+												<section class="author-content">
+													<a class="author-name" href="/author/whizkydee"><h3>Olaolu Olawuyi</h3></a>
+													<div class="author-title"><span>Web/Mobile Developer</span></div>
 
-												<a class="post-title" href="post">Xbox Elite Controller review: $150 isn’t cheap, but you’ll really, really want one</a>
-											</li>
+													<div class="author-social text-right">
+														<a href="https://github.com/whizkydee" target="_blank"><span class="webtwicons github-alt-icon"></span></a>
+														<a href="https://twitter.com/whizkydee" target="_blank"><span class="webtwicons twitter-icon"></span></a>
+													</div>
+													<p>Olaolu Olawuyi is a young techie and also a co-founder of webtwic. He his passionate about code, the web, tech, creative design and music. He started real-time coding at the age of 11, he is currently 14 years. He likes writing articles on code, creative design and tech that help people get stuffs fixed and inspire them. In his freetime, he gets on his piano.</p>
+												</section>
+											</div>
+										</section>
 
-											<li class="post-card">
-												<a href="post">
-													<div class="post-card-image"><img src="../img/related-post2.jpg"></div>
-												</a>
+										<!-- Start More posts -->
 
-												<a class="post-title" href="post">The truth about Web Development</a>
-											</li>
+										<section class="related-articles">
+											<div class="inner">
+												<h2 class="text-center">Related Articles</h2>
 
-											<li class="post-card">
-												<a href="post">
-													<div class="post-card-image"><img src="../img/related-post.jpg"></div>
-												</a>
+												<ul class="post_list">
+													<li class="post-card">
+														<a href="post">
+															<div class="post-card-image"><img src="../img/related-post.jpg"></div>
+														</a>
 
-												<a class="post-title" href="post">Xbox Elite Controller review: $150 isn’t cheap, but you’ll really, really want one</a>
-											</li>
+														<a class="post-title" href="post">Xbox Elite Controller review: $150 isn’t cheap, but you’ll really, really want one</a>
+													</li>
 
-											<li class="post-card">
-												<a href="post">
-													<div class="post-card-image"><img src="../img/related-post.jpg"></div>
-												</a>
+													<li class="post-card">
+														<a href="post">
+															<div class="post-card-image"><img src="../img/related-post2.jpg"></div>
+														</a>
 
-												<a class="post-title" href="post">How to add Hibernate to Power Options in Windows 8</a>
-											</li>
+														<a class="post-title" href="post">The truth about Web Development</a>
+													</li>
 
-											<li class="post-card">
-												<a href="post">
-													<div class="post-card-image"><img src="../img/related-post2.jpg"></div>
-												</a>
+													<li class="post-card">
+														<a href="post">
+															<div class="post-card-image"><img src="../img/related-post.jpg"></div>
+														</a>
 
-												<a class="post-title" href="post">Xbox Elite Controller review: $150 isn’t cheap, but you’ll really, really want one</a>
-											</li>
+														<a class="post-title" href="post">Xbox Elite Controller review: $150 isn’t cheap, but you’ll really, really want one</a>
+													</li>
 
-											<li class="post-card">
-												<a href="post">
-													<div class="post-card-image"><img src="../img/related-post.jpg"></div>
-												</a>
+													<li class="post-card">
+														<a href="post">
+															<div class="post-card-image"><img src="../img/related-post.jpg"></div>
+														</a>
 
-												<a class="post-title" href="post">Xbox Elite Controller review: $150 isn’t cheap, but you’ll really, really want one</a>
-											</li>
-										</ul>
-									</div>
-								</section>
+														<a class="post-title" href="post">How to add Hibernate to Power Options in Windows 8</a>
+													</li>
 
-								<section class="entry-comments" id="comments">
-									<div class="disqus_comments">
-										<h3>Comments</h3>
-									</div>
-								</section>
-							</section><!-- Post-secondary-column div -->
-						</div><!-- Page focus column div -->
-						{% include sidebar.html %}
-						<a href="#" class="to-top circle">
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
-								<path d="M128.4,189.3L233.4,89c5.8-6,13.7-9,22.4-9c8.7,0,16.5,3,22.4,9l105.4,100.3c12.5,11.9,12.5,31.3,0,43.2
-								c-12.5,11.9-32.7,11.9-45.2,0L288,184.4v217c0,16.9-14.3,30.6-32,30.6c-17.7,0-32-13.7-32-30.6v-217l-50.4,48.2
-								c-12.5,11.9-32.7,11.9-45.2,0C115.9,220.6,115.9,201.3,128.4,189.3z"/>
-							</svg></a>
+													<li class="post-card">
+														<a href="post">
+															<div class="post-card-image"><img src="../img/related-post2.jpg"></div>
+														</a>
 
-						</div>
+														<a class="post-title" href="post">Xbox Elite Controller review: $150 isn’t cheap, but you’ll really, really want one</a>
+													</li>
 
-						<!--:: End Main page (post-image, post-content and sidebar)::-->
+													<li class="post-card">
+														<a href="post">
+															<div class="post-card-image"><img src="../img/related-post.jpg"></div>
+														</a>
 
-					</section><!--- Entry wrap -->
+														<a class="post-title" href="post">Xbox Elite Controller review: $150 isn’t cheap, but you’ll really, really want one</a>
+													</li>
+												</ul>
+											</div>
+										</section>
+
+										<section class="entry-comments" id="comments">
+											<div class="disqus_comments">
+												<h3>Comments</h3>
+											</div>
+										</section>
+									</section><!-- Post-secondary-column div -->
+								</div><!-- Page focus column div -->
+								{% include sidebar.html %}
+								<a href="#" class="to-top circle">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+										<path d="M128.4,189.3L233.4,89c5.8-6,13.7-9,22.4-9c8.7,0,16.5,3,22.4,9l105.4,100.3c12.5,11.9,12.5,31.3,0,43.2
+										c-12.5,11.9-32.7,11.9-45.2,0L288,184.4v217c0,16.9-14.3,30.6-32,30.6c-17.7,0-32-13.7-32-30.6v-217l-50.4,48.2
+										c-12.5,11.9-32.7,11.9-45.2,0C115.9,220.6,115.9,201.3,128.4,189.3z"/>
+									</svg></a>
+
+								</div>
+
+								<!--:: End Main page (post-image, post-content and sidebar)::-->
+
+							</section><!--- Entry wrap -->
