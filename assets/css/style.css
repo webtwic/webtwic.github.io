@@ -1670,7 +1670,7 @@ body.home {
       color: #81aec5; }
 .article .article-excerpt p {
   font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
-  margin: 10px 0 0 15px;
+  margin: 10px 0 10px 15px;
   color: #597488;
   line-height: 25px;
   font-size: 1.06em;
