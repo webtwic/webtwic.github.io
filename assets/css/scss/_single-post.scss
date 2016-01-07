@@ -326,7 +326,7 @@ body.single-post .entry-wrap .main-page {
    .author-profile {
       width: $full;
       background: $white;
-      padding: 10px 20px 15em 0;
+      padding: 10px 20px 15px 0;
       height: 250px;
       color: #4E697D;
       margin-bottom: 10 * $two;
@@ -334,6 +334,7 @@ body.single-post .entry-wrap .main-page {
          position: relative;
          height: $full;
          width: $full;
+         display: inline-block;
          a {
             position: relative;
          }
