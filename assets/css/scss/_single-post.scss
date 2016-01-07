@@ -226,11 +226,11 @@ body.single-post .entry-wrap .main-page {
          }
          &:after {
             content: "\f0c1";
-            font-size: 0.5em;
+            font-size: .72em;
             margin-left: 4px;
-            @include transform(rotate(90deg));
+            @include transform(rotate(316deg));
             position: absolute;
-            margin: 9px 5px;
+            margin: 7px;
          }
       }
    }
