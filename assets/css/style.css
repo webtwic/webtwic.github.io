@@ -763,7 +763,7 @@ img {
 .fixed {
   position: fixed; }
 
-.left, body.home .featured-posts-column, .tech-news-wrap, body.category-page .posts-column {
+.left, body.home .featured-posts-column, .tech-news-wrap, body.category-page .posts-column, .category-posts-column ul.category-posts-list li {
   float: left; }
 
 .right {
@@ -2939,7 +2939,7 @@ body.single-post .entry-wrap .main-page {
   .prev-next-articles .item.right a {
     border-left-width: 1px;
     border-left-style: solid; }
-  .prev-next-articles .item.left a, .prev-next-articles body.home .item.featured-posts-column a, body.home .prev-next-articles .item.featured-posts-column a, .prev-next-articles .item.tech-news-wrap a, .prev-next-articles body.category-page .item.posts-column a, body.category-page .prev-next-articles .item.posts-column a {
+  .prev-next-articles .item.left a, .prev-next-articles body.home .item.featured-posts-column a, body.home .prev-next-articles .item.featured-posts-column a, .prev-next-articles .item.tech-news-wrap a, .prev-next-articles body.category-page .item.posts-column a, body.category-page .prev-next-articles .item.posts-column a, .prev-next-articles .category-posts-column ul.category-posts-list li.item a, .category-posts-column ul.category-posts-list .prev-next-articles li.item a {
     border-right-width: 1px;
     border-right-style: solid; }
   .prev-next-articles .item a:hover {
@@ -2960,7 +2960,7 @@ body.single-post .entry-wrap .main-page {
     display: inline-block;
     width: 80%; }
 
-.left .item-meta, body.home .featured-posts-column .item-meta, .tech-news-wrap .item-meta, body.category-page .posts-column .item-meta {
+.left .item-meta, body.home .featured-posts-column .item-meta, .tech-news-wrap .item-meta, body.category-page .posts-column .item-meta, .category-posts-column ul.category-posts-list li .item-meta {
   padding-left: 20px; }
 
 .right .item-meta {
@@ -3073,6 +3073,12 @@ body.secondary-category .site-content {
 .category-posts-column ul.category-posts-list {
   list-style-type: none;
   margin-bottom: 30px; }
+  .category-posts-column ul.category-posts-list .post-row {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto; }
   .category-posts-column ul.category-posts-list li {
     -webkit-border-radius: 2px 2px 0 0;
     -moz-border-radius: 2px 2px 0 0;
@@ -3087,7 +3093,7 @@ body.secondary-category .site-content {
     position: relative;
     width: 18.5%;
     background: #fff;
-    margin: 0 1.3% 30px 0;
+    margin: 0 1.3% 0 0;
     display: inline-block; }
     .category-posts-column ul.category-posts-list li:nth-child(5n) {
       margin-right: 0; }
