@@ -3002,7 +3002,7 @@ body.single-post .entry-wrap .main-page {
     width: 10%; }
 .related-articles ul {
   position: relative;
-  padding: 1px 20px 35em 20px; }
+  padding: 1px 20px 0 20px; }
   .related-articles ul li {
     -webkit-transition: opacity 0.5s ease-out;
     -moz-transition: opacity 0.5s ease-out;
@@ -3076,9 +3076,7 @@ body.secondary-category .site-content {
   .category-posts-column ul.category-posts-list .post-row {
     position: relative;
     display: inline-block;
-    margin-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto; }
+    margin-bottom: 30px; }
   .category-posts-column ul.category-posts-list li {
     -webkit-border-radius: 2px 2px 0 0;
     -moz-border-radius: 2px 2px 0 0;

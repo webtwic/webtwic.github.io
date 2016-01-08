@@ -516,7 +516,7 @@ body.single-post .entry-wrap .main-page {
    }
    ul {
       position: relative;
-      padding: 1px 20px 35em 20px;
+      padding: 1px 20px 0 20px;
       li {
          @include transition(opacity .5s ease-out);
          width: 30%;
