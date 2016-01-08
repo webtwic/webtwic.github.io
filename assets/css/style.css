@@ -1840,10 +1840,10 @@ body.home {
   width: 100%;
   position: relative; }
   .sidebar .inner, .sidebar article.post-wrap .post-wrap-inner, article.post-wrap .sidebar .post-wrap-inner, .sidebar .article-meta .article-meta-inner, .article-meta .sidebar .article-meta-inner, .sidebar .page-focus-column .post-secondary-column .author-profile .author-info-inner, .page-focus-column .post-secondary-column .author-profile .sidebar .author-info-inner, .sidebar .post-secondary-column .related-articles .inner, .post-secondary-column .related-articles .sidebar .inner, .sidebar .about-page .founders-section .inner, .about-page .founders-section .sidebar .inner, .sidebar .site-footer .footer-inner, .site-footer .sidebar .footer-inner {
-    padding-bottom: 20px; }
+    padding-bottom: 30px; }
 
 .empty-col.sidebar {
-  height: 351px;
+  height: 331px;
   position: relative; }
 
 .category-title {
