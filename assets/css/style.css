@@ -3149,7 +3149,8 @@ ul.category-posts-list li .main-post-content {
     font-size: 1.2em;
     margin: 0 0 3px 0; }
     ul.category-posts-list li .main-post-content h3 a {
-      color: #3f5261; }
+      color: #3f5261;
+      font-weight: 600; }
   ul.category-posts-list li .main-post-content .post-text {
     margin-top: 0;
     color: #597488;
