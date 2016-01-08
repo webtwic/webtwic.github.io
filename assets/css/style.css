@@ -3056,8 +3056,7 @@ Start secondary-category.scss
 */
 body.secondary-category .site-content {
   margin: 100px auto 0 auto;
-  max-width: 1379px;
-  width: 94%; }
+  max-width: 1379px; }
 
 .secondary-category .secondary-category-section {
   width: 100%;
