@@ -4,11 +4,11 @@
 
 {% include head.html %}
 
-  <body class="main {% if page.body-class %}{{ page.body-class }}{% endif %}" id="responsive">
+  <body class="main default-body {% if page.body-class %}{{ page.body-class }}{% endif %}" id="responsive">
 
     {% include header.html %}
 
-    <main class="site-content" id="content">
+    <main class="site-content default-site-content" id="content">
       <div class="site-wrapper inner">
 
          {{ content }}

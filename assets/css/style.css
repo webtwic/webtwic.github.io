@@ -2171,7 +2171,7 @@ body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-colu
       .pagination a:last-child:hover {
         padding: 14px 23.5px; }
 
-span.line {
+body.default-body .line {
   margin: 46px auto 50px auto;
   background: #D3D5D8;
   height: 1px;
