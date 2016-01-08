@@ -54,7 +54,9 @@ body {
             @extend .left;
             @include border-radius(2px 2px 0 0);
             @include box-shadow( 0px 0px 5px rgba(0, 0, 0, .1) );
+            @include transition(box-shadow .2s ease);
             position: relative;
+            cursor: pointer;
             width: 18.5%;
             background: $white;
             margin: 0 1.6% 0 0;
@@ -62,12 +64,27 @@ body {
             &:last-child {
                margin-right: 0;
             }
+            &:hover {
+               @include box-shadow(0px 0px 7px rgba(0, 0, 0, .3));
+            }
             .inner {
                padding-bottom: 20px;
+            }
+            > a {
+               position: relative;
+               .postThumbnail {
+                  position: relative;
+                  img {
+                     position: relative;
+                     @include border-radius(2px 2px 0 0);
+                     display: block;
+                  }
+               }
             }
          }
       }
    }
+
    .more-posts {
       position: relative;
       @extend .uppercase;
@@ -102,45 +119,26 @@ body {
       vertical-align: text-bottom;
    }
 }
-
 ul.category-posts-list {
-   li {
-      > a {
+   .main-post-content {
+      @extend .text-left;
+      position: relative;
+      padding: 5px 10px;
+      font-size: 1em;
+      h3 {
          position: relative;
-      }
-
-      .main-post-content {
-         @extend .text-left;
-         position: relative;
-         padding: 5px 10px;
-         font-size: 1em;
-         h3 {
-            position: relative;
-            font-size: 1.2em;
-            margin: 0 0 3px 0;
-            a {
-               color: $title-color;
-               font-weight: 600;
-            }
-         }
-         .post-text {
-            margin-top: 0;
-            color: $text-color;
-            font-size: .89em;
+         font-size: 1.2em;
+         margin: 0 0 3px 0;
+         a {
+            color: $title-color;
+            font-weight: 600;
+            @include transition(0s);
          }
       }
-   }
-}
-
-.main-post-wrap {
-   a {
-      .postThumbnail {
-         position: relative;
-         img {
-            position: relative;
-            @include border-radius(2px 2px 0 0);
-            display: block;
-         }
+      .post-text {
+         margin-top: 0;
+         color: $text-color;
+         font-size: .89em;
       }
    }
 }
