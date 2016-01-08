@@ -905,7 +905,8 @@ pre.snippet {
   font-size: .9em;
   color: #c7cedb;
   white-space: normal;
-  word-wrap: normal; }
+  word-wrap: normal;
+  max-height: 511px; }
   pre.snippet * {
     font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace; }
   pre.snippet code {

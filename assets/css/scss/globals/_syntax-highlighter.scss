@@ -10,6 +10,7 @@ pre.snippet {
    color: #c7cedb;
    white-space: normal;
    word-wrap: normal;
+   max-height: 511px;
    * {
       font-family: $code_font;
    }
