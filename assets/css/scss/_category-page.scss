@@ -17,9 +17,12 @@ body.category-page {
    }
    .site-content {
       margin: auto auto 0 auto;
-      height: 3700px;
+      // height: 3700px;
       max-width: 1279px;
       width: 94%;
+      .site-wrapper {
+         margin-bottom: 20px;
+      }
    }
    .posts-column {
       width: 70.8%;
@@ -171,23 +174,6 @@ body {
       }
       .sidebar.empty-col {
          height: 300px;
-      }
-   }
-   &.single-post {
-      .site-content {
-         margin: 55px auto 0 auto;
-         height: 5800px;
-         max-width: 1379px;
-         width: $full;
-      }
-      .entry-wrap {
-         height: 900px;
-         width: $full;
-         .entry-header {
-            width: $full;
-            padding: 7px 0 60px 0;
-            text-align: center;
-         }
       }
    }
 }

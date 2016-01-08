@@ -8,9 +8,28 @@ Start single-post.scss
 
 */
 body {
-   &.single-post .main-page .sidebar-column {
-      margin-top: 0;
-      width: 24.295%;
+   &.single-post {
+      .site-content {
+         margin: 55px auto 0 auto;
+         max-width: 1379px;
+         width: $full;
+         .site-wrapper {
+            margin-bottom: 30px;
+         }
+      }
+      .entry-wrap {
+         height: 900px;
+         width: $full;
+         .entry-header {
+            width: $full;
+            padding: 7px 0 60px 0;
+            text-align: center;
+         }
+      }
+      .main-page .sidebar-column {
+         margin-top: 0;
+         width: 24.295%;
+      }
    }
 }
 .entry-wrap header {
