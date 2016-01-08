@@ -43,22 +43,28 @@ body {
          position: relative;
          display: inline-block;
          margin-bottom: 30px;
-      }
-      li {
-         @extend [class*="-column"];
-         @extend .left;
-         @include border-radius(2px 2px 0 0);
-         @include box-shadow( 0px 0px 5px rgba(0, 0, 0, .1) );
-         position: relative;
-         width: 18.5%;
-         background: $white;
-         margin: 0 1.3% 0 0;
-         display: inline-block;
-         &:nth-child(5n) {
-            margin-right: 0;
+         .section-title {
+            @extend .text-left;
+            margin: 0 0 10px 0;
+            color: $title-color;
+            font-size: 1.5em;
          }
-         .inner {
-            padding-bottom: 20px;
+         li {
+            @extend [class*="-column"];
+            @extend .left;
+            @include border-radius(2px 2px 0 0);
+            @include box-shadow( 0px 0px 5px rgba(0, 0, 0, .1) );
+            position: relative;
+            width: 18.5%;
+            background: $white;
+            margin: 0 1.3% 0 0;
+            display: inline-block;
+            &:last-child {
+               margin-right: 0;
+            }
+            .inner {
+               padding-bottom: 20px;
+            }
          }
       }
    }
