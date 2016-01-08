@@ -95,3 +95,13 @@ body {
    padding: 0em;
    background: #F3F4F6;
 }
+
+main {
+   &.site-content {
+      max-width: 1279px;
+      width: 94%;
+      .site-wrapper {
+         margin-bottom: 50px;
+      }
+   }
+}

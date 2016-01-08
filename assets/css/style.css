@@ -443,6 +443,12 @@ body {
   padding: 0em;
   background: #F3F4F6; }
 
+main.site-content {
+  max-width: 1279px;
+  width: 94%; }
+  main.site-content .site-wrapper {
+    margin-bottom: 50px; }
+
 /* Start Iconset */
 .webtwicons {
   display: inline-block;
@@ -1602,7 +1608,7 @@ body.home {
   body.home > header.site-header {
     padding-bottom: 275px; }
   body.home .site-content {
-    margin: -100px auto 150px;
+    margin: -100px auto 0 auto;
     width: 94%;
     max-width: 1418px; }
   body.home .featured-posts-column {
@@ -2164,12 +2170,13 @@ body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-colu
       margin-right: 0; }
       .pagination a:last-child:hover {
         padding: 14px 23.5px; }
-  .pagination .line {
-    margin: 46px auto 50px auto;
-    background: #D3D5D8;
-    height: 1px;
-    width: 46%;
-    display: block; }
+
+span.line {
+  margin: 46px auto 50px auto;
+  background: #D3D5D8;
+  height: 1px;
+  width: 46%;
+  display: block; }
 
 .bug-holder {
   color: #ccc;
@@ -2211,11 +2218,7 @@ body.category-page > header.site-header {
 body.category-page .drop-nav:not(.flyout-nav) {
   border-color: rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.08); }
 body.category-page .site-content {
-  margin: auto auto 0 auto;
-  max-width: 1279px;
-  width: 94%; }
-  body.category-page .site-content .site-wrapper {
-    margin-bottom: 50px; }
+  margin: auto auto 0 auto; }
 body.category-page .posts-column {
   width: 70.8%;
   height: 3303px;
@@ -2587,8 +2590,6 @@ body.single-post .site-content {
   margin: 55px auto 0 auto;
   max-width: 1379px;
   width: 100%; }
-  body.single-post .site-content .site-wrapper {
-    margin-bottom: 30px; }
 body.single-post .entry-wrap {
   height: 900px;
   width: 100%; }
