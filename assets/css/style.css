@@ -3087,10 +3087,12 @@ body.secondary-category .site-content {
     position: relative;
     width: 18.5%;
     background: #fff;
-    margin: 0 1.3% 20px 0;
+    margin: 0 1.3% 30px 0;
     display: inline-block; }
     .category-posts-column ul.category-posts-list li:nth-child(5n) {
       margin-right: 0; }
+    .category-posts-column ul.category-posts-list li .inner, .category-posts-column ul.category-posts-list li article.post-wrap .post-wrap-inner, article.post-wrap .category-posts-column ul.category-posts-list li .post-wrap-inner, .category-posts-column ul.category-posts-list li .article-meta .article-meta-inner, .article-meta .category-posts-column ul.category-posts-list li .article-meta-inner, .category-posts-column ul.category-posts-list li .page-focus-column .post-secondary-column .author-profile .author-info-inner, .page-focus-column .post-secondary-column .author-profile .category-posts-column ul.category-posts-list li .author-info-inner, .category-posts-column ul.category-posts-list li .site-footer .footer-inner, .site-footer .category-posts-column ul.category-posts-list li .footer-inner {
+      padding-bottom: 20px; }
 .category-posts-column .more-posts {
   position: relative;
   letter-spacing: .05rem;
