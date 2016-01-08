@@ -1839,9 +1839,11 @@ body.home {
   margin-bottom: 25px;
   width: 100%;
   position: relative; }
+  .sidebar .inner, .sidebar article.post-wrap .post-wrap-inner, article.post-wrap .sidebar .post-wrap-inner, .sidebar .article-meta .article-meta-inner, .article-meta .sidebar .article-meta-inner, .sidebar .page-focus-column .post-secondary-column .author-profile .author-info-inner, .page-focus-column .post-secondary-column .author-profile .sidebar .author-info-inner, .sidebar .post-secondary-column .related-articles .inner, .post-secondary-column .related-articles .sidebar .inner, .sidebar .about-page .founders-section .inner, .about-page .founders-section .sidebar .inner, .sidebar .site-footer .footer-inner, .site-footer .sidebar .footer-inner {
+    padding-bottom: 20px; }
 
 .empty-col.sidebar {
-  height: 311px;
+  height: 351px;
   position: relative; }
 
 .category-title {
@@ -1905,16 +1907,14 @@ iframe a.twitter-timeline {
 .second-category-title {
   width: 106.64%; }
 
-.trends-wrap {
-  height: 464px; }
-  .trends-wrap .category-title {
-    background: #BB81AB;
-    border-color: #AF6A9B; }
-    .trends-wrap .category-title svg {
-      vertical-align: middle;
-      fill: #fff;
-      width: 22px;
-      height: 20px; }
+.trends-wrap .category-title {
+  background: #BB81AB;
+  border-color: #AF6A9B; }
+  .trends-wrap .category-title svg {
+    vertical-align: middle;
+    fill: #fff;
+    width: 22px;
+    height: 20px; }
 
 .category {
   margin-top: 10px;
@@ -1938,23 +1938,19 @@ iframe a.twitter-timeline {
         color: #49b8cc;
         background: #E9F1F5; }
 
-.how-to-wrap {
-  height: 516px; }
-  .how-to-wrap .category-title {
-    background: #FEA1B1;
-    border-color: #EA8D9D; }
-    .how-to-wrap .category-title p:before {
-      content: "\f128";
-      font-size: 15px; }
+.how-to-wrap .category-title {
+  background: #FEA1B1;
+  border-color: #EA8D9D; }
+  .how-to-wrap .category-title p:before {
+    content: "\f128";
+    font-size: 15px; }
 
-.freebies-wrap {
-  height: 469px; }
-  .freebies-wrap .category-title {
-    background: #F9BA5D;
-    border-color: #FFA22E; }
-    .freebies-wrap .category-title p:before {
-      content: "\f06b";
-      font-size: 16px; }
+.freebies-wrap .category-title {
+  background: #F9BA5D;
+  border-color: #FFA22E; }
+  .freebies-wrap .category-title p:before {
+    content: "\f06b";
+    font-size: 16px; }
 
 .freebie-item {
   -webkit-transition: all 0.4s linear;
@@ -1996,14 +1992,12 @@ body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-colu
   float: left;
   margin-right: 10px; }
 
-.coding-wrap {
-  height: 480px; }
-  .coding-wrap .category-title {
-    background: #57DD6B;
-    border-color: #3FC553; }
-    .coding-wrap .category-title p:before {
-      content: "\f121";
-      font-size: 14.7px; }
+.coding-wrap .category-title {
+  background: #57DD6B;
+  border-color: #3FC553; }
+  .coding-wrap .category-title p:before {
+    content: "\f121";
+    font-size: 14.7px; }
 
 .games-wrap {
   height: 420px; }

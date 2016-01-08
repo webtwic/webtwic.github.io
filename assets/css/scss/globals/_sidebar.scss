@@ -9,10 +9,13 @@
    margin-bottom: 25px;
    width: $full;
    position: relative;
+   .inner {
+      padding-bottom: 20px;
+   }
 }
 
 .empty-col.sidebar {
-   height: 311px;
+   height: 351px;
    position: relative;
 }
 
@@ -86,7 +89,7 @@ iframe a.twitter-timeline {
 }
 
 .trends-wrap {
-   height: 464px;
+   // height: 464px;
    .category-title {
       background: #BB81AB;
       border-color: #AF6A9B;
@@ -124,7 +127,7 @@ iframe a.twitter-timeline {
 }
 
 .how-to-wrap {
-   height: 516px;
+   // height: 516px;
    .category-title {
       background: #FEA1B1;
       border-color: #EA8D9D;
@@ -136,7 +139,7 @@ iframe a.twitter-timeline {
 }
 
 .freebies-wrap {
-   height: 469px;
+   // height: 469px;
    .category-title {
       background: #F9BA5D;
       border-color: #FFA22E;
@@ -191,7 +194,7 @@ body {
 }
 
 .coding-wrap {
-   height: 480px;
+   // height: 480px;
    .category-title {
       background: #57DD6B;
       border-color: #3FC553;
