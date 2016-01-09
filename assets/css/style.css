@@ -2750,10 +2750,10 @@ body.single-post .entry-wrap .main-page {
   .post-content-column > article .entry-content p {
     font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
     color: #4E697D;
-    line-height: 2;
+    line-height: 1.9;
     margin-bottom: 1.5em;
     font-size: 1em;
-    letter-spacing: .05em; }
+    letter-spacing: .04em; }
 
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
   color: #3f5261; }
