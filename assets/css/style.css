@@ -2770,17 +2770,6 @@ body.single-post .entry-wrap .main-page {
     .entry-content h1 a:hover, .entry-content h2 a:hover, .entry-content h3 a:hover, .entry-content h4 a:hover, .entry-content h5 a:hover, .entry-content h6 a:hover {
       border-bottom: none;
       color: #6699cc; }
-    .entry-content h1 a:after, .entry-content h2 a:after, .entry-content h3 a:after, .entry-content h4 a:after, .entry-content h5 a:after, .entry-content h6 a:after {
-      content: "\f0c1";
-      font-size: .72em;
-      margin-left: 4px;
-      -webkit-transform: rotate(316deg);
-      -moz-transform: rotate(316deg);
-      -ms-transform: rotate(316deg);
-      -o-transform: rotate(316deg);
-      transform: rotate(316deg);
-      position: absolute;
-      margin: 7px; }
 .entry-content a {
   color: #6699cc;
   border-bottom: 1px solid #6699cc;

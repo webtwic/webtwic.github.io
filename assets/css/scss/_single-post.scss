@@ -243,14 +243,6 @@ body.single-post .entry-wrap .main-page {
             border-bottom: none;
             color: $basecolor;
          }
-         &:after {
-            content: "\f0c1";
-            font-size: .72em;
-            margin-left: 4px;
-            @include transform(rotate(316deg));
-            position: absolute;
-            margin: 7px;
-         }
       }
    }
    a {
