@@ -26,6 +26,12 @@ jQuery(document).ready(function() {
 	height = 200;
 
 	// Performance Fixes
+	
+	// Create function to add browser name and version to body class
+	
+	function showBrowser(b) {
+		$("body").addClass(b + " " + b + parseInt(browser.version));
+	}
 
 	// Start browser detection
 
