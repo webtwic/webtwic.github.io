@@ -243,6 +243,14 @@ body.single-post .entry-wrap .main-page {
             border-bottom: none;
             color: $basecolor;
          }
+         &:before {
+            background: url("../../img/svg/link_icon.svg") no-repeat;
+            display: inline-block;
+            content: "";
+            width: 26px;
+            height: 25px;
+            vertical-align: sub;
+         }
       }
    }
    a {

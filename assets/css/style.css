@@ -2770,6 +2770,13 @@ body.single-post .entry-wrap .main-page {
     .entry-content h1 a:hover, .entry-content h2 a:hover, .entry-content h3 a:hover, .entry-content h4 a:hover, .entry-content h5 a:hover, .entry-content h6 a:hover {
       border-bottom: none;
       color: #6699cc; }
+    .entry-content h1 a:before, .entry-content h2 a:before, .entry-content h3 a:before, .entry-content h4 a:before, .entry-content h5 a:before, .entry-content h6 a:before {
+      background: url("../../img/svg/link_icon.svg") no-repeat;
+      display: inline-block;
+      content: "";
+      width: 26px;
+      height: 25px;
+      vertical-align: sub; }
 .entry-content a {
   color: #6699cc;
   border-bottom: 1px solid #6699cc;
