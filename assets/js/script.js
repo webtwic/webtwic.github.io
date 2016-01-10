@@ -66,20 +66,6 @@ jQuery(document).ready(function() {
 		$(elem, this).attr(name, val);
 	}
 
-	// Start Performance Functions
-
-	function addAlt() {
-		$(img, this).attr("alt", "...");
-	}
-
-	function addCharset() {
-		$(scripts, this).attr("charset", "utf-8");
-	}
-
-	function addType() {
-		$(scripts, this).attr("type", "text/javascript");
-	}
-
 	if(is_noAlt) {
 		addAlt();
 	} else {
