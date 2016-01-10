@@ -59,6 +59,12 @@ jQuery(document).ready(function() {
 	if(browser.opera) {
 		showBrowser("opera");
 	}
+	
+	// Start function to set attributes and values to elements
+	
+	function setAttr(elem, name, val) {
+		$(elem, this).attr(name, val);
+	}
 
 	// Start Performance Functions
 
