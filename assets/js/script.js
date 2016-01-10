@@ -67,19 +67,19 @@ jQuery(document).ready(function() {
 	}
 
 	if(is_noAlt) {
-		addAlt();
+		setAttr(img, "alt", "...");
 	} else {
 		return img.attr("alt");
 	}
 
 	if(is_noCharset) {
-		addCharset();
+		setAttr(scripts, "charset", "utf-8");
 	} else {
 		return scripts.attr("charset");
 	}
 
 	if(is_noType) {
-		addType();
+		setAttr(scripts, "type", "text/javascript");
 	} else {
 		return scripts.attr("type");
 	}
