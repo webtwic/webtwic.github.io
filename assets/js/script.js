@@ -42,22 +42,22 @@ jQuery(document).ready(function() {
 		$("body").addClass("webkit");
 	}
 	if(browser.chrome) {
-		$("body").addClass("chrome" + " " + "chrome" + parseInt(browser.version));
+		showBrowser("chrome");
 	}
 	if(browser.msedge) {
-		$("body").addClass("msedge" + " " + "msedge" + parseInt(browser.version));
+		showBrowser("msedge");
 	}
 	if(browser.firefox) {
-		$("body").addClass("firefox" + " " + "firefox" + parseInt(browser.version));
+		showBrowser("firefox");
 	}
 	if(browser.msie) {
-		$("body").addClass("ie" + " " + "ie" + parseInt(browser.version));
+		showBrowser("ie");
 	}
 	if(browser.safari) {
-		$("body").addClass("safari" + " " + "safari" + parseInt(browser.version));
+		showBrowser("safari");
 	}
 	if(browser.opera) {
-		$("body").addClass("opera" + " " + "opera" + parseInt(browser.version));
+		showBrowser("opera");
 	}
 
 	// Start Performance Functions
