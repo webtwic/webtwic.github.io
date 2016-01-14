@@ -900,11 +900,6 @@ img {
   height: 100%;
   width: 100%; }
 
-.embed-nav {
-  background: #3D3D3E !important; }
-  .embed-nav a {
-    color: #76DAFF !important; }
-
 pre.snippet {
   padding: 25px 50px 50px 50px;
   font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
