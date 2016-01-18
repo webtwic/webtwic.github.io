@@ -738,7 +738,7 @@ img {
   -o-border-radius: 5px;
   border-radius: 5px; }
 
-.circle, .round, .to-top, .entry-wrap header .entry-meta .entry-author a img, .author-avatar img, .category-posts-column .loader, #colophon .social-buttons a {
+.circle, .round, .to-top, .single-post .entry-wrap header .entry-meta .entry-author a img, .author-avatar img, .category-posts-column .loader, #colophon .social-buttons a {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
@@ -2601,12 +2601,12 @@ body.single-post .main-page .sidebar-column {
   margin-top: 0;
   width: 24.295%; }
 
-.entry-wrap header h1 {
+.single-post .entry-wrap header h1 {
   font-size: 2.75em;
   padding: 0 180px;
   color: #3f5261;
-  font-weight: 500; }
-.entry-wrap header .entry-meta * {
+  font-weight: 600; }
+.single-post .entry-wrap header .entry-meta * {
   -webkit-transition: color 0.3s ease-in-out;
   -moz-transition: color 0.3s ease-in-out;
   -ms-transition: color 0.3s ease-in-out;
@@ -2615,11 +2615,11 @@ body.single-post .main-page .sidebar-column {
   position: relative;
   color: #999;
   cursor: pointer; }
-  .entry-wrap header .entry-meta *:hover {
+  .single-post .entry-wrap header .entry-meta *:hover {
     color: #555; }
-.entry-wrap header span {
+.single-post .entry-wrap header span {
   margin-right: 15px; }
-.entry-wrap header .entry-meta .entry-author a img {
+.single-post .entry-wrap header .entry-meta .entry-author a img {
   vertical-align: middle;
   width: 50px;
   height: 50px;
