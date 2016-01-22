@@ -18,7 +18,8 @@
 /* ==========================================================================
    Mixins
 ========================================================================== */
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Source+Sans+Pro:400,600,700|Source+Code+Pro:400,700|Lobster|Lato:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Source+Sans+Pro:400,600,700|Source+Code+Pro:400,700|Lobster);
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
   clear: both;
@@ -2749,13 +2750,13 @@ body.single-post .entry-wrap .main-page {
 .post-content-column > article .entry-content {
   padding: 0px 50px;
   margin-bottom: 20px;
-  font-family: "Lato", "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia; }
+  font-family: "Open Sans", "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia; }
   .post-content-column > article .entry-content p {
-    font-family: "Lato", "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
+    font-family: "Open Sans", "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
     color: #4E697D;
     line-height: 1.9;
     margin-bottom: 1.5em;
-    font-size: 0.95em;
+    font-size: 0.9em;
     letter-spacing: .04em; }
 
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
