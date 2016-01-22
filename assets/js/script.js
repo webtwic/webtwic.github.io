@@ -11,7 +11,6 @@
 
 */
 
-
 var Webtwic = {
 	// Basic Information about Webtwic
 	name: "Webtwic",
@@ -25,15 +24,64 @@ var Webtwic = {
 	// Function to add browser name and version to body class
 	_showBrowser: function(b) {
 		$("body").addClass(b + " " + b + parseInt(browser.version));
-	}
+	},
 
 	// Function to set attributes and values to elements
 	_setAttr: function(elem, name, val) {
 		$(elem, this).attr(name, val);
+	},
+
+	// Function to hide Notifications
+	_hideNotif: function() {
+		$("#disabledFeatures").removeClass("dfvisible");
+	},
+
+	// Function to push down .site-content
+	_adjustSiteContent: function() {
+		$(".top-stripe").addClass("adjustedMargin");
+		$("#header .logo").addClass("adjustedTop");
+		$(".main-menu").addClass("adjustedMargin");
+		$("#header").addClass("adjustSiteContent");
+	},
+
+	// Function to push up .site-content to default state
+	_undoSiteAdjust: function() {
+		$(".top-stripe").removeClass("adjustedMargin");
+		$("#header .logo").removeClass("adjustedTop");
+		$(".main-menu").removeClass("adjustedMargin");
+		$("#header").removeClass("adjustSiteContent");
+	},
+
+	_resetSite: function() {
+		WBT._showNotif();
+		WBT._adjustSiteContent();
+	},
+
+	_undoReset: function() {
+		WBT._hideNotif();
+		WBT._undoSiteAdjust();
+	},
+
+	// Function to show Notifications before header
+	_showNotif: function() {
+		WBT._adjustSiteContent();
+		if( $("body").hasClass("default-body") ) {
+			$(".top-stripe").before(
+				"<div id='disabledFeatures' class='dfvisible'>Certain features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span></div>"
+			);
+		} else if ( $("body").hasClass("secondary-body") ) {
+			
+		} else {
+			return;
+		}
+		$(".close-button").on("click", function() {
+			WBT._hideNotif();
+			WBT._undoSiteAdjust();
+		});
 	}
+	// ;
 
 }, WBT = Webtwic;
-
 
 jQuery(document).ready(function() {
 
@@ -60,22 +108,22 @@ jQuery(document).ready(function() {
 		$("body").addClass("webkit");
 	}
 	if(browser.chrome) {
-		Webtwic._showBrowser("chrome");
+		WBT._showBrowser("chrome");
 	}
 	if(browser.msedge) {
-		Webtwic._showBrowser("msedge");
+		WBT._showBrowser("msedge");
 	}
 	if(browser.firefox) {
-		Webtwic._showBrowser("firefox");
+		WBT._showBrowser("firefox");
 	}
 	if(browser.msie) {
-		Webtwic._showBrowser("ie");
+		WBT._showBrowser("ie");
 	}
 	if(browser.safari) {
-		Webtwic._showBrowser("safari");
+		WBT._showBrowser("safari");
 	}
 	if(browser.opera) {
-		Webtwic._showBrowser("opera");
+		WBT._showBrowser("opera");
 	}
 
 	// Performance fixes for attributes
@@ -98,50 +146,10 @@ jQuery(document).ready(function() {
 		return scripts.attr("type");
 	}
 
-	// Notification for disabled features
-	function showDisabledFeatures() {
-		$(".top-stripe").before(
-			"<div id='disabledFeatures' class='dfvisible'>Certain features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span></div>"
-		);
-		$(".close-button").on("click",
-			function() {
-				hideDisabledFeatures();
-				undoSiteAdjust();
-			});
-	}
-
-	function hideDisabledFeatures() {
-		$("#disabledFeatures").removeClass("dfvisible");
-	}
-	function adjustSiteContent() {
-		$(".top-stripe").addClass("adjustedMargin");
-		$("#header .logo").addClass("adjustedTop");
-		$(".main-menu").addClass("adjustedMargin");
-		$("#header").addClass("adjustSiteContent");
-	}
-	function undoSiteAdjust() {
-		$(".top-stripe").removeClass("adjustedMargin");
-		$("#header .logo").removeClass("adjustedTop");
-		$(".main-menu").removeClass("adjustedMargin");
-		$("#header").removeClass("adjustSiteContent");
-	}
-
-	// Modernizr funnctions
-
-	function resetSite() {
-		showDisabledFeatures();
-		adjustSiteContent();
-	}
-
-	function undoReset() {
-		hideDisabledFeatures();
-		undoSiteAdjust();
-	}
-
-	if (!Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms) {
-		resetSite();
+	if (Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms) {
+		WBT._showNotif();
 	} else {
-		undoReset();
+		WBT._hideNotif();
 	}
 
 	// Start Main Page
