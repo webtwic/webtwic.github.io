@@ -2749,9 +2749,9 @@ body.single-post .entry-wrap .main-page {
 .post-content-column > article .entry-content {
   padding: 0px 50px;
   margin-bottom: 20px;
-  font-family: "Open Sans", "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia; }
+  font-family: "Lato", "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia; }
   .post-content-column > article .entry-content p {
-    font-family: "Open Sans", "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
+    font-family: "Lato", "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
     color: #4E697D;
     line-height: 1.9;
     margin-bottom: 1.5em;
@@ -2759,7 +2759,7 @@ body.single-post .entry-wrap .main-page {
     letter-spacing: .04em; }
 
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
-  font-family: "Open Sans", "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
+  font-family: "Lato", "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
   color: #3f5261; }
   .entry-content h1 code, .entry-content h2 code, .entry-content h3 code, .entry-content h4 code, .entry-content h5 code, .entry-content h6 code {
     font-size-adjust: .5;
