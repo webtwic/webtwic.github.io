@@ -22,10 +22,14 @@ var Webtwic = {
 
 	// Start main functions for the object
 
-	// Create function to add browser name and version to body class
-
+	// Function to add browser name and version to body class
 	_showBrowser: function(b) {
 		$("body").addClass(b + " " + b + parseInt(browser.version));
+	}
+
+	// Function to set attributes and values to elements
+	_setAttr: function(elem, name, val) {
+		$(elem, this).attr(name, val);
 	}
 
 }, WBT = Webtwic;
@@ -74,11 +78,7 @@ jQuery(document).ready(function() {
 		Webtwic._showBrowser("opera");
 	}
 
-	// Start function to set attributes and values to elements
-
-	function setAttr(elem, name, val) {
-		$(elem, this).attr(name, val);
-	}
+	// Performance fixes for attributes
 
 	if(is_noAlt) {
 		setAttr(img, "alt", "...");
