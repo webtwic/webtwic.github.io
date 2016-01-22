@@ -38,18 +38,27 @@ var Webtwic = {
 
 	// Function to push down .site-content
 	_adjustSiteContent: function() {
-		$(".top-stripe").addClass("adjustedMargin");
-		$("#header .logo").addClass("adjustedTop");
-		$(".main-menu").addClass("adjustedMargin");
-		$("#header").addClass("adjustSiteContent");
+		if( $("body").hasClass("default-body") ) {
+			$(".top-stripe").addClass("adjustedMargin");
+			$("#header .logo").addClass("adjustedTop");
+			$(".main-menu").addClass("adjustedMargin");
+			$("#header").addClass("adjustSiteContent");
+		} else if ( $("body").hasClass("secondary-body") ) {
+			$(".site-content").addClass("adjustSiteContent");
+			$(".secondary-header").addClass("adjustedMargin");
+		}
 	},
 
 	// Function to push up .site-content to default state
 	_undoSiteAdjust: function() {
-		$(".top-stripe").removeClass("adjustedMargin");
-		$("#header .logo").removeClass("adjustedTop");
-		$(".main-menu").removeClass("adjustedMargin");
-		$("#header").removeClass("adjustSiteContent");
+		if( $("body").hasClass("default-body") ) {
+			$(".top-stripe").removeClass("adjustedMargin");
+			$("#header .logo").removeClass("adjustedTop");
+			$(".main-menu").removeClass("adjustedMargin");
+			$("#header").removeClass("adjustSiteContent");
+		} else if ( $("body").hasClass("secondary-body") ) {
+			$(".secondary-header").removeClass("adjustedMargin");
+		}
 	},
 
 	_resetSite: function() {
@@ -70,7 +79,9 @@ var Webtwic = {
 				"<div id='notifBanner' class='notif_vis'>Certain features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span></div>"
 			);
 		} else if ( $("body").hasClass("secondary-body") ) {
-
+			$(".secondary-header").before(
+				"<div id='notifBanner' class='notif_vis'>Certain features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span></div>"
+			);
 		} else {
 			return;
 		}
