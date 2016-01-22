@@ -219,14 +219,14 @@ body.single-post .entry-wrap .main-page {
       color: #4E697D;
       line-height: 1.9;
       margin-bottom: 1.5em;
-      font-size: 0.85em;
+      font-size: 0.95em;
       letter-spacing: .04em;
    }
 }
 
 .entry-content {
    h1, h2, h3, h4, h5, h6 {
-      font-family: "Lato", $basefont;
+      font-family: $basefont;
       color: $title-color;
       & code {
          font-size-adjust: .5;
