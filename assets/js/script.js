@@ -33,7 +33,7 @@ var Webtwic = {
 
 	// Function to hide Notifications
 	_hideNotif: function() {
-		$("#disabledFeatures").removeClass("dfvisible");
+		$("#notifBanner").removeClass("notif_vis");
 	},
 
 	// Function to push down .site-content
@@ -67,10 +67,10 @@ var Webtwic = {
 		WBT._adjustSiteContent();
 		if( $("body").hasClass("default-body") ) {
 			$(".top-stripe").before(
-				"<div id='disabledFeatures' class='dfvisible'>Certain features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span></div>"
+				"<div id='notifBanner' class='notif_vis'>Certain features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span></div>"
 			);
 		} else if ( $("body").hasClass("secondary-body") ) {
-			
+
 		} else {
 			return;
 		}
@@ -86,7 +86,7 @@ var Webtwic = {
 jQuery(document).ready(function() {
 
 	// Define Variables
-	var is_DisabledFeatures = $("div").hasClass("dfvisible"),
+	var is_notifBanner = $("div").hasClass("notif_vis"),
 	img = $("img"),
 	is_noAlt = img.attr("alt", null),
 	scripts = $("script"),
