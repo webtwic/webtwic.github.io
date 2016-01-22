@@ -257,12 +257,12 @@ body.single-post .entry-wrap .main-page {
    }
    a {
       font-family: inherit;
-      color: $basecolor;
-      border-bottom: $solid_one $basecolor;
+      color: #17A8E3;
+      border-bottom: 2px solid #E9F7FD;
       @include transition(all .5s ease);
       &:hover {
-         color: inherit;
-         border-bottom: $solid_one #4E697D;
+         color: #17A8E3;
+         border-bottom: 2px solid #17A8E3;
       }
    }
 

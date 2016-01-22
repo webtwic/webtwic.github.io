@@ -2784,16 +2784,16 @@ body.single-post .entry-wrap .main-page {
       vertical-align: sub; }
 .entry-content a {
   font-family: inherit;
-  color: #6699cc;
-  border-bottom: 1px solid #6699cc;
+  color: #17A8E3;
+  border-bottom: 2px solid #E9F7FD;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
   .entry-content a:hover {
-    color: inherit;
-    border-bottom: 1px solid #4E697D; }
+    color: #17A8E3;
+    border-bottom: 2px solid #17A8E3; }
 .entry-content blockquote {
   font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
   position: relative;
