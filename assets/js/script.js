@@ -14,6 +14,7 @@
 jQuery(document).ready(function() {
 
 	// Define Variables
+	var Webtwic = {};
 	var is_DisabledFeatures = $("div").hasClass("dfvisible"),
 	img = $("img"),
 	is_noAlt = img.attr("alt", null),
@@ -26,9 +27,9 @@ jQuery(document).ready(function() {
 	height = 200;
 
 	// Performance Fixes
-	
+
 	// Create function to add browser name and version to body class
-	
+
 	function showBrowser(b) {
 		$("body").addClass(b + " " + b + parseInt(browser.version));
 	}
@@ -59,9 +60,9 @@ jQuery(document).ready(function() {
 	if(browser.opera) {
 		showBrowser("opera");
 	}
-	
+
 	// Start function to set attributes and values to elements
-	
+
 	function setAttr(elem, name, val) {
 		$(elem, this).attr(name, val);
 	}
