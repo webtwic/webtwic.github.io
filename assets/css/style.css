@@ -1220,8 +1220,11 @@ pre.snippet {
     cursor: pointer;
     font-weight: normal; }
 
-.adjustSiteContent {
+.default-body .adjustSiteContent {
   padding-bottom: 311px !important; }
+
+.secondary-body .adjustSiteContent {
+  margin-top: 90px !important; }
 
 body.category-page .adjustSiteContent {
   padding-bottom: 233px !important; }

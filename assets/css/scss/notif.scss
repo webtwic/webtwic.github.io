@@ -30,8 +30,12 @@
    }
 }
 
-.adjustSiteContent {
+.default-body .adjustSiteContent {
    padding-bottom: 311px !important;
+}
+
+.secondary-body .adjustSiteContent {
+   margin-top: 90px !important;
 }
 
 body.category-page .adjustSiteContent {
