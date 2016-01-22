@@ -1193,7 +1193,7 @@ pre.snippet {
 .source.python .variable.parameter {
   color: #d19a66; }
 
-/* Fallback for certain css features -- See script.js */
+/* Notification banner and Fallback for certain css features -- See script.js */
 #notifBanner {
   background: #FF5F5F;
   padding: 10px;
