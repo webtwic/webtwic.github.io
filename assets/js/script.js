@@ -81,19 +81,19 @@ jQuery(document).ready(function() {
 	// Performance fixes for attributes
 
 	if(is_noAlt) {
-		setAttr(img, "alt", "...");
+		WBT._setAttr(img, "alt", "...");
 	} else {
 		return img.attr("alt");
 	}
 
 	if(is_noCharset) {
-		setAttr(scripts, "charset", "utf-8");
+		WBT._setAttr(scripts, "charset", "utf-8");
 	} else {
 		return scripts.attr("charset");
 	}
 
 	if(is_noType) {
-		setAttr(scripts, "type", "text/javascript");
+		WBT._setAttr(scripts, "type", "text/javascript");
 	} else {
 		return scripts.attr("type");
 	}
