@@ -14,7 +14,9 @@
 jQuery(document).ready(function() {
 
 	// Define Variables
-	var Webtwic = {};
+	var Webtwic = {
+		
+	}, WBT = Webtwic;
 	var is_DisabledFeatures = $("div").hasClass("dfvisible"),
 	img = $("img"),
 	is_noAlt = img.attr("alt", null),
