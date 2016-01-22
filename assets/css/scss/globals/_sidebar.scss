@@ -287,10 +287,11 @@ body {
 }
 
 .to-top {
-   background: #58de6c;
+   background: #58de6c !important;
    @include transition(opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out);
    @include box-shadow(0 0 10px rgba(0, 0, 0, .05));
    @extend .round;
+   @include opacity(0);
    display: inline-block;
    visibility: hidden;
    position: fixed;
@@ -299,7 +300,6 @@ body {
    height: 56px;
    width: 55px;
    right: 5px;
-   @include opacity(0);
    svg {
       display: block;
       margin-left: auto;
