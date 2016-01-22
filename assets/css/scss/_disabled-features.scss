@@ -1,6 +1,6 @@
 /* Fallback for certain css features -- See script.js */
 
-#disabledFeatures {
+#notifBanner {
    background: #FF5F5F;
    padding: 10px;
    height: 40px;
@@ -19,7 +19,7 @@
    }
 }
 
-.dfvisible {
+.notif_vis {
    display: block !important;
    .close-button {
       float: right;

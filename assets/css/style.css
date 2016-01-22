@@ -1194,7 +1194,7 @@ pre.snippet {
   color: #d19a66; }
 
 /* Fallback for certain css features -- See script.js */
-#disabledFeatures {
+#notifBanner {
   background: #FF5F5F;
   padding: 10px;
   height: 40px;
@@ -1208,12 +1208,12 @@ pre.snippet {
   top: 0;
   right: 0;
   left: 0; }
-  #disabledFeatures:hover {
+  #notifBanner:hover {
     /*transform: scale(1);*/ }
 
-.dfvisible {
+.notif_vis {
   display: block !important; }
-  .dfvisible .close-button {
+  .notif_vis .close-button {
     float: right;
     margin-right: 69px;
     margin-top: 0px;
