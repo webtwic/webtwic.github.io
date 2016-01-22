@@ -76,11 +76,11 @@ var Webtwic = {
 		WBT._adjustSiteContent();
 		if( $("body").hasClass("default-body") ) {
 			$(".top-stripe").before(
-				"<div id='notifBanner' class='notif_vis'>Certain features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span></div>"
+				"<div id='notifBanner' class='notif_vis'>Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span></div>"
 			);
 		} else if ( $("body").hasClass("secondary-body") ) {
 			$(".secondary-header").before(
-				"<div id='notifBanner' class='notif_vis'>Certain features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span></div>"
+				"<div id='notifBanner' class='notif_vis'>Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span></div>"
 			);
 		} else {
 			return;
