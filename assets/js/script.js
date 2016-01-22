@@ -24,7 +24,7 @@ var Webtwic = {
 
 	// Create function to add browser name and version to body class
 
-	showBrowser: function(b) {
+	_showBrowser: function(b) {
 		$("body").addClass(b + " " + b + parseInt(browser.version));
 	}
 
@@ -56,22 +56,22 @@ jQuery(document).ready(function() {
 		$("body").addClass("webkit");
 	}
 	if(browser.chrome) {
-		showBrowser("chrome");
+		Webtwic._showBrowser("chrome");
 	}
 	if(browser.msedge) {
-		showBrowser("msedge");
+		Webtwic._showBrowser("msedge");
 	}
 	if(browser.firefox) {
-		showBrowser("firefox");
+		Webtwic._showBrowser("firefox");
 	}
 	if(browser.msie) {
-		showBrowser("ie");
+		Webtwic._showBrowser("ie");
 	}
 	if(browser.safari) {
-		showBrowser("safari");
+		Webtwic._showBrowser("safari");
 	}
 	if(browser.opera) {
-		showBrowser("opera");
+		Webtwic._showBrowser("opera");
 	}
 
 	// Start function to set attributes and values to elements
