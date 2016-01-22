@@ -21,7 +21,13 @@ var Webtwic = {
 	version: 1.07,
 
 	// Start main functions for the object
-	
+
+	// Create function to add browser name and version to body class
+
+	showBrowser: function(b) {
+		$("body").addClass(b + " " + b + parseInt(browser.version));
+	}
+
 }, WBT = Webtwic;
 
 
@@ -40,12 +46,6 @@ jQuery(document).ready(function() {
 	height = 200;
 
 	// Performance Fixes
-
-	// Create function to add browser name and version to body class
-
-	function showBrowser(b) {
-		$("body").addClass(b + " " + b + parseInt(browser.version));
-	}
 
 	// Start browser detection
 
