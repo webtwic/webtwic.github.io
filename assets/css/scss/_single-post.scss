@@ -213,19 +213,20 @@ body.single-post .entry-wrap .main-page {
 .post-content-column > article .entry-content {
    padding: 0px 50px;
    margin-bottom: 20px;
-   font-family: $basefont;
+   font-family: "Open Sans", $basefont;
    p {
-      font-family: $basefont;
+      font-family: "Open Sans", $basefont;
       color: #4E697D;
       line-height: 1.9;
       margin-bottom: 1.5em;
-      font-size: 1em;
+      font-size: 0.85em;
       letter-spacing: .04em;
    }
 }
 
 .entry-content {
    h1, h2, h3, h4, h5, h6 {
+      font-family: "Open Sans", $basefont;
       color: $title-color;
       & code {
          font-size-adjust: .5;
@@ -237,6 +238,7 @@ body.single-post .entry-wrap .main-page {
          @extend .radius-alt;
       }
       & a {
+         font-family: inherit;
          border-bottom: none;
          color: inherit;
          &:hover {
@@ -254,6 +256,7 @@ body.single-post .entry-wrap .main-page {
       }
    }
    a {
+      font-family: inherit;
       color: $basecolor;
       border-bottom: $solid_one $basecolor;
       @include transition(all .5s ease);

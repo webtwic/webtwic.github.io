@@ -2749,16 +2749,17 @@ body.single-post .entry-wrap .main-page {
 .post-content-column > article .entry-content {
   padding: 0px 50px;
   margin-bottom: 20px;
-  font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia; }
+  font-family: "Open Sans", "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia; }
   .post-content-column > article .entry-content p {
-    font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
+    font-family: "Open Sans", "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
     color: #4E697D;
     line-height: 1.9;
     margin-bottom: 1.5em;
-    font-size: 1em;
+    font-size: 0.85em;
     letter-spacing: .04em; }
 
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
+  font-family: "Open Sans", "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
   color: #3f5261; }
   .entry-content h1 code, .entry-content h2 code, .entry-content h3 code, .entry-content h4 code, .entry-content h5 code, .entry-content h6 code {
     font-size-adjust: .5;
@@ -2768,6 +2769,7 @@ body.single-post .entry-wrap .main-page {
     padding: 1px 3.6px;
     color: #6699cc; }
   .entry-content h1 a, .entry-content h2 a, .entry-content h3 a, .entry-content h4 a, .entry-content h5 a, .entry-content h6 a {
+    font-family: inherit;
     border-bottom: none;
     color: inherit; }
     .entry-content h1 a:hover, .entry-content h2 a:hover, .entry-content h3 a:hover, .entry-content h4 a:hover, .entry-content h5 a:hover, .entry-content h6 a:hover {
@@ -2781,6 +2783,7 @@ body.single-post .entry-wrap .main-page {
       height: 25px;
       vertical-align: sub; }
 .entry-content a {
+  font-family: inherit;
   color: #6699cc;
   border-bottom: 1px solid #6699cc;
   -webkit-transition: all 0.5s ease;
