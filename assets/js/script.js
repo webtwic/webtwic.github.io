@@ -89,8 +89,7 @@ var Webtwic = {
 			WBT._hideNotif();
 			WBT._undoSiteAdjust();
 		});
-	}
-	// ;
+	},
 
 }, WBT = Webtwic;
 
