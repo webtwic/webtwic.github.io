@@ -2696,7 +2696,7 @@ body.single-post .entry-wrap .main-page {
       -ms-transition: 0.5s ease;
       -o-transition: 0.5s ease;
       transition: 0.5s ease;
-      margin-right: 3px;
+      margin-right: 0.05em;
       border: none; }
       .article-meta .article-meta-inner .share-icons a .webtwicons {
         display: inline-block;
