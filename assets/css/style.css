@@ -18,7 +18,6 @@
 /* ==========================================================================
    Mixins
 ========================================================================== */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Source+Sans+Pro:400,600,700|Source+Code+Pro:400,700|Lobster);
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
