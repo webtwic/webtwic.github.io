@@ -1197,7 +1197,7 @@ pre.snippet {
 #notifBanner {
   background: #FF5F5F;
   padding: 10px;
-  height: 40px;
+  height: 45px;
   display: none;
   margin: 0px auto;
   z-index: 9999;
@@ -1221,19 +1221,19 @@ pre.snippet {
     font-weight: normal; }
 
 .default-body .adjustSiteContent {
-  padding-bottom: 311px !important; }
+  padding-bottom: 316px !important; }
 
 .secondary-body .adjustSiteContent {
-  margin-top: 90px !important; }
+  margin-top: 95px !important; }
 
 body.category-page .adjustSiteContent {
-  padding-bottom: 233px !important; }
+  padding-bottom: 238px !important; }
 
 .adjustedMargin {
-  margin-top: 40px !important; }
+  margin-top: 45px !important; }
 
 .adjustedTop {
-  top: 40px !important; }
+  top: 45px !important; }
 
 /* START MAIN PAGE */
 @media screen and (max-width: 860px) {
