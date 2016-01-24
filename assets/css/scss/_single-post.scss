@@ -221,6 +221,13 @@ body.single-post .entry-wrap .main-page {
       margin-bottom: 1.5em;
       font-size: 0.87em;
       letter-spacing: .04em;
+      code {
+         font-family: $code_font;
+         background: #E8F5F2;
+         padding: 1px 3.6px;
+         color: $basecolor;
+         @extend .radius-alt;
+      }
    }
 }
 
