@@ -2682,6 +2682,7 @@ body.single-post .entry-wrap .main-page {
     width: 68%;
     height: 100%;
     border-left: 1px solid rgba(0, 0, 0, 0.06);
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
     padding-left: 10px; }
     .article-meta .article-meta-inner .share-icons a {
       position: relative;
@@ -2844,7 +2845,7 @@ body.single-post .entry-wrap .main-page {
     position: relative;
     color: #fff;
     font-size: .9em;
-    margin-right: -3.5px;
+    margin-right: -4px;
     font-weight: 500; }
     .post-content-column article .secondary-share a .webtwicons {
       position: relative;

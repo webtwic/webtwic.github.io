@@ -130,6 +130,7 @@ body.single-post .entry-wrap .main-page {
       width: 68%;
       height: $full;
       border-left: $ui_border;
+      border-right: $ui_border;
       padding-left: 10px;
       a {
          position: relative;
@@ -326,7 +327,7 @@ body.single-post .entry-wrap .main-page {
          position: relative;
          color: $white;
          font-size: .9em;
-         margin-right: -3.5px;
+         margin-right: -4px;
          font-weight: 500;
          .webtwicons {
             position: relative;
