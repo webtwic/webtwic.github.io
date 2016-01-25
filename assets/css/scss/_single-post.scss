@@ -321,12 +321,14 @@ body.single-post .entry-wrap .main-page {
       margin-bottom: 0px;
       a {
          @include transition(all .5s ease);
+         font-family: $font-alt;
+         letter-spacing: 0.01em;
          padding: 13px 15px;
          position: relative;
          color: $white;
          font-size: .9em;
-         margin-right: -2px;
-         font-weight: 600;
+         margin-right: -3.5px;
+         font-weight: 500;
          .webtwicons {
             position: relative;
             margin-right: 10px;

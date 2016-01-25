@@ -2839,12 +2839,14 @@ body.single-post .entry-wrap .main-page {
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
+    letter-spacing: 0.01em;
     padding: 13px 15px;
     position: relative;
     color: #fff;
     font-size: .9em;
-    margin-right: -2px;
-    font-weight: 600; }
+    margin-right: -3.5px;
+    font-weight: 500; }
     .post-content-column article .secondary-share a .webtwicons {
       position: relative;
       margin-right: 10px; }
