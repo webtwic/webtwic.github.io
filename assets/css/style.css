@@ -2750,6 +2750,13 @@ body.single-post .entry-wrap .main-page {
   padding: 0px 50px;
   margin-bottom: 20px;
   font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia; }
+  .post-content-column > article .entry-content .image-caption {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    padding: 5px 17px;
+    left: 75.65%;
+    bottom: 52%;
+    color: #fff; }
   .post-content-column > article .entry-content p {
     font-family: "Raleway", "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
     color: #4E697D;

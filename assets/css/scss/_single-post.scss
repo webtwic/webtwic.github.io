@@ -214,6 +214,14 @@ body.single-post .entry-wrap .main-page {
    padding: 0px 50px;
    margin-bottom: 20px;
    font-family: $basefont;
+   .image-caption {
+      background: rgba(0, 0, 0, .5);
+      position: absolute;
+      padding: 5px 17px;
+      left: 75.65%;
+      bottom: 52%;
+      color: #fff;
+   }
    p {
       font-family: "Raleway", $basefont;
       color: #4E697D;
