@@ -2662,8 +2662,7 @@ body.single-post .entry-wrap .main-page {
 
 .main-page .post-content-column > article .entry-featured-image {
   overflow: hidden;
-  width: 100%;
-  margin-bottom: 25px; }
+  width: 100%; }
 
 .post-content-column > article .entry-featured-image > img {
   height: 473px;
