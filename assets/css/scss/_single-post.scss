@@ -116,14 +116,14 @@ body.single-post .entry-wrap .main-page {
       border-bottom: $ui_border;
       border-top: $ui_border;
       width: $full;
-      height: 53px;
+      height: 55px;
       background: $white;
    }
 }
 
 .article-meta .article-meta-inner {
    @extend .inner;
-   padding: 5px 20px;
+   padding: 6px 20px;
    .share-icons {
       position: relative;
       display: inline-block;
@@ -170,7 +170,7 @@ body.single-post .entry-wrap .main-page {
          color: $white;
          height: 82%;
          width: 55%;
-         padding: 10px;
+         padding: 11px 10px;
          border-style: none;
          &.is_active {
             @include opacity(1);

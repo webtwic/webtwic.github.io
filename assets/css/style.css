@@ -2671,11 +2671,11 @@ body.single-post .entry-wrap .main-page {
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   border-top: 1px solid rgba(0, 0, 0, 0.06);
   width: 100%;
-  height: 53px;
+  height: 55px;
   background: #fff; }
 
 .article-meta .article-meta-inner {
-  padding: 5px 20px; }
+  padding: 6px 20px; }
   .article-meta .article-meta-inner .share-icons {
     position: relative;
     display: inline-block;
@@ -2720,7 +2720,7 @@ body.single-post .entry-wrap .main-page {
       color: #fff;
       height: 82%;
       width: 55%;
-      padding: 10px;
+      padding: 11px 10px;
       border-style: none; }
       .article-meta .article-meta-inner .cta-btns a.is_active {
         opacity: 1;
