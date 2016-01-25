@@ -2843,7 +2843,7 @@ body.single-post .entry-wrap .main-page {
     position: relative;
     color: #fff;
     font-size: .9em;
-    margin-right: 5px;
+    margin-right: -2px;
     font-weight: 600; }
     .post-content-column article .secondary-share a .webtwicons {
       position: relative;
