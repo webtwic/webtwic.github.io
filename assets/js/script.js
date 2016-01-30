@@ -10,8 +10,9 @@
  * Github: https://github.com/whizkydee/webtwic
 
 */
+var Webtwic = {} || Webtwic;
 
-var Webtwic = {
+Webtwic = {
 	// Basic Information about Webtwic
 	name: "Webtwic",
 	description: "A community for coding and tech tweaks where beginners and experts can learn.",
@@ -91,8 +92,7 @@ var Webtwic = {
 		});
 	},
 
-}, WBT = Webtwic,
-notif_text = "Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span>";
+};
 
 jQuery(document).ready(function() {
 
