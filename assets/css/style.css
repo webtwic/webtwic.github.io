@@ -2278,6 +2278,10 @@ article.post-wrap {
         letter-spacing: 1px;
         line-height: 140px;
         color: #BABABA;
+        -webkit-text-shadow: -1px 1px #E2E2E2;
+        -moz-text-shadow: -1px 1px #E2E2E2;
+        -ms-text-shadow: -1px 1px #E2E2E2;
+        -o-text-shadow: -1px 1px #E2E2E2;
         text-shadow: -1px 1px #E2E2E2;
         height: 169px; }
 

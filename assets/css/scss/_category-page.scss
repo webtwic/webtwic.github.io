@@ -68,7 +68,7 @@ article.post-wrap {
             letter-spacing: 1px;
             line-height: 140px;
             color: #BABABA;
-            text-shadow: -1px 1px #E2E2E2;
+            @include text-shadow(-1px 1px #E2E2E2);
             height: 169px;
          }
       }
@@ -85,11 +85,7 @@ article.post-wrap {
       a {
          font-family: $basefont;
          @include transition(color .4s ease, text-shadow .2s ease);
-         -webkit-text-shadow: none;
-         -moz-text-shadow: none;
-         -ms-text-shadow: none;
-         -o-text-shadow: none;
-         text-shadow: none;
+         @include text-shadow(none);
          font-size: 1em;
          font-weight: 500;
          color: #3F5261;
@@ -98,11 +94,7 @@ article.post-wrap {
 }
 
 .post-content .post-title a:hover {
-   -webkit-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-   -moz-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-   -ms-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-   -o-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-   text-shadow: 0px 1px 1px rgb(238, 238, 238);
+   @include text-shadow(0px 1px 1px rgb(238, 238, 238));
    color: #7AAFC8;
 }
 
