@@ -16,9 +16,9 @@
 */
 
 @import
-"globals/variables",
-"globals/mixins",
-"globals/typography";
+"includes/variables",
+"includes/mixins",
+"includes/typography";
 
 /* Include fonts and icons */
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Source+Sans+Pro:400,600,700|Source+Code+Pro:400,700|Lobster|Raleway);
@@ -33,29 +33,29 @@
 
 
 @import
-"globals/keyframes",
-"globals/global",
-"globals/webtwicons",
-"globals/normalize",
-"globals/base",
-"globals/syntax-highlighter",
+"includes/keyframes",
+"includes/global",
+"includes/webtwicons",
+"includes/normalize",
+"includes/base",
+"includes/syntax-highlighter",
 "notif";
 
 /* START MAIN PAGE */
 
-@import "globals/responsive";
+@import "includes/responsive";
 
-@import "globals/header";
+@import "includes/header";
 
 @import "home";
 
-@import "globals/sidebar";
+@import "includes/sidebar";
 
-@import "globals/pagination";
+@import "includes/pagination";
 
 @import "category-page";
 
-@import "globals/secondary-header";
+@import "includes/secondary-header";
 
 @import "single-post";
 
@@ -67,4 +67,4 @@
 
 @import "contact-page";
 
-@import "globals/footer";
+@import "includes/footer";
