@@ -1426,6 +1426,10 @@ body.category-page .adjustSiteContent {
       transition: all 0.3s linear;
       text-transform: lowercase;
       text-decoration: none;
+      -webkit-text-shadow: none;
+      -moz-text-shadow: none;
+      -ms-text-shadow: none;
+      -o-text-shadow: none;
       text-shadow: none;
       position: relative;
       font-weight: 400;
@@ -1439,6 +1443,10 @@ body.category-page .adjustSiteContent {
     transition: all 0.3s linear;
     text-transform: lowercase;
     text-decoration: none;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    -ms-text-shadow: none;
+    -o-text-shadow: none;
     text-shadow: none;
     position: relative;
     font-weight: 400;

@@ -59,7 +59,7 @@
             @include transition(all .3s linear);
             text-transform: lowercase;
             text-decoration: none;
-            text-shadow: none;
+            @include text-shadow(none);
             position: relative;
             font-weight: 400;
             color: #777;
@@ -70,7 +70,7 @@
          @include transition(all .3s linear);
          text-transform: lowercase;
          text-decoration: none;
-         text-shadow: none;
+         @include text-shadow(none);
          position: relative;
          font-weight: 400;
          color: #777;
