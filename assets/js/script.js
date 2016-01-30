@@ -76,11 +76,11 @@ var Webtwic = {
 		WBT._adjustSiteContent();
 		if( $("body").hasClass("default-body") ) {
 			$(".top-stripe").before(
-				"<div id='notifBanner' class='notif_vis'>+text+</div>"
+				"<div id='notifBanner' class='notif_vis'>"+text+"</div>"
 			);
 		} else if ( $("body").hasClass("secondary-body") ) {
 			$(".secondary-header").before(
-				"<div id='notifBanner' class='notif_vis'>+text+</div>"
+				"<div id='notifBanner' class='notif_vis'>"+text+"</div>"
 			);
 		} else {
 			return;
