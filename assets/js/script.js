@@ -91,7 +91,8 @@ var Webtwic = {
 		});
 	},
 
-}, WBT = Webtwic;
+}, WBT = Webtwic,
+notif_text = "Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span>";
 
 jQuery(document).ready(function() {
 
