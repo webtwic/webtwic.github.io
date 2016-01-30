@@ -10,7 +10,7 @@
  * Github: https://github.com/whizkydee/webtwic
 
 */
-var Webtwic = {} || Webtwic;
+var Webtwic = Webtwic || {};
 
 Webtwic = {
 	// Basic Information about Webtwic
