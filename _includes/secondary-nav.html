@@ -2,7 +2,7 @@
 
          <ul class="nav-ul">
 
-				{% if page.url == '/' | page.url == ''%}<li class="active-item">{% else %}<li>{% endif %}<a href="">Home</a></li>
+				{% if page.body-class == 'home' %}<li class="active-item">{% else %}<li>{% endif %}<a href="">Home</a></li>
 
 				{% if page.url == '/articles/articles.html' %}<li class="active-item">{% else %}<li>{% endif %}<a href="/articles/articles.html">Articles</a></li>
 
