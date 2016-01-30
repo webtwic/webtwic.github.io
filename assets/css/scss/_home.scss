@@ -72,20 +72,12 @@ body.home {
       a {
          font-family: "Roboto Slab", "Trebuchet MS", Helvetica, Calibri;
          @include transition(color .4s ease, text-shadow .2s ease);
-         -webkit-text-shadow: none;
-         -moz-text-shadow: none;
-         -ms-text-shadow: none;
-         -o-text-shadow: none;
-         text-shadow: none;
+         @include text-shadow(none);
          font-size: 1.02em;
          font-weight: 600;
          color: $title-color;
          &:hover {
-            -webkit-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-            -moz-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-            -ms-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-            -o-text-shadow: 0px 1px 1px rgb(238, 238, 238);
-            text-shadow: 0px 1px 1px rgb(238, 238, 238);
+            @include text-shadow(0px 1px 1px rgb(238, 238, 238));
             color: #81aec5;
          }
       }
