@@ -33,7 +33,7 @@ body {
    h1 {
       font-size: 2.75em;
       padding: 0 180px;
-      color: $title-color;
+      color: lighten($title-color, 5%);
       font-weight: 700;
    }
    .entry-meta * {
