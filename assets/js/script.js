@@ -63,18 +63,18 @@ Webtwic = {
 	},
 
 	_resetSite: function() {
-		WBT._showNotif();
-		WBT._adjustSiteContent();
+		this._showNotif();
+		this._adjustSiteContent();
 	},
 
 	_undoReset: function() {
-		WBT._hideNotif();
-		WBT._undoSiteAdjust();
+		this._hideNotif();
+		this._undoSiteAdjust();
 	},
 
 	// Function to show Notifications before header
 	_showNotif: function(text = notif_text) {
-		WBT._adjustSiteContent();
+		this._adjustSiteContent();
 		if( $("body").hasClass("default-body") ) {
 			$(".top-stripe").before(
 				"<div id='notifBanner' class='notif_vis'>"+text+"</div>"
@@ -87,8 +87,8 @@ Webtwic = {
 			return;
 		}
 		$(".close-button").on("click", function() {
-			WBT._hideNotif();
-			WBT._undoSiteAdjust();
+			this._hideNotif();
+			this._undoSiteAdjust();
 		});
 	},
 
