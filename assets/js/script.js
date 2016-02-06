@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 30/01/2016
+ * Last Modified: 06/02/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -126,48 +126,48 @@ jQuery(document).ready(function() {
 		$("body").addClass("webkit");
 	}
 	if(browser.chrome) {
-		WBT._showBrowser("chrome");
+		Webtwic._showBrowser("chrome");
 	}
 	if(browser.msedge) {
-		WBT._showBrowser("msedge");
+		Webtwic._showBrowser("msedge");
 	}
 	if(browser.firefox) {
-		WBT._showBrowser("firefox");
+		Webtwic._showBrowser("firefox");
 	}
 	if(browser.msie) {
-		WBT._showBrowser("ie");
+		Webtwic._showBrowser("ie");
 	}
 	if(browser.safari) {
-		WBT._showBrowser("safari");
+		Webtwic._showBrowser("safari");
 	}
 	if(browser.opera) {
-		WBT._showBrowser("opera");
+		Webtwic._showBrowser("opera");
 	}
 
 	// Performance fixes for attributes
 
 	if(is_noAlt) {
-		WBT._setAttr(img, "alt", "...");
+		Webtwic._setAttr(img, "alt", "...");
 	} else {
 		return img.attr("alt");
 	}
 
 	if(is_noCharset) {
-		WBT._setAttr(scripts, "charset", "utf-8");
+		Webtwic._setAttr(scripts, "charset", "utf-8");
 	} else {
 		return scripts.attr("charset");
 	}
 
 	if(is_noType) {
-		WBT._setAttr(scripts, "type", "text/javascript");
+		Webtwic._setAttr(scripts, "type", "text/javascript");
 	} else {
 		return scripts.attr("type");
 	}
 
 	if (!Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms) {
-		WBT._showNotif();
+		Webtwic._showNotif();
 	} else {
-		WBT._hideNotif();
+		Webtwic._hideNotif();
 	}
 
 	// Start Main Page
