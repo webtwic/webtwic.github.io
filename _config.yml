@@ -11,6 +11,6 @@ facebook_name: webtwic
 google_name: webtwic
 
 # Social URLs
-facebook_url: http://facebook.com/webtwic
+facebook_url: https://facebook.com/webtwic
 # Build settings
 markdown: kramdown
