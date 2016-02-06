@@ -13,5 +13,6 @@ google_name: webtwic
 # Social URLs
 facebook_url: https://facebook.com/webtwic
 twitter_url: https://twitter.com/webtwic
+google_url: https://plus.google.com/+webtwic
 # Build settings
 markdown: kramdown
