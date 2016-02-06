@@ -169,9 +169,9 @@ body.single-post .entry-wrap .main-page {
          @extend .radius;
          margin-right: 5px;
          color: $white;
-         height: 82%;
+         // height: 82%;
          width: 55%;
-         padding: 11px 10px;
+         padding: .638em 10px;
          border-style: none;
          &.is_active {
             @include opacity(1);
