@@ -2598,7 +2598,7 @@ Start single-post.scss
 
 * Date Created: 13/10/2015
 
-* Last Modified: 24/01/2016
+* Last Modified: 06/02/2016
 
 */
 body.single-post .site-content {
@@ -2773,7 +2773,7 @@ body.single-post .entry-wrap .main-page {
     color: #4E697D;
     line-height: 1.9;
     margin-bottom: 1.5em;
-    font-size: 0.87em;
+    font-size: .87em;
     letter-spacing: .04em; }
     .post-content-column > article .entry-content p code {
       font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
@@ -2851,7 +2851,7 @@ body.single-post .entry-wrap .main-page {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     font-family: Calibri, "Source Sans Pro", "Trebuchet MS", Helvetica, Arial, georgia;
-    letter-spacing: 0.01em;
+    letter-spacing: .01em;
     padding: 13px 15px;
     position: relative;
     color: #fff;

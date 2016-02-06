@@ -4,7 +4,7 @@ Start single-post.scss
 
 * Date Created: 13/10/2015
 
-* Last Modified: 24/01/2016
+* Last Modified: 06/02/2016
 
 */
 body {
@@ -227,7 +227,7 @@ body.single-post .entry-wrap .main-page {
       color: #4E697D;
       line-height: 1.9;
       margin-bottom: 1.5em;
-      font-size: 0.87em;
+      font-size: .87em;
       letter-spacing: .04em;
       code {
          font-family: $code_font;
@@ -322,7 +322,7 @@ body.single-post .entry-wrap .main-page {
       a {
          @include transition(all .5s ease);
          font-family: $font-alt;
-         letter-spacing: 0.01em;
+         letter-spacing: .01em;
          padding: 13px 15px;
          position: relative;
          color: $white;
@@ -513,7 +513,7 @@ body.single-post .entry-wrap .main-page {
    background: $grey;
    position: relative;
    margin-bottom: 15px;
-   @include box-shadow( 0px 0px 4px rgba(0, 0, 0, 0.09) );
+   @include box-shadow( 0px 0px 4px rgba(0, 0, 0, .09) );
    .inner {
       @extend .inner;
       padding: 1px 0 0 0;
