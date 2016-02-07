@@ -2015,12 +2015,12 @@ body.single-post #sidebar-column .freebie-item, body.category-page #sidebar-colu
     content: "\f121";
     font-size: 14.7px; }
 
-.games-wrap {
+#games-wrap {
   height: 420px; }
-  .games-wrap .category-title {
+  #games-wrap .category-title {
     background: #B1D860;
     border-color: #A4CB53; }
-    .games-wrap .category-title p:before {
+    #games-wrap .category-title p:before {
       content: "\f11b";
       font-size: 16px; }
 
