@@ -1890,11 +1890,11 @@ body.home {
       font-size: 13.5px;
       cursor: default; }
 
-.tech-news-wrap .category-title {
+#tech-news-wrap .category-title {
   width: 106.66%;
   background: #95DFDC;
   border-color: #00d2d2; }
-  .tech-news-wrap .category-title p svg {
+  #tech-news-wrap .category-title p svg {
     vertical-align: middle;
     margin-top: -2px;
     fill: #fff;
