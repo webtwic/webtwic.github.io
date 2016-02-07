@@ -3460,39 +3460,39 @@ body.contact-page .site-content {
     border-style: solid;
     padding: 12px 1.15%;
     margin-right: 5px; }
-  #colophon .social-buttons .btn-footer .webtwicons {
-    color: #fff;
-    margin-left: 2px; }
-  #colophon .social-buttons .btn-footer .github-icon {
-    margin-right: 1px; }
-  #colophon .social-buttons .btn-footer .twitter-icon {
-    font-size: 100%;
-    margin-right: -3px; }
-  #colophon .social-buttons .btn-footer .google-plus-icon {
-    font-size: 100%;
-    margin-right: -7px;
-    margin-left: 0px; }
-  #colophon .social-buttons .btn-footer .facebook-icon {
-    margin-right: -1px;
-    margin-left: 3px; }
-  #colophon .social-buttons .btn-footer:nth-child(1) {
-    border-color: #3B599A; }
-  #colophon .social-buttons .btn-footer:nth-child(2) {
-    border-color: #50ABF1; }
-  #colophon .social-buttons .btn-footer:nth-child(3) {
-    border-color: #DC4E41; }
-  #colophon .social-buttons .btn-footer:nth-child(4) {
-    border-color: #464646; }
-  #colophon .social-buttons .btn-footer:last-child {
-    margin-right: 0; }
-  #colophon .social-buttons .btn-footer:nth-child(1):hover {
-    background: #3B599A; }
-  #colophon .social-buttons .btn-footer:nth-child(2):hover {
-    background: #50ABF1; }
-  #colophon .social-buttons .btn-footer:nth-child(3):hover {
-    background: #DC4E41; }
-  #colophon .social-buttons .btn-footer:nth-child(4):hover {
-    background: #464646; }
+    #colophon .social-buttons a .webtwicons {
+      color: #fff;
+      margin-left: 2px; }
+    #colophon .social-buttons a .github-icon {
+      margin-right: 1px; }
+    #colophon .social-buttons a .twitter-icon {
+      font-size: 100%;
+      margin-right: -3px; }
+    #colophon .social-buttons a .google-plus-icon {
+      font-size: 100%;
+      margin-right: -7px;
+      margin-left: 0px; }
+    #colophon .social-buttons a .facebook-icon {
+      margin-right: -1px;
+      margin-left: 3px; }
+    #colophon .social-buttons a:nth-child(1) {
+      border-color: #3B599A; }
+    #colophon .social-buttons a:nth-child(2) {
+      border-color: #50ABF1; }
+    #colophon .social-buttons a:nth-child(3) {
+      border-color: #DC4E41; }
+    #colophon .social-buttons a:nth-child(4) {
+      border-color: #464646; }
+    #colophon .social-buttons a:last-child {
+      margin-right: 0; }
+    #colophon .social-buttons a:nth-child(1):hover {
+      background: #3B599A; }
+    #colophon .social-buttons a:nth-child(2):hover {
+      background: #50ABF1; }
+    #colophon .social-buttons a:nth-child(3):hover {
+      background: #DC4E41; }
+    #colophon .social-buttons a:nth-child(4):hover {
+      background: #464646; }
 #colophon .help {
   position: relative;
   width: 100%;
