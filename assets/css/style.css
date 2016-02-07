@@ -703,7 +703,7 @@ img {
 .lowercase {
   text-transform: lowercase; }
 
-.shadow, .tech-news-wrap, .entry-content .entry-image-small img {
+.shadow, #tech-news-wrap, .entry-content .entry-image-small img {
   -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
@@ -717,14 +717,14 @@ img {
   -o-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1); }
 
-.radius, .featured-posts-column .article, .tech-news-wrap, .category .category-feed, .category .category-feed a, body.category-page .posts-column, article.post-wrap, body.category-page .post-content .post-meta, body.category-page .post-content .read-post, .article-meta .article-meta-inner .share-icons a, .article-meta .article-meta-inner .cta-btns a, .entry-content .entry-image-small img, .post_list li .post-card-image, body.videos .videos-column .single-video {
+.radius, .featured-posts-column .article, #tech-news-wrap, .category .category-feed, .category .category-feed a, body.category-page .posts-column, article.post-wrap, body.category-page .post-content .post-meta, body.category-page .post-content .read-post, .article-meta .article-meta-inner .share-icons a, .article-meta .article-meta-inner .cta-btns a, .entry-content .entry-image-small img, .post_list li .post-card-image, body.videos .videos-column .single-video {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px; }
 
-.radius-alt, [type="submit"], [type="reset"], [type="button"], [type="file"], .tech-news-wrap .more_tech_news, .freebie-item, #sidebar-column .search-wrap form .sidebar-input, article.post-wrap .post-thumbnail img, .post-content-column > article .entry-content p code, .entry-content h1 code, .entry-content h2 code, .entry-content h3 code, .entry-content h4 code, .entry-content h5 code, .entry-content h6 code {
+.radius-alt, [type="submit"], [type="reset"], [type="button"], [type="file"], #tech-news-wrap .more_tech_news, .freebie-item, #sidebar-column .search-wrap form .sidebar-input, article.post-wrap .post-thumbnail img, .post-content-column > article .entry-content p code, .entry-content h1 code, .entry-content h2 code, .entry-content h3 code, .entry-content h4 code, .entry-content h5 code, .entry-content h6 code {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -763,7 +763,7 @@ img {
 .fixed {
   position: fixed; }
 
-.left, body.home .featured-posts-column, .tech-news-wrap, body.category-page .posts-column, .category-posts-column ul.category-posts-list .post-row li {
+.left, body.home .featured-posts-column, #tech-news-wrap, body.category-page .posts-column, .category-posts-column ul.category-posts-list .post-row li {
   float: left; }
 
 .right {
@@ -1799,30 +1799,30 @@ body.home {
         font-size: 1.125em; }
 
 /* Share Icons */
-.tech-news-wrap {
+#tech-news-wrap {
   padding: 10px 10px 0 10px;
   color: #597488;
   background: #F0F5F8;
   margin: 25px 2.1% 0 0;
   width: 25.142%;
   height: 3751px; }
-  .tech-news-wrap .thePost {
+  #tech-news-wrap .thePost {
     margin: 22px 22.5px 14px;
     padding: 20px 0px 7px;
     border-top: 1px solid #C3D4E1;
     text-align: center;
     font-size: .92em;
     color: #597488; }
-    .tech-news-wrap .thePost a {
+    #tech-news-wrap .thePost a {
       font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
       -webkit-transition: all 0.6s ease-in-out 0s;
       -moz-transition: all 0.6s ease-in-out 0s;
       -ms-transition: all 0.6s ease-in-out 0s;
       -o-transition: all 0.6s ease-in-out 0s;
       transition: all 0.6s ease-in-out 0s; }
-      .tech-news-wrap .thePost a:hover {
+      #tech-news-wrap .thePost a:hover {
         color: #75b1d6; }
-  .tech-news-wrap .more_tech_news {
+  #tech-news-wrap .more_tech_news {
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
     -ms-transition: all 0.3s ease-in;
@@ -1835,10 +1835,10 @@ body.home {
     padding: 10px 6px;
     width: 116px;
     border: 2px solid #31EDC5; }
-    .tech-news-wrap .more_tech_news:hover {
+    #tech-news-wrap .more_tech_news:hover {
       background: #E9F1F5;
       border: 2px solid #49B8CC; }
-    .tech-news-wrap .more_tech_news:after {
+    #tech-news-wrap .more_tech_news:after {
       content: "\f021";
       font-family: webtwicons;
       display: inline;
@@ -2969,7 +2969,7 @@ body.single-post .entry-wrap .main-page {
   .prev-next-articles .item.right a {
     border-left-width: 1px;
     border-left-style: solid; }
-  .prev-next-articles .item.left a, .prev-next-articles body.home .item.featured-posts-column a, body.home .prev-next-articles .item.featured-posts-column a, .prev-next-articles .item.tech-news-wrap a, .prev-next-articles body.category-page .item.posts-column a, body.category-page .prev-next-articles .item.posts-column a, .prev-next-articles .category-posts-column ul.category-posts-list .post-row li.item a, .category-posts-column ul.category-posts-list .post-row .prev-next-articles li.item a {
+  .prev-next-articles .item.left a, .prev-next-articles body.home .item.featured-posts-column a, body.home .prev-next-articles .item.featured-posts-column a, .prev-next-articles .item#tech-news-wrap a, .prev-next-articles body.category-page .item.posts-column a, body.category-page .prev-next-articles .item.posts-column a, .prev-next-articles .category-posts-column ul.category-posts-list .post-row li.item a, .category-posts-column ul.category-posts-list .post-row .prev-next-articles li.item a {
     border-right-width: 1px;
     border-right-style: solid; }
   .prev-next-articles .item a:hover {
@@ -2990,7 +2990,7 @@ body.single-post .entry-wrap .main-page {
     display: inline-block;
     width: 80%; }
 
-.left .item-meta, body.home .featured-posts-column .item-meta, .tech-news-wrap .item-meta, body.category-page .posts-column .item-meta, .category-posts-column ul.category-posts-list .post-row li .item-meta {
+.left .item-meta, body.home .featured-posts-column .item-meta, #tech-news-wrap .item-meta, body.category-page .posts-column .item-meta, .category-posts-column ul.category-posts-list .post-row li .item-meta {
   padding-left: 20px; }
 
 .right .item-meta {
