@@ -1923,10 +1923,10 @@ iframe a.twitter-timeline {
 .second-category-title {
   width: 106.64%; }
 
-.trends-wrap .category-title {
+#trends-wrap .category-title {
   background: #BB81AB;
   border-color: #AF6A9B; }
-  .trends-wrap .category-title svg {
+  #trends-wrap .category-title svg {
     vertical-align: middle;
     fill: #fff;
     width: 22px;
