@@ -1954,10 +1954,10 @@ iframe a.twitter-timeline {
         color: #49b8cc;
         background: #E9F1F5; }
 
-.how-to-wrap .category-title {
+#how-to-wrap .category-title {
   background: #FEA1B1;
   border-color: #EA8D9D; }
-  .how-to-wrap .category-title p:before {
+  #how-to-wrap .category-title p:before {
     content: "\f128";
     font-size: 15px; }
 
