@@ -7,7 +7,7 @@
 
  * Twitter: @whizkydee, @webtwic
 
- * Github: https://github.com/whizkydee/webtwic
+ * Github: https://github.com/whizkydee/whizkydee.github.io
 
 */
 var Webtwic = Webtwic || {};
@@ -16,7 +16,7 @@ Webtwic = {
 	// Basic Information about Webtwic
 	name: "Webtwic",
 	description: "A community for coding and tech tweaks where beginners and experts can learn.",
-	repo: "https://github.com/whizkydee/webtwic",
+	repo: "https://github.com/whizkydee/whizkydee.github.io",
 	author: "Olaolu Olawuyi",
 	version: 1.07,
 
