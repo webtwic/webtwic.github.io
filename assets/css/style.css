@@ -1256,7 +1256,7 @@ body.category-page .adjustSiteContent {
     left: 0px;
     top: 0px; }
     .main .mobile-header .mobile_logo {
-      background: url("/img/webtwic-logos.png") 1px -96px no-repeat;
+      background: url("../../img/webtwic-logos.png") 1px -96px no-repeat;
       width: 160px;
       height: 100%;
       display: block;
@@ -1393,7 +1393,7 @@ body.category-page .adjustSiteContent {
     right: 0px;
     z-index: 9999; }
     .main #header div.logo .desktop_logo {
-      background: url("/img/webtwic-logos.png") -18px 1px no-repeat;
+      background: url("../../img/webtwic-logos.png") -18px 1px no-repeat;
       text-indent: -99999px;
       text-align: center;
       margin-right: auto;
@@ -1745,7 +1745,7 @@ body.home {
     text-align: left;
     color: #ff9dae; }
   .article .article-social .arrow:after {
-    content: url("/img/sharearrow.png");
+    content: url("../../img/sharearrow.png");
     margin-left: 4px; }
   .article .article-social a {
     position: relative;
@@ -2398,7 +2398,7 @@ body.category-page .sidebar.empty-col {
     position: relative;
     border-right: 1.9px solid rgba(0, 0, 0, 0.06); }
     header.secondary-header .logo .desktop_logo {
-      background: url("/img/webtwic-logos.png") -1px -99px no-repeat;
+      background: url("../../img/webtwic-logos.png") -1px -99px no-repeat;
       text-indent: -99999px;
       font-size: 40px;
       display: block;
@@ -3427,7 +3427,7 @@ body.contact-page .site-content {
     margin-right: auto; }
 
 #colophon .footer-logo {
-  background: url("/img/webtwic-logos.png") -32px -159px no-repeat;
+  background: url("../../img/webtwic-logos.png") -32px -159px no-repeat;
   margin-left: auto;
   margin-right: auto;
   width: 227px;
