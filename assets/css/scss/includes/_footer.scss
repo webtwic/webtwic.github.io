@@ -77,9 +77,6 @@
             border-color: $google;
          }
          &:nth-child(4) {
-            border-color: $youtube;
-         }
-         &:nth-child(5) {
             border-color: $github;
          }
          &:last-child {
@@ -95,9 +92,6 @@
             background: $google;
          }
          &:nth-child(4):hover {
-            background: $youtube;
-         }
-         &:nth-child(5):hover {
             background: $github;
          }
       }
