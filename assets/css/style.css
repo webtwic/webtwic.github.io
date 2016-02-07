@@ -1368,7 +1368,7 @@ body.category-page .adjustSiteContent {
     display: none !important; } }
 @media screen and (min-width: 860px) {
   .main .top-stripe {
-    background: url("/img/top-stripe.png");
+    background: url("../../img/top-stripe.png");
     margin-top: 0px;
     height: 6px;
     position: fixed;
