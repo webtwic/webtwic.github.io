@@ -703,7 +703,7 @@ img {
 .lowercase {
   text-transform: lowercase; }
 
-.shadow, #tech-news-wrap, .entry-content .entry-image-small img {
+.shadow, #tech-news-wrap, #sidebar-column .search-wrap form .sidebar-button, .entry-content .entry-image-small img {
   -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
@@ -717,7 +717,7 @@ img {
   -o-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.1); }
 
-.radius, .featured-posts-column .article, #tech-news-wrap, .category .category-feed, .category .category-feed a, body.category-page .posts-column, article.post-wrap, body.category-page .post-content .post-meta, body.category-page .post-content .read-post, .article-meta .article-meta-inner .share-icons a, .article-meta .article-meta-inner .cta-btns a, .entry-content .entry-image-small img, .post_list li .post-card-image, body.videos .videos-column .single-video {
+.radius, .featured-posts-column .article, #tech-news-wrap, .category .category-feed, .category .category-feed a, #sidebar-column .search-wrap form .sidebar-button, body.category-page .posts-column, article.post-wrap, body.category-page .post-content .post-meta, body.category-page .post-content .read-post, .article-meta .article-meta-inner .share-icons a, .article-meta .article-meta-inner .cta-btns a, .entry-content .entry-image-small img, .post_list li .post-card-image, body.videos .videos-column .single-video {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;

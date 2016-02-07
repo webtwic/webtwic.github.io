@@ -252,6 +252,8 @@ body {
       .sidebar-button {
          @include transition(background .2s ease);
          @include border-radius(0px 3px 3px 0px);
+         @extend .radius;
+         @extend .shadow;
          border-width: 0 0 4px 0;
          padding: 15px 22px;
          margin-left: 242px;
