@@ -724,7 +724,7 @@ img {
   -o-border-radius: 2px;
   border-radius: 2px; }
 
-.radius-alt, [type="submit"], [type="reset"], [type="button"], [type="file"], .tech-news-wrap .more_tech_news, .freebie-item, .sidebar-column .search-wrap form .sidebar-input, article.post-wrap .post-thumbnail img, .post-content-column > article .entry-content p code, .entry-content h1 code, .entry-content h2 code, .entry-content h3 code, .entry-content h4 code, .entry-content h5 code, .entry-content h6 code {
+.radius-alt, [type="submit"], [type="reset"], [type="button"], [type="file"], .tech-news-wrap .more_tech_news, .freebie-item, #sidebar-column .search-wrap form .sidebar-input, article.post-wrap .post-thumbnail img, .post-content-column > article .entry-content p code, .entry-content h1 code, .entry-content h2 code, .entry-content h3 code, .entry-content h4 code, .entry-content h5 code, .entry-content h6 code {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -1845,7 +1845,7 @@ body.home {
       font-size: .75em;
       margin: 0 0 0 4px; }
 
-.sidebar-column {
+#sidebar-column {
   width: 25.295%;
   margin-top: 25px; }
 
@@ -1988,7 +1988,7 @@ iframe a.twitter-timeline {
     .freebie-item:hover > span {
       color: #89BED7; }
 
-body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-column .freebie-item {
+body.single-post #sidebar-column .freebie-item, body.category-page #sidebar-column .freebie-item {
   margin-left: 0; }
 
 .freebie-item span {
@@ -2025,16 +2025,16 @@ body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-colu
       font-size: 16px; }
 
 /* Start Sidebar Search */
-.sidebar-column .search-wrap {
+#sidebar-column .search-wrap {
   height: 120px;
   margin-top: 25px; }
-  .sidebar-column .search-wrap form {
+  #sidebar-column .search-wrap form {
     width: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 54px; }
-    .sidebar-column .search-wrap form .sidebar-input {
+    #sidebar-column .search-wrap form .sidebar-input {
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
       -ms-transition: all 0.5s ease;
@@ -2049,17 +2049,17 @@ body.single-post .sidebar-column .freebie-item, body.category-page .sidebar-colu
       font-size: 16px;
       color: #999;
       width: 203px; }
-      .sidebar-column .search-wrap form .sidebar-input:hover {
+      #sidebar-column .search-wrap form .sidebar-input:hover {
         border: 3px solid #E3E3E3;
         background: #fcfcfc; }
-      .sidebar-column .search-wrap form .sidebar-input:focus {
+      #sidebar-column .search-wrap form .sidebar-input:focus {
         -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
         -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
         -ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
         -o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
         box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
         background: #fff; }
-    .sidebar-column .search-wrap form .sidebar-button {
+    #sidebar-column .search-wrap form .sidebar-button {
       -webkit-transition: background 0.2s ease;
       -moz-transition: background 0.2s ease;
       -ms-transition: background 0.2s ease;
