@@ -2612,7 +2612,7 @@ body.single-post .entry-wrap {
     width: 100%;
     padding: 7px 0 60px 0;
     text-align: center; }
-body.single-post .main-page .sidebar-column {
+body.single-post .main-page #sidebar-column {
   margin-top: 0;
   width: 24.295%; }
 
