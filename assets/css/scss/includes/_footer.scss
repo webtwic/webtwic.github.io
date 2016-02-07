@@ -68,31 +68,37 @@
             margin-left: 3px;
          }
          &:nth-child(1) {
-            border-color: #3B599A;
+            border-color: $facebook;
          }
          &:nth-child(2) {
-            border-color: #50ABF1;
+            border-color: $twitter;
          }
          &:nth-child(3) {
-            border-color: #DC4E41;
+            border-color: $google;
          }
          &:nth-child(4) {
-            border-color: #464646;
+            border-color: $youtube;
+         }
+         &:nth-child(5) {
+            border-color: $github;
          }
          &:last-child {
             margin-right: 0;
          }
          &:nth-child(1):hover {
-            background: #3B599A;
+            background: $facebook;
          }
          &:nth-child(2):hover {
-            background: #50ABF1;
+            background: $twitter;
          }
          &:nth-child(3):hover {
-            background: #DC4E41;
+            background: $google;
          }
          &:nth-child(4):hover {
-            background: #464646;
+            background: $youtube;
+         }
+         &:nth-child(5):hover {
+            background: $github;
          }
       }
    }
