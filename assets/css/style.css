@@ -1961,10 +1961,10 @@ iframe a.twitter-timeline {
     content: "\f128";
     font-size: 15px; }
 
-.freebies-wrap .category-title {
+#freebies-wrap .category-title {
   background: #F9BA5D;
   border-color: #FFA22E; }
-  .freebies-wrap .category-title p:before {
+  #freebies-wrap .category-title p:before {
     content: "\f06b";
     font-size: 16px; }
 
