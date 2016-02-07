@@ -1901,10 +1901,10 @@ body.home {
     width: 20px;
     height: 18px; }
 
-.tweets-wrap {
+#tweets-wrap {
   height: 460px; }
 
-.sidebar.tweets-wrap iframe {
+.sidebar#tweets-wrap iframe {
   margin-top: 10px !important; }
 
 iframe .timeline-header .custom-timeline-summary, .timeline-header h1.summary {
@@ -1914,10 +1914,10 @@ iframe a.twitter-timeline {
   text-align: center;
   display: block; }
 
-.tweets-wrap .category-title {
+#tweets-wrap .category-title {
   background: #50ABF1;
   border-color: #2D9CEE; }
-  .tweets-wrap .category-title p:before {
+  #tweets-wrap .category-title p:before {
     content: "\f099"; }
 
 .second-category-title {

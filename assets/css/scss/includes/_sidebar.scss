@@ -59,11 +59,11 @@
    }
 }
 
-.tweets-wrap {
+#tweets-wrap {
    height: 460px;
 }
 
-.sidebar.tweets-wrap iframe {
+.sidebar#tweets-wrap iframe {
    margin-top: 10px !important;
 }
 
@@ -76,7 +76,7 @@ iframe a.twitter-timeline {
    display: block;
 }
 
-.tweets-wrap .category-title {
+#tweets-wrap .category-title {
    background: #50ABF1;
    border-color: #2D9CEE;
    p:before {
