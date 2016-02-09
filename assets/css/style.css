@@ -2008,6 +2008,12 @@ body.single-post #sidebar-column .freebie-item, body.category-page #sidebar-colu
   float: left;
   margin-right: 10px; }
 
+#sidebar-follow a {
+  position: relative;
+  display: inline-block; }
+  #sidebar-follow a .webtwicons {
+    color: #fff; }
+
 #coding-wrap .category-title {
   background: #57DD6B;
   border-color: #3FC553; }

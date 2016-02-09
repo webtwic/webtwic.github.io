@@ -195,6 +195,16 @@ body {
    }
 }
 
+
+#sidebar-follow {
+   a {
+      position: relative;
+      display: inline-block;
+      .webtwicons {
+         color: $white;
+      }
+   }
+}
 #coding-wrap {
    // height: 480px;
    .category-title {
