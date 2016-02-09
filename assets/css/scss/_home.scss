@@ -4,7 +4,7 @@ Start Home.scss
 
 * Date Created: 01/03/2015
 
-* Last Modified: 30/01/2016
+* Last Modified: 09/01/2016
 
 */
 
@@ -46,7 +46,7 @@ body.home {
 
 .article {
    time {
-      font-family: "Source Code Pro", Consolas, Menlo, monospace, Arial, georgia;
+      font-family: $code_font_alt;
       text-transform: uppercase;
       cursor: default;
       letter-spacing: 10px;
@@ -143,11 +143,9 @@ body.home {
          margin-left: 4px;
       }
       a {
+         @include transition(.5s ease-in-out);
          position: relative;
          margin-right: 42px;
-         :first-child {
-            @include transition(.5s ease-in-out);
-         }
          &:last-child {
             margin-right: 0;
          }
@@ -168,7 +166,6 @@ body.home {
          }
          .tooltip {
             @include border-radius(1px);
-            display: inline;
             padding: .1px 6px;
             position: absolute;
             @include transform(translate(-50%, -50%));

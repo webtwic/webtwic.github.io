@@ -1625,7 +1625,7 @@ Start Home.scss
 
 * Date Created: 01/03/2015
 
-* Last Modified: 30/01/2016
+* Last Modified: 09/01/2016
 
 */
 body.home {
@@ -1654,7 +1654,7 @@ body.home {
     margin-top: 25px; }
 
 .article time {
-  font-family: "Source Code Pro", Consolas, Menlo, monospace, Arial, georgia;
+  font-family: Consolas, "Source Code Pro", Menlo, Monaco, monospace;
   text-transform: uppercase;
   cursor: default;
   letter-spacing: 10px;
@@ -1762,14 +1762,13 @@ body.home {
     content: url("../../img/sharearrow.png");
     margin-left: 4px; }
   .article .article-social a {
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
     position: relative;
     margin-right: 42px; }
-    .article .article-social a :first-child {
-      -webkit-transition: 0.5s ease-in-out;
-      -moz-transition: 0.5s ease-in-out;
-      -ms-transition: 0.5s ease-in-out;
-      -o-transition: 0.5s ease-in-out;
-      transition: 0.5s ease-in-out; }
     .article .article-social a:last-child {
       margin-right: 0; }
     .article .article-social a:nth-of-type(1):hover :first-child {
@@ -1788,7 +1787,6 @@ body.home {
       -ms-border-radius: 1px;
       -o-border-radius: 1px;
       border-radius: 1px;
-      display: inline;
       padding: .1px 6px;
       position: absolute;
       -webkit-transform: translate(-50%, -50%);
