@@ -199,6 +199,10 @@ body {
 #sidebar-follow {
    .inner {
       padding-top: 0;
+      > span {
+         font-family: "Lobster", $basefont;
+         color: $basecolor;
+      }
       .social-buttons {
          margin-top: 10px;
       }
