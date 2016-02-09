@@ -199,6 +199,15 @@
    }
 }
 
+.btn-youtube, .btn-ytb {
+   background: $youtube;
+   border-color: #B90C0B;
+   &.hover:hover {
+      background: #E13433;
+      border-color: #CD201F;
+   }
+}
+
 .btn-email, .btn-mail {
    background: $email;
    border-color: #4D4D4D;

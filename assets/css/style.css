@@ -880,6 +880,13 @@ img {
     background: #148BC9;
     border-color: #1B78B6; }
 
+.btn-youtube, .btn-ytb {
+  background: #CD201F;
+  border-color: #B90C0B; }
+  .btn-youtube.hover:hover, .btn-ytb.hover:hover {
+    background: #E13433;
+    border-color: #CD201F; }
+
 .btn-email, .btn-mail {
   background: #616161;
   border-color: #4D4D4D; }
