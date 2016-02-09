@@ -208,6 +208,15 @@
    }
 }
 
+.btn-instagram, .btn-insta {
+   background: $instagram;
+   border-color: #004274;
+   &.hover:hover {
+      background: #266A9C;
+      border-color: #125688;
+   }
+}
+
 .btn-email, .btn-mail {
    background: $email;
    border-color: #4D4D4D;

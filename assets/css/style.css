@@ -887,6 +887,13 @@ img {
     background: #E13433;
     border-color: #CD201F; }
 
+.btn-instagram, .btn-insta {
+  background: #125688;
+  border-color: #004274; }
+  .btn-instagram.hover:hover, .btn-insta.hover:hover {
+    background: #266A9C;
+    border-color: #125688; }
+
 .btn-email, .btn-mail {
   background: #616161;
   border-color: #4D4D4D; }
