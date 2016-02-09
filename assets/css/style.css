@@ -1871,7 +1871,7 @@ body.home {
     padding-bottom: 30px; }
 
 .empty-col.sidebar {
-  height: 331px;
+  height: 240px;
   position: relative; }
 
 .category-title {
@@ -2406,7 +2406,7 @@ body.category-page #sidebar-column {
   width: 26.295%;
   margin-top: 0; }
 body.category-page .sidebar.empty-col {
-  height: 300px; }
+  height: 117px; }
 
 @media screen and (min-width: 860px) {
   .main header.secondary-header {
