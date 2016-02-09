@@ -197,6 +197,16 @@ body {
 
 
 #sidebar-follow {
+   .inner {
+      padding-top: 0;
+      .social-buttons {
+         margin-top: 10px;
+      }
+   }
+   .category-title {
+      background: $basecolor;
+      // border-color: ;
+   }
    a {
       position: relative;
       display: inline-block;

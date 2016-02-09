@@ -2022,6 +2022,12 @@ body.single-post #sidebar-column .freebie-item, body.category-page #sidebar-colu
   float: left;
   margin-right: 10px; }
 
+#sidebar-follow .inner, #sidebar-follow article.post-wrap .post-wrap-inner, article.post-wrap #sidebar-follow .post-wrap-inner, #sidebar-follow .article-meta .article-meta-inner, .article-meta #sidebar-follow .article-meta-inner, #sidebar-follow .page-focus-column .post-secondary-column .author-profile .author-info-inner, .page-focus-column .post-secondary-column .author-profile #sidebar-follow .author-info-inner, #sidebar-follow .site-footer .footer-inner, .site-footer #sidebar-follow .footer-inner {
+  padding-top: 0; }
+  #sidebar-follow .inner .social-buttons, #sidebar-follow article.post-wrap .post-wrap-inner .social-buttons, article.post-wrap #sidebar-follow .post-wrap-inner .social-buttons, #sidebar-follow .article-meta .article-meta-inner .social-buttons, .article-meta #sidebar-follow .article-meta-inner .social-buttons, #sidebar-follow .page-focus-column .post-secondary-column .author-profile .author-info-inner .social-buttons, .page-focus-column .post-secondary-column .author-profile #sidebar-follow .author-info-inner .social-buttons, #sidebar-follow .site-footer .footer-inner .social-buttons, .site-footer #sidebar-follow .footer-inner .social-buttons {
+    margin-top: 10px; }
+#sidebar-follow .category-title {
+  background: #6699cc; }
 #sidebar-follow a {
   position: relative;
   display: inline-block;
