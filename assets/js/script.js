@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 07/02/2016
+ * Last Modified: 09/02/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -74,9 +74,7 @@ Webtwic = {
 
 	// Function to show Notifications before header
 	_showNotif: function(text) {
-		if(typeof text == "undefined") {
-			text = notif_text;
-		}
+		var text = (typeof text == "undefined") ? notif_text : text;
 		WBT._adjustSiteContent();
 		if( $("body").hasClass("default-body") ) {
 			$(".top-stripe").before(
