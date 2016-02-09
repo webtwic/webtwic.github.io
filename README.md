@@ -15,10 +15,4 @@ We love code, the web, tech and creative design. :heart: :smile:
 
 Everything should work fine after that.
 
-+ Author: Olaolu Olawuyi
-
-+ [Codepen] (https://codepen.io/whizkydee)
-
-+ [Twitter] (https://twitter.com/whizkydee)
-
-+ [Tumblr] (https://whizkydee.tumblr.com) 
+Author: Olaolu Olawuyi. You can follow him on [Twitter] (https://twitter.com/whizkydee), [Codepen] (https://codepen.io/whizkydee) or [email] (mailto:whiskydee@gmail.com) him.
