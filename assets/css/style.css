@@ -2025,7 +2025,10 @@ body.single-post #sidebar-column .freebie-item, body.category-page #sidebar-colu
 #sidebar-follow a {
   position: relative;
   display: inline-block;
-  padding: 10px 4.2%; }
+  padding: 10px 4.6%;
+  margin-left: -.2em; }
+  #sidebar-follow a:first-child {
+    margin-left: 0; }
   #sidebar-follow a .webtwicons {
     color: #fff; }
 
