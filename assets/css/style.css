@@ -2024,7 +2024,8 @@ body.single-post #sidebar-column .freebie-item, body.category-page #sidebar-colu
 
 #sidebar-follow a {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  padding: 10px 4.2%; }
   #sidebar-follow a .webtwicons {
     color: #fff; }
 
