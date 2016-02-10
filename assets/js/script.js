@@ -74,7 +74,7 @@ Webtwic = {
 
 	// Function to show Notifications before header
 	_showNotif: function(text) {
-		var text = (typeof text == "undefined") ? notif_text : text;
+		text = (typeof text == "undefined") ? notif_text : text;
 		Webtwic._adjustSiteContent();
 		if( $("body").hasClass("default-body") ) {
 			$(".top-stripe").before(
