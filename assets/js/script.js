@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 09/02/2016
+ * Last Modified: 10/02/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -63,19 +63,19 @@ Webtwic = {
 	},
 
 	_resetSite: function() {
-		Webtwc._showNotif();
-		Webtwc._adjustSiteContent();
+		Webtwic._showNotif();
+		Webtwic._adjustSiteContent();
 	},
 
 	_undoReset: function() {
-		Webtwc._hideNotif();
-		Webtwc._undoSiteAdjust();
+		Webtwic._hideNotif();
+		Webtwic._undoSiteAdjust();
 	},
 
 	// Function to show Notifications before header
 	_showNotif: function(text) {
 		var text = (typeof text == "undefined") ? notif_text : text;
-		Webtwc._adjustSiteContent();
+		Webtwic._adjustSiteContent();
 		if( $("body").hasClass("default-body") ) {
 			$(".top-stripe").before(
 				"<div id='notifBanner' class='notif_vis'>"+text+"</div>"
@@ -88,8 +88,8 @@ Webtwic = {
 			return;
 		}
 		$(".close-button").on("click", function() {
-			Webtwc._hideNotif();
-			Webtwc._undoSiteAdjust();
+			Webtwic._hideNotif();
+			Webtwic._undoSiteAdjust();
 		});
 	},
 
