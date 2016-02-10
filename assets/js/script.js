@@ -12,6 +12,8 @@
 */
 var Webtwic = Webtwic || {};
 
+var browser = bowser;
+
 Webtwic = {
 	// Basic Information about Webtwic
 	name: "Webtwic",
@@ -106,13 +108,7 @@ jQuery(document).ready(function() {
 
 	// Define Variables
 	var is_notifBanner = $("div").hasClass("notif_vis"),
-	img = $("img"),
-	is_noAlt = img.attr("alt", null),
-	scripts = $("script"),
-	is_noType = scripts.attr("type", null),
-	is_noCharset = scripts.attr("charset", null);
-
-	var $to_top = $("a.to-top"),
+	$to_top = $("a.to-top"),
 	is_toggle_active = $(".hamburger").hasClass("is_active"),
 	height = 200;
 
@@ -120,7 +116,6 @@ jQuery(document).ready(function() {
 
 	// Start browser detection
 
-	var browser = bowser;
 	browser.ie = browser.msie;
 
 	if (browser.webkit) {
@@ -145,25 +140,11 @@ jQuery(document).ready(function() {
 		Webtwic._showBrowser("opera");
 	}
 
-	// Performance fixes for attributes
-
-	if(is_noAlt) {
-		Webtwic._setAttr(img, "alt", "...");
-	} else if(is_noCharset){
-		Webtwic._setAttr(scripts, "charset", "utf-8");
-	} else if(is_noType) {
-		Webtwic._setAttr(scripts, "type", "text/javascript");
-	}
-
-	//  else {
-	// 	return img.attr("alt");
-	// }
-	// else {
-	// 	return scripts.attr("charset");
-	// }
-	// else {
-	//	return scripts.attr("type");
-	// }
+	/*
+		TODO: Rebuild Performance fixes for attributes
+		See history of Performance fixes.
+		Also, check StackOverflow.
+	*/
 
 	if (!Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms) {
 		Webtwic._showNotif();
