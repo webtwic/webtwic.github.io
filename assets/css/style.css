@@ -2507,12 +2507,13 @@ body.category-page .sidebar.empty-col {
     margin: 24px 10px;
     fill: #777; }
   .header-follow-search .ui-overlay-search {
+    background: #273340;
+    background: rgba(39, 51, 64, 0.99);
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(39, 51, 64, 0.99);
     display: none;
     z-index: 99999; }
 
@@ -2581,7 +2582,7 @@ body.category-page .sidebar.empty-col {
         display: block;
         width: 100.3%; }
     .ui-overlay-search .search-input p {
-      text-align: center;
+      text-align: left;
       font-size: 1.05em;
       color: #6D8299; }
 
