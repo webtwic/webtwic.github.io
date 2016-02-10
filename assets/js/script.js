@@ -120,7 +120,7 @@ jQuery(document).ready(function() {
 
 	// Start browser detection
 
-	browser = bowser;
+	var browser = bowser;
 	browser.ie = browser.msie;
 
 	if (browser.webkit) {
@@ -149,15 +149,16 @@ jQuery(document).ready(function() {
 
 	if(is_noAlt) {
 		Webtwic._setAttr(img, "alt", "...");
-	} else {
-		return img.attr("alt");
+	} else if(is_noCharset){
+		Webtwic._setAttr(scripts, "charset", "utf-8");
 	}
 
-	if(is_noCharset) {
-		Webtwic._setAttr(scripts, "charset", "utf-8");
-	} else {
-		return scripts.attr("charset");
-	}
+	//  else {
+	// 	return img.attr("alt");
+	// }
+	// else {
+	// 	return scripts.attr("charset");
+	// }
 
 	if(is_noType) {
 		Webtwic._setAttr(scripts, "type", "text/javascript");
