@@ -3489,7 +3489,7 @@ body.contact-page .site-content {
     background: transparent;
     border-width: 2px;
     border-style: solid;
-    padding: 12px 1.15%;
+    padding: 12px 1em;
     margin-right: 5px; }
     #colophon .social-buttons a .webtwicons {
       color: #fff;
@@ -3498,13 +3498,13 @@ body.contact-page .site-content {
       margin-right: 1px; }
     #colophon .social-buttons a .twitter-icon {
       font-size: 100%;
-      margin-right: -3px; }
+      margin-right: -1px; }
     #colophon .social-buttons a .google-plus-icon {
       font-size: 100%;
-      margin-right: -7px;
+      margin-right: -6px;
       margin-left: 0px; }
     #colophon .social-buttons a .facebook-icon {
-      margin-right: -1px;
+      margin-right: 2px;
       margin-left: 3px; }
     #colophon .social-buttons a:nth-child(1) {
       border-color: #3B599A; }

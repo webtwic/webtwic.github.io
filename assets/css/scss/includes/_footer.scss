@@ -45,7 +45,7 @@
          background: transparent;
          border-width: 2px;
          border-style: solid;
-         padding: 12px 1.15%;
+         padding: 12px 1em;
          margin-right: 5px;
          .webtwicons {
             color: $white;
@@ -56,15 +56,15 @@
          }
          .twitter-icon {
             font-size: $full;
-            margin-right: -3px;
+            margin-right: -1px;
          }
          .google-plus-icon {
             font-size: $full;
-            margin-right: -7px;
+            margin-right: -6px;
             margin-left: 0px;
          }
          .facebook-icon {
-            margin-right: -1px;
+            margin-right: 2px;
             margin-left: 3px;
          }
          &:nth-child(1) {
