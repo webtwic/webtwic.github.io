@@ -151,6 +151,8 @@ jQuery(document).ready(function() {
 		Webtwic._setAttr(img, "alt", "...");
 	} else if(is_noCharset){
 		Webtwic._setAttr(scripts, "charset", "utf-8");
+	} else if(is_noType) {
+		Webtwic._setAttr(scripts, "type", "text/javascript");
 	}
 
 	//  else {
@@ -159,12 +161,9 @@ jQuery(document).ready(function() {
 	// else {
 	// 	return scripts.attr("charset");
 	// }
-
-	if(is_noType) {
-		Webtwic._setAttr(scripts, "type", "text/javascript");
-	} else {
-		return scripts.attr("type");
-	}
+	// else {
+	//	return scripts.attr("type");
+	// }
 
 	if (!Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms) {
 		Webtwic._showNotif();
