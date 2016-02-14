@@ -109,8 +109,18 @@ notif_text = "Some features which affect the functionality of webtwic are disabl
 
 jQuery(document).ready(function() {
 	// Test for HTML5 support
-	if(typeof Modernizr != "undefined" && !Modernizr.canvas) {
-		Webtwic._showNotif("Oops. Your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> <span class='close-button'></span> for a better experience.");
+	if(window.Modernizr) {
+		if(!Modernizr.canvas) {
+			Webtwic._showNotif("Oops. Your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> <span class='close-button'></span> for a better experience.");
+		} else {
+			// Do nothing.
+		}
+	} else if (!window.Modernizr) {
+		if(canvascheck == false) {
+			alert("hello");
+		} else {
+			// Do nothing.
+		}
 	} else {
 		// Do nothing.
 	}
@@ -154,8 +164,12 @@ jQuery(document).ready(function() {
 		Also, check StackOverflow.
 	*/
 
-	if (!Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms) {
-		Webtwic._showNotif();
+	if (window.Modernizr) {
+		if (!Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms) {
+			Webtwic._showNotif();
+		} else {
+			// Do nothing.
+		}
 	} else {
 		// Do nothing.
 	}
