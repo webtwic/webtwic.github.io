@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://webtwic.com/sitemap.xml
+Disallow:
