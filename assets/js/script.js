@@ -15,6 +15,9 @@ var Webtwic = Webtwic || {};
 
 var browser = bowser;
 
+var test_canvas = document.createElement("canvas");
+var canvascheck=(test_canvas.getContext)? true : false;
+
 Webtwic = {
 	// Basic Information about Webtwic
 	name: "Webtwic",
@@ -106,10 +109,10 @@ notif_text = "Some features which affect the functionality of webtwic are disabl
 
 jQuery(document).ready(function() {
 	// Test for HTML5 support
-	if(Modernizr.canvas) {
-		Webtwic._showNotif();
+	if(typeof Modernizr != "undefined" && !Modernizr.canvas) {
+		Webtwic._showNotif("Oops. Your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> <span class='close-button'></span> for a better experience.");
 	} else {
-	  // no native canvas support available :(
+		// Do nothing.
 	}
 
 	// Define Variables
