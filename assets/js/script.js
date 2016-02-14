@@ -10,6 +10,7 @@
  * Github: https://github.com/whizkydee/whizkydee.github.io
 
 */
+
 var Webtwic = Webtwic || {};
 
 var browser = bowser;
@@ -36,7 +37,9 @@ Webtwic = {
 
 	// Function to hide Notifications
 	_hideNotif: function() {
-		$("#notifBanner").removeClass("notif_vis");
+		if($("#notifBanner").length) {
+			$("#notifBanner").removeClass("notif_vis");
+		}
 	},
 
 	// Function to push down .site-content
@@ -64,6 +67,26 @@ Webtwic = {
 		}
 	},
 
+	// Function to show Notifications before header
+	_showNotif: function(text) {
+		text = (typeof text == "undefined") ? notif_text : text;
+		Webtwic._adjustSiteContent();
+		if( $("body").hasClass("default-body") ) {
+			$(".top-stripe").before(
+				"<div class='notif_vis' id='notifBanner'>"+text+"</div>"
+			);
+		} else if ( $("body").hasClass("secondary-body") ) {
+			$(".secondary-header").before(
+				"<div class='notif_vis' id='notifBanner'>"+text+"</div>"
+			);
+		} else {
+			return;
+		}
+		$(".close-button").on("click", function() {
+			Webtwic._undoReset()
+		});
+	},
+
 	_resetSite: function() {
 		Webtwic._showNotif();
 		Webtwic._adjustSiteContent();
@@ -72,27 +95,6 @@ Webtwic = {
 	_undoReset: function() {
 		Webtwic._hideNotif();
 		Webtwic._undoSiteAdjust();
-	},
-
-	// Function to show Notifications before header
-	_showNotif: function(text) {
-		text = (typeof text == "undefined") ? notif_text : text;
-		Webtwic._adjustSiteContent();
-		if( $("body").hasClass("default-body") ) {
-			$(".top-stripe").before(
-				"<div id='notifBanner' class='notif_vis'>"+text+"</div>"
-			);
-		} else if ( $("body").hasClass("secondary-body") ) {
-			$(".secondary-header").before(
-				"<div id='notifBanner' class='notif_vis'>"+text+"</div>"
-			);
-		} else {
-			return;
-		}
-		$(".close-button").on("click", function() {
-			Webtwic._hideNotif();
-			Webtwic._undoSiteAdjust();
-		});
 	},
 
 	// Function to launch modal
@@ -105,10 +107,15 @@ Webtwic = {
 notif_text = "Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span>";
 
 jQuery(document).ready(function() {
+	// Test for HTML5 support
+	if(Modernizr.canvas) {
+		// Webtwic._showNotif();
+	} else {
+	  // no native canvas support available :(
+	}
 
 	// Define Variables
-	var is_notifBanner = $("div").hasClass("notif_vis"),
-	$to_top = $("a.to-top"),
+	var $to_top = $("a.to-top"),
 	is_toggle_active = $(".hamburger").hasClass("is_active"),
 	height = 200;
 
@@ -146,7 +153,7 @@ jQuery(document).ready(function() {
 		Also, check StackOverflow.
 	*/
 
-	if (!Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms) {
+	if (Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms) {
 		Webtwic._showNotif();
 	} else {
 		Webtwic._hideNotif();
