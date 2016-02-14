@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 10/02/2016
+ * Last Modified: 14/02/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -33,13 +33,6 @@ Webtwic = {
 	// Function to set attributes and values to elements
 	_setAttr: function(elem, name, val) {
 		$(elem, this).attr(name, val);
-	},
-
-	// Function to hide Notifications
-	_hideNotif: function() {
-		if($("#notifBanner").length) {
-			$("#notifBanner").removeClass("notif_vis");
-		}
 	},
 
 	// Function to push down .site-content
@@ -83,8 +76,13 @@ Webtwic = {
 			return;
 		}
 		$(".close-button").on("click", function() {
-			Webtwic._undoReset()
+			Webtwic._undoReset();
 		});
+	},
+
+	// Function to hide Notifications
+	_hideNotif: function() {
+		$("#notifBanner").removeClass("notif_vis");
 	},
 
 	_resetSite: function() {
@@ -109,7 +107,7 @@ notif_text = "Some features which affect the functionality of webtwic are disabl
 jQuery(document).ready(function() {
 	// Test for HTML5 support
 	if(Modernizr.canvas) {
-		// Webtwic._showNotif();
+		Webtwic._showNotif();
 	} else {
 	  // no native canvas support available :(
 	}
@@ -153,10 +151,10 @@ jQuery(document).ready(function() {
 		Also, check StackOverflow.
 	*/
 
-	if (Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms) {
+	if (!Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms) {
 		Webtwic._showNotif();
 	} else {
-		Webtwic._hideNotif();
+		// Do nothing.
 	}
 
 	// Start Main Page
