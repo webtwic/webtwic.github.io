@@ -162,6 +162,7 @@ jQuery(document).ready(function() {
 		TODO: Rebuild Performance fixes for attributes
 		See history of Performance fixes.
 		Also, check StackOverflow.
+		See PR #12
 	*/
 
 	if (window.Modernizr) {
