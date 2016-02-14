@@ -111,13 +111,13 @@ jQuery(document).ready(function() {
 	// Test for HTML5 support
 	if(window.Modernizr) {
 		if(!Modernizr.canvas) {
-			Webtwic._showNotif("Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span>");
+			Webtwic._showNotif("Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> <span class='close-button'></span> for an awesome experience.");
 		} else {
 			// Do nothing.
 		}
 	} else if (!window.Modernizr) {
 		if(canvascheck == false) {
-			alert("hello");
+			Webtwic._showNotif("Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> <span class='close-button'></span> for an awesome experience.");
 		} else {
 			// Do nothing.
 		}
