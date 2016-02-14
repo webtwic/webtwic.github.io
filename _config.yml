@@ -1,5 +1,5 @@
 # Site settings
-port: 4000
+port: 8000
 title: webtwic
 email: info@webtwic.com
 description: A community for coding and tech tweaks where beginners and experts can learn.
