@@ -111,7 +111,7 @@ jQuery(document).ready(function() {
 	// Test for HTML5 support
 	if(window.Modernizr) {
 		if(!Modernizr.canvas) {
-			Webtwic._showNotif("Oops. Your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> <span class='close-button'></span> for a better experience.");
+			Webtwic._showNotif("Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span>");
 		} else {
 			// Do nothing.
 		}
