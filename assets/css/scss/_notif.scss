@@ -1,6 +1,7 @@
 /* Notification banner and Fallback for certain css features -- See script.js */
 
 #notifBanner {
+   display: none;
    background: #FF5F5F;
    padding: 10px;
    height: 45px;
@@ -13,13 +14,6 @@
    top: 0;
    right: 0;
    left: 0;
-   &:hover {
-      /*transform: scale(1);*/
-   }
-}
-
-.notif_vis {
-   display: block !important;
    .close-button {
       float: right;
       margin-right: 69px;
@@ -27,6 +21,10 @@
       cursor: pointer;
       font-weight: normal;
    }
+}
+
+.notif_vis {
+   display: block !important;
 }
 
 .default-body .adjustSiteContent {
