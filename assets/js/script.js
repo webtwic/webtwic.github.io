@@ -107,7 +107,13 @@ Webtwic = {
 }, WBT = Webtwic,
 notif_text = "Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a> <span class='close-button'></span>";
 
+// Define Variables
+var $to_top = $("a.to-top"),
+is_toggle_active = $(".hamburger").hasClass("is_active"),
+height = 200;
+
 jQuery(document).ready(function() {
+
 	// Test for HTML5 support
 	if(window.Modernizr) {
 		if(!Modernizr.canvas) {
@@ -124,13 +130,6 @@ jQuery(document).ready(function() {
 	} else {
 		// Do nothing.
 	}
-
-	// Define Variables
-	var $to_top = $("a.to-top"),
-	is_toggle_active = $(".hamburger").hasClass("is_active"),
-	height = 200;
-
-	// Performance Fixes
 
 	// Start browser detection
 
