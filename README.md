@@ -1,6 +1,6 @@
 ## [webtwic] (http://webtwic.com)
 
-The uncompiled Jekyll build for webtwic
+The uncompiled Jekyll build for webtwic.
 
 Webtwic is a community for coding and tech tweaks where beginners and experts can learn.
 We love code, the web, tech and creative design. :heart: :smile:
@@ -10,7 +10,7 @@ We love code, the web, tech and creative design. :heart: :smile:
 ### Follow these steps:
 + Clone this repo
 + Install Jekyll. Launch the ruby terminal and fire `gem install jekyll`
-+ Run `jekyll serve` in the project directory on the command line
++ Navigate to the project directory on the command line and run `jekyll serve`
 + Launch your browser and type in `http://localhost:4000`
 
 Everything should work fine after that.
