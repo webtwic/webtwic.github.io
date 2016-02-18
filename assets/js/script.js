@@ -29,23 +29,23 @@ Webtwic = {
 	// Start main functions for the object
 
 	// Function to add browser name and version to body class
-	_showBrowser: function(b) {
+	_showBrowser: function( b ) {
 		$("body").addClass(b + " " + b + parseInt(browser.version));
 	},
 
 	// Function to set attributes and values to elements
-	_setAttr: function(elem, name, val) {
+	_setAttr: function( elem, name, val ) {
 		$(elem, this).attr(name, val);
 	},
 
 	// Function to push down .site-content
 	_adjustSiteContent: function() {
-		if ( $("body").hasClass("default-body") ) {
+		if ( $("body").hasClass("default-body")  ) {
 			$(".top-stripe").addClass("adjustedMargin");
 			$("#header .logo").addClass("adjustedTop");
 			$(".main-menu").addClass("adjustedMargin");
 			$("#header").addClass("adjustSiteContent");
-		} else if ( $("body").hasClass("secondary-body") ) {
+		} else if ( $("body").hasClass("secondary-body")  ) {
 			$(".site-content").addClass("adjustSiteContent");
 			$(".secondary-header").addClass("adjustedMargin");
 		}
@@ -53,25 +53,25 @@ Webtwic = {
 
 	// Function to push up .site-content to default state
 	_undoSiteAdjust: function() {
-		if ( $("body").hasClass("default-body") ) {
+		if ( $("body").hasClass("default-body")  ) {
 			$(".top-stripe").removeClass("adjustedMargin");
 			$("#header .logo").removeClass("adjustedTop");
 			$(".main-menu").removeClass("adjustedMargin");
 			$("#header").removeClass("adjustSiteContent");
-		} else if ( $("body").hasClass("secondary-body") ) {
+		} else if ( $("body").hasClass("secondary-body")  ) {
 			$(".secondary-header").removeClass("adjustedMargin");
 		}
 	},
 
 	// Function to show Notifications before header
-	_showNotif: function(text) {
+	_showNotif: function( text ) {
 		text = (typeof text == "undefined") ? notif_text : text;
 		Webtwic._adjustSiteContent();
-		if ( $("body").hasClass("default-body") ) {
+		if ( $("body").hasClass("default-body")  ) {
 			$(".top-stripe").before(
 				"<div class='notif_vis' id='notifBanner'>"+text+"</div>"
 			);
-		} else if ( $("body").hasClass("secondary-body") ) {
+		} else if ( $("body").hasClass("secondary-body")  ) {
 			$(".secondary-header").before(
 				"<div class='notif_vis' id='notifBanner'>"+text+"</div>"
 			);
@@ -100,7 +100,7 @@ Webtwic = {
 
 	// Function to launch modal
 
-	_launchModal: function(w, h, r, p, c, e, b) {
+	_launchModal: function( w, h, r, p, c, e, b ) {
 		this.width = w;
 	}
 
@@ -109,14 +109,14 @@ notif_text = "Some features which affect the functionality of webtwic are disabl
 
 jQuery(document).ready(function() {
 	// Test for HTML5 support
-	if (window.Modernizr) {
-		if (!Modernizr.canvas) {
+	if (window.Modernizr ) {
+		if (!Modernizr.canvas ) {
 			Webtwic._showNotif ("Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> <span class='close-button'></span> for an awesome experience.");
 		} else {
 			// Do nothing.
 		}
-	} else if (!window.Modernizr) {
-		if (canvascheck == false) {
+	} else if (!window.Modernizr ) {
+		if (canvascheck == false ) {
 			Webtwic._showNotif ("Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> <span class='close-button'></span> for an awesome experience.");
 		} else {
 			// Do nothing.
@@ -136,25 +136,25 @@ jQuery(document).ready(function() {
 
 	browser.ie = browser.msie;
 
-	if (browser.webkit) {
+	if (browser.webkit ) {
 		$("body").addClass("webkit");
 	}
-	if (browser.chrome) {
+	if (browser.chrome ) {
 		Webtwic._showBrowser("chrome");
 	}
-	if (browser.msedge) {
+	if (browser.msedge ) {
 		Webtwic._showBrowser("msedge");
 	}
-	if (browser.firefox) {
+	if (browser.firefox ) {
 		Webtwic._showBrowser("firefox");
 	}
-	if (browser.msie) {
+	if (browser.msie ) {
 		Webtwic._showBrowser("ie");
 	}
-	if (browser.safari) {
+	if (browser.safari ) {
 		Webtwic._showBrowser("safari");
 	}
-	if (browser.opera) {
+	if (browser.opera ) {
 		Webtwic._showBrowser("opera");
 	}
 
@@ -165,8 +165,8 @@ jQuery(document).ready(function() {
 		See Issue #12
 	*/
 
-	if (window.Modernizr) {
-		if (!Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms) {
+	if (window.Modernizr ) {
+		if (!Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms ) {
 			Webtwic._showNotif ();
 		} else {
 			// Do nothing.
@@ -179,7 +179,7 @@ jQuery(document).ready(function() {
 
 	$("nav li ul.drop-nav").hide().removeClass("dropNavFallback");
 
-	if ( $(window).width() > 860 ) {
+	if ( $(window).width() > 860  ) {
 		$("nav li.dropdown").hover(function() {
 			$("ul.drop-nav", this).stop().slideDown("fast");
 		}, function() {
@@ -191,7 +191,7 @@ jQuery(document).ready(function() {
 		"<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><path d='M 16.682,19.674c 0.010-0.012, 0.014-0.028, 0.024-0.040l 6.982-7.714c 0.39-0.434, 0.39-1.138,0-1.572 c-0.004-0.004-0.008-0.006-0.012-0.008C 23.496,10.13, 23.244,10, 22.964,10L 8.998,10 c-0.286,0-0.54,0.138-0.722,0.352L 8.272,10.348 c-0.39,0.434-0.39,1.138,0,1.572l 6.998,7.754C 15.66,20.108, 16.292,20.108, 16.682,19.674z'></path></svg>"
 	);
 
-	$("a.hamburger").click(function(e) {
+	$("a.hamburger").click(function( e ) {
 		$(this).toggleClass("is_active");
 
 		e.preventDefault();
@@ -248,12 +248,12 @@ jQuery(document).ready(function() {
 		$("#__expand").removeClass("visible");
 	});
 
-	$(".post-meta .post-meta-inner .cta-btns a.is_inactive").on("click", function(e) {
+	$(".post-meta .post-meta-inner .cta-btns a.is_inactive").on("click", function( e ) {
 		e.preventDefault();
 	});
 
-	$(document).keydown(function(e) {
-    if (e.keyCode == 27) {
+	$(document).keydown(function( e ) {
+    if (e.keyCode == 27 ) {
         closeUiOverlay();
     } else {
 		 return;
@@ -266,7 +266,7 @@ jQuery(document).ready(function() {
 	function addLoader() {
 		$(".secondary-category-section .category-posts-column [data-clicked='false']").attr("data-clicked", "true").append("<span class='loader'></span>");
 	}
-	$(".secondary-category-section .category-posts-column [data-clicked='false']").on("click", function(e) {
+	$(".secondary-category-section .category-posts-column [data-clicked='false']").on("click", function( e ) {
 		$(this).css({
 			"background": "#50ABF1",
 			"color": "#fff"
@@ -275,7 +275,7 @@ jQuery(document).ready(function() {
 		e.preventDefault();
 	});
 
-	$to_top.on("click", function(e) {
+	$to_top.on("click", function( e ) {
 		$("body,html").animate({
 			scrollTop: 0
 		}, 1000);
