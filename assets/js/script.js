@@ -226,7 +226,7 @@ jQuery(document).ready(function() {
 		},
 		function() {
 			$(this).removeClass("spin");
-		});
+	});
 
 	function openUiOverlay() {
 		$(".ui-overlay-search").fadeIn(400).addClass("is_open");
