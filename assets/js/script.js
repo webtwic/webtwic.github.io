@@ -89,12 +89,12 @@ Webtwic = {
 	},
 
 	_resetSite: function() {
-		Webtwic._showNotif ( );
+		Webtwic._showNotif ();
 		Webtwic._adjustSiteContent();
 	},
 
 	_undoReset: function() {
-		Webtwic._hideNotif ( );
+		Webtwic._hideNotif ();
 		Webtwic._undoSiteAdjust();
 	},
 
@@ -167,7 +167,7 @@ jQuery(document).ready(function() {
 
 	if ( window.Modernizr ) {
 		if ( !Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms ) {
-			Webtwic._showNotif ( );
+			Webtwic._showNotif ();
 		} else {
 			// Do nothing.
 		}
