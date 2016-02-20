@@ -82,6 +82,9 @@ html {
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    clear: both;
+   &._hidden {
+      display: block !important;
+   }
 }
 
 body {
