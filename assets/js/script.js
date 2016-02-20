@@ -7,7 +7,7 @@
 
  * Twitter: @whizkydee, @webtwic
 
- * Github: https://github.com/whizkydee/whizkydee.github.io
+ * Github: https://github.com/webtwic/webtwic.github.io
 
 */
 
