@@ -11,7 +11,7 @@ We love code, the web, tech and creative design. :heart: :smile:
 + Clone this repo
 + Install Jekyll. Launch the ruby terminal and fire `gem install jekyll`
 + Navigate to the project directory on the command line and run `jekyll serve`
-+ Launch your browser and type in `http://localhost:4000`
++ Launch your browser and type in `http://localhost:8000`
 
 Everything should work fine after that.
 
