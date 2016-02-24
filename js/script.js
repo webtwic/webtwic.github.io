@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 18/02/2016
+ * Last Modified: 24/02/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -16,7 +16,7 @@ var Webtwic = Webtwic || {};
 var browser = bowser;
 
 var test_canvas = document.createElement("canvas");
-var canvascheck=(test_canvas.getContext)? true : false;
+var canvascheck = (test_canvas.getContext) ? true : false;
 
 Webtwic = {
 	// Basic Information about Webtwic
