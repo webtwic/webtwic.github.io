@@ -256,7 +256,7 @@ jQuery(document).ready(function() {
     if ( e.keyCode == 27 ) {
         closeUiOverlay();
     } else {
-		 return;
+		 // Do nothing.
 	 }});
 
 	 $(".mobile-nav").hide();
