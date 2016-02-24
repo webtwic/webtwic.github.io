@@ -4,7 +4,7 @@ Start single-post.scss
 
 * Date Created: 13/10/2015
 
-* Last Modified: 20/02/2016
+* Last Modified: 24/02/2016
 
 */
 body {
@@ -316,10 +316,16 @@ body.single-post .entry-wrap .main-page {
    .secondary-share {
       width: $full;
       position: relative;
-      padding: 30px 2.2%;
+      padding: 10px 2.2% 30px;
       border-top: $ui_border;
       border-bottom: $ui_border;
       margin-bottom: 0px;
+      .share-text {
+         font-size: 1.1em;
+         margin-top: 0;
+         color: $basecolor;
+         font-family: "Lobster", $basefont;
+      }
       a {
          @include transition(all .5s ease);
          font-family: $font-alt;
