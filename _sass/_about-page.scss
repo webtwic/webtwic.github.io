@@ -86,7 +86,6 @@ body {
       background: $white;
       padding-bottom: 40px;
       .inner {
-         @extend .inner;
          width: 80%;
          margin: 0 auto;
          display: block;
