@@ -241,3 +241,7 @@
    height: $full;
    width: $full;
 }
+
+[class*="-inner"] {
+   @extend .inner;
+}
