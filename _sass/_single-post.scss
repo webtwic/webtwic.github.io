@@ -580,10 +580,12 @@ body.single-post .entry-wrap .main-page {
    overflow: hidden;
 }
 
-.entry-comments {
+.post-secondary-column .entry-comments {
+   @extend .radius;
    background: $white;
    padding: 2px 30px 20px;
    h3 {
       color: $title-color;
+      margin-bottom: 2px;
    }
 }
