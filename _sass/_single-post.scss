@@ -3,8 +3,7 @@
 Start single-post.scss
 
 * Date Created: 13/10/2015
-
-* Last Modified: 24/02/2016
+5/02/2016
 
 */
 body {
@@ -127,11 +126,10 @@ body.single-post .entry-wrap .main-page {
    .share-icons {
       position: relative;
       display: inline-block;
-      width: 68%;
       height: $full;
       border-left: $ui_border;
       border-right: $ui_border;
-      padding-left: 10px;
+      padding: 0 10px;
       a {
          position: relative;
          display: inline-block;
