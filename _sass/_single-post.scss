@@ -527,6 +527,7 @@ body.single-post .entry-wrap .main-page {
    .inner h2 {
       color: #4E6170;
       &:before {
+         padding: 17px 0px 22px 0;
          content: "";
          border-style: dashed;
          border-color: #4E6170;
@@ -536,7 +537,6 @@ body.single-post .entry-wrap .main-page {
          margin-left: auto;
          left: 0;
          right: 0;
-         padding: 17px 0px 22px 0;
          width: 10%;
       }
    }
@@ -550,6 +550,9 @@ body.single-post .entry-wrap .main-page {
          margin: 0 15px 25px 15px;
          float: left;
          @include opacity(.9);
+         &:nth-child(3n) {
+            margin-right: 0;
+         }
          &:hover {
             @include opacity(1);
          }
@@ -577,13 +580,10 @@ body.single-post .entry-wrap .main-page {
    overflow: hidden;
 }
 
-.related-articles ul li:nth-child(3n) {
-   margin-right: 0;
-}
-
-.post-secondary-column .entry-comments {
+.entry-comments {
    background: $white;
-   height: 500px;
-   padding: 1px 10px;
-   h3 {}
+   padding: 2px 30px 20px;
+   h3 {
+      color: $title-color;
+   }
 }
