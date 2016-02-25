@@ -327,13 +327,26 @@ keywords: whizkydee, Olaolu Olawuyi, webtwic, programming, software, code, tech,
                     </div>
                 </section>
 
-                <!-- TODO: Comments section
-													<section class="entry-comments" id="comments">
-														<div class="disqus_comments">
-															<h3>Comments</h3>
-														</div>
-													</section>
-												-->
+                <!-- TODO: Comments section -->
+                <section class="entry-comments" id="comments">
+                   <div class="disqus_comments">
+                      <h3>Comments</h3>
+                      
+                      <div id="disqus_thread"></div>
+                      <script>
+                         (function() {
+                           var d = document, s = d.createElement('script');
+
+                           s.src = '//webtwic.disqus.com/embed.js';
+
+                           s.setAttribute('data-timestamp', +new Date());
+                           (d.head || d.body).appendChild(s);
+                        })();
+                     </script>
+                     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                  </div>
+               </section>
+
             </section>
             <!-- Post-secondary-column div -->
         </div>
