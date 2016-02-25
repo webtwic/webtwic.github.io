@@ -382,15 +382,14 @@ body.single-post .entry-wrap .main-page {
             width: 20%;
             height: 180px;
             margin-right: 10px;
+            img {
+               @extend .round;
+               width: $full;
+               height: $full;
+            }
          }
       }
    }
-}
-
-.author-avatar img {
-   @extend .round;
-   width: $full;
-   height: $full;
 }
 
 .author-profile .author-content {
@@ -425,13 +424,15 @@ body.single-post .entry-wrap .main-page {
    }
 }
 
-.author-content .author-social .webtwicons {
-   @include transition(color ease-in-out .3s);
-   letter-spacing: 5px;
+.author-content .author-social a {
+   @include transition(all ease .3s);
+   @extend .radius-alt;
    color: $basecolor;
-   font-size: 1.08em;
+   font-size: 1.07em;
+   padding: 3px 5px;
    &:hover {
-      color: #4E697D;
+      background: $basecolor;
+      color: $white;
    }
 }
 
