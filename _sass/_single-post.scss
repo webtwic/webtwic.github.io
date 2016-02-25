@@ -3,7 +3,8 @@
 Start single-post.scss
 
 * Date Created: 13/10/2015
-5/02/2016
+
+* Last Modified: 25/02/2016
 
 */
 body {
@@ -121,7 +122,6 @@ body.single-post .entry-wrap .main-page {
 }
 
 .article-meta .article-meta-inner {
-   @extend .inner;
    padding: 6px 20px;
    .share-icons {
       position: relative;
@@ -374,7 +374,6 @@ body.single-post .entry-wrap .main-page {
       color: #4E697D;
       margin-bottom: 10 * $two;
       .author-info-inner {
-         @extend .inner;
          a {
             position: relative;
          }
@@ -520,7 +519,6 @@ body.single-post .entry-wrap .main-page {
    margin-bottom: 15px;
    @include box-shadow( 0px 0px 4px rgba(0, 0, 0, .09) );
    .inner {
-      @extend .inner;
       padding: 1px 0 0 0;
    }
 }
