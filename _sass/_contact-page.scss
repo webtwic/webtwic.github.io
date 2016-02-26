@@ -4,21 +4,21 @@ Start contact-page.scss
 
 * Date Created: 19/12/2015
 
-* Last Modified: 24/12/2015
+* Last Modified: 26/02/2016
 
 */
 
 body {
-   &.contact-page .site-content {
-      margin: 100px auto 0 auto;
-      max-width: 1379px;
-      width: $full;
-   }
+	&.contact-page .site-content {
+		margin: 100px auto 0 auto;
+		max-width: 1379px;
+		width: $full;
+	}
 }
 
 
 .contact-page .contact-section {
-   text-align: center;
-   height: 320px;
-   width: $full;
+	text-align: center;
+	height: 320px;
+	width: $full;
 }
