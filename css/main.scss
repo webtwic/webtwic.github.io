@@ -3,14 +3,14 @@
 
 @charset "UTF-8";
 
-/**
+/*
 * Author: Olaolu Olawuyi
 
 * Theme Name: webtwic.
 
 * Date Created: 29/07/2015
 
-* Last Modified: 14/02/2016
+* Last Modified: 26/02/2016
 
 * Twitter: @whizkydee, @webtwic
 
@@ -24,6 +24,7 @@
       "includes/typography";
 
 /* Include fonts and icons */
+
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Source+Sans+Pro:400,600,700|Source+Code+Pro:400,700|Lobster|Raleway);
 
 @font-face {
@@ -44,7 +45,7 @@
       "includes/syntax-highlighter",
       "notif";
 
-/* START MAIN PAGE */
+/* Start Main Page */
 
 @import "includes/responsive";
 
