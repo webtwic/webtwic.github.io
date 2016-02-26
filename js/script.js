@@ -205,9 +205,9 @@ jQuery(document).ready(function() {
 	// Styles for homepage article-social
 
 	$(".article .article-social a").hover(function() {
-		$("span", this).eq(1).fadeIn(400);
+		$("span:first-child", this).fadeIn(400);
 	}, function() {
-		$("span", this).eq(1).fadeOut(250);
+		$("span:first-child", this).fadeOut(250);
 	});
 
 	// Functions for search-icon and ui-overlay-search
