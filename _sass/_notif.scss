@@ -1,48 +1,48 @@
 /* Notification banner and Fallback for certain css features -- See script.js */
 
 #notifBanner {
-   display: none;
-   background: #FF5F5F;
-   padding: 10px;
-   height: 45px;
-   margin: 0px auto;
-   z-index: 9999;
-   color: $white;
-   font-weight: bold;
-   text-align: center;
-   position: fixed;
-   top: 0;
-   right: 0;
-   left: 0;
-   .close-button {
-      float: right;
-      margin-right: 69px;
-      margin-top: 0px;
-      cursor: pointer;
-      font-weight: normal;
-   }
+	display: none;
+	background: #FF5F5F;
+	padding: 10px;
+	height: 45px;
+	margin: 0px auto;
+	z-index: 9999;
+	color: $white;
+	font-weight: bold;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	.close-button {
+		float: right;
+		margin-right: 69px;
+		margin-top: 0px;
+		cursor: pointer;
+		font-weight: normal;
+	}
 }
 
 .notif_vis {
-   display: block !important;
+	display: block !important;
 }
 
 .default-body .adjustSiteContent {
-   padding-bottom: 316px !important;
+	padding-bottom: 316px !important;
 }
 
 .secondary-body .adjustSiteContent {
-   margin-top: 95px !important;
+	margin-top: 95px !important;
 }
 
 body.category-page .adjustSiteContent {
-   padding-bottom: 238px !important;
+	padding-bottom: 238px !important;
 }
 
 .adjustedMargin {
-   margin-top: 45px !important;
+	margin-top: 45px !important;
 }
 
 .adjustedTop {
-   top: 45px !important;
+	top: 45px !important;
 }
