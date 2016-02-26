@@ -581,7 +581,7 @@ body.single-post .entry-wrap .main-page {
 }
 
 .post-secondary-column .entry-comments {
-	@include box-shadow( 0px 0px 4px rgba(0, 0, 0, .09) );
+	@include box-shadow( 0px 0px 4px rgba(0, 0, 0, .05) );
 	@extend .radius;
 	background: $white;
 	padding: 2px 30px 20px;
