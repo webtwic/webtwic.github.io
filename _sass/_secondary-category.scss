@@ -4,141 +4,141 @@ Start secondary-category.scss
 
 * Date Created: 29/12/2015
 
-* Last Modified: 18/01/2016
+* Last Modified: 26/02/2016
 
 */
 
 body {
-   &.secondary-category {
-      .site-content {
-         margin: 100px auto 0 auto;
-         max-width: 1379px;
-      }
-   }
+	&.secondary-category {
+		.site-content {
+			margin: 100px auto 0 auto;
+			max-width: 1379px;
+		}
+	}
 }
 
 .secondary-category {
-   .secondary-category-section {
-      width: $full;
-      @extend .text-center;
-      position: relative;
-      .entryHeader {
-         font-size: 2.1em;
-         letter-spacing: .025em;
-         color: #2D404F;
-      }
-      .category-posts-column {
-         position: relative;
-         width: $full;
-         padding: 0;
-      }
-   }
+	.secondary-category-section {
+		width: $full;
+		@extend .text-center;
+		position: relative;
+		.entryHeader {
+			font-size: 2.1em;
+			letter-spacing: .025em;
+			color: #2D404F;
+		}
+		.category-posts-column {
+			position: relative;
+			width: $full;
+			padding: 0;
+		}
+	}
 }
 
 .category-posts-column {
-   ul.category-posts-list {
-      list-style-type: none;
-      margin-bottom: 30px;
-      .post-row {
-         position: relative;
-         display: inline-block;
-         margin-bottom: 30px;
-         .section-title {
-            @extend .text-left;
-            margin: 0 0 10px 0;
-            color: $title-color;
-            font-size: 1.5em;
-         }
-         li {
-            @extend [class*="-column"];
-            @extend .left;
-            @include border-radius(2px 2px 0 0);
-            @include box-shadow( 0px 0px 5px rgba(0, 0, 0, .1) );
-            @include transition(box-shadow .2s ease);
-            position: relative;
-            cursor: pointer;
-            width: 18.5%;
-            background: $white;
-            margin: 0 1.6% 0 0;
-            display: inline-block;
-            &:last-child {
-               margin-right: 0;
-            }
-            &:hover {
-               @include box-shadow(0px 0px 7px rgba(0, 0, 0, .3));
-            }
-            .inner {
-               padding-bottom: 20px;
-            }
-            > a {
-               position: relative;
-               .postThumbnail {
-                  position: relative;
-                  img {
-                     position: relative;
-                     @include border-radius(2px 2px 0 0);
-                     display: block;
-                  }
-               }
-            }
-         }
-      }
-   }
+	ul.category-posts-list {
+		list-style-type: none;
+		margin-bottom: 30px;
+		.post-row {
+			position: relative;
+			display: inline-block;
+			margin-bottom: 30px;
+			.section-title {
+				@extend .text-left;
+				margin: 0 0 10px 0;
+				color: $title-color;
+				font-size: 1.5em;
+			}
+			li {
+				@extend [class*="-column"];
+				@extend .left;
+				@include border-radius(2px 2px 0 0);
+				@include box-shadow( 0px 0px 5px rgba(0, 0, 0, .1) );
+				@include transition(box-shadow .2s ease);
+				position: relative;
+				cursor: pointer;
+				width: 18.5%;
+				background: $white;
+				margin: 0 1.6% 0 0;
+				display: inline-block;
+				&:last-child {
+					margin-right: 0;
+				}
+				&:hover {
+					@include box-shadow(0px 0px 7px rgba(0, 0, 0, .3));
+				}
+				.inner {
+					padding-bottom: 20px;
+				}
+				> a {
+					position: relative;
+					.postThumbnail {
+						position: relative;
+						img {
+							position: relative;
+							@include border-radius(2px 2px 0 0);
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
 
-   .more-posts {
-      position: relative;
-      @extend .uppercase;
-      letter-spacing: .05rem;
-      font-size: .85em;
-      padding: 11px 13px;
-      @include border-radius(1.5rem);
-      border: $two solid $twitter;
-      @include transition(all linear .5s);
-      color: $twitter;
-      &:hover {
-         background: $twitter;
-         color: $white;
-      }
-   }
-   .loader {
-      background-color: $white;
-      width: 17px;
-      height: 17px;
-      @extend .round;
-      margin: 0 0 1px 4px;
-      -webkit-animation-fill-mode: both;
-      -moz-animation-fill-mode: both;
-      animation-fill-mode: both;
-      border: $two solid $white;
-      border-bottom-color: transparent;
-      background: transparent !important;
-      display: inline-block;
-      -webkit-animation: rotate .5s 0s linear infinite;
-      -moz-animation: rotate .5s 0s linear infinite;
-      animation: rotate .5s 0s linear infinite;
-      vertical-align: text-bottom;
-   }
+	.more-posts {
+		position: relative;
+		@extend .uppercase;
+		letter-spacing: .05rem;
+		font-size: .85em;
+		padding: 11px 13px;
+		@include border-radius(1.5rem);
+		border: $two solid $twitter;
+		@include transition(all linear .5s);
+		color: $twitter;
+		&:hover {
+			background: $twitter;
+			color: $white;
+		}
+	}
+	.loader {
+		background-color: $white;
+		width: 17px;
+		height: 17px;
+		@extend .round;
+		margin: 0 0 1px 4px;
+		-webkit-animation-fill-mode: both;
+		-moz-animation-fill-mode: both;
+		animation-fill-mode: both;
+		border: $two solid $white;
+		border-bottom-color: transparent;
+		background: transparent !important;
+		display: inline-block;
+		-webkit-animation: rotate .5s 0s linear infinite;
+		-moz-animation: rotate .5s 0s linear infinite;
+		animation: rotate .5s 0s linear infinite;
+		vertical-align: text-bottom;
+	}
 }
 ul.category-posts-list {
-   .main-post-content {
-      @extend .text-left;
-      position: relative;
-      padding: 5px 10px;
-      font-size: 1em;
-      h3 {
-         position: relative;
-         font-size: 1.2em;
-         margin: 0 0 3px 0;
-         a {
-            color: $title-color;
-            font-weight: 600;
-            @include transition(0s);
-         }
-      }
-      .post-text {
-         margin-top: 0;
-         color: $text-color;
-         font-size: .89em;
-      }
-   }
+	.main-post-content {
+		@extend .text-left;
+		position: relative;
+		padding: 5px 10px;
+		font-size: 1em;
+		h3 {
+			position: relative;
+			font-size: 1.2em;
+			margin: 0 0 3px 0;
+			a {
+				color: $title-color;
+				font-weight: 600;
+				@include transition(0s);
+			}
+		}
+		.post-text {
+			margin-top: 0;
+			color: $text-color;
+			font-size: .89em;
+		}
+	}
 }
