@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 26/02/2016
+ * Last Modified: 27/02/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -67,17 +67,10 @@ Webtwic = {
 	_showNotif: function( text ) {
 		text = (typeof text == "undefined") ? notif_text : text;
 		Webtwic._adjustSiteContent();
-		if ( $("body").hasClass("default-body") ) {
-			$(".top-stripe").before(
-				"<div class='notif_vis' id='notifBanner'>"+text+"</div>"
-			);
-		} else if ( $("body").hasClass("secondary-body") ) {
-			$(".secondary-header").before(
-				"<div class='notif_vis' id='notifBanner'>"+text+"</div>"
-			);
-		} else {
-			return;
-		}
+		$("body").prepend(
+			"<div class='notif_vis' id='notifBanner'>"+text+"</div>"
+		);
+
 		$(".close-button").on("click", function() {
 			Webtwic._undoReset();
 		});
