@@ -89,12 +89,6 @@ Webtwic = {
 	_undoReset: function() {
 		$$._hideNotif();
 		$$._undoSiteAdjust();
-	},
-
-	// Function to launch modal
-
-	_launchModal: function( w, h, r, p, c, e, b ) {
-		this.width = w;
 	}
 
 }, WBT = Webtwic,
