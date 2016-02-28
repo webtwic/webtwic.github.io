@@ -71,7 +71,8 @@ Webtwic = {
 			"<div class='notif_vis' id='notifBanner'>"+text+""+close_button+"</div>"
 		);
 
-		$(".close-button").on("click", function() {
+		$(".close-button").on("click", function(e) {
+			e.preventDefault();
 			Webtwic._undoReset();
 		});
 	},
@@ -91,8 +92,11 @@ Webtwic = {
 		Webtwic._undoSiteAdjust();
 	},
 }, WBT = Webtwic,
+
 $$ = Webtwic,
-close_button = "<span class='close-button'></span>";
+
+close_button = "<a href='#' class='close-button'></a>";
+
 notif_text = "Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a>";
 
 
@@ -102,13 +106,13 @@ jQuery(document).ready(function() {
 	// Test for HTML5 support
 	if ( window.Modernizr ) {
 		if ( !Modernizr.canvas ) {
-			Webtwic._showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> <span class='close-button'></span> for an awesome experience.");
+			Webtwic._showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> for an awesome experience.");
 		} else {
 			// Do nothing.
 		}
 	} else if ( !window.Modernizr ) {
 		if ( canvascheck == false ) {
-			Webtwic._showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> <span class='close-button'></span> for an awesome experience.");
+			Webtwic._showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> for an awesome experience.");
 		} else {
 			// Do nothing.
 		}
