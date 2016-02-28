@@ -68,7 +68,7 @@ Webtwic = {
 		text = (typeof text == "undefined") ? notif_text : text;
 		Webtwic._adjustSiteContent();
 		$("body").prepend(
-			"<div class='notif_vis' id='notifBanner'>"+text+""+close_icon+"</div>"
+			"<div class='notif_vis' id='notifBanner'>"+text+""+close_button+"</div>"
 		);
 
 		$(".close-button").on("click", function() {
@@ -92,7 +92,7 @@ Webtwic = {
 	},
 }, WBT = Webtwic,
 $$ = Webtwic,
-close_icon = "<span class='close-button'></span>";
+close_button = "<span class='close-button'></span>";
 notif_text = "Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a>";
 
 
