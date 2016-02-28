@@ -149,19 +149,19 @@ body.home {
 			&:last-child {
 				margin-right: 0;
 			}
-			&:nth-of-type(1):hover :first-child {
+			&:nth-of-type(1):hover > .webtwicons {
 				color: #3B599A;
 			}
-			&:nth-of-type(2):hover :first-child {
+			&:nth-of-type(2):hover > .webtwicons {
 				color: #50ABF1;
 			}
-			&:nth-of-type(3):hover :first-child {
+			&:nth-of-type(3):hover > .webtwicons {
 				color: #DC4E41;
 			}
-			&:nth-of-type(4):hover :first-child {
+			&:nth-of-type(4):hover > .webtwicons {
 				color: #35465c;
 			}
-			&:nth-of-type(5):hover :first-child {
+			&:nth-of-type(5):hover > .webtwicons {
 				color: #BD1E23;
 			}
 			.tooltip {
