@@ -207,7 +207,8 @@ jQuery(document).ready(function() {
 		openUiOverlay();
 	});
 
-	$(".header-follow-search .close-icon").on("click", function() {
+	$(".header-follow-search .close-icon").on("click", function(e) {
+		e.preventDefault();
 		closeUiOverlay();
 	});
 
