@@ -7,7 +7,7 @@
 
  * Twitter: @whizkydee, @webtwic
 
- * Github: https://github.com/webtwic/$$.github.io
+ * Github: https://github.com/webtwic/webtwic.github.io
 
 */
 
@@ -66,13 +66,13 @@ Webtwic = {
 	// Function to show Notifications before header
 	_showNotif: function( text ) {
 		text = (typeof text == "undefined") ? notif_text : text;
-		$$._adjustSiteContent();
+		Webtwic._adjustSiteContent();
 		$("body").prepend(
 			"<div class='notif_vis' id='notifBanner'>"+text+"</div>"
 		);
 
 		$(".close-button").on("click", function() {
-			$$._undoReset();
+			Webtwic._undoReset();
 		});
 	},
 
@@ -82,13 +82,21 @@ Webtwic = {
 	},
 
 	_resetSite: function() {
-		$$._showNotif();
-		$$._adjustSiteContent();
+		Webtwic._showNotif();
+		Webtwic._adjustSiteContent();
 	},
 
 	_undoReset: function() {
-		$$._hideNotif();
-		$$._undoSiteAdjust();
+		Webtwic._hideNotif();
+		Webtwic._undoSiteAdjust();
+		Webtwic._hideNotif();
+		Webtwic._undoSiteAdjust();
+	},
+
+	// Function to launch modal
+
+	_launchModal: function( w, h, r, p, c, e, b ) {
+		this.width = w;
 	}
 
 }, WBT = Webtwic,
@@ -102,13 +110,13 @@ jQuery(document).ready(function() {
 	// Test for HTML5 support
 	if ( window.Modernizr ) {
 		if ( !Modernizr.canvas ) {
-			$$._showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> <span class='close-button'></span> for an awesome experience.");
+			Webtwic._showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> <span class='close-button'></span> for an awesome experience.");
 		} else {
 			// Do nothing.
 		}
 	} else if ( !window.Modernizr ) {
 		if ( canvascheck == false ) {
-			$$._showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> <span class='close-button'></span> for an awesome experience.");
+			Webtwic._showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> <span class='close-button'></span> for an awesome experience.");
 		} else {
 			// Do nothing.
 		}
@@ -131,22 +139,22 @@ jQuery(document).ready(function() {
 		$("body").addClass("webkit");
 	}
 	if ( browser.chrome ) {
-		$$._showBrowser("chrome");
+		Webtwic._showBrowser("chrome");
 	}
 	if ( browser.msedge ) {
-		$$._showBrowser("msedge");
+		Webtwic._showBrowser("msedge");
 	}
 	if ( browser.firefox ) {
-		$$._showBrowser("firefox");
+		Webtwic._showBrowser("firefox");
 	}
 	if ( browser.msie ) {
-		$$._showBrowser("ie");
+		Webtwic._showBrowser("ie");
 	}
 	if ( browser.safari ) {
-		$$._showBrowser("safari");
+		Webtwic._showBrowser("safari");
 	}
 	if ( browser.opera ) {
-		$$._showBrowser("opera");
+		Webtwic._showBrowser("opera");
 	}
 
 	/*
@@ -158,7 +166,7 @@ jQuery(document).ready(function() {
 
 	if ( window.Modernizr ) {
 		if ( !Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms ) {
-			$$._showNotif();
+			Webtwic._showNotif();
 		} else {
 			// Do nothing.
 		}
