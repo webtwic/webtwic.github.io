@@ -37,7 +37,7 @@ body.home {
 	@extend .shadow-alt;
 	@extend .radius;
 	.inner {
-		padding: 40px 30px 73px 30px;
+		padding: 40px 30px 73px 34px;
 	}
 	&:first-child {
 		margin-top: 25px;
@@ -131,7 +131,7 @@ body.home {
 		font-size: 1.87em;
 		display: block;
 		p {
-			font-family: "Lobster", Calibri, "Trebuchet MS", Helvetica, Arial, georgia;
+			font-family: "Lobster", $font_alt;
 			font-size: .66em;
 			letter-spacing: normal;
 			margin: -14px 0 6px 18px;
