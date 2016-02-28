@@ -117,7 +117,7 @@ jQuery(document).ready(function() {
 	}
 
 	// Define Variables
-	var $to_top = $("a.to-top"),
+	var $scroll_top = $("a.scroll_top"),
 	is_toggle_active = $(".hamburger").hasClass("is_active"),
 	height = 200;
 
@@ -190,7 +190,7 @@ jQuery(document).ready(function() {
 	$(".mobile-header .mobile-nav").hide();
 
 	$(window).scroll(function() {
-		($(this).scrollTop() > height) ? $to_top.addClass("topVisible"): $to_top.removeClass("topVisible");
+		($(this).scrollTop() > height) ? $scroll_top.addClass("topVisible"): $scroll_top.removeClass("topVisible");
 	});
 
 	// Styles for homepage article-social
@@ -267,7 +267,7 @@ jQuery(document).ready(function() {
 		e.preventDefault();
 	});
 
-	$to_top.on("click", function( e ) {
+	$scroll_top.on("click", function( e ) {
 		$("body,html").animate({
 			scrollTop: 0
 		}, 1000);
