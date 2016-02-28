@@ -316,7 +316,7 @@ body {
    }
 }
 
-.to-top {
+.scroll_top {
    background: #58de6c !important;
    @include transition(opacity .3s 0s, visibility 0s .3s, background .4s ease-in-out);
    @include box-shadow(0 0 10px rgba(0, 0, 0, .05));
@@ -346,10 +346,10 @@ body {
    @include opacity(1);
 }
 
-.to-top.visible {
+.scroll_top.visible {
    @include transition(opacity .3s 0s, visibility 0s 0s, background .4s ease-in-out);
 }
 
-.no-touch .to-top:hover {
+.no-touch .scroll_top:hover {
    background-color: #6cf280;
 }
