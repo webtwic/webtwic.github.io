@@ -137,7 +137,7 @@
          width: 50px;
       }
       .spin {
-         @include animation(spin .3s 1.5 linear);
+         @include animation(spin .3s 1 linear);
       }
       .search-input {
          position: relative;
