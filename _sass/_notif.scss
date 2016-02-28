@@ -15,9 +15,9 @@
 	right: 0;
 	left: 0;
 	.close-button {
+		color: $white;
 		float: right;
-		margin-right: 69px;
-		margin-top: 0px;
+		margin: 5px 69px 0;
 		cursor: pointer;
 		font-weight: normal;
 	}
