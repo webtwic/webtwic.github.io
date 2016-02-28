@@ -125,12 +125,48 @@
    animation-play-state: $state;
 }
 
-@mixin animation($animation...) {
-   -webkit-animation: $animation;
-   -moz-animation: $animation;
-   -o-animation: $animation;
-   animation: $animation;
+@mixin animation($animations...) {
+   $unfoldedanimations: ();
+   @each $animation in $animations {
+      $unfoldedanimations: append($unfoldedanimations, unfoldanimation($animation), comma);
+   }
+
+   -webkit-animation: $unfoldedanimations;
+   -moz-animation: $unfoldedanimations;
+   -ms-animation: $unfoldedanimations;
+   -o-animation: $unfoldedanimations;
+   animation: $unfoldedanimations;
 }
+
+@function unfoldanimation ($animation) {
+   // Default values
+   $property: all;
+   $duration: .2s;
+   $easing: null; // Browser default is ease, which is what we want
+   $delay: null; // Browser default is 0, which is what we want
+   $defaultProperties: ($property, $duration, $easing, $delay);
+
+   // Grab animation properties if they exist
+   $unfoldedanimation: ();
+   @for $i from 1 through length($defaultProperties) {
+      $p: null;
+      @if $i <= length($animation) {
+         $p: nth($animation, $i)
+      } @else {
+         $p: nth($defaultProperties, $i)
+      }
+      $unfoldedanimation: append($unfoldedanimation, $p);
+   }
+
+   @return $unfoldedanimation;
+}
+
+// @mixin animation($animation...) {
+//    -webkit-animation: $animation;
+//    -moz-animation: $animation;
+//    -o-animation: $animation;
+//    animation: $animation;
+// }
 
 @mixin box-shadow($box-shadow) {
    -webkit-box-shadow: $box-shadow;
