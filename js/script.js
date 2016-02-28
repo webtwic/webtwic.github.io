@@ -95,7 +95,7 @@ Webtwic = {
 
 $$ = Webtwic,
 
-close_button = "<a href='#' class='close-button'></a>";
+close_button = "<a href='#' class='webtwicons close-button'></a>";
 
 notif_text = "Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a>";
 
