@@ -71,7 +71,7 @@ Webtwic = {
 			"<div class='notif_vis' id='notifBanner'>"+text+""+close_button+"</div>"
 		);
 
-		$(".close-button").on("click", function(e) {
+		$(".close-button").on("click", function( e ) {
 			e.preventDefault();
 			Webtwic._undoReset();
 		});
@@ -211,7 +211,7 @@ jQuery(document).ready(function() {
 		openUiOverlay();
 	});
 
-	$(".header-follow-search .close-icon").on("click", function(e) {
+	$(".header-follow-search .close-icon").on("click", function( e ) {
 		e.preventDefault();
 		closeUiOverlay();
 	});
