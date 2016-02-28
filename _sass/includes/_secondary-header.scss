@@ -127,15 +127,14 @@
    }
    .ui-overlay-search {
       .close-icon {
-         float: right;
+         background: url("../../img/svg/close-icon.svg") no-repeat;
+         display: inline-block;
          position: relative;
          cursor: pointer;
-         fill: $white;
-         padding: 10px;
-         svg {
-            width: 50px;
-            height: 50px;
-         }
+         float: right;
+         margin: 10px;
+         height: 52px;
+         width: 50px;
       }
       .spin {
          -webkit-animation: spin .3s 1 linear;
