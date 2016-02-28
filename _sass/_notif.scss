@@ -31,8 +31,13 @@
 	padding-bottom: 316px !important;
 }
 
-.secondary-body .adjustSiteContent {
-	margin-top: 95px !important;
+.secondary-body {
+	.adjustSiteContent {
+		margin-top: 135px !important;
+	}
+	&.single-post .adjustSiteContent {
+		margin-top: 95px !important;
+	}
 }
 
 body.category-page .adjustSiteContent {
