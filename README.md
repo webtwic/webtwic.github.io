@@ -1,5 +1,7 @@
 ## [webtwic] (http://webtwic.com)
 
+[![Build Status](https://travis-ci.org/webtwic/webtwic.github.io.svg?branch=master)](https://travis-ci.org/webtwic/webtwic.github.io)
+
 The uncompiled Jekyll build for webtwic.
 
 Webtwic is a community for coding and tech tweaks where beginners and experts can learn.
