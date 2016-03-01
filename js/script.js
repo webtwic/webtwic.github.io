@@ -35,7 +35,7 @@ Webtwic = {
 
 	// Function to set attributes and values to elements
 	_setAttr: function( elem, name, val ) {
-		$( elem, this ).attr( name, val) ;
+		$( elem, this ).attr( name, val ) ;
 	},
 
 	// Function to push down .site-content
