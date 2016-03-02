@@ -3,7 +3,7 @@
 The uncompiled Jekyll build for webtwic.
 
 Webtwic is a community for coding and tech tweaks where beginners and experts can learn.
-We love code, the web, tech and creative design. :heart: :smile:
+We love code, the web, tech and creative design.
 
 + You might need to install [Jekyll] (http://jekyllrb.com) to view this site on your local machine :neutral_face:.
 
@@ -15,4 +15,4 @@ We love code, the web, tech and creative design. :heart: :smile:
 
 Everything should work fine after that.
 
-Designed by Olaolu Olawuyi. You can follow him on [Twitter] (https://twitter.com/whizkydee) and [Codepen] (https://codepen.io/whizkydee) or [email] (mailto:whiskydee@gmail.com) him.
+with :heart: by Olaolu Olawuyi. You can follow him on [Twitter] (https://twitter.com/whizkydee) and [Codepen] (https://codepen.io/whizkydee) or [email] (mailto:whiskydee@gmail.com) him.
