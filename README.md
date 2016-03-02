@@ -15,4 +15,4 @@ We love code, the web, tech and creative design.
 
 Everything should work fine after that.
 
-with :heart: by Olaolu Olawuyi. You can follow him on [Twitter] (https://twitter.com/whizkydee) and [Codepen] (https://codepen.io/whizkydee) or [email] (mailto:whiskydee@gmail.com) him.
+with :heart: by Olaolu. You can follow him on [Twitter] (https://twitter.com/whizkydee) and [Codepen] (https://codepen.io/whizkydee) or [email] (mailto:whiskydee@gmail.com) him.
