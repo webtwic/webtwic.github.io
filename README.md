@@ -16,3 +16,5 @@ We love code, the web, tech and creative design.
 Everything should work fine after that.
 
 with :heart: by Olaolu. You can follow him on [Twitter] (https://twitter.com/whizkydee) and [Codepen] (https://codepen.io/whizkydee) or [email] (mailto:whiskydee@gmail.com) him.
+
+**Note that this repository is no longer being updated, because it has been moved from Jekyll to Wordpress and it is now located at https://github.com/webtwic/webtwic**
