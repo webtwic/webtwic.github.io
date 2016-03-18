@@ -245,3 +245,7 @@
 [class*="-inner"] {
    @extend .inner;
 }
+
+%content-padding {
+   padding: 0 40px;
+}

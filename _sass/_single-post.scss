@@ -4,7 +4,7 @@ Start single-post.scss
 
 * Date Created: 13/10/2015
 
-* Last Modified: 02/03/2016
+* Last Modified: 18/03/2016
 
 */
 body {
@@ -209,7 +209,6 @@ body.single-post .entry-wrap .main-page {
 }
 
 .post-content-column > article .entry-content {
-	padding: 0px 40px;
 	margin-bottom: 20px;
 	font-family: $basefont;
 	.image-caption {
@@ -235,6 +234,15 @@ body.single-post .entry-wrap .main-page {
 			color: $basecolor;
 			@extend .radius-alt;
 		}
+	}
+}
+
+/* Use content-padding placeholder for specific elements */
+.entry-content {
+	& > .entry-image-small, & > iframe,
+	& > h1, & > h2, & > h3, & > h4,
+	& > h5, & > h6, & > p {
+		@extend %content-padding;
 	}
 }
 

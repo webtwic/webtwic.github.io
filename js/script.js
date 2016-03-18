@@ -3,11 +3,11 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 01/03/2016
+ * Last Modified: 18/03/2016
 
  * Twitter: @whizkydee, @webtwic
 
- * Github: https://github.com/webtwic/webtwic.github.io
+ * Github: https://github.com/webtwic/webtwic-site
 
 */
 
@@ -21,25 +21,25 @@ var canvascheck = ( test_canvas.getContext ) ? true : false;
 Webtwic = {
 	// Basic Information about Webtwic
 	name: "Webtwic",
-	description: "A community for coding and tech tweaks where beginners and experts can learn.",
-	repo: "https://github.com/webtwic/webtwic.github.io",
+	description: "A community for coding and tech tweaks where newbies and experts can learn.",
+	repo: "https://github.com/webtwic/webtwic-site",
 	author: "Olaolu Olawuyi",
-	version: 1.07,
+	version: 1.0,
 
 	// Start main functions for the object
 
 	// Function to add browser name and version to body class
-	_showBrowser: function( b ) {
+	showBrowser: function( b ) {
 		$( "body" ).addClass( b + " " + b + parseInt( browser.version ) );
 	},
 
 	// Function to set attributes and values to elements
-	_setAttr: function( elem, name, val ) {
+	setAttr: function( elem, name, val ) {
 		$( elem, this ).attr( name, val ) ;
 	},
 
 	// Function to push down .site-content
-	_adjustSiteContent: function() {
+	adjustSiteContent: function() {
 		if ( $( "body" ).hasClass( "default-body" ) ) {
 			$( ".top-stripe" ).addClass( "adjustedMargin" );
 			$( "#header .logo" ).addClass( "adjustedTop" );
@@ -52,7 +52,7 @@ Webtwic = {
 	},
 
 	// Function to push up .site-content to default state
-	_undoSiteAdjust: function() {
+	undoSiteAdjust: function() {
 		if ( $( "body" ).hasClass( "default-body" ) ) {
 			$( ".top-stripe" ).removeClass( "adjustedMargin" );
 			$( "#header .logo" ).removeClass( "adjustedTop" );
@@ -64,32 +64,32 @@ Webtwic = {
 	},
 
 	// Function to show Notifications before header
-	_showNotif: function( text ) {
+	showNotif: function( text ) {
 		text = ( typeof text == "undefined" ) ? notif_text : text;
-		Webtwic._adjustSiteContent();
+		Webtwic.adjustSiteContent();
 		$( "body" ).prepend(
 			"<div class='notif_vis' id='notifBanner'>"+text+""+close_button+"</div>"
 		);
 
 		$( ".close-button" ).on( "click", function( e ) {
 			e.preventDefault();
-			Webtwic._undoReset();
+			Webtwic.undoReset();
 		});
 	},
 
 	// Function to hide Notifications
-	_hideNotif: function() {
+	hideNotif: function() {
 		$( "#notifBanner" ).removeClass( "notif_vis" );
 	},
 
-	_resetSite: function() {
-		Webtwic._showNotif();
-		Webtwic._adjustSiteContent();
+	resetSite: function() {
+		Webtwic.showNotif();
+		Webtwic.adjustSiteContent();
 	},
 
-	_undoReset: function() {
-		Webtwic._hideNotif();
-		Webtwic._undoSiteAdjust();
+	undoReset: function() {
+		Webtwic.hideNotif();
+		Webtwic.undoSiteAdjust();
 	},
 }, WBT = Webtwic,
 
@@ -100,19 +100,19 @@ close_button = "<a href='#' class='webtwicons close-button'></a>";
 notif_text = "Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a>";
 
 
-// Detect when the document is ready
+// Detect when the DOM is ready
 
 jQuery( document ).ready( function() {
 	// Test for HTML5 support
 	if ( window.Modernizr ) {
 		if ( !Modernizr.canvas ) {
-			Webtwic._showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> for an awesome experience." );
+			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> for an awesome experience." );
 		} else {
 			// Do nothing.
 		}
 	} else if ( !window.Modernizr ) {
 		if ( canvascheck == false ) {
-			Webtwic._showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> for an awesome experience." );
+			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> for an awesome experience." );
 		} else {
 			// Do nothing.
 		}
@@ -135,22 +135,22 @@ jQuery( document ).ready( function() {
 		$( "body" ).addClass( "webkit" );
 	}
 	if ( browser.chrome ) {
-		Webtwic._showBrowser( "chrome" );
+		Webtwic.showBrowser( "chrome" );
 	}
 	if ( browser.msedge ) {
-		Webtwic._showBrowser( "msedge" );
+		Webtwic.showBrowser( "msedge" );
 	}
 	if ( browser.firefox ) {
-		Webtwic._showBrowser( "firefox" );
+		Webtwic.showBrowser( "firefox" );
 	}
 	if ( browser.msie ) {
-		Webtwic._showBrowser( "ie" );
+		Webtwic.showBrowser( "ie" );
 	}
 	if ( browser.safari ) {
-		Webtwic._showBrowser( "safari" );
+		Webtwic.showBrowser( "safari" );
 	}
 	if ( browser.opera ) {
-		Webtwic._showBrowser( "opera" );
+		Webtwic.showBrowser( "opera" );
 	}
 
 	/*
@@ -162,7 +162,7 @@ jQuery( document ).ready( function() {
 
 	if ( window.Modernizr ) {
 		if ( !Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms ) {
-			Webtwic._showNotif();
+			Webtwic.showNotif();
 		} else {
 			// Do nothing.
 		}
@@ -200,7 +200,7 @@ jQuery( document ).ready( function() {
 	// Styles for homepage article-social
 
 	$( ".article .article-social a" ).hover(function() {
-		$( "span", this ).eq(1).fadeIn( 400 );
+		$( "span", this ).eq(1).fadeIn(400);
 	}, function() {
 		$( "span", this ).eq(1).fadeOut(250);
 	});
@@ -249,19 +249,21 @@ jQuery( document ).ready( function() {
 	});
 
 	$( document ).keydown(function( e ) {
-    if ( e.keyCode == 27 ) {
-        closeUiOverlay();
-    } else {
-		 // Do nothing.
-	 }});
+		if ( e.keyCode == 27 ) {
+			closeUiOverlay();
+		} else {
+			// Do nothing.
+		}
+ 	});
 
-	 $( ".mobile-nav" ).hide();
+	$( ".mobile-nav" ).hide();
 
 	// Functions for more-posts button click
 
 	function addLoader() {
 		$( ".secondary-category-section .category-posts-column [data-clicked='false']" ).attr( "data-clicked", "true" ).append( "<span class='loader'></span>" );
 	}
+
 	$( ".secondary-category-section .category-posts-column [data-clicked='false']" ).on( "click", function( e ) {
 		$( this ).css({
 			"background": "#50ABF1",
