@@ -1,35 +1,25 @@
 .pagination {
-   width: 392px;
-   height: 47px;
+   background: lighten($basecolor, 5%);
+   @include border-radius(1px);
+   @extend .text-center;
+   margin: 0 auto;
    display: block;
-   margin-left: auto;
-   margin-right: auto;
+   width: 372px;
    a {
-      font-family: $font-alt;
-      @include box-shadow(0px 0px 7px rgba(0, 0, 0, .04));
-      @include transition(opacity .2s, padding .3s ease);
-      border-bottom: 2px solid #f2f2f2;
-      padding: 12px 18.5px;
-      background: #f9f9f9;
-      margin-right: 9px;
+      @include transition(all .3s ease-in-out);
+      display: inline-block;
+      letter-spacing: .02em;
       position: relative;
-      font-weight: 700;
+      font-weight: 200;
       font-size: 1em;
+      padding: 20px;
+      color: $white;
+      margin: 0;
       &:hover {
-         @include opacity(.9);
-         padding: 14px 20.5px;
+         background: lighten($basecolor, 10%);
       }
-      &:nth-child(1) {
-         background: #57DD6B;
-         border-bottom: 2px solid #50D664;
-         color: $white;
-      }
-      &:last-child {
-         padding: 12px 21.5px;
-         margin-right: 0;
-         &:hover {
-            padding: 14px 23.5px;
-         }
+      &.active {
+         background: lighten($basecolor, 17%);
       }
    }
 }
