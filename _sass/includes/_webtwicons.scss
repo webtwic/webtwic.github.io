@@ -60,6 +60,10 @@
       content: "\f08c";
    }
 
+   &.github:before {
+      content: "\f09b";
+   }
+
    &.github-alt-icon:before {
       content: "\f113";
    }
@@ -86,6 +90,10 @@
 
    &.envelope-icon:before {
       content: "\f0e0";
+   }
+   &.experimental:before,
+   &.demo:before {
+      content: "\f0c3";
    }
    /* End Iconset */
 }

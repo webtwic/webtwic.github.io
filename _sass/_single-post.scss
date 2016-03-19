@@ -178,6 +178,9 @@ body.single-post .entry-wrap .main-page {
 				@include opacity(.85);
 				cursor: default;
 			}
+			.webtwicons:before {
+				margin-right: 4px;
+			}
 		}
 	}
 }
@@ -193,17 +196,6 @@ body.single-post .entry-wrap .main-page {
 		background: $basecolor;
 		&:hover {
 			background: #5c8fc2;
-		}
-	}
-	a {
-		&:before {
-			margin-right: 4px;
-		}
-		&:nth-child(1):before {
-			content: "\f06e";
-		}
-		&:nth-child(2):before {
-			content: "\f019";
 		}
 	}
 }
