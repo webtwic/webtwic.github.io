@@ -4,7 +4,7 @@ Start single-post.scss
 
 * Date Created: 13/10/2015
 
-* Last Modified: 18/03/2016
+* Last Modified: 20/03/2016
 
 */
 body {
@@ -178,8 +178,10 @@ body.single-post .entry-wrap .main-page {
 				@include opacity(.85);
 				cursor: default;
 			}
-			.webtwicons:before {
-				margin-right: 4px;
+			.webtwicons {
+				vertical-align: baseline;
+				font-size: 1.3em;
+				margin: 2.5px 4px 2.5px 0;
 			}
 		}
 	}
@@ -192,7 +194,7 @@ body.single-post .entry-wrap .main-page {
 			background: #008B77;
 		}
 	}
-	.btn-download {
+	.btn-code {
 		background: $basecolor;
 		&:hover {
 			background: #5c8fc2;
