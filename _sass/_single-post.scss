@@ -84,8 +84,8 @@ body.single-post .entry-wrap .main-page {
 
 .main-page .page-focus-column {
 	position: relative;
-	width: 70%;
-	margin-right: 2.5%;
+	width: 72%;
+	margin-right: 1.5%;
 	.post-content-column {
 		background: $white;
 		margin-bottom: 10px;
@@ -109,7 +109,7 @@ body.single-post .entry-wrap .main-page {
 
 .post-content-column > article {
 	.entry-featured-image > img {
-		height: 473px;
+		height: 502px;
 		width: $full;
 	}
 	.article-meta {
@@ -219,8 +219,8 @@ body.single-post .entry-wrap .main-page {
 		color: #4E697D;
 		line-height: 1.9;
 		margin-bottom: 1.5em;
-		font-size: .98em;
-		letter-spacing: .04em;
+		font-size: 1em;
+		letter-spacing: .045em;
 		code {
 			font-family: $code_font;
 			background: #E8F5F2;
