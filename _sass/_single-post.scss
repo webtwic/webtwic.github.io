@@ -283,15 +283,15 @@ body.single-post .entry-wrap .main-page {
 	}
 
 	blockquote {
+		background-color: rgba(102, 153, 204, .9);
 		font-family: $font-alt;
 		position: relative;
 		font-style: italic;
-		font-size: 2em;
-		padding-left: .8em;
-		//  background-color: rgba(102, 153, 204, .9);
-		color: $basecolor;
-		@extend .radius-alter;
 		font-weight: 400;
+		font-size: 2em;
+		color: $white;
+		padding: 35px;
+		margin: 0;
 		&:before {
 			content:"\f10d";
 			margin-right: 10px;
