@@ -283,7 +283,7 @@ body.single-post .entry-wrap .main-page {
 	}
 
 	blockquote {
-		background-color: rgba(102, 153, 204, .9);
+		background-color: transparentize($basecolor, .8);
 		font-family: $font-alt;
 		position: relative;
 		line-height: 1.65;
