@@ -264,26 +264,26 @@ body.single-post .entry-wrap .main-page {
 			&:before {
 				background: url("../../img/svg/link_icon.svg") no-repeat;
 				display: inline-block;
+				vertical-align: sub;
 				content: "";
 				width: 26px;
 				height: 25px;
-				vertical-align: sub;
 			}
 		}
 	}
 	a {
+		@include transition(all .5s ease);
+		border-bottom: 2px solid #E9F7FD;
 		font-family: inherit;
 		color: #17A8E3;
-		border-bottom: 2px solid #E9F7FD;
-		@include transition(all .5s ease);
 		&:hover {
-			color: #17A8E3;
 			border-bottom: 2px solid #17A8E3;
+			color: #17A8E3;
 		}
 	}
 
 	blockquote {
-		background-color: transparentize($basecolor, .8);
+		background-color: rgba(102, 153, 204, .85);
 		font-family: $font-alt;
 		position: relative;
 		line-height: 1.65;
@@ -293,11 +293,11 @@ body.single-post .entry-wrap .main-page {
 		padding: 35px;
 		margin: 0;
 		&:before {
-			content:"\f10d";
+			content: "\f10d";
 			margin-right: 10px;
 		}
 		&:after {
-			content:"\f10e";
+			content: "\f10e";
 			margin-left: 10px;
 		}
 	}
