@@ -165,11 +165,10 @@
       color: $white;
       font-size: 1em;
    }
-   .colophon-link {
-      font-family: $font-alt;
-      letter-spacing: .01em;
-      padding-bottom: 2px;
+   a {
       color: $white;
+      font-family: $font-alt;
+      padding-bottom: 2px;
       position: relative;
       &:before {
          @include transition(transform .2s);
@@ -185,6 +184,9 @@
       }
       &:hover:before {
          @include transform(scaleX(1));
+      }
+      &.colophon-link {
+         letter-spacing: .01em;
       }
    }
    .heart {
