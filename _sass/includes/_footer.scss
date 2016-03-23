@@ -163,16 +163,15 @@
    span {
       font-family: $basefont;
       font-size: 1em;
-      &:not(span:first-child) {
-         color: $white;
-         &.circle {
-            @include calc(vertical-align, '20%');
-            color: lighten(#6D8299, 1%);
-            margin: 0 3px 0 4px;
-            font-size: .7em;
-         }
+      color: $white;
+      &.circle {
+         @include calc(vertical-align, '20%');
+         color: lighten(#6D8299, 1%);
+         margin: 0 3px 0 4px;
+         font-size: .7em;
       }
    }
+
    a {
       color: $white;
       font-family: $font-alt;
