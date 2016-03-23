@@ -4,7 +4,7 @@ Start about-page.scss
 
 * Date Created: 16/12/2015
 
-* Last Modified: 26/01/2016
+* Last Modified: 23/03/2016
 
 */
 
@@ -33,10 +33,11 @@ body {
 			margin-top: -5px;
 			cursor: default;
 			color: #2D404F;
-			span {
-				color: #C0392B;
+			.heart {
 				vertical-align: baseline;
 				margin-left: 5px;
+				font-size: .9em;
+				color: #C0392B;
 			}
 		}
 		.about-text {
