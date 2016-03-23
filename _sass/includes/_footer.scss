@@ -164,6 +164,9 @@
       font-family: $basefont;
       font-size: 1em;
       color: $white;
+      & > span {
+         color: #6D8299;
+      }
       &.circle {
          @include calc(vertical-align, '20%');
          color: lighten(#6D8299, 1%);
