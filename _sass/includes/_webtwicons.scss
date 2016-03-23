@@ -95,5 +95,9 @@
    &.demo:before {
       content: "\f0c3";
    }
+   &.circle:before,
+   &.dot:before {
+      content: "\f111";
+   }
    /* End Iconset */
 }
