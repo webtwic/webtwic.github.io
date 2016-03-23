@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 18/03/2016
+ * Last Modified: 23/03/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -233,13 +233,13 @@ jQuery( document ).ready( function() {
 	}
 
 	$( ".ui-overlay-search .search-input input" ).focus(function() {
-		$( ".search-input" ).attr( "data-focused", true );
+		$( ".search-input" ).attr( "data-focused", "true" );
 		$( ".search-input input" ).addClass( "_is-focused" );
 		$( "#__expand" ).addClass( "visible" );
 	});
 
 	$( ".ui-overlay-search .search-input input" ).blur(function() {
-		$( ".search-input" ).attr( "data-focused", false );
+		$( ".search-input" ).attr( "data-focused", "false" );
 		$( ".search-input input" ).removeClass( "_is-focused" );
 		$( "#__expand" ).removeClass( "visible" );
 	});
