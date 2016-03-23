@@ -168,10 +168,10 @@
          color: darken(#6D8299, 1%);
       }
       &.circle {
-         @include calc(vertical-align, '20%');
-         color: lighten(#6D8299, 1%);
-         margin: 0 3px 0 4px;
-         font-size: .7em;
+         @include calc(vertical-align, '35%');
+         color: lighten($basecolor, 1%);
+         font-size: .5em;
+         margin: 0 4px;
       }
    }
 
