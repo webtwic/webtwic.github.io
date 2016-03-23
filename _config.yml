@@ -2,7 +2,7 @@
 port: 8000
 title: webtwic
 email: info@webtwic.com
-description: A community for coding and tech tweaks where beginners and experts can learn.
+description: A community focused on code tweaks, articles and tutorials for newbie and professional developers.
 # baseurl: "http://webtwic.com"
 # url: "http://webtwic.com" # the base hostname & protocol for your site
 twitter_username: webtwic
