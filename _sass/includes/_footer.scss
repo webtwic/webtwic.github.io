@@ -164,6 +164,13 @@
       font-family: $basefont;
       color: $white;
       font-size: 1em;
+      &.circle {
+         vertical-align: -webkit-calc(20%);
+         vertical-align: calc(20%);
+         margin: 0 3px 0 5px;
+         font-size: .7em;
+         color: #6D8299;
+      }
    }
    a {
       color: $white;
