@@ -169,7 +169,7 @@
          vertical-align: calc(20%);
          margin: 0 3px 0 5px;
          font-size: .7em;
-         color: #6D8299;
+         color: lighten(#6D8299, 1%);
       }
    }
    a {
@@ -209,5 +209,6 @@
       animation: heart 4.5s infinite;
       color: #C0392B;
       cursor: pointer;
+      font-size: .9em;
    }
 }
