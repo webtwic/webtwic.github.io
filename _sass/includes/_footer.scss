@@ -165,8 +165,7 @@
       color: $white;
       font-size: 1em;
       &.circle {
-         vertical-align: -webkit-calc(20%);
-         vertical-align: calc(20%);
+         @include calc('vertical-align, 20%');
          color: lighten(#6D8299, 1%);
          margin: 0 3px 0 4px;
          font-size: .7em;
