@@ -15,7 +15,11 @@ var del           = require('del');
 
 
 gulp.task('build:sass', function () {
-  return sass('scss/main.scss')
+  return sass('scss/main.scss', { sourcemap: true })
     .on('error', sass.logError)
     .pipe(gulp.dest('_site/css'));
+    .pipe(sourcemaps.write('maps', {
+      includeContent: false,
+      sourceRoot: 'source'
+    }))
 });
