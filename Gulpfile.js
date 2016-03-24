@@ -23,5 +23,5 @@ gulp.task('build:sass', function () {
       includeContent: false,
       sourceRoot: 'source'
     }))
-    .pipe(gulp.dest('_site/css'));
+    .pipe(gulp.dest('./_site/css'));
 });
