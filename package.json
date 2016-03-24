@@ -1,0 +1,41 @@
+{
+  "name": "webtwic",
+  "version": "1.0.0",
+  "description": "A community focused on code tweaks, articles and tutorials for newbie and professional developers.",
+  "main": "Gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webtwic/webtwic.github.io.git"
+  },
+  "keywords": [
+    "tech",
+    "code",
+    "software",
+    "web",
+    "design",
+    "web",
+    "development",
+    "coding",
+    "software",
+    "engineering",
+    "web",
+    "mobile",
+    "responsive",
+    "design",
+    "web",
+    "technologies"
+  ],
+  "author": "Olaolu Olawuyi (whizkydee)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webtwic/webtwic.github.io/issues"
+  },
+  "homepage": "https://webtwic.github.io"
+}
