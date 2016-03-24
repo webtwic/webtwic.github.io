@@ -5,3 +5,6 @@ _site/
 # Sass
 .sass-cache/
 *.css.map
+
+# NPM
+node_modules
