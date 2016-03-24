@@ -12,3 +12,10 @@ var imagemin      = require('gulp-imagemin');
 var del           = require('del');
 
 // Tasks
+
+
+gulp.task('build:sass', function () {
+  return sass('scss/main.scss')
+    .on('error', sass.logError)
+    .pipe(gulp.dest('_site/css'));
+});
