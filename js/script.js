@@ -21,7 +21,7 @@ var canvascheck = ( test_canvas.getContext ) ? true : false;
 Webtwic = {
 	// Basic Information about Webtwic
 	name: "Webtwic",
-	description: "A community for coding and tech tweaks where newbies and experts can learn.",
+	description: "A community focused on code tweaks, articles and tutorials for newbie and professional developers.",
 	repo: "https://github.com/webtwic/webtwic-site",
 	author: "Olaolu Olawuyi",
 	version: 1.0,
