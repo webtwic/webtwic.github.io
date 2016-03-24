@@ -2,7 +2,7 @@
 
 The uncompiled Jekyll build for webtwic.
 
-Webtwic is a community for coding and tech tweaks where beginners and experts can learn.
+Webtwic is a community focused on code tweaks, articles and tutorials for newbie and professional developers.
 We love code, the web, tech and creative design.
 
 + You might need to install [Jekyll] (http://jekyllrb.com) to view this site on your local machine :neutral_face:.
