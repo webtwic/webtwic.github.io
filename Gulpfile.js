@@ -1,13 +1,14 @@
-var gulp = require('gulp');
+var gulp          = require('gulp');
+var gulpUtil      = require('gulp-util');
 
-// Require Sass
-
-var sass = require('gulp-sass');
+var gulpIf        = require('gulp-if');
+var browserSync   = require('browser-sync').create();
+var uglify        = require('gulp-uglify');
+var sass          = require('gulp-ruby-sass');
+var jshint        = require('gulp-jshint');
+var jshintStylish = require('jshint-stylish');
+var useref        = require('gulp-useref');
+var imagemin      = require('gulp-imagemin');
+var del           = require('del');
 
 // Tasks
-
-gulp.task('sass', function(){
-  return gulp.src('css/main.scss')
-    .pipe(sass()) // Using gulp-sass
-    .pipe(gulp.dest('_site/css'))
-});
