@@ -169,7 +169,7 @@
       }
       &.circle {
          @include calc(vertical-align, '35%');
-         color: lighten($basecolor, 1%);
+         color: #EAEAEA;
          font-size: .5em;
          margin: 0 4px;
       }
