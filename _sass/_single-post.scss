@@ -4,7 +4,7 @@ Start single-post.scss
 
 * Date Created: 13/10/2015
 
-* Last Modified: 22/03/2016
+* Last Modified: 25/03/2016
 
 */
 body {
@@ -344,9 +344,7 @@ body.single-post .entry-wrap .main-page {
 	}
 	.entry-tags {
 		border-top: $ui_border;
-		border-bottom: $ui_border;
-		margin: 20px 50px;
-		padding: 15px 2px;
+		padding: 15px 30px;
 		color: #666;
 		a {
 			@include transition(color ease-in-out .5s);
