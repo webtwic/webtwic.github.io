@@ -172,6 +172,24 @@
                &::-moz-placeholder {
                   color: #6D8299;
                }
+               
+               &:focus {
+                  &::placeholder {
+                      color: $white;
+                  }
+                  &::-webkit-input-placeholder {
+                      color: $white;
+                  }
+                  &::-ms-input-placeholder {
+                      color: $white;
+                  }
+                  &:-ms-input-placeholder {
+                      color: $white;
+                  }
+                  &::-moz-placeholder {
+                      color: $white;
+                  }
+               }
             }
             #__expand {
                @include transition(width ease 1s);
