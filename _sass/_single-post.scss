@@ -353,6 +353,7 @@ body.single-post .entry-wrap .main-page {
 			background: lighten($basecolor, 1%);
 			padding: 0px 3px;
 			position: relative;
+			color: $white;
 			&:hover {
 				color: $title-color;
 				border-bottom: $solid_one $title-color;
