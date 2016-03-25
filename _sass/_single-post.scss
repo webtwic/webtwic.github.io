@@ -344,11 +344,14 @@ body.single-post .entry-wrap .main-page {
 	}
 	.entry-tags {
 		border-top: $ui_border;
+		font-size: .9em;
 		padding: 15px 30px;
 		color: #666;
 		a {
+		   @extend .radius;
 			@include transition(color ease-in-out .5s);
-			color: $basecolor;
+			background: lighten($basecolor, 1%);
+			padding: 0px 3px;
 			position: relative;
 			&:hover {
 				color: $title-color;
