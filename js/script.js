@@ -30,7 +30,8 @@ Webtwic = {
 
 	// Function to add browser name and version to body class
 	showBrowser: function( b ) {
-		$( "body" ).addClass( b + " " + b + parseInt( browser.version ) );
+		b = (typeof b == "undefined") ? browser.name : b;
+		$( "body" ).addClass( (b).toLowerCase() + " " + (b).toLowerCase() + parseInt( browser.version ) );
 	},
 
 	// Function to set attributes and values to elements
@@ -133,24 +134,20 @@ jQuery( document ).ready( function() {
 
 	if ( browser.webkit ) {
 		$( "body" ).addClass( "webkit" );
-	}
-	if ( browser.chrome ) {
-		Webtwic.showBrowser( "chrome" );
-	}
-	if ( browser.msedge ) {
-		Webtwic.showBrowser( "msedge" );
-	}
-	if ( browser.firefox ) {
-		Webtwic.showBrowser( "firefox" );
-	}
-	if ( browser.msie ) {
-		Webtwic.showBrowser( "ie" );
-	}
-	if ( browser.safari ) {
-		Webtwic.showBrowser( "safari" );
-	}
-	if ( browser.opera ) {
-		Webtwic.showBrowser( "opera" );
+	} else if ( browser.chrome ) {
+		Webtwic.showBrowser();
+	} else if ( browser.msedge ) {
+		Webtwic.showBrowser();
+	} else if ( browser.firefox ) {
+		Webtwic.showBrowser();
+	} else if ( browser.msie ) {
+		Webtwic.showBrowser();
+	} else if ( browser.safari ) {
+		Webtwic.showBrowser();
+	} else if ( browser.opera ) {
+		Webtwic.showBrowser();
+	} else {
+		// Do nothing.
 	}
 
 	/*
