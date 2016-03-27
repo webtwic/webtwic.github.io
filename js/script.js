@@ -24,7 +24,7 @@ Webtwic = {
 	description: "A community focused on code tweaks, articles and tutorials for newbie and professional developers.",
 	repo: "https://github.com/webtwic/webtwic-site",
 	author: "Olaolu Olawuyi",
-	version: 1.0,
+	version: "1.0.0",
 
 	// Start main functions for the object
 
