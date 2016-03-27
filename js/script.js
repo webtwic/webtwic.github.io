@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 23/03/2016
+ * Last Modified: 27/03/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -35,7 +35,7 @@ Webtwic = {
 
 	// Function to set attributes and values to elements
 	setAttr: function( elem, name, val ) {
-		$( elem, this ).attr( name, val ) ;
+		$( elem, this ).attr( name, val );
 	},
 
 	// Function to push down .site-content
