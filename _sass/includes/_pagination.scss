@@ -14,7 +14,7 @@
       font-size: 1em;
       padding: 15px 18px;
       color: $white;
-      margin: 0;
+      margin: -2px;
       &:hover {
          background: lighten($basecolor, 10%);
       }
