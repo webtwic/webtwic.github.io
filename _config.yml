@@ -1,5 +1,5 @@
 # Site settings
-port: 8000
+port: 9000
 title: webtwic
 email: info@webtwic.com
 description: A community focused on code tweaks, articles and tutorials for newbie and professional developers.
