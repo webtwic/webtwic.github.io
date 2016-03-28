@@ -42,8 +42,7 @@ svg:not(:root) {
 }
 
 hr {
-   -moz-box-sizing: content-box;
-   box-sizing: content-box;
+   @include box-sizing(content-box);
    height: 0;
 }
 
@@ -109,9 +108,7 @@ input {
    }
    &[type="search"] {
       -webkit-appearance: textfield;
-      -moz-box-sizing: content-box;
-      -webkit-box-sizing: content-box;
-      box-sizing: content-box;
+      @include box-sizing(content-box);
       &::-webkit-search-cancel-button, &::-webkit-search-decoration {
          -webkit-appearance: none;
       }
