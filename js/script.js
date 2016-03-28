@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 27/03/2016
+ * Last Modified: 28/03/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -134,17 +134,23 @@ jQuery( document ).ready( function() {
 
 	if ( browser.webkit ) {
 		$( "body" ).addClass( "webkit" );
-	} else if ( browser.chrome ) {
+	}
+	else if ( browser.chrome ) {
 		Webtwic.showBrowser();
-	} else if ( browser.msedge ) {
+	}
+	else if ( browser.msedge ) {
 		Webtwic.showBrowser();
-	} else if ( browser.firefox ) {
+	}
+	else if ( browser.firefox ) {
 		Webtwic.showBrowser();
-	} else if ( browser.msie ) {
+	}
+	else if ( browser.msie ) {
 		Webtwic.showBrowser();
-	} else if ( browser.safari ) {
+	}
+	else if ( browser.safari ) {
 		Webtwic.showBrowser();
-	} else if ( browser.opera ) {
+	}
+	else if ( browser.opera ) {
 		Webtwic.showBrowser();
 	} else {
 		// Do nothing.
