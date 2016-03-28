@@ -105,5 +105,13 @@
    &.heart:before {
       content: "\f004";
    }
+
+   &.folder-open:before {
+      content: "\f07c";
+   }
+
+   &.clock:before {      
+      content: "\f017";
+   }
    /* End Iconset */
 }
