@@ -333,7 +333,7 @@ body.single-post .entry-wrap .main-page {
 			color: #666;
 		}
 		a {
-			@include transition(background ease-in-out .5s);
+			@include transition(background ease .5s);
 			background: lighten($basecolor, 1%);
 			@include border-radius(20px);
 			font-family: $font-alt;
@@ -341,7 +341,7 @@ body.single-post .entry-wrap .main-page {
 			padding: .2em .5em;
 			color: $white;
 			&:hover {
-				background: lighten($basecolor, 10%);
+				background: darken($basecolor, 8%);
 			}
 			.webtwicons {
 				font-size: .9em;
