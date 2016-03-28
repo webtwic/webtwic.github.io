@@ -344,26 +344,25 @@ body.single-post .entry-wrap .main-page {
 	}
 	.entry-tags {
 		border-top: $ui_border;
-		font-size: .9em;
+		font-size: .95em;
 		padding: 15px 30px;
-		color: #666;
+		> span {
+			color: #666;
+		}
 		a {
-		   @extend .radius;
-			@include transition(color ease-in-out .5s);
+			@include transition(background ease-in-out .5s);
 			background: lighten($basecolor, 1%);
-			padding: 0px 3px;
+			@include border-radius(20px);
+			font-family: $font-alt;
 			position: relative;
+			padding: .2em .5em;
 			color: $white;
 			&:hover {
-				color: $title-color;
-				border-bottom: $solid_one $title-color;
+				background: lighten($basecolor, 10%);
 			}
-		}
-		.webtwicons {
-			font-family: $basefont;
-			margin-right: 0px;
-			&:before {
-				margin-right: 3px;
+			.webtwicons {
+				font-size: .9em;
+				margin-right: 4px;
 			}
 		}
 	}
