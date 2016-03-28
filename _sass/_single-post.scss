@@ -405,6 +405,9 @@ body.single-post .entry-wrap .main-page {
 		float: left;
 		margin-top: -10px;
 		width: 96%;
+		a {
+			color: $basecolor;
+		}
 	}
 	.author-social {
 		margin-top: 23px;
