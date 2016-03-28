@@ -224,8 +224,7 @@ jQuery( document ).ready( function() {
 	$( ".header-follow-search .close-icon" ).hover(
 		function() {
 			$( this ).addClass( "spin" );
-		},
-		function() {
+		}, function() {
 			$( this ).removeClass( "spin" );
 	});
 
