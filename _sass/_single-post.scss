@@ -4,7 +4,7 @@ Start single-post.scss
 
 * Date Created: 13/10/2015
 
-* Last Modified: 25/03/2016
+* Last Modified: 28/03/2016
 
 */
 body {
@@ -457,7 +457,7 @@ body.single-post .entry-wrap .main-page {
 	display: block;
 	height: $full;
 	a {
-		@include transition(all .3s ease);
+		@include transition(background .4s ease);
 		border-color: $border;
 		padding: 10px;
 		display: block;
@@ -465,9 +465,14 @@ body.single-post .entry-wrap .main-page {
 		height: $full;
 		background: $white;
 		&:hover {
-			color: $white;
+			color: $off_white;
 			background: $basecolor;
 			border-color: $basecolor;
+			.item-meta > {
+				p {
+					color: $off_white;
+				}
+			}
 		}
 		.webtwicons {
 			position: relative;
@@ -478,9 +483,6 @@ body.single-post .entry-wrap .main-page {
 			&.chevron-right {
 				float: right;
 			}
-		}
-		&:hover p {
-			color: $white;
 		}
 		p {
 			font-weight: 700;
