@@ -110,6 +110,10 @@
       content: "\f004";
    }
 
+   &.folder:before {
+      content: "\f07b";
+   }
+
    &.folder-open:before {
       content: "\f07c";
    }
