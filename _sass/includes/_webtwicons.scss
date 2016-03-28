@@ -24,6 +24,10 @@
       content: "\f075";
    }
 
+   &.comments:before {
+      content: "\f086";
+   }
+
    &.facebook-icon:before {
       content: "\f09a";
    }
@@ -110,7 +114,7 @@
       content: "\f07c";
    }
 
-   &.clock:before {      
+   &.clock:before {
       content: "\f017";
    }
    /* End Iconset */
