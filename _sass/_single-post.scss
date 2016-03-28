@@ -334,17 +334,18 @@ body.single-post .entry-wrap .main-page {
 		}
 		a {
 			@include transition(background ease .5s);
-			background: lighten($basecolor, 1%);
 			@include border-radius(20px);
 			font-family: $font-alt;
+			background: #8BA6BA;
 			position: relative;
-			padding: .2em .5em;
+			padding: .15em .54em;
+			font-weight: 200;
 			color: $white;
 			&:hover {
 				background: darken($basecolor, 8%);
 			}
 			.webtwicons {
-				font-size: .9em;
+				font-size: .79em;
 				margin-right: 4px;
 			}
 		}
