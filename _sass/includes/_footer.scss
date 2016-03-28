@@ -102,7 +102,7 @@
       a {
          position: relative;
          margin-right: 12px;
-         color: #f9f9f9;
+         color: $off_white;
          text-transform: uppercase;
          font-size: .8em;
          font-weight: 400;
@@ -112,7 +112,7 @@
             @include transition(transform .2s ease);
             @include transform(scaleX(0));
             content: "";
-            background: #f9f9f9;
+            background: $off_white;
             position: absolute;
             top: $full;
             left: 0;
@@ -163,7 +163,7 @@
    span {
       font-family: $basefont;
       font-size: 1em;
-      color: $white;
+      color: $off_white;
       & > span {
          color: darken(#6D8299, 1%);
       }
@@ -176,7 +176,7 @@
    }
 
    a {
-      color: $white;
+      color: $off_white;
       font-family: $font-alt;
       padding-bottom: 2px;
       position: relative;
@@ -190,7 +190,7 @@
          bottom: 0;
          content: "";
          height: 1.5px;
-         background: $white;
+         background: $off_white;
       }
       &:hover:before {
          @include transform(scaleX(1));
