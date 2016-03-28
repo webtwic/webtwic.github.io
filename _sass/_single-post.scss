@@ -335,13 +335,15 @@ body.single-post .entry-wrap .main-page {
 		}
 		a {
 			@include transition(background ease .5s);
-			@include border-radius(20px);
 			font-family: $font-alt;
-			background: #8BA6BA;
+			background: $basecolor;
 			position: relative;
 			padding: .15em .54em;
 			font-weight: 200;
-			color: $white;
+			@extend .radius;
+			color: $off_white;
+			// background: #8BA6BA;
+			// #9C9494
 			&:hover {
 				background: darken($basecolor, 8%);
 			}
