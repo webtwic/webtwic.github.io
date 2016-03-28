@@ -433,10 +433,12 @@ body.single-post .entry-wrap .main-page {
 	@extend .radius-alt;
 	color: $basecolor;
 	font-size: 1.07em;
-	padding: 3px 5px;
+	margin-right: 5px;
+	&:nth-child(2) {
+		margin-right: 0;
+	}
 	&:hover {
-		background: $basecolor;
-		color: $white;
+		color: $text-color;
 	}
 }
 
