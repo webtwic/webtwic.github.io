@@ -330,6 +330,7 @@ body.single-post .entry-wrap .main-page {
 		font-size: .95em;
 		padding: 15px 30px;
 		> span {
+			font-size: 1.095em;
 			color: #666;
 		}
 		a {
@@ -343,10 +344,6 @@ body.single-post .entry-wrap .main-page {
 			color: $white;
 			&:hover {
 				background: darken($basecolor, 8%);
-			}
-			.webtwicons {
-				font-size: .79em;
-				margin-right: 4px;
 			}
 		}
 	}
