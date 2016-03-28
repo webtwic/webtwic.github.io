@@ -98,9 +98,9 @@ $$ = Webtwic,
 
 close_button = "<a href='#' class='webtwicons close-button'></a>",
 
-browser_link = "<a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a>";
+browser_link = " " + "<a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a>" + " ",
 
-notif_text = "Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better" + browser_link;
+notif_text = "Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better" +browser_link;
 
 
 // Detect when the DOM is ready
@@ -109,13 +109,13 @@ jQuery( document ).ready( function() {
 	// Test for HTML5 support
 	if ( window.Modernizr ) {
 		if ( !Modernizr.canvas ) {
-			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> for an awesome experience." );
+			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better" +browser_link+ "for an awesome experience." );
 		} else {
 			// Do nothing.
 		}
 	} else if ( !window.Modernizr ) {
 		if ( canvascheck == false ) {
-			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better <a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser</a> for an awesome experience." );
+			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better" +browser_link+ "for an awesome experience." );
 		} else {
 			// Do nothing.
 		}
