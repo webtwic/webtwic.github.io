@@ -91,14 +91,17 @@
    &.envelope-icon:before {
       content: "\f0e0";
    }
+
    &.experimental:before,
    &.demo:before {
       content: "\f0c3";
    }
+
    &.circle:before,
    &.dot:before {
       content: "\f111";
    }
+
    &.heart:before {
       content: "\f004";
    }
