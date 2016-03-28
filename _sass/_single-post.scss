@@ -48,6 +48,9 @@ body {
 			margin-right: 12px;
 			.webtwicons {
 				margin-right: 4px;
+				&.folder {
+					font-size: .9em;
+				}
 			}
 		}
 		.entry-author a img {
