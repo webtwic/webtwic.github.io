@@ -247,13 +247,10 @@ body.single-post .entry-wrap .main-page {
 				border-bottom: none;
 				color: $basecolor;
 			}
-			&:before {
-				background: url("../../img/svg/link_icon.svg") no-repeat;
-				display: inline-block;
-				vertical-align: sub;
-				content: "";
-				width: 26px;
-				height: 25px;
+			.external-link {
+				margin: 0px 5px 0px -25px;
+				font-size: 0.79em;
+				color: #d5d5d5;
 			}
 		}
 	}
