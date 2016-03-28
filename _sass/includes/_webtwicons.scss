@@ -129,5 +129,9 @@
    &.hashtag:before {
       content: "\f292";
    }
+
+   &.external-link:before {
+      content: "\f08e";
+   }
    /* End Iconset */
 }
