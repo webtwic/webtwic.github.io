@@ -20,8 +20,25 @@ var browser = bowser;
 var test_canvas = document.createElement( "canvas" );
 var canvascheck = ( test_canvas.getContext ) ? true : false;
 
-var BODY = $( "body" );
 
+var HTML					= document.documentElement,
+	 BODY 				= $( "body" ),
+	 topStripe			= $( ".top-stripe" ),
+	 primaryLogo		= $( "#header .logo" ),
+	 mainMenu			= $( ".main-menu" ),
+	 primaryHeader		= $( "#header" ),
+	 siteContent		= $( ".site-content" ),
+	 secondaryHeader	= $( ".secondary-header" ),
+	 notifBanner		= $( "#notifBanner" ),
+	 M						= Modernizr,
+
+
+
+
+	 /* **************************************************** */
+	 close_button = "<a href='#' class='webtwicons close-button'></a>",
+	 browser_link = " " + "<a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a>" + " ",
+	 notif_text = "Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better" +browser_link;
 
 Webtwic = {
 	// Basic Information about Webtwic
@@ -47,25 +64,25 @@ Webtwic = {
 	// Function to push down .site-content
 	adjustSiteContent: function() {
 		if ( BODY.hasClass( "default-body" ) ) {
-			$( ".top-stripe" ).addClass( "adjustedMargin" );
-			$( "#header .logo" ).addClass( "adjustedTop" );
-			$( ".main-menu" ).addClass( "adjustedMargin" );
-			$( "#header" ).addClass( "adjustSiteContent" );
+			topStripe.addClass( "adjustedMargin" );
+			primaryLogo.addClass( "adjustedTop" );
+			mainMenu.addClass( "adjustedMargin" );
+			primaryHeader.addClass( "adjustSiteContent" );
 		} else if ( BODY.hasClass( "secondary-body" ) ) {
-			$( ".site-content" ).addClass( "adjustSiteContent" );
-			$( ".secondary-header" ).addClass( "adjustedMargin" );
+			siteContent.addClass( "adjustSiteContent" );
+			secondaryHeader.addClass( "adjustedMargin" );
 		}
 	},
 
 	// Function to push up .site-content to default state
 	undoSiteAdjust: function() {
 		if ( BODY.hasClass( "default-body" ) ) {
-			$( ".top-stripe" ).removeClass( "adjustedMargin" );
-			$( "#header .logo" ).removeClass( "adjustedTop" );
-			$( ".main-menu" ).removeClass( "adjustedMargin" );
-			$( "#header" ).removeClass( "adjustSiteContent" );
+			topStripe.removeClass( "adjustedMargin" );
+			primaryLogo.removeClass( "adjustedTop" );
+			mainMenu.removeClass( "adjustedMargin" );
+			primaryHeader.removeClass( "adjustSiteContent" );
 		} else if ( BODY.hasClass( "secondary-body" ) ) {
-			$( ".secondary-header" ).removeClass( "adjustedMargin" );
+			secondaryHeader.removeClass( "adjustedMargin" );
 		}
 	},
 
@@ -85,7 +102,7 @@ Webtwic = {
 
 	// Function to hide Notifications
 	hideNotif: function() {
-		$( "#notifBanner" ).removeClass( "notif_vis" );
+		notifBanner.removeClass( "notif_vis" );
 	},
 
 	resetSite: function() {
@@ -99,26 +116,20 @@ Webtwic = {
 	},
 }, WBT = Webtwic,
 
-$$ = Webtwic,
-
-close_button = "<a href='#' class='webtwicons close-button'></a>",
-
-browser_link = " " + "<a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a>" + " ",
-
-notif_text = "Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better" +browser_link;
+$$ = Webtwic;
 
 
 // Detect when the DOM is ready
 
 jQuery( document ).ready( function() {
 	// Test for HTML5 support
-	if ( window.Modernizr ) {
-		if ( !Modernizr.canvas ) {
+	if ( window.M ) {
+		if ( !M.canvas ) {
 			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better" +browser_link+ "for an awesome experience." );
 		} else {
 			// Do nothing.
 		}
-	} else if ( !window.Modernizr ) {
+	} else if ( !window.M ) {
 		if ( canvascheck == false ) {
 			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better" +browser_link+ "for an awesome experience." );
 		} else {
@@ -131,7 +142,13 @@ jQuery( document ).ready( function() {
 	// Define Variables
 	var $scroll_top = $( "a.scroll_top" ),
 	is_toggle_active = $( ".hamburger" ).hasClass( "is_active" ),
-	height = 200;
+	height = 200
+	dropNav = $( "ul.drop-nav" ),
+	dropDown = $( "nav li.dropdown" ),
+	headerSearch = $( ".header-follow-search" ),
+	headerSearchInput = $( ".header-follow-search .search-wrap" ),
+	overlaySearch = $( ".ui-overlay-search" ),
+	headerSearchClose = $( ".header-follow-search .close-icon" );
 
 	// Performance Fixes
 
@@ -140,7 +157,7 @@ jQuery( document ).ready( function() {
 	browser.ie = browser.msie;
 
 	if ( browser.webkit ) {
-		BODY.addClass( "webkit" );
+		Webtwic.showBrowser( "webkit" );
 	}
 	else if ( browser.chrome ) {
 		Webtwic.showBrowser();
@@ -152,7 +169,7 @@ jQuery( document ).ready( function() {
 		Webtwic.showBrowser();
 	}
 	else if ( browser.msie ) {
-		Webtwic.showBrowser();
+		Webtwic.showBrowser( "ie" );
 	}
 	else if ( browser.safari ) {
 		Webtwic.showBrowser();
@@ -170,8 +187,8 @@ jQuery( document ).ready( function() {
 		See Issue #12
 	*/
 
-	if ( window.Modernizr ) {
-		if ( !Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms ) {
+	if ( window.M ) {
+		if ( !M.flexbox || !M.inlinesvg || !M.svg || !M.svgclippaths || !M.fontface || !M.boxshadow || !M.borderradius || !M.csstransforms ) {
 			Webtwic.showNotif();
 		} else {
 			// Do nothing.
@@ -182,13 +199,13 @@ jQuery( document ).ready( function() {
 
 	// Start Main Page
 
-	$( "nav li ul.drop-nav" ).hide().removeClass( "dropNavFallback" );
+	$( dropNav ).hide().removeClass( "dropNavFallback" );
 
 	if ( $( window ).width() > 860 ) {
-		$( "nav li.dropdown" ).hover(function() {
-			$( "ul.drop-nav", this ).stop().slideDown( "fast" );
+		dropDown.hover(function() {
+			$( dropNav, this ).stop().slideDown( "fast" );
 		}, function() {
-			$( "ul.drop-nav", this ).stop().slideUp( "fast" );
+			$( dropNav, this ).stop().slideUp( "fast" );
 		});
 	}
 
@@ -217,16 +234,16 @@ jQuery( document ).ready( function() {
 
 	// Functions for search-icon and ui-overlay-search
 
-	$( ".header-follow-search .search-wrap" ).on( "click", function() {
+	headerSearchInput.on( "click", function() {
 		openUiOverlay();
 	});
 
-	$( ".header-follow-search .close-icon" ).on( "click", function( e ) {
+	headerSearchClose.on( "click", function( e ) {
 		e.preventDefault();
 		closeUiOverlay();
 	});
 
-	$( ".header-follow-search .close-icon" ).hover(
+	headerSearchClose.hover(
 		function() {
 			$( this ).addClass( "spin" );
 		}, function() {
@@ -234,11 +251,11 @@ jQuery( document ).ready( function() {
 	});
 
 	function openUiOverlay() {
-		$( ".ui-overlay-search" ).fadeIn(400).addClass( "is_open" );
+		overlaySearch.fadeIn(400).addClass( "is_open" );
 	}
 
 	function closeUiOverlay() {
-		$( ".ui-overlay-search" ).fadeOut(400).removeClass( "is_open" );
+		overlaySearch.fadeOut(400).removeClass( "is_open" );
 	}
 
 	$( ".ui-overlay-search .search-input input" ).focus(function() {
