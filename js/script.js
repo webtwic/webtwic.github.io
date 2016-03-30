@@ -174,13 +174,19 @@ jQuery( document ).ready( function() {
 
 	// Start Main Page
 
-	$( "nav li ul.drop-nav" ).hide().removeClass( "dropNavFallback" );
+	$( "nav li ul.drop-nav" )
+	.hide()
+	.removeClass( "dropNavFallback" );
 
 	if ( $( window ).width() > 860 ) {
 		$( "nav li.dropdown" ).hover(function() {
-			$( "ul.drop-nav", this ).stop().slideDown( "fast" );
+			$( "ul.drop-nav", this )
+			.stop()
+			.slideDown( "fast" );
 		}, function() {
-			$( "ul.drop-nav", this ).stop().slideUp( "fast" );
+			$( "ul.drop-nav", this )
+			.stop()
+			.slideUp( "fast" );
 		});
 	}
 
@@ -202,9 +208,13 @@ jQuery( document ).ready( function() {
 	// Styles for homepage article-social
 
 	$( ".article .article-social a" ).hover(function() {
-		$( "span", this ).eq(1).fadeIn(400);
+		$( "span", this )
+		.eq(1)
+		.fadeIn(400);
 	}, function() {
-		$( "span", this ).eq(1).fadeOut(250);
+		$( "span", this )
+		.eq(1)
+		.fadeOut(250);
 	});
 
 	// Functions for search-icon and ui-overlay-search
@@ -226,11 +236,15 @@ jQuery( document ).ready( function() {
 	});
 
 	function openUiOverlay() {
-		$( ".ui-overlay-search" ).fadeIn(400).addClass( "is_open" );
+		$( ".ui-overlay-search" )
+		.fadeIn(400)
+		.addClass( "is_open" );
 	}
 
 	function closeUiOverlay() {
-		$( ".ui-overlay-search" ).fadeOut(400).removeClass( "is_open" );
+		$( ".ui-overlay-search" )
+		.fadeOut(400)
+		.removeClass( "is_open" );
 	}
 
 	$( ".ui-overlay-search .search-input input" ).focus(function() {
