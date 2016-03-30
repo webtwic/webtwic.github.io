@@ -134,10 +134,7 @@ jQuery( document ).ready( function() {
 
 	browser.ie = browser.msie;
 
-	if ( browser.webkit ) {
-		$( "body" ).addClass( "webkit" );
-	}
-	else if ( browser.chrome ) {
+	if ( browser.chrome ) {
 		Webtwic.showBrowser();
 	}
 	else if ( browser.msedge ) {
