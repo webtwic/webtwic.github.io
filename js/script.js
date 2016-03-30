@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 29/03/2016
+ * Last Modified: 28/03/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -11,17 +11,12 @@
 
 */
 
-// Define some variables that need to be present before the DOM is ready
-
 var Webtwic = Webtwic || {};
 
 var browser = bowser;
 
 var test_canvas = document.createElement( "canvas" );
 var canvascheck = ( test_canvas.getContext ) ? true : false;
-
-var BODY = $( "body" );
-
 
 Webtwic = {
 	// Basic Information about Webtwic
@@ -36,7 +31,7 @@ Webtwic = {
 	// Function to add browser name and version to body class
 	showBrowser: function( b ) {
 		b = (typeof b == "undefined") ? browser.name : b;
-		BODY.addClass( b.toLowerCase() + " " + b.toLowerCase() + parseInt( browser.version ) );
+		$( "body" ).addClass( b.toLowerCase() + " " + b.toLowerCase() + parseInt( browser.version ) );
 	},
 
 	// Function to set attributes and values to elements
@@ -46,12 +41,12 @@ Webtwic = {
 
 	// Function to push down .site-content
 	adjustSiteContent: function() {
-		if ( BODY.hasClass( "default-body" ) ) {
+		if ( $( "body" ).hasClass( "default-body" ) ) {
 			$( ".top-stripe" ).addClass( "adjustedMargin" );
 			$( "#header .logo" ).addClass( "adjustedTop" );
 			$( ".main-menu" ).addClass( "adjustedMargin" );
 			$( "#header" ).addClass( "adjustSiteContent" );
-		} else if ( BODY.hasClass( "secondary-body" ) ) {
+		} else if ( $( "body" ).hasClass( "secondary-body" ) ) {
 			$( ".site-content" ).addClass( "adjustSiteContent" );
 			$( ".secondary-header" ).addClass( "adjustedMargin" );
 		}
@@ -59,12 +54,12 @@ Webtwic = {
 
 	// Function to push up .site-content to default state
 	undoSiteAdjust: function() {
-		if ( BODY.hasClass( "default-body" ) ) {
+		if ( $( "body" ).hasClass( "default-body" ) ) {
 			$( ".top-stripe" ).removeClass( "adjustedMargin" );
 			$( "#header .logo" ).removeClass( "adjustedTop" );
 			$( ".main-menu" ).removeClass( "adjustedMargin" );
 			$( "#header" ).removeClass( "adjustSiteContent" );
-		} else if ( BODY.hasClass( "secondary-body" ) ) {
+		} else if ( $( "body" ).hasClass( "secondary-body" ) ) {
 			$( ".secondary-header" ).removeClass( "adjustedMargin" );
 		}
 	},
@@ -73,7 +68,7 @@ Webtwic = {
 	showNotif: function( text ) {
 		text = ( typeof text == "undefined" ) ? notif_text : text;
 		Webtwic.adjustSiteContent();
-		BODY.prepend(
+		$( "body" ).prepend(
 			"<div class='notif_vis' id='notifBanner'>"+text+""+close_button+"</div>"
 		);
 
@@ -140,7 +135,7 @@ jQuery( document ).ready( function() {
 	browser.ie = browser.msie;
 
 	if ( browser.webkit ) {
-		BODY.addClass( "webkit" );
+		$( "body" ).addClass( "webkit" );
 	}
 	else if ( browser.chrome ) {
 		Webtwic.showBrowser();
