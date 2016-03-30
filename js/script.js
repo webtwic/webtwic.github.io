@@ -30,8 +30,8 @@ Webtwic = {
 
 	// Function to add browser name and version to body class
 	showBrowser: function( b ) {
-		b = (typeof b == "undefined") ? browser.name : b;
-		$( "body" ).addClass( b.toLowerCase() + " " + b.toLowerCase() + parseInt( browser.version ) );
+		b = (typeof b == "undefined") ? browser.name.toLowerCase() : b.toLowerCase();
+		$( "body" ).addClass( b + " " + b + parseInt( browser.version ) );
 	},
 
 	// Function to set attributes and values to elements
