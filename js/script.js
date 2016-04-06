@@ -277,11 +277,13 @@ jQuery( document ).ready( function() {
 
 	// Functions for more-posts button click
 
+	var loadMoreBtn = '.secondary-category-section .category-posts-column [data-clicked="false"]';
+
 	function addLoader() {
-		$( '.secondary-category-section .category-posts-column [data-clicked="false"]' ).data( 'clicked', 'true' ).append( '<span class="loader"></span>' );
+		$( loadMoreBtn ).data( 'clicked', 'true' ).append( '<span class="loader"></span>' );
 	}
 
-	$( '.secondary-category-section .category-posts-column [data-clicked="false"]' ).on( 'click', function( e ) {
+	$( loadMoreBtn ).on( 'click', function( e ) {
 		$( this ).css({
 			'background': '#50ABF1',
 			'color': '#fff'
