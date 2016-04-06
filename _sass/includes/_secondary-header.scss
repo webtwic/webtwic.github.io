@@ -1,4 +1,4 @@
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 768px) {
    .main header.secondary-header {
       margin-bottom: 240px;
       background: $white;
@@ -172,7 +172,7 @@
                &::-moz-placeholder {
                   color: #6D8299;
                }
-               
+
                &:focus {
                   &::placeholder {
                       color: $white;
