@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
    <meta charset="utf-8">
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -28,6 +30,7 @@
       ::-moz-selection {background: #CEF; text-shadow: none;}
       ::-ms-selection {background: #CEF; text-shadow: none;}
       ::-o-selection {background: #CEF; text-shadow: none;}
+
       html,
       body.not_found {
          background: #E6F4FF url("../img/bgcontrast.png");
@@ -48,13 +51,11 @@
          text-decoration: none;
       }
       .warning_icon {
+         background: url(../img/warning.jpg) no-repeat;
+         margin: 35px auto 0 auto;
          width: 112px;
          height: 108px;
-         margin-right: auto;
-         margin-left: auto;
          display: block;
-         margin-top: 35px;
-         background: url(../img/warning.jpg);
       }
       h1 {
          margin-top: .5em;
@@ -212,13 +213,14 @@
          margin-top: 20px;
       }
    </style>
+
 </head>
 
 <body class="not_found">
    <div class="error_wrap"> <div class="warning_icon"></div>
    <h1><span>4</span> <span class="red">0</span> <span>4</span></h1>
    <h2 class="error_text">Oops.</h2>
-   <p class="error_description"> Sorry, the page you requested for was not found, it may have been removed or dosen't exist at all. <span>You can search for something else, or go back to our <a href="../home" title="Go back to webtwic.">homepage.</a></span> </p>
+   <p class="error_description"> Sorry, the page you requested was not found, it may have been removed or dosen't exist at all. <span>Perhaps, you could search for some other cool stuff, or go back to our <a href="../home" title="Go back to webtwic.">homepage.</a></span> </p>
    <form method="GET">
       <input type="search" name="s">
       <input type="submit" value="Search"> </form>
