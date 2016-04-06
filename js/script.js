@@ -281,7 +281,7 @@ jQuery( document ).ready( function() {
 
 	function addLoader() {
 		$( loadMoreBtn )
-		.data( 'clicked', 'true' )
+		.attr( 'data-clicked', 'true' )
 		.append( '<span class="loader"></span>' );
 	}
 
