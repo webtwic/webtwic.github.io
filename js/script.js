@@ -280,7 +280,9 @@ jQuery( document ).ready( function() {
 	var loadMoreBtn = '.secondary-category-section .category-posts-column [data-clicked="false"]';
 
 	function addLoader() {
-		$( loadMoreBtn ).data( 'clicked', 'true' ).append( '<span class="loader"></span>' );
+		$( loadMoreBtn )
+		.data( 'clicked', 'true' )
+		.append( '<span class="loader"></span>' );
 	}
 
 	$( loadMoreBtn ).on( 'click', function( e ) {
