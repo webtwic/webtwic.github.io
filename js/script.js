@@ -180,7 +180,7 @@ jQuery( document ).ready( function() {
 	.hide()
 	.removeClass( 'dropNavFallback' );
 
-	if ( $( window ).width() > 860 ) {
+	if ( $( window ).width() > 768 ) {
 		$( 'nav li.dropdown' ).hover(function() {
 			$( 'ul.drop-nav', this )
 			.stop()
