@@ -250,13 +250,13 @@ jQuery( document ).ready( function() {
 	}
 
 	$( '.ui-overlay-search .search-input input' ).focus(function() {
-		$( '.search-input' ).data( 'focused', 'true' );
+		$( '.search-input' ).attr( 'data-focused', 'true' );
 		$( '.search-input input' ).addClass( '_is-focused' );
 		$( '#__expand' ).addClass( 'visible' );
 	});
 
 	$( '.ui-overlay-search .search-input input' ).blur(function() {
-		$( '.search-input' ).data( 'focused', 'false' );
+		$( '.search-input' ).attr( 'data-focused', 'false' );
 		$( '.search-input input' ).removeClass( '_is-focused' );
 		$( '#__expand' ).removeClass( 'visible' );
 	});
