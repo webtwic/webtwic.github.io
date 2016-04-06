@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 30/03/2016
+ * Last Modified: 06/04/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -15,23 +15,23 @@ var Webtwic = Webtwic || {};
 
 var browser = bowser;
 
-var test_canvas = document.createElement( "canvas" );
+var test_canvas = document.createElement( 'canvas' );
 var canvascheck = ( test_canvas.getContext ) ? true : false;
 
 Webtwic = {
 	// Basic Information about Webtwic
-	name: "Webtwic",
-	description: "A community focused on code tweaks, articles and tutorials for newbie and professional developers.",
-	repo: "https://github.com/webtwic/webtwic-site",
-	author: "Olaolu Olawuyi",
-	version: "1.0.0",
+	name: 'Webtwic',
+	description: 'A community focused on code tweaks, articles and tutorials for newbie and professional developers.',
+	repo: 'https://github.com/webtwic/webtwic-site',
+	author: 'Olaolu Olawuyi',
+	version: '1.0.0',
 
 	// Start main functions for the object
 
 	// Function to add browser name and version to body class
 	showBrowser: function( b ) {
-		b = (typeof b == "undefined") ? browser.name.toLowerCase() : b.toLowerCase();
-		$( "body" ).addClass( b + " " + b + parseInt( browser.version ) );
+		b = (typeof b == 'undefined') ? browser.name.toLowerCase() : b.toLowerCase();
+		$( 'body' ).addClass( b + ' ' + b + parseInt( browser.version ) );
 	},
 
 	// Function to set attributes and values to elements
@@ -41,38 +41,38 @@ Webtwic = {
 
 	// Function to push down .site-content
 	adjustSiteContent: function() {
-		if ( $( "body" ).hasClass( "default-body" ) ) {
-			$( ".top-stripe" ).addClass( "adjustedMargin" );
-			$( "#header .logo" ).addClass( "adjustedTop" );
-			$( ".main-menu" ).addClass( "adjustedMargin" );
-			$( "#header" ).addClass( "adjustSiteContent" );
-		} else if ( $( "body" ).hasClass( "secondary-body" ) ) {
-			$( ".site-content" ).addClass( "adjustSiteContent" );
-			$( ".secondary-header" ).addClass( "adjustedMargin" );
+		if ( $( 'body' ).hasClass( 'default-body' ) ) {
+			$( '.top-stripe' ).addClass( 'adjustedMargin' );
+			$( '#header .logo' ).addClass( 'adjustedTop' );
+			$( '.main-menu' ).addClass( 'adjustedMargin' );
+			$( '#header' ).addClass( 'adjustSiteContent' );
+		} else if ( $( 'body' ).hasClass( 'secondary-body' ) ) {
+			$( '.site-content' ).addClass( 'adjustSiteContent' );
+			$( '.secondary-header' ).addClass( 'adjustedMargin' );
 		}
 	},
 
 	// Function to push up .site-content to default state
 	undoSiteAdjust: function() {
-		if ( $( "body" ).hasClass( "default-body" ) ) {
-			$( ".top-stripe" ).removeClass( "adjustedMargin" );
-			$( "#header .logo" ).removeClass( "adjustedTop" );
-			$( ".main-menu" ).removeClass( "adjustedMargin" );
-			$( "#header" ).removeClass( "adjustSiteContent" );
-		} else if ( $( "body" ).hasClass( "secondary-body" ) ) {
-			$( ".secondary-header" ).removeClass( "adjustedMargin" );
+		if ( $( 'body' ).hasClass( 'default-body' ) ) {
+			$( '.top-stripe' ).removeClass( 'adjustedMargin' );
+			$( '#header .logo' ).removeClass( 'adjustedTop' );
+			$( '.main-menu' ).removeClass( 'adjustedMargin' );
+			$( '#header' ).removeClass( 'adjustSiteContent' );
+		} else if ( $( 'body' ).hasClass( 'secondary-body' ) ) {
+			$( '.secondary-header' ).removeClass( 'adjustedMargin' );
 		}
 	},
 
 	// Function to show Notifications before header
 	showNotif: function( text ) {
-		text = ( typeof text == "undefined" ) ? notif_text : text;
+		text = ( typeof text == 'undefined' ) ? notif_text : text;
 		Webtwic.adjustSiteContent();
-		$( "body" ).prepend(
-			"<div class='notif_vis' id='notifBanner'>"+text+""+close_button+"</div>"
+		$( 'body' ).prepend(
+			'<div class="notif_vis" id="notifBanner">"+text+""+close_button+"</div>'
 		);
 
-		$( ".close-button" ).on( "click", function( e ) {
+		$( '.close-button' ).on( 'click', function( e ) {
 			e.preventDefault();
 			Webtwic.undoReset();
 		});
@@ -80,7 +80,7 @@ Webtwic = {
 
 	// Function to hide Notifications
 	hideNotif: function() {
-		$( "#notifBanner" ).removeClass( "notif_vis" );
+		$( '#notifBanner' ).removeClass( 'notif_vis' );
 	},
 
 	resetSite: function() {
@@ -92,15 +92,17 @@ Webtwic = {
 		Webtwic.hideNotif();
 		Webtwic.undoSiteAdjust();
 	},
-}, WBT = Webtwic,
+};
 
-$$ = Webtwic,
+var WBT = Webtwic,
 
-close_button = "<a href='#' class='webtwicons close-button'></a>",
+	 $$ = Webtwic,
 
-browser_link = " " + "<a style='color: #fff; border-bottom: 1px dotted #fff;' href='https://google.com/chrome' target='_blank'>browser.</a>" + " ",
+	 close_button = '<a href="#" class="webtwicons close-button"></a>',
 
-notif_text = "Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better" +browser_link;
+	 browser_link = ' ' + '<a style="color: #fff; border-bottom: 1px dotted #fff;" href="https://google.com/chrome" target="_blank">browser.</a>' + ' ',
+
+	 notif_text = 'Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better' +browser_link;
 
 
 // Detect when the DOM is ready
@@ -114,7 +116,7 @@ jQuery( document ).ready( function() {
 			// Do nothing.
 		}
 	} else if ( !window.Modernizr ) {
-		if ( canvascheck == false ) {
+		if ( canvascheck === false ) {
 			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better" +browser_link+ "for an awesome experience." );
 		} else {
 			// Do nothing.
@@ -124,8 +126,8 @@ jQuery( document ).ready( function() {
 	}
 
 	// Define Variables
-	var $scroll_top = $( "a.scroll_top" ),
-	is_toggle_active = $( ".hamburger" ).hasClass( "is_active" ),
+	var $scroll_top = $( 'a.scroll_top' ),
+	is_toggle_active = $( '.hamburger' ).hasClass( 'is_active' ),
 	height = 200;
 
 	// Performance Fixes
@@ -174,92 +176,92 @@ jQuery( document ).ready( function() {
 
 	// Start Main Page
 
-	$( "nav li ul.drop-nav" )
+	$( 'nav li ul.drop-nav' )
 	.hide()
-	.removeClass( "dropNavFallback" );
+	.removeClass( 'dropNavFallback' );
 
 	if ( $( window ).width() > 860 ) {
-		$( "nav li.dropdown" ).hover(function() {
-			$( "ul.drop-nav", this )
+		$( 'nav li.dropdown' ).hover(function() {
+			$( 'ul.drop-nav', this )
 			.stop()
-			.slideDown( "fast" );
+			.slideDown( 'fast' );
 		}, function() {
-			$( "ul.drop-nav", this )
+			$( 'ul.drop-nav', this )
 			.stop()
-			.slideUp( "fast" );
+			.slideUp( 'fast' );
 		});
 	}
 
-	$( ".active-item" ).append(
-		"<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><path d='M 16.682,19.674c 0.010-0.012, 0.014-0.028, 0.024-0.040l 6.982-7.714c 0.39-0.434, 0.39-1.138,0-1.572 c-0.004-0.004-0.008-0.006-0.012-0.008C 23.496,10.13, 23.244,10, 22.964,10L 8.998,10 c-0.286,0-0.54,0.138-0.722,0.352L 8.272,10.348 c-0.39,0.434-0.39,1.138,0,1.572l 6.998,7.754C 15.66,20.108, 16.292,20.108, 16.682,19.674z'></path></svg>"
+	$( '.active-item' ).append(
+		'<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M 16.682,19.674c 0.010-0.012, 0.014-0.028, 0.024-0.040l 6.982-7.714c 0.39-0.434, 0.39-1.138,0-1.572 c-0.004-0.004-0.008-0.006-0.012-0.008C 23.496,10.13, 23.244,10, 22.964,10L 8.998,10 c-0.286,0-0.54,0.138-0.722,0.352L 8.272,10.348 c-0.39,0.434-0.39,1.138,0,1.572l 6.998,7.754C 15.66,20.108, 16.292,20.108, 16.682,19.674z"></path></svg>'
 	);
 
-	$( "a.hamburger" ).click(function( e ) {
-		$( this ).toggleClass( "is_active" );
+	$( 'a.hamburger' ).click(function( e ) {
+		$( this ).toggleClass( 'is_active' );
 
 		e.preventDefault();
 	});
-	$( ".mobile-header .mobile-nav" ).hide();
+	$( '.mobile-header .mobile-nav' ).hide();
 
 	$( window ).scroll(function() {
-		( $( this ).scrollTop() > height ) ? $scroll_top.addClass( "topVisible" ): $scroll_top.removeClass( "topVisible" );
+		( $( this ).scrollTop() > height ) ? $scroll_top.addClass( 'topVisible' ): $scroll_top.removeClass( 'topVisible' );
 	});
 
 	// Styles for homepage article-social
 
-	$( ".article .article-social a" ).hover(function() {
-		$( "span", this )
+	$( '.article .article-social a' ).hover(function() {
+		$( 'span', this )
 		.eq(1)
 		.fadeIn(400);
 	}, function() {
-		$( "span", this )
+		$( 'span', this )
 		.eq(1)
 		.fadeOut(250);
 	});
 
 	// Functions for search-icon and ui-overlay-search
 
-	$( ".header-follow-search .search-wrap" ).on( "click", function() {
+	$( '.header-follow-search .search-wrap' ).on( 'click', function() {
 		openUiOverlay();
 	});
 
-	$( ".header-follow-search .close-icon" ).on( "click", function( e ) {
+	$( '.header-follow-search .close-icon' ).on( 'click', function( e ) {
 		e.preventDefault();
 		closeUiOverlay();
 	});
 
-	$( ".header-follow-search .close-icon" ).hover(
+	$( '.header-follow-search .close-icon' ).hover(
 		function() {
-			$( this ).addClass( "spin" );
+			$( this ).addClass( 'spin' );
 		}, function() {
-			$( this ).removeClass( "spin" );
+			$( this ).removeClass( 'spin' );
 	});
 
 	function openUiOverlay() {
-		$( ".ui-overlay-search" )
+		$( '.ui-overlay-search' )
 		.fadeIn(400)
-		.addClass( "is_open" );
+		.addClass( 'is_open' );
 	}
 
 	function closeUiOverlay() {
-		$( ".ui-overlay-search" )
+		$( '.ui-overlay-search' )
 		.fadeOut(400)
-		.removeClass( "is_open" );
+		.removeClass( 'is_open' );
 	}
 
-	$( ".ui-overlay-search .search-input input" ).focus(function() {
-		$( ".search-input" ).attr( "data-focused", "true" );
-		$( ".search-input input" ).addClass( "_is-focused" );
-		$( "#__expand" ).addClass( "visible" );
+	$( '.ui-overlay-search .search-input input' ).focus(function() {
+		$( '.search-input' ).attr( 'data-focused', 'true' );
+		$( '.search-input input' ).addClass( '_is-focused' );
+		$( '#__expand' ).addClass( 'visible' );
 	});
 
-	$( ".ui-overlay-search .search-input input" ).blur(function() {
-		$( ".search-input" ).attr( "data-focused", "false" );
-		$( ".search-input input" ).removeClass( "_is-focused" );
-		$( "#__expand" ).removeClass( "visible" );
+	$( '.ui-overlay-search .search-input input' ).blur(function() {
+		$( '.search-input' ).attr( 'data-focused', 'false' );
+		$( '.search-input input' ).removeClass( '_is-focused' );
+		$( '#__expand' ).removeClass( 'visible' );
 	});
 
-	$( ".post-meta .post-meta-inner .cta-btns a.is_inactive" ).on( "click", function( e ) {
+	$( '.post-meta .post-meta-inner .cta-btns a.is_inactive' ).on( 'click', function( e ) {
 		e.preventDefault();
 	});
 
@@ -271,25 +273,25 @@ jQuery( document ).ready( function() {
 		}
  	});
 
-	$( ".mobile-nav" ).hide();
+	$( '.mobile-nav' ).hide();
 
 	// Functions for more-posts button click
 
 	function addLoader() {
-		$( ".secondary-category-section .category-posts-column [data-clicked='false']" ).attr( "data-clicked", "true" ).append( "<span class='loader'></span>" );
+		$( '.secondary-category-section .category-posts-column [data-clicked="false"]' ).attr( 'data-clicked', 'true' ).append( '<span class="loader"></span>' );
 	}
 
-	$( ".secondary-category-section .category-posts-column [data-clicked='false']" ).on( "click", function( e ) {
+	$( '.secondary-category-section .category-posts-column [data-clicked="false"]' ).on( 'click', function( e ) {
 		$( this ).css({
-			"background": "#50ABF1",
-			"color": "#fff"
+			'background': '#50ABF1',
+			'color': '#fff'
 		});
 		addLoader();
 		e.preventDefault();
 	});
 
-	$scroll_top.on( "click", function( e ) {
-		$( "body, html" ).animate({
+	$scroll_top.on( 'click', function( e ) {
+		$( 'body, html' ).animate({
 			scrollTop: 0
 		}, 1000);
 
