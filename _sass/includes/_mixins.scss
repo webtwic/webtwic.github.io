@@ -213,3 +213,9 @@
   -o-filter: $filter-type + unquote( '(#{$filter-amount})' );
   filter: $filter-type + unquote( '(#{$filter-amount})' );
 }
+
+@mixin background-size($value: cover) {
+   -webkit-background-size: $value;
+   -moz-background-size: $value;
+   background-size: $value;
+}
