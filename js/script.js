@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 06/04/2016
+ * Last Modified: 09/04/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -112,18 +112,12 @@ jQuery( document ).ready( function() {
 	if ( window.Modernizr ) {
 		if ( !Modernizr.canvas ) {
 			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better" +browser_link+ "for an awesome experience." );
-		} else {
-			// Do nothing.
-		}
+		} else /* do nothing */ ;
 	} else if ( !window.Modernizr ) {
 		if ( canvascheck === false ) {
 			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better" +browser_link+ "for an awesome experience." );
-		} else {
-			// Do nothing.
-		}
-	} else {
-		// Do nothing.
-	}
+		} else /* do nothing */ ;
+	} else /* do nothing */ ;
 
 	// Define Variables
 	var $scroll_top = $( 'a.scroll_top' ),
@@ -153,9 +147,7 @@ jQuery( document ).ready( function() {
 	}
 	else if ( browser.opera ) {
 		Webtwic.showBrowser();
-	} else {
-		// Do nothing.
-	}
+	} else /* do nothing */ ;
 
 	/*
 		TODO: Rebuild Performance fixes for attributes
@@ -167,12 +159,8 @@ jQuery( document ).ready( function() {
 	if ( window.Modernizr ) {
 		if ( !Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms ) {
 			Webtwic.showNotif();
-		} else {
-			// Do nothing.
-		}
-	} else {
-		// Do nothing.
-	}
+		} else /* do nothing */ ;
+	} else /* do nothing */ ;
 
 	// Start Main Page
 
@@ -268,9 +256,7 @@ jQuery( document ).ready( function() {
 	$( document ).keydown(function( e ) {
 		if ( e.keyCode == 27 ) {
 			closeUiOverlay();
-		} else {
-			// Do nothing.
-		}
+		} else /* do nothing */ ;
  	});
 
 	$( '.mobile-nav' ).hide();
