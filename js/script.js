@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 09/04/2016
+ * Last Modified: 10/04/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -109,15 +109,15 @@ var WBT = Webtwic,
 
 jQuery( document ).ready( function() {
 	// Test for HTML5 support
-	if ( window.Modernizr ) {
-		if ( !Modernizr.canvas ) {
+	if ( window.Modernizr )
+		if ( !Modernizr.canvas )
 			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better" +browser_link+ "for an awesome experience." );
-		} else /* do nothing */ ;
-	} else if ( !window.Modernizr ) {
-		if ( canvascheck === false ) {
+		 else /* do nothing */ ;
+	 else if ( !window.Modernizr )
+		if ( canvascheck === false )
 			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better" +browser_link+ "for an awesome experience." );
-		} else /* do nothing */ ;
-	} else /* do nothing */ ;
+		 else /* do nothing */ ;
+	 else /* do nothing */ ;
 
 	// Define Variables
 	var $scroll_top = $( 'a.scroll_top' ),
@@ -130,24 +130,24 @@ jQuery( document ).ready( function() {
 
 	browser.ie = browser.msie;
 
-	if ( browser.chrome ) {
+	if ( browser.chrome )
 		Webtwic.showBrowser();
-	}
-	else if ( browser.msedge ) {
+
+	else if ( browser.msedge )
 		Webtwic.showBrowser();
-	}
-	else if ( browser.firefox ) {
+
+	else if ( browser.firefox )
 		Webtwic.showBrowser();
-	}
-	else if ( browser.msie ) {
+
+	else if ( browser.msie )
 		Webtwic.showBrowser();
-	}
-	else if ( browser.safari ) {
+
+	else if ( browser.safari )
 		Webtwic.showBrowser();
-	}
-	else if ( browser.opera ) {
+
+	else if ( browser.opera )
 		Webtwic.showBrowser();
-	} else /* do nothing */ ;
+	else /* do nothing */ ;
 
 	/*
 		TODO: Rebuild Performance fixes for attributes
@@ -155,12 +155,13 @@ jQuery( document ).ready( function() {
 		Also, check StackOverflow.
 		See Issue #12
 	*/
+	var M = Modernizr;
 
-	if ( window.Modernizr ) {
-		if ( !Modernizr.flexbox || !Modernizr.inlinesvg || !Modernizr.svg || !Modernizr.svgclippaths || !Modernizr.fontface || !Modernizr.boxshadow || !Modernizr.borderradius || !Modernizr.csstransforms ) {
+	if ( window.Modernizr )
+		if ( !M.flexbox || !M.inlinesvg || !M.svg || !M.svgclippaths || !M.fontface || !M.boxshadow || !M.borderradius || !M.csstransforms )
 			Webtwic.showNotif();
-		} else /* do nothing */ ;
-	} else /* do nothing */ ;
+		else /* do nothing */ ;
+	 else /* do nothing */ ;
 
 	// Start Main Page
 
@@ -254,9 +255,9 @@ jQuery( document ).ready( function() {
 	});
 
 	$( document ).keydown(function( e ) {
-		if ( e.keyCode == 27 ) {
+		if ( e.keyCode == 27 )
 			closeUiOverlay();
-		} else /* do nothing */ ;
+		else /* do nothing */ ;
  	});
 
 	$( '.mobile-nav' ).hide();
