@@ -69,7 +69,7 @@ Webtwic = {
 		text = ( typeof text == 'undefined' ) ? notif_text : text;
 		Webtwic.adjustSiteContent();
 		$( 'body' ).prepend(
-			'<div class="notif_vis" id="notifBanner">"+text+""+close_button+"</div>'
+			'<div class="notif_vis" id="notifBanner">'+text+''+close_button+'</div>'
 		);
 
 		$( '.close-button' ).on( 'click', function( e ) {
