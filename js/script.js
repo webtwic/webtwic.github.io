@@ -128,24 +128,26 @@ jQuery( document ).ready( function() {
 
 	// Start browser detection
 
-	browser.ie = browser.msie;
+	browser.ie = function() {
+		return browser.msie;
+	};
 
-	if ( browser.chrome )
+	if (browser.chrome)
 		Webtwic.showBrowser();
 
-	else if ( browser.msedge )
+	else if (browser.msedge)
 		Webtwic.showBrowser();
 
-	else if ( browser.firefox )
+	else if (browser.firefox)
 		Webtwic.showBrowser();
 
-	else if ( browser.msie )
+	else if (browser.msie)
 		Webtwic.showBrowser();
 
-	else if ( browser.safari )
+	else if (browser.safari)
 		Webtwic.showBrowser();
 
-	else if ( browser.opera )
+	else if (browser.opera)
 		Webtwic.showBrowser();
 	else /* do nothing */ ;
 
