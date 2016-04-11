@@ -128,10 +128,6 @@ jQuery( document ).ready( function() {
 
 	// Start browser detection
 
-	browser.ie = function() {
-		return browser.msie;
-	};
-
 	if (browser.chrome)
 		Webtwic.showBrowser();
 
