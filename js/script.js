@@ -160,7 +160,7 @@ jQuery( document ).ready( function() {
 	var M = Modernizr;
 
 	if ( window.Modernizr )
-		if ( !M.flexbox || !M.inlinesvg || !M.svg || !M.svgclippaths || !M.fontface || !M.boxshadow || !M.borderradius || !M.csstransforms )
+		if ( !( M.flexbox || M.inlinesvg || M.svg || M.svgclippaths || M.fontface || M.boxshadow || M.borderradius || M.csstransforms ) )
 			Webtwic.showNotif();
 		else /* do nothing */ ;
 	 else /* do nothing */ ;
