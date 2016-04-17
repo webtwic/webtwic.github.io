@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 11/04/2016
+ * Last Modified: 17/04/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -14,6 +14,7 @@
 var Webtwic = Webtwic || {};
 
 var browser = bowser;
+browser.name = bowser.name.toLowerCase();
 
 var test_canvas = document.createElement( 'canvas' );
 var canvascheck = ( test_canvas.getContext ) ? true : false;
@@ -30,8 +31,11 @@ Webtwic = {
 
 	// Function to add browser name and version to body class
 	showBrowser: function( b ) {
-		b = (typeof b == 'undefined') ? browser.name.toLowerCase() : b.toLowerCase();
-		$( 'body' ).addClass( b + ' ' + b + parseInt( browser.version ) );
+		b = (typeof b == 'undefined') ? browser.name : b.toLowerCase();
+		if ( ! ( browser.webkit ) )
+			$( 'body' ).addClass( b + ' ' + b + parseInt( browser.version ) );
+		else
+			$( 'body' ).addClass( 'webkit' + ' ' + b + ' ' + b + parseInt( browser.version ) );
 	},
 
 	// Function to set attributes and values to elements
@@ -127,25 +131,10 @@ jQuery( document ).ready( function() {
 	// Performance Fixes
 
 	// Start browser detection
-
-	if (browser.chrome)
-		Webtwic.showBrowser();
-
-	else if (browser.msedge)
-		Webtwic.showBrowser();
-
-	else if (browser.firefox)
-		Webtwic.showBrowser();
-
-	else if (browser.msie)
-		Webtwic.showBrowser();
-
-	else if (browser.safari)
-		Webtwic.showBrowser();
-
-	else if (browser.opera)
-		Webtwic.showBrowser();
-	else /* do nothing */ ;
+	switch ( browser.name ) {
+		default:
+			Webtwic.showBrowser();
+	}
 
 	/*
 		TODO: Rebuild Performance fixes for attributes
@@ -183,7 +172,7 @@ jQuery( document ).ready( function() {
 		'<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M 16.682,19.674c 0.010-0.012, 0.014-0.028, 0.024-0.040l 6.982-7.714c 0.39-0.434, 0.39-1.138,0-1.572 c-0.004-0.004-0.008-0.006-0.012-0.008C 23.496,10.13, 23.244,10, 22.964,10L 8.998,10 c-0.286,0-0.54,0.138-0.722,0.352L 8.272,10.348 c-0.39,0.434-0.39,1.138,0,1.572l 6.998,7.754C 15.66,20.108, 16.292,20.108, 16.682,19.674z"></path></svg>'
 	);
 
-	$( 'a.hamburger' ).click(function( e ) {
+	$( 'a.hamburger' ).on('click', function( e ) {
 		$( this ).toggleClass( 'is_active' );
 
 		e.preventDefault();
@@ -236,13 +225,13 @@ jQuery( document ).ready( function() {
 		.removeClass( 'is_open' );
 	}
 
-	$( '.ui-overlay-search .search-input input' ).focus(function() {
+	$( '.ui-overlay-search .search-input input' ).on('focus', function() {
 		$( '.search-input' ).attr( 'data-focused', 'true' );
 		$( '.search-input input' ).addClass( '_is-focused' );
 		$( '#__expand' ).addClass( 'visible' );
 	});
 
-	$( '.ui-overlay-search .search-input input' ).blur(function() {
+	$( '.ui-overlay-search .search-input input' ).on('blur', function() {
 		$( '.search-input' ).attr( 'data-focused', 'false' );
 		$( '.search-input input' ).removeClass( '_is-focused' );
 		$( '#__expand' ).removeClass( 'visible' );
