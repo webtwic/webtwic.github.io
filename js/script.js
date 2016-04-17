@@ -106,7 +106,7 @@ var WBT = Webtwic,
 
 	 browser_link = ' ' + '<a style="color: #fff; border-bottom: 1px dotted #fff;" href="https://google.com/chrome" target="_blank">browser.</a>' + ' ',
 
-	 notif_text = 'Some features which affect the functionality of webtwic are disabled in your browser. Please try refreshing the page or get a better' +browser_link;
+	 notif_text = 'Some features which are required to render some functions on webtwic are disabled in your browser. Please try refreshing this page or get a better' +browser_link;
 
 
 // Detect when the DOM is ready
@@ -144,8 +144,10 @@ jQuery( document ).ready( function() {
 	*/
 	var M = Modernizr;
 
+	var required_features = M.flexbox || M.inlinesvg || M.svg || M.svgclippaths || M.fontface || M.boxshadow || M.borderradius || M.csstransforms;
+
 	if ( window.Modernizr )
-		if ( !( M.flexbox || M.inlinesvg || M.svg || M.svgclippaths || M.fontface || M.boxshadow || M.borderradius || M.csstransforms ) )
+		if ( !( required_features ) )
 			Webtwic.showNotif();
 		else /* do nothing */ ;
 	 else /* do nothing */ ;
