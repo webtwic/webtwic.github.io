@@ -134,6 +134,7 @@ jQuery( document ).ready( function() {
 	switch ( browser_name ) {
 	   case 'edge':
 	      Webtwic.showBrowser( 'msedge' );
+	      break;
 		default:
 			Webtwic.showBrowser();
 	}
