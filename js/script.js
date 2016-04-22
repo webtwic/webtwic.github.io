@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 17/04/2016
+ * Last Modified: 22/04/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -14,7 +14,7 @@
 var Webtwic = Webtwic || {};
 
 var browser = bowser;
-browser.name = bowser.name.toLowerCase();
+browser_name = bowser.name.toLowerCase();
 
 var test_canvas = document.createElement( 'canvas' );
 var canvascheck = ( test_canvas.getContext ) ? true : false;
@@ -31,7 +31,7 @@ Webtwic = {
 
 	// Function to add browser name and version to body class
 	showBrowser: function( b ) {
-		b = (typeof b == 'undefined') ? browser.name : b.toLowerCase();
+		b = (typeof b == 'undefined') ? browser_name : b.toLowerCase();
 		if ( ! ( browser.webkit ) )
 			$( 'body' ).addClass( b + ' ' + b + parseInt( browser.version ) );
 		else
@@ -131,7 +131,9 @@ jQuery( document ).ready( function() {
 	// Performance Fixes
 
 	// Start browser detection
-	switch ( browser.name ) {
+	switch ( browser_name ) {
+	   case 'edge':
+	      Webtwic.showBrowser( 'msedge' );
 		default:
 			Webtwic.showBrowser();
 	}
