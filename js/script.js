@@ -132,7 +132,7 @@ jQuery( document ).ready( function() {
 
 	// Start browser detection
 	switch ( browser_name ) {
-	   case 'edge':
+	   case 'microsoft edge':
 	      Webtwic.showBrowser( 'msedge' );
 	      break;
 		default:
