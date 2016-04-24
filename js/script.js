@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 22/04/2016
+ * Last Modified: 24/04/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -13,7 +13,6 @@
 
 var Webtwic = Webtwic || {};
 
-var browser = bowser;
 browser_name = bowser.name.toLowerCase();
 
 var test_canvas = document.createElement( 'canvas' );
@@ -32,10 +31,10 @@ Webtwic = {
 	// Function to add browser name and version to body class
 	showBrowser: function( b ) {
 		b = (typeof b == 'undefined') ? browser_name : b.toLowerCase();
-		if ( ! ( browser.webkit ) )
-			$( 'body' ).addClass( b + ' ' + b + parseInt( browser.version ) );
+		if ( ! ( bowser.webkit ) )
+			$( 'body' ).addClass( b + ' ' + b + parseInt( bowser.version ) );
 		else
-			$( 'body' ).addClass( 'webkit' + ' ' + b + ' ' + b + parseInt( browser.version ) );
+			$( 'body' ).addClass( 'webkit' + ' ' + b + ' ' + b + parseInt( bowser.version ) );
 	},
 
 	// Function to set attributes and values to elements
@@ -104,9 +103,9 @@ var WBT = Webtwic,
 
 	 close_button = '<a href="#" class="webtwicons close-button"></a>',
 
-	 browser_link = ' ' + '<a style="color: #fff; border-bottom: 1px dotted #fff;" href="https://google.com/chrome" target="_blank">browser.</a>' + ' ',
+	 browser_link = ' ' + '<a style="color: #fff; border-bottom: 1px dotted #fff;" href="https://google.com/chrome" target="_blank">bowser.</a>' + ' ',
 
-	 notif_text = 'Some features which are required to render some functions on webtwic are disabled in your browser. Please try refreshing this page or get a better' +browser_link;
+	 notif_text = 'Whoa. Your browser currently dosen\'t support some necessary features. Please try refreshing this page or get a better' +browser_link;
 
 
 // Detect when the DOM is ready
