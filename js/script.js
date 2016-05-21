@@ -100,7 +100,7 @@ Webtwic = {
 var WBT = Webtwic,
 	 $$ = Webtwic,
 	 close_button = '<a href="#" class="webtwicons close-button"></a>',
-	 browser_link = ' ' + '<a style="color: #fff; border-bottom: 1px dotted #fff;" href="https://google.com/chrome" target="_blank">bowser.</a>' + ' ',
+	 browser_link = ' ' + '<a style="color: #fff; border-bottom: 1px dotted #fff;" href="https://google.com/chrome" target="_blank">browser.</a>' + ' ',
 	 notif_text = 'Whoa. Your browser currently dosen\'t support some important features. Please try refreshing this page or get a better' +browser_link;
 
 
