@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 24/04/2016
+ * Last Modified: 21/05/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -112,11 +112,10 @@ jQuery( document ).ready( function() {
 		if ( !Modernizr.canvas )
 			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better" +browser_link+ "for an awesome experience." );
 		 else /* do nothing */ ;
-	 else if ( !window.Modernizr )
+	 else
 		if ( canvascheck === false )
 			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better" +browser_link+ "for an awesome experience." );
 		 else /* do nothing */ ;
-	 else /* do nothing */ ;
 
 	// Define Variables
 	var $scroll_top = $( 'a.scroll_top' ),
@@ -148,7 +147,7 @@ jQuery( document ).ready( function() {
 		if ( !( required_features ) )
 			Webtwic.showNotif();
 		else /* do nothing */ ;
-	 else /* do nothing */ ;
+	else /* do nothing */ ;
 
 	// Start Main Page
 
