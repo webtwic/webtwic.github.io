@@ -13,7 +13,7 @@
 
 var Webtwic = Webtwic || {};
 
-browser_name = bowser.name.toLowerCase();
+var browser_name = bowser.name.toLowerCase();
 
 var test_canvas = document.createElement( 'canvas' );
 var canvascheck = ( test_canvas.getContext ) ? true : false;
