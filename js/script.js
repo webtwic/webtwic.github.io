@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 21/05/2016
+ * Last Modified: 25/05/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -141,7 +141,16 @@ jQuery( document ).ready( function() {
 	*/
 	var M = Modernizr;
 
-	var required_features = M.flexbox || M.inlinesvg || M.svg || M.svgclippaths || M.fontface || M.boxshadow || M.borderradius || M.csstransforms;
+	var required_features = [
+		Modernizr.flexbox,
+		Modernizr.inlinesvg,
+		Modernizr.svg,
+		Modernizr.svgclippaths,
+		Modernizr.fontface,
+		Modernizr.boxshadow,
+		Modernizr.borderradius,
+		Modernizr.csstransforms
+	];
 
 	if ( window.Modernizr )
 		if ( !( required_features ) )
