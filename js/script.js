@@ -221,9 +221,7 @@ jQuery( document ).ready( function() {
 	});
 
 	function openUiOverlay() {
-		$( '.ui-overlay-search' )
-		.fadeIn(400)
-		.addClass( 'is_open' );
+		$( '.ui-overlay-search' ).addClass( 'is_open' );
 	}
 
 	function closeUiOverlay() {
