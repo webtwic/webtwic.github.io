@@ -221,13 +221,21 @@ jQuery( document ).ready( function() {
 	});
 
 	function openUiOverlay() {
-		$( '.ui-overlay-search' ).addClass( 'is_open' );
+		if ( $( '.ui-overlay-search' ).hasClass( 'is_closed' ))
+			$( '.ui-overlay-search' )
+			.removeClass( 'is_closed' )
+			.addClass( 'is_open' );
+		else
+			$( '.ui-overlay-search' ).addClass( 'is_open' );
 	}
 
 	function closeUiOverlay() {
-		$( '.ui-overlay-search' )
-		.removeClass( 'is_open' )
-		.addClass( 'is_closed' );
+		if ( $( '.ui-overlay-search' ).hasClass( 'is_open' ) )
+			$( '.ui-overlay-search' )
+			.removeClass( 'is_open' )
+			.addClass( 'is_closed' );
+		else
+			$( '.ui-overlay-search' ).addClass( 'is_closed' )
 	}
 
 	$( '.ui-overlay-search .search-input input' ).on('focus', function() {
