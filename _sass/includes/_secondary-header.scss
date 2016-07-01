@@ -116,6 +116,9 @@
       .ui-overlay-search {
          background: #273340;
          background: rgba(39, 51, 64, .99);
+         @include transition(opacity ease-in-out 400ms);
+         visibility: hidden;
+         @include opacity(0);
          position: fixed;
          top: 0;
          bottom: 0;
@@ -123,6 +126,11 @@
          left: 0;
          display: none;
          z-index: 99999;
+         &.is_open {
+            visibility: visible;
+            @include opacity(1);
+            display: block;
+         }
       }
    }
    .ui-overlay-search {
