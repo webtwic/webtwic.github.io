@@ -249,7 +249,7 @@ jQuery( document ).ready( function() {
 		e.preventDefault();
 	});
 
-	$( document ).keydown(function( e ) {
+	$( document ).on('keydown', function( e ) {
 		if ( e.keyCode == 27 )
 			closeUiOverlay();
 		else /* do nothing */ ;
