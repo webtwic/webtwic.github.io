@@ -225,9 +225,7 @@ jQuery( document ).ready( function() {
 	}
 
 	function closeUiOverlay() {
-		$( '.ui-overlay-search' )
-		.fadeOut(400)
-		.removeClass( 'is_open' );
+		$( '.ui-overlay-search' ).removeClass( 'is_open' );
 	}
 
 	$( '.ui-overlay-search .search-input input' ).on('focus', function() {
