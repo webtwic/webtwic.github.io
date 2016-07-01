@@ -124,13 +124,15 @@
          bottom: 0;
          right: 0;
          left: 0;
-         // display: none;
          z-index: 99999;
          &.is_open {
-            @include transition(opacity ease-in-out 400ms);
             visibility: visible;
             @include opacity(1);
-            // display: block;
+         }
+         &.is_closed {
+            @include transition(opacity ease-in-out 400ms);
+            visibility: hidden;
+            @include opacity(0);
          }
       }
    }
