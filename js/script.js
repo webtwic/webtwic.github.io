@@ -205,12 +205,12 @@ jQuery( document ).ready( function() {
 	// Functions for search-icon and ui-overlay-search
 
 	$( '.header-follow-search .search-wrap' ).on( 'click', function() {
-		openUiOverlay();
+		openUIOverlay();
 	});
 
 	$( '.header-follow-search .close-icon' ).on( 'click', function( e ) {
 		e.preventDefault();
-		closeUiOverlay();
+		closeUIOverlay();
 	});
 
 	$( '.header-follow-search .close-icon' ).hover(
@@ -220,7 +220,7 @@ jQuery( document ).ready( function() {
 			$( this ).removeClass( 'spin' );
 	});
 
-	function openUiOverlay() {
+	function openUIOverlay() {
 		if ( $( '.ui-overlay-search' ).hasClass( 'is_closed' ))
 			$( '.ui-overlay-search' )
 			.removeClass( 'is_closed' )
@@ -229,7 +229,7 @@ jQuery( document ).ready( function() {
 			$( '.ui-overlay-search' ).addClass( 'is_open' );
 	}
 
-	function closeUiOverlay() {
+	function closeUIOverlay() {
 		if ( $( '.ui-overlay-search' ).hasClass( 'is_open' ) )
 			$( '.ui-overlay-search' )
 			.removeClass( 'is_open' )
@@ -256,7 +256,7 @@ jQuery( document ).ready( function() {
 
 	$( document ).on('keydown', function( e ) {
 		if ( e.keyCode == 27 )
-			closeUiOverlay();
+			closeUIOverlay();
 		else /* do nothing */ ;
  	});
 
