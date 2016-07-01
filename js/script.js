@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 25/05/2016
+ * Last Modified: 01/07/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -187,7 +187,7 @@ jQuery( document ).ready( function() {
 	});
 	$( '.mobile-header .mobile-nav' ).hide();
 
-	$( window ).scroll(function() {
+	$( window ).on('scroll', function() {
 		( $( this ).scrollTop() > height ) ? $scroll_top.addClass( 'topVisible' ): $scroll_top.removeClass( 'topVisible' );
 	});
 
