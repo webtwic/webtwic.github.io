@@ -194,12 +194,12 @@ jQuery( document ).ready( function() {
 
 	$( '.article .article-social a' ).hover(function() {
 		$( 'span', this )
-		.find('.tooltip')
-		.addClass('visible');
+		.find( '.tooltip' )
+		.addClass( 'visible' );
 	}, function() {
 		$( 'span', this )
-		.find('.tooltip')
-		.removeClass('visible');
+		.find( '.tooltip' )
+		.removeClass( 'visible' );
 	});
 
 	// Functions for search-icon and ui-overlay-search
@@ -225,7 +225,9 @@ jQuery( document ).ready( function() {
 	}
 
 	function closeUiOverlay() {
-		$( '.ui-overlay-search' ).removeClass( 'is_open' );
+		$( '.ui-overlay-search' )
+		.removeClass( 'is_open' )
+		.addClass( 'is_closed' );
 	}
 
 	$( '.ui-overlay-search .search-input input' ).on('focus', function() {
