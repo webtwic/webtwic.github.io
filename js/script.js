@@ -139,7 +139,6 @@ jQuery( document ).ready( function() {
 		Also, check StackOverflow.
 		See Issue #12
 	*/
-	var M = Modernizr;
 
 	var required_features = [
 		Modernizr.flexbox,
