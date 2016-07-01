@@ -114,7 +114,7 @@
          fill: #777;
       }
       .ui-overlay-search {
-         @include transition(opacity, visibility ease-in-out 400ms);
+         @include transition(opacity ease-in-out 400ms, visibility ease-in-out 400ms);
          background: #273340;
          background: rgba(39, 51, 64, .99);
          visibility: hidden;
@@ -127,7 +127,7 @@
          display: none;
          z-index: 99999;
          &.is_open {
-            @include transition(opacity, visibility ease-in-out 400ms);
+            @include transition(opacity ease-in-out 400ms, visibility ease-in-out 400ms);
             visibility: visible;
             @include opacity(1);
             display: block;
