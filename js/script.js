@@ -194,12 +194,12 @@ jQuery( document ).ready( function() {
 
 	$( '.article .article-social a' ).hover(function() {
 		$( 'span', this )
-		.eq(1)
-		.fadeIn(400);
+		.find('.tooltip')
+		.addClass('visible');
 	}, function() {
 		$( 'span', this )
-		.eq(1)
-		.fadeOut(250);
+		.find('.tooltip')
+		.removeClass('visible');
 	});
 
 	// Functions for search-icon and ui-overlay-search
