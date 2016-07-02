@@ -18,7 +18,7 @@ var browser_name = bowser.name.toLowerCase();
 var test_canvas = document.createElement( 'canvas' );
 var canvascheck = ( test_canvas.getContext ) ? true : false;
 
-Webtwic.prototype = {
+Webtwic = {
 	// Basic Information about Webtwic
 	name: 'Webtwic',
 	description: 'A community focused on code tweaks, articles and tutorials for newbie and professional developers.',
