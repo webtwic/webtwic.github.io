@@ -29,7 +29,7 @@ Webtwic = {
 	// Start main functions for the object
 
 	// Function to add browser name and version to body class
-	showBrowser: function( b ) {
+	printBrowser: function( b ) {
 		b = (typeof b == 'undefined') ? browser : b.toLowerCase();
 		if ( ! ( bowser.webkit ) )
 			$( 'body' ).addClass( b + ' ' + b + parseInt( bowser.version ) );
