@@ -127,10 +127,10 @@ jQuery( document ).ready( function() {
 	// Start browser detection
 	switch ( browser ) {
 	   case 'microsoft edge':
-	      Webtwic.showBrowser( 'msedge' );
+	      Webtwic.printBrowser( 'msedge' );
 	      break;
 		default:
-			Webtwic.showBrowser();
+			Webtwic.printBrowser();
 	}
 
 	/*
