@@ -195,11 +195,11 @@ jQuery( document ).ready( function() {
 	$( '.article .article-social a' ).hover(function() {
 		$( 'span', this )
 		.find( '.tooltip' )
-		.addClass( 'visible' );
+		.fadeIn(400);
 	}, function() {
 		$( 'span', this )
 		.find( '.tooltip' )
-		.removeClass( 'visible' );
+		.fadeOut(250);
 	});
 
 	// Functions for search-icon and ui-overlay-search
