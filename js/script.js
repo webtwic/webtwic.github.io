@@ -221,21 +221,15 @@ jQuery( document ).ready( function() {
 	});
 
 	function openUIOverlay() {
-		if ( $( '.ui-overlay-search' ).hasClass( 'is_closed' ))
-			$( '.ui-overlay-search' )
-			.removeClass( 'is_closed' )
-			.addClass( 'is_open' );
-		else
-			$( '.ui-overlay-search' ).addClass( 'is_open' );
+		$( '.ui-overlay-search' )
+		.fadeIn(400)
+		.addClass( 'is_open' );
 	}
 
 	function closeUIOverlay() {
-		if ( $( '.ui-overlay-search' ).hasClass( 'is_open' ) )
-			$( '.ui-overlay-search' )
-			.removeClass( 'is_open' )
-			.addClass( 'is_closed' );
-		else
-			$( '.ui-overlay-search' ).addClass( 'is_closed' )
+		$( '.ui-overlay-search' )
+		.fadeOut(400)
+		.removeClass( 'is_open' );
 	}
 
 	$( '.ui-overlay-search .search-input input' ).on('focus', function() {
