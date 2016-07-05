@@ -30,7 +30,7 @@ Webtwic = {
 
 	// Function to add browser name and version to body class
 	showBrowser: function( b ) {
-		b = (typeof b == 'undefined') ? browser_name : b.toLowerCase();
+		b = (typeof b == 'undefined') ? browser : b.toLowerCase();
 		if ( ! ( bowser.webkit ) )
 			$( 'body' ).addClass( b + ' ' + b + parseInt( bowser.version ) );
 		else
@@ -125,7 +125,7 @@ jQuery( document ).ready( function() {
 	// Performance Fixes
 
 	// Start browser detection
-	switch ( browser_name ) {
+	switch ( browser ) {
 	   case 'microsoft edge':
 	      Webtwic.showBrowser( 'msedge' );
 	      break;
