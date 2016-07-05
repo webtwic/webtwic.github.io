@@ -117,14 +117,18 @@
          @include transition(opacity ease-in-out 400ms);
          background: #273340;
          background: rgba(39, 51, 64, .99);
+<<<<<<< HEAD
          visibility: hidden;
          @include opacity(0);
+=======
+>>>>>>> parent of a4e9884... Use css transition, opacity and visibility for ui-overlay-search
          position: fixed;
          top: 0;
          bottom: 0;
          right: 0;
          left: 0;
          z-index: 99999;
+<<<<<<< HEAD
          &.is_open {
             visibility: visible;
             @include opacity(1);
@@ -134,6 +138,8 @@
             visibility: hidden;
             @include opacity(0);
          }
+=======
+>>>>>>> parent of a4e9884... Use css transition, opacity and visibility for ui-overlay-search
       }
    }
    .ui-overlay-search {
