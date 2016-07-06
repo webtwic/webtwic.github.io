@@ -193,13 +193,9 @@ jQuery( document ).ready( function() {
 	// Styles for homepage article-social
 
 	$( '.article .article-social a' ).hover(function() {
-		$( 'span', this )
-		.find( '.tooltip' )
-		.fadeIn(400);
+		$( '.tooltip', this ).fadeIn(400);
 	}, function() {
-		$( 'span', this )
-		.find( '.tooltip' )
-		.fadeOut(250);
+		$( '.tooltip', this ).fadeOut(250);
 	});
 
 	// Functions for search-icon and ui-overlay-search
