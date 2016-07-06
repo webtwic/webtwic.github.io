@@ -360,7 +360,8 @@ body.single-post .entry-wrap .main-page {
 		height: 250px;
 		color: #4E697D;
 		margin-bottom: 10 * $two;
-		.author-info-inner {
+		.author-profile {
+			@extend .inner;
 			a {
 				position: relative;
 			}
