@@ -3,7 +3,7 @@
 
  * Date Created: 20/08/2015
 
- * Last Modified: 06/07/2016
+ * Last Modified: 11/07/2016
 
  * Twitter: @whizkydee, @webtwic
 
@@ -11,12 +11,12 @@
 
 */
 
-var Webtwic = Webtwic || {};
+let Webtwic = Webtwic || {};
 
-var browser = bowser.name.toLowerCase();
+const browser = bowser.name.toLowerCase();
 
-var test_canvas = document.createElement( 'canvas' );
-var canvascheck = ( test_canvas.getContext ) ? true : false;
+const test_canvas = document.createElement( 'canvas' );
+const canvascheck = ( test_canvas.getContext ) ? true : false;
 
 Webtwic = {
 	// Basic Information about Webtwic
@@ -29,21 +29,21 @@ Webtwic = {
 	// Start main functions for the object
 
 	// Function to add browser name and version to body class
-	printBrowser: function( b ) {
+	printBrowser(b) {
 		b = (typeof b == 'undefined') ? browser : b.toLowerCase();
 		if ( ! ( bowser.webkit ) )
-			$( 'body' ).addClass( b + ' ' + b + parseInt( bowser.version ) );
+			$( 'body' ).addClass( `${b} ${b}${parseInt( bowser.version )}` );
 		else
-			$( 'body' ).addClass( 'webkit' + ' ' + b + ' ' + b + parseInt( bowser.version ) );
+			$( 'body' ).addClass( `webkit ${b} ${b}${parseInt( bowser.version )}` );
 	},
 
 	// Function to set attributes and values to elements
-	setAttr: function( elem, name, val ) {
+	setAttr(elem, name, val) {
 		$( elem, this ).attr( name, val );
 	},
 
 	// Function to push down .site-content
-	adjustSiteContent: function() {
+	adjustSiteContent() {
 		if ( $( 'body' ).hasClass( 'default-body' ) ) {
 			$( '.top-stripe' ).addClass( 'adjustedMargin' );
 			$( '#header .logo' ).addClass( 'adjustedTop' );
@@ -56,7 +56,7 @@ Webtwic = {
 	},
 
 	// Function to push up .site-content to default state
-	undoSiteAdjust: function() {
+	undoSiteAdjust() {
 		if ( $( 'body' ).hasClass( 'default-body' ) ) {
 			$( '.top-stripe' ).removeClass( 'adjustedMargin' );
 			$( '#header .logo' ).removeClass( 'adjustedTop' );
@@ -68,59 +68,56 @@ Webtwic = {
 	},
 
 	// Function to show Notifications before header
-	showNotif: function( text ) {
-		text = ( typeof text == 'undefined' ) ? notif_text : text;
-		Webtwic.adjustSiteContent();
-		$( 'body' ).prepend(
-			'<div class="notif_vis" id="notifBanner">'+text+''+close_button+'</div>'
+	showNotif(text=notif_text) {
+        Webtwic.adjustSiteContent();
+        $( 'body' ).prepend(
+			`<div class="notif_vis" id="notifBanner">${text}${close_button}</div>`
 		);
 
-		$( '.close-button' ).on( 'click', function( e ) {
+        $( '.close-button' ).on( 'click', e => {
 			e.preventDefault();
 			Webtwic.undoReset();
 		});
-	},
+    },
 
 	// Function to hide Notifications
-	hideNotif: function() {
+	hideNotif() {
 		$( '#notifBanner' ).removeClass( 'notif_vis' );
 	},
 
-	resetSite: function() {
+	resetSite() {
 		Webtwic.showNotif();
 		Webtwic.adjustSiteContent();
 	},
 
-	undoReset: function() {
+	undoReset() {
 		Webtwic.hideNotif();
 		Webtwic.undoSiteAdjust();
 	},
 };
 
-var WBT = Webtwic,
-	 $$ = Webtwic,
-	 close_button = '<a href="#" class="webtwicons close-button"></a>',
-	 browser_link = ' ' + '<a style="color: #fff; border-bottom: 1px dotted #fff;" href="https://google.com/chrome" target="_blank">browser.</a>' + ' ',
-	 notif_text = 'Whoa. Your browser currently dosen\'t support some important features. Please try refreshing this page or get a better' +browser_link;
+const WBT = Webtwic;
+const $$ = Webtwic;
+var close_button = '<a href="#" class="webtwicons close-button"></a>';
+const browser_link = ' ' + '<a style="color: #fff; border-bottom: 1px dotted #fff;" href="https://google.com/chrome" target="_blank">browser.</a>' + ' ';
+var notif_text = `Whoa. Your browser currently dosen't support some important features. Please try refreshing this page or get a better${browser_link}`;
 
 
 // Detect when the DOM is ready
 
-jQuery( document ).ready( function() {
+jQuery( document ).ready( () => {
 	// Test for HTML5 support
 	if ( window.Modernizr )
 		if ( !Modernizr.canvas )
-			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better" +browser_link+ "for an awesome experience." );
+			Webtwic.showNotif ( `Oops. Looks like your browser doesn't support HTML5. Please get a better${browser_link}for an awesome experience.` );
 		 else /* do nothing */ ;
 	 else
 		if ( canvascheck === false )
-			Webtwic.showNotif ( "Oops. Looks like your browser doesn't support HTML5. Please get a better" +browser_link+ "for an awesome experience." );
+			Webtwic.showNotif ( `Oops. Looks like your browser doesn't support HTML5. Please get a better${browser_link}for an awesome experience.` );
 		 else /* do nothing */ ;
 
 	// Define Variables
-	var $scroll_top = $( 'a.scroll_top' ),
-	is_toggle_active = $( '.hamburger' ).hasClass( 'is_active' ),
-	height = 200;
+	const $scroll_top = $( 'a.scroll_top' ), is_toggle_active = $( '.hamburger' ).hasClass( 'is_active' ), height = 200;
 
 	// Performance Fixes
 
@@ -140,7 +137,7 @@ jQuery( document ).ready( function() {
 		See Issue #12
 	*/
 
-	var required_features = [
+	const required_features = [
 		Modernizr.flexbox,
 		Modernizr.inlinesvg,
 		Modernizr.svg,
@@ -164,11 +161,11 @@ jQuery( document ).ready( function() {
 	.removeClass( 'dropNavFallback' );
 
 	if ( $( window ).width() > 768 ) {
-		$( 'nav li.dropdown' ).hover(function() {
+		$( 'nav li.dropdown' ).hover(() => {
 			$( 'ul.drop-nav', this )
 			.stop()
 			.slideDown( 'fast' );
-		}, function() {
+		}, () => {
 			$( 'ul.drop-nav', this )
 			.stop()
 			.slideUp( 'fast' );
@@ -179,40 +176,40 @@ jQuery( document ).ready( function() {
 		'<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M 16.682,19.674c 0.010-0.012, 0.014-0.028, 0.024-0.040l 6.982-7.714c 0.39-0.434, 0.39-1.138,0-1.572 c-0.004-0.004-0.008-0.006-0.012-0.008C 23.496,10.13, 23.244,10, 22.964,10L 8.998,10 c-0.286,0-0.54,0.138-0.722,0.352L 8.272,10.348 c-0.39,0.434-0.39,1.138,0,1.572l 6.998,7.754C 15.66,20.108, 16.292,20.108, 16.682,19.674z"></path></svg>'
 	);
 
-	$( 'a.hamburger' ).on('click', function( e ) {
+	$( 'a.hamburger' ).on('click', e () => {
 		$( this ).toggleClass( 'is_active' );
 
 		e.preventDefault();
 	});
 	$( '.mobile-header .mobile-nav' ).hide();
 
-	$( window ).on('scroll', function() {
+	$( window ).on('scroll', () => {
 		( $( this ).scrollTop() > height ) ? $scroll_top.addClass( 'topVisible' ): $scroll_top.removeClass( 'topVisible' );
 	});
 
 	// Styles for homepage article-social
 
-	$( '.article .article-social a' ).hover(function() {
+	$( '.article .article-social a' ).hover(() => {
 		$( '.tooltip', this ).fadeIn(400);
-	}, function() {
+	}, () => {
 		$( '.tooltip', this ).fadeOut(250);
 	});
 
 	// Functions for search-icon and ui-overlay-search
 
-	$( '.header-follow-search .search-wrap' ).on( 'click', function() {
+	$( '.header-follow-search .search-wrap' ).on( 'click', () => {
 		openUIOverlay();
 	});
 
-	$( '.header-follow-search .close-icon' ).on( 'click', function( e ) {
+	$( '.header-follow-search .close-icon' ).on( 'click', e => {
 		e.preventDefault();
 		closeUIOverlay();
 	});
 
 	$( '.header-follow-search .close-icon' ).hover(
-		function() {
+		() => {
 			$( this ).addClass( 'spin' );
-		}, function() {
+		}, () => {
 			$( this ).removeClass( 'spin' );
 	});
 
@@ -228,23 +225,23 @@ jQuery( document ).ready( function() {
 		.removeClass( 'is_open' );
 	}
 
-	$( '.ui-overlay-search .search-input input' ).on('focus', function() {
+	$( '.ui-overlay-search .search-input input' ).on('focus', () => {
 		$( '.search-input' ).attr( 'data-focused', 'true' );
 		$( '.search-input input' ).addClass( '_is-focused' );
 		$( '#__expand' ).addClass( 'visible' );
 	});
 
-	$( '.ui-overlay-search .search-input input' ).on('blur', function() {
+	$( '.ui-overlay-search .search-input input' ).on('blur', () => {
 		$( '.search-input' ).attr( 'data-focused', 'false' );
 		$( '.search-input input' ).removeClass( '_is-focused' );
 		$( '#__expand' ).removeClass( 'visible' );
 	});
 
-	$( '.post-meta .post-meta-inner .cta-btns a.is_inactive' ).on( 'click', function( e ) {
+	$( '.post-meta .post-meta-inner .cta-btns a.is_inactive' ).on( 'click', e => {
 		e.preventDefault();
 	});
 
-	$( document ).on('keydown', function( e ) {
+	$( document ).on('keydown', e => {
 		if ( e.keyCode == 27 )
 			closeUIOverlay();
 		else /* do nothing */ ;
@@ -254,7 +251,7 @@ jQuery( document ).ready( function() {
 
 	// Functions for more-posts button click
 
-	var loadMoreBtn = '.secondary-category-section .category-posts-column [data-clicked="false"]';
+	const loadMoreBtn = '.secondary-category-section .category-posts-column [data-clicked="false"]';
 
 	function addLoader() {
 		$( loadMoreBtn )
@@ -262,7 +259,7 @@ jQuery( document ).ready( function() {
 		.append( '<span class="loader"></span>' );
 	}
 
-	$( loadMoreBtn ).on( 'click', function( e ) {
+	$( loadMoreBtn ).on( 'click', e () => {
 		$( this ).css({
 			'background': '#50ABF1',
 			'color': '#fff'
@@ -271,7 +268,7 @@ jQuery( document ).ready( function() {
 		e.preventDefault();
 	});
 
-	$scroll_top.on( 'click', function( e ) {
+	$scroll_top.on( 'click', e => {
 		$( 'body, html' ).animate({
 			scrollTop: 0
 		}, 1000);
