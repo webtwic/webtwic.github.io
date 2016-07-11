@@ -259,7 +259,7 @@ jQuery( document ).ready( () => {
 		.append( '<span class="loader"></span>' );
 	}
 
-	$( loadMoreBtn ).on( 'click', e () => {
+	$( loadMoreBtn ).on( 'click', e => {
 		$( this ).css({
 			'background': '#50ABF1',
 			'color': '#fff'
