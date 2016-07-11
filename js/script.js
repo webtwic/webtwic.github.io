@@ -11,7 +11,7 @@
 
 */
 
-let Webtwic = Webtwic || {};
+var Webtwic = Webtwic || {};
 
 const browser = bowser.name.toLowerCase();
 
