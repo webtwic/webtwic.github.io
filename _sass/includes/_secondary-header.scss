@@ -210,6 +210,14 @@
             text-align: left;
             font-size: 1.05em;
             color: #6D8299;
+            > .key {
+               border-bottom: 2px solid #999;
+               background: #fefefe;
+               padding: .085em 5px;
+               position: relative;
+               @extend .radius;
+               color: #5c7188;
+            }
          }
       }
    }
