@@ -211,11 +211,12 @@
             font-size: 1.05em;
             color: #6D8299;
             > .key {
-               border-bottom: .12em solid #999;
+               border-bottom: .15em solid #c7c7c7;
                @include border-radius(2px);
                background: #fefefe;
                padding: .01em 5px;
                position: relative;
+               font-size: .93em;
                color: #5c7188;
             }
          }
