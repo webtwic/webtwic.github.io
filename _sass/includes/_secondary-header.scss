@@ -213,6 +213,7 @@
             > .key {
                border-bottom: .15em solid #c7c7c7;
                @include border-radius(2px);
+               letter-spacing: .02em;
                background: #fefefe;
                padding: .01em 5px;
                position: relative;
