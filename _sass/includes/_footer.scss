@@ -74,6 +74,9 @@
          }
          &:nth-child(2) {
             border-color: $twitter;
+            &:hover {
+               background: $twitter;
+            }
          }
          &:nth-child(3) {
             border-color: $google;
@@ -83,9 +86,6 @@
          }
          &:last-child {
             margin-right: 0;
-         }
-         &:nth-child(2):hover {
-            background: $twitter;
          }
          &:nth-child(3):hover {
             background: $google;
