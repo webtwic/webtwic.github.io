@@ -68,6 +68,9 @@
          }
          &:nth-child(1) {
             border-color: $facebook;
+            &:hover {
+               background: $facebook;
+            }
          }
          &:nth-child(2) {
             border-color: $twitter;
@@ -80,9 +83,6 @@
          }
          &:last-child {
             margin-right: 0;
-         }
-         &:nth-child(1):hover {
-            background: $facebook;
          }
          &:nth-child(2):hover {
             background: $twitter;
