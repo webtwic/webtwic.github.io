@@ -76,22 +76,22 @@
          .webtwicons {
             color: $white;
             margin-left: 2px;
-         }
-         .github-icon {
-            margin-right: 1px;
-         }
-         .twitter-icon {
-            font-size: $full;
-            margin-right: -1px;
-         }
-         .google-plus-icon {
-            font-size: $full;
-            margin-right: -6px;
-            margin-left: 0px;
-         }
-         .facebook-icon {
-            margin-right: 2px;
-            margin-left: 3px;
+            &.github-icon {
+               margin-right: 1px;
+            }
+            &.twitter-icon {
+               font-size: $full;
+               margin-right: -1px;
+            }
+            &.google-plus-icon {
+               font-size: $full;
+               margin-right: -6px;
+               margin-left: 0px;
+            }
+            &.facebook-icon {
+               margin-right: 2px;
+               margin-left: 3px;
+            }
          }
       }
    }
