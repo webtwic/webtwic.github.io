@@ -12,16 +12,17 @@
     \_____/\___/  \_______/|_______/    \___/   \_____/\___/ |__/ \_______/
 
 
-                            $$\        $$\                   $$\
-                            $$ |       $$ |                  \__|
-    $$\  $$\  $$\  $$$$$$\  $$$$$$$\ $$$$$$\   $$\  $$\  $$\ $$\  $$$$$$$\
-    $$ | $$ | $$ |$$  __$$\ $$  __$$\\_$$  _|  $$ | $$ | $$ |$$ |$$  _____|
-    $$ | $$ | $$ |$$$$$$$$ |$$ |  $$ | $$ |    $$ | $$ | $$ |$$ |$$ /
-    $$ | $$ | $$ |$$   ____|$$ |  $$ | $$ |$$\ $$ | $$ | $$ |$$ |$$ |
-    \$$$$$\$$$$  |\$$$$$$$\ $$$$$$$  | \$$$$  |\$$$$$\$$$$  |$$ |\$$$$$$$\
-     \_____\____/  \_______|\_______/   \____/  \_____\____/ \__| \_______|
+                           $$\        $$\                   $$\
+                           $$ |       $$ |                  \__|
+   $$\  $$\  $$\  $$$$$$\  $$$$$$$\ $$$$$$\   $$\  $$\  $$\ $$\  $$$$$$$\
+   $$ | $$ | $$ |$$  __$$\ $$  __$$\\_$$  _|  $$ | $$ | $$ |$$ |$$  _____|
+   $$ | $$ | $$ |$$$$$$$$ |$$ |  $$ | $$ |    $$ | $$ | $$ |$$ |$$ /
+   $$ | $$ | $$ |$$   ____|$$ |  $$ | $$ |$$\ $$ | $$ | $$ |$$ |$$ |
+   \$$$$$\$$$$  |\$$$$$$$\ $$$$$$$  | \$$$$  |\$$$$$\$$$$  |$$ |\$$$$$$$\
+    \_____\____/  \_______|\_______/   \____/  \_____\____/ \__| \_______|
 
 -->
+
    <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
    <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
    <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
@@ -29,7 +30,7 @@
 
 {% include head.html %}
 
-  <body class="main default-body {% if page.body-class %}{{ page.body-class }}{% endif %}" id="responsive">
+  <body class="main secondary-body {% if page.body-class %}{{ page.body-class }}{% endif %}" id="responsive">
      <noscript>
         <div class="page-no-js">
            <p class="noscript-error-description">
@@ -38,31 +39,29 @@
              or get a better <a class="noscript-link" href="https://google.com/chrome" target="_blank">browser.</a>
           </p>
 
-          <style type="text/css">
+          <style>
           noscript {width: auto; z-index: 9999 !important; position: fixed !important; top: 0; right: 0; left: 0;}
           .page-no-js {background: #FF5F5F; padding: 10px; width: auto; height: 45px; display: block; margin: 0px auto; z-index: 9999 !important; color: #fff; font-weight: bold; text-align: center;}
           p.noscript-error-description {display: block; margin: 0px auto;}
           a.noscript-link {color: #fff; border-bottom: 1px dotted #fff;}
-          .main .top-stripe {margin-top: 45px !important;}
-          .main #header {padding-bottom: 316px !important;}
-          .main #header .logo {top: 45px !important;}
-          .main .main-menu {margin-top: 45px !important;}
+          .secondary-body .site-content {margin-top: 95px !important;}
+          .secondary-body .secondary-header {margin-top: 45px !important;}
           </style>
 
        </div>
     </noscript>
 
-    {% include header.html %}
+    {% include secondary-header.html %}
 
-    <main class="site-content default-site-content" id="content">
+    <main class="site-content seconadry-site-content" id="content">
+
       <div class="site-wrapper inner">
 
          {{ content }}
 
       </div>
-    </main>
 
-{% include pagination.html %}
+    </main>
 
     {% include footer.html %}
 
