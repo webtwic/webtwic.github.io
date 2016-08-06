@@ -18,9 +18,9 @@ body.home {
 		}
 	}
 	.featured-posts-column {
-		margin: 0 5.1% 0 -30px;
-		width: 60.8%;
+		margin: 0 5.1% 0 -50px;
 		@extend .left;
+		width: 61.8%;
 	}
 }
 
@@ -31,13 +31,13 @@ body.home {
 	margin: 0 0 25px 0;
 	position: relative;
 	background: $white;
-	min-height: 407px;
-	max-height: 439px;
+	min-height: 439px;
+	max-height: 460px;
 	@extend .radius;
 	width: $full;
 	z-index: 50;
 	.inner {
-		padding: 50px 50px 93px 54px;
+		padding: 50px 48px 93px 52px;
 	}
 	&:first-child {
 		margin-top: 25px;
@@ -52,7 +52,7 @@ body.home {
 		letter-spacing: 10px;
 		padding-left: 1.9em;
 		font-weight: 400;
-		font-size: .9em;
+		font-size: 1em;
 		cursor: default;
 		display: block;
 		color: #777;
@@ -85,10 +85,11 @@ body.home {
 	.article-excerpt p {
 		font-family: "Raleway", $basefont;
 		margin: 10px 0 10px 15px;
+		letter-spacing: .02em;
+		font-size: .9689em;
 		color: $text-color;
-		line-height: 25px;
+		line-height: 27px;
 		max-height: 125px;
-		font-size: .95em;
 		font-weight: 300;
 	}
 	.read-article {
@@ -165,16 +166,17 @@ body.home {
 				color: $pinterest;
 			}
 			.tooltip {
-				@include border-radius(1px);
-				padding: .1px 6px;
-				position: absolute;
 				@include transform(translate(-50%, -50%));
-				text-align: center;
+				@include border-radius(1px);
 				background: $basecolor;
+				position: absolute;
+				text-align: center;
+				padding: .1px 6px;
 				font-size: .5em;
+				color: $white;
+				display: none;
 				left: 32%;
 				top: -60%;
-				color: $white;
 				&:before {
 					content: "\f0d7";
 					position: absolute;
@@ -184,14 +186,13 @@ body.home {
 					text-align: center;
 					font-size: 1.125em;
 				}
-				display: none;
 			}
 		}
 	}
 }
 
 .home #sidebar-column {
-	width: 28.295%;
+	width: 29%;
 }
 #tech-news-wrap {
 	padding: 10px 10px 0 10px;
