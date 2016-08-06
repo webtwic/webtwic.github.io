@@ -1,11 +1,7 @@
 /*
-
-Start category-page.scss
-
-* Date Created: 15/07/2015
-
-* Last Modified: 06/08/2016
-
+	* Start category-page.scss
+	* Date Created: 15/07/2015
+	* Last Modified: 06/08/2016
 */
 
 body.category-page {
@@ -16,7 +12,7 @@ body.category-page {
 		border-color: rgba(0, 0, 0, .08) rgba(0, 0, 0, .08);
 	}
 	.site-content {
-		margin: 110px auto 0 auto;
+		margin: 150px auto 0 auto;
 	}
 	.posts-column {
 		margin-right: 2.5%;
@@ -27,9 +23,9 @@ body.category-page {
 	}
 }
 .entryHeader {
-	margin: -10px auto 30px auto;
+	margin: -10px auto 50px auto;
 	text-align: center;
-	font-size: 1.8em;
+	font-size: 1.9em;
 	display: block;
 	color: #555;
 	span {
