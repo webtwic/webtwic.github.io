@@ -147,6 +147,9 @@ body {
 				@include transition(margin-left .05s ease);
 				vertical-align: middle;
 				margin: -4px 0 0 -5px;
+				fill: $white;
+				height: 18px;
+				width: 18px;
 			}
 			&:hover {
 				background: #4B4F50;
