@@ -4,7 +4,7 @@ Start category-page.scss
 
 * Date Created: 15/07/2015
 
-* Last Modified: 26/02/2016
+* Last Modified: 06/08/2016
 
 */
 
@@ -16,22 +16,22 @@ body.category-page {
 		border-color: rgba(0, 0, 0, .08) rgba(0, 0, 0, .08);
 	}
 	.site-content {
-		margin: auto auto 0 auto;
+		margin: 110px auto 0 auto;
 	}
 	.posts-column {
-		width: 70.8%;
-		height: 3303px;
 		margin-right: 2.5%;
 		@extend .radius;
+		height: 3303px;
 		@extend .left;
+		width: 70.8%;
 	}
 }
 .entryHeader {
-	margin: -10px auto 20px auto;
-	color: #555;
-	display: block;
-	font-size: 1.8em;
+	margin: -10px auto 30px auto;
 	text-align: center;
+	font-size: 1.8em;
+	display: block;
+	color: #555;
 	span {
 		color: #BEBEBE;
 	}
