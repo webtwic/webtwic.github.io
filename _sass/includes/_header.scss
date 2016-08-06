@@ -115,13 +115,13 @@
          }
       }
       svg {
-         fill: $white;
          position: absolute;
-         top: 2.7em;
          cursor: pointer;
-         left: 4.155em;
-         width: 20px;
-         height: 20px;
+         left: 1.92em;
+         fill: $white;
+         height: 41px;
+         width: 30px;
+         top: 3.9em;
       }
    }
    .dropdown a {
@@ -173,7 +173,7 @@
          }
       }
    }
-   ul {
+   ul.nav-ul {
       padding-right: 15px;
       line-height: 30px;
       height: $full;
@@ -195,10 +195,6 @@
          a {
             height: $full;
          }
-      }
-      .active-item svg {
-         left: 2.5em;
-         top: 3.5em;
       }
    }
    .main nav.navigation {
