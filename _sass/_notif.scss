@@ -1,20 +1,19 @@
 /* Notification banner and Fallback for certain css features -- See script.js */
 
 #notifBanner {
-	background: #FF5F5F;
-	text-align: center;
-	font-weight: bold;
-	margin: 0px auto;
-	z-index: 9999999;
-	position: fixed;
 	display: none;
+	background: #FF5F5F;
 	padding: 10px;
+	height: 45px;
+	margin: 0px auto;
 	z-index: 9999;
 	color: $white;
-	height: 45px;
+	font-weight: bold;
+	text-align: center;
+	position: fixed;
+	top: 0;
 	right: 0;
 	left: 0;
-	top: 0;
 	.close-button {
 		color: $white;
 		float: right;
