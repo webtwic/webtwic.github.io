@@ -150,19 +150,19 @@ body.home {
 				margin-right: 0;
 			}
 			&:nth-of-type(1):hover > .webtwicons {
-				color: #3B599A;
+				color: $facebook;
 			}
 			&:nth-of-type(2):hover > .webtwicons {
-				color: #50ABF1;
+				color: $twitter;
 			}
 			&:nth-of-type(3):hover > .webtwicons {
-				color: #DC4E41;
+				color: $google;
 			}
 			&:nth-of-type(4):hover > .webtwicons {
-				color: #35465c;
+				color: $tumblr;
 			}
 			&:nth-of-type(5):hover > .webtwicons {
-				color: #BD1E23;
+				color: $pinterest;
 			}
 			.tooltip {
 				@include border-radius(1px);
