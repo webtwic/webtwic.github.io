@@ -1,11 +1,7 @@
 /*
-
-Start Home.scss
-
-* Date Created: 01/03/2015
-
-* Last Modified: 28/02/2016
-
+  * Start Home.scss
+  * Date Created: 01/03/2015
+  * Last Modified: 06/08/2016
 */
 
 body.home {
@@ -14,9 +10,9 @@ body.home {
 		padding-bottom: 275px;
 	}
 	.site-content {
-		margin: -100px auto 0 auto;
-		width: 94%;
+		margin: 100px auto 0 auto;
 		max-width: 1418px;
+		width: 94%;
 	}
 	.featured-posts-column {
 		width: 44.93%;
@@ -28,14 +24,15 @@ body.home {
 /* START MAIN POSTS */
 
 .featured-posts-column .article {
+	@extend .shadow-alt;
 	margin: 0 0 25px 0;
 	position: relative;
-	max-height: 447px;
-	z-index: 50;
 	background: $white;
-	width: $full;
-	@extend .shadow-alt;
+	min-height: 453px;
+	max-height: 453px;
 	@extend .radius;
+	width: $full;
+	z-index: 50;
 	.inner {
 		padding: 40px 30px 73px 34px;
 	}
