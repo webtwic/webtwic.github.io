@@ -91,6 +91,14 @@ body.home {
 		line-height: 27px;
 		max-height: 125px;
 		font-weight: 300;
+		> code {
+			font-family: $code_font;
+			background: #E8F5F2;
+			padding: .2em .2em;
+			border-radius: 3px;
+			font-size: .86em;
+			color: #6699cc;
+		}
 	}
 	.read-article {
 		margin: 0 0 0 18px;
