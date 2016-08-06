@@ -49,9 +49,9 @@ Webtwic = {
 			$( '#header .logo' ).addClass( 'adjustedTop' );
 			$( '.main-menu' ).addClass( 'adjustedMargin' );
 			$( '#header' ).addClass( 'adjustSiteContent' );
-		} else if ( $( 'body' ).hasClass( 'secondary-body' ) ) {
+		} else if ( $( 'body' ).hasClass( 'main-body' ) ) {
 			$( '.site-content' ).addClass( 'adjustSiteContent' );
-			$( '.secondary-header' ).addClass( 'adjustedMargin' );
+			$( '.main-header' ).addClass( 'adjustedMargin' );
 		}
 	},
 
@@ -62,8 +62,8 @@ Webtwic = {
 			$( '#header .logo' ).removeClass( 'adjustedTop' );
 			$( '.main-menu' ).removeClass( 'adjustedMargin' );
 			$( '#header' ).removeClass( 'adjustSiteContent' );
-		} else if ( $( 'body' ).hasClass( 'secondary-body' ) ) {
-			$( '.secondary-header' ).removeClass( 'adjustedMargin' );
+		} else if ( $( 'body' ).hasClass( 'main-body' ) ) {
+			$( '.main-header' ).removeClass( 'adjustedMargin' );
 		}
 	},
 

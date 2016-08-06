@@ -30,7 +30,7 @@
 
 {% include head.html %}
 
-  <body class="main secondary-body {% if page.body-class %}{{ page.body-class }}{% endif %}" id="responsive">
+  <body class="main main-body {% if page.body-class %}{{ page.body-class }}{% endif %}" id="responsive">
      <noscript>
         <div class="page-no-js">
            <p class="noscript-error-description">
@@ -44,14 +44,14 @@
           .page-no-js {background: #FF5F5F; padding: 10px; width: auto; height: 45px; display: block; margin: 0px auto; z-index: 9999 !important; color: #fff; font-weight: bold; text-align: center;}
           p.noscript-error-description {display: block; margin: 0px auto;}
           a.noscript-link {color: #fff; border-bottom: 1px dotted #fff;}
-          .secondary-body .site-content {margin-top: 95px !important;}
-          .secondary-body .secondary-header {margin-top: 45px !important;}
+          body .site-content {margin-top: 95px !important;}
+          body .main-header {margin-top: 45px !important;}
           </style>
 
        </div>
     </noscript>
 
-    {% include secondary-header.html %}
+    {% include header.html %}
 
     <main class="site-content seconadry-site-content" id="content">
 

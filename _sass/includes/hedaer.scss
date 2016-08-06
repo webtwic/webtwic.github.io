@@ -1,5 +1,5 @@
 @media screen and (min-width: 768px) {
-   .main header.secondary-header {
+   .main header.main-header {
       background: $white;
       position: fixed;
       z-index: 9999;
@@ -9,7 +9,7 @@
       left: 0;
       top: 0;
    }
-   header.secondary-header {
+   header.main-header {
       .logo {
          float: left;
          width: 163px;
@@ -30,7 +30,7 @@
             width: $full;
          }
       }
-      nav.secondary-menu {
+      nav.main-menu {
          padding-right: 15px;
          line-height: 30px;
          float: left;
@@ -38,7 +38,7 @@
          width: auto;
       }
    }
-   .secondary-menu {
+   .main-menu {
       > ul.nav-ul li {
          position: relative;
       }
@@ -63,7 +63,7 @@
          top: 3.5em;
       }
    }
-   .main nav.secondary-menu {
+   .main nav.main-menu {
       li > a {
          text-transform: uppercase;
          letter-spacing: .02em;
@@ -80,7 +80,7 @@
          right: 8px;
       }
    }
-   header.secondary-header .header-follow-search {
+   header.main-header .header-follow-search {
       height: $full;
       display: inline-block;
       position: relative;

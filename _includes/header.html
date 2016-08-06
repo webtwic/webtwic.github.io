@@ -1,12 +1,61 @@
-<div class="top-stripe"></div>
-	<header class="clear site-header" id="header">
+<header class="main-header shadow">
+      <div class="logo">
+         <a class="desktop_logo" href="http://webtwic.com">webtwic.</a>
+      </div>
 
-		<div class="logo">
-			<a class="desktop_logo" href="http://webtwic.com">webtwic.</a>
-		</div>
+{% include main-nav.html %}
+
+      <div class="header-follow-search">
+         <div class="follow-icons">
+            <a href="{{ site.facebook_url }}" target="_blank" data-network="facebook">
+               <span class="webtwicons facebook-official" aria-hidden="true"></span>
+            </a>
+
+            <a href="{{ site.twitter_url }}" target="_blank" data-network="twitter">
+               <span class="webtwicons twitter-icon" aria-hidden="true"></span>
+            </a>
+
+            <a href="{{ site.google_url }}" target="_blank" data-network="google">
+               <span class="webtwicons google-plus-icon" aria-hidden="true"></span>
+            </a>
+
+            <a href="{{ site.youtube_url }}" target="_blank" data-network="youtube">
+               <span class="webtwicons youtube-icon" aria-hidden="true"></span>
+            </a>
+
+            <a href="{{ site.instagram_url }}" target="_blank" data-network="instagram">
+               <span class="webtwicons instagram-icon" aria-hidden="true"></span>
+            </a>
+
+            <a href="{{ site.pinterest_url }}" target="_blank" data-network="pinterest">
+               <span class="webtwicons pinterest-icon" aria-hidden="true"></span>
+            </a>
+
+            <a href="{{ site.linkedin_url }}" target="_blank" data-network="linkedin">
+               <span class="webtwicons linkedin-square" aria-hidden="true"></span>
+            </a>
+         </div>
+
+         <div class="search-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M62.016 54.462l-15.16-12.893c-1.567-1.41-3.243-2.058-4.597-1.995 3.578-4.192 5.74-9.63 5.74-15.573 0-13.255-10.745-24-24-24s-24 10.745-24 24 10.745 24 24 24c5.944 0 11.382-2.162 15.574-5.74-0.063 1.354 0.585 3.030 1.995 4.597l12.893 15.16c2.208 2.453 5.814 2.66 8.014 0.46s1.993-5.806-0.46-8.014zM24 40c-8.836 0-16-7.163-16-16s7.163-16 16-16 16 7.163 16 16-7.163 16-16 16z"></path></svg>
+         </div>
+
+         <div class="ui-overlay-search">
+            <a href="#" class="close-icon" aria-hidden="true"></a>
+
+            <!-- Start main search-field -->
+
+            <div class="search-input" data-focused="false">
+               <form method="GET" action="s">
+                  <input type="search" placeholder="Search...">
+                  <span id="__expand"></span>
+               </form>
+               <p>Search for cool stuff above and hit <span class="key">enter</span>, or press <span class="key">escape</span> to exit.</p>
+            </div>
+         </div>
+
+      </div>
 
 
-{% include nav.html %}
-
-	</header>
+   </header>
 {% include mobile-header.html %}
