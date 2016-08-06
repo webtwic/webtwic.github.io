@@ -240,7 +240,7 @@ jQuery( document ).ready( function() {
 
 	// Functions for more-posts button click
 
-	var loadMoreBtn = '.secondary-category-section .category-posts-column [data-clicked="false"]';
+	var loadMoreBtn = '.secondary-category-section .category-posts-grid [data-clicked="false"]';
 
 	function addLoader() {
 		$( loadMoreBtn )

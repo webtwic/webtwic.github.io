@@ -99,7 +99,7 @@
          display: none;
       }
    }
-   .site-content [class*="-column"] {
+   .site-content [class*="-grid"] {
       float: none;
       width: $full !important;
    }
@@ -109,7 +109,7 @@
    body.home .site-content {
       margin: auto auto 0px;
    }
-   .featured-posts-column {
+   .featured-posts-grid {
       margin-bottom: 20px;
    }
    .tech-news-wrap {
@@ -118,7 +118,7 @@
    .tech_news_break {
       display: none;
    }
-   .sidebar-column, .pagination, #site-info, #colophon, .line, .bug {
+   .sidebar-grid, .pagination, #site-info, #colophon, .line, .bug {
       display: none !important;
    }
 }

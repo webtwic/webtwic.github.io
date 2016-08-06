@@ -17,7 +17,7 @@ body.home {
 			width: 94%;
 		}
 	}
-	.featured-posts-column {
+	.featured-posts-grid {
 		margin: 0 5.1% 0 -50px;
 		@extend .left;
 		width: 61.8%;
@@ -26,7 +26,7 @@ body.home {
 
 /* START MAIN POSTS */
 
-.featured-posts-column .article {
+.featured-posts-grid .article {
 	@extend .shadow-alt;
 	margin: 0 0 25px 0;
 	position: relative;
@@ -199,7 +199,7 @@ body.home {
 	}
 }
 
-.home #sidebar-column {
+.home #sidebar-grid {
 	width: 29%;
 }
 #tech-news-wrap {

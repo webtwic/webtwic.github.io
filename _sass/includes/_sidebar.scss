@@ -1,4 +1,4 @@
-#sidebar-column {
+#sidebar-grid {
    width: 25.295%;
    margin-top: 25px;
 }
@@ -173,7 +173,7 @@ iframe a.twitter-timeline {
 }
 
 body {
-   &.single-post #sidebar-column .freebie-item, &.category-page #sidebar-column .freebie-item {
+   &.single-post #sidebar-grid .freebie-item, &.category-page #sidebar-grid .freebie-item {
       margin-left: 0;
    }
 }
@@ -249,7 +249,7 @@ body {
 
 /* Start Sidebar Search */
 
-#sidebar-column #search-wrap {
+#sidebar-grid #search-wrap {
    height: 120px;
    margin-top: 25px;
    form {

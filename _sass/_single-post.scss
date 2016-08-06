@@ -23,7 +23,7 @@ body {
 				text-align: center;
 			}
 		}
-		.main-page #sidebar-column {
+		.main-page #sidebar-grid {
 			margin-top: 0;
 			width: 24.295%;
 		}
@@ -68,32 +68,32 @@ body.single-post .entry-wrap .main-page {
 	height: $full;
 }
 
-.main-page .page-focus-column {
+.main-page .page-focus-grid {
 	position: relative;
 	width: 72%;
 	margin-right: 1.8%;
-	.post-content-column {
+	.post-content-grid {
 		background: $white;
 		margin-bottom: 10px;
 	}
 }
 
 .entry-wrap .main-page {
-	.post-content-column, .post-secondary-column {
+	.post-content-grid, .post-secondary-grid {
 		height: $full;
 	}
-	.post-content-column > article {
+	.post-content-grid > article {
 		width: $full;
 		position: relative;
 	}
 }
 
-.main-page .post-content-column > article .entry-featured-image {
+.main-page .post-content-grid > article .entry-featured-image {
 	overflow: hidden;
 	width: $full;
 }
 
-.post-content-column > article {
+.post-content-grid > article {
 	.entry-featured-image > img {
 		height: 505px;
 		width: $full;
@@ -189,7 +189,7 @@ body.single-post .entry-wrap .main-page {
 	}
 }
 
-.post-content-column > article .entry-content {
+.post-content-grid > article .entry-content {
 	margin-bottom: 20px;
 	font-family: $basefont;
 	.image-caption {
@@ -296,7 +296,7 @@ body.single-post .entry-wrap .main-page {
 	}
 }
 
-.post-content-column article {
+.post-content-grid article {
 	.secondary-share {
 		width: $full;
 		position: relative;
@@ -352,7 +352,7 @@ body.single-post .entry-wrap .main-page {
 	}
 }
 
-.page-focus-column .post-secondary-column {
+.page-focus-grid .post-secondary-grid {
 	.author-biography {
 		width: $full;
 		background: $white;
@@ -429,7 +429,7 @@ body.single-post .entry-wrap .main-page {
 	}
 }
 
-.post-secondary-column .prev-next-articles {
+.post-secondary-grid .prev-next-articles {
 	position: relative;
 	width: $full;
 	background: $white;
@@ -508,7 +508,7 @@ body.single-post .entry-wrap .main-page {
 	}
 }
 
-.post-secondary-column .related-articles {
+.post-secondary-grid .related-articles {
 	background: $grey;
 	position: relative;
 	margin-bottom: 15px;
@@ -575,7 +575,7 @@ body.single-post .entry-wrap .main-page {
 	overflow: hidden;
 }
 
-.post-secondary-column .entry-comments {
+.post-secondary-grid .entry-comments {
 	@include box-shadow( 0px 0px 4px rgba(0, 0, 0, .05) );
 	@extend .radius;
 	background: $white;

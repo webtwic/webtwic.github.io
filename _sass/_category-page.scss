@@ -13,8 +13,11 @@ body.category-page {
 	}
 	.site-content {
 		margin: 150px auto 0 auto;
+		> .inner {
+			margin-bottom: 150px;
+		}
 	}
-	.posts-column {
+	.posts-grid {
 		margin-right: 2.5%;
 		@extend .radius;
 		height: 3303px;
@@ -40,6 +43,7 @@ article.post-wrap {
 	margin-bottom: 30px;
 	position: relative;
 	background: $white;
+	max-height: 350px;
 	@extend .radius;
 	display: block;
 	width: $full;
@@ -158,7 +162,7 @@ body {
 				}
 			}
 		}
-		#sidebar-column {
+		#sidebar-grid {
 			width: 26.295%;
 			margin-top: 0;
 		}

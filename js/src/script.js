@@ -237,7 +237,7 @@ jQuery( document ).ready( () => {
 
 	// Functions for more-posts button click
 
-	const loadMoreBtn = '.secondary-category-section .category-posts-column [data-clicked="false"]';
+	const loadMoreBtn = '.secondary-category-section .category-posts-grid [data-clicked="false"]';
 
 	function addLoader() {
 		$( loadMoreBtn )
