@@ -36,12 +36,12 @@ body.category-page {
 article.post-wrap {
 	@include box-shadow(0px 0px 7px rgba(0, 0, 0, .08));
 	border-bottom: $solid_one #E5E5E5;
-	display: block;
-	padding: 30px 30px 20px;
+	padding: 40px 40px 30px;
 	margin-bottom: 30px;
 	position: relative;
 	background: $white;
 	@extend .radius;
+	display: block;
 	width: $full;
 	.post-thumbnail {
 		@include border-radius(1px);
