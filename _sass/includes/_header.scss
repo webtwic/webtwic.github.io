@@ -115,13 +115,14 @@
          }
       }
       svg {
+         @include transform(translate(-50%));
          position: absolute;
          cursor: pointer;
-         left: 1.92em;
          fill: $white;
          height: 41px;
          width: 30px;
-         top: 3.9em;
+         left: 50%;
+         top: 80%;
       }
    }
    .dropdown a {
