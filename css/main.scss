@@ -25,7 +25,66 @@
 
 /* Include fonts and icons */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Source+Sans+Pro:400,600,700|Source+Code+Pro:400,700|Lobster|Raleway);
+/** Roboto Slab **/
+@font-face {
+   font-family: 'Roboto Slab';
+   src: url('../fonts/robotoslab/RobotoSlab-Bold.ttf') format('truetype');
+   font-style: normal;
+   font-weight: 700;
+}
+
+/** Source Sans Pro **/
+@font-face {
+   font-family: 'Source Sans Pro';
+   src: url('../fonts/sourcesanspro/SourceSansPro-Regular.ttf') format('truetype');
+   font-style: normal;
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Source Sans Pro';
+   src: url('../fonts/sourcesanspro/SourceSansPro-SemiBold.ttf') format('truetype');
+   font-style: normal;
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'Source Sans Pro';
+   src: url('../fonts/sourcesanspro/SourceSansPro-Bold.ttf') format('truetype');
+   font-style: normal;
+   font-weight: 700;
+}
+
+/** Source Code Pro **/
+@font-face {
+   font-family: 'Source Code Pro';
+   src: url('../fonts/sourcecodepro/SourceCodePro-Regular.ttf') format('truetype');
+   font-style: normal;
+   font-weight: 400;
+}
+@font-face {
+   font-family: 'Source Code Pro';
+   src: url('../fonts/sourcecodepro/SourceCodePro-Bold.ttf') format('truetype');
+   font-style: normal;
+   font-weight: 700;
+}
+
+/** Lobster **/
+@font-face {
+   font-family: 'Lobster';
+   src: url('../fonts/lobster/Lobster-Regular.ttf') format('truetype');
+   font-style: normal;
+   font-weight: 400;
+}
+
+/** Raleway **/
+@font-face {
+   font-family: 'Raleway';
+   src: url('../fonts/raleway/Raleway-Regular.ttf') format('truetype');
+   font-style: normal;
+   font-weight: 400;
+}
+
 
 @font-face {
    font-family: $icon;
