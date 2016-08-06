@@ -125,6 +125,14 @@ body {
 			margin-left: 7px;
 			height: 96px;
 			max-height: 96px;
+			> code {
+				font-family: $code_font;
+				background: #E8F5F2;
+				padding: .2em .2em;
+				border-radius: 3px;
+				font-size: .86em;
+				color: #6699cc;
+			}
 		}
 		.post-content .read-post {
 			@include box-shadow(0px 0px 7px rgba(0, 0, 0, .05));
