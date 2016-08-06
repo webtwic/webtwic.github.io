@@ -10,13 +10,16 @@ body.home {
 		padding-bottom: 275px;
 	}
 	.site-content {
-		margin: 100px auto 0 auto;
+		margin: 100px 150px 0;
 		max-width: 1418px;
 		width: 94%;
+		> .site-wrapper {
+			width: 94%;
+		}
 	}
 	.featured-posts-column {
-		width: 44.93%;
-		margin: 0 2.1% 0 0;
+		margin: 0 5.1% 0 -30px;
+		width: 60.8%;
 		@extend .left;
 	}
 }
@@ -28,13 +31,13 @@ body.home {
 	margin: 0 0 25px 0;
 	position: relative;
 	background: $white;
-	min-height: 453px;
-	max-height: 453px;
+	min-height: 407px;
+	max-height: 439px;
 	@extend .radius;
 	width: $full;
 	z-index: 50;
 	.inner {
-		padding: 40px 30px 73px 34px;
+		padding: 50px 50px 93px 54px;
 	}
 	&:first-child {
 		margin-top: 25px;
@@ -43,16 +46,16 @@ body.home {
 
 .article {
 	time {
+		margin: -1.2em 0em 1em -.9em;
 		font-family: $code_font_alt;
 		text-transform: uppercase;
-		cursor: default;
 		letter-spacing: 10px;
-		color: #777;
-		font-size: .84375em;
-		font-weight: 400;
-		display: block;
-		margin: -1.2em 0em 1em -.9em;
 		padding-left: 1.9em;
+		font-weight: 400;
+		font-size: .9em;
+		cursor: default;
+		display: block;
+		color: #777;
 	}
 	svg.clock {
 		@include transform(rotate(-136deg));
@@ -70,9 +73,9 @@ body.home {
 			font-family: "Roboto Slab", "Trebuchet MS", Helvetica, Calibri;
 			@include transition(color .4s ease, text-shadow .2s ease);
 			@include text-shadow(none);
-			font-size: 1.02em;
-			font-weight: 600;
 			color: $title-color;
+			font-size: 1.1em;
+			font-weight: 600;
 			&:hover {
 				@include text-shadow(0px 1px 1px rgb(238, 238, 238));
 				color: #81aec5;
@@ -84,9 +87,9 @@ body.home {
 		margin: 10px 0 10px 15px;
 		color: $text-color;
 		line-height: 25px;
-		font-size: .9em;
-		font-weight: 300;
 		max-height: 125px;
+		font-size: .95em;
+		font-weight: 300;
 	}
 	.read-article {
 		margin: 0 0 0 18px;
@@ -187,6 +190,9 @@ body.home {
 	}
 }
 
+.home #sidebar-column {
+	width: 28.295%;
+}
 #tech-news-wrap {
 	padding: 10px 10px 0 10px;
 	color: $text-color;
