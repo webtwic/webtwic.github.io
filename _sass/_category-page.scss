@@ -127,9 +127,9 @@ body {
 			max-height: 96px;
 			> code {
 				font-family: $code_font;
+				@extend .radius-alt;
 				background: #E8F5F2;
 				padding: .2em .2em;
-				border-radius: 3px;
 				font-size: .86em;
 				color: #6699cc;
 			}
