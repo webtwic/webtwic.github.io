@@ -1,10 +1,9 @@
 @media screen and (min-width: 768px) {
    .main header.secondary-header {
-      margin-bottom: 240px;
       background: $white;
       position: fixed;
       z-index: 9999;
-      height: 63px;
+      height: 78px;
       width: auto;
       right: 0;
       left: 0;
@@ -12,31 +11,31 @@
    }
    header.secondary-header {
       .logo {
-         height: $full;
+         float: left;
          width: 163px;
+         height: $full;
          margin-top: 0px;
          padding-left: 6px;
-         float: left;
          position: relative;
          border-right: 1.9px solid $border;
          .desktop_logo {
-            @include logo(-1px -99px);
+            @include logo(-1px -100px);
             text-indent: -99999px;
+            position: relative;
+            color: $basecolor;
+            margin-top: 6px;
             font-size: 40px;
             display: block;
-            color: $basecolor;
             height: $full;
             width: $full;
-            position: relative;
-            margin-top: 6px;
          }
       }
       nav.secondary-menu {
+         padding-right: 15px;
+         line-height: 30px;
          float: left;
          height: $full;
          width: auto;
-         line-height: 30px;
-         padding-right: 15px;
       }
    }
    .secondary-menu {
@@ -68,16 +67,16 @@
       li > a {
          text-transform: uppercase;
          letter-spacing: .02em;
-         font-size: .94em;
          padding: 5.4px 23px;
+         line-height: 67px;
+         font-size: .94em;
          display: block;
-         line-height: 52px;
       }
       .drop-nav li a {
          padding: 0px 55px;
       }
       a svg.dropdown-arrow {
-         top: 1.4em;
+         top: 2.1em;
          right: 8px;
       }
    }
@@ -95,7 +94,7 @@
          float: right;
          height: $full;
          display: block;
-         padding: 0 8px;
+         padding: 0 11px;
          cursor: pointer;
          &:hover {
             background: #F4F4F4;
@@ -108,9 +107,9 @@
          position: relative;
       }
       .search-wrap > svg {
-         width: 18px;
+         margin: 29px 10px;
          height: 16px;
-         margin: 24px 10px;
+         width: 18px;
          fill: #777;
       }
       .ui-overlay-search {
@@ -240,7 +239,7 @@
          .webtwicons {
             @include transition(transform ease .2s);
             display: inline-block;
-            margin: 21px 3px;
+            margin: 28px 3px;
             font-size: 1.09em;
          }
          &:nth-child(1) .facebook-official {
