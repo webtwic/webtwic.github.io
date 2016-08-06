@@ -44,27 +44,13 @@ Webtwic = {
 
 	// Function to push down .site-content
 	adjustSiteContent() {
-		if ( $( 'body' ).hasClass( 'default-body' ) ) {
-			$( '.top-stripe' ).addClass( 'adjustedMargin' );
-			$( '#header .logo' ).addClass( 'adjustedTop' );
-			$( '.main-menu' ).addClass( 'adjustedMargin' );
-			$( '#header' ).addClass( 'adjustSiteContent' );
-		} else if ( $( 'body' ).hasClass( 'main-body' ) ) {
-			$( '.site-content' ).addClass( 'adjustSiteContent' );
-			$( '.main-header' ).addClass( 'adjustedMargin' );
-		}
+		$( '.site-content' ).addClass( 'adjustSiteContent' );
+		$( '.main-header' ).addClass( 'adjustedMargin' );
 	},
 
 	// Function to push up .site-content to default state
 	undoSiteAdjust() {
-		if ( $( 'body' ).hasClass( 'default-body' ) ) {
-			$( '.top-stripe' ).removeClass( 'adjustedMargin' );
-			$( '#header .logo' ).removeClass( 'adjustedTop' );
-			$( '.main-menu' ).removeClass( 'adjustedMargin' );
-			$( '#header' ).removeClass( 'adjustSiteContent' );
-		} else if ( $( 'body' ).hasClass( 'main-body' ) ) {
-			$( '.main-header' ).removeClass( 'adjustedMargin' );
-		}
+		$( '.main-header' ).removeClass( 'adjustedMargin' );
 	},
 
 	// Function to show Notifications before header

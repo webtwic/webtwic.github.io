@@ -1,4 +1,146 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
+   .navigation li a {
+      font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
+      @include transition(all .3s linear);
+      text-transform: lowercase;
+      text-decoration: none;
+      @include text-shadow(none);
+      position: relative;
+      font-weight: 400;
+      color: #777;
+   }
+   .navigation li a:hover {
+      background: #f4f4f4;
+      color: #7AAFC8;
+   }
+   nav > ul li a {
+      width: 103%;
+   }
+   /* Start dropdown menu styles*/
+   .dropdown {
+      position: relative;
+   }
+   .drop-nav {
+      border-color: $border $border;
+      @include box-shadow(0px 0px 2px rgba(0, 0, 0, .1));
+      @include border-radius(0px 0px 3px 3px);
+      border-width: 1px 1px 2px;
+      border-style: solid;
+      position: absolute;
+      background: $white;
+      width: 180px;
+      li {
+         border-left: 0 none !important;
+         border-top: $ui_border;
+         height: 50px;
+      }
+   }
+   .flyout-nav li {
+      border-left: 0 none !important;
+      border-top: $ui_border;
+      height: 50px;
+   }
+   .drop-nav li {
+      &:nth-child(1) {
+         border: 0 none;
+      }
+      &:hover {
+         height: 51px;
+      }
+   }
+   .flyout-nav li:hover {
+      height: 51px;
+   }
+   .drop-nav li a {
+      text-transform: capitalize !important;
+      padding: 0px;
+      width: 178px;
+      &:hover {
+         background: #f9f9f9;
+      }
+   }
+   .dropdown:hover > ul.dropNavFallback {
+      display: block;
+      height: 204px;
+   }
+   .flyout {
+      border-right: $ui_border;
+      position: relative;
+      &:after {
+         font-family: $icon;
+         position: absolute;
+         font-size: 1em;
+         content: "\f0da";
+         cursor: pointer;
+         display: block;
+         left: 140px;
+         color: #777;
+         top: 11px;
+      }
+   }
+   .flyout-nav {
+      border-right: $ui_border;
+      border-left: $ui_border;
+      border-top: $ui_border;
+      @include border-radius(0px 0px 3px 3px);
+      background: #fff;
+      position: absolute;
+      left: $full;
+      top: -1px;
+   }
+   .drop-nav li [href="#"]:hover {
+      border-right: 0 none;
+   }
+   .flyout-nav {
+      li a {
+         @include transition(all .3s linear 0s);
+      }
+      &:first-child {
+         border-top: 0 none;
+      }
+      li a:hover {
+         background: $white;
+      }
+   }
+   .flyout:hover > .flyout-nav {
+      display: block;
+      position: absolute;
+   }
+   /* End Flyout menu styles */
+   .active-item {
+      a {
+         color: #7AAFC8 !important;
+         &:hover {
+            background: $white !important;
+         }
+      }
+      svg {
+         fill: $white;
+         position: absolute;
+         top: 2.7em;
+         cursor: pointer;
+         left: 4.155em;
+         width: 20px;
+         height: 20px;
+      }
+   }
+   .dropdown a {
+      svg.dropdown-arrow {
+         position: absolute;
+         top: 1.17em;
+         right: 40px;
+         display: block;
+         fill: #777;
+         width: 18px;
+         height: 18px;
+      }
+      &:hover > svg {
+         fill: #7AAFC8;
+      }
+   }
+   .dropNavFallback, .flyout-nav {
+      display: none;
+   }
    .main header.main-header {
       background: $white;
       position: fixed;
@@ -30,27 +172,23 @@
             width: $full;
          }
       }
-      nav.main-menu {
-         padding-right: 15px;
-         line-height: 30px;
-         float: left;
-         height: $full;
-         width: auto;
-      }
    }
-   .main-menu {
-      > ul.nav-ul li {
+   ul {
+      padding-right: 15px;
+      line-height: 30px;
+      height: $full;
+      float: left;
+      width: auto;
+      > li {
+         display: inline-block;
          position: relative;
+         text-align: center;
+         list-style: none;
+         margin: 0px auto;
+         height: 99%;
       }
       .drop-nav {
          margin-top: 2px;
-      }
-      li {
-         text-align: center;
-         list-style: none;
-         display: inline-block;
-         height: 99%;
-         margin: 0px auto;
       }
       .drop-nav li {
          height: 55px !important;
@@ -63,7 +201,7 @@
          top: 3.5em;
       }
    }
-   .main nav.main-menu {
+   .main nav.navigation {
       li > a {
          text-transform: uppercase;
          letter-spacing: .02em;
@@ -80,6 +218,7 @@
          right: 8px;
       }
    }
+
    header.main-header .header-follow-search {
       height: $full;
       display: inline-block;
@@ -172,19 +311,19 @@
 
                &:focus {
                   &::placeholder {
-                      color: $white;
+                     color: $white;
                   }
                   &::-webkit-input-placeholder {
-                      color: $white;
+                     color: $white;
                   }
                   &::-ms-input-placeholder {
-                      color: $white;
+                     color: $white;
                   }
                   &:-ms-input-placeholder {
-                      color: $white;
+                     color: $white;
                   }
                   &::-moz-placeholder {
-                      color: $white;
+                     color: $white;
                   }
                }
             }
@@ -241,25 +380,25 @@
             font-size: 1.09em;
          }
          &:nth-child(1) .facebook-official {
-            color: #3B599A;
+            color: $facebook;
          }
          &:nth-child(2) .twitter-icon {
-            color: #50ABF1;
+            color: $twitter;
          }
          &:nth-child(3) .google-plus-icon {
-            color: #DC4E41;
+            color: $google;
          }
          &:nth-child(4) .youtube-icon {
-            color: #CD201F;
+            color: $youtube;
          }
          &:nth-child(5) .instagram-icon {
-            color: #125688;
+            color: $instagram;
          }
          &:nth-child(6) .pinterest-icon {
-            color: #BD081C;
+            color: $pinterest;
          }
          &:nth-child(7) .linkedin-square {
-            color: #0077B5;
+            color: $linkedin;
          }
       }
    }
