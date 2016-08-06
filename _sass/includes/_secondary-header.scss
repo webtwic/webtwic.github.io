@@ -76,7 +76,7 @@
          padding: 0px 55px;
       }
       a svg.dropdown-arrow {
-         top: 2.1em;
+         top: 1.9em;
          right: 8px;
       }
    }
@@ -94,7 +94,7 @@
          float: right;
          height: $full;
          display: block;
-         padding: 0 11px;
+         padding: 0 15px;
          cursor: pointer;
          &:hover {
             background: #F4F4F4;
@@ -105,8 +105,6 @@
       }
       svg {
          position: relative;
-      }
-      .search-wrap > svg {
          margin: 29px 10px;
          height: 16px;
          width: 18px;
