@@ -1,21 +1,21 @@
 # Site settings
-port: 9000
-title: webtwic
-email: info@webtwic.com
-description: A community focused on code tweaks, articles and tutorials for newbie and professional developers.
-# baseurl: "http://webtwic.com"
-# url: "http://webtwic.com" # the base hostname & protocol for your site
-twitter_username: webtwic
-github_username:  webtwic
-facebook_name: webtwic
-google_name: webtwic
+port:                   9000
+title:                  webtwic
+email:                  info@webtwic.com
+description:            A community focused on code tweaks, articles and tutorials for newbie and professional developers.
+# baseurl:              "http://webtwic.com"
+# url:                  "http://webtwic.com" # the base hostname & protocol for your site
+twitter_username:       webtwic
+github_username:        webtwic
+facebook_name:          webtwic
+google_name:            webtwic
 
 # Social URLs
-facebook_url: https://facebook.com/webtwic
-twitter_url: https://twitter.com/webtwic
-google_url: https://plus.google.com/+webtwic
-instagram_url: https://instagram.com/webtwic
-youtube_url: https://youtube.com/user/webtwic
-linkedin_url: https://www.linkedin.com/company/webtwic
-pinterest_url: https://pinterest.com/webtwic
-github_repo: https://github.com/webtwic/webtwic.github.io
+facebook_url:           https://facebook.com/webtwic
+twitter_url:            https://twitter.com/webtwic
+google_url:             https://plus.google.com/+webtwic
+instagram_url:          https://instagram.com/webtwic
+youtube_url:            https://youtube.com/user/webtwic
+linkedin_url:           https://www.linkedin.com/company/webtwic
+pinterest_url:          https://pinterest.com/webtwic
+github_repo:            https://github.com/webtwic/webtwic.github.io
