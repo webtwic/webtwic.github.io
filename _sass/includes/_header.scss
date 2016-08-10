@@ -1,6 +1,6 @@
 @media screen and (min-width: 860px) {
    .navigation li a {
-      font-family: "Source Sans Pro", Calibri, "Trebuchet MS", Helvetica, Arial;
+      font-family: $basefont;
       @include transition(all .3s linear);
       text-transform: lowercase;
       text-decoration: none;
@@ -346,11 +346,11 @@
             > .key {
                border-bottom: .15em solid #c7c7c7;
                @include border-radius(2px);
-               letter-spacing: .02em;
+               letter-spacing: .04em;
                background: #fefefe;
                padding: .01em 5px;
                position: relative;
-               font-size: .93em;
+               font-size: .9em;
                color: #5c7188;
             }
          }
