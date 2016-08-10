@@ -176,9 +176,9 @@ jQuery( document ).ready( () => {
 	// Styles for homepage article-social
 
 	$( '.article .article-social a' ).hover(() => {
-		$( '.tooltip', this ).fadeIn(400);
+		$( '.tooltip', this ).stop().fadeIn(250);
 	}, () => {
-		$( '.tooltip', this ).fadeOut(250);
+		$( '.tooltip', this ).stop().fadeOut(250);
 	});
 
 	// Functions for search-icon and ui-overlay-search
