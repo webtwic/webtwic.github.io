@@ -1,7 +1,9 @@
 /*
 	* Start Home.scss
+
 	* Date Created: 01/03/2015
-	* Last Modified: 06/08/2016
+
+	* Last Modified: 11/08/2016
 */
 
 body.home {
@@ -10,17 +12,16 @@ body.home {
 		padding-bottom: 275px;
 	}
 	.site-content {
-		margin: 135px 150px 0;
-		max-width: 1418px;
-		width: 94%;
+		margin: 135px auto;
+		width: 87%;
 		> .site-wrapper {
-			width: 94%;
+			width: $full;
 		}
 	}
 	.featured-posts-grid {
-		margin: 0 5.1% 0 -50px;
+		margin: 0 5.1% 0 0;
 		@extend .left;
-		width: 61.8%;
+		width: 63.767%;
 	}
 }
 
@@ -200,7 +201,7 @@ body.home {
 }
 
 .home #sidebar-grid {
-	width: 29%;
+	width: 29.9%;
 }
 #tech-news-wrap {
 	padding: 10px 10px 0 10px;
