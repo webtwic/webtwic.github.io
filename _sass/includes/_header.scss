@@ -1,402 +1,402 @@
 @media screen and (min-width: 860px) {
-   .navigation li a {
-      font-family: $basefont;
-      @include transition(all .3s linear);
-      @include text-shadow(none);
-      text-transform: lowercase;
-      text-decoration: none;
-      position: relative;
-      font-weight: 400;
-      color: #777;
-   }
-   .navigation li a:hover {
-      background: #f4f4f4;
-      color: #7AAFC8;
-   }
-   nav > ul li a {
-      width: 103%;
-   }
-   /* Start dropdown menu styles */
-   .dropdown {
-      position: relative;
-   }
-   .drop-nav {
-      border-color: $border $border;
-      @include box-shadow(0px 0px 2px rgba(0, 0, 0, .1));
-      @include border-radius(0px 0px 3px 3px);
-      border-width: 1px 1px 2px;
-      border-style: solid;
-      position: absolute;
-      background: $white;
-      width: 180px;
-      li {
-         border-left: 0 none !important;
-         border-top: $ui_border;
-         height: 50px;
-      }
-   }
-   .flyout-nav li {
+  .navigation li a {
+    font-family: $basefont;
+    @include transition(all .3s linear);
+    @include text-shadow(none);
+    text-transform: lowercase;
+    text-decoration: none;
+    position: relative;
+    font-weight: 400;
+    color: #777;
+  }
+  .navigation li a:hover {
+    background: #f4f4f4;
+    color: #7AAFC8;
+  }
+  nav > ul li a {
+    width: 103%;
+  }
+  /* Start dropdown menu styles */
+  .dropdown {
+    position: relative;
+  }
+  .drop-nav {
+    border-color: $border $border;
+    @include box-shadow(0px 0px 2px rgba(0, 0, 0, .1));
+    @include border-radius(0px 0px 3px 3px);
+    border-width: 1px 1px 2px;
+    border-style: solid;
+    position: absolute;
+    background: $white;
+    width: 180px;
+    li {
       border-left: 0 none !important;
       border-top: $ui_border;
       height: 50px;
-   }
-   .drop-nav li {
-      &:nth-child(1) {
-         border: 0 none;
-      }
-      &:hover {
-         height: 51px;
-      }
-   }
-   .flyout-nav li:hover {
+    }
+  }
+  .flyout-nav li {
+    border-left: 0 none !important;
+    border-top: $ui_border;
+    height: 50px;
+  }
+  .drop-nav li {
+    &:nth-child(1) {
+      border: 0 none;
+    }
+    &:hover {
       height: 51px;
-   }
-   .drop-nav li a {
-      text-transform: capitalize !important;
-      padding: 0px;
-      width: 178px;
-      &:hover {
-         background: #f9f9f9;
-      }
-   }
-   .dropdown:hover > ul.dropNavFallback {
-      display: block;
-      height: 204px;
-   }
-   .flyout {
-      border-right: $ui_border;
-      position: relative;
-      &:after {
-         font-family: $icon;
-         position: absolute;
-         font-size: 1em;
-         content: "\f0da";
-         cursor: pointer;
-         display: block;
-         left: 140px;
-         color: #777;
-         top: 11px;
-      }
-   }
-   .flyout-nav {
-      border-right: $ui_border;
-      border-left: $ui_border;
-      border-top: $ui_border;
-      @include border-radius(0px 0px 3px 3px);
-      background: #fff;
+    }
+  }
+  .flyout-nav li:hover {
+    height: 51px;
+  }
+  .drop-nav li a {
+    text-transform: capitalize !important;
+    padding: 0px;
+    width: 178px;
+    &:hover {
+      background: #f9f9f9;
+    }
+  }
+  .dropdown:hover > ul.dropNavFallback {
+    display: block;
+    height: 204px;
+  }
+  .flyout {
+    border-right: $ui_border;
+    position: relative;
+    &:after {
+      font-family: $icon;
       position: absolute;
-      left: $full;
-      top: -1px;
-   }
-   .drop-nav li [href="#"]:hover {
-      border-right: 0 none;
-   }
-   .flyout-nav {
-      li a {
-         @include transition(all .3s linear 0s);
-      }
-      &:first-child {
-         border-top: 0 none;
-      }
-      li a:hover {
-         background: $white;
-      }
-   }
-   .flyout:hover > .flyout-nav {
+      font-size: 1em;
+      content: "\f0da";
+      cursor: pointer;
       display: block;
-      position: absolute;
-   }
-   /* End Flyout menu styles */
-   .active-item {
-      a {
-         color: #7AAFC8 !important;
-         &:hover {
-            background: $white !important;
-         }
-      }
-      svg {
-         @include transform(translate(-50%));
-         position: absolute;
-         cursor: pointer;
-         fill: $white;
-         height: 41px;
-         width: 30px;
-         left: 50%;
-         top: 80%;
-      }
-   }
-   .dropdown a {
-      svg.dropdown-arrow {
-         position: absolute;
-         top: 1.17em;
-         right: 40px;
-         display: block;
-         fill: #777;
-         width: 18px;
-         height: 18px;
-      }
-      &:hover > svg {
-         fill: #7AAFC8;
-      }
-   }
-   .dropNavFallback, .flyout-nav {
-      display: none;
-   }
-   .main header.main-header {
+      left: 140px;
+      color: #777;
+      top: 11px;
+    }
+  }
+  .flyout-nav {
+    border-right: $ui_border;
+    border-left: $ui_border;
+    border-top: $ui_border;
+    @include border-radius(0px 0px 3px 3px);
+    background: #fff;
+    position: absolute;
+    left: $full;
+    top: -1px;
+  }
+  .drop-nav li [href="#"]:hover {
+    border-right: 0 none;
+  }
+  .flyout-nav {
+    li a {
+      @include transition(all .3s linear 0s);
+    }
+    &:first-child {
+      border-top: 0 none;
+    }
+    li a:hover {
       background: $white;
-      position: fixed;
-      z-index: 9999;
-      height: 78px;
-      width: auto;
-      right: 0;
-      left: 0;
-      top: 0;
-   }
-   header.main-header {
-      .logo {
-         float: left;
-         width: 163px;
-         height: $full;
-         margin-top: 0px;
-         padding-left: 6px;
-         position: relative;
-         border-right: 1.9px solid $border;
-         .desktop_logo {
-            @include logo(-1px -100px);
-            text-indent: -99999px;
-            position: relative;
-            color: $basecolor;
-            margin-top: 6px;
-            font-size: 40px;
-            display: block;
-            height: $full;
-            width: $full;
-         }
+    }
+  }
+  .flyout:hover > .flyout-nav {
+    display: block;
+    position: absolute;
+  }
+  /* End Flyout menu styles */
+  .active-item {
+    a {
+      color: #7AAFC8 !important;
+      &:hover {
+        background: $white !important;
       }
-   }
-   ul.nav-ul {
-      padding-right: 15px;
-      line-height: 30px;
-      height: $full;
+    }
+    svg {
+      @include transform(translate(-50%));
+      position: absolute;
+      cursor: pointer;
+      fill: $white;
+      height: 41px;
+      width: 30px;
+      left: 50%;
+      top: 80%;
+    }
+  }
+  .dropdown a {
+    svg.dropdown-arrow {
+      position: absolute;
+      top: 1.17em;
+      right: 40px;
+      display: block;
+      fill: #777;
+      width: 18px;
+      height: 18px;
+    }
+    &:hover > svg {
+      fill: #7AAFC8;
+    }
+  }
+  .dropNavFallback, .flyout-nav {
+    display: none;
+  }
+  .main header.main-header {
+    background: $white;
+    position: fixed;
+    z-index: 9999;
+    height: 78px;
+    width: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+  header.main-header {
+    .logo {
       float: left;
-      width: auto;
-      > li {
-         display: inline-block;
-         position: relative;
-         text-align: center;
-         list-style: none;
-         margin: 0px auto;
-         height: 99%;
-      }
-      .drop-nav {
-         margin-top: 2px;
-      }
-      .drop-nav li {
-         height: 55px !important;
-         a {
-            height: $full;
-         }
-      }
-   }
-   .main nav.navigation {
-      li > a {
-         text-transform: uppercase;
-         letter-spacing: .02em;
-         padding: 5.4px 23px;
-         line-height: 67px;
-         font-size: .94em;
-         display: block;
-      }
-      .drop-nav li a {
-         padding: 0px 55px;
-      }
-      a svg.dropdown-arrow {
-         top: 1.9em;
-         right: 8px;
-      }
-   }
-
-   header.main-header .header-follow-search {
+      width: 163px;
       height: $full;
+      margin-top: 0px;
+      padding-left: 6px;
+      position: relative;
+      border-right: 1.9px solid $border;
+      .desktop_logo {
+        @include logo(-1px -100px);
+        text-indent: -99999px;
+        position: relative;
+        color: $basecolor;
+        margin-top: 6px;
+        font-size: 40px;
+        display: block;
+        height: $full;
+        width: $full;
+      }
+    }
+  }
+  ul.nav-ul {
+    padding-right: 15px;
+    line-height: 30px;
+    height: $full;
+    float: left;
+    width: auto;
+    > li {
       display: inline-block;
       position: relative;
-      float: right;
-   }
-   .header-follow-search {
-      .search-wrap {
-         @include transition(background .3s ease);
-         position: relative;
-         background: $white;
-         float: right;
-         height: $full;
-         display: block;
-         padding: 0 15px;
-         cursor: pointer;
-         &:hover {
-            background: #F4F4F4;
-            > svg {
-               fill: #666;
-            }
-         }
+      text-align: center;
+      list-style: none;
+      margin: 0px auto;
+      height: 99%;
+    }
+    .drop-nav {
+      margin-top: 2px;
+    }
+    .drop-nav li {
+      height: 55px !important;
+      a {
+        height: $full;
       }
-      svg {
-         position: relative;
-         margin: 29px 10px;
-         height: 16px;
-         width: 18px;
-         fill: #777;
-      }
-      .ui-overlay-search {
-         background: #273340;
-         background: rgba(39, 51, 64, .99);
-         position: fixed;
-         z-index: 99999;
-         display: none;
-         top: 0;
-         bottom: 0;
-         right: 0;
-         left: 0;
-      }
-   }
-   .ui-overlay-search {
-      .close-icon {
-         background: url("../../img/svg/close-icon.svg") no-repeat;
-         display: inline-block;
-         position: relative;
-         cursor: pointer;
-         float: right;
-         margin: 10px;
-         height: 52px;
-         width: 50px;
-      }
-      .spin {
-         @include animation(spin .3s 1 linear);
-      }
-      .search-input {
-         position: relative;
-         width: 70%;
-         display: block;
-         margin: 20% auto 20% auto;
-         form {
-            input {
-               @include border-radius(2px);
-               position: relative;
-               border-style: solid;
-               border-color: #3B4A5A;
-               border-width: 0 0 1px 0;
-               background: transparent;
-               font-size: 1.1em;
-               padding: 5px 2px;
-               display: block;
-               width: $full;
-               color: $white;
-               &::placeholder {
-                  color: #6D8299;
-               }
-               &::-webkit-input-placeholder {
-                  color: #6D8299;
-               }
-               &::-ms-input-placeholder {
-                  color: #6D8299;
-               }
-               &:-ms-input-placeholder{
-                  color: #6D8299;
-               }
-               &::-moz-placeholder {
-                  color: #6D8299;
-               }
+    }
+  }
+  .main nav.navigation {
+    li > a {
+      text-transform: uppercase;
+      letter-spacing: .02em;
+      padding: 5.4px 23px;
+      line-height: 67px;
+      font-size: .94em;
+      display: block;
+    }
+    .drop-nav li a {
+      padding: 0px 55px;
+    }
+    a svg.dropdown-arrow {
+      top: 1.9em;
+      right: 8px;
+    }
+  }
 
-               &:focus {
-                  &::placeholder {
-                     color: $white;
-                  }
-                  &::-webkit-input-placeholder {
-                     color: $white;
-                  }
-                  &::-ms-input-placeholder {
-                     color: $white;
-                  }
-                  &:-ms-input-placeholder {
-                     color: $white;
-                  }
-                  &::-moz-placeholder {
-                     color: $white;
-                  }
-               }
-            }
-            #__expand {
-               @include transition(width ease 1s);
-               @include border-radius(2px);
-               background: $white;
-               height: 2px;
-               position: relative;
-               display: block;
-               z-index: 50;
-               width: 10%;
-               &.visible {
-                  display: block;
-                  width: 100.3%;
-               }
-            }
-         }
-         p {
-            text-align: left;
-            font-size: 1.05em;
+  header.main-header .header-follow-search {
+    height: $full;
+    display: inline-block;
+    position: relative;
+    float: right;
+  }
+  .header-follow-search {
+    .search-wrap {
+      @include transition(background .3s ease);
+      position: relative;
+      background: $white;
+      float: right;
+      height: $full;
+      display: block;
+      padding: 0 15px;
+      cursor: pointer;
+      &:hover {
+        background: #F4F4F4;
+        > svg {
+          fill: #666;
+        }
+      }
+    }
+    svg {
+      position: relative;
+      margin: 29px 10px;
+      height: 16px;
+      width: 18px;
+      fill: #777;
+    }
+    .ui-overlay-search {
+      background: #273340;
+      background: rgba(39, 51, 64, .99);
+      position: fixed;
+      z-index: 99999;
+      display: none;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+  .ui-overlay-search {
+    .close-icon {
+      background: url("../../img/svg/close-icon.svg") no-repeat;
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      float: right;
+      margin: 10px;
+      height: 52px;
+      width: 50px;
+    }
+    .spin {
+      @include animation(spin .3s 1 linear);
+    }
+    .search-input {
+      position: relative;
+      width: 70%;
+      display: block;
+      margin: 20% auto 20% auto;
+      form {
+        input {
+          @include border-radius(2px);
+          position: relative;
+          border-style: solid;
+          border-color: #3B4A5A;
+          border-width: 0 0 1px 0;
+          background: transparent;
+          font-size: 1.1em;
+          padding: 5px 2px;
+          display: block;
+          width: $full;
+          color: $white;
+          &::placeholder {
             color: #6D8299;
-            > .key {
-               border-bottom: .15em solid #c7c7c7;
-               @include border-radius(2px);
-               letter-spacing: .04em;
-               background: #fefefe;
-               padding: .06em 5px;
-               position: relative;
-               font-size: .9em;
-               color: #5c7188;
+          }
+          &::-webkit-input-placeholder {
+            color: #6D8299;
+          }
+          &::-ms-input-placeholder {
+            color: #6D8299;
+          }
+          &:-ms-input-placeholder{
+            color: #6D8299;
+          }
+          &::-moz-placeholder {
+            color: #6D8299;
+          }
+
+          &:focus {
+            &::placeholder {
+              color: $white;
             }
-         }
+            &::-webkit-input-placeholder {
+              color: $white;
+            }
+            &::-ms-input-placeholder {
+              color: $white;
+            }
+            &:-ms-input-placeholder {
+              color: $white;
+            }
+            &::-moz-placeholder {
+              color: $white;
+            }
+          }
+        }
+        #__expand {
+          @include transition(width ease 1s);
+          @include border-radius(2px);
+          background: $white;
+          height: 2px;
+          position: relative;
+          display: block;
+          z-index: 50;
+          width: 10%;
+          &.visible {
+            display: block;
+            width: 100.3%;
+          }
+        }
       }
-   }
-   .header-follow-search {
-      > .follow-icons {
-         height: $full;
-         display: inline-block;
-         border-right: $ui_border;
-         border-left: $ui_border;
-         padding: 0 14px;
+      p {
+        text-align: left;
+        font-size: 1.05em;
+        color: #6D8299;
+        > .key {
+          border-bottom: .15em solid #c7c7c7;
+          @include border-radius(2px);
+          letter-spacing: .04em;
+          background: #fefefe;
+          padding: .06em 5px;
+          position: relative;
+          font-size: .9em;
+          color: #5c7188;
+        }
       }
-      .follow-icons a {
-         display: inline-block;
-         margin-right: 16px;
-         &:hover .webtwicons {
-            @include transform(scale(1.2));
-         }
-         .webtwicons {
-            @include transition(transform ease .2s);
-            display: inline-block;
-            margin: 28px 3px;
-            font-size: 1.09em;
-         }
-         &:nth-child(1) .facebook-official {
-            color: $facebook;
-         }
-         &:nth-child(2) .twitter-icon {
-            color: $twitter;
-         }
-         &:nth-child(3) .google-plus-icon {
-            color: $google;
-         }
-         &:nth-child(4) .youtube-icon {
-            color: $youtube;
-         }
-         &:nth-child(5) .instagram-icon {
-            color: $instagram;
-         }
-         &:nth-child(6) .pinterest-icon {
-            color: $pinterest;
-         }
-         &:nth-child(7) .linkedin-square {
-            color: $linkedin;
-         }
+    }
+  }
+  .header-follow-search {
+    > .follow-icons {
+      height: $full;
+      display: inline-block;
+      border-right: $ui_border;
+      border-left: $ui_border;
+      padding: 0 14px;
+    }
+    .follow-icons a {
+      display: inline-block;
+      margin-right: 16px;
+      &:hover .webtwicons {
+        @include transform(scale(1.2));
       }
-   }
+      .webtwicons {
+        @include transition(transform ease .2s);
+        display: inline-block;
+        margin: 28px 3px;
+        font-size: 1.09em;
+      }
+      &:nth-child(1) .facebook-official {
+        color: $facebook;
+      }
+      &:nth-child(2) .twitter-icon {
+        color: $twitter;
+      }
+      &:nth-child(3) .google-plus-icon {
+        color: $google;
+      }
+      &:nth-child(4) .youtube-icon {
+        color: $youtube;
+      }
+      &:nth-child(5) .instagram-icon {
+        color: $instagram;
+      }
+      &:nth-child(6) .pinterest-icon {
+        color: $pinterest;
+      }
+      &:nth-child(7) .linkedin-square {
+        color: $linkedin;
+      }
+    }
+  }
 }

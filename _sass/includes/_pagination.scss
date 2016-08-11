@@ -1,59 +1,59 @@
 .pagination {
-   background: lighten($basecolor, 5%);
-   @include border-radius(1px);
-   @extend .text-center;
-   margin: 0 auto;
-   display: block;
-   width: 348px;
-   a {
-      @include transition(all .3s ease-in-out);
-      display: inline-block;
-      letter-spacing: .02em;
-      position: relative;
-      font-weight: 200;
-      font-size: 1em;
-      padding: 15px 18px;
-      color: $white;
-      margin: -2px;
-      &:hover {
-         background: lighten($basecolor, 10%);
-      }
-      &.active {
-         background: lighten($basecolor, 17%);
-      }
-   }
+  background: lighten($basecolor, 5%);
+  @include border-radius(1px);
+  @extend .text-center;
+  margin: 0 auto;
+  display: block;
+  width: 348px;
+  a {
+    @include transition(all .3s ease-in-out);
+    display: inline-block;
+    letter-spacing: .02em;
+    position: relative;
+    font-weight: 200;
+    font-size: 1em;
+    padding: 15px 18px;
+    color: $white;
+    margin: -2px;
+    &:hover {
+      background: lighten($basecolor, 10%);
+    }
+    &.active {
+      background: lighten($basecolor, 17%);
+    }
+  }
 }
 
 body.default-body .line {
-   margin: 46px auto 50px auto;
-   background: #D3D5D8;
-   height: 1px;
-   width: 46%;
-   display: block;
+  margin: 46px auto 50px auto;
+  background: #D3D5D8;
+  height: 1px;
+  width: 46%;
+  display: block;
 }
 
 .bug-holder {
-   color: #ccc;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
-   width: 30px;
-   height: 45px;
-   &:hover {
-      color: #bbb;
-   }
-   .bug {
-      text-align: center;
-      @include transition(all .4s ease);
-      &:before {
-         display: block;
-         margin-left: auto;
-         margin-right: auto;
-         font-size: 1.85em;
-         cursor: pointer;
-         width: 30px;
-         height: 45px;
-      }
-   }
+  color: #ccc;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 30px;
+  height: 45px;
+  &:hover {
+    color: #bbb;
+  }
+  .bug {
+    text-align: center;
+    @include transition(all .4s ease);
+    &:before {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.85em;
+      cursor: pointer;
+      width: 30px;
+      height: 45px;
+    }
+  }
 }

@@ -1,251 +1,251 @@
 .capitalize {
-   text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .uppercase {
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .lowercase {
-   text-transform: lowercase;
+  text-transform: lowercase;
 }
 
 .shadow {
-   @include box-shadow(0px 0px 7px rgba(0, 0, 0, .1));
+  @include box-shadow(0px 0px 7px rgba(0, 0, 0, .1));
 }
 
 .shadow-alt {
-   @include box-shadow(0px 8px 6px -6px rgba(0, 0, 0, .1));
+  @include box-shadow(0px 8px 6px -6px rgba(0, 0, 0, .1));
 }
 
 .radius {
-   @include border-radius(2px);
+  @include border-radius(2px);
 }
 
 .radius-alt {
-   @include border-radius(3px);
+  @include border-radius(3px);
 }
 
 .radius-alter {
-   @include border-radius(5px);
+  @include border-radius(5px);
 }
 
 .circle, .round {
-   @include border-radius($full);
+  @include border-radius($full);
 }
 
 .btn, .button {
-   background: #57DD6B;
-   border-width: 0px 0px 4px 0px;
-   border-style: solid;
-   border-color: #27C940;
-   -webkit-appearance: none;
-   &:hover {
-      background: #6bd560;
-   }
+  background: #57DD6B;
+  border-width: 0px 0px 4px 0px;
+  border-style: solid;
+  border-color: #27C940;
+  -webkit-appearance: none;
+  &:hover {
+    background: #6bd560;
+  }
 }
 
 .hidden {
-   display: none !important;
+  display: none !important;
 }
 
 .invisible {
-   visibility: hidden !important;
+  visibility: hidden !important;
 }
 
 .fixed {
-   position: fixed;
+  position: fixed;
 }
 
 .left {
-   float: left;
+  float: left;
 }
 
 .right {
-   float: right;
+  float: right;
 }
 
 .clear {
-   clear: both;
-   &:before, &:after {
-      clear: both;
-      content: "";
-      display: block;
-      font-size: 0px;
-      height: 0px;
-      line-height: 0;
-   }
+  clear: both;
+  &:before, &:after {
+    clear: both;
+    content: "";
+    display: block;
+    font-size: 0px;
+    height: 0px;
+    line-height: 0;
+  }
 }
 
 .text-left {
-   text-align: left;
+  text-align: left;
 }
 
 .text-right {
-   text-align: right;
+  text-align: right;
 }
 
 .text-center {
-   text-align: center;
+  text-align: center;
 }
 
 .text-bold {
-   font-weight: bold;
+  font-weight: bold;
 }
 
 .text-bolder {
-   font-weight: bolder;
+  font-weight: bolder;
 }
 
 .text-normal {
-   font-weight: normal;
-   font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .aligncenter {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .visible {
-   visibility: visible;
-   @include opacity(1);
+  visibility: visible;
+  @include opacity(1);
 }
 
 .display {
-   display: block !important;
-   visibility: visible;
-   @include opacity(1);
+  display: block !important;
+  visibility: visible;
+  @include opacity(1);
 }
 
 .webtwicons {
-   z-index: 20;
-   cursor: pointer;
-   &:before, &:after {
-      z-index: 20;
-      cursor: pointer;
-   }
+  z-index: 20;
+  cursor: pointer;
+  &:before, &:after {
+    z-index: 20;
+    cursor: pointer;
+  }
 }
 
 [class*="btn-"] {
-   @include transition(all .3s ease);
-   position: relative;
-   border-width: 0px 0px 2px 0px;
-   border-style: solid;
+  @include transition(all .3s ease);
+  position: relative;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
 }
 
 .btn-facebook, .btn-fb {
-   background: $facebook;
-   border-color: #334E84;
-   &.hover:hover {
-      background: #4F6DAE;
-      border-color: #476298;
-   }
+  background: $facebook;
+  border-color: #334E84;
+  &.hover:hover {
+    background: #4F6DAE;
+    border-color: #476298;
+  }
 }
 
 
 .btn-twitter, .btn-twt {
-   background: $twitter;
-   border-color: #2D9CEE;
-   &.hover:hover {
-      background: #64BFFF;
-      border-color: #41B0FF;
-   }
+  background: $twitter;
+  border-color: #2D9CEE;
+  &.hover:hover {
+    background: #64BFFF;
+    border-color: #41B0FF;
+  }
 }
 
 .btn-google, .btn-gp {
-   background: $google;
-   border-color: #BA341D;
-   &.hover:hover {
-      background: #F06255;
-      border-color: #CE4831;
-   }
+  background: $google;
+  border-color: #BA341D;
+  &.hover:hover {
+    background: #F06255;
+    border-color: #CE4831;
+  }
 }
 
 .btn-github {
-   background: $github;
-   border-color: #3E3E3E;
-   &.hover:hover {
-      background: #5A5A5A;
-      border-color: #525252;
-   }
+  background: $github;
+  border-color: #3E3E3E;
+  &.hover:hover {
+    background: #5A5A5A;
+    border-color: #525252;
+  }
 }
 
 .btn-tumblr, .btn-tmb {
-   background: $tumblr;
-   border-color: #2D3E54;
-   &.hover:hover {
-      background: #4A5A71;
-      border-color: #415268;
-   }
+  background: $tumblr;
+  border-color: #2D3E54;
+  &.hover:hover {
+    background: #4A5A71;
+    border-color: #415268;
+  }
 }
 
 .btn-pinterest, .btn-pin {
-   background: $pinterest;
-   border-color: #9B0001;
-   &.hover:hover {
-      background: #D11C30;
-      border-color: #AF1415;
-   }
+  background: $pinterest;
+  border-color: #9B0001;
+  &.hover:hover {
+    background: #D11C30;
+    border-color: #AF1415;
+  }
 }
 
 .btn-linkedin, .btn-in {
-   background: $linkedin;
-   border-color: #0764A2;
-   &.hover:hover {
-      background: #148BC9;
-      border-color: #1B78B6;
-   }
+  background: $linkedin;
+  border-color: #0764A2;
+  &.hover:hover {
+    background: #148BC9;
+    border-color: #1B78B6;
+  }
 }
 
 .btn-youtube, .btn-ytb {
-   background: $youtube;
-   border-color: #B90C0B;
-   &.hover:hover {
-      background: #E13433;
-      border-color: #CD201F;
-   }
+  background: $youtube;
+  border-color: #B90C0B;
+  &.hover:hover {
+    background: #E13433;
+    border-color: #CD201F;
+  }
 }
 
 .btn-instagram, .btn-insta {
-   background: $instagram;
-   border-color: #004274;
-   &.hover:hover {
-      background: #266A9C;
-      border-color: #125688;
-   }
+  background: $instagram;
+  border-color: #004274;
+  &.hover:hover {
+    background: #266A9C;
+    border-color: #125688;
+  }
 }
 
 .btn-email, .btn-mail {
-   background: $email;
-   border-color: #4D4D4D;
-   &.hover:hover {
-      background: #757575;
-      border-color: #616161;
-   }
+  background: $email;
+  border-color: #4D4D4D;
+  &.hover:hover {
+    background: #757575;
+    border-color: #616161;
+  }
 }
 
 .flat, .flat-button, .flat-btn {
-   border: 0 none !important;
-   outline: 0 none !important;
+  border: 0 none !important;
+  outline: 0 none !important;
 }
 
 [class*="-grid"] {
-   position: relative;
+  position: relative;
 }
 
 .inner {
-   position: relative;
-   display: inline-block;
-   height: $full;
-   width: $full;
+  position: relative;
+  display: inline-block;
+  height: $full;
+  width: $full;
 }
 
 [class*="-inner"] {
-   @extend .inner;
+  @extend .inner;
 }
 
 %content-padding {
-   padding: 0 35px;
+  padding: 0 35px;
 }

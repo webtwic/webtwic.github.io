@@ -1,211 +1,211 @@
 /** Start Normalize.css */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-   display: block;
+  display: block;
 }
 
 audio, canvas, progress {
-   display: inline-block;
-   vertical-align: baseline;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 video {
-   display: inline-block;
-   vertical-align: baseline;
-   max-width: $full;
-   height: auto;
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: $full;
+  height: auto;
 }
 
 audio:not([controls]) {
-   display: none;
-   height: 0;
+  display: none;
+  height: 0;
 }
 
 [hidden], template {
-   display: none;
+  display: none;
 }
 
 a {
-   @include transition(all .3s ease);
-   text-decoration: none;
-   color: #999;
-   &:visited, &:active, &:focus {
-      background-color: transparent;
-      text-decoration: none;
-      color: #999;
-      outline: 0;
-   }
+  @include transition(all .3s ease);
+  text-decoration: none;
+  color: #999;
+  &:visited, &:active, &:focus {
+    background-color: transparent;
+    text-decoration: none;
+    color: #999;
+    outline: 0;
+  }
 }
 
 svg:not(:root) {
-   overflow: hidden;
+  overflow: hidden;
 }
 
 hr {
-   @include box-sizing(content-box);
-   height: 0;
+  @include box-sizing(content-box);
+  height: 0;
 }
 
 pre {
-   overflow: auto;
+  overflow: auto;
 }
 
 button, input, optgroup, select, textarea {
-   color: inherit;
-   font: inherit;
-   margin: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
 }
 
 button {
-   -webkit-appearance: button;
-   cursor: pointer;
+  -webkit-appearance: button;
+  cursor: pointer;
 }
 
 input {
-   &[type="button"], &[type="reset"], &[type="submit"] {
-      -webkit-appearance: button;
-      cursor: pointer;
-   }
+  &[type="button"], &[type="reset"], &[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+  }
 }
 
 button[disabled], input[disabled] {
-   cursor: default;
+  cursor: default;
 }
 
 [type="submit"], [type="reset"], [type="button"], [type="file"] {
-   @include box-shadow(0px 0px 5px rgba(0, 0, 0, .1));
-   border-bottom: 4px solid #27c940;
-   @extend .radius-alt;
-   font-weight: bold;
-   padding: 15px 20px;
-   color: $white;
-   text-align: center;
-   background: #58de6c;
-   cursor: pointer;
-   border-top: 0;
-   border-right: 0;
-   border-left: 0;
+  @include box-shadow(0px 0px 5px rgba(0, 0, 0, .1));
+  border-bottom: 4px solid #27c940;
+  @extend .radius-alt;
+  font-weight: bold;
+  padding: 15px 20px;
+  color: $white;
+  text-align: center;
+  background: #58de6c;
+  cursor: pointer;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
 }
 
 button::-moz-focus-inner {
-   border: 0;
-   padding: 0;
+  border: 0;
+  padding: 0;
 }
 
 input {
-   &::-moz-focus-inner {
-      border: 0;
-      padding: 0;
-   }
-   line-height: normal;
-   &[type="checkbox"], &[type="radio"] {
-      padding: 0;
-   }
-   &[type="number"] {
-      &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
-         height: auto;
-      }
-   }
-   &[type="search"] {
-      -webkit-appearance: textfield;
-      @include box-sizing(content-box);
-      &::-webkit-search-cancel-button, &::-webkit-search-decoration {
-         -webkit-appearance: none;
-      }
-   }
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  line-height: normal;
+  &[type="checkbox"], &[type="radio"] {
+    padding: 0;
+  }
+  &[type="number"] {
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+      height: auto;
+    }
+  }
+  &[type="search"] {
+    -webkit-appearance: textfield;
+    @include box-sizing(content-box);
+    &::-webkit-search-cancel-button, &::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+  }
 }
 
 fieldset {
-   border: $solid_one #c0c0c0;
-   margin: 0 2px;
-   padding: .35em .625em .75em;
+  border: $solid_one #c0c0c0;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
 }
 
 legend {
-   border: 0;
-   padding: 0;
+  border: 0;
+  padding: 0;
 }
 
 textarea {
-   overflow: auto;
+  overflow: auto;
 }
 
 optgroup {
-   font-weight: bold;
+  font-weight: bold;
 }
 
 table {
-   border-collapse: collapse;
-   border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 td, th {
-   padding: 0;
+  padding: 0;
 }
 
 /** End normalize.css */
 
 keygen, input, iframe, label, table, textarea, select, button {
-   font-family: $basefont;
+  font-family: $basefont;
 }
 
 nav {
-   padding: 0px;
-   margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 ul {
-   padding: 0px;
-   margin: 0px;
-   list-style: none;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
 }
 
 li {
-   list-style: none;
+  list-style: none;
 }
 
 [placeholder] {
-   color: #999;
+  color: #999;
 }
 
 ::-moz-placeholder {
-   color: #999;
+  color: #999;
 }
 
 ::-webkit-input-placeholder {
-   color: #999;
+  color: #999;
 }
 
 :-ms-input-placeholder {
-   color: #999;
+  color: #999;
 }
 
 ::placeholder {
-   color: #999;
+  color: #999;
 }
 
 input {
-   -moz-appearance: none;
-   -webkit-appearance: none;
-   -ms-appearance: none;
-   -o-apperance: none;
-   font-family: $basefont;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -o-apperance: none;
+  font-family: $basefont;
 }
 
 [type="search"], [type="text"], [type="email"], [type="number"], [type="password"], [type="tel"], [type="week"], [type="datetime"], [type="date"], [type="time"], [type="datetime-local"], [type="month"], [type="url"], input, textarea {
-   outline: 0 none;
-   -webkit-outline: 0 none;
+  outline: 0 none;
+  -webkit-outline: 0 none;
 }
 
 img {
-   &[border="0"] {
-      border-style: none;
-      border-width: 0px;
-      outline: 0 none;
-      border: 0 none;
-   }
-   height: auto;
-   width: auto;
-   border: 0 none;
-   max-width: $full;
+  &[border="0"] {
+    border-style: none;
+    border-width: 0px;
+    outline: 0 none;
+    border: 0 none;
+  }
+  height: auto;
+  width: auto;
+  border: 0 none;
+  max-width: $full;
 }

@@ -1,106 +1,106 @@
 @-ms-viewport {
-   width: device-width;
+  width: device-width;
 }
 
 
 @viewport {
-   width: device-width;
+  width: device-width;
 }
 
 
 ::-webkit-selection {
-   background: rgba($grey, .9);
-   color: $text-color;
+  background: rgba($grey, .9);
+  color: $text-color;
 }
 ::-moz-selection {
-   background: rgba($grey, .9);
-   color: $text-color;
+  background: rgba($grey, .9);
+  color: $text-color;
 }
 ::-ms-selection {
-   background: rgba($grey, .9);
-   color: $text-color;
+  background: rgba($grey, .9);
+  color: $text-color;
 }
 :-ms-selection {
-   background: rgba($grey, .9);
-   color: $text-color;
+  background: rgba($grey, .9);
+  color: $text-color;
 }
 ::-o-selection {
-   background: rgba($grey, .9);
-   color: $text-color;
+  background: rgba($grey, .9);
+  color: $text-color;
 }
 ::selection {
-   background: rgba($grey, .9);
-   color: $text-color;
+  background: rgba($grey, .9);
+  color: $text-color;
 }
 
 ::placeholder {
-   font-family: $font-alt;
-   font-weight: 300;
-   color: #999;
+  font-family: $font-alt;
+  font-weight: 300;
+  color: #999;
 }
 ::-moz-placeholder {
-   font-family: $font-alt;
-   font-weight: 300;
-   color: #999;
+  font-family: $font-alt;
+  font-weight: 300;
+  color: #999;
 }
 ::-webkit-input-placeholder {
-   font-family: $font-alt;
-   font-weight: 300;
-   color: #999;
+  font-family: $font-alt;
+  font-weight: 300;
+  color: #999;
 }
 ::-ms-input-placeholder {
-   font-family: $font-alt;
-   font-weight: 300;
-   color: #999;
+  font-family: $font-alt;
+  font-weight: 300;
+  color: #999;
 }
 :-ms-input-placeholder {
-   font-family: $font-alt;
-   font-weight: 300;
-   color: #999;
+  font-family: $font-alt;
+  font-weight: 300;
+  color: #999;
 }
 
 * {
-   font-family: $basefont;
-   @include box-sizing();
-   &:before, &:after {
-      @include box-sizing();
-      font-family: $icon;
-   }
+  font-family: $basefont;
+  @include box-sizing();
+  &:before, &:after {
+    @include box-sizing();
+    font-family: $icon;
+  }
 }
 
 html {
-   -webkit-text-size-adjust: $full;
-   -ms-text-size-adjust: $full;
-   overflow-y: scroll;
-   overflow-x: hidden;
-   font-size: $full;
-   font-family: $basefont;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
-   clear: both;
-   &._hidden {
-      display: block !important;
-   }
+  -webkit-text-size-adjust: $full;
+  -ms-text-size-adjust: $full;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-size: $full;
+  font-family: $basefont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  clear: both;
+  &._hidden {
+    display: block !important;
+  }
 }
 
 body {
-   font-family: $basefont;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
-   clear: both;
-   width: $full;
-   line-height: 1.5;
-   margin: 0 auto;
-   padding: 0em;
-   background: #F3F4F6;
+  font-family: $basefont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  clear: both;
+  width: $full;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 0em;
+  background: #F3F4F6;
 }
 
 main {
-   &.site-content {
-      max-width: 1279px;
-      width: 94%;
-      .site-wrapper {
-         margin-bottom: 50px;
-      }
-   }
+  &.site-content {
+    max-width: 1279px;
+    width: 94%;
+    .site-wrapper {
+      margin-bottom: 50px;
+    }
+  }
 }

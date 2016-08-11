@@ -1,43 +1,41 @@
 /*
+  Start videos.scss
 
-Start videos.scss
+  * Date Created: 21/11/2015
 
-* Date Created: 21/11/2015
-
-* Last Modified: 26/02/2016
-
+  * Last Modified: 26/02/2016
 */
 
 body {
-	&.videos {
-		.site-content {
-			margin: 100px auto 0 auto;
-			max-width: 1379px;
-			width: 96%;
-		}
-		.filter-videos {
-			margin: 0 auto 30px auto;
-			height: 50px;
-			background: #aaa;
-			width: 60%;
-		}
-		.videos-grid {
-			height: $full;
-			float: left;
-			width: $full;
-			.single-video {
-				@extend .radius;
-				margin: 0 25px 30px 9px;
-				position: relative;
-				background: $white;
-				float: left;
-				height: 8%;
-				display: block;
-				width: 48%;
-				&:nth-of-type(2n) {
-					margin-right: 0;
-				}
-			}
-		}
-	}
+  &.videos {
+    .site-content {
+      margin: 100px auto 0 auto;
+      max-width: 1379px;
+      width: 96%;
+    }
+    .filter-videos {
+      margin: 0 auto 30px auto;
+      height: 50px;
+      background: #aaa;
+      width: 60%;
+    }
+    .videos-grid {
+      height: $full;
+      float: left;
+      width: $full;
+      .single-video {
+        @extend .radius;
+        margin: 0 25px 30px 9px;
+        position: relative;
+        background: $white;
+        float: left;
+        height: 8%;
+        display: block;
+        width: 48%;
+        &:nth-of-type(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }

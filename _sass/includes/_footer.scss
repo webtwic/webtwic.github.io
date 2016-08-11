@@ -1,217 +1,217 @@
 /* Start Site footer */
 
 .site-footer {
-   background: #273340;
-   margin-top: 60px;
-   display: block;
-   color: $white;
-   width: auto;
-   padding: 32px 0 20px 0;
-   height: 430px;
-   .footer-inner {
-      max-width: 1309px;
-      margin-left: auto;
-      margin-right: auto;
-   }
+  background: #273340;
+  margin-top: 60px;
+  display: block;
+  color: $white;
+  width: auto;
+  padding: 32px 0 20px 0;
+  height: 430px;
+  .footer-inner {
+    max-width: 1309px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
 #colophon {
-   .footer-logo {
-      @include logo(-32px -180px);
-      margin-left: auto;
-      margin-right: auto;
-      width: 227px;
-      height: 64px;
-      display: block;
-      color: #2f5c88;
-      letter-spacing: 0.1px;
-      text-indent: -9999px;
-   }
-   .description-text {
-      font-family: $basefont;
-      margin-bottom: 30px;
-      text-align: center;
-      font-size: 1.02em;
-      width: $full;
-   }
-   .social-buttons {
-      margin-bottom: 30px;
-      a {
-         @include transition(all ease .3s);
-         @include transition(all 0.3s cubic-bezier(0.55, .51, .24, -0.09) 0s);
-         @extend .round;
-         background: transparent;
-         border-width: 2px;
-         border-style: solid;
-         padding: 12px 1em;
-         margin-right: 5px;
-         &:nth-child(1) {
-            border-color: $facebook;
-            &:hover {
-               background: $facebook;
-            }
-         }
-         &:nth-child(2) {
-            border-color: $twitter;
-            &:hover {
-               background: $twitter;
-            }
-         }
-         &:nth-child(3) {
-            border-color: $google;
-            &:hover {
-               background: $google;
-            }
-         }
-         &:nth-child(4) {
-            border-color: $github;
-            &:hover {
-               background: $github;
-            }
-         }
-         &:last-child {
-            margin-right: 0;
-         }
-         .webtwicons {
-            color: $white;
-            margin-left: 2px;
-            &.github-icon {
-               margin-right: 1px;
-            }
-            &.twitter-icon {
-               font-size: $full;
-               margin-right: -1px;
-            }
-            &.google-plus-icon {
-               font-size: $full;
-               margin-right: -6px;
-               margin-left: 0px;
-            }
-            &.facebook-icon {
-               margin-right: 2px;
-               margin-left: 3px;
-            }
-         }
+  .footer-logo {
+    @include logo(-32px -180px);
+    margin-left: auto;
+    margin-right: auto;
+    width: 227px;
+    height: 64px;
+    display: block;
+    color: #2f5c88;
+    letter-spacing: 0.1px;
+    text-indent: -9999px;
+  }
+  .description-text {
+    font-family: $basefont;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.02em;
+    width: $full;
+  }
+  .social-buttons {
+    margin-bottom: 30px;
+    a {
+      @include transition(all ease .3s);
+      @include transition(all 0.3s cubic-bezier(0.55, .51, .24, -0.09) 0s);
+      @extend .round;
+      background: transparent;
+      border-width: 2px;
+      border-style: solid;
+      padding: 12px 1em;
+      margin-right: 5px;
+      &:nth-child(1) {
+        border-color: $facebook;
+        &:hover {
+          background: $facebook;
+        }
       }
-   }
-   .help {
+      &:nth-child(2) {
+        border-color: $twitter;
+        &:hover {
+          background: $twitter;
+        }
+      }
+      &:nth-child(3) {
+        border-color: $google;
+        &:hover {
+          background: $google;
+        }
+      }
+      &:nth-child(4) {
+        border-color: $github;
+        &:hover {
+          background: $github;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      .webtwicons {
+        color: $white;
+        margin-left: 2px;
+        &.github-icon {
+          margin-right: 1px;
+        }
+        &.twitter-icon {
+          font-size: $full;
+          margin-right: -1px;
+        }
+        &.google-plus-icon {
+          font-size: $full;
+          margin-right: -6px;
+          margin-left: 0px;
+        }
+        &.facebook-icon {
+          margin-right: 2px;
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+  .help {
+    position: relative;
+    width: $full;
+    margin-bottom: 30px;
+    a {
       position: relative;
-      width: $full;
-      margin-bottom: 30px;
-      a {
-         position: relative;
-         margin-right: 12px;
-         color: $off_white;
-         text-transform: uppercase;
-         font-size: .8em;
-         font-weight: 400;
-         letter-spacing: .062em;
-         padding-bottom: 2px;
-         &:before {
-            @include transition(transform .2s ease);
-            @include transform(scaleX(0));
-            content: "";
-            background: $off_white;
-            position: absolute;
-            top: $full;
-            left: 0;
-            right: 0;
-            height: 1px;
-         }
-         &:hover:before {
-            @include transform(scaleX(1));
-         }
+      margin-right: 12px;
+      color: $off_white;
+      text-transform: uppercase;
+      font-size: .8em;
+      font-weight: 400;
+      letter-spacing: .062em;
+      padding-bottom: 2px;
+      &:before {
+        @include transition(transform .2s ease);
+        @include transform(scaleX(0));
+        content: "";
+        background: $off_white;
+        position: absolute;
+        top: $full;
+        left: 0;
+        right: 0;
+        height: 1px;
       }
-   }
-   .donate-section {
+      &:hover:before {
+        @include transform(scaleX(1));
+      }
+    }
+  }
+  .donate-section {
+    position: relative;
+    margin-bottom: 30px;
+    a {
+      @include transition(all .3s ease-in-out);
+      @include border-radius(1.5rem);
+      -webkit-appearance: none;
       position: relative;
-      margin-bottom: 30px;
-      a {
-         @include transition(all .3s ease-in-out);
-         @include border-radius(1.5rem);
-         -webkit-appearance: none;
-         position: relative;
-         background: transparent;
-         border: 1.5px solid #3B4A5A;
-         color: $white;
-         font-size: .75em;
-         font-weight: 400;
-         letter-spacing: .05rem;
-         padding: .8em 1.7em;
-         text-transform: uppercase;
-         &:hover {
-            background: $white;
-            color: #3B4A5A;
-            border: 1.5px solid $white;
-         }
+      background: transparent;
+      border: 1.5px solid #3B4A5A;
+      color: $white;
+      font-size: .75em;
+      font-weight: 400;
+      letter-spacing: .05rem;
+      padding: .8em 1.7em;
+      text-transform: uppercase;
+      &:hover {
+        background: $white;
+        color: #3B4A5A;
+        border: 1.5px solid $white;
       }
-   }
-   a[href*="mailto"] {
-      color: #627181;
-   }
+    }
+  }
+  a[href*="mailto"] {
+    color: #627181;
+  }
 }
 
 #site-info {
-   font-size: .98em;
-   padding: 18px 20px;
-   background: #222E3B;
-   width: auto;
-   display: block;
-   color: #6D8299;
-   position: relative;
-   span {
-      font-family: $basefont;
-      font-size: 1em;
-      color: $off_white;
-      & > span {
-         color: darken(#6D8299, 1%);
-      }
-      &.circle {
-         @include calc(vertical-align, '35%');
-         color: lighten($basecolor, 1%);
-         font-size: .5em;
-         margin: 0 4px;
-      }
-   }
+  font-size: .98em;
+  padding: 18px 20px;
+  background: #222E3B;
+  width: auto;
+  display: block;
+  color: #6D8299;
+  position: relative;
+  span {
+    font-family: $basefont;
+    font-size: 1em;
+    color: $off_white;
+    & > span {
+      color: darken(#6D8299, 1%);
+    }
+    &.circle {
+      @include calc(vertical-align, '35%');
+      color: lighten($basecolor, 1%);
+      font-size: .5em;
+      margin: 0 4px;
+    }
+  }
 
-   a {
-      color: $off_white;
-      font-family: $font-alt;
-      padding-bottom: 2px;
-      position: relative;
-      &:before {
-         @include transition(transform .2s);
-         @include transform(scaleX(0));
-         position: absolute;
-         top: $full;
-         left: 0;
-         right: 0;
-         bottom: 0;
-         content: "";
-         height: 1.5px;
-         background: $off_white;
-      }
-      &:hover:before {
-         @include transform(scaleX(1));
-      }
-      &.colophon-link {
-         letter-spacing: .01em;
-      }
-   }
-   .heart {
-      -webkit-animation-timing-function: ease-in-out;
-      -moz-animation-timing-function: ease-in-out;
-      -ms-animation-timing-function: ease-in-out;
-      -o-animation-timing-function: ease-in-out;
-      animation-timing-function: ease-in-out;
-      -webkit-animation: heart 4.5s infinite;
-      -moz-animation: heart 4.5s infinite;
-      -ms-animation: heart 4.5s infinite;
-      -o-animation: heart 4.5s infinite;
-      animation: heart 4.5s infinite;
-      color: #C0392B;
-      cursor: pointer;
-      font-size: .9em;
-   }
+  a {
+    color: $off_white;
+    font-family: $font-alt;
+    padding-bottom: 2px;
+    position: relative;
+    &:before {
+      @include transition(transform .2s);
+      @include transform(scaleX(0));
+      position: absolute;
+      top: $full;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: "";
+      height: 1.5px;
+      background: $off_white;
+    }
+    &:hover:before {
+      @include transform(scaleX(1));
+    }
+    &.colophon-link {
+      letter-spacing: .01em;
+    }
+  }
+  .heart {
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation: heart 4.5s infinite;
+    -moz-animation: heart 4.5s infinite;
+    -ms-animation: heart 4.5s infinite;
+    -o-animation: heart 4.5s infinite;
+    animation: heart 4.5s infinite;
+    color: #C0392B;
+    cursor: pointer;
+    font-size: .9em;
+  }
 }
