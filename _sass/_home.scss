@@ -1,253 +1,205 @@
 /*
-	* Start Home.scss
+  * Start Home.scss
 
-	* Date Created: 01/03/2015
+  * Date Created: 01/03/2015
 
-	* Last Modified: 11/08/2016
+  * Last Modified: 11/08/2016
 */
 
 body.home {
-	background: #EDEEF0;
-	> header.site-header {
-		padding-bottom: 275px;
-	}
-	.site-content {
-		margin: 135px auto;
-		width: 87%;
-		> .site-wrapper {
-			width: $full;
-		}
-	}
-	.featured-posts-grid {
-		margin: 0 5.1% 0 0;
-		@extend .left;
-		width: 63.767%;
-	}
+  background: #EDEEF0;
+  > header.site-header {
+    padding-bottom: 275px;
+  }
+  .site-content {
+    margin: 135px auto;
+    width: 87%;
+    > .site-wrapper {
+      width: $full;
+    }
+  }
+  .featured-posts-grid {
+    margin: 0 5.1% 0 0;
+    @extend .left;
+    width: 63.767%;
+  }
 }
 
 /* START MAIN POSTS */
 
 .featured-posts-grid .article {
-	@extend .shadow-alt;
-	margin: 0 0 25px 0;
-	position: relative;
-	background: $white;
-	min-height: 439px;
-	max-height: 460px;
-	@extend .radius;
-	width: $full;
-	z-index: 50;
-	.inner {
-		padding: 50px 48px 93px 52px;
-	}
-	&:first-child {
-		margin-top: 25px;
-	}
+  @extend .shadow-alt;
+  margin: 0 0 25px 0;
+  position: relative;
+  background: $white;
+  min-height: 439px;
+  max-height: 460px;
+  @extend .radius;
+  width: $full;
+  z-index: 50;
+  .inner {
+    padding: 50px 48px 93px 52px;
+  }
+  &:first-child {
+    margin-top: 25px;
+  }
 }
 
 .article {
-	time {
-		margin: -1.2em 0em 1em -.9em;
-		font-family: $code_font_alt;
-		text-transform: uppercase;
-		letter-spacing: 10px;
-		padding-left: 1.9em;
-		font-weight: 400;
-		font-size: 1em;
-		cursor: default;
-		display: block;
-		color: #777;
-	}
-	svg.clock {
-		@include transform(rotate(-136deg));
-		vertical-align: middle;
-		margin: -4px 0 0 0;
-		fill: #777;
-		width: 13px;
-		height: 15px;
-	}
-	.article-title {
-		border-bottom: $solid_one $grey;
-		padding-bottom: 10px;
-		margin: 10px;
-		a {
-			font-family: "Roboto Slab", "Trebuchet MS", Helvetica, Calibri;
-			@include transition(color .4s ease, text-shadow .2s ease);
-			@include text-shadow(none);
-			color: $title-color;
-			font-size: 1.2em;
-			font-weight: 600;
-			&:hover {
-				@include text-shadow(0px 1px 1px rgb(238, 238, 238));
-				color: #81aec5;
-			}
-		}
-	}
-	.article-excerpt p {
-		font-family: "Raleway", $basefont;
-		margin: 10px 0 10px 15px;
-		letter-spacing: .02em;
-		font-size: .9689em;
-		color: $text-color;
-		line-height: 27px;
-		max-height: 125px;
-		font-weight: 300;
-		> code {
-			font-family: $code_font;
-			@extend .radius-alt;
-			background: #E8F5F2;
-			padding: .2em .2em;
-			font-size: .86em;
-			color: #6699cc;
-		}
-	}
-	.read-article {
-		margin: 0 0 0 18px;
-		font-size: .94em;
-		position: relative;
-		color: #15E1E1;
-		position: relative;
-		&:before {
-			@include transition(width .4s ease);
-			content: "";
-			background: #15E1E1;
-			position: absolute;
-			top: $full;
-			left: 0;
-			right: 0;
-			height: 1px;
-			width: 0;
-		}
-		&:hover:before {
-			width: $full;
-		}
-		&:after {
-			@include transition(margin-left .02s);
-			content: "\f061";
-			font-family: $icon;
-			font-size: .8em;
-			margin-left: 3px;
-			vertical-align: text-top;
-		}
-		&:hover:after {
-			margin-left: 4.4px;
-		}
-	}
-	.article-social {
-		border-top: 2px dashed $grey;
-		margin: 20px auto 0 auto;
-		text-align: center;
-		padding-top: 20px;
-		font-size: 1.87em;
-		display: block;
-		p {
-			font-family: "Lobster", $font_alt;
-			font-size: .66em;
-			letter-spacing: normal;
-			margin: -14px 0 6px 18px;
-			text-align: left;
-			color: #ff9dae;
-		}
-		.arrow:after {
-			content: url("../../img/sharearrow.png");
-			margin-left: 4px;
-		}
-		a {
-			@include transition(.5s ease-in-out);
-			position: relative;
-			margin-right: 42px;
-			&:last-child {
-				margin-right: 0;
-			}
-			&:nth-of-type(1):hover > .webtwicons {
-				color: $facebook;
-			}
-			&:nth-of-type(2):hover > .webtwicons {
-				color: $twitter;
-			}
-			&:nth-of-type(3):hover > .webtwicons {
-				color: $google;
-			}
-			&:nth-of-type(4):hover > .webtwicons {
-				color: $tumblr;
-			}
-			&:nth-of-type(5):hover > .webtwicons {
-				color: $pinterest;
-			}
-			.tooltip {
-				@include transform(translate(-50%, -50%));
-				@include border-radius(1px);
-				background: $basecolor;
-				position: absolute;
-				text-align: center;
-				padding: .1px 6px;
-				font-size: .5em;
-				color: $white;
-				display: none;
-				left: 32%;
-				top: -60%;
-				&:before {
-					content: "\f0d7";
-					position: absolute;
-					position: absolute;
-					margin: 12px 0 0 36%;
-					color: $basecolor;
-					text-align: center;
-					font-size: 1.125em;
-				}
-			}
-		}
-	}
+  time {
+    margin: -1.2em 0em 1em -.9em;
+    font-family: $code_font_alt;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding-left: 1.9em;
+    font-weight: 400;
+    font-size: 1em;
+    cursor: default;
+    display: block;
+    color: #777;
+  }
+  svg.clock {
+    @include transform(rotate(-136deg));
+    vertical-align: middle;
+    margin: -4px 0 0 0;
+    fill: #777;
+    width: 13px;
+    height: 15px;
+  }
+  .article-title {
+    border-bottom: $solid_one $grey;
+    padding-bottom: 10px;
+    margin: 10px;
+    a {
+      font-family: "Roboto Slab", "Trebuchet MS", Helvetica, Calibri;
+      @include transition(color .4s ease, text-shadow .2s ease);
+      @include text-shadow(none);
+      color: $title-color;
+      font-size: 1.2em;
+      font-weight: 600;
+      &:hover {
+        @include text-shadow(0px 1px 1px rgb(238, 238, 238));
+        color: #81aec5;
+      }
+    }
+  }
+  .article-excerpt p {
+    font-family: "Raleway", $basefont;
+    margin: 10px 0 10px 15px;
+    letter-spacing: .02em;
+    font-size: .9689em;
+    color: $text-color;
+    line-height: 27px;
+    max-height: 125px;
+    font-weight: 300;
+    > code {
+      font-family: $code_font;
+      @extend .radius-alt;
+      background: #E8F5F2;
+      padding: .2em .2em;
+      font-size: .86em;
+      color: #6699cc;
+    }
+  }
+  .read-article {
+    margin: 0 0 0 18px;
+    font-size: .94em;
+    position: relative;
+    color: #15E1E1;
+    position: relative;
+    &:before {
+      @include transition(width .4s ease);
+      content: "";
+      background: #15E1E1;
+      position: absolute;
+      top: $full;
+      left: 0;
+      right: 0;
+      height: 1px;
+      width: 0;
+    }
+    &:hover:before {
+      width: $full;
+    }
+    &:after {
+      @include transition(margin-left .02s);
+      content: "\f061";
+      font-family: $icon;
+      font-size: .8em;
+      margin-left: 3px;
+      vertical-align: text-top;
+    }
+    &:hover:after {
+      margin-left: 4.4px;
+    }
+  }
+  .article-social {
+    border-top: 2px dashed $grey;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.87em;
+    display: block;
+    p {
+      font-family: "Lobster", $font_alt;
+      font-size: .66em;
+      letter-spacing: normal;
+      margin: -14px 0 6px 18px;
+      text-align: left;
+      color: #ff9dae;
+    }
+    .arrow:after {
+      content: url("../../img/sharearrow.png");
+      margin-left: 4px;
+    }
+    a {
+      @include transition(.5s ease-in-out);
+      position: relative;
+      margin-right: 42px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:nth-of-type(1):hover > .webtwicons {
+        color: $facebook;
+      }
+      &:nth-of-type(2):hover > .webtwicons {
+        color: $twitter;
+      }
+      &:nth-of-type(3):hover > .webtwicons {
+        color: $google;
+      }
+      &:nth-of-type(4):hover > .webtwicons {
+        color: $tumblr;
+      }
+      &:nth-of-type(5):hover > .webtwicons {
+        color: $pinterest;
+      }
+      .tooltip {
+        @include transform(translate(-50%, -50%));
+        @include border-radius(1px);
+        background: $basecolor;
+        position: absolute;
+        text-align: center;
+        padding: .1px 6px;
+        font-size: .5em;
+        color: $white;
+        display: none;
+        left: 32%;
+        top: -60%;
+        &:before {
+          content: "\f0d7";
+          position: absolute;
+          position: absolute;
+          margin: 12px 0 0 36%;
+          color: $basecolor;
+          text-align: center;
+          font-size: 1.125em;
+        }
+      }
+    }
+  }
 }
 
 .home #sidebar-grid {
-	width: 29.9%;
-}
-#tech-news-wrap {
-	padding: 10px 10px 0 10px;
-	color: $text-color;
-	background: #F0F5F8;
-	margin: 25px 2.1% 0 0;
-	width: 25.142%;
-	height: 3751px;
-	@extend .shadow;
-	@extend .radius;
-	@extend .left;
-	.thePost {
-		margin: 22px 22.5px 14px;
-		padding: 20px 0px 7px;
-		border-top: $solid_one #C3D4E1;
-		text-align: center;
-		font-size: .92em;
-		color: $text-color;
-		a {
-			font-family: $basefont;
-			@include transition(all .6s ease-in-out 0s);
-			&:hover {
-				color: #75b1d6;
-			}
-		}
-	}
-	.more_tech_news {
-		@include transition(all .3s ease-in);
-		margin: 30px auto 0 auto;
-		text-align: center;
-		display: block;
-		color: #49B8CC;
-		padding: 10px 6px;
-		width: 116px;
-		@extend .radius-alt;
-		border: 2px solid #31EDC5;
-		&:hover {
-			background: #E9F1F5;
-			border: 2px solid #49B8CC;
-		}
-		&:after {
-			content: "\f021";
-			font-family: $icon;
-			display: inline;
-			font-size: .75em;
-			margin: 0 0 0 4px;
-		}
-	}
+  width: 29.9%;
 }
