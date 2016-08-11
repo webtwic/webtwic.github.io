@@ -28,45 +28,45 @@
    <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
    <!--[if gt IE 8]> <html class="no-js" lang="en-US"> <![endif]-->
 
-{% include head.html %}
+   {% include head.html %}
 
-  <body class="main {% if page.body-class %}{{ page.body-class }}{% endif %}" id="responsive">
+   <body class="main {% if page.body-class %}{{ page.body-class }}{% endif %}" id="responsive">
      <noscript>
-        <div class="page-no-js">
-           <p class="noscript-error-description">
-             JavaScript is disabled in your browser. Webtwic doesn't work properly without JavaScript enabled.
-             <a class="reload_page noscript-link" target="_self" href="http://webtwic.com">Reload Page?</a>
-             or get a better <a class="noscript-link" href="https://google.com/chrome" target="_blank">browser.</a>
-          </p>
+       <div class="page-no-js">
+         <p class="noscript-error-description">
+           JavaScript is disabled in your browser. Webtwic doesn't work properly without JavaScript enabled.
+           <a class="reload_page noscript-link" target="_self" href="http://webtwic.com">Reload Page?</a>
+           or get a better <a class="noscript-link" href="https://google.com/chrome" target="_blank">browser.</a>
+         </p>
 
-          <style>
-          noscript {width: auto; z-index: 9999 !important; position: fixed !important; top: 0; right: 0; left: 0;}
-          .page-no-js {background: #FF5F5F; padding: 10px; width: auto; height: 45px; display: block; margin: 0px auto; z-index: 9999 !important; color: #fff; font-weight: bold; text-align: center;}
-          p.noscript-error-description {display: block; margin: 0px auto;}
-          a.noscript-link {color: #fff; border-bottom: 1px dotted #fff;}
-          body .site-content {margin-top: 95px !important;}
-          body .main-header {margin-top: 45px !important;}
-          </style>
+         <style>
+         noscript {width: auto; z-index: 9999 !important; position: fixed !important; top: 0; right: 0; left: 0;}
+         .page-no-js {background: #FF5F5F; padding: 10px; width: auto; height: 45px; display: block; margin: 0px auto; z-index: 9999 !important; color: #fff; font-weight: bold; text-align: center;}
+         p.noscript-error-description {display: block; margin: 0px auto;}
+         a.noscript-link {color: #fff; border-bottom: 1px dotted #fff;}
+         body .site-content {margin-top: 95px !important;}
+         body .main-header {margin-top: 45px !important;}
+         </style>
 
        </div>
-    </noscript>
+     </noscript>
 
-    {% include header.html %}
+     {% include header.html %}
 
-    <main class="site-content seconadry-site-content" id="content">
+     <main class="site-content seconadry-site-content" id="content">
 
-      <div class="site-wrapper inner">
+       <div class="site-wrapper inner">
 
          {{ content }}
 
-      </div>
+       </div>
 
-    </main>
+     </main>
 
-{% include pagination.html %}
+     {% include pagination.html %}
 
-    {% include footer.html %}
+     {% include footer.html %}
 
-  </body>
+   </body>
 
-</html>
+   </html>
