@@ -2,9 +2,9 @@
    .navigation li a {
       font-family: $basefont;
       @include transition(all .3s linear);
+      @include text-shadow(none);
       text-transform: lowercase;
       text-decoration: none;
-      @include text-shadow(none);
       position: relative;
       font-weight: 400;
       color: #777;
@@ -16,7 +16,7 @@
    nav > ul li a {
       width: 103%;
    }
-   /* Start dropdown menu styles*/
+   /* Start dropdown menu styles */
    .dropdown {
       position: relative;
    }
@@ -348,7 +348,7 @@
                @include border-radius(2px);
                letter-spacing: .04em;
                background: #fefefe;
-               padding: .01em 5px;
+               padding: .06em 5px;
                position: relative;
                font-size: .9em;
                color: #5c7188;
