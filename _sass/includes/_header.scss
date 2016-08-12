@@ -1,4 +1,4 @@
-@media screen and (min-width: 860px) {
+@media (min-width: 860px) {
   .navigation li a {
     font-family: $basefont;
     @include transition(all .3s linear);

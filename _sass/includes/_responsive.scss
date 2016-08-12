@@ -1,4 +1,4 @@
-@media screen and (max-width: 860px) {
+@media (max-width: 860px) {
   svg.dropdown-arrow, .header-follow-search, .main-header, #header {
     display: none;
   }
@@ -104,7 +104,7 @@
   }
 }
 
-@media screen and (max-width: 860px) {
+@media (max-width: 860px) {
   body.home .site-content {
     margin: auto auto 0px;
   }
