@@ -187,13 +187,12 @@ body.home {
         left: 32%;
         top: -60%;
         &:before {
-          content: "\f0d7";
-          position: absolute;
-          position: absolute;
           margin: 12px 0 0 36%;
-          color: $basecolor;
           text-align: center;
           font-size: 1.125em;
+          position: absolute;
+          color: $basecolor;
+          content: "\f0d7";
         }
       }
     }
