@@ -55,16 +55,16 @@ Webtwic = {
 
 	// Function to show Notifications before header
 	showNotif(text=notif_text) {
-        Webtwic.adjustSiteContent();
-        $( 'body' ).prepend(
+     Webtwic.adjustSiteContent();
+     $( 'body' ).prepend(
 			`<div class="notif_vis" id="notifBanner">${text}${close_button}</div>`
 		);
 
-        $( '.close-button' ).on( 'click', e => {
+     $( '.close-button' ).on( 'click', e => {
 			e.preventDefault();
 			Webtwic.undoReset();
 		});
-    },
+  },
 
 	// Function to hide Notifications
 	hideNotif() {
